@@ -1,5 +1,5 @@
 ---
-title: Quick Start with the Mobile Development Kit (MDK) testing7890
+title: Quick Start with the Mobile Development Kit (MDK)
 description: Create and examine your first mobile (offline) and web application using the MDK template connecting against a sample service.
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
