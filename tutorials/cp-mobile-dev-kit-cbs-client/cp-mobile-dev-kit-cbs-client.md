@@ -9,6 +9,7 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
+
 ## Prerequisites
 - **Tutorial**: [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup)
 - **Apple ID**: A paid Apple developer account is required

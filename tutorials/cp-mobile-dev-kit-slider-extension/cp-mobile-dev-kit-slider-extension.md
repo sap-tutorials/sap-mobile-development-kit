@@ -181,9 +181,27 @@ You will add this registered control in a Form Cell page.
 
     !![MDK](img-3.5.png)
 
-5. Create a new Message action.
+5. You will add an item on action bar in `SliderExtension.page` and set an action on its `onPress` event.
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+    In `SliderExtension.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
+
+    !![MDK](img_3.8.gif)
+
+6. Click the **link** icon to open the object browser for the **System Item** property.
+
+    Double click the **Save** type and click **OK**.
+
+    !![MDK](img-3.9.png)
+
+7. In the **Properties** pane | **Events** tab, click the 3 dots icon for the `OnPress` property to create a new action.
+
+    !![MDK](img-3.9.1.png)
+
+8. Keep the default selection for Object Type (as Actions) and Folders path. Click **OK**.
+
+    !![MDK](img-3.9.2.png)
+
+9. In the template selection, choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
 
     !![MDK](img_3.7.png)
 
@@ -204,31 +222,36 @@ You will add this registered control in a Form Cell page.
 
     >Here `MyExtensionControlName` is the name of the control that you renamed in code editor.
 
-    Click **Next** and then **Finish** on the confirmation step.
+    Click **Next** and then **Finish** on the confirmation step. This way a new action `ShowMessage.action` has been created on the fly and has been bound to an UI control event.
 
-6. You will add an item on action bar in `SliderExtension.page` and set `ShowMessage.action` on its `onPress` event.
+10. You can also add an input field where you can provide a manual entry for the slider value and set an event on it's value change so that the counter will adapt accordingly.
 
-    In `SliderExtension.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
+    In `SliderExtension.page`, drag and drop a **Simple Property** control below the slider control.
 
-    !![MDK](img_3.8.gif)
+    !![MDK](img_3.15.gif)
 
-7. Click the **link** icon to open the object browser for the **System Item** property.
+11.  Provide the following information:
 
-    Double click the **Save** type and click **OK**.
+    | Property | Value |
+    |----|----|
+    | `Caption`| `Manual Entry` |
+    | `placeholder` | `Enter number to set the slider ext's value` |
 
-    !![MDK](img-3.9.png)
+    !![MDK](img-3.16.png)
 
-8. In the **Properties** pane | **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**, bind it to `ShowMessage.action`.
+12. When you input a value to the Simple Property control, an event will be triggered reflecting the slider value.
 
-    !![MDK](img-3.10.png)
+    You will create a new rule binding it to the `OnValueChange` event of the above control.
 
-9. You can also add an input field where you can provide a manual entry for the slider value and the counter will adapt accordingly.
+    Navigate to **Events** tab, click the 3 dots icon for the `OnValueChange` property to create a new rule.
+
+    !![MDK](img-3.9.3.png)
 
     For this, first you will write a business logic to set the extension value and then bind it to the input field.
 
-    Right-click the **Rules** folder | **MDK: New Rule File** | select **Empty JS Rule**.
+13. Choose the *Object Type* as **Rules** and *Folders* path as it is. Click **OK**.
 
-    !![MDK](img_3.11.1.png)
+    !![MDK](img-3.9.4.png)
 
     Enter the Rule name `SetExtensionValue`, click **Next** and then **Finish** on the confirmation step.
 
@@ -247,24 +270,7 @@ You will add this registered control in a Form Cell page.
 
     !![MDK](img_3.11.3.png)
 
-10. Save the changes to the `SetExtensionValue.js` file.
-
-11. In `SliderExtension.page`, drag and drop a **Simple Property** control below the slider control.
-
-    !![MDK](img_3.15.gif)
-
-12. Provide the following information:
-
-    | Property | Value |
-    |----|----|
-    | `Caption`| `Manual Entry` |
-    | `placeholder` | `Enter number to set the slider ext's value` |
-
-    !![MDK](img-3.16.png)
-
-13. Navigate to **Events** tab, click the 3 dots icon for the `OnValueChange` property to open the **Object Browser**, bind it to `SetExtensionValue.js`.
-
-    !![MDK](img-3.17.png)
+14. Save the changes to the `SetExtensionValue.js` file.
 
 [DONE]
 [ACCORDION-END]
@@ -642,7 +648,7 @@ You will add this registered control in a Form Cell page.
 
         return MySlider;
     }
-```
+    ```
 
 5. Save the `MySliderPlugin/iOS/MySlider.ts` file.
 

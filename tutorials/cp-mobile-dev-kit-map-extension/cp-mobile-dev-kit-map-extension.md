@@ -28,7 +28,7 @@ To extend the functionality, or customise the look and feel, and behaviour of yo
 
 In this tutorial, you will create a Map extension via `NativeScript` (in TypeScript language), you will view the Map in Apple Maps on iOS devices and in Google Maps on Android devices.
 
-![MDK](img-1.gif)
+![MDK](img-8.16.png)
 
 [ACCORDION-BEGIN [Step 1: ](Create a new MDK project in SAP Business Application Studio)]
 
@@ -175,7 +175,7 @@ The extension control that you will be creating to extend the functionality of y
 
     !![MDK](img-2.6.png)
 
-    >Above schema will add these predefined properties (`City`, `Country`, `HouseNumber`, `LastName`, `PostalCode`, `Street`) in the map extension control which you will bind to **Customer** entity properties in next step.
+    >Above schema will add these predefined properties (`City`, `Country`, `HouseNumber`, `LastName`, `PostalCode`, and `Street`) in the map extension control which you will bind to **Customer** entity properties in next step.
 
 7. Click **Finish** to confirm.
 
@@ -195,27 +195,21 @@ You will add this registered control in the generated `Customers_Detail.page`.
   1. Navigate to **Pages** folder | **Customers** | `Customers_Detail.page`.
 
   2. Remove the body section of the page.
-
     !![MDK](img-3.2.gif)
 
   3. Expand **Section Registered Extension Control**, drag & drop the registered `mdk_maps` control on the page area.
-
     !![MDK](img_3.3.png)
 
     >You can find more details about the **Section Extension** in [this](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Container/Extension.schema.html) guide.
 
   4. In the **Properties** section, set the **Height** to 600.
-
     !![MDK](img-3.4.png)  
 
   5. Bind the registered Extension control properties to **Customers** properties.
-
     Under **Extension Properties** section, expand `Prop`, click the **link** icon to open the Object Browser for the **City** property. Double click the **City** property of the **Customer** entity to set it as the binding expression and click **OK**.
-
     !![MDK](img-3.5.gif)
 
     Repeat the above step and bind other properties.
-
     !![MDK](img-3.5.png)
 
     >Be careful not to bind properties from Address (ESPM.Address).

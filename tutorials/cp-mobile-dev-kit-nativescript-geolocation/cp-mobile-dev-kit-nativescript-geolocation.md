@@ -24,6 +24,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ---
 
+
 To extend the functionality, or customize the look and feel, and behavior of your client app, you can use the existing `NativeScript` plugins like nativescript-geolocation, nativescript-nfc etc. , add this to the client and reference it from a rule.
 
 In this tutorial, you will use the existing `NativeScript` plugin nativescript-geolocation to capture the device location: latitude & longitude.
@@ -65,22 +66,35 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 [DONE]
 [ACCORDION-END]
 
+[ACCORDION-BEGIN [Step 2: ](Display the coordinates on a page)]
 
-[ACCORDION-BEGIN [Step 2: ](Create a new rule to capture the device location)]
+  1. Click the `Main.page`, drag & drop **Static Key Value** container to the page area.
 
-In the MDK editor, you will create a new JavaScript file called `GetCoordinates.js` to capture the device location: latitude & longitude.
+    !![MDK](img-3.1.gif)
 
->You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
+  2. In **Properties** | **Layout**, change `NumberOfColumns` to 1.
 
-1. Right-click the **Rules** folder | **MDK: New Rule File** | select **Empty JS Rule**.
+    !![MDK](img_3.2.png)
 
-    !![MDK](img_2.1.png)
+  3. Drag & drop **Key Value Item** to the container.
 
-2. Enter the Rule name `GetCoordinates`, click **Next** and then **Finish** on the confirmation step.
+    !![MDK](img_3.3.gif)
+
+  4. Set `KeyName`as `Coordinates`. To bind it's value property, create a new rule. You will create a new JavaScript file to capture the device location: latitude & longitude.
+
+    !![MDK](img-3.4.png)
+
+  5. Keep the default selection for *Object Type* and *Folders*. Click **OK**.
+
+    !![MDK](img-3.5.png)
+
+    >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
+
+   6. Enter the Rule name `GetCoordinates`, click **Next** and then **Finish** on the confirmation step.
 
     !![MDK](img_2.2.png)
 
-3. Replace the generated snippet with below code.
+   7. Replace the generated snippet with below code.
 
     ```JavaScript
     import * as geolocation from "@nativescript/geolocation";
@@ -114,36 +128,7 @@ In the MDK editor, you will create a new JavaScript file called `GetCoordinates.
     }
     ```
 
-  4. Save your changes to the `GetCoordinates.js` file.
-
-[DONE]
-[ACCORDION-END]
-
-
-[ACCORDION-BEGIN [Step 3: ](Display the coordinates on a page)]
-
-You will add this registered control in the `Main.page`.
-
-  1. Click the `Main.page`, drag & drop **Static Key Value** container to the page area.
-
-    !![MDK](img-3.1.gif)
-
-  2. In **Properties** | **Layout**, change `NumberOfColumns` to 1.
-
-    !![MDK](img_3.2.png)
-
-  3. Drag & drop **Key Value Item** to the container.
-
-    !![MDK](img_3.3.gif)
-
-  4. Provide the following information:
-
-    | Property | Value |
-    |----|----|
-    | `KeyName`| `Coordinates` |
-    | `Value`| Bind it to rule `GetCoordinates.js` |
-
-    !![MDK](img-3.4.png)
+  6. Save your changes to the `GetCoordinates.js` file.
 
 [DONE]
 [ACCORDION-END]
