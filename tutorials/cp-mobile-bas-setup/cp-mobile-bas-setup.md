@@ -10,6 +10,7 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 ## Prerequisites
+ - [Set Up SAP Business Application Studio for Development](appstudio-onboarding)
 
 ## Details
 ### You will learn
