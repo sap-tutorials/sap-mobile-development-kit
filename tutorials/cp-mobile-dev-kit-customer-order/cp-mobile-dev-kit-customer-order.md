@@ -24,11 +24,11 @@ To enhance your MDK app with customer order information, you need to carry out t
 *  Create a new order details page
 *  Create a new navigation action to the new order details page
 *  Write a JavaScript logic to calculate total number of orders for a customer
-*  Display top 5 orders in customer detail page
+*  Display top 5 orders in customer details page
 *  Add a header control to the orders grid of the customer detail page to display a text label
 *  Add a footer control to the orders grid of customer detail page to show total order count
 
-![MDK](img_1.gif)
+![MDK](img-1.0.gif)
 
 [ACCORDION-BEGIN [Step 1: ](Create a new order list page)]
 
@@ -38,13 +38,13 @@ This page will display customer orders list, you will add an **Object Table** co
 
 1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section Page** | **Next**.
 
-    !![MDK](img_1.1.png)
+    !![MDK](img-1.1.png)
 
     >You can find more details about [section pages](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/section-page.html).
 
 2. Enter the **Page Name** `Customers_Orders` and click **Next** and then **Finish** on the confirmation step.
 
-    !![MDK](img_1.2.png)
+    !![MDK](img-1.2.png)
 
 3. In the **Properties** pane, set the caption to **Customer Orders**.
 
@@ -54,7 +54,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
     In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Object Table** control onto the page area.
 
-    !![MDK](img_1.4.gif)
+    !![MDK](img-1.4.gif)
 
 5. In the **Properties** pane, provide the below information:
 
@@ -68,7 +68,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
     >For a given customer id, query expression will filter top 5 order entries returned in descending when sorted by the order creation date property.
 
-    >!![MDK](img-1.5.gif)
+    >!![MDK](img-1.6.gif)
 
 6. Now, start binding Object Table properties with `SalesOrderHeaders` entity set properties.
 
@@ -84,29 +84,38 @@ This page will display customer orders list, you will add an **Object Table** co
     | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
     | `Subhead` | bind to `{CustomerId}` |
     | `Substatus`| bind to `{LifeCycleStatusName}` |
+    | `Tags` | Click the `item0` and click the trash icon to delete the default item |
     | `Title`| bind to `{SalesOrderId}` |
-
-    !![MDK](img-1.6.png)
-
-    >`$(D,{CreatedAt},'','',{format:'medium'})` is an expression of how to format a date, end result would be like June 20, 2020. By default it will be formatted to the device's locale setting. More details on Date Formatter is available in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#date-formatter).
-
-    >!![MDK](img-1.6.gif)
-
-    >`$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` is an expression of how to format currency value, end result would be like €200.44. By default it will be formatted to the device's locale setting.  More details on Currency Formatter is available in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#currency-formatter).
-
-    >!![MDK](img-1.7.gif)
-
-7. In the **Search** section of the **Properties** pane, change both the **Search Enabled** property and **Barcode Scanner** property to **`true`**.
 
     !![MDK](img-1.7.png)
 
+    >`$(D,{CreatedAt},'','',{format:'medium'})` is an expression of how to format a date, end result would be like June 20, 2020. By default it will be formatted to the device's locale setting. More details on Date Formatter is available in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#date-formatter).
+
+    >!![MDK](img-1.8.gif)
+
+    >`$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` is an expression of how to format currency value, end result would be like €200.44. By default it will be formatted to the device's locale setting.  More details on Currency Formatter is available in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#currency-formatter).
+
+    >!![MDK](img-1.9.gif)
+
+7. In the **Search** section of the **Properties** pane, change both the **Search Enabled** property and **Barcode Scanner** property to **`true`**.
+
+    !![MDK](img-1.10.png)
+
 8. In the **Behavior** section of the **Properties** pane, select `DisclosureIndicator` to **`AccessoryType`** property.
 
-    !![MDK](img-1.8.png)
+    !![MDK](img-1.11.png)
 
-9. In the `EmptySection` of the **Properties** pane, provide **`No Orders Found`** for the **Caption** property.
+9. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
 
-    !![MDK](img-1.9.png)
+    !![MDK](img-1.12.png)    
+
+10. In the **Avatar Stack** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
+
+    !![MDK](img-1.13.png)  
+
+12. In the `EmptySection` of the **Properties** pane, provide **`No Orders Found`** for the **Caption** property.
+
+    !![MDK](img-1.14.png)
 
 [DONE]
 [ACCORDION-END]
@@ -117,15 +126,15 @@ This page will show related details for an order. In this page, you will add an 
 
 1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section Page** | **Next**.
 
-    !![MDK](img_1.1.png)
+    !![MDK](img-1.1.png)
 
 2. Enter the Page Name `SalesOrders_Details` and click **Next** and the **Finish** on the confirmation step.
 
-    !![MDK](img_2.2.png)
+    !![MDK](img-2.1.png)
 
 3. In the **Properties** pane set the Caption to **Order Details**.
 
-    !![MDK](img-2.3.png)
+    !![MDK](img-2.2.png)
 
 4. Next, you will add a **Static Key Value** container and its item **Key Value Item** to display information like sales order id, life cycle status & date of order creation name.
 
@@ -133,11 +142,11 @@ This page will show related details for an order. In this page, you will add an 
 
     In the Layout Editor, expand the **Controls** | **Static Container** section, drag and drop the **Static Key Value** control onto the page area.
 
-    !![MDK](img-2.4.png)
+    !![MDK](img-2.3.png)
 
 5. Now, add key value item to this container. In the Layout Editor, expand the **Controls** | **Static Items** section, drag and drop the **Key Value Item** control onto the page area.
 
-    !![MDK](img_2.5.png)
+    !![MDK](img-2.4.png)
 
     Provide the below information:
 
@@ -146,13 +155,13 @@ This page will show related details for an order. In this page, you will add an 
     | `KeyName`| `Order Number` |
     | `Value` | bind to `{SalesOrderId}` |
 
-    !![MDK](img-2.5.1.gif)
+    !![MDK](img-2.5.png)
 
     >Make sure to select values for the mentioned properties only from `SalesOrderHeader` entity. You may find similar values from other entities.
 
 6. Repeat the above step by adding 5 more **Key Value Item** on the page.
 
-    !![MDK](img_2.6.png)
+    !![MDK](img-2.6.png)
 
     Provide the below information:
 
@@ -183,68 +192,153 @@ This page will show related details for an order. In this page, you will add an 
 
     You should have final binding for all key value items as below:
 
-    !![MDK](img-2.6.1.png)
+    !![MDK](img-2.7.png)
 
 [VALIDATE_1]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 3: ](Create navigation actions)]
+[ACCORDION-BEGIN [Step 3: ](Navigate from Customer Order Page to Order Details Page)]
 
-1. Now, you will create two **Navigation actions** that opens the **Order List** and **Order Details** page when called.
+When user taps an Order on the Customer Orders page, it should navigate to related details page.
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
-
-    Provide the below information:
-
-    | Field | Value |
-    |----|----|
-    | `Action Name`| `NavToCustomers_Orders` |
-    | `PageToOpen` | Select `Customers_Orders.page` from the dropdown |
+1. In the `Customers_Orders.page`, select the Object Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
 
     !![MDK](img-3.1.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
+2. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-2. Repeat the above step and create a new navigation action.
+    !![MDK](img-3.2.png)   
 
-    Provide the below information:
+3. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+
+4. Provide the below information:
 
     | Field | Value |
     |----|----|
     | `Action Name`| `NavToSalesOrders_Details` |
     | `PageToOpen` | Select `SalesOrders_Details.page` from the dropdown |
 
-    !![MDK](img-3.2.png)
+    !![MDK](img-3.3.png)
 
     Click **Next** and then **Finish** on the confirmation step.
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 4: ](Set the OnPress of the customer Orders)]
+[ACCORDION-BEGIN [Step 4: ](Display top 5 orders in customer detail page)]
 
-Go back to the `Customers_Orders.page` and set the `OnPress` event of the Object Table. You will link the Object Table to the `NavToSalesOrders_Details.action` so that when an end-user selects a order, the `SalesOrders_Detail.page` will open. MDK automatically passes the selected order to the details page.
+1. You will add an **Object Table** compound to display top 5 orders information in the `Customers_Detail.page`.
 
-In `Customers_Orders.page`, select the Object Table, **click** the 3 dots icon under the **Events** tab for the `OnPress` event to open the **Object Browser**.
+    In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Object Table** control onto the page area.
 
-Double-click the `NavToSalesOrders_Details.action` and click **OK** to set it as the `OnPress` Action.
+    !![MDK](img-4.1.gif)
 
-!![MDK](img-4.png)
+2. In the **Properties** pane, provide below information:
+   
+    | Field | Value |
+    |----|----|
+    | `Service`| Select `SampleServiceV2.service` from the dropdown |
+    | `Entity` | Select `{@odata.readLink}/SalesOrders` from the dropdown |
+    | `QueryOptions`| `$top=5&$orderby=CreatedAt desc` |
+
+    !![MDK](img-4.2.png)
+
+    >The **`odata.readLink`** annotation contains the read URL of the entity or collection.
+
+    > **`SalesOrders`** is a navigation property in Customer entity to `SalesOrderHeader` entity. You can find this information in OData service metadata document.
+
+    >!![MDK](img-4.3.png)
+
+    >**`QueryOptions`** expression will filter order entries returned in descending when sorted by the order creation date property.
+
+3. Now, start binding Object Table properties with `SalesOrderHeaders` entity set properties.
+
+    In the **Appearance** section of the **Properties** pane, provide the below information:
+    
+    | Field | Value |
+    |----|----|
+    | `Description`| Remove the default value and leave it blank  |
+    | `DetailImage`| Remove the default value and leave it blank  |
+    | `Footnote` | Remove the default value and leave it blank  |
+    | `PreserveIconStackSpacing`| select `false` from the dropdown |
+    | `ProgressIndicator` | Remove the default value and leave it blank  |
+    | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
+    | `Subhead` | `$(D,{CreatedAt},'','',{format:'medium'})` |
+    | `Substatus`| bind to `{CurrencyCode}` |
+    | `Tags` | Click the `item0` and click the trash icon to delete the default item |
+    | `Title`| bind to `{SalesOrderId}` |
+
+    !![MDK](img-4.4.png)
+
+4. In the **Behavior** section of the **Properties** pane, select `DisclosureIndicator` to **`AccessoryType`** property.
+
+    !![MDK](img-4.5.png)
+
+5. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
+
+    !![MDK](img-1.12.png)    
+
+6. In the **Avatar Stack** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
+
+    !![MDK](img-1.13.png)  
+
+7. In the `EmptySection` of the **Properties** pane, provide  **`No Customer Orders Found`** to **Caption** property.
+
+    !![MDK](img-4.6.png)
+
+8. You may also want to open `SalesOrders_Detail.page` when clicking on any order in `Customers_Detail.page`. For this, you will set the  `OnPress` event of the **Object Table** and link it to `NavToSalesOrders_Details.action` so that when an end-user selects a order, the Order Details page will open. MDK automatically passes the selected order to the details page.
+
+    In `Customers_Detail.page`, select the Object Collection, click the 3 dots icon under the **Events** tab for the `OnPress` event to open the **Object Browser**.
+
+    Double-click the `NavToSalesOrders_Details.action` and click **OK** to set it as the `OnPress` action.
+
+    !![MDK](img-4.7.png)
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 5: ](Write JavaScript logic to calculate total number of orders)]
+[ACCORDION-BEGIN [Step 5: ](Add Header control to orders grid)]
 
-You will show a total count of orders for a customer in `Customers_Detail.page`. You will write a JavaScript logic for this calculation.
+1. For orders grid area, you will add a header to display some text label in `Customers_Detail.page`.
 
-1. Right-click the **Rules** folder | **MDK: New Rule File** | select **Empty JS Rule**.
+    In the Layout Editor, expand the **Controls** | **Section Bar** section, drag and drop the **Header** control above the order grid area.
 
-2. Enter the Rule name `Customers_OrderCount`, press `Enter`.
+    !![MDK](img-5.1.gif)
 
-    !![MDK](img_5.2.png)
+2. Provide the below information:
 
-3. Copy and paste the following code.
+    | Property | Value |
+    |----|----|
+    | `Caption`| `Customer Orders` |
+
+    !![MDK](img-5.2.png)
+
+    >You can find more details about [Header control](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Common/Header.schema.html).
+
+[DONE]
+[ACCORDION-END]
+
+[ACCORDION-BEGIN [Step 6: ](Add Footer control to show total order count)]
+
+1. For orders grid area, you will also add a footer to display total count of orders for a customer.
+
+    In the Layout Editor, expand the **Controls** | **Section Bar** section, drag and drop the **Footer** control above the order grid area.
+
+    !![MDK](img-6.1.gif)
+
+2. To show a total count of orders for a customer, you will write a JavaScript logic for this calculation. Click `Create a rule` option for `AttributeLabel` property of the Footer control.
+
+    !![MDK](img-6.2.png)
+
+3. Keep the default selection for the *Object Type* as Rule and *Folders* path.
+
+    !![MDK](img-6.3.png)
+   
+4. Enter the Rule name `Customers_OrderCount`, press `Enter`.
+
+    !![MDK](img-6.4.png)
+
+5. Copy and paste the following code.
 
     ```JavaScript
     export default function CustomerOrderCount(context) {
@@ -257,195 +351,114 @@ You will show a total count of orders for a customer in `Customers_Detail.page`.
     }    
     ```
 
-4. Save the changes to the `Customers_OrderCount.js` file.
+6. Save the changes to the `Customers_OrderCount.js` file.
 
-[DONE]
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 6: ](Display top 5 orders in customer detail page)]
-
-1. You will add an **Object Table** compound to display top 5 orders information in the `Customers_Detail.page`.
-
-    In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Object Table** control onto the page area.
-
-    !![MDK](img-6.1.gif)
-
-2. In the **Properties** pane, provide below information:
-
-    |----|----|
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
-    | `Entity` | Select `{@odata.readLink}/SalesOrders` from the dropdown |
-    | `QueryOptions`| `$top=5&$orderby=CreatedAt desc` |
-
-    !![MDK](img-6.2.png)
-
-    >The **`odata.readLink`** annotation contains the read URL of the entity or collection.
-
-    > **`SalesOrders`** is a navigation property in Customer entity to `SalesOrderHeader` entity. You can find this information in OData service metadata document.
-
-    >!![MDK](img_6.2.1.png)
-
-    >**`QueryOptions`** expression will filter order entries returned in descending when sorted by the order creation date property.
-
-3. Now, start binding Object Table properties with `SalesOrderHeaders` entity set properties.
-
-    In the **Appearance** section of the **Properties** pane, provide the below information:
-
-    |----|----|
-    | `Description`| Remove the default value and leave it blank  |
-    | `DetailImage`| Remove the default value and leave it blank  |
-    | `Footnote` | Remove the default value and leave it blank  |
-    | `PreserveIconStackSpacing`| select `false` from the dropdown |
-    | `ProgressIndicator` | Remove the default value and leave it blank  |
-    | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
-    | `Subhead` | `$(D,{CreatedAt},'','',{format:'medium'})` |
-    | `Substatus`| bind to `{CurrencyCode}` |
-    | `Title`| bind to `{SalesOrderId}` |
-
-    !![MDK](img-6.3.png)
-
-4. In the **Behavior** section of the **Properties** pane, select `DisclosureIndicator` to **`AccessoryType`** property.
-
-    !![MDK](img-6.4.png)
-
-5. In the `EmptySection` of the **Properties** pane, provide  **`No Customer Orders Found`** to **Caption** property.
-
-    !![MDK](img-6.5.png)
-
-6. You may also want to open `SalesOrders_Detail.page` when clicking on any order in `Customers_Detail.page`. For this, you will set the  `OnPress` event of the **Object Table** and link it to `NavToSalesOrders_Details.action` so that when an end-user selects a order, the Order Details page will open. MDK automatically passes the selected order to the details page.
-
-    In `Customers_Detail.page`, select the Object Collection, click the 3 dots icon under the **Events** tab for the `OnPress` event to open the **Object Browser**.
-
-    Double-click the `NavToSalesOrders_Details.action` and click **OK** to set it as the `OnPress` action.
-
-    !![MDK](img-6.6.png)
-
-[DONE]
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 7: ](Add Header control to  orders grid)]
-
-1. For orders grid area, you will add a header to display some text label in `Customers_Detail.page`.
-
-    In the Layout Editor, expand the **Controls** | **Section Bar** section, drag and drop the **Header** control above the order grid area.
-
-    !![MDK](img-7.1.gif)
-
-2. Provide the below information:
+7. Switch back to the `Customers_Detail.page` and provide the below information for other properties of the Footer control:
 
     | Property | Value |
     |----|----|
-    | `Caption`| `Customer Orders` |
-
-    !![MDK](img-7.2.png)
-
-    >You can find more details about [Header control](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Common/Header.schema.html).
-
-[DONE]
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 8: ](Add Footer control to show total order count)]
-
-1. For orders grid area, you will also add a footer to display total count of orders for a customer.
-
-    In the Layout Editor, expand the **Controls** | **Section Bar** section, drag and drop the **Footer** control above the order grid area.
-
-    !![MDK](img-8.1.gif)
-
-2. Provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Attribute Label`| click link icon, select **Rules** from dropdown and bind it to `Customers_OrderCount.js` |
     | `Caption`| `See All` |
     | `FooterStyle`| Select `attribute` from the dropdown |
     | `AccessoryType`| Select `DisclosureIndicator` from the dropdown |
 
-    !![MDK](img-8.2.png)
+    !![MDK](img-6.5.png)
 
     >You can find more details about [Footer control](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Common/Footer.schema.html).
 
-3. You may also want to open **Customer Orders** page when clicking **See All**. For this, you will set the `OnPress` event of the **Footer** control and link it to `NavToCustomers_Orders.action` so that when an end-user clicks on **See All**, the **Customer Orders** page will open.
+8.  You may also want to open **Customer Orders** page when clicking **See All** to see a complete list of orders belong to a particular customer. 
+    
+    Navigate to the **Events** tab for the Footer control. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
 
-    In `Customers_Detail.page`, select the Footer control **See All**, click the 3 dots icon under the **Events** tab for the `OnPress` property to open the **Object Browser**.
+    !![MDK](img-6.6.png)
 
-    Double-click the `NavToCustomers_Orders.action` and click **OK** to set it as the `OnPress` Action.
+9. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    !![MDK](img-8.3.png)
+    !![MDK](img-3.2.png)  
+
+10. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+
+11. Provide the below information:
+
+    | Field | Value |
+    |----|----|
+    | `Action Name`| `NavToCustomers_Orders` |
+    | `PageToOpen` | Select `Customers_Orders.page` from the dropdown |    
+    
+    !![MDK](img-6.7.png)
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 9: ](Deploy the application)]
+[ACCORDION-BEGIN [Step 7: ](Deploy the application)]
 
 Deploy the updated application to your MDK client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-    !![MDK](img-9.1.png)
+    !![MDK](img-7.1.png)
 
 2. Select deploy target as **Mobile & Cloud**.
 
-    !![MDK](img-9.2.png)
+    !![MDK](img-7.2.png)
 
     You should see success message for both deployments.
 
-    !![MDK](img-9.3.png)
+    !![MDK](img-7.3.png)
 
     >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
 
-    >!![MDK](img-4.3.1.png)
+    >!![MDK](img-7.4.png)
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 10: ](Run the app)]
+[ACCORDION-BEGIN [Step 8: ](Run the app)]
 
 [OPTION BEGIN [Android]]
 
-1. Re-launch the app on your device, you may asked to authenticate with passcode or Biometric authentication. When you see a confirmation pop-up, tap **OK**. Tap **Customer List**.
+1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-    ![MDK](img_10.1.png)
+    ![MDK](img-8.1.png)
 
     Click a customer record, you will see the **Customer Orders** area in customer detail page and also total count of orders.
 
-    ![MDK](img_10.2.png)
+    ![MDK](img-8.2.png)
 
     >If you see _No Customer Orders Found_ message, try with other customer record.
 
 2. Tapping on any order navigates to its details page.
 
-    ![MDK](img_10.3.png)
+    ![MDK](img-8.3.png)
 
-3. Navigate back to **Customer Detail** page, tap **See All**, which navigates to the **Customer Orders** page.  
+3. Navigate back to **Details** page, tap **See All**, which navigates to the **Customer Orders** page.  
 
-    ![MDK](img_10.4.png)
+    ![MDK](img-8.4.png)
 
-    ![MDK](img_10.5.png)
+    ![MDK](img-8.5.png)
 
 [OPTION END]
 
 [OPTION BEGIN [iOS]]
 
-1. Re-launch the app on your device, you may asked to authenticate with passcode or Biometric authentication. When you see a confirmation pop-up, tap **OK**.
+1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-    ![MDK](img_10.6.png)
+    ![MDK](img-8.6.png)
 
-2. Tap **Customer List** | click a customer record. You will see the **Customer Orders** area in customer detail page and also total count of orders.
+2. Tap **Customers** | click a customer record. You will see the **Customer Orders** area in customer detail page and also total count of orders.
 
-    ![MDK](img_10.7.png)
+    ![MDK](img-8.7.png)
 
     >If you see _No Customer Orders Found_ message, try with other customer record.
 
 3. Tapping on any order navigates to its details page.
 
-    ![MDK](img_10.8.png)
+    ![MDK](img-8.8.png)
 
-4. Navigate back to **Customer Detail** page, tap **See All**, which navigates to the **Customer Orders** page.  
+4. Navigate back to **Details** page, tap **See All**, which navigates to the **Customer Orders** page.  
 
-    ![MDK](img_10.9.png)
+    ![MDK](img-8.9.png)
 
-    ![MDK](img_10.10.png)
+    ![MDK](img-8.10.png)
 
 [OPTION END]
 
@@ -453,27 +466,27 @@ Deploy the updated application to your MDK client.
 
 1. Either click the highlighted button or refresh the web page to load the changes.
 
-    !![MDK](img-10.11.png)
+    !![MDK](img-8.11.png)
 
     >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
 
-    >!![MDK](img-10.12.png)
+    >!![MDK](img-8.12.png)
 
-2. Click **Customer List** | click a customer record. You will see the **Customer Orders** area in customer detail page and also total count of orders.
+2. Click **Customers** | click a customer record. You will see the **Customer Orders** area in customer detail page and also total count of orders.
 
-    !![MDK](img_10.13.png)
+    !![MDK](img-8.13.png)
 
     >If you see _No Customer Orders Found_ message, try with other customer record.
 
 3. Clicking on any order navigates to its details page.
 
-    !![MDK](img_10.14.png)
+    !![MDK](img-8.14.png)
 
 4. Navigate back to **Customer Detail** page, tap **See All**, which navigates to the **Customer Orders** page.
 
-    !![MDK](img_10.15.png)
+    !![MDK](img-8.15.png)
 
-    !![MDK](img_10.16.png)
+    !![MDK](img-8.16.png)
 
 [OPTION END]
 

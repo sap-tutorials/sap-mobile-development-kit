@@ -17,10 +17,9 @@ author_profile: https://github.com/jitendrakansal
 
 You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/master/3-Enhance-Your-First-MDK-App-with-Additional-Functionalities/2-cp-mobile-dev-kit-delete-customer) to start with this tutorial.
 
-
 ---
 
-![MDK](img_1.gif)
+![MDK](img-1.0.gif)
 
 [ACCORDION-BEGIN [Step 1: ](Define client log policy in Mobile Services cockpit )]
 
@@ -30,7 +29,7 @@ In this step, you will enable client log upload policy in **SAP Mobile Services 
 
 1. Login to [Mobile Services Cockpit](fiori-ios-hcpms-setup), click `com.sap.mdk.demo` | **Mobile Client Log Upload**.
 
-    !![MDK](img_1.1.png)
+    !![MDK](img-1.1.png)
 
 2. Check **Log Upload** option and click **Save**.
 
@@ -42,6 +41,7 @@ In this step, you will enable client log upload policy in **SAP Mobile Services 
 
 [DONE]
 [ACCORDION-END]
+
 
 [ACCORDION-BEGIN [Step 2: ](Create log actions)]
 
@@ -57,13 +57,13 @@ You will create 3 actions:
 
 >You can find more details about [MDK Log Actions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/Logger/LogMessage.schema.html).
 
-!![MDK](img_2.png)
+!![MDK](img-2.1.png)
 
 1. Create a log action of type `SetState`:
 
     Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Log Actions** in **Category** | click **Log Action** | **Next**.
 
-    !![MDK](img_2.1.png)
+    !![MDK](img-2.2.png)
 
     Provide the below information:
 
@@ -73,7 +73,7 @@ You will create 3 actions:
     | `Type` | Select `SetState` from the dropdown |
     | `LoggerState`| Select `On` from the dropdown |
 
-    !![MDK](img_2.1.2.png)
+    !![MDK](img-2.3.png)
 
     Click **Next** and then **Finish** on the confirmation step.
 
@@ -89,7 +89,7 @@ You will create 3 actions:
     | `Type` | Select `SetLevel` from the dropdown |
     | `Level`| Select `Trace` from the dropdown |
 
-    !![MDK](img_2.2.png)
+    !![MDK](img-2.4.png)
 
     Click **Next** and then **Finish** on the confirmation step.
 
@@ -104,7 +104,7 @@ You will create 3 actions:
     | `Action Name`| `LogUpload` |
     | `Type` | Select `Upload` from the dropdown |
 
-    !![MDK](img_2.3.png)
+    !![MDK](img-2.5.png)
 
     Click **Next** and then **Finish** on the confirmation step.
 
@@ -115,7 +115,7 @@ You will create 3 actions:
 
 Double click the `LogSetState.action` file | expand **Common Action Properties** | click the link icon for **Success Action** and bind it to  `LogSetLevel.action`
 
-!![MDK](img-3.png)
+!![MDK](img-3.1.png)
 
 [DONE]
 [ACCORDION-END]
@@ -128,19 +128,24 @@ You will bind `LogSetState.action` at success of  `InitializeOffline.action`.
 
 Navigate to `DemoSampleApp` | `Actions` | `Service` | `InitializeOffline.action` | scroll-down and expand **Common Action Properties** section | click the link icon for **Success Action** and bind it to  `LogSetState.action`
 
-!![MDK](img-4.gif)
-
+!![MDK](img-4.1.gif)
 
 [DONE]
 [ACCORDION-END]
 
 [ACCORDION-BEGIN [Step 5: ](Define success/failure messages for Log Upload action)]
 
-You will define two message actions for displaying success or failure when _Log upload action_ is triggered. Later, you will bind these actions in **Common Action Properties** of `LogUpload.action`.
+You will define two message actions for displaying success or failure when _Log upload action_ is triggered.
 
-1. You will create a success message action.
+1. Expand the *Common Action Properties* section in the `LogUpload.action` and select the `Create a rule/action` for its Success Action.
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+    !![MDK](img-5.1.png)
+
+2. Keep the default selection for the *Object Type* as Action and *Folders* path.
+
+    !![MDK](img-5.2.png)   
+
+3. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
 
     Provide the below information:
 
@@ -154,13 +159,19 @@ You will define two message actions for displaying success or failure when _Log 
     | `IsIconHidden`| Select `true` from the dropdown |
     | `Animated` | Select `true` from the dropdown |
 
-    !![MDK](img_5.1.png)
+    !![MDK](img-5.3.png)
 
     Click **Next** and then **Finish** on the confirmation step.
 
-2. Create a failure message action.
+4. Switch back to the `LogUpload.action` tab and   create a message action displaying error in case of the Log Upload failure. In the `LogUpload.action`, provide value as `logupload` for the *Action Result* and click the `Create a rule/action` icon for the *Failure Action*.
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+    !![MDK](img-5.4.png)
+
+ 5. Keep the default selection for the *Object Type* as Action and *Folders* path.
+
+    !![MDK](img-5.2.png)      
+
+6. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
 
     Provide the below information:
 
@@ -168,29 +179,27 @@ You will define two message actions for displaying success or failure when _Log 
     |----|----|
     | `Action Name`| `LogUploadFailure` |
     | `Type` | Select `Message` from the dropdown |
-    | `Message`| `Uploading log file failed` |
-    | `Title`| `Log Upload Failed` |
+    | `Message`| `Failed to upload client logs - {#ActionResults:logupload/error}` |
+    | `Title`| `Upload Client Logs` |
     | `OKCaption` | `OK` |
     | `OnOK` | `--None--` |
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--` |
 
-    !![MDK](img_5.2.png)
+    !![MDK](img-5.5.png)
 
     Click **Next** and then **Finish** on the confirmation step.
 
-3. Bind both actions in **Common Action Properties** of `LogUpload.action`.
+    >`logupload` is the Action Result value of the `LogUpload.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the failure message.
 
-    Double click the `LogUpload.action` and provide the below information:
+7. Let's show an Activity Indicator in the MDK client when logs are being uploaded to the SAP Mobile Services. Switch back to the `LogUpload.action` tab and provide below information.
 
     | Property | Value |
     |----|----|
-    | `Success Action`| Click the link icon and bind it to `LogUploadSuccessful.action`  |
-    | `Failure Action`| Click the link icon and bind it to `LogUploadFailure.action` |
     | `Show Activity Indicator` | Select `true` from the dropdown ||
     | `Activity Indicator Text`|  `Uploading Logs...` |
 
-    !![MDK](img-5.3.png)
+    !![MDK](img-5.6.png)
 
 [DONE]
 [ACCORDION-END]
@@ -201,7 +210,7 @@ You will add a toolbar item to the _main page_ called **Upload Logs**. You will 
 
 1. In `Main` page, drag and drop an **Toolbar Item** to the bottom right of the page.
 
-    !![MDK](img_6.1.png)
+    !![MDK](img-6.1.png)
 
 2. Provide the below information:
 
@@ -241,7 +250,7 @@ Deploy the updated application to your MDK client.
 
     >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
 
-    >!![MDK](img-4.3.1.png)
+    >!![MDK](img-7.4.png)
 
 [DONE]
 [ACCORDION-END]
@@ -250,29 +259,33 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [Android]]
 
-1. Re-launch the app on your device, you may asked to authenticate with passcode or Biometric authentication. You will see a _Confirmation_ pop-up, tap **OK**.
+1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+
+    ![MDK](img-8.1.png)
 
     Once the reinitialization is completed, app starts gathering the client logs.
 
 2. Tap **Upload Logs** to upload client logs from app to SAP Mobile Services.
 
-    ![MDK](img_8.1.png)
+    ![MDK](img-8.2.png)
 
-    ![MDK](img_8.2.png)
+    ![MDK](img-8.3.png)
 
 [OPTION END]
 
 [OPTION BEGIN [iOS]]
 
-1. Re-launch the app on your device, you may asked to authenticate with passcode or Biometric authentication. You will see a _Confirmation_ pop-up, tap **OK**.
+1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-    Once the reinitialization is completed, app starts gathering the client logs.
+    ![MDK](img-8.4.png)
+
+    Once the re-initialization is completed, app starts gathering the client logs.
 
 2. Tap **Upload Logs** to upload client logs from app to SAP Mobile Services.
 
-    ![MDK](img_8.3.png)
+    ![MDK](img-8.5.png)
 
-    ![MDK](img_8.4.png)
+    ![MDK](img-8.6.png)
 
 [OPTION END]
 
@@ -281,15 +294,11 @@ Deploy the updated application to your MDK client.
 
 [ACCORDION-BEGIN [Step 9: ](Examine uploaded logs in Mobile Services cockpit)]
 
-Open SAP Mobile Services Cockpit, click **Mobile Applications** | **Native/Hybrid** | click `com.sap.mdk.demo` app | **Mobile Client Log Upload** | **Log Files**.
-
-!![MDK](img-9.png)
-
-A log file is created for each upload. All the uploaded files, including all levels, not just error or fatal will be listed here.
-
-You can view any Error and Fatal client logs under *Logs* tab.
+Open SAP Mobile Services Cockpit, click **Mobile Applications** | **Native/MDK** | click `com.sap.mdk.demo` app | **Mobile Client Log Upload** | **Log Files**.
 
 !![MDK](img-9.1.png)
+
+A log file is created for each upload. All the uploaded files, including all levels, not just error or fatal will be listed here.
 
 >Check [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/config.html) for more details about Uploading and Viewing Client Logs.
 

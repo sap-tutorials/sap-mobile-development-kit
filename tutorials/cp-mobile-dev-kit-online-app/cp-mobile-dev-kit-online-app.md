@@ -22,7 +22,6 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
-
 [ACCORDION-BEGIN [Step 1: ](Get familiar with use case)]
 
 With Mobile Development Kit, you can also create applications that are online or always connected and make calls to the backend servers for each action you take in the application.
@@ -38,13 +37,13 @@ This step includes creating the mobile development kit project in the editor.
 
 2. Click **Start from template** on Welcome page.
 
-    !![MDK](img-2.2.png)
+    !![MDK](img-2.1.png)
 
     >If you do not see the Welcome page, you can access it via **Help** menu or via **View** menu > Find Command > Welcome.
 
 3. Select **MDK Project** and click **Start**.
 
-    !![MDK](img-2.3.png)
+    !![MDK](img-2.2.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
@@ -53,18 +52,18 @@ This step includes creating the mobile development kit project in the editor.
     | Field | Value |
     |----|----|
     | `MDK Template Type`| Select `Base` from the dropdown |
-    | `Your Project Name` | Provide a name of your choice. `MDKOnlineApp` is used for this tutorial | 
+    | `Your Project Name` | Provide a name of your choice. `MDKOnlineApp` is used for this tutorial |
     | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
-    !![MDK](img-2.4.png)
+    !![MDK](img-2.3.png)
 
     >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Login icon and select the org & space where you have set up the initial configuration for your MDK app.
 
-    >!![MDK](img-2.4.1.png)
+    >!![MDK](img-2.4.png)
 
 
 5. In *Service configuration* step, provide the below information and click **Next**:
@@ -112,7 +111,6 @@ These are the metadata definitions available in the editor and the format in whi
 [DONE]
 [ACCORDION-END]
 
-
 [ACCORDION-BEGIN [Step 4: ](Deploy the application)]
 
 So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services to use in the Mobile client.
@@ -127,12 +125,11 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    !![MDK](img-4.4.png)
+    !![MDK](img-4.3.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    !![MDK](img-4.3.png)
-
+    !![MDK](img-4.4.png)
 
 [DONE]
 [ACCORDION-END]
@@ -164,7 +161,7 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 
 After you accept app update, you will see **Main** page being displayed and application data service is initialized.
 
-![MDK](img_6.1.png)
+![MDK](img-6.1.png)
 
 [OPTION END]
 

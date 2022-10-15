@@ -24,12 +24,11 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ---
 
-
 To extend the functionality, or customize the look and feel, and behavior of your client app, you can use the existing `NativeScript` plugins like nativescript-geolocation, nativescript-nfc etc. , add this to the client and reference it from a rule.
 
 In this tutorial, you will use the existing `NativeScript` plugin nativescript-geolocation to capture the device location: latitude & longitude.
 
-![MDK](img_8.2.png)
+![MDK](img-1.0.png)
 
 [ACCORDION-BEGIN [Step 1: ](Create a new MDK project in SAP Business Application Studio)]
 
@@ -43,7 +42,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
 3. Select **MDK Project** and click **Next**.
 
-    !![MDK](img-1.3.png)
+    !![MDK](img-1.2.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
@@ -57,7 +56,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |  
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |      
 
-    !![MDK](img-1.4.png)
+    !![MDK](img-1.3.png)
 
     >The _MDK Empty Project_ template creates a Logout action, Close page action, rule and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/webide.html#creating-a-new-project).
 
@@ -70,29 +69,29 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
   1. Click the `Main.page`, drag & drop **Static Key Value** container to the page area.
 
-    !![MDK](img-3.1.gif)
+    !![MDK](img-2.1.gif)
 
   2. In **Properties** | **Layout**, change `NumberOfColumns` to 1.
 
-    !![MDK](img_3.2.png)
+    !![MDK](img-2.2.png)
 
   3. Drag & drop **Key Value Item** to the container.
 
-    !![MDK](img_3.3.gif)
+    !![MDK](img-2.3.gif)
 
-  4. Set `KeyName`as `Coordinates`. To bind it's value property, create a new rule. You will create a new JavaScript file to capture the device location: latitude & longitude.
+  4. Set `KeyName`as `Coordinates`. To bind it's value property, click on `create a new rule`. You will create a new JavaScript file to capture the device location: latitude & longitude.
 
-    !![MDK](img-3.4.png)
+    !![MDK](img-2.4.png)
 
-  5. Keep the default selection for *Object Type* and *Folders*. Click **OK**.
+  5. Keep the default selection for *Object Type* as **Rule** and *Folders*. Click **OK**.
 
-    !![MDK](img-3.5.png)
+    !![MDK](img-2.5.png)
 
     >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
    6. Enter the Rule name `GetCoordinates`, click **Next** and then **Finish** on the confirmation step.
 
-    !![MDK](img_2.2.png)
+    !![MDK](img-2.6.png)
 
    7. Replace the generated snippet with below code.
 
@@ -133,7 +132,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 4: ](Enable the Loading Indicator on Sectioned Table in the Main page)]
+[ACCORDION-BEGIN [Step 3: ](Enable the Loading Indicator on Sectioned Table in the Main page)]
 
 When the Main page loads, you can display a loading indicator informing about something is being processed before the data appears.  
 
@@ -144,7 +143,7 @@ Enable the loading indicator at the Sectioned Table level by providing the follo
 | `Enabled`| `true` |
 | `Text`| Bind it to rule `Loading, please wait...` |
 
-!![MDK](img-3.4.1.png)
+!![MDK](img-3.1.png)
 
 [DONE]
 [ACCORDION-END]
@@ -155,11 +154,11 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
 
 1. Navigate **File** menu | **Settings** | **Open Preferences**.
 
-    !![MDK](img_3.5.png)
+    !![MDK](img-4.1.png)
 
 2. Search with `mdk`, click **Edit in settings.json**.
 
-    !![MDK](img-3.6.png)
+    !![MDK](img-4.2.png)
 
 3. Include below references in `mdk.bundlerExternals` and save the changes.
 
@@ -169,7 +168,7 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
     "@nativescript/geolocation"
     ```
 
-     !![MDK](img-3.7.png)        
+     !![MDK](img-4.3.png)        
 
 [DONE]
 [ACCORDION-END]
@@ -188,22 +187,22 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 3. Select **Mobile Services Landscape**.
 
-    !![MDK](img-5.3.1.png)    
+    !![MDK](img-5.3.png)    
 
 4. Select application from **Mobile Services**.
 
-    !![MDK](img-5.3.png)
+    !![MDK](img-5.4.png)
 
     If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    !![MDK](img-4.4.png)    
+    !![MDK](img-5.5.png)    
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    !![MDK](img-5.4.png)
+    !![MDK](img-5.6.png)
 
     >When deploying from VS Code to App Update and using an MDK 6.0+ client, you need to set the TS Target to use es6 instead of the default es5 version. See below for the setting in VS Code where you change it for es6.
-    !![MDK](img-4.3.1.png)
+    !![MDK](img-5.7.png)
 
 [DONE]
 [ACCORDION-END]
@@ -228,7 +227,7 @@ In order to use the existing `NativeScript` plugin in MDK client, you will need 
     }
     ```
 
-!![MDK](img-5.png)
+!![MDK](img-6.1.png)
 
 [DONE]
 [ACCORDION-END]
@@ -248,7 +247,7 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
                               └── AndroidManifest.xml
 
 
-      !![MDK](img-6.png)
+      !![MDK](img-7.1.png)
 
     >Files specified in the `.mdkproject/App_Resources_Merge` folder override a part of the files in `<generated-project>/app/App_Resources`. You can find more details about it in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/app-resources-merge.html).
 
@@ -291,7 +290,6 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
 [ACCORDION-END]
 
 
-
 [ACCORDION-BEGIN [Step 8: ](Create & Run the MDK client)]
 
 [OPTION BEGIN [Android]]
@@ -300,11 +298,11 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
 
 2. After you have accepted the app update, allow your app to access your location.
 
-    ![MDK](img_8.1.png)
+    ![MDK](img-8.1.png)
 
     In Main page, you will see device's current location.
 
-    ![MDK](img_8.2.png)
+    ![MDK](img-1.0.png)
 
 [OPTION END]
 
@@ -314,11 +312,11 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
 
 2. After you have accepted the app update, allow your app to access your location.
 
-    ![MDK](img_8.3.png)
+    ![MDK](img-8.2.png)
 
     In Main page, you will see device's current location.
 
-    ![MDK](img_8.4.png)
+    ![MDK](img-8.3.png)
 
 [OPTION END]
 

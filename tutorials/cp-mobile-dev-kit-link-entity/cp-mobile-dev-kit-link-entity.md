@@ -31,7 +31,7 @@ To create an entity and then link it to another entity, you need to carry out th
 *  Create a navigation action to show order creation page from Customer detail page
 *  Implement data subscription to update count value when a new sales order is created
 
-![MDK](img_1.gif)
+![MDK](img-1.0.gif)
 
 [ACCORDION-BEGIN [Step 1: ](Create new page for new Sales order record)]
 
@@ -39,13 +39,13 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
 1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell Page** | **Next**.
 
-    !![MDK](img_1.1.png)
+    !![MDK](img-1.1.png)
 
     >A Form Cell Page is suitable for pages that generate new objects or modify existing objects. It includes a form cell container by default. You can add form sections, multiple containers or action controls to this page. Under each container section, you can add various container items.
 
 2. Enter the Page Name `SalesOrderHeaders_Create` and click **Next** and the **Finish** on the Confirmation step.
 
-    !![MDK](img_1.2.png)
+    !![MDK](img-1.2.png)
 
 3. In the Properties pane, set the **Caption** to **Create Order**.
 
@@ -55,11 +55,11 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
     In the Layout Editor, expand the **Controls** group. Drag and drop a **Simple Property** onto the Page area.
 
-    !![MDK](img_1.4.gif)
+    !![MDK](img-1.4.gif)
 
 5. Drag and drop five additional **Simple Property** controls and one **Date Picker** control onto the page so you have seven total controls.
 
-    !![MDK](img_1.5.png)
+    !![MDK](img-1.5.png)
 
 6. Select the first **Simple Property control** and provide the below information:
 
@@ -144,7 +144,7 @@ Now, you will add a button on the Create Order page and set its `onPress` to `Cl
 
     >Action Bar Item is a button that users can use to fire actions when pressed. You can add an Action Bar Item only to the Action Bar (at the top of the page).
 
-    !![MDK](img_2.1.png)
+    !![MDK](img-2.1.png)
 
 2. In the **Properties** pane, click the **link icon** to open the object browser for the **System Item** property.
 
@@ -165,32 +165,127 @@ Now, you will add a button on the Create Order page and set its `onPress` to `Cl
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 3: ](Create navigation action)]
+[ACCORDION-BEGIN [Step 3: ](Store the created data locally)]
 
-1. Now, create a navigation action that will open the `SalesOrderHeaders_Create.page` when executed.
+The next step is to store newly created record locally for an offline application or send the new record directly back to the backed for online applications.
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+* You will add an Action Bar item on the `SalesOrderHeaders_Create.page` that will call an OData Create Entity action to save the record
+* You may want to close the page when the OData Create Entity action is successful
+* You may want to show a failure message if the OData Create Entity action fails to save the changes
 
-    !![MDK](img_3.1.png)
+First, add an action bar item on the `Customers_Create.page`.
 
-2. Provide the below information:
+1.  In `SalesOrderHeaders_Create.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
 
-    | Property | Value |
-    |----|----|
-    | `Action Name`| `NavToSalesOrderHeaders_Create` |
-    | `PageToOpen` | Select `SalesOrderHeaders_Create.page` from the dropdown |
-    | `ModalPage`| Select `true` from the dropdown |
+   !![MDK](img-3.1.png)
+
+2. Click the **link** icon to open the object browser for the **System Item** property. Double-click the **Save** type and click **OK**.
 
     !![MDK](img-3.2.png)
 
-3. Click **Next** and then **Finish** on the confirmation step.
+3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
 
-[DONE]
+    !![MDK](img-3.3.png)
+
+4. Keep the default selection for the *Object Type* as Action and *Folders* path.
+
+    !![MDK](img-3.4.png)      
+
+5. Choose **MDK Data Actions** in **Category** | click **OData Action** | **Next**.
+
+    !![MDK](img-3.5.png)  
+
+6. In **Operation and Service Selection** step, provide the below information:
+
+    | Property | Value |
+    |----|----|
+    | `Action Name`| `SalesOrderHeaders_CreateEntity` |
+    | `Type` | Select `CreateRelatedEntity` from the dropdown |
+    | `Service`| Select `SampleServiceV2.service` from the dropdown |
+    | `EntitySet` | Select `SalesOrderHeaders` from the dropdown |
+
+    !![MDK](img-3.6.png)
+
+    >`CreateRelatedEntity` action creates the new entity against the navigation property of an existing entity with which the relationship is to be established. You can find more details about [Create Related Entity Action](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ODataService/CreateRelatedEntity.schema.html).
+
+7. Click **Next**.
+
+8. In **Parent Link and Properties Selection** step, provide the below information:
+
+    | Property | Value |
+    |----|----|
+    | `ParentLink`| `LinkItem Reference` |
+    | `Target EntitySet` | Select `Customers` from the dropdown |
+    | `ReadLink`| click link icon and double click `readLink` |
+    | `Property` | Select `SalesOrders` from the dropdown |
+
+    !![MDK](img-3.7.png)
+
+    >In [Mobile Services sample backend](cp-mobile-dev-kit-ms-setup), click **Metadata URL** and you will find `SalesOrders` navigation property for `Customers` entity.
+
+9. Since in `SalesOrderHeaders_Create.page`, we have defined seven properties (Currency Code, Net Amount, Tax Amount, Gross Amount, Life Cycle Status, Life Cycle Status Name and Creation Date) to be added, now in **Properties** section, you will bind them to respective UI Controls.
+
+    Check the `CreatedAt` property and click the **link icon** to open the object browser.
+
+    Change the drop down in the object browser to `Controls & ClientData`, click the **Current Page** radio button.
+
+    In the search box start typing the control name `FCCreatedate`. The list will filter down to show the matching values. Double click the **Value (Value)** entry under the `FCCreatedate` field and click **OK** to set binding.
+
+    !![MDK](img-3.8.gif)
+
+10. Repeat the above step for remaining properties: `CurrencyCode`, `GrossAmount`, `LifeCycleStatus`, `LifeCycleStatusName`, `NetAmount` and `TaxAmount`.
+
+    !![MDK](img-3.9.png)
+
+    !![MDK](img-3.10.png)
+
+11. Click **Next** and **Finish** on the confirmation screen. The action editor will open with the `SalesOrderHeaders_CreateEntity.action` loaded.
+
+ 1.  When the above OData action is executed, you may want to display messages on its success and failure behavior. For example, on its success, you may want to close the page and allow any execution to continue. On its failure, you may want to display an error.  
+
+    In the `SalesOrderHeaders_CreateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the link icon to open the object browser for the *Success Action* and bind it to `CloseModalPage_Complete.action`.
+
+    !![MDK](img-3.11.png)
+
+12. Create a message action displaying error in case of the create failure. In the `SalesOrderHeaders_CreateEntity.action`, provide value as **create** for the *Action Result* and click the `Create a rule/action` icon for the *Failure Action*.
+
+    !![MDK](img-3.12.png)
+
+ 2.  Keep the default selection for the *Object Type* as Action and *Folders* path.
+
+    !![MDK](img-3.4.png)     
+
+13. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+
+    !![MDK](img-3.13.png)
+
+14. Provide the below information:
+
+    | Property | Value |
+    |----|----|
+    | `Action Name`| `CreateSalesOrderHeaderEntityFailureMessage` |
+    | `Type` | Select `Message` from the dropdown |
+    | `Message` | `Failed to Create Sales Order record - {#ActionResults:create/error}` |
+    | `Title` | `Create Sales Order` |
+    | `OKCaption` | `OK` |
+    | `OnOK` | `--None--` |
+    | `CancelCaption` | leave it blank |
+    | `OnCancel` | `--None--`|
+
+    !![MDK](img-3.14.png)
+
+    >`create` is the Action Result value of the `SalesOrderHeaders_CreateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
+
+15. Click **Next** and then **Finish** on the Confirmation step.
+
+When `SalesOrderHeaders_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_CreateEntity.action` fails then `CreateSalesOrderHeaderEntityFailureMessage.action` will be triggered.
+
+[VALIDATE_1]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 4: ](Add toolbar item (Create Order) to customer detail page)]
+[ACCORDION-BEGIN [Step 4: ](Navigate to the Customer Create page)]
 
-You will add a toolbar item to the `Customers_Detail.page` called **Create Order**. You will link this button to the navigation action you just created. This event will open the `SalesOrderHeaders_Create.page` when the Add button is pressed by the end-user.
+You will open the `SalesOrderHeaders_Create.page` from the Customer Detail page. For this, you will add a ToolBar item on the Customer Details page and will link it to a navigation action. When the ToolBar item is pressed by the end-user that will open the `SalesOrderHeaders_Create.page`.
 
 1. In `Customers_Detail.page`, drag and drop a **Toolbar Item** to the lower left of the page.
 
@@ -200,129 +295,34 @@ You will add a toolbar item to the `Customers_Detail.page` called **Create Order
 
     !![MDK](img-4.2.png)
 
-3. In the Properties pane, click the **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**.
-
-    Double click the `NavToSalesOrderHeaders_Create.action` and click **OK** to set it as the `OnPress` Action.
+3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.    
 
     !![MDK](img-4.3.png)
+
+4. Keep the default selection for the *Object Type* as Action and *Folders* path.
+
+    !![MDK](img-3.4.png)     
+
+5. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+
+    !![MDK](img-4.4.png)
+
+6. Provide the below information:
+
+    | Property | Value |
+    |----|----|
+    | `Action Name`| `NavToSalesOrderHeaders_Create` |
+    | `PageToOpen` | Select `SalesOrderHeaders_Create.page` from the dropdown |
+    | `ModalPage`| Select `true` from the dropdown |
+
+    !![MDK](img-4.5.png)
+
+7. Click **Next** and then **Finish** on the confirmation step.
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 5: ](Store the created data locally)]
-
-The next step is to store newly created record locally for an offline application or send the new record directly back to the backed for online applications. You will now create an action to map the changes received from the Create Order page to the corresponding field in the OData service. You will also show a failure message if the create action fails to save the changes.
-
-1. Define a failure message.
-
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
-
-    !![MDK](img_5.1.png)
-
-    Provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Action Name`| `CreateSalesOrderHeaderEntityFailureMessage` |
-    | `Type` | Select `Message` from the dropdown |
-    | `Message` | `Failed to Create Sales Order record` |
-    | `Title` | `Create Sales Order` |
-    | `OKCaption` | `OK` |
-    | `OnOK` | `--None--` |
-    | `CancelCaption` | leave it blank |
-    | `OnCancel` | `--None--`|
-
-    !![MDK](img_5.1.2.png)
-
-    Click **Next** and then **Finish** on the Confirmation step.
-
-2. You will create the **OData action** to create a sales order entity.
-
-    >You can find more details about [Create Related Entity Action](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ODataService/CreateRelatedEntity.schema.html).
-
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Data Actions** in **Category** | click **OData Action** | **Next**.
-
-    !![MDK](img_5.2.png)
-
-    In **Operation and Service Selection** step, provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Action Name`| `SalesOrderHeaders_CreateEntity` |
-    | `Type` | Select `CreateRelatedEntity` from the dropdown |
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
-    | `EntitySet` | Select `SalesOrderHeaders` from the dropdown |
-
-    !![MDK](img-5.2.2.png)
-
-    >`CreateRelatedEntity` action creates the new entity against the navigation property of an existing entity with which the relationship is to be established.
-
-3. Click **Next**.
-
-4. In **Parent Link and Properties Selection** step, provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `ParentLink`| `LinkItem Reference` |
-    | `Target EntitySet` | Select `Customers` from the dropdown |
-    | `ReadLink`| click link icon and double click `readLink` |
-    | `Property` | Select `SalesOrders` from the dropdown |
-
-    !![MDK](img-5.3.png)
-
-    >In [Mobile Services sample backend](cp-mobile-dev-kit-ms-setup), click **Metadata URL** and you will find `SalesOrders` navigation property for `Customers` entity.
-
-5. Since in `SalesOrderHeaders_Create.page`, we have defined seven properties (Currency Code, Net Amount, Tax Amount, Gross Amount, Life Cycle Status, Life Cycle Status Name and Creation Date) to be added, now in **Properties** section, you will bind them to respective UI Controls.
-
-    Check the `CreatedAt` property and click the **link icon** to open the object browser.
-
-    Change the drop down in the object browser to `Controls & ClientData`, click the **Current Page** radio button.
-
-    In the search box start typing the control name `FCCreatedate`. The list will filter down to show the matching values. Double click the **Value (Value)** entry under the `FCCreatedate` field and click **OK** to set binding.
-
-    !![MDK](img-5.4.gif)
-
-6. Repeat the above step for remaining properties: `CurrencyCode`, `GrossAmount`, `LifeCycleStatus`, `LifeCycleStatusName`, `NetAmount` and `TaxAmount`.
-
-    !![MDK](img-5.5.png)
-
-    !![MDK](img-5.5.1.png)
-
-      Click **Next** and **Finish** on the confirmation screen. The action editor will open with the `SalesOrderHeaders_CreateEntity.action` loaded.
-
-7. Define _Success_ and _Failure_ actions for `SalesOrderHeaders_CreateEntity.action`.
-
-    In the action editor for the new action, expand the **Common Action Properties** and provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Success Action` | Click the link icon and bind it to `CloseModalPage_Complete.action` |
-    | `Failure Action` | Click the link icon and bind it to `CreateSalesOrderHeaderEntityFailureMessage.action` |
-
-    >When `SalesOrderHeaders_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `SalesOrderHeaders_CreateEntity.action` fails then `CreateSalesOrderHeaderEntityFailureMessage.action` will be triggered.
-
-    !![MDK](img-5.7.png)
-
-8. Now, that the `SalesOrderHeaders_CreateEntity.action` has been created, you will need to call this action when the end-user presses the **Save** button. You will add a **Save** button on the `SalesOrderHeaders_Create.page` and link it to the `SalesOrderHeaders_CreateEntity.action`.
-
-    In `SalesOrderHeaders_Create.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
-
-    !![MDK](img_5.8.png)
-
-    Click the **link** icon to open the object browser for the **System Item** property.
-
-    Double click the **Save** type and click **OK**.
-
-    !![MDK](img-5.8.2.png)
-
-    In the Properties pane | **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**, bind it to `SalesOrderHeaders_CreateEntity.action`.
-
-    !![MDK](img-5.8.3.png)
-
-[VALIDATE_1]
-[ACCORDION-END]
-
-[ACCORDION-BEGIN [Step 6: ](Add data subscription to Customer detail page)]
+[ACCORDION-BEGIN [Step 5: ](Add data subscription to Customer detail page)]
 
 In `Customers_Detail.page` you added total number of order counts for a given customer. When a new `SalesOrder` is created, this count doesn't get updated automatically unless you navigate back and forth to this page.
 
@@ -330,86 +330,89 @@ In `Customers_Detail.page` you added total number of order counts for a given cu
 
 In `Customers_Detail.page`, select **Customer Orders** Object Table control. In **Properties** section, click **+** icon under **Misc** | `DataSubscriptions` and double click `SalesOrderHeaders` and click **OK**.
 
-!![MDK](img-6.gif)
+!![MDK](img-5.1.gif)
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 7: ](Deploy the application)]
+[ACCORDION-BEGIN [Step 6: ](Deploy the application)]
 
 Deploy the updated application to your MDK client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-    !![MDK](img-7.1.png)
+    !![MDK](img-6.1.png)
 
 2. Select deploy target as **Mobile & Cloud**.
 
-    !![MDK](img-7.2.png)
+    !![MDK](img-6.2.png)
 
     You should see success message for both deployments.
 
-    !![MDK](img-7.3.png)
+    !![MDK](img-6.3.png)
 
     >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
 
-    >!![MDK](img-4.3.1.png)
+    >!![MDK](img-6.4.png)
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 8: ](Run the app)]
+[ACCORDION-BEGIN [Step 7: ](Run the app)]
 
 >Make sure you are choosing the right device platform tab above.
 
 [OPTION BEGIN [Android]]
 
-1. Re-launch the app on your device, you may asked to authenticate with passcode or Biometric authentication. You will see a confirmation pop-up, tap **OK**.
+1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-2. Tap **Customer List**, tap one of the available customer record, you will then navigate to Customer detail page.
+    ![MDK](img-7.1.png)
+
+2. Tap **Customers**, tap one of the available customer record, you will then navigate to Customer detail page.
 
 3. You will see the **Create Order** option in customer detail page. Tap it to create a new sales order.
 
-    ![MDK](img-8.1.png)
+    ![MDK](img-7.2.png)
 
 4. As you provided default values to the properties, you may change it if required. Tap **save** icon.
 
-    ![MDK](img-8.2.png)
+    ![MDK](img-7.3.png)
 
     Now, you will notice that new record has been created and count value for **See All** is now increased by one as you implemented in step 6.
 
-    ![MDK](img-8.3.png)
+    ![MDK](img-7.4.png)
 
 5. On Main page, tap **Sync** to send local changes to the backend, a successful message will be shown.
 
-    ![MDK](img-8.4.png)
-    ![MDK](img-8.5.png)
+    ![MDK](img-7.5.png)
+    ![MDK](img-7.6.png)
 
 [OPTION END]
 
 [OPTION BEGIN [iOS]]
 
-1. Re-launch the app on your device, you may asked to authenticate with passcode or Biometric authentication. When you see a confirmation pop-up, tap **OK**.
+1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-2. Tap **Customer List**, tap one of the available customer record,  you will then navigate to Customer detail page.
+    ![MDK](img-7.7.png)
+
+2. Tap **Customers**, tap one of the available customer record, you will then navigate to Customer detail page.
 
 3. You will see the **Create Order** option in customer detail page. Tap on it to create a new sales order.
 
-    ![MDK](img-8.6.png)
-
+    ![MDK](img-7.8.png)
 
 4. As you provided default values to the properties, you may change it if required. Tap **Save**.
 
-    ![MDK](img-8.7.png)
+    ![MDK](img-7.9.png)
 
     Now, you will notice that new record has been created and count value for **See All** is increased by one as you implemented in step 6.
 
-    ![MDK](img-8.8.png)
+    ![MDK](img-7.10.png)
 
 5. On Main page, tap **Sync** to send local changes to the backend, a successful message will be shown.
 
-    ![MDK](img-8.9.png)  
-    ![MDK](img-8.10.png)  
+    ![MDK](img-7.11.png)  
+    ![MDK](img-7.12.png)  
 
 [OPTION END]
 
@@ -417,25 +420,25 @@ Deploy the updated application to your MDK client.
 
 1. Either click the highlighted button or refresh the web page to load the changes.
 
-    !![MDK](img-8.12.png)
+    !![MDK](img-7.13.png)
 
     >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
 
-    >!![MDK](img-8.11.png)
+    >!![MDK](img-7.14.png)
 
-2. Click **Customer List** | click one of the available customer record,  you will then navigate to Customer detail page.
+2. Click **Customers** | click one of the available customer record, you will then navigate to Customer detail page.
 
 3. You will see the **Create Order** option in customer detail page. Click it to create a new sales order.
 
-    !![MDK](img_8.13.png)
+    !![MDK](img-7.15.png)
 
 4. As you provided default values to the properties, you may change it if required. Click **Save**.
 
-    !![MDK](img_8.14.png)
+    !![MDK](img-7.16.png)
 
     Now, you will notice that new record has been created and count value for **See All** is increased by one as you implemented in step 6.
 
-    !![MDK](img_8.15.png)
+    !![MDK](img-7.17.png)
 
 [OPTION END]
 
@@ -443,6 +446,5 @@ Once you complete this tutorial, you can continue with [Level Up with the Mobile
 
 [VALIDATE_4]
 [ACCORDION-END]
-
 
 ---

@@ -19,7 +19,6 @@ author_profile: https://github.com/jitendrakansal
   - How to consume localized text strings in metadata definition
   - How to use Currency and Date Time formatters
 
-
 You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/master/4-Level-Up-with-the-Mobile-Development-Kit/7-Add-internationalization-and-localization-to-an-mdk-app) and start directly with step 8 in this tutorial.
 
 ---
@@ -30,13 +29,12 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 **Localization (l10n)** is the adaptation of your software or mobile application product to meet the language, culture, and other requirements of each locale. It refers to localizing time and date differences, currency, accounting standards, culturally appropriate images, symbols, and hand gestures, spelling, and other locale-specific components.
 
-As a developer, you can now provide translations and localization for your MDK application. This allows end-users to view the mobile application in their own language and regional settings. MDK already supports [various languages](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/language-support.html) for end-user facing texts to be translated.
+As a developer, you can now provide translations and localization for your MDK application. This allows end-users to view the mobile application in their own language and regional settings. MDK already supports [various languages](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/i18n/language-support.html) for end-user facing texts to be translated.
 
 [DONE]
 [ACCORDION-END]
 
 [ACCORDION-BEGIN [Step 2: ](Create a new MDK project in SAP Business Application Studio)]
-
 
 This step includes creating the mobile development kit project in the editor.
 
@@ -44,13 +42,13 @@ This step includes creating the mobile development kit project in the editor.
 
 2. Click **Start from template** on Welcome page.
 
-    !![MDK](img-1.2.png)
+    !![MDK](img-2.1.png)
 
     >If you do not see the Welcome page, you can access it via **Help** menu or via **View** menu > Find Command > Welcome.
 
 3. Select **MDK Project** and click **Start**.
 
-    !![MDK](img-1.3.png)
+    !![MDK](img-2.2.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
@@ -64,11 +62,11 @@ This step includes creating the mobile development kit project in the editor.
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
-    !![MDK](img-1.4.png)        
+    !![MDK](img-2.3.png)        
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Login icon and select the org & space where you have set up the initial configuration for your MDK app.
 
-    >!![MDK](img-1.4.1.png)
+    >!![MDK](img-2.4.png)
 
 5. In *Service configuration* step, provide the below information and click **Next**:
 
@@ -81,11 +79,11 @@ This step includes creating the mobile development kit project in the editor.
     | `Enter a path to the OData service` | Leave it as it is |
     | `Enable Offline` | It's enabled by default |
 
-    !![MDK](img-1.5.png)       
+    !![MDK](img-2.5.png)       
 
 6. In *Data Collections* step, select `Customers` (if not selected by default) and `SalesOrderHeaders`. Click **Finish** to complete the project creation.
 
-    !![MDK](img-1.6.png)
+    !![MDK](img-2.6.png)
 
 9. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_i18n_l10n` project in the project explorer.
 
@@ -131,15 +129,15 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
 2. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
-    After you accept app update, you will see the `Main` page (with `Logout` and `Sync` options at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
+    After you accept app update, you will see the `Main` page (with `Logout`, `Sync` and `Update` options at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
 
-    ![MDK](img-5.1.png)
+    ![MDK](img-4.3.png)
 
-    In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, `Logout` and `Sync`) to their respective localized strings in the German language.
+    In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, `Logout`, `Sync` and `Update`) to their respective localized strings in the German language.
 
 3. Tap `SalesOrderHeaders` to navigate to Sales order List.
 
-    ![MDK](img-5.2.png)
+    ![MDK](img-4.4.png)
 
 [OPTION END]
 
@@ -156,40 +154,39 @@ SAP Business Application Studio has a feature to display the QR code for onboard
     The On-boarding QR code is now displayed.
 
     !![MDK](img-4.2.png)
-
+    
 2. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
-    After you accept app update, you will see the `Main` page (with `Logout` and `Sync` options at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
+    After you accept app update, you will see the `Main` page (with `Logout`, `Sync`, and `Update` options at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
 
-    ![MDK](img-5.3.png)
+    ![MDK](img-4.5.png)
 
-    In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, `Logout` and `Sync`) to their respective localized strings in the German language.
+    In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, `Logout`, `Sync`, and `Update`) to their respective localized strings in the German language.
 
 3. Tap `SalesOrderHeaders` to navigate to Sales Order List.
 
-    ![MDK](img-5.4.png)
+    ![MDK](img-4.6.png)
 
 [OPTION END]
-
 
 [OPTION BEGIN [Web]]
 
 1. Click the highlighted button to open the MDK Web application in a browser. Enter your SAP BTP credentials if asked.
 
-    !![MDK](img-5.5.png)
+    !![MDK](img-4.7.png)
 
     >You can also open the MDK web application by accessing its URL from `.project.json` file.
-    !![MDK](img-5.6.png)
+    !![MDK](img-4.8.png)
 
     You will see the `Main` page (with `Logout` option at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
 
-    !![MDK](img-5.7.png)
+    !![MDK](img-4.9.png)
 
     In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, and `Logout`) to their respective localized strings in the German language.
 
 2. Click `SalesOrderHeaders` to navigate to Sales Order List.
 
-    !![MDK](img-5.8.png)
+    !![MDK](img-4.10.png)
 
 [OPTION END]
 
@@ -220,9 +217,10 @@ For this tutorial, you will create the `i18n_de.properties` file for the German 
     salesOrderHeaders_title=SalesOrderHeaders
     logout_button=Logout
     sync_button=Sync
+    update_button=Update
     ```
 
-    !![MDK](img-6.1.png)
+    !![MDK](img-5.1.png)
 
     >Each property file contains a list of localization strings that come in key value pair syntax.
 
@@ -230,11 +228,11 @@ For this tutorial, you will create the `i18n_de.properties` file for the German 
 
 2. Right-click the `i18n` folder and select **MDK: New i18n File**.
 
-    !![MDK](img-6.2.png)
+    !![MDK](img-5.2.png)
 
 3. Enter the file name `i18n_de`, click **Next** and then **Finish** on the confirmation step.
 
-    !![MDK](img-6.3.png)
+    !![MDK](img-5.3.png)
 
 4. Copy and paste the below information:
 
@@ -244,9 +242,10 @@ For this tutorial, you will create the `i18n_de.properties` file for the German 
     salesOrderHeaders_title=Kundenaufträge
     logout_button=Ausloggen
     sync_button=Synchronisieren
+    update_button=Aktualisieren
     ```
 
-    !![MDK](img-6.4.png)
+    !![MDK](img-5.4.png)
 
 [DONE]
 [ACCORDION-END]
@@ -286,15 +285,15 @@ You will use the Localizable String function to add language support on the Main
 
 2. In the **Properties** pane, click the **link** icon for the Page caption, select **i18n Objects** in the dropdown and double click on `main_title:"Main"` to bind Caption to the Localizable String.
 
-    !![MDK](img-7.2.gif)
+    !![MDK](img-6.1.gif)
 
 3. Similarly, update the **Title** for both `Customers` and `SalesOrderHeaders` Section buttons.  
 
-    !![MDK](img-7.3.png)
+    !![MDK](img-6.2.png)
 
-    !![MDK](img-7.4.png)
+    !![MDK](img-6.3.png)
 
-4. Finally, update the **Caption** for both `Logout` and `Sync` Toolbar items.
+4. Finally, update the **Caption** for both `Logout`, `Sync`, and `Update` Toolbar items.
 
 You can find more information about Localized String formatter in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#localized-string-formatter).   
 
@@ -310,7 +309,7 @@ Let's start with Currency formatter:
 
 1. Click `SalesOrderHeaders_List.page` to open it in the MDK Page Editor.
 
-2. The Object Table control's **Status** property is bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter. In the **Properties** pane, click **link** icon for the **Footnote** property.
+2. The Object Table control's **Status** property is bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter. In the **Properties** pane, click **link** icon for the **Status** property.
 
 3. Cut or remove the default expression in the object browser.
 
@@ -318,7 +317,7 @@ Let's start with Currency formatter:
 
 5.  Select **Euro Member Countries** for **Country Code**, click **Insert** to generate the expression, **do not close the Object Browser window**.
 
-    !![MDK](img-8.1.gif)
+    !![MDK](img-7.1.gif)
 
     The generated expression looks like below:
 
@@ -328,7 +327,7 @@ Let's start with Currency formatter:
 
 6. You will now bind the Currency value placeholder with the `GrossAmount` property of the `SalesOrderHeaders` entity. Put the cursor before the second comma (from left side). Choose **OData Objects** option from the dropdown, select the `GrossAmount` property under the `SalesOrderHeader` and click **Insert** to generate the new expression.
 
-    !![MDK](img-8.0.gif)
+    !![MDK](img-7.2.gif)
 
     The new expression looks like below:
 
@@ -354,7 +353,7 @@ Let's start with Currency formatter:
 
 11. Select **Medium** for **Display Format** and click **Insert** to generate the expression, **do not close the Object Browser window**.
 
-    !![MDK](img-8.2.gif)
+    !![MDK](img-7.3.gif)
 
     The generated expression should look like below:
 
@@ -364,7 +363,7 @@ Let's start with Currency formatter:
 
 12. You will now bind the `DateTime` value placeholder with the `CreatedAt` property of the `SalesOrderHeaders` entity. Put the cursor before the second comma (from left side). Choose **OData Objects** option from the dropdown, select the `CreatedAt` property under the `SalesOrderHeader` and click **Insert** to generate the new expression.
 
-    !![MDK](img-8.3.gif)
+    !![MDK](img-7.4.gif)
 
     The new expression looks like below:
 
@@ -386,7 +385,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
 
->!![MDK](img-4.3.1.png)
+>!![MDK](img-8.1.png)
 
 [DONE]
 [ACCORDION-END]
@@ -395,37 +394,41 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 [OPTION BEGIN [Android]]
 
-1. Re-launch the app on your device, authenticate with passcode or Biometric authentication if asked. You will see a _Confirmation_ pop-up, tap **OK**.
+1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+
+    ![MDK](img-9.1.png)
 
 2. Navigate to `SalesOrderHeaders` list page. You will notice the formatted values as per device's or app's current locale and timezone.
 
-    ![MDK](img-10.1.png)
+    ![MDK](img-9.2.png)
 
-3.  Go to your device settings and change the device language to Deutsch. Relaunch the MDK client, you will now notice the localized strings on main page.
+3. Go to your device settings and change the device language to Deutsch. Relaunch the MDK client, you will now notice the localized strings on main page.
 
-    ![MDK](img-10.3.png)
+    ![MDK](img-9.3.png)
 
 4. Tap **`Kundenaufträge`** to navigate to Sales order list page. You will notice the updated formatter values as per device's current locale and timezone.    
 
-    ![MDK](img-10.5.png)
+    ![MDK](img-9.4.png)
 
 [OPTION END]
 
 [OPTION BEGIN [iOS]]
 
-1. Re-launch the app on your device, authenticate with passcode or Biometric authentication if asked. You will see a _Confirmation_ pop-up, tap **OK**.
+1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+
+    ![MDK](img-9.5.png)
 
 2. Navigate to `SalesOrderHeaders` list page. You will notice the formatted values.
 
-    ![MDK](img-10.2.png)
+    ![MDK](img-9.6.png)
 
 3. Change the device language to German. (Settings>General>Language & Region>iPhone Language). Relaunch the MDK client, you will now notice the localized strings on main page.
 
-    ![MDK](img-10.4.png)
+    ![MDK](img-9.7.png)
 
 4. Tap **`Kundenaufträge`** to navigate to Sales order list page. You will notice the updated formatter values as per device's current locale and timezone.    
 
-    ![MDK](img-10.6.png)    
+    ![MDK](img-9.8.png)    
 
 [OPTION END]
 
@@ -433,19 +436,19 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 1. Either click the highlighted button or refresh the web page to load the changes.
 
-    !![MDK](img-5.5.png)
+    !![MDK](img-4.7.png)
 
 2. Navigate to `SalesOrderHeaders` list page. You will notice the formatted values.
 
-    !![MDK](img-10.7.png)
+    !![MDK](img-9.9.png)
 
 3. Navigate to your browser settings and set the language top preference to German. Refresh the web page, you will now notice the localized strings on main page.
 
-    !![MDK](img-10.8.png)
+    !![MDK](img-9.10.png)
 
 4. Click **`Kundenaufträge`** to navigate to Sales order list page. You will notice the updated formatter values as per device's current locale and timezone.    
 
-    !![MDK](img-10.9.png)    
+    !![MDK](img-9.11.png)    
 
 [OPTION END]
 

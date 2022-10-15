@@ -25,7 +25,6 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ---
 
-
 [ACCORDION-BEGIN [Step 1: ](Generate push configuration for Android/iOS device)]
 
 >Make sure you are choosing the right device platform tab above.
@@ -34,37 +33,37 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 1. Open the [Firebase console](https://console.firebase.google.com/u/0/?pli=1), login with your Google account and click **Create Project** or **Add Project** (you will see this option if you already have any existing projects).
 
-    !![MDK](img_1.1.png)
+    !![MDK](img-1.1.png)
 
 2. Provide a Project Name, click **Continue**.
 
-    !![MDK](img_1.2.png)
+    !![MDK](img-1.2.png)
 
 3. Uncheck **Enable Google Analytics for this project** option and click **Create Project**.
 
-    !![MDK](img_1.3.png)
+    !![MDK](img-1.3.png)
 
 4. Once the project is ready, click **Continue**.
 
-    !![MDK](img_1.4.png)
+    !![MDK](img-1.4.png)
 
 5. Click **Android** icon to add Firebase to your Android app.
 
-    !![MDK](img_1.5.png)
+    !![MDK](img-1.5.png)
 
 6. Provide a unique name to Android package name, click **Register app**.
 
-    !![MDK](img_1.6.png)
+    !![MDK](img-1.6.png)
 
 7. `Download goole-services.json` file, click **Next**.
 
-    !![MDK](img_1.7.png)
+    !![MDK](img-1.7.png)
 
 8. In **Add Firebase SDK** step, click **Next**.
 
 9. In the following step, click **Next** and then click **Continue to console**.
 
-    !![MDK](img_1.9.png)    
+    !![MDK](img-1.8.png)    
 
 [OPTION END]
 
@@ -86,11 +85,11 @@ To enable your app for push notifications, you need to carry out the following t
 
     On your Mac, open the **Keychain Access** application, and navigate to **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority...**
 
-    !![MDK](img_1.10.png)
+    !![MDK](img-1.10.png)
 
     In the dialog, enter the email address which is associated with your Apple Developer account. Also, make sure you check the **Request is saved to disk** option.
 
-    !![MDK](img_1.11.png)
+    !![MDK](img-1.11.png)
 
     Click **Continue**.
 
@@ -98,29 +97,29 @@ To enable your app for push notifications, you need to carry out the following t
 
     Once you see a dialog saying the certificate is saved successfully, click **Done** to finish.
 
-    !![MDK](img_1.12.png)
+    !![MDK](img-1.12.png)
 
 2. Register an iOS App ID
 
     Go to your [Apple Developer Account](https://developer.apple.com) and click **Certificates, Identifiers & Profiles**.
 
-    !![MDK](img_1.12.1.png)
+    !![MDK](img-1.13.png)
 
     Click **+** icon to register a unique **Identifiers** for your application.
 
-    !![MDK](img_1.12.2.png)
+    !![MDK](img-1.14.png)
 
     Select **App IDs** and click **Continue**.
 
-    !![MDK](img_1.12.3.png)
+    !![MDK](img-1.15.png)
 
     Provide a unique **Bundle ID** name and **Description**.
 
-    !![MDK](img_1.12.4.png)
+    !![MDK](img-1.16.png)
 
     Scroll down and select the **Push Notifications** capability from the list, click **Continue**.
 
-    !![MDK](img_1.12.5.png)
+    !![MDK](img-1.17.png)
 
     In the following screen, select option for **Deployment Details** and then click **Continue**.
 
@@ -130,27 +129,27 @@ To enable your app for push notifications, you need to carry out the following t
 
     Under **Identifiers**, search for the App ID that you registered in previous step.
 
-    !![MDK](img_1.12.6.png)
+    !![MDK](img-1.18.png)
 
     Scroll down and select the **Push Notifications** capability, click **Configure**.
 
-    !![MDK](img_1.12.7.png)
+    !![MDK](img-1.19.png)
 
     To configure push notifications for the App ID `com.sap.mdk.demo`, a Client SSL Certificate is required that will allow the notification server to connect to the Apple Push Notification Service. Each App ID requires its own Client SSL Certificate.
 
     Click **Create Certificate** to start the process for creating the needed `.cer` file.
 
-    !![MDK](img_1.12.8.png)
+    !![MDK](img-1.20.png)
 
     Click **Choose File** and browse to the downloaded Signing Request `CSR` file, click **Continue**.
 
     Apple will now create a `.cer` file for you which is issued by the **Apple Worldwide Developer Relations Certification Authority**.
 
-    !![MDK](img_1.12.9.png)
+    !![MDK](img-1.21.png)
 
     Click **Download** to download your certificate.
 
-    !![MDK](img_1.12.10.png)
+    !![MDK](img-1.22.png)
 
 4. Install the `.cer` file and create the .p12 file
 
@@ -164,31 +163,30 @@ To enable your app for push notifications, you need to carry out the following t
 
     If the certificate is added correctly to the Keychain you should see it in the `MyCertificates` section, make sure you selected **login** as keychain.
 
-    !![MDK](img_1.12.11.png)
+    !![MDK](img-1.23.png)
 
     Select the certificate as well as the private key and right-click to export those two items.
 
-    !![MDK](img_1.12.12.png)
+    !![MDK](img-1.24.png)
 
     Make sure that in the dropdown **Personal Information Exchange (.p12)** is selected and click **Save**. You will be prompted to enter a password, click **OK** to export the files.
 
-    !![MDK](img_1.12.13.png)
+    !![MDK](img-1.25.png)
 
 5. Register your device
 
     Click **+** icon to register your iOS device.
 
-    !![MDK](img_1.12.14.png)
+    !![MDK](img-1.26.png)
 
     Provide **Device Name** & **Device ID (UDID)** and then click **Continue**.
 
-    !![MDK](img_1.12.15.png)
+    !![MDK](img-1.27.png)
 
 [OPTION END]
 
 [DONE]
 [ACCORDION-END]
-
 
 [ACCORDION-BEGIN [Step 2: ](Provide information to Mobile Services)]
 
@@ -198,11 +196,11 @@ To enable your app for push notifications, you need to carry out the following t
 
 1. In Firebase console page, click gear icon and then click **Project Settings**.
 
-    !![MDK](img_2.1.png)
+    !![MDK](img-2.1.png)
 
 2. Navigate to **Cloud Messaging** tab, copy the **Server key**.
 
-    !![MDK](img_2.2.png)
+    !![MDK](img-2.2.png)
 
 3. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/Hybrid` | `com.sap.mdk.demo` | `Mobile Push Notification`. Paste the Server Key value in **Android** push settings in Mobile Services cockpit.
 
@@ -216,7 +214,7 @@ To enable your app for push notifications, you need to carry out the following t
 
 1. In Mobile Services cockpit, navigate to the **Mobile Push Notification** feature for app id `com.sap.mdk.demo`.
 
-    !![MDK](img_2.4.png)
+    !![MDK](img-2.4.png)
 
 2. Provide the following details to the **Apple** panel and click **Save**.
 
@@ -231,7 +229,6 @@ To enable your app for push notifications, you need to carry out the following t
     !![MDK](img-2.5.png)
 
 You have now successfully configured the APNS Endpoint on the server side in Mobile Services cockpit.
-
 
 
 [OPTION END]
@@ -277,14 +274,14 @@ Paste the downloaded `google-services.json` file to `/DemoSampleApp.mdkproject/A
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 5: ](Create MDK client)]
+[ACCORDION-BEGIN [Step 4: ](Create MDK client)]
 
 Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
 
 [DONE]
 [ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 6: ](Run the MDK client)]
+[ACCORDION-BEGIN [Step 5: ](Run the MDK client)]
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -294,7 +291,7 @@ Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create you
 
 2. Once you accept the App update, a message should show **Push Notification registered**. Click **OK**.
 
-    ![MDK](img_6.1.png)
+    ![MDK](img-5.1.png)
 
 3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
@@ -302,19 +299,19 @@ Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create you
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
-    !![MDK](img_6.2.png)
+    !![MDK](img-5.2.png)
 
 4. In notification dialog, type a notification message and click **Send**.
 
-    !![MDK](img_6.3.png)
+    !![MDK](img-5.3.png)
 
     You will see a success toast message.
 
-    !![MDK](img_6.3.1.png)
+    !![MDK](img-5.4.png)
 
     After sending notification, mobile device should receive the message.
 
-    ![MDK](img_6.3.2.png)
+    ![MDK](img-5.5.png)
 
 [OPTION END]
 
@@ -324,11 +321,11 @@ Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create you
 
 2. Once you accept the App update, you will also notice that it will first ask permission to display notifications.
 
-    !![MDK](img_6.4.png)
+    !![MDK](img-5.6.png)
 
 3. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
 
-    !![MDK](img_6.5.png)
+    !![MDK](img-5.7.png)
 
 4. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
@@ -336,23 +333,23 @@ Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create you
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
-    !![MDK](img_6.6.png)
+    !![MDK](img-5.8.png)
 
 5. In notification dialog, type a notification message and click **Send**.
 
-    !![MDK](img_6.3.png)
+    !![MDK](img-5.3.png)
 
     You will see a success toast message.
 
-    !![MDK](img_6.3.1.png)
+    !![MDK](img-5.4.png)
 
     After sending notification, mobile device should receive the message.
 
-    ![MDK](img_6.9.png)
+    ![MDK](img-5.9.png)
 
     If you have Apple watch connected to the iPhone device, you can also see same push notification on the Apple Watch.
 
-    ![MDK](img_6.10.png)
+    ![MDK](img-5.10.png)
 
     >MDK supports rich push notification. MDK does not run on smart watches or as an Apple watch application.
 

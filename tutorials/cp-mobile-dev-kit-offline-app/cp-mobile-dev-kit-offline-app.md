@@ -21,9 +21,7 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
-
 [ACCORDION-BEGIN [Step 1: ](Create a new MDK project in SAP Business Application Studio)]
-
 
 This step includes creating the mobile development kit project in the editor.
 
@@ -31,17 +29,17 @@ This step includes creating the mobile development kit project in the editor.
 
 2. Click **Start from template** on Welcome page.
 
-    !![MDK](img-1.3.png)
+    !![MDK](img-1.1.png)
 
     >If you do not see the Welcome page, you can access it via **Help** menu or via **View** menu > Find Command > Welcome.
 
 3. Select **MDK Project** and click **Start**.
 
-    !![MDK](img-1.4.png)
+    !![MDK](img-1.2.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
-5. In *Basic Information* step, provide the below information and click **Next**:
+4. In *Basic Information* step, provide the below information and click **Next**:
 
     | Field | Value |
     |----|----|
@@ -51,15 +49,15 @@ This step includes creating the mobile development kit project in the editor.
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
-    !![MDK](img-1.5.png)
+    !![MDK](img-1.3.png)
 
     >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Login icon and select the org & space where you have set up the initial configuration for your MDK app.
 
-    >!![MDK](img-1.4.1.png)
+    >!![MDK](img-1.4.png)
 
-6. In *Service configuration* step, provide the below information and click **Next**:
+5. In *Service configuration* step, provide the below information and click **Next**:
 
     | Field | Value |
     |----|----|
@@ -70,15 +68,15 @@ This step includes creating the mobile development kit project in the editor.
     | `Enter a path to the OData service` | Leave it as it is |
     | `Enable Offline` | It's enabled by default |
 
-    !![MDK](img-1.7.png)
+    !![MDK](img-1.5.png)
 
     >Regardless of whether you are creating an online or offline application, this step is needed for the app to connect to an OData service. When building an MDK application, it assumes the OData service created and the destination that points to this service is set up in [Mobile Services](cp-mobile-dev-kit-ms-setup) (for Mobile consumption) and in [Cloud Foundry cockpit](cp-mobile-dev-kit-ms-setup) (for Web consumption).
 
     >**Enable Offline** option allows MDK mobile app to be offline enabled. This configuration will be ignored on Web environment and the MDK web application will be treated as online only.
 
-7. In **Data Collections** step, select `Customers`, `Products`, `SalesOrderHeaders` and `SalesOrderItems` data collections. Click Finish.
+6. In **Data Collections** step, select `Customers`, `Products`, `SalesOrderHeaders` and `SalesOrderItems` data collections. Click Finish.
 
-    !![MDK](img-1.8.png)
+    !![MDK](img-1.6.png)
 
     After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `DemoSampleApp` project in the project explorer.
 
@@ -90,7 +88,7 @@ This step includes creating the mobile development kit project in the editor.
 
 This is how the project structure looks like within the workspace.
 
-!![MDK](img-2.png)
+!![MDK](img-2.0.png)
 
 These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
 
@@ -169,7 +167,7 @@ The On-boarding QR code is now displayed.
 
 Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
-After you accept the app update, you will see the **Main** page (with **Logout** and **Sync** options at bottom of the page) being displayed and Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
+After you accept the app update, you will see the **Main** page (with **Logout**, **Sync** and **Update** options at bottom of the page) being displayed and Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
 
 ![MDK](img-5.1.png)
 
@@ -181,7 +179,7 @@ After you accept the app update, you will see the **Main** page (with **Logout**
 
 Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
-After you accept the app update, you will see the **Main** page (with **Logout** and **Sync** options at bottom of the page) being displayed and Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
+After you accept the app update, you will see the **Main** page (with **Logout**, **Sync** and **Update** options at bottom of the page) being displayed and Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
 
 ![MDK](img-5.2.png)
 
@@ -189,16 +187,16 @@ After you accept the app update, you will see the **Main** page (with **Logout**
 
 [OPTION BEGIN [Web]]
 
-1. Click the highlighted button to open the MDK Web application in a browser. Enter your cloud platform credentials if asked.
+1. Click the highlighted button to open the MDK Web application in a browser. Enter your BTP credentials if asked.
 
-    !![MDK](img_5.3.png)
+    !![MDK](img-5.3.png)
 
     >You can also open the MDK web application by accessing its URL in *CF* from `.project.json` file.
     !![MDK](img-5.4.png)
 
     You will see the **Main** page (with **Logout** option at bottom of the page) and application data service will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
 
-    !![MDK](img_5.5.png)
+    !![MDK](img-5.5.png)
 
 [OPTION END]
 

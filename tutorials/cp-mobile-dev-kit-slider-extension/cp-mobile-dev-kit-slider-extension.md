@@ -23,12 +23,11 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
-
 To extend the functionality, or customize the look and feel, and behavior of your client app, you can create extension controls other than the already existing MDK built-in controls by using `NativeScript` (TypeScript/JavaScript applicable for both Android and iOS)
 
 In this tutorial, you will create a Slider extension via `NativeScript` (in TypeScript language) which will be common for both device platforms.
 
-![MDK](img_8.gif)
+![MDK](img-1.0.gif)
 
 [ACCORDION-BEGIN [Step 1: ](Create a new MDK project in SAP Business Application Studio)]
 
@@ -36,13 +35,13 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 
 2. Click **Start from template** on Welcome page.
 
-    !![MDK](img-1.2.png)
+    !![MDK](img-1.1.png)
 
     >If you do not see the Welcome page, you can access it via **Help** menu or via **View** menu > Find Command > Welcome.
 
 3. Select **MDK Project** and click **Next**.
 
-    !![MDK](img-1.3.png)
+    !![MDK](img-1.2.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
@@ -56,10 +55,9 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
-    !![MDK](img-1.4.png)
+    !![MDK](img-1.3.png)
 
     >More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
-
 
 5. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Slider` project in the project explorer.
 
@@ -74,15 +72,15 @@ The extension control that you will be creating to extend the functionality of y
 
 2. Drag & drop `slider.png` file on **Images** folders.
 
-    !![MDK](img_2.0.png)
+    !![MDK](img-2.1.png)
 
 3. Right-click **Extensions** | select **MDK: Register Extension Control**.
 
-    !![MDK](img-2.1.png)
+    !![MDK](img-2.2.png)
 
 4. In `Template Selection` step, select **New and register Metadata Extension Control**. Click **Next**.
 
-    !![MDK](img_2.2.png)
+    !![MDK](img-2.3.png)
 
 5. In the **Basic Information** step, provide the below information:
 
@@ -104,7 +102,7 @@ The extension control that you will be creating to extend the functionality of y
 
     **Display**: This property is used for the image to be displayed on the page editor to represent the extension control.
 
-    !![MDK](img_2.3.png)
+    !![MDK](img-2.4.png)
 
 
 6. In **Schema Information** step, fill schema details in **Schema** column and click **Next**.
@@ -130,7 +128,7 @@ The extension control that you will be creating to extend the functionality of y
     }
     ```
 
-    !![MDK](img-2.4.png)
+    !![MDK](img-2.5.png)
 
     >Above schema will add these predefined properties (`MaxValue`, `MinValue` and `Title`) in the map extension control. You will provide values for these properties in next step.
 
@@ -138,7 +136,7 @@ The extension control that you will be creating to extend the functionality of y
 
     Some additional files and folders are added to the **Extensions** folder. You will learn more about it in following steps.
 
-    !![MDK](img_2.5.png)
+    !![MDK](img-2.6.png)
 
     >You can find more details about registering extension control in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/advanced/extensions/registering-extension-in-bas.html) guide.
 
@@ -153,7 +151,7 @@ You will add this registered control in a Form Cell page.
 
     Right-click the **Pages** folder | **MDK: New Page** | **Form Cell Page** | **Next**.
 
-    !![MDK](img_3.1.png)
+    !![MDK](img-3.1.png)
 
     >A Form Cell Page is suitable for pages that generate new objects or modify existing objects. It includes a form cell container by default. You can add form sections, multiple containers or action controls to this page. Under each container section, you can add various controls.
 
@@ -161,11 +159,11 @@ You will add this registered control in a Form Cell page.
 
 2. Enter the **Page Name** as `SliderExtension` and click **Next** and the **Finish** on the Confirmation step.
 
-    !![MDK](img_3.2.png)
+    !![MDK](img-3.2.png)
 
 3. In MDK Page Editor, drag & drop the registered `mdk_slider` control on the page area.
 
-    !![MDK](img_3.3.png)
+    !![MDK](img-3.3.png)
 
     >You can find more details about the **Section Extension** in [this](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/FormCell/Extension.schema.html) guide.    
 
@@ -179,31 +177,31 @@ You will add this registered control in a Form Cell page.
     | `MinValue` | 10 |
     | `Title` | Counter |  
 
-    !![MDK](img-3.5.png)
+    !![MDK](img-3.4.png)
 
 5. You will add an item on action bar in `SliderExtension.page` and set an action on its `onPress` event.
 
     In `SliderExtension.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
 
-    !![MDK](img_3.8.gif)
+    !![MDK](img-3.5.gif)
 
 6. Click the **link** icon to open the object browser for the **System Item** property.
 
     Double click the **Save** type and click **OK**.
 
-    !![MDK](img-3.9.png)
+    !![MDK](img-3.6.png)
 
 7. In the **Properties** pane | **Events** tab, click the 3 dots icon for the `OnPress` property to create a new action.
 
-    !![MDK](img-3.9.1.png)
+    !![MDK](img-3.7.png)
 
 8. Keep the default selection for Object Type (as Actions) and Folders path. Click **OK**.
 
-    !![MDK](img-3.9.2.png)
+    !![MDK](img-3.8.png)
 
 9. In the template selection, choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
 
-    !![MDK](img_3.7.png)
+    !![MDK](img-3.9.png)
 
     Provide the below information:
 
@@ -218,7 +216,7 @@ You will add this registered control in a Form Cell page.
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--` |
 
-    !![MDK](img_3.7.1.png)
+    !![MDK](img-3.10.png)
 
     >Here `MyExtensionControlName` is the name of the control that you renamed in code editor.
 
@@ -228,7 +226,7 @@ You will add this registered control in a Form Cell page.
 
     In `SliderExtension.page`, drag and drop a **Simple Property** control below the slider control.
 
-    !![MDK](img_3.15.gif)
+    !![MDK](img-3.11.gif)
 
 11.  Provide the following information:
 
@@ -237,7 +235,7 @@ You will add this registered control in a Form Cell page.
     | `Caption`| `Manual Entry` |
     | `placeholder` | `Enter number to set the slider ext's value` |
 
-    !![MDK](img-3.16.png)
+    !![MDK](img-3.12.png)
 
 12. When you input a value to the Simple Property control, an event will be triggered reflecting the slider value.
 
@@ -245,17 +243,17 @@ You will add this registered control in a Form Cell page.
 
     Navigate to **Events** tab, click the 3 dots icon for the `OnValueChange` property to create a new rule.
 
-    !![MDK](img-3.9.3.png)
+    !![MDK](img-3.13.png)
 
     For this, first you will write a business logic to set the extension value and then bind it to the input field.
 
 13. Choose the *Object Type* as **Rules** and *Folders* path as it is. Click **OK**.
 
-    !![MDK](img-3.9.4.png)
+    !![MDK](img-3.14.png)
 
     Enter the Rule name `SetExtensionValue`, click **Next** and then **Finish** on the confirmation step.
 
-    !![MDK](img_3.11.2.png)
+    !![MDK](img-3.15.png)
 
     Replace the generated snippet with below code.
 
@@ -268,7 +266,7 @@ You will add this registered control in a Form Cell page.
     }
     ```
 
-    !![MDK](img_3.11.3.png)
+    !![MDK](img-3.16.png)
 
 14. Save the changes to the `SetExtensionValue.js` file.
 
@@ -279,7 +277,7 @@ You will add this registered control in a Form Cell page.
 
 1. In **Extensions** folder, create additional files & folders. You will write individual implementation for Android and iOS platform. Final structure should look like as per below.
 
-    !![MDK](img_4.1.png)
+    !![MDK](img-4.1.png)
 
 
 
@@ -803,7 +801,7 @@ In the template generated project, there is already a page called `Main.page` wh
 
 Click the `Application.app` file, select the `SliderExtension.page` for the **Main Page** field.
 
-!![MDK](img-5.png)
+!![MDK](img-5.1.png)
 
 [DONE]
 [ACCORDION-END]
@@ -818,23 +816,23 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 2. Select deploy target as **Mobile Services**.
 
-    !![MDK](img-5.2.png)
+    !![MDK](img-6.2.png)
 
 3. Select **Mobile Services Landscape**.
 
-    !![MDK](img-5.3.1.png)    
+    !![MDK](img-6.3.png)    
 
 4. Select the application from Mobile Services.
 
-    !![MDK](img-5.3.png)
+    !![MDK](img-6.4.png)
 
     If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    !![MDK](img-4.4.png)
+    !![MDK](img-6.5.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    !![MDK](img-6.4.png)
+    !![MDK](img-6.6.png)
 
 [DONE]
 [ACCORDION-END]
@@ -849,7 +847,7 @@ Click the **Application.app** to open it in MDK Application Editor and then clic
 
 The On-boarding QR code is now displayed.
 
-!![MDK](img-6.2.png)
+!![MDK](img-7.2.png)
 
 >Leave the Onboarding dialog box open for the next step.
 
@@ -866,7 +864,7 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 
 Once you accept app update, you see Slider control.
 
-![MDK](img_8.gif)
+![MDK](img-1.0.gif)
 
 [OPTION END]
 
@@ -876,7 +874,7 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 
 Once you accept app update, you see Slider control.
 
-![MDK](img_8.1.gif)
+![MDK](img-8.1.gif)
 
 [OPTION END]
 
