@@ -158,7 +158,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [Android]]
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
 After you accept app update, you will see **Main** page being displayed and application data service is initialized.
 
@@ -168,7 +168,7 @@ After you accept app update, you will see **Main** page being displayed and appl
 
 [OPTION BEGIN [iOS]]
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
 Once you accept app update, you will see **Main** page being displayed and application data service is initialized.
 

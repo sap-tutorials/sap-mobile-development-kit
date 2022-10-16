@@ -109,7 +109,7 @@ With above details, you will next configure an app in Mobile Services, add root 
 
 [ACCORDION-BEGIN [Step 3: ](Create a new destination to your MDK Web application)]
 
-1. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app/swagger_petstore.zip) and unzip it on your machine.
+1. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app/swagger_petstore.zip) and unzip it on your machine.
 
     !![MDK](img-3.1.png)
 
@@ -280,7 +280,7 @@ Click the **Application.app** to open it in MDK Application Editor and then clic
 
 !![MDK](img-8.2.png)
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
 After you accept the app update, you will see the Pets list on the **Main** page.
 
@@ -300,7 +300,7 @@ Click the **Application.app** to open it in MDK Application Editor and then clic
 
 !![MDK](img-8.2.png)
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
 After you accept the app update, you will see the Pets list on the **Main** page.
 

@@ -270,7 +270,7 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
     !![MDK](img-5.2.png)
 
-3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
     After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync** and **Update** options at bottom of the page. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed. In Main page, you will notice styling on action bar, tool bar, items (Logout & Sync) available on tool bar and `Customers` button.
 
@@ -300,7 +300,7 @@ The On-boarding QR code is now displayed.
 
 !![MDK](img-5.2.png)
 
-3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
     After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync**, and **Update** options at bottom of the page. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed. In Main page, you will notice styling on action bar, tool bar, items (Logout & Sync) available on tool bar and `Customers` button.
 

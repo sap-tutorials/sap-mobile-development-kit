@@ -215,7 +215,7 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
     !![MDK](img-6.2.png)
 
-3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
     After you accept app update, you will see the **Main** page with **Logout**, **Update** and **Products** options at bottom of the page. Tap **Products**, you will navigate to Product List page.
 
@@ -243,7 +243,7 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
     !![MDK](img-6.2.png)
 
-3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
     After you accept app update, you will see the **Main** page with **Logout**, **Update** and **Products** options at bottom of the page. Tap **Products**, you will navigate to Product List page.
 
