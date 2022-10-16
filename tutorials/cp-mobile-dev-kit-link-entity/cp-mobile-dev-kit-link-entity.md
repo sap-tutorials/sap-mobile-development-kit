@@ -208,6 +208,7 @@ First, add an action bar item on the `Customers_Create.page`.
 
     >`CreateRelatedEntity` action creates the new entity against the navigation property of an existing entity with which the relationship is to be established. You can find more details about [Create Related Entity Action](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ODataService/CreateRelatedEntity.schema.html).
 
+
 7. Click **Next**.
 
 8. In **Parent Link and Properties Selection** step, provide the below information:

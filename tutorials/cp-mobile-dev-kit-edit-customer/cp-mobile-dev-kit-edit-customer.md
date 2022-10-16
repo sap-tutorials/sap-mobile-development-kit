@@ -291,6 +291,7 @@ When `Customers_UpdateEntity.action` gets executed successfully then `CloseModal
 
 You will navigate from the Customer Detail page to a new page modifying customer information. For this, you will add an action bar item on the Details page and will link it to a navigation action. When the action bar item is pressed by the end-user that will open the `Customers_Edit.page`.
 
+
 1. In `Customers_Detail.page`, drag and drop an **Action Bar Item** to the upper right of the action bar.
 
     !![MDK](img-4.1.png)

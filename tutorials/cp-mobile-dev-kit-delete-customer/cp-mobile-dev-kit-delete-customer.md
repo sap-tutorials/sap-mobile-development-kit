@@ -109,7 +109,6 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
 
     >You can find more details about [Delete Entity Action](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ODataService/DeleteEntity.schema.html).
 
-
 [DONE]
 [ACCORDION-END]
 

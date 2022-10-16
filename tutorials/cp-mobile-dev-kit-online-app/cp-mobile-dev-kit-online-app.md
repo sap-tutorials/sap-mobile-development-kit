@@ -134,6 +134,7 @@ So far, you have learned how to build an MDK application in the SAP Business App
 [DONE]
 [ACCORDION-END]
 
+
 [ACCORDION-BEGIN [Step 5: ](Display the QR code for onboarding the Mobile app)]
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.

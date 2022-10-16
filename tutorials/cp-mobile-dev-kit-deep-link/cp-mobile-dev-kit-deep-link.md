@@ -264,7 +264,7 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-6.5.png)
 
-    !![MDK](img-6.6.png)
+    ![MDK](img-6.6.png)
 
     If you already installed SAP Mobile Cards app, then MDK app will open it.
 

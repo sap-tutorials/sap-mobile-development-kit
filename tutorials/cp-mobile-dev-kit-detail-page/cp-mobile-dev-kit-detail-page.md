@@ -138,7 +138,6 @@ This page will show related details for a customer. In this page, you will add a
 [DONE]
 [ACCORDION-END]
 
-
 [ACCORDION-BEGIN [Step 2: ](Navigate from Customer List to its Details page)]
 
 Now, you will create a Navigation action that opens the `Customers_Detail.page` when called.
