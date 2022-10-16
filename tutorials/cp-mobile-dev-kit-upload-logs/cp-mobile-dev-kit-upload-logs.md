@@ -37,6 +37,7 @@ In this step, you will enable client log upload policy in **SAP Mobile Services 
 
     >Other policy parameters like Log Level, Delete Uploaded Log After, Maximum Number of Logs and Maximum Log Size currently have no effect.
 
+
     >You can find more details about [Client Log Upload feature](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/policies.html).
 
 [DONE]

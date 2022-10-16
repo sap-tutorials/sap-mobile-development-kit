@@ -207,6 +207,7 @@ Additionally, you can search over all properties of the objects displayed in the
 
 >For this tutorial, MDK web app is going to connect to SAP Mobile Services' sample backend which will register your user in Mobile Services application. In case, if you see any registration count limit related error, please be note that there is a [total 10 user registrations per app in trial accounts](https://help.sap.com/viewer/468990a67780424a9e66eb096d4345bb/Cloud/en-US/16439fd40a014138abc5dc262e816be5.html).
 
+
 1. Click the highlighted button to open the MDK Web application in a browser. Enter your SAP BTP credentials if asked.
 
     !![MDK](img-5.5.png)

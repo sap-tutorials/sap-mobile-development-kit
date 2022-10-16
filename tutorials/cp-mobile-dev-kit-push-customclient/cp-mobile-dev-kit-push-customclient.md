@@ -9,6 +9,7 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
+
 ## Prerequisites
 - **Tutorial**: [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup)
 - **Tutorial**: Follow steps 2-5 in [Enable Push Notifications in the MDK Public Store Client](cp-mobile-dev-kit-push) to create an MDK metadata project

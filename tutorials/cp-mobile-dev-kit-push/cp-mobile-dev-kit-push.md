@@ -74,6 +74,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
     >More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).  
 
+
 5. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Push` project in the project explorer.
 
 [DONE]
