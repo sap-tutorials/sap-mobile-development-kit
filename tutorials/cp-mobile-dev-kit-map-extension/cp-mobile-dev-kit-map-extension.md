@@ -25,7 +25,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 ---
 
 
-To extend the functionality, or customise the look and feel, and behaviour of your client app, you can create extension controls other than the already existing MDK built-in controls using `NativeScript` (TypeScript/JavaScript applicable for both Android and iOS)
+To extend the functionality, or customize the look and feel, and behavior of your client app, you can create extension controls other than the already existing MDK built-in controls by writing Native Code in TypeScript via Marshalling. `NativeScript` provide the ability to access platform-specific objects, class, and types in TypeScript / JavaScript via marshalling. `NativeScript` handles the conversion between JavaScript and native data types implicitly.
 
 In this tutorial, you will create a Map extension via `NativeScript` (in TypeScript language), you will view the Map in Apple Maps on iOS devices and in Google Maps on Android devices.
 
@@ -200,13 +200,13 @@ You will add this registered control in the generated `Customers_Detail.page`.
     !![MDK](img-3.1.gif)
 
   3. Expand **Section Registered Extension Control**, drag & drop the registered `mdk_maps` control on the page area.
-   
+
     !![MDK](img-3.2.png)
 
     >You can find more details about the **Section Extension** in [this](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Container/Extension.schema.html) guide.
 
   4. In the **Properties** section, set the **Height** to 600.
-   
+
     !![MDK](img-3.3.png)  
 
   5. Bind the registered Extension control properties to **Customers** properties.
@@ -619,14 +619,14 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
 2. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
-3. After you have accepted the app update, tap `Customers` to navigate to customers list. 
+3. After you have accepted the app update, tap `Customers` to navigate to customers list.
 
     ![MDK](img-8.15.png)   
 
 4. Tap any of customer record to navigate to details page.
 
     ![MDK](img-8.16.png)  
-    
+
     and then tap any of customer record to navigate to details page.
 
 5. In Customer Details page, you will see the Customer's address loading in Apple Maps.
