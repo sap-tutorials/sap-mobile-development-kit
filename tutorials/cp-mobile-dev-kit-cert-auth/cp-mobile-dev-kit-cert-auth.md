@@ -295,6 +295,7 @@ Make sure that you have already completed steps 1 & 2 from [this](cp-mobile-dev-
 
     ![MDK](img-5.4.png)
 
+
 6.  As you enabled the certificate based authentication, MDK client detects a valid certificate installed on the device and connects successfully to the SAP BTP.
 
     ![MDK](img-5.5.png)
