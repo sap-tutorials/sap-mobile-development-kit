@@ -25,6 +25,7 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
+
 ![MDK](img-1.0.gif)
 
 [ACCORDION-BEGIN [Step 1: ](Create a new MDK project in SAP Business Application Studio)]

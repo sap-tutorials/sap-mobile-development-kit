@@ -25,6 +25,7 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
+
 [ACCORDION-BEGIN [Step 1: ](Understand the Internationalization and Localization)]
 
 **Internationalization (i18n)** is the process of designing and developing your software or mobile application product so it can be adapted and localized to different cultures, regions, and languages.
