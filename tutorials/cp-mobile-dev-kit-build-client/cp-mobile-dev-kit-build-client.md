@@ -1,6 +1,5 @@
 ---
-title: Build Your Mobile Development Kit Client Using MDK SDK
-description: Set up your development environment that enable MDK SDK so that you can begin building your branded Mobile Development Kit client.
+parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
 tags: [ tutorial>intermediate, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services ]
@@ -9,12 +8,14 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
+# Build Your Mobile Development Kit Client Using MDK SDK
+<!-- description --> Set up your development environment that enable MDK SDK so that you can begin building your branded Mobile Development Kit client.
+
 ## Prerequisites
 - **Tutorial**: [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup)
 - **Download the latest version of Mobile Development Kit SDK** either from the SAP community [download page](https://developers.sap.com/trials-downloads.html?search=Mobile%20development%20kit) or [SAP Software Center](https://launchpad.support.sap.com/#/softwarecenter/search/Mobile%2520development%2520kit) if you are a SAP Mobile Services customer
 
-## Details
-### You will learn
+## You will learn
   - How to install a Mobile development kit client SDK on Mac and Windows OS
   - How to build a branded Mobile development kit client for iOS and Android
   - How to connect to SAP Mobile app
@@ -25,6 +26,7 @@ author_profile: https://github.com/jitendrakansal
   2. Use the Cloud Build feature in SAP Mobile Services to generate a MDK Client (details are in [this](cp-mobile-dev-kit-cbs-client) tutorial)
   3. Build a client on your local machine in your organization development environment using MDK SDK
 
+## Intro
 In this tutorial, you will learn creating a MDK client using option 3.  
 
 For distribution to your users, you need to build a custom client. This enables you to:
@@ -39,7 +41,8 @@ For distribution to your users, you need to build a custom client. This enables 
 
 ---
 
-[ACCORDION-BEGIN [Step 1: ](Run MDK Dependencies Installer)]
+### Run MDK Dependencies Installer
+
 
 >Make sure you are choosing the right development platform tab above.
 
@@ -49,23 +52,23 @@ Make sure that you have download latest version of MDK SDK as described in Prere
 
 1. Extract the downloaded zip file on your Mac. You will see following Files and Folders in the extracted folder.
 
-    !![MDK](img-1.1.png)
+    <!-- border -->![MDK](img-1.1.png)
 
 2. At the root of the extracted MDK SDK folder, if using Intel chip Mac machine, double click on the file`MDK Dependencies Installer-x64` to start the installer or if using M1 chip Mac machine, double click on the file `MDK Dependencies Installer-arm64` to start the installer.
 
-    !![MDK](img-1.2.png)
+    <!-- border -->![MDK](img-1.2.png)
 
     >If you find some issues (for example: app cant be opened because the identity of the developer cannot be confirmed) while opening this file, go to System Preferences > Security & Privacy and click **Open Anyway**.
 
 3. Enter Admin user password and click **OK**.
 
-    !![MDK](img-1.3.png)
+    <!-- border -->![MDK](img-1.3.png)
 
     >You may need to grant admin access via Privileges app.
 
     The installer will list all required components for iOS and Android platform and automatically check if they are already installed in the machine. Follow the installer UI to install the components you selected.
 
-    !![MDK](img-1.4.gif)
+    <!-- border -->![MDK](img-1.4.gif)
 
     >You might see different software versions depending on MDK SDK version you are using.
 
@@ -77,15 +80,15 @@ Make sure that you have download latest version of MDK SDK as described in Prere
 
 1. Extract the downloaded zip file on your Windows machine. You will see following Files and Folders in the extracted folder.
 
-    !![MDK](img-1.5.png)
+    <!-- border -->![MDK](img-1.5.png)
 
 2. At the root of the extracted MDK SDK folder, extract `MDKDependenciesInstallerWindows.zip` file, by default a new folder `MDK Dependencies Installer-win32-ia32` will be created. Enter the new folder and double click `MDK_Dependencies_Installer.exe` to start installer.
 
-    !![MDK](img-1.6.png)
+    <!-- border -->![MDK](img-1.6.png)
 
     The installer will list all required components for Windows platform and automatically check if they are already installed in the machine. Follow the installer UI to install the components you selected.
 
-    !![MDK](img-1.7.png)
+    <!-- border -->![MDK](img-1.7.png)
 
     >If you encounter any issue while running the MDK Dependencies Installer then have a look at [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/troubleshooting/mdk/troubleshoot.html#loading-message-displays-while-running-mobile-development-kit-dependency-installer-on-windows-machine) troubleshooting guide.
 
@@ -97,10 +100,10 @@ Make sure that you have download latest version of MDK SDK as described in Prere
 
 Once you've installed these prerequisites, your machine is ready to generate and build an MDK project.
 
-[VALIDATE_2]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 2: ](Installing the SDK dependencies)]
+
+### Installing the SDK dependencies
+
 
 >Make sure you are choosing the right development platform tab above.
 
@@ -110,22 +113,22 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 1. Unzip `MDKClient_SDK.zip` if it is not already extracted.
 
-    !![MDK](img-2.1.png)
+    <!-- border -->![MDK](img-2.1.png)
 
 2. Invoke `install.command` either from Terminal or from Finder. From a terminal window, navigate to the `[path] -> MDKClient_SDK` folder and execute `./install.command`. A terminal window will appear installs the SDK dependencies using NPM.
 
-    !![MDK](img-2.2.png)
+    <!-- border -->![MDK](img-2.2.png)
 
     Once this completes, you will a success message in the console followed by next steps.
 
-    !![MDK](img-2.3.png)
+    <!-- border -->![MDK](img-2.3.png)
 
     >If you select the command from Finder, you may see the following message:
     "install.command" can't be opened because it is from an unidentified developer. Your security preferences allow installation of only apps from the App Store and identified developers. To get around this, navigate to the `Security & Privacy` section of `System Preferences`. This can be found using Spotlight. Near the bottom of this dialog, click the *Open Anyway* button on the right side. Then select *Open* from the next prompt.
 
     Notice that the `create-client.command` file has appeared in the SDK directory.
 
-    !![MDK](img-2.4.png)
+    <!-- border -->![MDK](img-2.4.png)
 
 [OPTION END]
 
@@ -135,28 +138,27 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 1. Unzip `MDKClient_SDK.zip` if it is not already extracted.
 
-    !![MDK](img-2.5.png)
+    <!-- border -->![MDK](img-2.5.png)
 
 2. Invoke `install.cmd`  from a command line window, navigate to the `[path] -> MDKClient_SDK` folder and execute `install.cmd`. A terminal window will appear installs the SDK dependencies using NPM.
 
-    !![MDK](img-2.6.png)
+    <!-- border -->![MDK](img-2.6.png)
 
-    !![MDK](img-2.7.png)
+    <!-- border -->![MDK](img-2.7.png)
 
     Once this completes, you will a success message in the console followed by next steps.
 
-    !![MDK](img-2.8.png)    
+    <!-- border -->![MDK](img-2.8.png)    
 
     Notice that the `create-client.cmd` file has appeared in the SDK directory.
 
-    !![MDK](img-2.9.png)    
+    <!-- border -->![MDK](img-2.9.png)    
 
 [OPTION END]
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 3: ](Create your .mdkproject folder)]
+### Create your .mdkproject folder
+
 
 >Make sure you are choosing the right development platform tab above.
 
@@ -164,19 +166,19 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 1. In the `MDKClient_SDK` folder, you will find the `template.mdkproject` folder.
 
-    !![MDK](img-3.1.png)
+    <!-- border -->![MDK](img-3.1.png)
 
     It is recommended that you copy this folder to another location so that you can to use it for future builds. Copy and paste it anywhere, and then rename template to `DemoSampleApp.mdkproject`.
 
-    !![MDK](img-3.2.png)
+    <!-- border -->![MDK](img-3.2.png)
 
 2. Next, you will need to update the `BrandedSettings.json` and `MDKProject.json` files as needed for your client. Go into the `DemoSampleApp.mdkproject` folder.
 
-    !![MDK](img-3.3.png)
+    <!-- border -->![MDK](img-3.3.png)
 
 3. Open the `MDKProject.json` file and update it as needed. This file has some build-time configurations such as the application name, version and bundle ID.
 
-    !![MDK](img-3.4.png)
+    <!-- border -->![MDK](img-3.4.png)
 
     >`AppDisplayName`: This is the name of the application on the home screen of the device.
 
@@ -190,13 +192,13 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 4. Now, open the `BrandedSettings.json` and provide `ApplicationDisplayName` name. This name will appear on the Welcome screen in your branded MDK client.
 
-    !![MDK](img-3.5.png)
+    <!-- border -->![MDK](img-3.5.png)
 
 5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click `com.sap.mdk.demo` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
-    !![MDK](img-3.6.png)
+    <!-- border -->![MDK](img-3.6.png)
 
-    !![MDK](img-3.7.png)
+    <!-- border -->![MDK](img-3.7.png)
 
     Regarding other properties:
     **Debug settings**: The settings in the `DebugSettings` property are for development use and should not be enabled in a production setting.
@@ -214,7 +216,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
     | `DetailLabelViewText` | `My first branded client using MDK SDK` |
     | `SigninButtonText` | `Start` |
 
-    !![MDK](img-3.8.png)        
+    <!-- border -->![MDK](img-3.8.png)        
 
 [OPTION END]
 
@@ -222,19 +224,19 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 1. In the `MDKClient_SDK` folder, you will find the `template.mdkproject` folder.
 
-    !![MDK](img-3.9.png)
+    <!-- border -->![MDK](img-3.9.png)
 
     It is recommended that you copy this folder to another location so that you can to use it for future builds. Copy and paste it anywhere, and then rename the template to `DemoSampleApp.mdkproject`.
 
-    !![MDK](img-3.10.png)
+    <!-- border -->![MDK](img-3.10.png)
 
 2. Next, you will need to update the `MDKProject.json` and `BrandedSettings.json` files as needed for your client. Go into the `DemoSampleApp.mdkproject` folder.
 
-    !![MDK](img-3.11.png)
+    <!-- border -->![MDK](img-3.11.png)
 
 3. Open the `MDKProject.json` file and update it as needed. This file has some build-time configurations such as the application name, version and bundle ID.
 
-    !![MDK](img-3.4.png)
+    <!-- border -->![MDK](img-3.4.png)
 
     >`AppDisplayName`: This is the name of the application on the home screen of the device.
 
@@ -248,13 +250,13 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 4. Now, open the `BrandedSettings.json` and provide `ApplicationDisplayName` name. This name will appear on the Welcome screen in your branded MDK client.
 
-    !![MDK](img-3.5.png)
+    <!-- border -->![MDK](img-3.5.png)
 
 5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click `com.sap.mdk.demo` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
-    !![MDK](img-3.6.png)
+    <!-- border -->![MDK](img-3.6.png)
 
-    !![MDK](img-3.7.png)
+    <!-- border -->![MDK](img-3.7.png)
 
     Regarding other properties:
     **Debug settings**: The settings in the `DebugSettings` property are for development use and should not be enabled in a production setting.
@@ -272,15 +274,14 @@ To use the SDK to generate a mobile development kit client, the first step is to
     | `DetailLabelViewText` | `My first branded client using MDK SDK` |
     | `SigninButtonText` | `Start` |
 
-    !![MDK](img-3.8.png)        
+    <!-- border -->![MDK](img-3.8.png)        
 
 [OPTION END]
 
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 4: ](Create the MDK Client)]
+### Create the MDK Client
+
 
 >Make sure you are choosing the right development platform tab above.
 
@@ -288,23 +289,23 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 1. Run `./create-client.command` to create the client. You will be asked to provide the path to the `.mdkproject` file. You can also provide optional arguments such as output directory and log verbosity. You can run `create-client.command --help` to find out how to specify these options as arguments.
 
-    !![MDK](img-4.1.png)
+    <!-- border -->![MDK](img-4.1.png)
 
     >You can run the `create-client command` from any directory.  The resulting MDK client will be created in the directory where the `create-client command` is run from.
 
 2. You will be asked whether you would like to build for iOS or Android or All?
 
-    !![MDK](img-4.2.png)
+    <!-- border -->![MDK](img-4.2.png)
 
     >**All** option was chosen in this tutorial as you will learn how to create the MDK client for iOS and Android.
 
     Once the `create-client.command` script executed successfully, you will see **Application ready** message in terminal console.
 
-    !![MDK](img-4.3.png)
+    <!-- border -->![MDK](img-4.3.png)
 
     You will also find your MDK Client app created under the `MDKClient_SDK` folder.
 
-    !![MDK](img-4.4.png)
+    <!-- border -->![MDK](img-4.4.png)
 
 [OPTION END]
 
@@ -312,28 +313,28 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 1. Run `./create-client.cmd` to create the client. You will be asked to provide the path to the `.mdkproject` file. You can also provide optional arguments such as output directory and log verbosity. You can run `create-client.cmd --help` to find out how to specify these options as arguments.
 
-    !![MDK](img-4.5.png)
+    <!-- border -->![MDK](img-4.5.png)
 
     >You can run the `create-client cmd` from any directory. The resulting MDK client will be created in the directory where the `create-client command` is run from.
 
 2. Once the `create-client.cmd` script executed successfully, you will see **Application ready** message in terminal console.
 
-    !![MDK](img-4.6.png)
+    <!-- border -->![MDK](img-4.6.png)
 
-    !![MDK](img-4.7.png)
+    <!-- border -->![MDK](img-4.7.png)
 
      You will also find your app created under the `MDKClient_SDK` folder.
 
-    !![MDK](img-4.8.png)
+    <!-- border -->![MDK](img-4.8.png)
 
 [OPTION END]
 
 >This name of this folder is based on the `<App Name>` provided in the `MDKProject.json file` and this is the MDK client application generated project.
 
-[VALIDATE_1]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 5: ](Run the MDK Client)]
+
+### Run the MDK Client
+
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -341,12 +342,12 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 1. In this step, you will run your branded MDK client on an Android emulator. Before trying to launch the client on Android emulator, make sure that you have already configured a virtual device (Android Studio>Virtual Device Manager). Otherwise, you may get an error like No emulator image available for device identifier. In terminal or command line window, navigate to the app name folder **`DemoSampleApp`** (in `MDClient_SDK` path) and use `tns run android --emulator` command to run the MDK client on the Android emulator.
 
-    !![MDK](img-5.1.png)
+    <!-- border -->![MDK](img-5.1.png)
 
     >To run the MDK client on Android device, first attach your device to your machine. Then run `tns device android` command to print a list of attached devices. Copy the **Device Identifier** value for your device.
-    !![MDK](img-5.2.png)
+    <!-- border -->![MDK](img-5.2.png)
     Make sure **Developer option** and **USB debugging** option is enabled in android device. Then run `tns run android --device <device identifier>` command to launch the MDK client on your Android device.
-    !![MDK](img-5.3.png)
+    <!-- border -->![MDK](img-5.3.png)
 
     Once, above command gets successfully executed, you will see new MDK client up and running in Android simulator.
 
@@ -387,12 +388,12 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 1. In this step, you will run your branded MDK client on an iOS simulator. In terminal window, navigate to the app name folder **`DemoSampleApp`** (in `MDClient_SDK` path) and use `tns run ios --emulator` command to run the MDK client on the iOS simulator.
 
-    !![MDK](img-5.11.png)
+    <!-- border -->![MDK](img-5.11.png)
 
     >To run the MDK client on iOS device, first attach the device to your Mac. Then run `tns device ios` command to print a list of attached devices. Copy the **Device Identifier** value for your device.
-    !![MDK](img-5.12.png)
+    <!-- border -->![MDK](img-5.12.png)
     Then run `tns run ios --device <device identifier>` command to launch the MDK client on your iOS device.
-    !![MDK](img-5.13.png)
+    <!-- border -->![MDK](img-5.13.png)
 
     >You can also run the app in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then run the application for the target device.
 
@@ -433,7 +434,6 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 [OPTION END]
 
-[VALIDATE_3]
-[ACCORDION-END]
+
 
 ---

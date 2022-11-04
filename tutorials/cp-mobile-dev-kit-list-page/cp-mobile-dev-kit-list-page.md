@@ -1,6 +1,5 @@
 ---
-title: Create a Customer List Page in an MDK App
-description: Use the mobile development kit page editor to create a new page for displaying a customer list.
+parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
 tags: [ tutorial>beginner, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-business-application-studio ]
@@ -9,14 +8,17 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
-## Details
-### You will learn
+# Create a Customer List Page in an MDK App
+<!-- description --> Use the mobile development kit page editor to create a new page for displaying a customer list.
+
+## You will learn
   - How to create a new page and add some controls to display customer information
   - How to navigate from one page to another page
 
 ---
 
 
+## Intro
 To enhance your MDK app with customer list information, you need to carry out the following tasks:
 
 *  Create a new customer list page
@@ -28,7 +30,8 @@ To enhance your MDK app with customer list information, you need to carry out th
 
 ![MDK](img-1.0.gif)
 
-[ACCORDION-BEGIN [Step 1: ](Create a new page for displaying customer list)]
+### Create a new page for displaying customer list
+
 
 This page is a searchable list that displays all customers.
 
@@ -36,25 +39,25 @@ To create the Customer List page, you will create a **Section page** and drag th
 
 1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page**.
 
-    !![MDK](img-1.1.png)
+    <!-- border -->![MDK](img-1.1.png)
 
 2. Select | **Section Page** and click **Next**.
 
-    !![MDK](img-1.2.png)
+    <!-- border -->![MDK](img-1.2.png)
 
     >You can find more details about [Section Page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/section-page.html).
 
 3. Enter the **Page Name** `Customers_List` and click **Next** and the **Finish** on the confirmation step.
 
-    !![MDK](img-1.3.png)
+    <!-- border -->![MDK](img-1.3.png)
 
 4. In the **Properties** pane, set the **Caption** to **Customers**.
 
-    !![MDK](img-1.4.png)
+    <!-- border -->![MDK](img-1.4.png)
 
 5. In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Contact Cell Table** control onto the Page area.
 
-    !![MDK](img-1.5.gif)
+    <!-- border -->![MDK](img-1.5.gif)
 
 6. In the Properties pane, provide the below information:
 
@@ -64,49 +67,49 @@ To create the Customer List page, you will create a **Section page** and drag th
     | `EntitySet` | Select `Customers` from the dropdown |
     | `QueryOptions` | `$orderby=LastName` |
 
-    !![MDK](img-1.6.gif)
+    <!-- border -->![MDK](img-1.6.gif)
 
 7. In the **Properties** pane, click the **link icon** to open the Object Browser for the **Description** property. Double click the `City` property of the Customer entity to set it as the binding expression and click **OK**.
 
-    !![MDK](img-1.7.gif)
+    <!-- border -->![MDK](img-1.7.gif)
 
     >Be careful **not** to select `City` from `Address (ESPM.Address)`.
 
-    >!![MDK](img-1.8.png)
+    ><!-- border -->![MDK](img-1.8.png)
 
 8. Remove the default value for the `DetailImage` property. Repeat the above steps for `Headline` and `Subheadline` properties binding to `LastName` and `FirstName` properties of the Customer entity respectively.
 
     You should have final results as below.
 
-    !![MDK](img-1.9.png)
+    <!-- border -->![MDK](img-1.9.png)
 
 9. In the **Search** section of the Properties pane, change both the **Search Enabled** property and **Barcode Scanner** property to **true**.
 
-    !![MDK](img-1.10.png)
+    <!-- border -->![MDK](img-1.10.png)
 
 10. In the **Activity Items** section of the Properties pane, click **Add** to add a new activity item.
 
-    !![MDK](img-1.11.png)
+    <!-- border -->![MDK](img-1.11.png)
 
 
 11. Expand the added item, click the 3 dots icon to open the Object browser to bind the `ActivityValue` to the `PhoneNumber` property of the Customer entity.
 
-    !![MDK](img-1.12.gif)
+    <!-- border -->![MDK](img-1.12.gif)
 
 12. Similarly, add one more activity item, select **Email** from the dropdown and bind it to `EmailAddress` property of the Customer entity.
 
-    !![MDK](img-1.13.png)
+    <!-- border -->![MDK](img-1.13.png)
 
-[VALIDATE_2]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 2: ](Navigate to the Customer List page)]
+
+### Navigate to the Customer List page
+
 
 Now, you will add a button on the Main page and from there, you will navigate to the `Customers_List.page`.
 
 1. In `Main.page`, expand the **Controls** | **Static Container** group, drag and drop the **Button Table** control onto the Page area.
 
-    !![MDK](img-2.1.gif)
+    <!-- border -->![MDK](img-2.1.gif)
 
     >**Container** includes controls that act as containers for other controls, such as container items. A container is constant for all pages. The size of a container depends on the controls and contents included inside.
 
@@ -114,7 +117,7 @@ Now, you will add a button on the Main page and from there, you will navigate to
 
     Drag and drop a **Button** onto the Button Table container on the page.
 
-    !![MDK](img-2.2.gif)
+    <!-- border -->![MDK](img-2.2.gif)
 
     >Each static container type in a Section Page can contain specific controls (static items).
 
@@ -127,19 +130,19 @@ Now, you will add a button on the Main page and from there, you will navigate to
     | `Image`| `sap-icon://customer` |
     | `Title` | `Customers` |
 
-    !![MDK](img-2.3.png)
+    <!-- border -->![MDK](img-2.3.png)
 
 4. Under **Events** tab, click the 3 dots icon for the `OnPress Handler` property and select the `Create a rule/action`.
 
-    !![MDK](img-2.4.png)
+    <!-- border -->![MDK](img-2.4.png)
 
 5. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    !![MDK](img-2.5.png)
+    <!-- border -->![MDK](img-2.5.png)
 
 6. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
 
-    !![MDK](img-2.6.png)
+    <!-- border -->![MDK](img-2.6.png)
 
 7. Provide the below information:
 
@@ -148,38 +151,37 @@ Now, you will add a button on the Main page and from there, you will navigate to
     | `Action Name`| `NavToCustomers_List` |
     | `PageToOpen` | Select `Customers_List.page` from the dropdown |
 
-    !![MDK](img-2.7.png)
+    <!-- border -->![MDK](img-2.7.png)
 
 8. Click **Next** and then **Finish** on the confirmation step.
 
-[DONE]
-[ACCORDION-END]
 
 
-[ACCORDION-BEGIN [Step 3: ](Deploy the application)]
+### Deploy the application
+
 
 Deploy the updated application to your MDK client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-    !![MDK](img-3.1.png)
+    <!-- border -->![MDK](img-3.1.png)
 
 2. Select deploy target as **Mobile & Cloud**.
 
-    !![MDK](img-3.2.png)
+    <!-- border -->![MDK](img-3.2.png)
 
     You should see success message for both deployments.
 
-    !![MDK](img-3.3.png)
+    <!-- border -->![MDK](img-3.3.png)
 
     >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
 
-    >!![MDK](img-3.4.png)
+    ><!-- border -->![MDK](img-3.4.png)
 
-[VALIDATE_1]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 4: ](Run the app)]
+
+### Run the app
+
 
 >Make sure you are choosing the right platform tab above.
 
@@ -227,24 +229,23 @@ Deploy the updated application to your MDK client.
 
 1. Either click the highlighted button or refresh the web page to load the changes.
 
-    !![MDK](img-4.8.png)
+    <!-- border -->![MDK](img-4.8.png)
 
 
     >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
 
-    >!![MDK](img-4.9.png)
+    ><!-- border -->![MDK](img-4.9.png)
 
 2. You will notice, newly added button on the main page. Click **Customers**.
 
-    !![MDK](img-4.10.png)
+    <!-- border -->![MDK](img-4.10.png)
 
     Here, you will see list of all the Customers. You can search (case-sensitive) a record by by First Name or Last Name or City. The rendered Controls are UI5 web components, you can email to the customer, make a phone call etc.
 
-    !![MDK](img-4.11.png)
+    <!-- border -->![MDK](img-4.11.png)
 
 [OPTION END]
 
-[VALIDATE_3]
-[ACCORDION-END]
+
 
 ---
