@@ -1,6 +1,5 @@
 ---
-title: Quick Start with the Mobile Development Kit (MDK)
-description: Create and examine your first mobile (offline) and web application using the MDK template connecting against a sample service.
+parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
 tags: [ tutorial>beginner, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-business-application-studio]
@@ -9,14 +8,16 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
+# Quick Start with the Mobile Development Kit (MDK)
+<!-- description --> Create and examine your first mobile (offline) and web application using the MDK template connecting against a sample service.
+
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
 - **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) or [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device.
-<table><tr><td align="center">!![Play Store QR Code](img-4.4.png)<br>Android</td><td align="center">!![App Store QR Code](img-4.5.png)<br>iOS</td></tr></table>
+<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-4.4.png)<br>Android</td><td align="center">!![App Store QR Code](img-4.5.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
-## Details
-### You will learn
+## You will learn
   - How to create an MDK sample app using a template in SAP Business Application Studio
   - How to deploy an MDK app to Mobile Services and run it in mobile client
   - How to deploy an MDK app to Cloud Foundry and run it as a Web application
@@ -24,7 +25,8 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 
-[ACCORDION-BEGIN [Step 1: ](Create a new MDK project in SAP Business Application Studio)]
+### Create a new MDK project in SAP Business Application Studio
+
 
 This step includes creating the mobile development kit project in the editor.
 
@@ -32,13 +34,13 @@ This step includes creating the mobile development kit project in the editor.
 
 2. Click **Start from template** on Welcome page.
 
-    !![MDK](img-1.1.png)
+    <!-- border -->![MDK](img-1.1.png)
 
     >If you do not see the Welcome page, you can access it via **Help** menu or via **View** menu > Find Command > Welcome.
 
 3. Select **MDK Project** and click **Start**.
 
-    !![MDK](img-1.2.png)
+    <!-- border -->![MDK](img-1.2.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
@@ -52,11 +54,11 @@ This step includes creating the mobile development kit project in the editor.
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
-    !![MDK](img-1.3.png)
+    <!-- border -->![MDK](img-1.3.png)
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Login icon and select the org & space where you have set up the initial configuration for your MDK app.
 
-    >!![MDK](img-1.4.png)
+    ><!-- border -->![MDK](img-1.4.png)
 
 5. In *Service configuration* step, provide the below information and click **Next**:
 
@@ -69,7 +71,7 @@ This step includes creating the mobile development kit project in the editor.
     | `Enter a path to service` | Leave it as it is |
     | `Enable Offline` | It's enabled by default |
 
-    !![MDK](img-1.5.png)
+    <!-- border -->![MDK](img-1.5.png)
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
 
@@ -77,18 +79,17 @@ This step includes creating the mobile development kit project in the editor.
 
 6. In the *Data Collections* step, select `Customers`, `Products`, `PurchaseOrderHeaders`, `PurchaseOrderItems` `SalesOrderHeaders` and `SalesOrderItems`. Click **Finish** to complete the project creation.
 
-    !![MDK](img-1.6.png)
+    <!-- border -->![MDK](img-1.6.png)
 
 7. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDKApp` project in the project explorer.
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 2: ](Get familiar with generated project structure)]
+### Get familiar with generated project structure
+
 
 This is how the project structure looks like within the workspace.
 
-!![MDK](img-2.1.png)
+<!-- border -->![MDK](img-2.1.png)
 
 These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
 
@@ -108,24 +109,23 @@ These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264ac
 
 >Open the application settings in the application editor by clicking the `Application.app`.
 
->!![MDK](img-2.2.png)
+><!-- border -->![MDK](img-2.2.png)
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 3: ](Deploy the application)]
+### Deploy the application
+
 
 So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services and Cloud Foundry to use it in the Mobile client and Web application respectively.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-    !![MDK](img-3.1.png)
+    <!-- border -->![MDK](img-3.1.png)
 
 2. Select deploy target as **Mobile & Cloud**.
 
    MDK editor will deploy the metadata to Mobile Services (for Mobile application) followed by to Cloud Foundry (for Web application).
 
-   !![MDK](img-3.2.gif)
+   <!-- border -->![MDK](img-3.2.gif)
 
 >First web deployment takes 2-3 minutes as it creates five service instances for the application, you can find these details in space cockpit.
 
@@ -142,29 +142,27 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 You should see successful messages for both deployments.
 
-!![MDK](img-3.3.png)
+<!-- border -->![MDK](img-3.3.png)
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 4: ](Display the QR code for onboarding the Mobile app)]
+### Display the QR code for onboarding the Mobile app
+
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
 
 Click the `Application.app` to open it in MDK Application Editor and then click the **Application QR Code** icon.
 
-!![MDK](img-4.1.png)
+<!-- border -->![MDK](img-4.1.png)
 
 The On-boarding QR code is now displayed.
 
-!![MDK](img-4.2.png)
+<!-- border -->![MDK](img-4.2.png)
 
 >Leave the Onboarding dialog box open for the next step.
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 5: ](Run the app)]
+### Run the app
+
 
 [OPTION BEGIN [Android]]
 
@@ -176,11 +174,11 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 
 After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync**, and **Update** options at bottom of the page and Offline store will be initialized. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed where you can create, update, delete the record. This record gets saved to offline request queue database.  You can navigate back to main page and press **Sync** to upload any local changes to the backend. Once the upload is successful, it will also download the data from the backend to the offline store to have the same dataset on both sides.
 
-!![MDK](img-5.1.gif)
+<!-- border -->![MDK](img-5.1.gif)
 
 Additionally, you can search over all properties of the objects displayed in the section by entering manually or via barcode scanner. For example, in Products list, you can scan the barcode to search the products belong to _MP3 Players_ category.
 
-!![MDK](img-5.2.gif)
+<!-- border -->![MDK](img-5.2.gif)
 
 >Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
@@ -200,7 +198,7 @@ After you accept the app update, you will see the list of entities on the **Main
 
 Additionally, you can search over all properties of the objects displayed in the section by entering manually or via barcode scanner. For example, in Products list, you can scan the barcode to search the products belong to _MP3 Players_ category.
 
-!![MDK](img-5.4.gif)
+<!-- border -->![MDK](img-5.4.gif)
 
 >Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
@@ -213,20 +211,19 @@ Additionally, you can search over all properties of the objects displayed in the
 
 1. Click the highlighted button to open the MDK Web application in a browser. Enter your SAP BTP credentials if asked.
 
-    !![MDK](img-5.5.png)
+    <!-- border -->![MDK](img-5.5.png)
 
     >You can also open the MDK web application by accessing its URL from `.project.json` file.
-    !![MDK](img-5.6.png)
+    <!-- border -->![MDK](img-5.6.png)
 
     You will see the list of entities on the **Main** page, **Logout** option at bottom of the page and application data service will be initialized. click either entity, it navigates to detail page, you can create, update, delete a record.
 
-    !![MDK](img-5.7.gif)
+    <!-- border -->![MDK](img-5.7.gif)
 
 [OPTION END]
 
 Once you complete this tutorial you can continue with [these tutorials](mission.mobile-dev-kit-get-started) to create an MDK app from scratch.
 
-[VALIDATE_1]
-[ACCORDION-END]
+
 
 ---

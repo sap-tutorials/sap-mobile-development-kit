@@ -1,6 +1,5 @@
 ---
-title: Extend Your MDK App With a Map Custom Control (Using Metadata Approach)
-description: Build and run the Mobile Development Kit client with Map custom control functionality for Android and iOS platforms.
+parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
 tags: [ tutorial>advanced, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-business-application-studio ]
@@ -9,20 +8,23 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
+# Extend Your MDK App With a Map Custom Control (Using Metadata Approach)
+<!-- description --> Build and run the Mobile Development Kit client with Map custom control functionality for Android and iOS platforms.
+
 ## Prerequisites
 - **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
 - **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device.
-<table><tr><td align="center"></td><td align="center">!![App Store QR Code](img-1.1.1.png)<br>iOS</td></tr></table>
+<table><tr><td align="center"></td><td align="center"><!-- border -->![App Store QR Code](img-1.1.1.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 - **Download the latest version of Mobile Development Kit SDK** either from community [download page](https://developers.sap.com/trials-downloads.html?search=Mobile%20development%20kit) or [SAP Software Center](https://launchpad.support.sap.com/#/softwarecenter/search/Mobile%2520development%2520kit) if you are a SAP Mobile Services customer
 
 
-## Details
-### You will learn
+## You will learn
   - How to register and consume an Extension control in MDK Metadata
   - How to build a Mobile development kit client for iOS and Android
   - How to connect to SAP Mobile application
 
+## Intro
 You may clone an existing metadata project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/master/6-Create-Extension-Controls-in-Mobile-Development-Kit-Apps/3-Extend-Your-MDK-App-With-Map-Custom-Control-using-Metadata-approach) and start directly with step 5 in this tutorial.
 
 ---
@@ -33,7 +35,8 @@ In this tutorial, you will create a Map extension via `NativeScript` (in TypeScr
 
 ![MDK](img-1.0.png)
 
-[ACCORDION-BEGIN [Step 1: ](Create a new MDK project in SAP Business Application Studio)]
+### Create a new MDK project in SAP Business Application Studio
+
 
 This step includes creating the mobile development kit project in the editor.
 
@@ -41,13 +44,13 @@ This step includes creating the mobile development kit project in the editor.
 
 2. Click **Start from template** on Welcome page.
 
-    !![MDK](img-1.1.png)
+    <!-- border -->![MDK](img-1.1.png)
 
     >If you do not see the Welcome page, you can access it via **Help** menu or via **View** menu > Find Command > Welcome.
 
 3. Select **MDK Project** and click **Next**.
 
-    !![MDK](img-1.2.png)
+    <!-- border -->![MDK](img-1.2.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
@@ -61,11 +64,11 @@ This step includes creating the mobile development kit project in the editor.
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |  
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |  
 
-    !![MDK](img-1.3.png)
+    <!-- border -->![MDK](img-1.3.png)
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Login icon and select the org & space where you have set up the initial configuration for your MDK app.
 
-    >!![MDK](img-1.4.png)
+    ><!-- border -->![MDK](img-1.4.png)
 
 
 5. In *Service configuration* step, provide the below information and click **Next**:
@@ -79,7 +82,7 @@ This step includes creating the mobile development kit project in the editor.
     | `Enter a path to the OData service` | Leave it as it is |
     | `Enable Offline` | Choose `No` |  
 
-    !![MDK](img-1.5.png)
+    <!-- border -->![MDK](img-1.5.png)
 
     >Regardless of whether you are creating an online or offline application, this step is needed app to connect to an OData service. When building an Mobile Development Kit application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services and SAP Business Technology Platform.
 
@@ -87,14 +90,13 @@ This step includes creating the mobile development kit project in the editor.
 
 6. In *Data Collections* step, select `Customers` (if not selected by default). Click **Finish** to finish the project creation.
 
-    !![MDK](img-1.6.png)    
+    <!-- border -->![MDK](img-1.6.png)    
 
 7. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Maps` project in the project explorer.
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 2: ](Register an Extension Control)]
+### Register an Extension Control
+
 
 The extension control that you will be creating to extend the functionality of your app can be used as base controls by registering it using the MDK editor.
 
@@ -102,15 +104,15 @@ The extension control that you will be creating to extend the functionality of y
 
 2. Drag & drop `map.png` file on **Images** folders.
 
-    !![MDK](img-2.1.png)
+    <!-- border -->![MDK](img-2.1.png)
 
 3. Right-click **Extensions** | select **MDK: Register Extension Control**.
 
-    !![MDK](img-2.2.png)
+    <!-- border -->![MDK](img-2.2.png)
 
 4. In `Template Selection` step, select **New and register Metadata Extension Control**. Click **Next**.
 
-    !![MDK](img-2.3.png)
+    <!-- border -->![MDK](img-2.3.png)
 
 5. Provide the below information:
 
@@ -133,7 +135,7 @@ The extension control that you will be creating to extend the functionality of y
 
     **Display**: This property is used for the image to be displayed on the page editor to represent the extension control.
 
-    !![MDK](img-2.4.png)
+    <!-- border -->![MDK](img-2.4.png)
 
 6. In **Schema Information** step, fill schema details in **Schema** column and click **Next**.
 
@@ -176,7 +178,7 @@ The extension control that you will be creating to extend the functionality of y
     }
     ```
 
-    !![MDK](img-2.5.png)
+    <!-- border -->![MDK](img-2.5.png)
 
     >Above schema will add these predefined properties (`City`, `Country`, `HouseNumber`, `LastName`, `PostalCode`, and `Street`) in the map extension control which you will bind to **Customer** entity properties in next step.
 
@@ -184,14 +186,13 @@ The extension control that you will be creating to extend the functionality of y
 
     Some additional files and folders are added to the **Extensions** folder. You will learn more about it in following steps.
 
-    !![MDK](img-2.6.png)
+    <!-- border -->![MDK](img-2.6.png)
 
     >You can find more details about registering extension control in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/advanced/extensions/registering-extension-in-bas.html) guide.
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 3: ](Consume Extension Control in MDK Metadata)]
+### Consume Extension Control in MDK Metadata
+
 
 You will add this registered control in the generated `Customers_Detail.page`.
 
@@ -199,33 +200,32 @@ You will add this registered control in the generated `Customers_Detail.page`.
 
   2. Remove the body section of the page.
 
-    !![MDK](img-3.1.gif)
+    <!-- border -->![MDK](img-3.1.gif)
 
   3. Expand **Section Registered Extension Control**, drag & drop the registered `mdk_maps` control on the page area.
 
-    !![MDK](img-3.2.png)
+    <!-- border -->![MDK](img-3.2.png)
 
     >You can find more details about the **Section Extension** in [this](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Container/Extension.schema.html) guide.
 
   4. In the **Properties** section, set the **Height** to 600.
 
-    !![MDK](img-3.3.png)  
+    <!-- border -->![MDK](img-3.3.png)  
 
   5. Bind the registered Extension control properties to **Customers** properties.
     Under **Extension Properties** section, expand `Prop`, click the **link** icon to open the Object Browser for the **City** property. Double click the **City** property of the **Customer** entity to set it as the binding expression and click **OK**.
 
-    !![MDK](img-3.4.gif)
+    <!-- border -->![MDK](img-3.4.gif)
 
     Repeat the above step and bind other properties.
 
-    !![MDK](img-3.5.png)
+    <!-- border -->![MDK](img-3.5.png)
 
     >Be careful not to bind properties from Address (ESPM.Address).
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 4: ](Implement Extension using metadata approach)]
+### Implement Extension using metadata approach
+
 
 1. Navigate to **Extensions** | `MyMapModule` | `controls` | `MyMapExtension.ts`, replace the code with the following.
 
@@ -427,36 +427,35 @@ You will add this registered control in the generated `Customers_Detail.page`.
 
 2. Save the `MyMapExtension.ts` file.
 
-[VALIDATE_1]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 5: ](Deploy the application)]
+
+### Deploy the application
+
 
 So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services to use in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-    !![MDK](img-5.1.png)
+    <!-- border -->![MDK](img-5.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    !![MDK](img-5.2.png)
+    <!-- border -->![MDK](img-5.2.png)
 
     If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    !![MDK](img-5.3.png)
+    <!-- border -->![MDK](img-5.3.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    !![MDK](img-5.4.png)
+    <!-- border -->![MDK](img-5.4.png)
 
     >When deploying from VS Code to App Update and using an MDK 6.0+ client, you need to set the TS Target to use es6 instead of the default es5 version. See below for the setting in VS Code where you change it for es6.
-    !![MDK](img-5.5.png)
+    <!-- border -->![MDK](img-5.5.png)
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 6: ](Get the API Key to use the Maps SDK for Android (Required only for Android client))]
+### Get the API Key to use the Maps SDK for Android (Required only for Android client)
+
 
 Since you will display the customer's address in Google Maps on Android device, you will need to provide an API key in generated MDK project (step 8).
 
@@ -464,26 +463,25 @@ Since you will display the customer's address in Google Maps on Android device, 
 
   2. Click the project drop-down and select or create a new project for which you want to add an API key.
 
-    !![MDK](img-6.1.png)
+    <!-- border -->![MDK](img-6.1.png)
 
 3. Click **Maps SDK for Android** API.
 
-    !![MDK](img-6.4.png)
+    <!-- border -->![MDK](img-6.4.png)
 
 5. Click **ENABLE**.
 
-    !![MDK](img-6.3.png)
+    <!-- border -->![MDK](img-6.3.png)
 
 6. Open [Credentials console](https://console.cloud.google.com/apis/credentials), click **CREATE CREDENTIALS** and click **API Key**.
 
-    !![MDK](img-6.4.png)
+    <!-- border -->![MDK](img-6.4.png)
 
 7. Copy this generated key and save it locally. This will be required in step 7.
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 7: ](Create Your Branded MDK Client (Required only for Android))]
+### Create Your Branded MDK Client (Required only for Android)
+
 
 For iOS, you can just use the App store client. Continue with next step.
 
@@ -502,7 +500,7 @@ For Android, you will pass the API key to the MDK client, there is no way public
                               └── AndroidManifest.xml
 
 
-      !![MDK](img-7.1.png)
+      <!-- border -->![MDK](img-7.1.png)
 
     >Files specified in the `.mdkproject/App_Resources_Merge` folder override a part of the files in `<generated-project>/app/App_Resources`. You can find more details about it in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/app-resources-merge.html).
 
@@ -536,10 +534,9 @@ For Android, you will pass the API key to the MDK client, there is no way public
 
 5. Create your MDK client either using MDK SDK by following the step 4 from [this](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [this](cp-mobile-dev-kit-cbs-client) tutorial.
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 8: ](Run the MDK Client)]
+### Run the MDK Client
+
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -549,7 +546,7 @@ In this step, you will run the app on an Android device.
 
 1. Attach the device to your Mac or Windows machine and run `tns device android` command to print a list of attached devices.
 
-    !![MDK](img-8.1.png)
+    <!-- border -->![MDK](img-8.1.png)
 
     >Make sure **Developer option** and **USB debugging** option is enabled in android device.
 
@@ -557,7 +554,7 @@ In this step, you will run the app on an Android device.
 
 3. In terminal or command line window, navigate to the app name folder **`DemoSampleApp`** (in `MDClient_SDK` path) and use `tns run android --device <device identifier>` command to run the MDK client on android device.
 
-    !![MDK](img-8.2.png)
+    <!-- border -->![MDK](img-8.2.png)
 
 4. Once, above command gets successfully executed, you will see new MDK client up and running in Android device.
 
@@ -611,11 +608,11 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
 1. Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
 
-    !![MDK](img-8.13.png)
+    <!-- border -->![MDK](img-8.13.png)
 
     The On-boarding QR code is now displayed.
 
-    !![MDK](img-8.14.png)
+    <!-- border -->![MDK](img-8.14.png)
 
     >Leave the Onboarding dialog box open for the next step.
 
@@ -637,7 +634,6 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
 [OPTION END]
 
-[VALIDATE_4]
-[ACCORDION-END]
+
 
 ---

@@ -1,6 +1,5 @@
 ---
-title: Access SAP Mobile Services
-description: Access SAP Mobile Services within a SAP Business Technology Platform account and open the Mobile Services cockpit.
+parser: v2
 auto_validation: true
 primary_tag: software-product>sap-mobile-services
 tags: [  tutorial>beginner, topic>mobile, operating-system>ios, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>sap-btp-sdk-for-ios, software-product>sap-btp-sdk-for-android, software-product>sap-mobile-cards, software-product>mobile-development-kit-client]
@@ -8,19 +7,23 @@ time: 5
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
+# Access SAP Mobile Services
+<!-- description --> Access SAP Mobile Services within a SAP Business Technology Platform account and open the Mobile Services cockpit.
+
 ## Prerequisites  
 - You have [Set Up a BTP Account for Tutorials](group.btp-setup). Follow the instructions to get an account, and then to set up entitlements and service instances for the following BTP services.
     - **SAP Mobile Services**
 
-## Details
-### You will learn
+## You will learn
   - How to access SAP Mobile Services in your BTP account
 
+## Intro
 Once SAP Mobile Services is available, you can use its features in your Mobile development kit, Mobile Cards, SAP BTP SDK for iOS & Android apps.
 
 ---
 
-[ACCORDION-BEGIN [Step 1: ](Go to your global account on SAP BTP)]
+### Go to your global account on SAP BTP
+
 
 > Make sure you are choosing the right BTP account type ( **Free Tier** or **Free Trial** ) in the tabs under Step 1.
 
@@ -31,11 +34,11 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 2. Provide the login details and click **Log On**.
 
-    !![SAP BTP Log On Screen](img-1.1.png)
+    <!-- border -->![SAP BTP Log On Screen](img-1.1.png)
 
 3. Enter your Global Account.
 
-    !![SAP BTP Global Account](img-1.2.png)
+    <!-- border -->![SAP BTP Global Account](img-1.2.png)
 
 [OPTION END]
 
@@ -45,36 +48,35 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 2. Provide the login details and click **Log On**.
 
-    !![SAP BTP Log On Screen](img-1.1.png)
+    <!-- border -->![SAP BTP Log On Screen](img-1.1.png)
 
 3. Navigate to the trial global account by clicking **Go To Your Trial Account**.
 
-    !![Trial global account](img-1.3.png)
+    <!-- border -->![Trial global account](img-1.3.png)
 
 [OPTION END]
 
-[DONE]
-[ACCORDION-END]
 
-[ACCORDION-BEGIN [Step 2: ](Launch SAP Mobile Services cockpit)]
+### Launch SAP Mobile Services cockpit
+
 
 1. Click subaccount available in your global account.
 
-    !![enter subaccount](img-2.1.png)
+    <!-- border -->![enter subaccount](img-2.1.png)
 
 2. In the left pane, choose **Services** **&rarr;** **Service Marketplace**.
 
     >The **Service Marketplace** is where you can find services to attach to any of your applications. These services are provided by SAP BTP to create, and produce applications quickly and easily. Once a service has been created, it is known as a `service instance`.
 
-    !![service marketplace](img-2.2.png)
+    <!-- border -->![service marketplace](img-2.2.png)
 
 3. Search for **Mobile**, and click **Mobile Services** tile.  
 
-    !![mobile service tile](img-2.3.png)
+    <!-- border -->![mobile service tile](img-2.3.png)
 
 4. Choose **Support** to open **SAP Mobile Services Cockpit**.
 
-    !![support button click](img-2.4.png)
+    <!-- border -->![support button click](img-2.4.png)
 
 5. If you are asked to sign in then enter your Email or Username to continue and click **Next**.
 
@@ -84,13 +86,12 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
     >**Space:** Cloud Foundry has a standard working environment for individual applications: it is called a space. Spaces are individual working areas, which normally contain a single application.
 
-    !![BTP](img-2.5.png)
+    <!-- border -->![BTP](img-2.5.png)
 
     You have now logged in to the SAP Mobile Services cockpit.
 
-    !![BTP](img-2.6.png)
+    <!-- border -->![BTP](img-2.6.png)
 
     Bookmark the **Mobile Services cockpit URL** for quick access.
 
-[VALIDATE_3]
-[ACCORDION-END]
+
