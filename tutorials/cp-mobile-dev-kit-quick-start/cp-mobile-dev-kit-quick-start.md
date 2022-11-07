@@ -24,7 +24,6 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
-
 ### Create a new MDK project in SAP Business Application Studio
 
 
@@ -32,17 +31,23 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Welcome page.
+2. Click **Start from template** on Get Started page.
 
     <!-- border -->![MDK](img-1.1.png)
 
-    >If you do not see the Welcome page, you can access it via **Help** menu or via **View** menu > Find Command > Welcome.
+    >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
+
+    <!-- border -->![MDK](img-1.2.gif)
 
 3. Select **MDK Project** and click **Start**.
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![MDK](img-1.3.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+
+    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After succesful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+
+    ><!-- border -->![MDK](img-1.4.png)
 
 4. In *Basic Information* step, provide the below information and click **Next**:
 
@@ -54,11 +59,7 @@ This step includes creating the mobile development kit project in the editor.
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
-    <!-- border -->![MDK](img-1.3.png)
-
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Login icon and select the org & space where you have set up the initial configuration for your MDK app.
-
-    ><!-- border -->![MDK](img-1.4.png)
+    <!-- border -->![MDK](img-1.5.png)
 
 5. In *Service configuration* step, provide the below information and click **Next**:
 
@@ -71,7 +72,7 @@ This step includes creating the mobile development kit project in the editor.
     | `Enter a path to service` | Leave it as it is |
     | `Enable Offline` | It's enabled by default |
 
-    <!-- border -->![MDK](img-1.5.png)
+    <!-- border -->![MDK](img-1.6.png)
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
 
@@ -79,7 +80,7 @@ This step includes creating the mobile development kit project in the editor.
 
 6. In the *Data Collections* step, select `Customers`, `Products`, `PurchaseOrderHeaders`, `PurchaseOrderItems` `SalesOrderHeaders` and `SalesOrderItems`. Click **Finish** to complete the project creation.
 
-    <!-- border -->![MDK](img-1.6.png)
+    <!-- border -->![MDK](img-1.7.png)
 
 7. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDKApp` project in the project explorer.
 
@@ -219,6 +220,15 @@ Additionally, you can search over all properties of the objects displayed in the
     You will see the list of entities on the **Main** page, **Logout** option at bottom of the page and application data service will be initialized. click either entity, it navigates to detail page, you can create, update, delete a record.
 
     <!-- border -->![MDK](img-5.7.gif)
+
+    >In case when MDK web application fails to run with error `redirect_uri has an invalid domain`, this could be due to that your BTP landscape domain or custom domain is not on the list of the rediect URIs that SAP BTP checks for when redirecting hence the Authorization and Trust Management Service won't redirect your user there. In this case, you need to explicly add your custom domain or use wildcards (please note wildcards increase the risk of redirecting to malicious web sites) under `Security` property in the `config.json` file under your MDK metadata project `MDKApp` | `Web`.
+    ```json
+     "Security": {
+        "oauth2-configuration": {
+            "redirect-uris": ["https://<application_hostname>.<custom_domain>/**"]
+        }
+    }
+    ``` 
 
 [OPTION END]
 

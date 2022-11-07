@@ -31,7 +31,7 @@ Before you can start using SAP Business Application Studio, you need to create y
 
 For this tutorial, you will create a dev space personalized for Mobile development.
 
-1. Log into your Business Application Studio and click **Create Dev Space**.
+1. Launch SAP Business Application Studio in any one of the [supported browsers](https://help.sap.com/docs/SAP%20Business%20Application%20Studio/9d1db9835307451daa8c930fbd9ab264/8f46c6e6f86641cc900871c903761fd4.html#availability) and click **Create Dev Space**.
 
 2. Choose `Tutorial` as the name for your dev space and **SAP Mobile Application** as the application type. Continue with **Create Dev Space**.
 
@@ -46,6 +46,20 @@ For this tutorial, you will create a dev space personalized for Mobile developme
     >Please note that you're using the trial version of SAP Business Application Studio. See section [Restrictions](https://help.sap.com/products/SAP%20Business%20Application%20Studio/9d1db9835307451daa8c930fbd9ab264/a45742a719704bdea179b4c4f9afa07f.html) in the SAP Business Application Studio documentation for more details on how your development environment can be affected.
 
 
+  ### Change the workspace to the projects folder
+
+  You will now switch your workspace to the `projects` folder.
+
+1. Click on the Explorer icon and click  **Open Folder**.
+
+    <!-- border -->![BAS New Space](img-2.1.png)
+2. Select the `projects` folder if not already selected and click **OK**.
+
+    <!-- border -->![BAS New Space](img-2.2.png)
+
+   The projects folder is now open as the workspace.
+
+   <!-- border -->![BAS New Space](img-2.3.png)
 
 ---
 

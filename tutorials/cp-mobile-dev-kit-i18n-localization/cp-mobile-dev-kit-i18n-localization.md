@@ -45,17 +45,23 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Welcome page.
+2. Click **Start from template** on Get Started page.
 
-    <!-- border -->![MDK](img-2.1.png)
+    <!-- border -->![MDK](img-1.1.png)
 
-    >If you do not see the Welcome page, you can access it via **Help** menu or via **View** menu > Find Command > Welcome.
+    >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
+
+    <!-- border -->![MDK](img-1.2.gif)
 
 3. Select **MDK Project** and click **Start**.
 
     <!-- border -->![MDK](img-2.2.png)
-
+    
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+
+    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After succesful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+
+    ><!-- border -->![MDK](img-1.4.png)
 
 4. In *Basic Information* step, provide the below information and click **Next**:
 
@@ -68,10 +74,6 @@ This step includes creating the mobile development kit project in the editor.
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
     <!-- border -->![MDK](img-2.3.png)        
-
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Login icon and select the org & space where you have set up the initial configuration for your MDK app.
-
-    ><!-- border -->![MDK](img-2.4.png)
 
 5. In *Service configuration* step, provide the below information and click **Next**:
 
