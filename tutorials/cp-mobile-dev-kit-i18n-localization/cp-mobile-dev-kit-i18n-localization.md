@@ -38,6 +38,7 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 As a developer, you can now provide translations and localization for your MDK application. This allows end-users to view the mobile application in their own language and regional settings. MDK already supports [various languages](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/i18n/language-support.html) for end-user facing texts to be translated.
 
 
+
 ### Create a new MDK project in SAP Business Application Studio
 
 
@@ -47,7 +48,7 @@ This step includes creating the mobile development kit project in the editor.
 
 2. Click **Start from template** on Get Started page.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![MDK](img-2.1.png)
 
     >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
 
