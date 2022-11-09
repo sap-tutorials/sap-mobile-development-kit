@@ -314,6 +314,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
     <!-- border -->![MDK](img-4.5.png)
 
+
 7. In **Build Options** step, select respective Signing profile(s), set minimum platform version, select a supported SDK version and click **Finish**.
 
     <!-- border -->![MDK](img-4.6.png)
