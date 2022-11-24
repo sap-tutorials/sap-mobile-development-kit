@@ -141,7 +141,7 @@ With above details, you will next configure an app in Mobile Services, add root 
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After succesful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 

@@ -45,7 +45,7 @@ This step includes creating the mobile development kit project in the editor.
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After succesful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -220,14 +220,14 @@ Additionally, you can search over all properties of the objects displayed in the
 
     <!-- border -->![MDK](img-5.7.gif)
 
-    >In case when MDK web application fails to run with error `redirect_uri has an invalid domain`, this could be due to that your BTP landscape domain or custom domain is not on the list of the rediect URIs that SAP BTP checks for when redirecting hence the Authorization and Trust Management Service won't redirect your user there. In this case, you need to explicly add your custom domain or use wildcards (please note wildcards increase the risk of redirecting to malicious web sites) under `Security` property in the `config.json` file under your MDK metadata project `MDKApp` | `Web`.
+    >In case when MDK web application fails to run with error `redirect_uri has an invalid domain`, this could be due to that your BTP landscape domain or custom domain is not on the list of the `redirect URIs` that SAP BTP checks for when redirecting hence the Authorisation and Trust Management Service won't redirect your user there. In this case, you need to explicitly add your custom domain or use wildcards (please note wildcards increase the risk of redirecting to malicious web sites) under `Security` property in the `config.json` file under your MDK metadata project `MDKApp` | `Web`.
     ```json
      "Security": {
         "oauth2-configuration": {
             "redirect-uris": ["https://<application_hostname>.<custom_domain>/**"]
         }
     }
-    ``` 
+    ```
 
 [OPTION END]
 

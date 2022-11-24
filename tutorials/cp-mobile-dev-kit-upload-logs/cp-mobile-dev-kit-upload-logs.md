@@ -23,7 +23,7 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ![MDK](img-1.0.gif)
 
-### Define client log policy in Mobile Services cockpit 
+### Define client log policy in Mobile Services cockpit
 
 
 SAP Mobile Services provides administrators, developers and support staff with extensive logs and traces functionality to troubleshoot application issues. You can control the amount of information that is captured by setting the log level for individual logging components.
@@ -120,7 +120,7 @@ Double click the `LogSetState.action` file | expand **Common Action Properties**
 <!-- border -->![MDK](img-3.1.png)
 
 
-### Bind Set State log action to success of InitializeOffline action
+### Bind Set State log action to success of Initialize Offline action
 
 
 When the metadata is downloaded from App Update, `OnDidUpdate` event is being called which eventually triggers `InitializeOffline.action`. You can look at `Application.app` file for the details.
