@@ -116,7 +116,6 @@ The extension control that you will be creating to extend the functionality of y
 
     <!-- border -->![MDK](img-2.4.png)
 
-
 6. In **Schema Information** step, fill schema details in **Schema** column and click **Next**.
 
     ```JSON

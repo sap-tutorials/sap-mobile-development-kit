@@ -90,7 +90,6 @@ This step includes creating the mobile development kit project in the editor.
 
 9. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Styling` project in the project explorer.
 
-
 ### Add style metadata in LESS file
 
 

@@ -87,7 +87,6 @@ This step includes creating the mobile development kit project in the editor.
 
 ### Get familiar with generated project structure
 
-
 This is how the project structure looks like within the workspace.
 
 <!-- border -->![MDK](img-2.1.png)

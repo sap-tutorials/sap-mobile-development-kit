@@ -163,26 +163,22 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-3.6.png)    
 
-6. Repeat the same for the **Open sap.com page** button, create a new rule `OpenSAPcom.js` binding it's `OnPress Handler` event.  
+6. Repeat the same for the **Open sap.com page** button, create a new rule `OpenSAPcom.js` binding it's `OnPress Handler` event. Replace the generated snippet with below code.
 
-Replace the generated snippet with below code.
-
-```JavaScript
-    export default function OpenSAPcom(context) {
-        // Get the Nativescript Utils Module
-        const utilsModule = context.nativescript.utilsModule;
-        return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
-            if (result.data) {
-                //This will open SAP.com website
-                return utilsModule.openUrl("https://www.sap.com");
-            } else {
-                return Promise.reject('User Deferred');
-            }
-        });
-    }
-```
-
-<!-- border -->![MDK](img-3.7.png)
+    ```JavaScript
+        export default function OpenSAPcom(context) {
+            // Get the Nativescript Utils Module
+            const utilsModule = context.nativescript.utilsModule;
+            return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
+                if (result.data) {
+                    //This will open SAP.com website
+                    return utilsModule.openUrl("https://www.sap.com");
+                } else {
+                    return Promise.reject('User Deferred');
+                }
+            });
+        }
+    ```
 
 7. Save your changes to the `OpenSAPcom.js` file.
 

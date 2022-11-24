@@ -93,6 +93,7 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.6.png)    
 
+
 7. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Maps` project in the project explorer.
 
 

@@ -80,6 +80,7 @@ This step includes creating the mobile development kit project in the editor.
 
     >**Enable Offline** option allows MDK mobile app to be offline enabled. This configuration will be ignored on Web environment and the MDK web application will be treated as online only.
 
+
 6. In **Data Collections** step, select `Customers`, `Products`, `SalesOrderHeaders` and `SalesOrderItems` data collections. Click Finish.
 
     <!-- border -->![MDK](img-1.6.png)

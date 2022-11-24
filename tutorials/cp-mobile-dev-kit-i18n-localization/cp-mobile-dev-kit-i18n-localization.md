@@ -78,6 +78,7 @@ This step includes creating the mobile development kit project in the editor.
 
 5. In *Service configuration* step, provide the below information and click **Next**:
 
+
     | Field | Value |
     |----|----|
     | `Data Source` | Select `Mobile Services` from the dropdown |

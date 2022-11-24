@@ -95,6 +95,7 @@ This step includes creating the mobile development kit project in the editor.
 
     Regardless of whether you are creating an online or offline application, this step is needed app to connect to an OData service. When building an Mobile Development Kit application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. Since we have Enable Offline set to Yes, the generated application will be offline enabled in the MDK Mobile client.
 
+
 6. In *Data Collections* step, unselect `Customers`, select `Suppliers`, `PurchaseOrderHeaders` and `PurchaseOrderItems`.
 
     <!-- border -->![MDK](img-1.6.png)
