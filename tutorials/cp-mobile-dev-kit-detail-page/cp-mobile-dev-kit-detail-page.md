@@ -78,10 +78,6 @@ This page will show related details for a customer. In this page, you will add a
 
     ><!-- border -->![MDK](img-1.6.png)
 
-7. As enough fields have been selected to be displayed on the detail page, `Substatus` and `Tags` are not required for this tutorial. In a real use case, you may need these properties. Remove the default value for `Substatus` properties and also, delete items under `Tags`.
-   
-    ><!-- border -->![MDK](img-1.7.gif)
-
     Page should look like below.
 
     <!-- border -->![MDK](img-1.8.png)

@@ -159,11 +159,15 @@ Enable the loading indicator at the Sectioned Table level by providing the follo
 
 In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. You now need to list this module as external references in BAS configuration so when bundling, MDK editor knows not to worry about these references.
 
-1. Navigate **File** menu | **Settings** | **Open Preferences**.
+1. Click on the gear icon on the bottom left of the BAS window and select  **Settings**.
 
     <!-- border -->![MDK](img-4.1.png)
 
-2. Search with `mdk`, click **Edit in settings.json**.
+2. Switch to the *Remote* tab.
+
+    <!-- border -->![MDK](img-4.1.2.png)
+
+Search with `mdk`, click **Edit in settings.json**.
 
     <!-- border -->![MDK](img-4.2.png)
 
