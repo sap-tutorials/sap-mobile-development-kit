@@ -206,7 +206,7 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.7.png)
 
-8. Keep the default selection for Object Type (as Actions) and Folders path. Click **OK**.
+8. Keep the default selection for Object Type (as Action) and Folders path. Click **OK**.
 
     <!-- border -->![MDK](img-3.8.png)
 
@@ -258,7 +258,7 @@ You will add this registered control in a Form Cell page.
 
     For this, first you will write a business logic to set the extension value and then bind it to the input field.
 
-13. Choose the *Object Type* as **Rules** and *Folders* path as it is. Click **OK**.
+13. Choose the *Object Type* as **Rule** and *Folders* path as it is. Click **OK**.
 
     <!-- border -->![MDK](img-3.14.png)
 

@@ -167,13 +167,11 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
 
     <!-- border -->![MDK](img-4.1.2.png)
 
-Search with `mdk`, click **Edit in settings.json**.
+3. Search with `mdk`, click **Edit in settings.json**.
 
     <!-- border -->![MDK](img-4.2.png)
 
-3. Include below references in `mdk.bundlerExternals` and save the changes.
-
-    >You can beautify the file by right clicking on the file ->select `Format Document` if required.
+4. Include below references in `mdk.bundlerExternals` and save the changes.
 
     ```JSON
     "@nativescript/geolocation"
