@@ -108,7 +108,7 @@ If you are building a custom version of Mobile development kit client, there you
 
 
 
-### Set `onPress` handler to the buttons
+### Set onPress handler to the buttons
 
 
 1. In this step, you will bind a rule to the `OnPress` event of each button.
