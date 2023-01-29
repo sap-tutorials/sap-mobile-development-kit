@@ -40,13 +40,13 @@ To create an entity and then link it to another entity, you need to carry out th
 
 In this step, you will create the _Create Order_ page as a **Form Cell Page**. This type of page allows for form input style changes. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
 
-1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell Page** | **Next**.
+1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
     >A Form Cell Page is suitable for pages that generate new objects or modify existing objects. It includes a form cell container by default. You can add form sections, multiple containers or action controls to this page. Under each container section, you can add various container items.
 
-2. Enter the Page Name `SalesOrderHeaders_Create` and click **Next** and the **Finish** on the Confirmation step.
+2. Enter the Page Name as `SalesOrderHeaders_Create` and click **Finish** to complete the page creation process.
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -69,7 +69,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
     | Property | Value |
     |----|----|
     | `Name`| `FCCreateCurrencyCode` |
-    | `Caption` | `CurrencyCode` |
+    | `Caption` | `Currency Code` |
     | `Value`| `EUR` |
 
     <!-- border -->![MDK](img-1.6.png)
@@ -81,7 +81,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
     | Property | Value |
     |----|----|
     | `Name`| `FCCreateNetAmount` |
-    | `Caption` | `NetAmount` |
+    | `Caption` | `Net Amount` |
     | `Value`| `18.010` |
 
     <!-- border -->![MDK](img-1.7.png)
@@ -91,7 +91,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
     | Property | Value |
     |----|----|
     | `Name`| `FCCreateTaxAmount` |
-    | `Caption` | `TaxAmount` |
+    | `Caption` | `Tax Amount` |
     | `Value`| `108.010` |
 
     <!-- border -->![MDK](img-1.8.png)
@@ -111,7 +111,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
     | Property | Value |
     |----|----|
     | `Name`| `FCCreateLifeCycleStatus` |
-    | `Caption` | `LifeCycleStatus` |
+    | `Caption` | `Lifecycle Status` |
     | `Value`| `N` |
 
     <!-- border -->![MDK](img-1.10.png)
@@ -121,7 +121,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
     | Property | Value |
     |----|----|
     | `Name`| `FCCreateLifeCycleStatusName` |
-    | `Caption` | `LifeCycleStatusName` |
+    | `Caption` | `Lifecycle Status Name` |
     | `Value`| `New` |
 
     <!-- border -->![MDK](img-1.11.png)
@@ -137,7 +137,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
     <!-- border -->![MDK](img-1.12.png)
 
 
-### Add cancel button on create customer page
+### Add cancel button on create Sales Order page
 
 
 Now, you will add a button on the Create Order page and set its `onPress` to `CloseModalPage_Cancel.action`.
@@ -167,18 +167,15 @@ Now, you will add a button on the Create Order page and set its `onPress` to `Cl
 
 ### Store the created data locally
 
-
 The next step is to store newly created record locally for an offline application or send the new record directly back to the backed for online applications.
 
 * You will add an Action Bar item on the `SalesOrderHeaders_Create.page` that will call an OData Create Entity action to save the record
 * You may want to close the page when the OData Create Entity action is successful
 * You may want to show a failure message if the OData Create Entity action fails to save the changes
 
-First, add an action bar item on the `Customers_Create.page`.
-
 1.  In `SalesOrderHeaders_Create.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
 
-   <!-- border -->![MDK](img-3.1.png)
+    <!-- border -->![MDK](img-3.1.png)
 
 2. Click the **link** icon to open the object browser for the **System Item** property. Double-click the **Save** type and click **OK**.
 
@@ -192,15 +189,15 @@ First, add an action bar item on the `Customers_Create.page`.
 
     <!-- border -->![MDK](img-3.4.png)      
 
-5. Choose **MDK Data Actions** in **Category** | click **OData Action** | **Next**.
+5. In the **Template Selection** step, choose **Data** in **Category** | click **OData** | **Next**.
 
     <!-- border -->![MDK](img-3.5.png)  
 
-6. In **Operation and Service Selection** step, provide the below information:
+6. In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `SalesOrderHeaders_CreateEntity` |
+    | `Name`| `SalesOrderHeaders_CreateEntity` |
     | `Type` | Select `CreateRelatedEntity` from the dropdown |
     | `Service`| Select `SampleServiceV2.service` from the dropdown |
     | `EntitySet` | Select `SalesOrderHeaders` from the dropdown |
@@ -239,35 +236,31 @@ First, add an action bar item on the `Customers_Create.page`.
 
     <!-- border -->![MDK](img-3.9.png)
 
-    <!-- border -->![MDK](img-3.10.png)
+11. Click **Finish** to complete the action creation process. The action editor will open with the `SalesOrderHeaders_CreateEntity.action` loaded.
 
-11. Click **Next** and **Finish** on the confirmation screen. The action editor will open with the `SalesOrderHeaders_CreateEntity.action` loaded.
-
- 1.  When the above OData action is executed, you may want to display messages on its success and failure behavior. For example, on its success, you may want to close the page and allow any execution to continue. On its failure, you may want to display an error.  
-
-    In the `SalesOrderHeaders_CreateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the link icon to open the object browser for the *Success Action* and bind it to `CloseModalPage_Complete.action`.
+12. When the above OData action is executed, you may want to display messages on its success and failure behavior. For example, on its success, you may want to close the page and allow any execution to continue. On its failure, you may want to display an error. In the `SalesOrderHeaders_CreateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the link icon to open the object browser for the *Success Action* and bind it to `CloseModalPage_Complete.action`.
 
     <!-- border -->![MDK](img-3.11.png)
 
-12. Create a message action displaying error in case of the create failure. In the `SalesOrderHeaders_CreateEntity.action`, provide value as **create** for the *Action Result* and click the `Create a rule/action` icon for the *Failure Action*.
+13. Create a message action displaying error in case of the create failure. In the `SalesOrderHeaders_CreateEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
 
     <!-- border -->![MDK](img-3.12.png)
 
- 2.  Keep the default selection for the *Object Type* as Action and *Folders* path.
+14.  Keep the default selection for the *Object Type* as Action and *Folders* path.
 
     <!-- border -->![MDK](img-3.4.png)     
 
-13. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+15. In the **Template Selection** step, choose **Message** in **Category** | click **Message** | **Next**.
 
     <!-- border -->![MDK](img-3.13.png)
 
-14. Provide the below information:
+16. In the **Base Information** step, provide the below details:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `CreateSalesOrderHeaderEntityFailureMessage` |
+    | `Name`| `CreateSalesOrderHeaderEntityFailureMessage` |
     | `Type` | Select `Message` from the dropdown |
-    | `Message` | `Failed to Create Sales Order record - {#ActionResults:create/error}` |
+    | `Message` | `Failed to Create Sales Order record - {#ActionResults:SalesOrderHeaders_CreateEntity/error}` |
     | `Title` | `Create Sales Order` |
     | `OKCaption` | `OK` |
     | `OnOK` | `--None--` |
@@ -276,9 +269,9 @@ First, add an action bar item on the `Customers_Create.page`.
 
     <!-- border -->![MDK](img-3.14.png)
 
-    >`create` is the Action Result value of the `SalesOrderHeaders_CreateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
+    >`SalesOrderHeaders_CreateEntity` is the Action Result value of the `SalesOrderHeaders_CreateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
 
-15. Click **Next** and then **Finish** on the Confirmation step.
+17. Click **Finish** to complete the action creation process. 
 
 When `SalesOrderHeaders_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_CreateEntity.action` fails then `CreateSalesOrderHeaderEntityFailureMessage.action` will be triggered.
 
@@ -305,21 +298,21 @@ You will open the `SalesOrderHeaders_Create.page` from the Customer Detail page.
 
     <!-- border -->![MDK](img-3.4.png)     
 
-5. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+5. In the **Template Selection** step, choose **UI** in **Category** | click **Navigation** | **Next**.
 
     <!-- border -->![MDK](img-4.4.png)
 
-6. Provide the below information:
+6. In the **Base Information** step, provide the below details:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `NavToSalesOrderHeaders_Create` |
+    | `Name`| `NavToSalesOrderHeaders_Create` |
     | `PageToOpen` | Select `SalesOrderHeaders_Create.page` from the dropdown |
     | `ModalPage`| Select `true` from the dropdown |
 
     <!-- border -->![MDK](img-4.5.png)
 
-7. Click **Next** and then **Finish** on the confirmation step.
+7. Click **Finish** to complete the action creation process.
 
 
 ### Add data subscription to Customer detail page
@@ -329,7 +322,7 @@ In `Customers_Detail.page` you added total number of order counts for a given cu
 
 > `DataSubscriptions` : it is a way to listen to data changes that when triggers should cause a UI element to redraw. If your control or section has a target, that target is automatically subscribed for data change events. Otherwise you can also explicitly subscribe to `DataSubscriptions` by specifying an entity set name or `readLink` in an array. You can find more details [here](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/definitions/DataSubscriptions.schema.html).
 
-In `Customers_Detail.page`, select **Customer Orders** Object Table control. In **Properties** section, click **+** icon under **Misc** | `DataSubscriptions` and double click `SalesOrderHeaders` and click **OK**.
+In `Customers_Detail.page`, select **Customer Orders** Object Table control. In **Properties** section, click `+` icon under **Misc** | `DataSubscriptions` and double click `SalesOrderHeaders` and click **OK**.
 
 <!-- border -->![MDK](img-5.1.gif)
 

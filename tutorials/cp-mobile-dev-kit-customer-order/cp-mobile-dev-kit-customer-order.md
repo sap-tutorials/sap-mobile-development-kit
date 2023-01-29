@@ -40,13 +40,13 @@ This page will display customer orders list, you will add an **Object Table** co
 
 >You can find more details about [available controls in section page](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/SectionedTable.schema.html).
 
-1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section Page** | **Next**.
+1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
     >You can find more details about [section pages](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/section-page.html).
 
-2. Enter the **Page Name** `Customers_Orders` and click **Next** and then **Finish** on the confirmation step.
+2. In the **Base Information** step, enter the page **Name** `Customers_Orders` and click **Finish** to complete the page creation process. 
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -65,7 +65,7 @@ This page will display customer orders list, you will add an **Object Table** co
     | Property | Value |
     |----|----|
     | `Service`| Select `SampleServiceV2.service` from the dropdown |
-    | `Entity` | Select `SalesOrderHeaders` from the dropdown |
+    | `EntitySet` | Select `SalesOrderHeaders` from the dropdown |
     | `QueryOptions`| `$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc` |
 
     <!-- border -->![MDK](img-1.5.png)
@@ -81,14 +81,13 @@ This page will display customer orders list, you will add an **Object Table** co
     | Property | Value |
     |----|----|
     | `Description`| `$(D,{CreatedAt},'','',{format:'medium'})` |
-    | `DetailImage`| Remove the default value and leave it blank |
     | `Footnote` | Remove the default value and leave it blank |
     | `PreserveIconStackSpacing`| `false` |
     | `ProgressIndicator` | Remove the default value and leave it blank |
     | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
     | `Subhead` | bind to `{CustomerId}` |
     | `Substatus`| bind to `{LifeCycleStatusName}` |
-    | `Tags` | Click the `item0` and click the trash icon to delete the default item |
+    | `Tags` | Click the `item0` and then click the trash icon to delete the default item |
     | `Title`| bind to `{SalesOrderId}` |
 
     <!-- border -->![MDK](img-1.7.png)
@@ -109,11 +108,11 @@ This page will display customer orders list, you will add an **Object Table** co
 
     <!-- border -->![MDK](img-1.11.png)
 
-9. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
+9. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and then clicking the trash icon to delete the default item.
 
     <!-- border -->![MDK](img-1.12.png)    
 
-10. In the **Avatar Stack** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
+10. In the **Avatar Stack** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and then clicking the trash icon to delete the default item.
 
     <!-- border -->![MDK](img-1.13.png)  
 
@@ -127,11 +126,11 @@ This page will display customer orders list, you will add an **Object Table** co
 
 This page will show related details for an order. In this page, you will add an **Object Header** control that is used to display information (like first name, last name, date of birth, email address & phone number) about the header of an object and **Static Key Value** control to display key value pair items like address, city, postal code & country.
 
-1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section Page** | **Next**.
+1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
-2. Enter the Page Name `SalesOrders_Details` and click **Next** and the **Finish** on the confirmation step.
+2. Enter the Page Name as `SalesOrders_Details` and click **Finish** to complete the page creation process.
 
     <!-- border -->![MDK](img-2.1.png)
 
@@ -212,19 +211,18 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     <!-- border -->![MDK](img-3.2.png)   
 
-3. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+3. In the **Template Selection** step, choose **UI** in **Category** | click **Navigation** | **Next**.
 
-4. Provide the below information:
+4. In the **Base Information** step, provide the below information:
 
     | Field | Value |
     |----|----|
-    | `Action Name`| `NavToSalesOrders_Details` |
+    | `Name`| `NavToSalesOrders_Details` |
     | `PageToOpen` | Select `SalesOrders_Details.page` from the dropdown |
 
     <!-- border -->![MDK](img-3.3.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
-
+5. Click **Finish** to complete the action creation process.
 
 ### Display top 5 orders in customer detail page
 
@@ -239,8 +237,8 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
    
     | Field | Value |
     |----|----|
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
-    | `Entity` | Select `{@odata.readLink}/SalesOrders` from the dropdown |
+    | `Service`| select `SampleServiceV2.service` from the dropdown |
+    | `EntitySet` | enter `{@odata.readLink}/SalesOrders` |
     | `QueryOptions`| `$top=5&$orderby=CreatedAt desc` |
 
     <!-- border -->![MDK](img-4.2.png)
@@ -260,23 +258,22 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
     | Field | Value |
     |----|----|
     | `Description`| Remove the default value and leave it blank  |
-    | `DetailImage`| Remove the default value and leave it blank  |
     | `Footnote` | Remove the default value and leave it blank  |
     | `PreserveIconStackSpacing`| select `false` from the dropdown |
     | `ProgressIndicator` | Remove the default value and leave it blank  |
     | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
     | `Subhead` | `$(D,{CreatedAt},'','',{format:'medium'})` |
     | `Substatus`| bind to `{CurrencyCode}` |
-    | `Tags` | Click the `item0` and click the trash icon to delete the default item |
+    | `Tags` | Click the `item0` and then click the trash icon to delete the default item |
     | `Title`| bind to `{SalesOrderId}` |
 
     <!-- border -->![MDK](img-4.4.png)
 
 4. In the **Behavior** section of the **Properties** pane, select `DisclosureIndicator` to **`AccessoryType`** property.
 
-    <!-- border -->![MDK](img-4.5.png)
+    <!-- border -->![MDK](img-1.11.png)
 
-5. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
+5. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and then clicking the trash icon to delete the default item.
 
     <!-- border -->![MDK](img-1.12.png)    
 
@@ -334,7 +331,7 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     <!-- border -->![MDK](img-6.3.png)
    
-4. Enter the Rule name `Customers_OrderCount`, press `Enter`.
+4. Enter the Rule name as`Customers_OrderCount`, and then click **Finish** to complete the rule creation process.
 
     <!-- border -->![MDK](img-6.4.png)
 
@@ -351,9 +348,7 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
     }    
     ```
 
-6. Save the changes to the `Customers_OrderCount.js` file.
-
-7. Switch back to the `Customers_Detail.page` and provide the below information for other properties of the Footer control:
+6. Switch back to the `Customers_Detail.page` and provide the below information for other properties of the Footer control:
 
     | Property | Value |
     |----|----|
@@ -375,20 +370,20 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     <!-- border -->![MDK](img-3.2.png)  
 
-10. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+10. In the **Template Selection** step, choose **UI** in **Category** | click **Navigation** | **Next**.
 
-11. Provide the below information:
+11. In the **Base Information** step, provide the below information:
 
     | Field | Value |
     |----|----|
-    | `Action Name`| `NavToCustomers_Orders` |
+    | `Name`| `NavToCustomers_Orders` |
     | `PageToOpen` | Select `Customers_Orders.page` from the dropdown |    
     
     <!-- border -->![MDK](img-6.7.png)
 
+12. Click **Finish** to complete the action creation process.
 
 ### Deploy the application
-
 
 Deploy the updated application to your MDK client.
 

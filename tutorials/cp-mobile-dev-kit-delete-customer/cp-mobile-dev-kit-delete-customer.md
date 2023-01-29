@@ -48,11 +48,13 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
 
     <!-- border -->![MDK](img-1.4.png)     
  
-     >You could link `OnPress` property directly to OData delete action directly instead to this JavaScript file. Idea of linking to  JavaScript file is to let you understand another way to achieve similar functionality.
+    >You could link `OnPress` property directly to OData delete action directly instead to this JavaScript file. Idea of linking to  JavaScript file is to let you understand another way to achieve similar functionality.
 
-5. Enter the Rule name `Customers_DeleteConfirmation`, click **Next** and then **Finish** on the confirmation step.
+5. Enter the Rule name as `Customers_DeleteConfirmation` and click **Finish** to complete the rule creation process.
 
-    Copy and paste the following code.
+    <!-- border -->![MDK](img-1.4.1.png)  
+
+6. Replace the generated code with below snippet.
 
     ```JavaScript
     export default function DeleteConfirmation(context) {
@@ -68,16 +70,14 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
     }
     ```
 
-    In above code there are references to `DeleteConfirmation.action` and `Customers_DeleteEntity.action` , which don't exist in your metadata project yet. You will create these actions in next steps.
+    In above code there are references to `DeleteConfirmation.action` and `Customers_DeleteEntity.action` , those don't exist in your metadata project yet. You will create these actions in next steps.
     ><!-- border -->![MDK](img-1.5.png)
 
-6. Save the changes.
-
-7. In the above rule, double-click on the red line highlighting missing reference for `DeleteConfirmation.action`. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message Action`.
+6. In the above rule, double-click on the red line highlighting missing reference for `DeleteConfirmation.action`. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message Action`.
 
     <!-- border -->![MDK](img-1.6.gif)
 
-8. Provide the below information in the `DeleteConfirmation.action`:
+7. Provide the below information in the `DeleteConfirmation.action`:
 
     | Field | Value |
     |----|----|
@@ -92,11 +92,12 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
     
     When user taps or clicks the Trash icon on the Customer Detail page, a message will be displayed to confirm if user wants to delete current record. On it's confirmation, `Customers_DeleteEntity.action` is executed.
 
-9. Similarly, fix the path reference for the missing `Customers_DeleteEntity.action`. Switch back to the `Customers_DeleteConfirmation.js` or open it again if it was closed. Double-click on the red line highlighting missing reference for `Customers_DeleteEntity.action`. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `ODataService DeleteEntity Action`.
+8. Similarly, fix the path reference for the missing `Customers_DeleteEntity.action`. Switch back to the `Customers_DeleteConfirmation.js` or open it again if it was closed. Double-click on the red line highlighting missing reference for `Customers_DeleteEntity.action`. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `ODataService DeleteEntity Action`.
+
 
     <!-- border -->![MDK](img-1.8.gif)
 
-10. Provide the below information in the `Customers_DeleteEntity.action`:
+9. Provide the below information in the `Customers_DeleteEntity.action`:
 
     | Property | Value |
     |----|----|
@@ -130,15 +131,15 @@ When the above OData action is executed, you may want to display messages on its
 
     <!-- border -->![MDK](img-2.3.png)   
 
-4. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+4. In the **Template Selection** step, choose **Message** in **Category** | click **Message** | **Next**.
 
     <!-- border -->![MDK](img-2.4.png)
 
-    Provide the below information:
+5. In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `DeleteCustomerEntityFailureMessage` |
+    | `Name`| `DeleteCustomerEntityFailureMessage` |
     | `Type` | Select `Message` from the dropdown |
     | `Message` | `Delete entity failure - {#ActionResults:delete/error}` |
     | `Title` | `Delete Customer` |
@@ -155,7 +156,7 @@ When the above OData action is executed, you may want to display messages on its
 
     >You could exclude above expression and can just display a generic message.
 
-5. Click **Next** and then **Finish** on the Confirmation step.
+6. Click **Finish** to complete the action creation process. 
 
 When `Customers_DeleteEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_DeleteEntity.action` fails then `DeleteCustomerEntityFailureMessage.action` will be triggered.   
 

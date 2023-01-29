@@ -42,7 +42,7 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -64,7 +64,7 @@ This step includes creating the mobile development kit project in the editor.
 
     | Field | Value |
     |----|----|
-    | `MDK Template Type`| Select `List Detail` from the dropdown |
+    | `MDK Template Type`| Choose `List Detail` from the dropdown |
     | `Your Project Name` | Provide a name of your choice. `MDK_Maps` is used for this tutorial |
     | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |    
     | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |  
@@ -112,11 +112,11 @@ The extension control that you will be creating to extend the functionality of y
 
     <!-- border -->![MDK](img-2.2.png)
 
-4. In `Template Selection` step, select **New and register Metadata Extension Control**. Click **Next**.
+4. In the `Template Selection` step, select **New Metadata Extension Control**. Click **Next**.
 
     <!-- border -->![MDK](img-2.3.png)
 
-5. Provide the below information:
+5. In the **Base Information** step, provide the below information and click **Next**.
 
     | Field | Value |
     |----|----|
@@ -124,7 +124,7 @@ The extension control that you will be creating to extend the functionality of y
     | `Module` | `MyMapModule` |
     | `Control` | `MyMapExtension` |
     | `Class` | `MyMapClass` |
-    | `Display` | bind it to `map.png` file  |
+    | `Display` | click on the link icon and bind it to `map.png` file  |
 
     Here is the basic definition for properties you defined above:
 
@@ -139,7 +139,7 @@ The extension control that you will be creating to extend the functionality of y
 
     <!-- border -->![MDK](img-2.4.png)
 
-6. In **Schema Information** step, fill schema details in **Schema** column and click **Next**.
+6. In the **Extension Properties** step, fill schema details in **Schema** column and click **Finish**.
 
     ```JSON
     {
@@ -184,8 +184,6 @@ The extension control that you will be creating to extend the functionality of y
 
     >Above schema will add these predefined properties (`City`, `Country`, `HouseNumber`, `LastName`, `PostalCode`, and `Street`) in the map extension control which you will bind to **Customer** entity properties in next step.
 
-7. Click **Finish** to confirm.
-
     Some additional files and folders are added to the **Extensions** folder. You will learn more about it in following steps.
 
     <!-- border -->![MDK](img-2.6.png)
@@ -229,7 +227,7 @@ You will add this registered control in the generated `Customers_Detail.page`.
 ### Implement Extension using metadata approach
 
 
-1. Navigate to **Extensions** | `MyMapModule` | `controls` | `MyMapExtension.ts`, replace the code with the following.
+1. Navigate to **Extensions** | `MyMapModule` | `controls` | `MyMapExtension.ts`, replace the generated code with the following.
 
     ```JavaScript / TypeScript
     import * as app from '@nativescript/core/application';
@@ -635,7 +633,6 @@ SAP Business Application Studio has a feature to display the QR code for onboard
     ![MDK](img-8.17.png)  
 
 [OPTION END]
-
 
 
 ---

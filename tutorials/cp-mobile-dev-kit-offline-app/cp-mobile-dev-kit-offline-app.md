@@ -31,7 +31,7 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -71,7 +71,7 @@ This step includes creating the mobile development kit project in the editor.
     | `Mobile Services Landscape` | Select `standard` from the dropdown |
     | `Application Id` | Select `com.sap.mdk.demo` from the dropdown |
     | `Destination` | Select `SampleServiceV2` from the dropdown |
-    | `Enter a path to the OData service` | Leave it as it is |
+    | `Enter a path to service` | Leave it as it is |
     | `Enable Offline` | It's enabled by default |
 
     <!-- border -->![MDK](img-1.5.png)
@@ -202,7 +202,6 @@ After you accept the app update, you will see the **Main** page (with **Logout**
     <!-- border -->![MDK](img-5.5.png)
 
 [OPTION END]
-
 
 
 ---

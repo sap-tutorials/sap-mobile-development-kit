@@ -31,7 +31,7 @@ If you didn't follow the prerequisite then you may clone an existing project fro
 
 In this step, you will create the `Customers_Create.page` as a **Form Cell Page**. This type of page allows for form input style changes. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
 
-1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell Page** | **Next**.
+1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -39,7 +39,7 @@ In this step, you will create the `Customers_Create.page` as a **Form Cell Page*
 
     >You can find more details about [Form Cell page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/formcell-page.html).
 
-2. Enter the Page Name `Customers_Create` and click **Next** and the **Finish** on the Confirmation step.
+2. In the **Base Information** step, enter the page **Name** as `Customers_Create` and click **Finish** to complete the page creation wizard.
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -117,7 +117,6 @@ In this step, you will create the `Customers_Create.page` as a **Form Cell Page*
     | `Caption` | `DOB` |
 
 
-
 ### Add a cancel button on the Create Customer page
 
 
@@ -169,15 +168,15 @@ First, add an action bar item on the `Customers_Create.page`.
 
     <!-- border -->![MDK](img-3.3.png)  
 
-5. Choose **MDK Data Actions** in **Category** | click **OData Action** | **Next**.
+5. In the **Template Selection**, choose **Data** in **Category** | click **OData** Action | **Next**.
 
     <!-- border -->![MDK](img-3.4.png)  
 
-6. In the **Operation and Service Selection** step, provide the below information:
+6. In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `Customers_CreateEntity` |
+    | `Name`| `Customers_CreateEntity` |
     | `Type` | Select `CreateEntity` from the dropdown |
     | `Service`| Select `SampleServiceV2.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
@@ -202,9 +201,7 @@ First, add an action bar item on the `Customers_Create.page`.
 
     <!-- border -->![MDK](img-3.7.png)
 
-    <!-- border -->![MDK](img-3.8.png)
-
- 10. Click **Next** and **Finish** on the confirmation screen. The action editor will open with the `Customers_CreateEntity.action` loaded.
+ 10. Click **Finish** to complete the action creation process. The action editor will open with the `Customers_CreateEntity.action` loaded.
 
     >You can find more details about [Create Entity Action](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ODataService/CreateEntity.schema.html).     
 
@@ -214,7 +211,7 @@ First, add an action bar item on the `Customers_Create.page`.
 
     <!-- border -->![MDK](img-3.9.png)
 
- 12. Create a message action displaying error in case of the update failure. In the `Customers_CreateEntity.action`, provide value as **create** for the *Action Result* and click the `Create a rule/action` icon for the *Failure Action*.
+ 12. Create a message action displaying error in case of the update failure. In the `Customers_CreateEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
 
     <!-- border -->![MDK](img-3.10.png)
 
@@ -222,17 +219,17 @@ First, add an action bar item on the `Customers_Create.page`.
 
     <!-- border -->![MDK](img-3.3.png)     
 
-14. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+14. In the **Template Selection** step, choose **Message** in **Category** | click **Message** Action | **Next**.
 
     <!-- border -->![MDK](img-3.11.png)
 
-    Provide the below information:
+15. In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `CreateCustomerEntityFailureMessage` |
+    | `Name`| `CreateCustomerEntityFailureMessage` |
     | `Type` | Select `Message` from the dropdown |
-    | `Message` | `Failed to Create Customer record - {#ActionResults:create/error}` |
+    | `Message` | `Failed to Create Customer record - {#ActionResults:Customers_CreateEntity/error}` |
     | `Title` | `Create Customer` |
     | `OKCaption` | `OK` |
     | `OnOK` | `--None--` |
@@ -241,13 +238,13 @@ First, add an action bar item on the `Customers_Create.page`.
 
     <!-- border -->![MDK](img-3.12.png)
 
-    >`create` is the Action Result value of the `Customers_CreateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
+    >`Customers_CreateEntity` is the Action Result value of the `Customers_CreateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
 
     >This is the standard Binding Target Path (also called Dynamic Target Path) syntax used when you need to include a binding with other bindings or within a string as used in the message here.
 
     >You could exclude above expression and can just display a generic message.
 
-15. Click **Next** and then **Finish** on the Confirmation step.
+16. Click **Finish** to complete the action creation process.
 
 When `Customers_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_CreateEntity.action` fails then `CreateCustomerEntityFailureMessage.action` will be triggered.
 
@@ -274,15 +271,15 @@ You will open the `Customers_Create.page` from the Customer List page. For this,
 
     <!-- border -->![MDK](img-3.3.png)       
 
-5. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+5. In the **Template Selection** step, choose **UI** in **Category** | click **Navigation** | **Next**.
 
     <!-- border -->![MDK](img-4.4.png)
 
-6. Provide the below information:
+6. In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `NavToCustomers_Create` |
+    | `Name`| `NavToCustomers_Create` |
     | `PageToOpen` | Select `Customers_Create.page` from the dropdown |
     | `ModalPage`| Select `true` from the dropdown |
 
@@ -404,7 +401,6 @@ You can cross verify if a record has been updated in the backend.
 
 >It will open the URL in a new tab, remove `?auth=uaa` and add `/Customers` at the end of the URL.
 ![MDK](img-7.15.png)
-
 
 
 ---

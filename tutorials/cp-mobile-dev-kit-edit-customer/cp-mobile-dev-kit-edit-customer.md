@@ -32,7 +32,7 @@ For offline applications, the changes are stored locally until they are synced u
 
 In this step, you will create the _Edit Customer Detail_ page as a **Form Cell Page**. This type of page allows for form input style changes. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
 
-1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell Page** | **Next**.
+1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -40,7 +40,7 @@ In this step, you will create the _Edit Customer Detail_ page as a **Form Cell P
 
     >You can find more details about [Form Cell page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/formcell-page.html).
 
-2. Enter the Page Name `Customers_Edit` and click **Next** and the **Finish** on the Confirmation step.
+2. In the **Base Information** step, enter the Page Name `Customers_Edit` and click **Finish** to complete the page creation process.
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -135,24 +135,21 @@ While updating the customer details, you may want to close the current page and 
 
     <!-- border -->![MDK](img-2.4.png)   
 
-5. Choose **MDK UI Actions** in **Category** | click **Close Page Action** | **Next**.
+5. Choose **UI** in **Category** | click **Close Page** | **Next**.
 
     <!-- border -->![MDK](img-2.5.png)
 
-6. Provide the below information:
+6. In the **Base Information**, provide the below information and then click **Finish** to complete the action creation process.
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `CloseModalPage_Cancel` |
+    | `Name`| `CloseModalPage_Cancel` |
     | `DismissModal` | Select `Canceled` from the dropdown |
     | `CancelPendingActions`| Select `true` from the dropdown |
 
     <!-- border -->![MDK](img-2.6.png)
 
     >You can close pages with the option to terminate ongoing events or wait until they are complete. Visit [documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ClosePage.schema.html) for more details about Close Page Action.
-
-7. Click **Next** and then **Finish** on the confirmation step.
-
 
 ### Store the updated data locally
 
@@ -179,21 +176,21 @@ First, add an action bar item on the `Customers_Edit.page`
 
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-3.4.png)   
+    <!-- border -->![MDK](img-2.4.png)   
 
-5. Choose **MDK Data Actions** in **Category** | click **OData Action** | **Next**.
+5. Choose **Data** in **Category** | click **OData** | **Next**.
 
     <!-- border -->![MDK](img-3.5.png)
 
-6. In the **Operation and Service Selection** step, provide the below information:
+6. In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `Customers_UpdateEntity` |
+    | `Name`| `Customers_UpdateEntity` |
     | `Type` | Select `UpdateEntity` from the dropdown |
     | `Service`| Select `SampleServiceV2.service` from the dropdown |
     | `EntitySet`| Select `Customers` from the dropdown |
-    | `ReadLink`| click link icon and Double-click `readLink` |
+    | `ReadLink`| click link icon and double-click `readLink` |
 
     <!-- border -->![MDK](img-3.6.png)
 
@@ -219,7 +216,7 @@ First, add an action bar item on the `Customers_Edit.page`
 
     <!-- border -->![MDK](img-3.8.png)
 
-    Click **Next** and **Finish** on the confirmation screen. The action editor will open with the `Customers_UpdateEntity.action` loaded.
+    Click **Finish**. The action editor will open with the `Customers_UpdateEntity.action` loaded.
 
     >You can find more details about [Update Entity Action](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ODataService/UpdateEntity.schema.html).
 
@@ -231,25 +228,24 @@ First, add an action bar item on the `Customers_Edit.page`
 
 12. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-3.4.png)   
+    <!-- border -->![MDK](img-2.4.png)   
 
-13. Choose **MDK UI Actions** in **Category** | click **Close Page Action** | **Next**.
+13. Choose **UI** in **Category** | click **Close Page** | **Next**.
 
     <!-- border -->![MDK](img-3.10.png)
 
-14. Provide the below information:
+14. In the **Base Information**, provide the below information and then click **Finish** to complete the action creation process.
 
     | Property | Value |
     |----|----|
-    | `Action Name` | `CloseModalPage_Complete` |
+    | `Name` | `CloseModalPage_Complete` |
     | `DismissModal` | Select `Completed` from the dropdown |
     | `CancelPendingActions` | Select `false` from the dropdown |
 
     <!-- border -->![MDK](img-3.11.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
 
-15. Similar, create a message action displaying error in case of the update failure. In the `Customers_UpdateEntity.action`, provide value as **update** for the *Action Result* and click the `Create a rule/action` icon for the *Failure Action*.
+15. Similar, create a message action displaying error in case of the update failure. In the `Customers_UpdateEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
 
     <!-- border -->![MDK](img-3.12.png)
 
@@ -257,15 +253,15 @@ First, add an action bar item on the `Customers_Edit.page`
 
     <!-- border -->![MDK](img-3.4.png)   
 
-17. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+17. Choose **Message** in **Category** | click **Message** | **Next**.
 
     <!-- border -->![MDK](img-3.13.png)
 
-18. Provide the below information:
+18. In the **Base Information**, provide the below information and then click **Finish**.
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `UpdateCustomerEntityFailureMessage` |
+    | `Name`| `UpdateCustomerEntityFailureMessage` |
     | `Type` | Select `Message` from the dropdown |
     | `Message` | `Failed to Save Customer Updates - {#ActionResults:update/error}` |
     | `Title` | `Update Customer` |
@@ -276,13 +272,11 @@ First, add an action bar item on the `Customers_Edit.page`
 
     <!-- border -->![MDK](img-3.14.png)
 
-    >`update` is the Action Result value of the `Customers_UpdateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
+    >`Customers_UpdateEntity` is the Action Result value of the `Customers_UpdateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
 
     >This is the standard Binding Target Path (also called Dynamic Target Path) syntax used when you need to include a binding with other bindings or within a string as used in the message here.
 
     >You could exclude above expression and can just display a generic message.
-    
-19. Click **Next** and then **Finish** on the confirmation step.
 
 When `Customers_UpdateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_UpdateEntity.action` fails then `UpdateCustomerEntityFailureMessage.action` will be triggered.
 
@@ -296,7 +290,7 @@ You will navigate from the Customer Detail page to a new page modifying customer
 
 1. In `Customers_Detail.page`, drag and drop an **Action Bar Item** to the upper right of the action bar.
 
-    <!-- border -->![MDK](img-4.1.png)
+    <!-- border -->![MDK](img-4.1.png)    
 
 2. Click the **link icon** to open the object browser for the **System Item** property.
 
@@ -306,13 +300,13 @@ You will navigate from the Customer Detail page to a new page modifying customer
 
 3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
 
-   <!-- border -->![MDK](img-4.3.png)
-
+    <!-- border -->![[MDK](img-4.3.png)
+    
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-3.4.png)    
+    <!-- border -->![MDK](img-2.4.png)    
 
-5. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+5. Choose **UI** in **Category** | click **Navigation** | **Next**.
 
     <!-- border -->![MDK](img-4.4.png)
 
@@ -326,8 +320,7 @@ You will navigate from the Customer Detail page to a new page modifying customer
 
     <!-- border -->![MDK](img-4.6.png)
 
-7. Click **Next** and then **Finish** on the confirmation step.
-
+7. Click **Finish** to complete the action creation process. 
 
 
 ### Deploy the application

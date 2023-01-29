@@ -29,7 +29,7 @@ You will add a rule to the Update action to run the validation before saving any
 
 1. Open `Customers_UpdateEntity.action` by double clicking on the action in the project explorer pane.
 
-2. Expand the **Common Action Properties** and click the `Create a rule` icon to create a new rule.  
+2. Expand the **Common Action Properties** and click the `Create a rule` icon to create a new *Validation Rule*.  
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -37,7 +37,7 @@ You will add a rule to the Update action to run the validation before saving any
 
     <!-- border -->![MDK](img-1.2.png)
 
-4. Enter the Rule name `EmailValidation`, click **Next** and then **Finish** on the confirmation step.
+4. Enter the Rule **Name** as `EmailValidation` and then click  **Finish**.
 
     <!-- border -->![MDK](img-1.3.png)
 
@@ -156,7 +156,6 @@ Deploy the updated application to your MDK client.
 [OPTION END]
 
 Once you complete this tutorial you can continue with [enhance Your First MDK App with Additional Functionalities](mission.mobile-dev-kit-enhance) mission.
-
 
 
 ---

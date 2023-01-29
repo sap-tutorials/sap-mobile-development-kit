@@ -38,7 +38,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -88,7 +88,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
     <!-- border -->![MDK](img-2.3.gif)
 
-  4. Set `KeyName`as `Coordinates`. To bind it's value property, click on `create a new rule`. You will create a new JavaScript file to capture the device location: latitude & longitude.
+  4. Set `KeyName`as `Coordinates`. To bind it's value property, click on `create a rule`. You will create a new JavaScript file to capture the device location: latitude & longitude.
 
     <!-- border -->![MDK](img-2.4.png)
 
@@ -98,8 +98,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
     >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
-   6. Enter the Rule name `GetCoordinates`, click **Next** and then **Finish** on the confirmation step.
-
+   6. Enter the Rule name as `GetCoordinates` and click  **Finish**.
     <!-- border -->![MDK](img-2.6.png)
 
    7. Replace the generated snippet with below code.
@@ -325,7 +324,6 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
     ![MDK](img-8.3.png)
 
 [OPTION END]
-
 
 
 ---

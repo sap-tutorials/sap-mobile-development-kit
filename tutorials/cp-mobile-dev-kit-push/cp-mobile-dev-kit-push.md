@@ -54,7 +54,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-2.1.png)
 
@@ -102,33 +102,31 @@ In this step, you will create the following actions:
 
 1. Create a Push Notification Register action.
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Other Actions** in **Category** | click **Push Notification Register Action** | **Next**.
+    Right-click the **Actions** folder | **MDK: New Action** | choose **Other** in **Category** | click **Push Notification Register** | **Next**.
 
     <!-- border -->![MDK](img-3.1.png)
 
-    Provide the below information:
+    In the **Base Information** step, provide the below information and click **Finish** to complete the action creation process.
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `PushRegister` |
+    | `Name`| `PushRegister` |
 
     <!-- border -->![MDK](img-3.2.png)
 
     >More details on _Push Notification Action_ is available in [help documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/PushNotificationRegister.schema.html).
 
-    Click **Next** and then **Finish** on the confirmation step.
-
 2. Define a success message if the Push Register Notification action is succeeded.
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+    Right-click the **Actions** folder | **MDK: New Action** | choose **Message** in **Category** | click **Message** | **Next**.
 
-    <!-- border -->![MDK](img-3.3.png)
-
-    Provide the below information:
+    <!-- border -->![MDK](img-3.4.png)
+    
+    In the **Base Information** step, provide the below information and Click **Finish**.
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `PushRegisterSuccessMessage` |
+    | `Name`| `PushRegisterSuccessMessage` |
     | `Type` | Select `Message` from the dropdown |
     | `Message` | `Push Notification registered` |
     | `Title` | `Success` |
@@ -139,20 +137,17 @@ In this step, you will create the following actions:
 
     <!-- border -->![MDK](img-3.3.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
-
-
 3. Define a failure message if the Push Register Notification action is failed.
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+    Right-click the **Actions** folder | **MDK: New Action** | choose **Message** in **Category** | click **Message** | **Next**.
 
     <!-- border -->![MDK](img-3.4.png)
 
-    Provide the below information:
+    In the **Base Information** step, provide the below information and Click **Finish**.
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `PushRegisterFailureMessage` |
+    | `Name`| `PushRegisterFailureMessage` |
     | `Type` | Select `Message` from the dropdown |
     | `Message` | `Push Notification didn't register` |
     | `Title` | `Failure` |
@@ -162,8 +157,6 @@ In this step, you will create the following actions:
     | `OnCancel` | `--None--` |
 
     <!-- border -->![MDK](img-3.5.png)
-
-    Click **Next** and then **Finish** on the confirmation step.
 
 4. Define _Success_ and _Failure_ actions for `PushRegister.action`.
 

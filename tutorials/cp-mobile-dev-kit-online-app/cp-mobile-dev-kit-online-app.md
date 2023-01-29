@@ -40,7 +40,7 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-2.1.png)
 
@@ -180,7 +180,6 @@ Once you accept app update, you will see **Main** page being displayed and appli
 [OPTION END]
 
 >Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and on-board again, you will be asked either to continue to use current application or to scan new QR code.
-
 
 
 ---

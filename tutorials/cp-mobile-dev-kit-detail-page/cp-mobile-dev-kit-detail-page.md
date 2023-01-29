@@ -34,11 +34,11 @@ To enhance your MDK app with customer details information, you need to carry out
 
 This page will show related details for a customer. In this page, you will add an **Object Header** control that is used to display information (like first name, last name, date of birth, email address & phone number) about the header of an object and **Static Key Value** control to display key value pair items like address, city, postal code & country.
 
-1. In SAP Business Application Studio project, Right-click the **Pages** folder | **MDK: New Page** | **Section Page** | **Next**.
+1. In SAP Business Application Studio project, Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
-2. Enter the Page Name `Customers_Detail` and click **Next** and the **Finish** on the Confirmation step.
+2. In the **Base Information** step, enter the Page Name `Customers_Detail` and click **Finish** to complete the page creation process.
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -72,7 +72,7 @@ This page will show related details for a customer. In this page, you will add a
     | `Subhead` | `{FirstName}` |
     | `Substatus` | Remove the default property |
 
-    >`DetailImage` property is referencing [SAP font icon](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons).
+    >`DetailImage` property is referencing to the [SAP font icon](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons).
 
     >Make sure to select values for the mentioned properties only from **Customer** Entity. You may find similar values from other entities. For example,
 
@@ -140,7 +140,7 @@ This page will show related details for a customer. In this page, you will add a
 
 Now, you will create a Navigation action that opens the `Customers_Detail.page` when called.
 
-1. Navigate to `Pages`> `Customers_List.page`, select the Contact Cell Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+1. Navigate to `Pages` | `Customers_List.page`, select the Contact Cell Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-2.1.png)
 
@@ -148,15 +148,15 @@ Now, you will create a Navigation action that opens the `Customers_Detail.page` 
 
     <!-- border -->![MDK](img-2.2.png)    
 
-3. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+3. Choose **UI** in **Category** | click **Navigation** | **Next**.
 
     <!-- border -->![MDK](img-2.3.png)
 
-4. Provide the below information, click **Next** and then **Finish** on the confirmation step.
+4. In the **Base Information** step, provide the below information and click **Finish** to complete the action creation process.
 
     | Field | Value |
     |----|----|
-    | `Action Name`| `NavToCustomers_Detail` |
+    | `Name`| `NavToCustomers_Detail` |
     | `PageToOpen` | Select `Customers_Detail.page` from the dropdown |
 
     <!-- border -->![MDK](img-2.4.png)

@@ -127,7 +127,7 @@ With above details, you will next configure an app in Mobile Services, add root 
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-4.1.png)
 
@@ -169,28 +169,18 @@ With above details, you will next configure an app in Mobile Services, add root 
 
     <!-- border -->![MDK](img-5.1.png)
 
-2. Select the Mobile Services landscape where you have configured the MDK app (step 2).    
-
-    <!-- border -->![MDK](img-5.2.png)    
-
-3. Select the application `com.sap.mdk.restapi` from Mobile Services.    
-
-    <!-- border -->![MDK](img-5.3.png)
-
-4. Provide or select the below information:
+2. Provide the below information and click **Finish**.
 
     | Field | Value |
     |----|----|
     | `Name`| `<Provide any name of your choice>` |
-    | `Data Source` | Select `Mobile Services` from the dropdown |
+    | `Data Source` | Select `Mobile Services` from the dropdown. You will be asked to select the Mobile services landscape where you have configured the MDK app as per step 2 and then select the application `com.sap.mdk.restapi` |
     | `Destination` | Select `swagger_petstore` from the dropdown |
     | `Path Suffix` | Leave it as it is |
     | `Language URL Param` | Leave it as it is |
-    | `REST Service` | Check it |
+    | `REST Service` | choose this option |
 
     <!-- border -->![MDK](img-5.4.png)
-
-5. Click **Next** and Finish the step.
 
     .service and `.xml` (empty file) have been created under Services folder.
 
@@ -220,8 +210,6 @@ You will add an **Object Table** control  item on `Main.page` to display the lis
 
     >Method GET is pre-selected for binding the `ObjectTable` control to a `RestServiceTarget`.
 
-    ><!-- border -->![MDK](img-6.3.png)
-
 3. Under **Appearance**, provide below information:
 
     | Property | Value |
@@ -239,11 +227,11 @@ You will add an **Object Table** control  item on `Main.page` to display the lis
 
     <!-- border -->![MDK](img-6.4.png)
 
-4. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
+4. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar.  First, click on the `item0`, a trash icon appears. Click on the trash icon to delete the default item.
 
     <!-- border -->![MDK](img-6.5.png)    
 
-5. In the **Avatar Stack** section of the **Properties** pane, remove the default Avatar by selecting the `item0` and clicking the trash icon to delete the default item.
+5. In the **Avatar Stack** section of the **Property** pane, remove the default Avatar.  First, click on the `item0`, a trash icon appears. Click on the trash icon to delete the default item.
 
     <!-- border -->![MDK](img-6.6.png)  
 
@@ -371,13 +359,13 @@ With above details, you will now create a new MDK rule to create a new Pet recor
 
 In this step, you will create the `Pet_Create.page` as a **Form Cell Page**. This type of page allows for form input style changes. You will add the fields that will be editable by the end-user.
 
-1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell Page** | **Next**.
+1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
 
     <!-- border -->![MDK](img-10.1.png)
 
     >You can find more details about [Form Cell page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/formcell-page.html).
 
-2. Enter the Page Name `Pet_Create` and click **Next** and the **Finish** on the Confirmation step.
+2. Enter the Page **Name** as `Pet_Create` and click **Finish**.
 
     <!-- border -->![MDK](img-10.2.png)
 
@@ -439,27 +427,21 @@ After filling-up the details for creating a new pet record, you will send these 
 
     <!-- border -->![MDK](img-11.4.png)
 
-5. Choose **`MDK RestService Actions`** in **Category** | click **`RestService SendRequest` Action** | **Next**.
+5. Choose **`REST Service`** in **Category** | select **`REST Service Send Request` Action** | **Next**.
 
     <!-- border -->![MDK](img-11.5.png)        
 
-6. Provide the below information:
+6. In the **Base Information**, provide the below information:
 
     | Field | Value |
     |----|----|
-    | `Action Name`| `CreatePet` |
-    | `Service` | Select `petstore.service` from the dropdown |
-    | `Path` | `/pet` |
+    | `Name`| `CreatePet` |
+    | `Service` | choose `petstore.service` from the dropdown |
+    | `Path` | `/pet` |    
 
     <!-- border -->![MDK](img-11.6.png)
 
-7. Expand `RequestProperties` and provide the below information.
-
-    | Field | Value |
-    |----|----|
-    | `Method`| `POST` |
-
-8. Under `Body`, switch to `object type` by clicking the icon, once it's color has changed, click on `Body[0]` to add array items, this should now display a create icon in front of `Body[0]`. Click Create icon to create an array item(0).
+8. For `RequestProperties` object, choose `POST` method from the dropdown. Under `Body`, switch to `object type` by clicking the icon, once it's color has changed, click on `Body[0]` to add array items, this should now display a create icon in front of `Body[0]`. Click Create icon to create an array item(0).
 
     Provide the below information:
 
@@ -470,7 +452,7 @@ After filling-up the details for creating a new pet record, you will send these 
 
     <!-- border -->![MDK](img-11.7.gif)
 
-    Repeat above step to create another array item(1).  
+9. Click create icon to add another array item(1) and click **Finish**. 
 
     | Field | Value |
     |----|----|
@@ -478,8 +460,6 @@ After filling-up the details for creating a new pet record, you will send these 
     | `Value{}`| Bind it to input control `#Control:FCCreateStatus/#Value` |
 
     <!-- border -->![MDK](img-11.8.png)
-
-9. Click **Next** and **Finish** the confirmation step.
 
     >You can find more details about `SendRequest` action in [help documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/RestService/SendRequest.schema.html).
 
@@ -529,39 +509,34 @@ You will add a button to the `Main.page` called **Add**. When you click on this 
 
     <!-- border -->![MDK](img-11.4.png)
 
-5. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+5. Choose **UI** in **Category** | click **Navigation** | **Next**.
 
-6. Provide the below information:
+6. In the **Base Information**, provide the below information and click **Finish**.
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `NavToPet_Create` |
+    | `Name`| `NavToPet_Create` |
     | `PageToOpen` | Select `Pet_Create.page` from the dropdown |
     | `ModalPage`| Select `true` from the dropdown |
 
     <!-- border -->![MDK](img-13.3.png)
-
-7. Click **Next** and then **Finish** on the confirmation step.
-
 
 ### Create Close Page Complete action
 
 
 Now, you will create a new action `ClosePage_Complete.action` that will be called after `CreatePet.action` is successful.
 
-1. Right-click the **Actions** folder | **MDK: New Action** | choose **MDK UI Actions** in **Category** | click **Close Page Action** | **Next**.
+1. Right-click the **Actions** folder | **MDK: New Action** | choose **UI** in **Category** | click **Close Page** | **Next**.
 
-2. Provide the below information:
+2. In the **Base Information**, provide the below information and click **Finish**.
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `ClosePage_Complete` |
+    | `Name`| `ClosePage_Complete` |
     | `DismissModal` | Select `Completed` from the dropdown |
     | `CancelPendingActions`| Select `false` from the dropdown |
 
     <!-- border -->![MDK](img-14.1.png)
-
-3. Click **Next** and then **Finish** on the confirmation step.
 
 4. Next, define _Success_ actions for `CreatePet.action`.
 
@@ -639,7 +614,6 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 [OPTION END]
 
 You have created a new record consuming REST API. Similarly, you can also modify and delete an existing record.
-
 
 
 ---

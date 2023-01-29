@@ -46,7 +46,7 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-2.1.png)
 
@@ -236,7 +236,7 @@ For this tutorial, you will create the `i18n_de.properties` file for the German 
 
     <!-- border -->![MDK](img-5.2.png)
 
-3. Enter the file name `i18n_de`, click **Next** and then **Finish** on the confirmation step.
+3. Enter the file **Name** as `i18n_de`, click  **Finish**.
 
     <!-- border -->![MDK](img-5.3.png)
 
@@ -313,49 +313,51 @@ Let's start with Currency formatter:
 
 1. Click `SalesOrderHeaders_List.page` to open it in the MDK Page Editor.
 
-2. The Object Table control's **Status** property is bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter. In the **Properties** pane, click **link** icon for the **Status** property.
+2. You'll update the Object Table control's **Status** property which is currently bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter.
 
-3. Cut or remove the default expression in the object browser.
-
-4. Select **i18n Objects** in the dropdown and then select **Currency** in the formatters dropdown.
-
-5.  Select **Euro Member Countries** for **Country Code**, click **Insert** to generate the expression, **do not close the Object Browser window**.
+   * In the **Properties** pane pane, click **link** icon for the **Status** property.
+   * Cut or remove the default expression in the object browser.
+   * Select **i18n Objects** in the dropdown and then select **Currency** in the formatters dropdown.
+   * Click **Insert** to generate the expression, **do not close the Object Browser window**.
 
     <!-- border -->![MDK](img-7.1.gif)
 
     The generated expression looks like below:
 
     ```JSON
-    $(C,,'EUR','',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})
+    $(C,,,'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})
     ```
+   * You will now bind the Currency value placeholder with the `GrossAmount` property of the `SalesOrderHeaders` entity. Put the cursor before the second comma (from left side). Choose **OData Objects** option from the dropdown, select the `GrossAmount` property under the `SalesOrderHeader`.
 
-6. You will now bind the Currency value placeholder with the `GrossAmount` property of the `SalesOrderHeaders` entity. Put the cursor before the second comma (from left side). Choose **OData Objects** option from the dropdown, select the `GrossAmount` property under the `SalesOrderHeader` and click **Insert** to generate the new expression.
+    * Click **Insert** to generate the expression, **do not close the Object Browser window**. 
 
     <!-- border -->![MDK](img-7.2.gif)
 
     The new expression looks like below:
 
     ```JSON
-    $(C,{GrossAmount},'EUR','',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})
+    $(C,{GrossAmount},,'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})
     ```
 
-    Since there is already an OData property `CurrencyCode` part of `SalesOrderHeaders` entity, it would be best to use the value coming directly from the backend instead providing a constant value. So, replace the 'EUR' with `{CurrencyCode}` so the final expression should look like below:
+    * You will now bind the Currency Code placeholder. Since there is already an OData property `CurrencyCode` part of `SalesOrderHeaders` entity, it would be best to use the value coming directly from the backend instead providing a constant value. Put the cursor before the third comma (from left side). Select the `CurrencyCode` property under the `SalesOrderHeader` and click **Insert** to generate the expression.
+    
+    <!-- border -->![MDK](img-7.2.1.gif)
+
+    The generated expression looks like below:
 
     ```JSON
     $(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})
     ```
 
-7. Click **OK**.
+    * Click **OK**.
 
-8. You will now format the **Subhead** property's value `{CreatedAt}` using `DateTime` formatter.
+3. You will now format the **Subhead** property's value `{CreatedAt}` using `DateTime` formatter.
 
     `Syntax: $(DT, <Value>, <Locale>, <Timezone>)`
 
-9. Click **link** icon for the **Subhead** property.
-
-10. Cut or remove the default expression in the object browser, select **i18n Objects** in the dropdown, select `DateTime` in the formatters dropdown.
-
-11. Select **Medium** for **Display Format** and click **Insert** to generate the expression, **do not close the Object Browser window**.
+    * Click **link** icon for the **Subhead** property.
+    * Cut or remove the default expression in the object browser, select **i18n Objects** in the dropdown, select `DateTime` in the formatters dropdown.
+    * Select **Medium** for **Display Format** and click **Insert** to generate the expression, **do not close the Object Browser window**.
 
     <!-- border -->![MDK](img-7.3.gif)
 
@@ -365,11 +367,11 @@ Let's start with Currency formatter:
     $(DT,,'','',{format:'medium'})
     ```
 
-12. You will now bind the `DateTime` value placeholder with the `CreatedAt` property of the `SalesOrderHeaders` entity. Put the cursor before the second comma (from left side). Choose **OData Objects** option from the dropdown, select the `CreatedAt` property under the `SalesOrderHeader` and click **Insert** to generate the new expression.
+    * You will now bind the `DateTime` value placeholder with the `CreatedAt` property of the `SalesOrderHeaders` entity. Put the cursor before the second comma (from left side). Choose **OData Objects** option from the dropdown, select the `CreatedAt` property under the `SalesOrderHeader` and click **Insert** to generate the new expression.
 
     <!-- border -->![MDK](img-7.4.gif)
 
-    The new expression looks like below:
+    The new expression looks like below. Click **OK**.
 
     ```JSON
     $(DT,{CreatedAt},'','',{format:'medium'})
@@ -378,8 +380,6 @@ Let's start with Currency formatter:
     >For Time formatter, you must still provide the full date-time value, the result will only include time portion.
 
     >For more details on these formatters, check the [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#formatter-indicator).
-
-
 
 
 ### Redeploy the application

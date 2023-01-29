@@ -83,7 +83,7 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-3.1.png)
 
@@ -139,45 +139,25 @@ This step includes creating the mobile development kit project in the editor.
 ### Add MDK Annotation component to MDK project
 
 
-1. Right-click `Application.app` and select **MDK:New MDK Annotation Component**.
+1. Right-click `Application.app` and select **MDK:New Annotation Component**.
 
     <!-- border -->![MDK](img-4.1.png)
 
-2. MDK editor fetches annotation details, select **Product** Annotation and click **Next**.
+2. In the **Annotation Selection** step, MDK editor fetches annotation details. Select **Product** Annotation and click **Next**.
 
     <!-- border -->![MDK](img-4.2.png)
 
-3. In **Template Customization** step, click **Next**.
+3. In **Template Customization** step, select **CRUD** Template and click **Finish**.
 
     <!-- border -->![MDK](img-4.3.png)
 
-4. Click **Finish** to create list detail from OData Annotation.
-
-    In MDK project, you will see new pages, actions, rules have been generated for **Product**.
+    In MDK project, you will see new pages, actions, rules have been generated for **Products**.
 
     <!-- border -->![MDK](img-4.4.png)
 
-5. Next, you will add a Toolbar item on `Main.page` to navigate to `Product_List.page`.
-
-    In `Main.page`, drag and drop **Toolbar Item** control on the page.
-
-    <!-- border -->![MDK](img-4.5.gif)
-
-6. Change its **Caption** to **Products**.
-
-    <!-- border -->![MDK](img-4.6.png)
-
-7. Now, you will set the `onPress` event to `NavToProduct_List.action`.
-
-    In **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**.
-
-    Double-click the `NavToProduct_List.action` and click **OK** to set it as the `OnPress` action.
-
-    <!-- border -->![MDK](img-4.7.png)
+    You will also notice a button control has been generated on the `Main.page` to navigate to `Product_List.page`.
 
     Pages, actions and rules created are a starting point. You can edit those pages and make it your own.  At this point the MDK editor is no longer reading the annotations from OData.
-
-    For the List page, MDK supports the List Report. To create a Detail page, MDK requires `UI.LineItem` and `UI.HeaderInfo` in the annotation file.
 
     >If the OData designer updates the backend services data schema (annotations), the MDK pages will stay as originally created. It will not automatically update the pages or overwrite your changes. You are *disconnected* from the annotations at this point.
 
@@ -280,7 +260,6 @@ SAP Business Application Studio has a feature to display the QR code for onboard
     <!-- border -->![MDK](img-6.13.png)
 
 [OPTION END]
-
 
 
 ---

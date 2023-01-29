@@ -64,58 +64,58 @@ You will create 3 actions:
 
 1. Create a log action of type `SetState`:
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Log Actions** in **Category** | click **Log Action** | **Next**.
+    Right-click the **Actions** folder | **MDK: New Action** | choose **Log** in **Category** | click **Log** | **Next**.
 
     <!-- border -->![MDK](img-2.2.png)
 
-    Provide the below information:
+    In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `LogSetState` |
+    | `Name`| `LogSetState` |
     | `Type` | Select `SetState` from the dropdown |
     | `LoggerState`| Select `On` from the dropdown |
 
     <!-- border -->![MDK](img-2.3.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
+    Click **Finish** to create the action creation process.
 
 2. Create a log action of type `SetLevel`:
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Log Actions** in **Category** | click **Log Action** | **Next**.
+    Right-click the **Actions** folder | **MDK: New Action** | choose **Log** in **Category** | click **Log** | **Next**.
 
-    Provide the below information:
+    In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `LogSetLevel` |
+    | `Name`| `LogSetLevel` |
     | `Type` | Select `SetLevel` from the dropdown |
     | `Level`| Select `Trace` from the dropdown |
 
     <!-- border -->![MDK](img-2.4.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
+    Click **Finish** to create the action creation process.
 
 3. Create a log action of type `Upload`:
 
-    Right-click the **Actions** folder | **MDK: New Action** | choose **MDK Log Actions** in **Category** | click **Log Action** | **Next**.
+    Right-click the **Actions** folder | **MDK: New Action** | choose **Log** in **Category** | click **Log** | **Next**.
 
-    Provide the below information:
+    In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `LogUpload` |
+    | `Name`| `LogUpload` |
     | `Type` | Select `Upload` from the dropdown |
 
     <!-- border -->![MDK](img-2.5.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
+    Click **Finish** to create the action creation process.
 
 
 ### Bind Set Level log action to the success of Set State action
 
 
-Double click the `LogSetState.action` file | expand **Common Action Properties** | click the link icon for **Success Action** and bind it to  `LogSetLevel.action`
+In the Project Explorer, click the `LogSetState.action` file | expand **Common Action Properties** | click the link icon for **Success Action** and bind it to  `LogSetLevel.action`
 
 <!-- border -->![MDK](img-3.1.png)
 
@@ -145,13 +145,13 @@ You will define two message actions for displaying success or failure when _Log 
 
     <!-- border -->![MDK](img-5.2.png)   
 
-3. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+3. In the **Template Selection** step, choose **Message** in **Category** | click **Message** | **Next**.
 
-    Provide the below information:
+4. In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `LogUploadSuccessful` |
+    | `Name`| `LogUploadSuccessful` |
     | `Type` | Select `ToastMessage` from the dropdown |
     | `Message`| `Log File Uploaded` |
     | `NumberOfLines`| 1 |
@@ -161,25 +161,25 @@ You will define two message actions for displaying success or failure when _Log 
 
     <!-- border -->![MDK](img-5.3.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
+5. Click **Finish** to create the action creation process.
 
-4. Switch back to the `LogUpload.action` tab and   create a message action displaying error in case of the Log Upload failure. In the `LogUpload.action`, provide value as `logupload` for the *Action Result* and click the `Create a rule/action` icon for the *Failure Action*.
+6. Switch back to the `LogUpload.action` tab and create a message action displaying error in case of the Log Upload failure. In the `LogUpload.action`, click the `Create a rule/action` icon for the *Failure Action*.
 
     <!-- border -->![MDK](img-5.4.png)
 
- 5. Keep the default selection for the *Object Type* as Action and *Folders* path.
+7. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
     <!-- border -->![MDK](img-5.2.png)      
 
-6. Choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+8. In the **Template Selection** step, choose **Message** in **Category** | click **Message** | **Next**.
 
-    Provide the below information:
+9. In the **Base Information** step, provide the below information:
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `LogUploadFailure` |
+    | `Name`| `LogUploadFailure` |
     | `Type` | Select `Message` from the dropdown |
-    | `Message`| `Failed to upload client logs - {#ActionResults:logupload/error}` |
+    | `Message`| `Failed to upload client logs - {#ActionResults:LogUpload/error}` |
     | `Title`| `Upload Client Logs` |
     | `OKCaption` | `OK` |
     | `OnOK` | `--None--` |
@@ -188,11 +188,11 @@ You will define two message actions for displaying success or failure when _Log 
 
     <!-- border -->![MDK](img-5.5.png)
 
-    Click **Next** and then **Finish** on the confirmation step.
+10. Click **Finish** to create the action creation process.
 
-    >`logupload` is the Action Result value of the `LogUpload.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the failure message.
+    >`LogUpload` is the Action Result value of the `LogUpload.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the failure message.
 
-7. Let's show an Activity Indicator in the MDK client when logs are being uploaded to the SAP Mobile Services. Switch back to the `LogUpload.action` tab and provide below information.
+11. Let's show an Activity Indicator in the MDK client when logs are being uploaded to the SAP Mobile Services. Switch back to the `LogUpload.action` tab and provide below information.
 
     | Property | Value |
     |----|----|
@@ -204,10 +204,9 @@ You will define two message actions for displaying success or failure when _Log 
 
 ### Add Upload Log button to main page
 
-
 You will add a toolbar item to the _main page_ called **Upload Logs**. You will link toolbar item to `LogUpload.action` you just created in step 2.
 
-1. In `Main` page, drag and drop an **Toolbar Item** to the bottom right of the page.
+1. In the `Main.page`, drag and drop an **Toolbar Item** to the bottom right of the page.
 
     <!-- border -->![MDK](img-6.1.png)
 
@@ -298,7 +297,6 @@ Open SAP Mobile Services Cockpit, click **Mobile Applications** | **Native/MDK**
 A log file is created for each upload. All the uploaded files, including all levels, not just error or fatal will be listed here.
 
 >Check [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/config.html) for more details about Uploading and Viewing Client Logs.
-
 
 
 ---

@@ -37,7 +37,7 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -101,7 +101,7 @@ The `LESS` stylesheet provides the ability to define styling styles that can be 
 
     <!-- border -->![MDK](img-2.1.png)
 
-2. Copy and paste the following code.
+2. Replace the generated code with below:
 
     ```LESS
     @mdkYellow1: #ffbb33;
@@ -232,7 +232,6 @@ In this step, you will bind style classes:
 3. Navigate to **Pages** | **Customers**, click `Customers_Detail.page`, select **Object Header** control, scroll-down to **Style** section and bind control properties to style properties.
 
     <!-- border -->![MDK](img-3.3.png)
-    <!-- border -->![MDK](img-3.4.png)
 
 
 
@@ -255,7 +254,6 @@ So far, you have learned how to build an MDK application in the SAP Business App
     You should see successful messages for both deployments.
 
     <!-- border -->![MDK](img-4.3.png)
-
 
 
 ### Run the app

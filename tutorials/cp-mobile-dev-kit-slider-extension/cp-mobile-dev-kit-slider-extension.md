@@ -40,7 +40,7 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -90,11 +90,11 @@ The extension control that you will be creating to extend the functionality of y
 
     <!-- border -->![MDK](img-2.2.png)
 
-4. In `Template Selection` step, select **New and register Metadata Extension Control**. Click **Next**.
+4. In the `Template Selection` step, select **New Metadata Extension Control**. Click **Next**.
 
     <!-- border -->![MDK](img-2.3.png)
 
-5. In the **Basic Information** step, provide the below information:
+5. In the **Base Information** step, provide the below information and click **Next**.
 
     | Field | Value |
     |----|----|
@@ -102,7 +102,7 @@ The extension control that you will be creating to extend the functionality of y
     | `Module` | `MySliderModule` |
     | `Control` | `MySliderExtension` |
     | `Class` | `MySliderClass` |
-    | `Display` | bind it to `slider.png` file  |
+    | `Display` | click on the link icon and bind it to `slider.png` file  |
 
     Here is the basic definition for properties you defined above:
 
@@ -116,7 +116,7 @@ The extension control that you will be creating to extend the functionality of y
 
     <!-- border -->![MDK](img-2.4.png)
 
-6. In **Schema Information** step, fill schema details in **Schema** column and click **Next**.
+6. In the **Extension Properties** step, fill schema details in **Schema** column and click **Finish**.
 
     ```JSON
     {
@@ -143,8 +143,6 @@ The extension control that you will be creating to extend the functionality of y
 
     >Above schema will add these predefined properties (`MaxValue`, `MinValue` and `Title`) in the map extension control. You will provide values for these properties in next step.
 
-7. Click **Finish** to confirm.
-
     Some additional files and folders are added to the **Extensions** folder. You will learn more about it in following steps.
 
     <!-- border -->![MDK](img-2.6.png)
@@ -160,7 +158,7 @@ You will add this registered control in a Form Cell page.
 
 1. Create a new page of Form Cell type.
 
-    Right-click the **Pages** folder | **MDK: New Page** | **Form Cell Page** | **Next**.
+    Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
 
     <!-- border -->![MDK](img-3.1.png)
 
@@ -168,7 +166,7 @@ You will add this registered control in a Form Cell page.
 
     >You can find more details about [Form Cell page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/formcell-page.html).
 
-2. Enter the **Page Name** as `SliderExtension` and click **Next** and the **Finish** on the Confirmation step.
+2. Enter the page **Name** as `SliderExtension` and click  **Finish**.
 
     <!-- border -->![MDK](img-3.2.png)
 
@@ -202,7 +200,7 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.6.png)
 
-7. In the **Properties** pane | **Events** tab, click the 3 dots icon for the `OnPress` property to create a new action.
+7. Switch to the **Events** tab and click the 3 dots icon for the `OnPress` property to create a new action.
 
     <!-- border -->![MDK](img-3.7.png)
 
@@ -210,7 +208,7 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.8.png)
 
-9. In the template selection, choose **MDK Message Actions** in **Category** | click **Message Action** | **Next**.
+9. In the template selection, choose **Message** in **Category** | click **Message** | **Next**.
 
     <!-- border -->![MDK](img-3.9.png)
 
@@ -218,8 +216,8 @@ You will add this registered control in a Form Cell page.
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `ShowMessage` |
-    | `Type` | Select `Message` from the dropdown |
+    | `Name`| `ShowMessage` |
+    | `Type` | keep the default selection as `Message` |
     | `Message` | `#Control:MyExtensionControlName/#Value` |
     | `Title` | `Value of the Slider is:` |
     | `OKCaption` | `OK` |
@@ -231,7 +229,7 @@ You will add this registered control in a Form Cell page.
 
     >Here `MyExtensionControlName` is the name of the control that you renamed in code editor.
 
-    Click **Next** and then **Finish** on the confirmation step. This way a new action `ShowMessage.action` has been created on the fly and has been bound to an UI control event.
+    Click **Finish**. This way a new action `ShowMessage.action` has been created on the fly and has been bound to an UI control event.
 
 10. You can also add an input field where you can provide a manual entry for the slider value and set an event on it's value change so that the counter will adapt accordingly.
 
@@ -262,7 +260,7 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.14.png)
 
-    Enter the Rule name `SetExtensionValue`, click **Next** and then **Finish** on the confirmation step.
+    Enter the Rule **Name** `SetExtensionValue` and click **Finish**.
 
     <!-- border -->![MDK](img-3.15.png)
 
@@ -276,8 +274,6 @@ You will add this registered control in a Form Cell page.
         targetCtrl.setValue(srcValue);
     }
     ```
-
-    <!-- border -->![MDK](img-3.16.png)
 
 14. Save the changes to the `SetExtensionValue.js` file.
 
@@ -691,7 +687,7 @@ You will add this registered control in a Form Cell page.
 
 7. Save the `MySliderPlugin/MySlider.ts` file.
 
-8. In `MySliderExtension.ts` file, replace the code with the following.
+8. In `MySliderExtension.ts` file, replace the generated code with the following.
 
     ```JavaScript / TypeScript
     import { BaseControl } from 'mdk-core/controls/BaseControl';
@@ -883,7 +879,6 @@ Once you accept app update, you see Slider control.
 ![MDK](img-8.1.gif)
 
 [OPTION END]
-
 
 
 ---

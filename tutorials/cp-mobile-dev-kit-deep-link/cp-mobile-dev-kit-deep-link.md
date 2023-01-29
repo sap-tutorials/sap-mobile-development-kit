@@ -28,7 +28,6 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
-
 Deep links are used to send users directly to an app instead of a website or a store saving users the time and energy locating a particular page themselves – significantly improving the user experience.
 
 If an app is already installed, you can specify a custom URL scheme (iOS Universal Links) or an intent URL (on Android devices) that opens that app. Using deep link, you can also navigate to specific events or pages, which could tie into campaigns that you may want to run.
@@ -43,7 +42,7 @@ If you are building a custom version of Mobile development kit client, there you
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on Get Started page.
+2. Click **Start from template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -121,7 +120,7 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-3.2.png)
 
-3. Enter the Rule name `OpenSAPMobileCards`, click `Next` and finish the confirmation step.
+3. Enter the Rule **Name** as `OpenSAPMobileCards`, click **Finish**.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -146,7 +145,7 @@ If you are building a custom version of Mobile development kit client, there you
 
     >`openUrl` is a `NativeScript` API to open an URL on device. You can find more details about [this API](https://v6.docs.nativescript.org/core-concepts/utils#openurl-function).
 
-4. Click on the red icon, you will see a yellow bulb icon appearing, click on it and create a new action. Select *Message Action* from the list. You will see a new action being created.
+4. In the generated `OpenSAPMobileCards.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Message Action`.
 
     <!-- border -->![MDK](img-3.5.gif)
 
@@ -163,7 +162,7 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-3.6.png)    
 
-6. Repeat the same for the **Open sap.com page** button, create a new rule `OpenSAPcom.js` binding it's `OnPress Handler` event. Replace the generated snippet with below code.
+6. Repeat the same for the **Open sap.com page** button, create a new rule `OpenSAPcom` binding it's `OnPress Handler` event. Replace the generated snippet with below code.
 
     ```JavaScript
         export default function OpenSAPcom(context) {

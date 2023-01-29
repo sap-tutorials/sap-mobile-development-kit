@@ -41,13 +41,13 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     <!-- border -->![MDK](img-1.1.png)
 
-2. Select | **Section Page** and click **Next**.
+2. Select | **Section** and click **Next**.
 
     <!-- border -->![MDK](img-1.2.png)
 
-    >You can find more details about [Section Page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/section-page.html).
+    >You can find more details about the Section Page in this [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/section-page.html).
 
-3. Enter the **Page Name** `Customers_List` and click **Next** and the **Finish** on the confirmation step.
+3. Enter the page **Name** as `Customers_List` and click **Finish**. 
 
     <!-- border -->![MDK](img-1.3.png)
 
@@ -59,7 +59,7 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     <!-- border -->![MDK](img-1.5.gif)
 
-6. In the Properties pane, provide the below information:
+6. In the Target section, provide the below information:
 
     | Field | Value |
     |----|----|
@@ -83,11 +83,11 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     <!-- border -->![MDK](img-1.9.png)
 
-9. In the **Search** section of the Properties pane, change both the **Search Enabled** property and **Barcode Scanner** property to **true**.
+9. In the **Search** section of the Properties pane, change both the **SearchEnabled** and **BarcodeScanner** properties to **true**.
 
     <!-- border -->![MDK](img-1.10.png)
 
-10. In the **Activity Items** section of the Properties pane, click **Add** to add a new activity item.
+10. In the **ActivityItems** section of the Properties pane, click **Add** to add a new activity item.
 
     <!-- border -->![MDK](img-1.11.png)
 
@@ -140,22 +140,18 @@ Now, you will add a button on the Main page and from there, you will navigate to
 
     <!-- border -->![MDK](img-2.5.png)
 
-6. Choose **MDK UI Actions** in **Category** | click **Navigation Action** | **Next**.
+6. Choose **UI** in **Category** | click **Navigation** | **Next**.
 
     <!-- border -->![MDK](img-2.6.png)
 
-7. Provide the below information:
+7. In the **Base Information** step, provide the below information and click **Finish**.
 
     | Field | Value |
     |----|----|
-    | `Action Name`| `NavToCustomers_List` |
+    | `Name`| `NavToCustomers_List` |
     | `PageToOpen` | Select `Customers_List.page` from the dropdown |
 
     <!-- border -->![MDK](img-2.7.png)
-
-8. Click **Next** and then **Finish** on the confirmation step.
-
-
 
 ### Deploy the application
 
