@@ -300,7 +300,7 @@ You will navigate from the Customer Detail page to a new page modifying customer
 
 3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
 
-    <!-- border -->![[MDK](img-4.3.png)
+    <!-- border -->![MDK](img-4.3.png)
     
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 

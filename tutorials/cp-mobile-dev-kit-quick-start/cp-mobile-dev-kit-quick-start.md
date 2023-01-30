@@ -145,6 +145,7 @@ You should see successful messages for both deployments.
 <!-- border -->![MDK](img-3.3.png)
 
 
+
 ### Display the QR code for onboarding the Mobile app
 
 

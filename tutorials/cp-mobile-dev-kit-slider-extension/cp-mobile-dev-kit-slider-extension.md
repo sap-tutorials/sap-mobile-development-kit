@@ -150,7 +150,6 @@ The extension control that you will be creating to extend the functionality of y
     >You can find more details about registering extension control in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/advanced/extensions/registering-extension-in-bas.html) guide.
 
 
-
 ### Consume Extension Control in MDK Metadata
 
 

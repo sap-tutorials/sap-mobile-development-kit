@@ -299,4 +299,5 @@ A log file is created for each upload. All the uploaded files, including all lev
 >Check [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/config.html) for more details about Uploading and Viewing Client Logs.
 
 
+
 ---
