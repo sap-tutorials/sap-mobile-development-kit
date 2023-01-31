@@ -221,15 +221,6 @@ Additionally, you can search over all properties of the objects displayed in the
 
     <!-- border -->![MDK](img-5.7.gif)
 
-    >In case when MDK web application fails to run with error `redirect_uri has an invalid domain`, this could be due to that your BTP landscape domain or custom domain is not on the list of the `redirect URIs` that SAP BTP checks for when redirecting hence the Authorisation and Trust Management Service won't redirect your user there. In this case, you need to explicitly add your custom domain or use wildcards (please note wildcards increase the risk of redirecting to malicious web sites) under `Security` property in the `config.json` file under your MDK metadata project `MDKApp` | `Web`.
-    ```json
-     "Security": {
-        "oauth2-configuration": {
-            "redirect-uris": ["https://<application_hostname>.<custom_domain>/**"]
-        }
-    }
-    ```
-
 [OPTION END]
 
 Once you complete this tutorial you can continue with [these tutorials](mission.mobile-dev-kit-get-started) to create an MDK app from scratch.
