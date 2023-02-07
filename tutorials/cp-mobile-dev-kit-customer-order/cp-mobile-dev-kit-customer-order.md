@@ -60,6 +60,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
     <!-- border -->![MDK](img-1.4.gif)
 
+
 5. In the **Properties** pane, provide the below information:
 
     | Property | Value |
