@@ -142,6 +142,7 @@ If you are building a custom version of Mobile development kit client, there you
     ```
     <!-- border -->![MDK](img-3.4.png)
     >You will see an error complaining about cannot find file reference. This is due to the action file has not created yet. You will create it in next step.
+    
 
     >`openUrl` is a `NativeScript` API to open an URL on device. You can find more details about [this API](https://v6.docs.nativescript.org/core-concepts/utils#openurl-function).
 
