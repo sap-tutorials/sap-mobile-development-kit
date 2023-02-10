@@ -22,10 +22,11 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 ---
 
+
 ### Go to your global account on SAP BTP
 
 
-> Make sure you are choosing the right BTP account type ( **Free Tier** or **Free Trial** ) in the tabs under Step 1. 
+> Make sure you are choosing the right BTP account type ( **Free Tier** or **Free Trial** ) in the tabs under Step 1.
 
 
 [OPTION BEGIN [Free Tier]]
