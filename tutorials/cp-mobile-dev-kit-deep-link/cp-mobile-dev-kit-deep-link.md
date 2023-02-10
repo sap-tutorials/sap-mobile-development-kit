@@ -11,6 +11,7 @@ author_profile: https://github.com/jitendrakansal
 # Implement Deep Linking to Another App from an MDK App
 <!-- description --> Open a web page or navigate to an installed app from an MDK app.
 
+
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
 - **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) or [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device.
