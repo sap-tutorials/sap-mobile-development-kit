@@ -57,8 +57,8 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
 6. Replace the generated code with below snippet.
 
     ```JavaScript
-    export default function DeleteConfirmation(context) {
-        return context.executeAction('/DemoSampleApp/Actions/DeleteConfirmation.action').then((result) => {
+    export default function Customers_DeleteConfirmation(context) {
+        return context.executeAction('/DemoSampleApp/Actions/Customers_DeleteConfirmation.action').then((result) => {
             if (result.data) {
                 return context.executeAction('/DemoSampleApp/Actions/Customers_DeleteEntity.action').then(
                     (success) => Promise.resolve(success),
@@ -70,14 +70,14 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
     }
     ```
 
-    In above code there are references to `DeleteConfirmation.action` and `Customers_DeleteEntity.action` , those don't exist in your metadata project yet. You will create these actions in next steps.
+    In above code there are references to `Customers_DeleteConfirmation.action` and `Customers_DeleteEntity.action` , those don't exist in your metadata project yet. You will create these actions in next steps.
     ><!-- border -->![MDK](img-1.5.png)
 
-6. In the above rule, double-click on the red line highlighting missing reference for `DeleteConfirmation.action`. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message Action`.
+6. In the above rule, double-click on the red line highlighting missing reference for `Customers_DeleteConfirmation.action`. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message Action`.
 
     <!-- border -->![MDK](img-1.6.gif)
 
-7. Provide the below information in the `DeleteConfirmation.action`:
+7. Provide the below information in the `Customers_DeleteConfirmation.action`:
 
     | Field | Value |
     |----|----|
@@ -123,7 +123,7 @@ When the above OData action is executed, you may want to display messages on its
 
     <!-- border -->![MDK](img-2.1.png)
 
-2. Create a message action for displaying a message in case deleting of a customer fails. In the `Customers_DeleteEntity.action`, provide value as **delete** for the *Action Result* and click the `Create a rule/action` icon for the *Failure Action*.
+2. Create a message action for displaying a message in case deleting of a customer fails. In the `Customers_DeleteEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
     
     <!-- border -->![MDK](img-2.2.png)
    
@@ -141,7 +141,7 @@ When the above OData action is executed, you may want to display messages on its
     |----|----|
     | `Name`| `DeleteCustomerEntityFailureMessage` |
     | `Type` | Select `Message` from the dropdown |
-    | `Message` | `Delete entity failure - {#ActionResults:delete/error}` |
+    | `Message` | `Delete entity failure - {#ActionResults:Customers_DeleteEntity/error}` |
     | `Title` | `Delete Customer` |
     | `OKCaption` | `OK` |
     | `OnOK` | `--None--` |
@@ -150,7 +150,7 @@ When the above OData action is executed, you may want to display messages on its
 
     <!-- border -->![MDK](img-2.5.png)
 
-    >delete is the Action Result value of the `Customers_DeleteEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
+    >`Customers_DeleteEntity` is the Action Result value of the `Customers_DeleteEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
 
     >This is the standard Binding Target Path (also called Dynamic Target Path) syntax used when you need to include a binding with other bindings or within a string as used in the message here.
 
