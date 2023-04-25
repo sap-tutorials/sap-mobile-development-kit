@@ -16,7 +16,6 @@ author_profile: https://github.com/jitendrakansal
 
 ## You will learn
   - How to create a development space in SAP Business Application Studio
-  - How to connect to your Cloud Foundry target in SAP Business Application Studio
 
 ## Intro
 SAP Business Application Studio is the next-generation web-based IDE hosted on SAP Business Technology Platform (BTP) in the Cloud Foundry environment. In this tutorial, you will set up your SAP Business Application Studio for developing mobile apps.

@@ -79,9 +79,20 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
     <!-- border -->![support button click](img-2.4.png)
 
-5. If you are asked to sign in then enter your Email or Username to continue and click **Next**.
+5. The SAP mobile service cockpit dialog, **Select API Endpoint**, appears. Before you click on **Login**, make sure to provide the correct API endpoint belongs to your BTP subaccount. 
 
-6. Choose the relevant **Organization** and **Space** from the dropdown list, and then select **Open**.
+    <!-- border -->![support button click](img-2.4.1.png)
+
+    >In order to find the API endpoint, navigate to your BTP subaccount > Overview > Cloud Foundry Environment. Copy the URL and paste it in the Mobile service cockpit dialog. This is important if you are using Mobile Services in an Extended Landscape. 
+    ><!-- border -->![support button click](img-2.4.2.png)
+
+    Once you provide the correct API Endpoint, click on **Login** to continue.
+
+6. You may asked to enter your Email or Username to continue and click **Next**.
+
+    >You may asked 
+
+6. After you log into the endpoint, the **Organization** and **Space** prompt appears. The current API Endpoint value appears. Choose the relevant **Organization** and **Space** from the dropdown list, and then select **Open**.
 
     >**Organization:** Organizations in CF enable collaboration among users and enable grouping of resources.
 
@@ -89,6 +100,7 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
     <!-- border -->![BTP](img-2.5.png)
 
+    >If the organization that you want to access is not listed, you might have used the wrong API Endpoint. In this case, you can log out and log in again, in order to input the correct API Endpoint value.
     You have now logged in to the SAP Mobile Services cockpit.
 
     <!-- border -->![BTP](img-2.6.png)

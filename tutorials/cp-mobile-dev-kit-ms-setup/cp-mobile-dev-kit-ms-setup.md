@@ -120,7 +120,7 @@ MDK Web application accesses the data sources via BTP destination. You will now 
 
     <!-- border -->![MDK](img-4.2.png)
 
-3. In your SAP BTP space cockpit page, navigate to the **Services** **&rarr;**  **Instances**, select **Authorization and Trust Management service** from the list, click `com-sap-mdk-demo-xsuaa` instance, choose trip dot icon **&rarr;** **View** to open the configuration details.
+3. In your SAP BTP space cockpit page, navigate to the **Services** **&rarr;**  **Instances and Subscriptions**, select **Authorization and Trust Management service** from the list, click `com-sap-mdk-demo-xsuaa` instance, choose trip dot icon **&rarr;** **View** to open the configuration details.
 
     <!-- border -->![MDK](img-4.3.png)
 
@@ -132,7 +132,7 @@ MDK Web application accesses the data sources via BTP destination. You will now 
 
     <!-- border -->![MDK](img-4.5.png)
 
-6. Navigate to **Connectivity** **&rarr;** **Destinations** to create a BTP destination, click **Import Destination** to import the extracted file and provide the required information and click **Save**.
+6. In your BTP cockpit, navigate to **Connectivity** **&rarr;** **Destinations** to create a BTP destination, click **Import Destination** to import the extracted file and provide the required information and click **Save**.
 
     | Field | Value |
     |----|----|
