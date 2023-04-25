@@ -50,11 +50,15 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
  
     >You could link `OnPress` property directly to OData delete action directly instead to this JavaScript file. Idea of linking to  JavaScript file is to let you understand another way to achieve similar functionality.
 
-5. Enter the Rule name as `Customers_DeleteConfirmation` and click **Finish** to complete the rule creation process.
+5. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
+
+    <!-- border -->![MDK](img-1.2.1.png)
+
+6. Enter the Rule name as `Customers_DeleteConfirmation` and click **Finish** to complete the rule creation process.
 
     <!-- border -->![MDK](img-1.4.1.png)  
 
-6. Replace the generated code with below snippet.
+7. Replace the generated code with below snippet.
 
     ```JavaScript
     export default function Customers_DeleteConfirmation(context) {
@@ -73,11 +77,11 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
     In above code there are references to `Customers_DeleteConfirmation.action` and `Customers_DeleteEntity.action` , those don't exist in your metadata project yet. You will create these actions in next steps.
     ><!-- border -->![MDK](img-1.5.png)
 
-6. In the above rule, double-click on the red line highlighting missing reference for `Customers_DeleteConfirmation.action`. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message Action`.
+8. In the above rule, double-click on the red line highlighting missing reference for `Customers_DeleteConfirmation.action`. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message Action`.
 
     <!-- border -->![MDK](img-1.6.gif)
 
-7. Provide the below information in the `Customers_DeleteConfirmation.action`:
+9. Provide the below information in the `Customers_DeleteConfirmation.action`:
 
     | Field | Value |
     |----|----|

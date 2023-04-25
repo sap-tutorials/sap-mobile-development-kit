@@ -121,7 +121,12 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-3.2.png)
 
-3. Enter the Rule **Name** as `OpenSAPMobileCards`, click **Finish**.
+
+3. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
+
+    <!-- border -->![MDK](img-1.2.1.png)
+
+4. Enter the Rule **Name** as `OpenSAPMobileCards`, click **Finish**.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -154,11 +159,11 @@ If you are building a custom version of Mobile development kit client, there you
 
     >`openUrl` is a `NativeScript` API to open an URL on device. You can find more details about [this API](https://v6.docs.nativescript.org/core-concepts/utils#openurl-function).
 
-4. In the generated `OpenSAPMobileCards.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Message Action`.
+5. In the generated `OpenSAPMobileCards.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Message Action`.
 
     <!-- border -->![MDK](img-3.5.gif)
 
-5. Provide the below information:
+6. Provide the below information:
 
     | Property | Value |
     |----|----|
@@ -171,7 +176,7 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-3.6.png)    
 
-6. Repeat the same for the **Open sap.com page** button, create a new rule `OpenSAPcom` binding it's `OnPress Handler` event. Replace the generated snippet with below code.
+7. Repeat the same for the **Open sap.com page** button, create a new rule `OpenSAPcom` binding it's `OnPress Handler` event. Replace the generated snippet with below code.
 
     ```JavaScript
         export default function OpenSAPcom(context) {
@@ -188,7 +193,7 @@ If you are building a custom version of Mobile development kit client, there you
         }
     ```
 
-7. Save your changes to the `OpenSAPcom.js` file.
+8. Save your changes to the `OpenSAPcom.js` file.
 
 
 ### Deploy the application

@@ -98,10 +98,14 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
     >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
-   6. Enter the Rule name as `GetCoordinates` and click  **Finish**.
+   6. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
+
+    <!-- border -->![MDK](img-1.2.1.png)
+
+   7. Enter the Rule name as `GetCoordinates` and click  **Finish**.
     <!-- border -->![MDK](img-2.6.png)
 
-   7. Replace the generated snippet with below code.
+   8. Replace the generated snippet with below code.
 
     ```JavaScript
     import * as geolocation from "@nativescript/geolocation";
@@ -135,7 +139,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
     }
     ```
 
-  6. Save your changes to the `GetCoordinates.js` file.
+  9. Save your changes to the `GetCoordinates.js` file.
 
 
 ### Enable the Loading Indicator on Sectioned Table in the Main page

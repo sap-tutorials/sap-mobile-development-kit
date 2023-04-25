@@ -37,13 +37,17 @@ You will add a rule to the Update action to run the validation before saving any
 
     <!-- border -->![MDK](img-1.2.png)
 
-4. Enter the Rule **Name** as `EmailValidation` and then click  **Finish**.
+4. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
+
+    <!-- border -->![MDK](img-1.2.1.png)
+
+5. Enter the Rule **Name** as `EmailValidation` and then click  **Finish**.
 
     <!-- border -->![MDK](img-1.3.png)
 
     >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
-5. Replace the generated snippet with below code.
+6. Replace the generated snippet with below code.
 
     ```JavaScript
     export default function EmailValidation(context) {
@@ -60,17 +64,17 @@ You will add a rule to the Update action to run the validation before saving any
 
     This rule will handle validation if a **@** symbol exists in the email address. In this validation rule, you will grab the data entered by the end-user, validate it and check for the **@** symbol then return true if the email address is of a valid format or false if it is not. The returning result of the validation rule can be used in the Update action to determine whether the action succeeds or fails.
 
-6. Save the changes.
+7. Save the changes.
 
     >The [`indexOf()` method](https://www.w3schools.com/jsref/jsref_indexof.asp) returns the index within the calling String object of the first occurrence of the specified value and -1, if no occurrence is found.
 
     >In above code there is a reference to `ValidationFailure.action`, which doesn't yet exist in your metadata project. You will create this action in next step.
 
-7. In the generated `EmailValidation.js` rule, double-click the red line. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message Action`.
+8. In the generated `EmailValidation.js` rule, double-click the red line. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message Action`.
 
     <!-- border -->![MDK](img-1.4.gif)
 
-8. Provide the below information in the `ValidationFailaure.action`:
+9. Provide the below information in the `ValidationFailaure.action`:
 
     | Field | Value |
     |----|----|
@@ -82,7 +86,6 @@ You will add a rule to the Update action to run the validation before saving any
     | `OnCancel` | `--None--` |
 
     <!-- border -->![MDK](img-1.5.png)
-
 
 
 ### Deploy the application

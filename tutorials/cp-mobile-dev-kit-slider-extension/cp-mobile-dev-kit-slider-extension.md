@@ -259,11 +259,15 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.14.png)
 
-    Enter the Rule **Name** `SetExtensionValue` and click **Finish**.
+14. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
+
+    <!-- border -->![MDK](img-1.2.1.png)
+
+15. Enter the Rule **Name** `SetExtensionValue` and click **Finish**.
 
     <!-- border -->![MDK](img-3.15.png)
 
-    Replace the generated snippet with below code.
+16. Replace the generated snippet with below code.
 
     ```JavaScript
     export default function SetExtensionValue(context) {
@@ -274,7 +278,7 @@ You will add this registered control in a Form Cell page.
     }
     ```
 
-14. Save the changes to the `SetExtensionValue.js` file.
+17. Save the changes to the `SetExtensionValue.js` file.
 
 
 ### Implement Extension using metadata approach

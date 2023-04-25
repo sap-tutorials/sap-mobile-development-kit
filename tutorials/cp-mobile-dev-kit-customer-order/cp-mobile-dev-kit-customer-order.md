@@ -332,11 +332,15 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     <!-- border -->![MDK](img-6.3.png)
    
-4. Enter the Rule name as`Customers_OrderCount`, and then click **Finish** to complete the rule creation process.
+4. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
+
+    <!-- border -->![MDK](img-1.2.1.png)
+
+5. Enter the Rule name as`Customers_OrderCount`, and then click **Finish** to complete the rule creation process.
 
     <!-- border -->![MDK](img-6.4.png)
 
-5. Copy and paste the following code.
+6. Copy and paste the following code.
 
     ```JavaScript
     export default function CustomerOrderCount(context) {
@@ -349,7 +353,7 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
     }    
     ```
 
-6. Switch back to the `Customers_Detail.page` and provide the below information for other properties of the Footer control:
+7. Switch back to the `Customers_Detail.page` and provide the below information for other properties of the Footer control:
 
     | Property | Value |
     |----|----|
