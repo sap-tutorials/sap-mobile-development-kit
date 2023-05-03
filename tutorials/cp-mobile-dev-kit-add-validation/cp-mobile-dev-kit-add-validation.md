@@ -37,11 +37,7 @@ You will add a rule to the Update action to run the validation before saving any
 
     <!-- border -->![MDK](img-1.2.png)
 
-4. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
-
-    <!-- border -->![MDK](img-1.2.1.png)
-
-5. Enter the Rule **Name** as `EmailValidation` and then click  **Finish**.
+4. In the **Base Information** step, enter the Rule **Name** as `EmailValidation` and then click  **Finish**.
 
     <!-- border -->![MDK](img-1.3.png)
 

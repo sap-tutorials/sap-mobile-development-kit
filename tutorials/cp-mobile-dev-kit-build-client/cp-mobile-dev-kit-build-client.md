@@ -13,7 +13,7 @@ author_profile: https://github.com/jitendrakansal
 
 ## Prerequisites
 - **Tutorial**: [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup)
-- **Download the latest version of Mobile Development Kit SDK** either from the SAP community [download page](https://developers.sap.com/trials-downloads.html?search=Mobile%20development%20kit) or [SAP Software Center](https://launchpad.support.sap.com/#/softwarecenter/search/Mobile%2520development%2520kit) if you are a SAP Mobile Services customer
+- **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile%20development%20kit) or [SAP Software Center](https://launchpad.support.sap.com/#/softwarecenter/template/products/%20_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=73554900100900007726&V=MAINT&TA=ACTUAL&PAGE=SEARCH/MDK%20CLIENT%2023.0) if you are a SAP Mobile Services customer
 
 ## You will learn
   - How to install a Mobile development kit client SDK on Mac and Windows OS
@@ -359,20 +359,27 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     ![MDK](img-5.5.png)
 
-6. Enter your credentials to login to SAP Business Technology Platform (BTP).
+6. Enter your BTP E-Mail, ID or Login Name to continue. 
 
     ![MDK](img-5.6.png)
-    ![MDK](img-5.7.png)
 
-7. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
+7. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+
+    ![MDK](img-5.7.1.png)
+
+8. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
 
     ![MDK](img-5.8.png)
 
-8. Confirm the passcode and tap **Done**.
+9. Confirm the passcode and tap **Done**.
 
     ![MDK](img-5.9.png)
 
     >Optionally, you can enable biometric authentication to get faster access to the app data.
+
+10. If you want your MDK client to send you notification, click **Next**. 
+
+    ![MDK](img-5.9.1.png)
 
     If there is any app metadata already deployed to Mobile Services, you will see `Update Now?` dialog box Otherwise you will see an empty screen.
 
@@ -401,32 +408,36 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 4. Tap **Agree** on `End User License Agreement`.
 
-    ![MDK](img-5.13.png)
+    ![MDK](img-5.13.1.png)
 
 5. In Welcome screen, you will notice that **app name**, **detailed label text** and **signing button text** have been updated as per changes done in step 3.
 
-    ![MDK](img-5.14.png)
+    ![MDK](img-5.14.1.png)
 
-    Tap **Start** to connect MDK client to SAP Business Technology Platform (BTP).
+6. Tap **Start** to connect MDK client to SAP Business Technology Platform (BTP).
 
-6. Enter your credentials to login to SAP Business Technology Platform (BTP).
+7. Enter your BTP E-Mail, ID or Login Name to continue. 
 
     ![MDK](img-5.15.png)
-    ![MDK](img-5.16.png)    
 
-7. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
+8. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+
+    ![MDK](img-5.16.png)
+
+9. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
 
     ![MDK](img-5.17.png)
 
-8. Confirm the passcode and tap **Done**.
+10. Confirm the passcode and tap **Done**.
 
     ![MDK](img-5.18.png)
 
     >Optionally, you can enable biometric authentication to get faster access to the app data.
+    >![MDK](img-5.19.png)
 
     If there is any app metadata already deployed to Mobile Services, you will see `Update Now?` dialog box Otherwise you will see an empty screen.
 
-    ![MDK](img-5.19.png)
+    ![MDK](img-5.20.png)
 
     >You can always interrupt running process in terminal window by pressing `control + C`.
 

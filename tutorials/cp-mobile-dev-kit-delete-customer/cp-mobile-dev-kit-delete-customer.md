@@ -50,11 +50,7 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
  
     >You could link `OnPress` property directly to OData delete action directly instead to this JavaScript file. Idea of linking to  JavaScript file is to let you understand another way to achieve similar functionality.
 
-5. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
-
-    <!-- border -->![MDK](img-1.2.1.png)
-
-6. Enter the Rule name as `Customers_DeleteConfirmation` and click **Finish** to complete the rule creation process.
+5. In the **Basic Information** step, enter the Rule name as `Customers_DeleteConfirmation` and click **Finish** to complete the rule creation process.
 
     <!-- border -->![MDK](img-1.4.1.png)  
 
@@ -162,7 +158,7 @@ When the above OData action is executed, you may want to display messages on its
 
 6. Click **Finish** to complete the action creation process. 
 
-When `Customers_DeleteEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_DeleteEntity.action` fails then `DeleteCustomerEntityFailureMessage.action` will be triggered.   
+    When `Customers_DeleteEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_DeleteEntity.action` fails then `DeleteCustomerEntityFailureMessage.action` will be triggered.   
 
 
 ### Deploy the application
@@ -181,11 +177,6 @@ Deploy the updated application to your MDK client.
     You should see success message for both deployments.
 
     <!-- border -->![MDK](img-3.3.png)
-
-    >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
-
-    ><!-- border -->![MDK](img-3.4.png)
-
 
 ### Run the app
 

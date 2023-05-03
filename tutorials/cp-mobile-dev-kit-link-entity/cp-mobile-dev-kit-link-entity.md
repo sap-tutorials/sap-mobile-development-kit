@@ -101,7 +101,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
     | Property | Value |
     |----|----|
     | `Name`| `FCCreateGrossAmount` |
-    | `Caption` | `GrossAmount` |
+    | `Caption` | `Gross Amount` |
     | `Value`| `126.02` |
 
     <!-- border -->![MDK](img-1.9.png)
@@ -273,7 +273,7 @@ The next step is to store newly created record locally for an offline applicatio
 
 17. Click **Finish** to complete the action creation process. 
 
-When `SalesOrderHeaders_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_CreateEntity.action` fails then `CreateSalesOrderHeaderEntityFailureMessage.action` will be triggered.
+    When `SalesOrderHeaders_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_CreateEntity.action` fails then `CreateSalesOrderHeaderEntityFailureMessage.action` will be triggered.
 
 
 

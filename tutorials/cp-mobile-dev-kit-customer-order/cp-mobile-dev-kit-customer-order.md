@@ -86,10 +86,10 @@ This page will display customer orders list, you will add an **Object Table** co
     | `PreserveIconStackSpacing`| `false` |
     | `ProgressIndicator` | Remove the default value and leave it blank |
     | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
-    | `Subhead` | bind to `{CustomerId}` |
-    | `Substatus`| bind to `{LifeCycleStatusName}` |
+    | `Subhead` | bind it to `{CustomerId}` |
+    | `Substatus`| bind it to `{LifeCycleStatusName}` |
     | `Tags` | Click the `item0` and then click the trash icon to delete the default item |
-    | `Title`| bind to `{SalesOrderId}` |
+    | `Title`| bind it to `{SalesOrderId}` |
 
     <!-- border -->![MDK](img-1.7.png)
 
@@ -135,11 +135,22 @@ This page will show related details for an order. In this page, you will add an 
 
     <!-- border -->![MDK](img-2.1.png)
 
-3. In the **Properties** pane set the Caption to **Order Details**.
+3. In the **Properties** pane, provide the below information under `DesignTimeTarget`.
+
+    | Property | Value |
+    |----|----|
+    | `Service` | Select `SampleServiceV2.service` from the dropdown |
+    | `EntitySet` | select `SalesOrderHeaders` from the dropdown|
+
+    <!-- border -->![MDK](img-2.1.1.png)
+
+    >`DesignTimeTarget` is a page level property similar to Target but it is only used for design time. This helps in validating the binding context of current page. For more details, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/create-pages.html#page-editor).
+
+4. Set the Caption to **Order Details**.
 
     <!-- border -->![MDK](img-2.2.png)
 
-4. Next, you will add a **Static Key Value** container and its item **Key Value Item** to display information like sales order id, life cycle status & date of order creation name.
+5. Next, you will add a **Static Key Value** container and its item **Key Value Item** to display information like sales order id, life cycle status & date of order creation name.
 
     >**Static Key Value** is a container that can display one or more key value pair items on a section page. In this container, you can include a Key Value Item, a simple key value cell that displays a label and a text pair. You can find more details [here](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Container/KeyValue.schema.html) about this container.
 
@@ -147,7 +158,7 @@ This page will show related details for an order. In this page, you will add an 
 
     <!-- border -->![MDK](img-2.3.png)
 
-5. Now, add key value item to this container. In the Layout Editor, expand the **Controls** | **Static Items** section, drag and drop the **Key Value Item** control onto the page area.
+6. Now, add key value item to this container. In the Layout Editor, expand the **Controls** | **Static Items** section, drag and drop the **Key Value Item** control onto the page area.
 
     <!-- border -->![MDK](img-2.4.png)
 
@@ -156,13 +167,13 @@ This page will show related details for an order. In this page, you will add an 
     | Property | Value |
     |----|----|
     | `KeyName`| `Order Number` |
-    | `Value` | bind to `{SalesOrderId}` |
+    | `Value` | bind it to `{SalesOrderId}` |
 
     <!-- border -->![MDK](img-2.5.png)
 
     >Make sure to select values for the mentioned properties only from `SalesOrderHeader` entity. You may find similar values from other entities.
 
-6. Repeat the above step by adding 5 more **Key Value Item** on the page.
+7. Repeat the above step by adding 5 more **Key Value Item** on the page.
 
     <!-- border -->![MDK](img-2.6.png)
 
@@ -171,7 +182,7 @@ This page will show related details for an order. In this page, you will add an 
     | Property | Value |
     |----|----|
     | `KeyName`| `Status` |
-    | `Value` | bind to `{LifeCycleStatusName}` |
+    | `Value` | bind it to `{LifeCycleStatusName}` |
 
     | Property | Value |
     |----|----|
@@ -239,7 +250,7 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
     | Field | Value |
     |----|----|
     | `Service`| select `SampleServiceV2.service` from the dropdown |
-    | `EntitySet` | enter `{@odata.readLink}/SalesOrders` |
+    | `EntitySet` | select `{@odata.readLink}/SalesOrders` from the dropdown |
     | `QueryOptions`| `$top=5&$orderby=CreatedAt desc` |
 
     <!-- border -->![MDK](img-4.2.png)
@@ -264,9 +275,9 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
     | `ProgressIndicator` | Remove the default value and leave it blank  |
     | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
     | `Subhead` | `$(D,{CreatedAt},'','',{format:'medium'})` |
-    | `Substatus`| bind to `{CurrencyCode}` |
+    | `Substatus`| bind it to `{CurrencyCode}` |
     | `Tags` | Click the `item0` and then click the trash icon to delete the default item |
-    | `Title`| bind to `{SalesOrderId}` |
+    | `Title`| bind it to `{SalesOrderId}` |
 
     <!-- border -->![MDK](img-4.4.png)
 
@@ -332,11 +343,7 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     <!-- border -->![MDK](img-6.3.png)
    
-4. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
-
-    <!-- border -->![MDK](img-1.2.1.png)
-
-5. Enter the Rule name as`Customers_OrderCount`, and then click **Finish** to complete the rule creation process.
+4. In the **Base Information** step, enter the Rule name as`Customers_OrderCount`, and then click **Finish** to complete the rule creation process.
 
     <!-- border -->![MDK](img-6.4.png)
 
@@ -403,10 +410,6 @@ Deploy the updated application to your MDK client.
     You should see success message for both deployments.
 
     <!-- border -->![MDK](img-7.3.png)
-
-    >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
-
-    ><!-- border -->![MDK](img-7.4.png)
 
 
 ### Run the app

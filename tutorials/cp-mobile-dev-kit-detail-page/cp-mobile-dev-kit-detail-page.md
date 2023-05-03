@@ -42,9 +42,20 @@ This page will show related details for a customer. In this page, you will add a
 
     <!-- border -->![MDK](img-1.2.png)
 
-3. In the **Properties** pane set the Caption to **Details**.
+3. In the **Properties** pane, provide the below information under `DesignTimeTarget`.
+
+    | Property | Value |
+    |----|----|
+    | `Service` | Select `SampleServiceV2.service` from the dropdown |
+    | `EntitySet` | select `Customers` from the dropdown |
 
     <!-- border -->![MDK](img-1.3.png)
+
+    >`DesignTimeTarget` is a page level property similar to Target but it is only used for design time. This helps in validating the binding context of current page. For more details, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/create-pages.html#page-editor).
+
+4. set the Caption to **Details**.
+
+    <!-- border -->![MDK](img-1.4.png)
 
 4. Next, you will add an **Object Header** container to display information like first name, last name, date of birth, email address & phone number.
 
@@ -73,10 +84,6 @@ This page will show related details for a customer. In this page, you will add a
     | `Substatus` | Remove the default property |
 
     >`DetailImage` property is referencing to the [SAP font icon](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons).
-
-    >Make sure to select values for the mentioned properties only from **Customer** Entity. You may find similar values from other entities. For example,
-
-    ><!-- border -->![MDK](img-1.6.png)
 
     Page should look like below.
 
@@ -107,8 +114,6 @@ This page will show related details for a customer. In this page, you will add a
     Click the **link icon** next to the **Value** field to display the Object Browser and double click `HouseNumber` to set it as the first part of the binding. **Don't click OK as you will set second part of the binding too.**
 
     <!-- border -->![MDK](img-1.13.gif)
-
-    >Be careful not to select `HouseNumber` from `Address (ESPM.Address)`, final expression should be as per above animation.
 
     Now, set second part of the binding.
 

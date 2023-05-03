@@ -263,7 +263,7 @@ First, add an action bar item on the `Customers_Edit.page`
     |----|----|
     | `Name`| `UpdateCustomerEntityFailureMessage` |
     | `Type` | Select `Message` from the dropdown |
-    | `Message` | `Failed to Save Customer Updates - {#ActionResults:update/error}` |
+    | `Message` | `Failed to Save Customer Updates - {#ActionResults:Customers_UpdateEntity/error}` |
     | `Title` | `Update Customer` |
     | `OKCaption` | `OK` |
     | `OnOK` | `--None--` |
@@ -395,7 +395,7 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
     ![MDK](img-6.7.png)
 
-2. 2. Tap **Customers**, tap one of the available customer record, you will then navigate to Customer detail page. Tap `edit` icon. Update existing values for the given customer. You will notice the Phone keyboard appears when updating Phone value. Tap save icon and record gets updated locally.
+2. Tap **Customers**, tap one of the available customer record, you will then navigate to Customer detail page. Tap `edit` icon. Update existing values for the given customer. You will notice the Phone keyboard appears when updating Phone value. Tap save icon and record gets updated locally.
 
     ![MDK](img-6.8.gif)
 

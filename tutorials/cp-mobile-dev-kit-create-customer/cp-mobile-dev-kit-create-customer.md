@@ -138,7 +138,7 @@ Now, you will add a button on the Create Customer page and set it's `onPress` to
 
 3. Now, you will set the `onPress` event to `CloseModalPage_Cancel.action`.
 
-    In **Events** tab, click the 3 dots icon for the `OnPress` property to open the object browser. Double click the `CloseModalPage_Cancel.action` and click **OK** to set it as the `OnPress` Action.
+    In **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**. Double click the `CloseModalPage_Cancel.action` and click **OK** to set it as the `OnPress` Action.
 
     <!-- border -->![MDK](img-2.3.png)
 
@@ -246,7 +246,7 @@ First, add an action bar item on the `Customers_Create.page`.
 
 16. Click **Finish** to complete the action creation process.
 
-When `Customers_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_CreateEntity.action` fails then `CreateCustomerEntityFailureMessage.action` will be triggered.
+    When `Customers_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_CreateEntity.action` fails then `CreateCustomerEntityFailureMessage.action` will be triggered.
 
 
 

@@ -14,8 +14,8 @@ author_profile: https://github.com/jitendrakansal
 
 ## Prerequisites
 - **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
-- **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) or [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device.
-<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">!![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
+- **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device.
+<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
 ## You will learn
@@ -48,7 +48,7 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK Project** and click **Next**.
+3. Select **MDK Project** and click **Start**.
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -203,7 +203,7 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.7.png)
 
-8. Keep the default selection for Object Type (as Action) and Folders path. Click **OK**.
+8. Keep the default selection for **Object Type** (as Action) and **Folders** path. Click **OK**.
 
     <!-- border -->![MDK](img-3.8.png)
 
@@ -259,15 +259,11 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.14.png)
 
-14. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
-
-    <!-- border -->![MDK](img-1.2.1.png)
-
-15. Enter the Rule **Name** `SetExtensionValue` and click **Finish**.
+14. In the **Base Information** step, enter the Rule **Name** `SetExtensionValue` and click **Finish**.
 
     <!-- border -->![MDK](img-3.15.png)
 
-16. Replace the generated snippet with below code.
+15. Replace the generated snippet with below code.
 
     ```JavaScript
     export default function SetExtensionValue(context) {
@@ -278,7 +274,7 @@ You will add this registered control in a Form Cell page.
     }
     ```
 
-17. Save the changes to the `SetExtensionValue.js` file.
+16. Save the changes to the `SetExtensionValue.js` file if not saved already.
 
 
 ### Implement Extension using metadata approach
@@ -482,7 +478,7 @@ You will add this registered control in a Form Cell page.
 
     >In your import function, if you see errors related to `@nativescript/core`, you can ignore them. There is currently no reference of such libraries in the MDK editor.
 
-3. Save the `MySliderPlugin/android/MySlider.ts` file.
+3. Save the `MySliderPlugin/android/MySlider.ts` file if not saved already.
 
 4. In `MySliderPlugin/iOS/MySlider.ts` file, copy and paste the following code.
 
@@ -657,7 +653,7 @@ You will add this registered control in a Form Cell page.
     }
     ```
 
-5. Save the `MySliderPlugin/iOS/MySlider.ts` file.
+5. Save the `MySliderPlugin/iOS/MySlider.ts` file if not saved already.
 
 6. In `MySliderPlugin/MySlider.ts` file, copy and paste the following code.
 
@@ -688,7 +684,7 @@ You will add this registered control in a Form Cell page.
     }
     ```
 
-7. Save the `MySliderPlugin/MySlider.ts` file.
+7. Save the `MySliderPlugin/MySlider.ts` file if not saved already.
 
 8. In `MySliderExtension.ts` file, replace the generated code with the following.
 
@@ -799,7 +795,7 @@ You will add this registered control in a Form Cell page.
     }    
     ```
 
-9. Save the `MySliderExtension.ts` file.
+9. Save the `MySliderExtension.ts` file if not saved already.
 
 
 ### Set first page as the extension page
@@ -865,7 +861,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [Android]]
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
 Once you accept app update, you see Slider control.
 
@@ -875,7 +871,7 @@ Once you accept app update, you see Slider control.
 
 [OPTION BEGIN [iOS]]
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
 Once you accept app update, you see Slider control.
 
