@@ -122,11 +122,7 @@ If you are building a custom version of Mobile development kit client, there you
     <!-- border -->![MDK](img-3.2.png)
 
 
-3. In the **Template Selection** step, select **Empty JS Rule** and click **Next**.
-
-    <!-- border -->![MDK](img-1.2.1.png)
-
-4. Enter the Rule **Name** as `OpenSAPMobileCards`, click **Finish**.
+3. In the **Base Information** step, enter the Rule **Name** as `OpenSAPMobileCards`, click **Finish**.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -153,7 +149,7 @@ If you are building a custom version of Mobile development kit client, there you
         });
     }
     ```
-    <!-- border -->![MDK](img-3.4.png)
+
     >You will see an error complaining about cannot find file reference. This is due to the action file has not created yet. You will create it in next step.
     
 
@@ -193,7 +189,7 @@ If you are building a custom version of Mobile development kit client, there you
         }
     ```
 
-8. Save your changes to the `OpenSAPcom.js` file.
+8. Save your changes to the `OpenSAPcom.js` file, if needed.
 
 
 ### Deploy the application

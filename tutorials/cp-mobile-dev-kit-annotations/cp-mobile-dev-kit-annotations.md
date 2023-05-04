@@ -13,8 +13,8 @@ author_profile: https://github.com/jitendrakansal
 
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
-- **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) or [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device.
-<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.png)<br>Android</td><td align="center">!![App Store QR Code](img-1.2.png)<br>iOS</td></tr></table>
+- **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544).
+<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
 ## You will learn
@@ -69,7 +69,7 @@ Make sure you have already configured an app in Mobile Services cockpit and have
 
     <!-- border -->![MDK](img-2.3.png)
 
-4. In the following screen, let the default settings as it is. Click **Finish**.
+4. In the following steps, let the default settings as it is. Click **Finish**.
 
     Navigate to the `SampleServiceV2` destination info, you can see that OData Annotation information is updated in the `SampleServiceV2` destination.
 
@@ -182,6 +182,24 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     <!-- border -->![MDK](img-5.3.png)
 
+### Display the QR code for onboarding the Mobile app
+
+
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
+
+Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
+
+<!-- border -->![MDK](img-6.1.png)
+
+The On-boarding QR code is now displayed.
+
+<!-- border -->![MDK](img-6.2.png)
+
+
+>Leave the Onboarding dialog box open for the next step.
+
+
+
 
 ### Run the app
 
@@ -190,23 +208,13 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
-1. Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
-
-    <!-- border -->![MDK](img-6.1.png)
-
-    The On-boarding QR code is now displayed.
-
-    <!-- border -->![MDK](img-6.2.png)
-
-3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
-
-    After you accept app update, you will see the **Main** page with **Logout**, **Update** and **Products** options at bottom of the page. Tap **Products**, you will navigate to Product List page.
+    After you accept app update, tap on the **Products** to navigate to the Products List page.
 
     ![MDK](img-6.3.png)
 
-4. In following pages, you can create a new record, modify an existing record and even delete the record.
+2. In following pages, you can create a new record, modify an existing record, open the product image and even delete the record.
 
     ![MDK](img-6.4.png)
     ![MDK](img-6.5.png)
@@ -230,11 +238,11 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
 3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
-    After you accept app update, you will see the **Main** page with **Logout**, **Update** and **Products** options at bottom of the page. Tap **Products**, you will navigate to Product List page.
+    After you accept app update, tap on the **Products** to navigate to the Products List page.
 
     ![MDK](img-6.6.png)
 
-4. In following pages, you can create a new record, modify an existing record and even delete the record.
+4. In following pages, you can create a new record, modify an existing record, open the product image and even delete the record.
 
     ![MDK](img-6.7.png)
     ![MDK](img-6.8.png)
@@ -250,11 +258,11 @@ SAP Business Application Studio has a feature to display the QR code for onboard
     >You can also open the MDK web application by accessing its URL from `.project.json` file.
     <!-- border -->![MDK](img-6.10.png)
 
-2. After you accept app update, you will see the **Main** page with **Logout** and **Products** options at bottom of the page. Click **Products**, you will navigate to Product List page.
+2.  After you accept app update, click on the **Products** to navigate to the Products List page.
 
     <!-- border -->![MDK](img-6.11.png)
 
-3. In following pages, you can create a new record, modify an existing record and even delete the record.
+3.  In following pages, you can create a new record, modify an existing record, open the product image and even delete the record.
 
     <!-- border -->![MDK](img-6.12.png)
     <!-- border -->![MDK](img-6.13.png)
