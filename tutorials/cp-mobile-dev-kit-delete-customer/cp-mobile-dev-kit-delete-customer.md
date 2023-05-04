@@ -21,6 +21,7 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
+
 ![MDK](img-1.0.gif)
 
 ### Add a trash button to customer details page
