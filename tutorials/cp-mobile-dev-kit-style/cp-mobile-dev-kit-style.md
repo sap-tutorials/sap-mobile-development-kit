@@ -107,6 +107,7 @@ The `LESS` stylesheet provides the ability to define styling styles that can be 
     @mdkYellow1: #ffbb33;
     @mdkRed1: #ff0000;
 
+
     //// This style applies to all the ActionBars in the application
     ActionBar {
         color: white;
