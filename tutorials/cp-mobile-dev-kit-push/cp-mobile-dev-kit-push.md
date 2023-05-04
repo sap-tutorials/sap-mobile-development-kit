@@ -23,7 +23,7 @@ author_profile: https://github.com/jitendrakansal
   - How to send push notification to an MDK app
 
 ## Intro
-You may clone an existing metadata project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/6-Enable-Push-Notifications-in-the-MDK-Public-Store-Client) and start directly with step 4 in this tutorial.
+You may clone an existing metadata project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/6-Enable-Push-Notifications-in-the-MDK-Public-Store-Client) and start directly with step 5 in this tutorial.
 
 ---
 
@@ -276,7 +276,7 @@ The On-boarding QR code is now displayed.
 
 3. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
 
-    <!-- border -->![MDK](img-7.6.png)
+    ![MDK](img-7.6.png)
 
 4. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
@@ -296,7 +296,7 @@ The On-boarding QR code is now displayed.
 
     After sending notification, mobile device should receive the message.
 
-    <!-- border -->![MDK](img-7.8.png)
+    ![MDK](img-7.8.png)
 
     If you have Apple watch connected to the iPhone device, you can also see same push notification on the Apple Watch.
 

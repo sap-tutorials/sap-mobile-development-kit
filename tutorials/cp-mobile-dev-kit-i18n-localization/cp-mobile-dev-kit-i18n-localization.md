@@ -23,7 +23,7 @@ author_profile: https://github.com/jitendrakansal
   - How to use Currency and Date Time formatters
 
 ## Intro
-You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/7-Add-internationalization-and-localization-to-an-mdk-app) and start directly with step 8 in this tutorial.
+You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/7-Add-internationalization-and-localization-to-an-mdk-app) and start directly with step 10 in this tutorial.
 
 ---
 
@@ -117,6 +117,18 @@ So far, you have learned how to build an MDK application in the SAP Business App
     <!-- border -->![MDK](img-3.3.png)
 
 
+### Display the QR code for onboarding the Mobile app
+
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
+
+Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
+
+<!-- border -->![MDK](img-4.1.png)
+
+The On-boarding QR code is now displayed.
+
+<!-- border -->![MDK](img-4.2.png)
+
 ### Run the app
 
 
@@ -124,17 +136,8 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
 
-1. Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
-
-    <!-- border -->![MDK](img-4.1.png)
-
-    The On-boarding QR code is now displayed.
-
-    <!-- border -->![MDK](img-4.2.png)
-
-2. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
     After you accept app update, you will see the `Main` page (with `Logout`, `Sync` and `Update` options at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
 
@@ -142,7 +145,7 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
     In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, `Logout`, `Sync` and `Update`) to their respective localized strings in the German language.
 
-3. Tap `SalesOrderHeaders` to navigate to Sales order List.
+2. Tap `SalesOrderHeaders` to navigate to Sales order List.
 
     ![MDK](img-4.4.png)
 
@@ -152,17 +155,7 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
-
-1. Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
-
-    <!-- border -->![MDK](img-4.1.png)
-
-    The On-boarding QR code is now displayed.
-
-    <!-- border -->![MDK](img-4.2.png)
-
-2. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
     After you accept app update, you will see the `Main` page (with `Logout`, `Sync`, and `Update` options at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
 
@@ -170,7 +163,7 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
     In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, `Logout`, `Sync`, and `Update`) to their respective localized strings in the German language.
 
-3. Tap `SalesOrderHeaders` to navigate to Sales Order List.
+2. Tap `SalesOrderHeaders` to navigate to Sales Order List.
 
     ![MDK](img-4.6.png)
 
@@ -197,9 +190,9 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
 [OPTION END]
 
-There are two control properties displaying Date and Gross Amount values generated by the template.
+    There are two control properties displaying Date and Gross Amount values generated by the template.
 
-You will also learn how you can format these values to be displayed based on the device's current locale.
+    You will also learn how you can format these values to be displayed based on the device's current locale.
 
 
 ### Define the i18n Properties File
@@ -215,7 +208,7 @@ The [file name structure](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd
 
 For this tutorial, you will create the `i18n_de.properties` file for the German language.
 
-1. Open `i18n.properties` and copy & paste the below information:
+1. Navigate to `MDK_i18n_l10n` | `i18n`, right click on the `i18n.properties` and open it with Text Editor. 
 
     ```JSON
     main_title=Main

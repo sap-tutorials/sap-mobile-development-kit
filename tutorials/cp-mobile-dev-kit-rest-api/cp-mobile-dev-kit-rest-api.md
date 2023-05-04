@@ -57,7 +57,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
     -	what is the response code
     -	how the response body looks like
 
-With above details, you will next configure an app in Mobile Services, add root of request URL as a destination and then consume it in MDK.
+    With above details, you will next configure an app in Mobile Services, add root of request URL as a destination and then consume it in MDK.
 
 
 ### Configure new MDK app in Mobile Services cockpit
@@ -182,7 +182,7 @@ With above details, you will next configure an app in Mobile Services, add root 
 
     <!-- border -->![MDK](img-5.4.png)
 
-    .service and `.xml` (empty file) have been created under Services folder.
+    `.service` and `.xml` (empty file) have been created under the **Services** folder.
 
     <!-- border -->![MDK](img-5.5.png)
 
@@ -215,7 +215,6 @@ You will add an **Object Table** control  item on `Main.page` to display the lis
     | Property | Value |
     |----|----|
     | `Description`| leave it empty |
-    | `DetailImage` | leave it empty |
     | `Footnote`| leave it empty |
     | `PreserveIconStackSpacing` | Select `false` from the dropdown |
     | `ProgessIndicator`| leave it empty |
@@ -258,12 +257,7 @@ So far, you have learned how to build an MDK application in the SAP Business App
     <!-- border -->![MDK](img-7.3.png)
 
 
-### Run the app
-
-
-[OPTION BEGIN [Android]]
-
->Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
+### Display the QR code for onboarding the Mobile app
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
 
@@ -272,6 +266,13 @@ Click the **Application.app** to open it in MDK Application Editor and then clic
 <!-- border -->![MDK](img-8.1.png)
 
 <!-- border -->![MDK](img-8.2.png)
+
+### Run the app
+
+
+[OPTION BEGIN [Android]]
+
+>Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
 Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
@@ -284,14 +285,6 @@ After you accept the app update, you will see the Pets list on the **Main** page
 [OPTION BEGIN [iOS]]
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
-
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
-
-Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
-
-<!-- border -->![MDK](img-8.1.png)
-
-<!-- border -->![MDK](img-8.2.png)
 
 Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
