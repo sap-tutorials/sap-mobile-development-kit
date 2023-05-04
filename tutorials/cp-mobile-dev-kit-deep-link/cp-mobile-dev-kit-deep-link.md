@@ -14,8 +14,8 @@ author_profile: https://github.com/jitendrakansal
 
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
-- **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) or [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device.
-<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">!![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
+- **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544).
+<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 - **Install SAP Mobile Cards Application:**
    <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.3.png)<br>Android</td><td align="center">!![App Store QR Code](img-1.1.4.png)<br>iOS</td></tr></table>
@@ -250,7 +250,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [Android]]
 
-1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
     After you accept app update, you will see the **Main** page with the buttons you added in previous step 3.
 
@@ -272,7 +272,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [iOS]]
 
-1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
     After you accept app update, you will see the **Main** page with the buttons you added in previous step 3.
 

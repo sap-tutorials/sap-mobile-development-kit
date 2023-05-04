@@ -128,7 +128,7 @@ MDK Web application accesses the data sources via BTP destination. You will now 
 
     <!-- border -->![MDK](img-4.4.png)
 
-5. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/0-Set-Up-for-the-Mobile-Development-Kit/SampleServiceV2.zip) and unzip it on your machine.
+5. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/0-Set-Up-for-the-Mobile-Development-Kit/SampleServiceV2.zip) and unzip it on your machine.
 
     <!-- border -->![MDK](img-4.5.png)
 

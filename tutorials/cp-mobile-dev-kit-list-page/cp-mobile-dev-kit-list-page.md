@@ -74,6 +74,7 @@ To create the Customer List page, you will create a **Section page** and drag th
     <!-- border -->![MDK](img-1.7.gif)
 
     >Be careful **not** to select `City` from `Address (ESPM.Address)`.
+    
     ><!-- border -->![MDK](img-1.8.png)
 
 8. Remove the default value for the `DetailImage` property. Repeat the above steps for `Headline` and `Subheadline` properties binding to `LastName` and `FirstName` properties of the Customer entity respectively.

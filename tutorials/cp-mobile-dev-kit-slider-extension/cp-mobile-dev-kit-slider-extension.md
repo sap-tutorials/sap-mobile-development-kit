@@ -80,7 +80,7 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 
 The extension control that you will be creating to extend the functionality of your app can be used as base controls by registering it using the MDK editor.
 
-1. Download [this](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Images/slider.png) image and save it locally. This image will be used as a display image on the page editor to represent the extension control.
+1. Download [this](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Images/slider.png) image and save it locally. This image will be used as a display image on the page editor to represent the extension control.
 
 2. Drag & drop `slider.png` file on **Images** folders.
 

@@ -142,6 +142,7 @@ The `LESS` stylesheet provides the ability to define styling styles that can be 
      color: @mdkYellow1;
     }
 
+
     //// below snippet is to style Object Header control in Customers_Detail.page
 
     /* Object Header - BodyText */
@@ -256,6 +257,23 @@ So far, you have learned how to build an MDK application in the SAP Business App
     <!-- border -->![MDK](img-4.3.png)
 
 
+### Display the QR code for onboarding the Mobile app
+
+
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
+
+Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
+
+<!-- border -->![MDK](img-5.1.png)
+
+The On-boarding QR code is now displayed.
+
+<!-- border -->![MDK](img-5.2.png)
+
+>Leave the Onboarding dialog box open for the next step.
+
+
+
 ### Run the app
 
 
@@ -263,27 +281,17 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
-
-1. Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
-
-    <!-- border -->![MDK](img-5.1.png)
-
-    The On-boarding QR code is now displayed.
-
-    <!-- border -->![MDK](img-5.2.png)
-
-3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
     After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync** and **Update** options at bottom of the page. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed. In Main page, you will notice styling on action bar, tool bar, items (Logout & Sync) available on tool bar and `Customers` button.
 
     ![MDK](img-5.3.png)
 
-4. Tap **Customers** to navigate to Customer List. You will see that Title property has been styled.
+2. Tap **Customers** to navigate to Customer List. You will see that Title property has been styled.
 
     ![MDK](img-5.4.png)
 
-5. Tap any record to navigate to Customer Detail page. You will see that Object Header control has been styled.
+3. Tap any record to navigate to Customer Detail page. You will see that Object Header control has been styled.
 
     ![MDK](img-5.5.png)       
 
@@ -293,27 +301,17 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
-SAP Business Application Studio has a feature to generate QR code for app onboarding.
-
-Click the `Application.app` to open it in MDK Application Editor and click **Application QR Code** icon.
-
-<!-- border -->![MDK](img-5.1.png)
-
-The On-boarding QR code is now displayed.
-
-<!-- border -->![MDK](img-5.2.png)
-
-3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
     After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync**, and **Update** options at bottom of the page. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed. In Main page, you will notice styling on action bar, tool bar, items (Logout & Sync) available on tool bar and `Customers` button.
 
     ![MDK](img-5.6.png)
 
-4. Tap **Customers** to navigate to Customer List. You will see that Title property has been styled.
+2. Tap **Customers** to navigate to Customer List. You will see that Title property has been styled.
 
     ![MDK](img-5.7.png)
 
-5. Tap any record to navigate to Customer Detail page. You will see that Object Header control has been styled.
+3. Tap any record to navigate to Customer Detail page. You will see that Object Header control has been styled.
 
     ![MDK](img-5.8.png)   
 

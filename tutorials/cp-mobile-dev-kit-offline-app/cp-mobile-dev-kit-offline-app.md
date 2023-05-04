@@ -168,7 +168,7 @@ The On-boarding QR code is now displayed.
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
 After you accept the app update, you will see the **Main** page (with **Logout**, **Sync** and **Update** options at bottom of the page) being displayed and Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
 
@@ -180,7 +180,7 @@ After you accept the app update, you will see the **Main** page (with **Logout**
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
 After you accept the app update, you will see the **Main** page (with **Logout**, **Sync** and **Update** options at bottom of the page) being displayed and Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
 

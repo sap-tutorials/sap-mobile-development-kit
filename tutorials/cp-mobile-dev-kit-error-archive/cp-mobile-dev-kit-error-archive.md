@@ -13,8 +13,8 @@ author_profile: https://github.com/jitendrakansal
 
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
-- **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) or [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device.
-<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">!![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
+- **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544).
+<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
 
@@ -100,13 +100,13 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.6.png)
 
-    Click **Finish** to complete the project creation.
+6. Click **Finish** to complete the project creation.
 
-7. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_ErrorArchive` project in the project explorer.
+    After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_ErrorArchive` project in the project explorer.
 
-Generated project is offline enabled and includes three entity sets (`Suppliers`, `PurchaseOrderHeaders` and `PurchaseOrderItems`) on the `Main.page` and these entities are fully CRUD enabled. You can create a new record and also modify an existing one. You will also find the `ErrorArchive_List.page` which will display list of errors for the records rejected by the backend and `ErrorArchive_Detail.page` which will display details about an error.
+    Generated project is offline enabled and includes three entity sets (`Suppliers`, `PurchaseOrderHeaders` and `PurchaseOrderItems`) on the `Main.page` and these entities are fully CRUD enabled. You can create a new record and also modify an existing one. You will also find the `ErrorArchive_List.page` which will display list of errors for the records rejected by the backend and `ErrorArchive_Detail.page` which will display details about an error.
 
-<!-- border -->![MDK](img-1.7.png)
+    <!-- border -->![MDK](img-1.7.png)
 
 
 ### Deploy the application
@@ -153,7 +153,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [Android]]
 
-1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
     After you accept app update, you will see **Main** page with some entity sets being displayed and Offline store will be initialized.
 
@@ -182,7 +182,7 @@ You will see *Upload failed* message, tap on **View Errors** to navigate to the 
 
     ![MDK](img-4.7.png)
 
-    Here in **Error** you will see `SQLDatabaseException` and in **Request Body**, it shows the record that caused this failure.
+    Here in **Error**, you will see `SQLDatabaseException` and in **Request Body**, it shows the record that caused this failure.
 
     In next step, you will implement how to handle such errors and let users to modify record with correct values.
 
@@ -190,7 +190,7 @@ You will see *Upload failed* message, tap on **View Errors** to navigate to the 
 
 [OPTION BEGIN [iOS]]
 
-1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
     After you accept app update, you will see **Main** page with some entity sets being displayed and Offline store will be initialized.
 
@@ -219,7 +219,7 @@ You will see *Upload failed* message, tap on **View Errors** to navigate to the 
 
     ![MDK](img-4.14.png)
 
-    Here in **Error** you will see `SQLDatabaseException` and in **Request Body**, it shows the record that caused this failure.
+    Here in **Error**, you will see `SQLDatabaseException` and in **Request Body**, it shows the record that caused this failure.
 
     In next step, you will implement how to handle such errors and let users to modify record with correct values.
 
@@ -248,7 +248,6 @@ On the Error Details page, you will implement how to navigate to respective reco
     | Property | Value |
     |----|----|
     | `Description`| leave it empty |
-    | `DetailImage` | leave it empty |
     | `Footnote`| leave it empty |
     | `PreserveIconStackSpacing` | Select `false` from the dropdown|
     | `ProgessIndicator`| leave it empty |
@@ -400,12 +399,17 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
     >You could add a button on the Main page navigating to the Error Archive List page directly.
 
-3. Tapping any record navigates to Error Details page with more information about error. You have added a business logic to find out which is affected entity and how to navigate to respective record to let users to modify this record with correct values. Once done, user can again sync it with backend.
-
-    Tap **Edit Affected Entity** and modify record with correct values
+3. Tapping any record navigates to Error Details page with more information about error. You have added a business logic to find out which is affected entity and how to navigate to respective record to let users to modify this record with correct values. Once done, user can again sync it with backend. Tap **Edit Affected Entity**.  
 
     ![MDK](img-7.2.png)
+
+ 4. Modify record with correct values.
+
     ![MDK](img-7.3.png)   
+
+5. Navigate to the Main page and Sync again. Record gets upload to the backend successfully.
+
+    ![MDK](img-7.3.1.png)  
 
 [OPTION END]
 
@@ -424,12 +428,17 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
     >You could add a button on the Main page navigating to the Error Archive List page directly.    
 
-3. Tapping any record navigates to **Error Details** page with more information about error. You have added a business logic to find out which is affected entity and how to navigate to respective record to let users to modify this record with correct values. Once done, user can again sync it with backend.
-
-    Tap **Edit Affected Entity** and modify record with correct values
+3. Tapping any record navigates to **Error Details** page with more information about error. You have added a business logic to find out which is affected entity and how to navigate to respective record to let users to modify this record with correct values. Once done, user can again sync it with backend. Tap **Edit Affected Entity**.
 
     ![MDK](img-7.5.png)
+
+4. Modify record with correct values.
+
     ![MDK](img-7.6.png)   
+
+5. Navigate to the Main page and Sync again. Record gets upload to the backend successfully.
+
+    ![MDK](img-7.7.png)  
 
 [OPTION END]
 
