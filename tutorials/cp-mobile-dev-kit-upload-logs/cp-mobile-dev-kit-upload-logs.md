@@ -261,7 +261,7 @@ Deploy the updated application to your MDK client.
 
     ![MDK](img-8.1.png)
 
-    Once the reinitialization is completed, app starts gathering the client logs.
+    Once the re-initialization is completed, app starts gathering the client logs.
 
 2. Tap **Upload Logs** to upload client logs from app to SAP Mobile Services.
 

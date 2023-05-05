@@ -14,10 +14,10 @@ author_profile: https://github.com/jitendrakansal
 
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
-- **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544).
+- **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
-- **Install SAP Mobile Cards Application:**
+- **Install SAP Mobile Cards Application**
    <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.3.png)<br>Android</td><td align="center">!![App Store QR Code](img-1.1.4.png)<br>iOS</td></tr></table>
 
 ## You will learn
@@ -277,7 +277,6 @@ The On-boarding QR code is now displayed.
 2. Tap **Open SAP Mobile Cards** and then tap **OK**.
 
     ![MDK](img-6.5.png)
-
     ![MDK](img-6.6.png)
 
     If you already installed SAP Mobile Cards app, then MDK app will open it.
