@@ -292,7 +292,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
     <!-- border -->![MDK](img-4.1.png)
 
-3. Select **Mobile Development Kit Client** from **Client Type** dropdown.
+3. In the **Basic Information** step, select **Mobile Development Kit Client** from **Client Type** dropdown.
 
     <!-- border -->![MDK](img-4.2.png)
 
@@ -300,7 +300,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
     <!-- border -->![MDK](img-4.3.png)
 
-5. In **Platform** step, provide a unique value to the **URL Scheme**.
+5. In the **Platform** step, provide a unique value to the **URL Scheme**.
 
     If you have a Firebase configuration for your client, browse to select the `google-services.json` file and click **Next**.
 
@@ -310,12 +310,12 @@ You can find more details about Cloud Build service in [help documentation](http
 
     >For Android builds: The packaging format to use for the build, including APK (Android Package Kit, the default) or AAB (Android App Bundle). Since Google requires applications uploaded to the Google Play Store be built in the AAB format, select this option if that is your plan. To install an AAB binary without using Google Play Store, you must download the AAB and use Google's `bundletool` to extract an install-ready binary from the AAB and to install that binary. Refer to their documentation on `bundletool` for more details.
 
-6. In **Multimedia** step, you may upload an image to use for the app logo and click **Next**.
+6. In the **Multimedia** step, you may upload an image to use for the app logo and click **Next**.
 
     <!-- border -->![MDK](img-4.5.png)
 
 
-7. In **Build Options** step, select respective Signing profile(s), set minimum platform version, select a supported SDK version and click **Finish**.
+7. In the **Build Options** step, select respective Signing profile(s), set minimum platform version, select a supported SDK version and click **Finish**.
 
     <!-- border -->![MDK](img-4.6.png)
 
@@ -343,7 +343,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
     <!-- border -->![MDK](img-4.1.png)
 
-3. Select **Customized Mobile Development Kit Client** from **Client Type** dropdown.
+3. In the **Basic Information** step, select **Customized Mobile Development Kit Client** from **Client Type** dropdown.
 
     <!-- border -->![MDK](img-4.9.png)
 
@@ -372,11 +372,11 @@ You can find more details about Cloud Build service in [help documentation](http
 
     >For Android builds: The packaging format to use for the build, including APK (Android Package Kit, the default) or AAB (Android App Bundle). Since Google requires applications uploaded to the Google Play Store be built in the AAB format, select this option if that is your plan. To install an AAB binary without using Google Play Store, you must download the AAB and use Google's `bundletool` to extract an install-ready binary from the AAB and to install that binary. Refer to their documentation on `bundletool` for more details.
 
-6. In **Multimedia** step, you may upload an image to use for the app logo and click **Next**.
+6. In the **Multimedia** step, you may upload an image to use for the app logo and click **Next**.
 
     <!-- border -->![MDK](img-4.5.png)
 
-7. In **Build Options** step, select respective Signing profile(s), set minimum platform version, select a supported SDK version and click **Finish**.
+7. In the **Build Options** step, select respective Signing profile(s), set minimum platform version, select a supported SDK version and click **Finish**.
 
     <!-- border -->![MDK](img-4.6.png)
 

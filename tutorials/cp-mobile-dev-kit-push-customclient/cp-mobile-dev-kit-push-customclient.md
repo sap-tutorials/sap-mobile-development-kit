@@ -335,6 +335,7 @@ Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create you
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
     <!-- border -->![MDK](img-5.8.png)
+    
 
 5. In notification dialog, type a notification message and click **Send**.
 
