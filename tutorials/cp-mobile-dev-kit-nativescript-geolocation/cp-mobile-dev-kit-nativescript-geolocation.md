@@ -209,10 +209,6 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     <!-- border -->![MDK](img-5.6.png)
 
-    >When deploying from VS Code to App Update and using an MDK 6.0+ client, you need to set the TS Target to use es6 instead of the default es5 version. See below for the setting in VS Code where you change it for es6.
-    <!-- border -->![MDK](img-5.7.png)
-
-
 ### Add NativeScript plugin and External dependencies in your local .mdkproject
 
 
