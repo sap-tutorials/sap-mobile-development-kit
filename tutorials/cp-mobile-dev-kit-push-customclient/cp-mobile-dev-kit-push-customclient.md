@@ -78,9 +78,9 @@ In order to implement Push Notifications, a paid Apple developer account is requ
 To enable your app for push notifications, you need to carry out the following tasks:
 
 * Obtain a certificate signing request
-* Register an iOS App ID
 * Create a new development certificate `.cer` file
 * Install the `.cer` file and create the .p12 file
+* Register an iOS App ID
 * Register your device
 
 1. Obtain a certificate signing request
@@ -103,9 +103,9 @@ To enable your app for push notifications, you need to carry out the following t
 
     <!-- border -->![MDK](img-1.12.png)
 
-2. Register an iOS App ID
+2. Create a new development certificate `.cer` file
 
-    Go to your [Apple Developer Account](https://developer.apple.com) and click **Certificates, Identifiers & Profiles**.
+    Go to your [Apple Developer Account](https://developer.apple.com/account) and Click **Certificates**.
 
     <!-- border -->![MDK](img-1.13.png)
 
@@ -326,7 +326,7 @@ Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create you
 
 3. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
 
-    <!-- border -->![MDK](img-5.7.png)
+    ![MDK](img-5.7.png)
 
 4. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 

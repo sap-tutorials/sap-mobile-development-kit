@@ -8,7 +8,7 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
-# Enable Certificate-Based Authentication
+# Enable Certificate-Based Authentication in your MDK Client
 <!-- description --> Create a branded MDK client that can on-board using certificates for authentication.
 
 ## Prerequisites
@@ -79,6 +79,11 @@ To enable certificate based authentication, you need to modify **Redirect URL** 
 
 ### Create your .mdkproject folder
 
+>In order to build your client, you can either use 
+> - [Cloud Build service](cp-mobile-dev-kit-cbs-client) to 
+>   -  build a standard MDK client by selecting _Allow Certificate_ option or 
+>    - upload the `.mdkproject` to build a customized MDK client 
+> -  OR build your branded client locally using MDK SDK as mentioned in below steps.
 
 >Make sure you are choosing the right development platform tab above.
 
@@ -309,8 +314,11 @@ Make sure that you have already completed steps 1 & 2 from [this](cp-mobile-dev-
 
     ![MDK](img-5.7.png)
 
+9. If you want your MDK client to send you notification, click **Next**. 
 
-9.  Optionally, you can enable biometric authentication to get faster access to the app data.
+    ![MDK](img-5.7.1.png)
+
+10.  Optionally, you can enable biometric authentication to get faster access to the app data.
 
     ![MDK](img-5.8.png)
 

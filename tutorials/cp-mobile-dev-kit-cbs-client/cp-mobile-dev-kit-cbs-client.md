@@ -71,7 +71,7 @@ After a successful build, you can download the APK or IPA file.
 
     <!-- border -->![MDK](img-1.6.png)
 
-7. `Download goole-services.json` file, click **Next**.
+7. Download `google-services.json` file, click **Next**.
 
     <!-- border -->![MDK](img-1.7.png)
 
@@ -90,9 +90,9 @@ In order to implement Push Notifications, a paid Apple developer account is requ
 To enable your app for push notifications, you need to carry out the following tasks:
 
 * Obtain a certificate signing request
-* Register an iOS App ID
 * Create a new development certificate `.cer` file
 * Install the `.cer` file and create the .p12 file
+* Register an iOS App ID
 * Register your device
 * Create a development provisioning profile
 
@@ -118,7 +118,7 @@ To enable your app for push notifications, you need to carry out the following t
 
 2. Create a new development certificate `.cer` file
 
-    Go to your [Apple Developer Account](https://developer.apple.com/account) and Click **Certificates, Identifiers & Profiles**.
+    Go to your [Apple Developer Account](https://developer.apple.com/account) and Click **Certificates**.
 
     <!-- border -->![MDK](img-1.12.png)
 
@@ -299,6 +299,8 @@ You can find more details about Cloud Build service in [help documentation](http
 4. Provide required values and click **Next**.
 
     <!-- border -->![MDK](img-4.3.png)
+
+    >Bundle ID (iOS)/ Package Name (Android) is a unique app identifier used to sign Mobile Development Kit clients. For iOS, make sure to provide the same bundle ID while registering an iOS App ID in step 1.
 
 5. In the **Platform** step, provide a unique value to the **URL Scheme**.
 
