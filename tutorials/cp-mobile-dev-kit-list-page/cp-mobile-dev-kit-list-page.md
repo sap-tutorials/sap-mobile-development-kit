@@ -83,11 +83,11 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     <!-- border -->![MDK](img-1.9.png)
 
-9. In the **Search** section of the Properties pane, change both the **SearchEnabled** and **BarcodeScanner** properties to **true**.
+9. In the **Search** section of the Properties pane, change both the `SearchEnabled` and `BarcodeScanner` properties to **true**.
 
     <!-- border -->![MDK](img-1.10.png)
 
-10. In the **ActivityItems** section of the Properties pane, click **Add** to add a new activity item.
+10. In the `ActivityItems` section of the Properties pane, click **Add** to add a new activity item.
 
     <!-- border -->![MDK](img-1.11.png)
 
