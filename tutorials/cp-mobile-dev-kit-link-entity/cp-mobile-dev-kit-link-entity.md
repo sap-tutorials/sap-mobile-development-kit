@@ -63,6 +63,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.5.1.png)
 
+
 6. Drag and drop five additional **Simple Property** controls and one **Date Picker** control onto the page so you have seven total controls.
 
     <!-- border -->![MDK](img-1.5.png)
