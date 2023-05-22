@@ -44,8 +44,6 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
     <!-- border -->![MDK](img-1.1.png)
 
-    >A Form Cell Page is suitable for pages that generate new objects or modify existing objects. It includes a form cell container by default. You can add form sections, multiple containers or action controls to this page. Under each container section, you can add various container items.
-
 2. Enter the Page Name as `SalesOrderHeaders_Create` and click **Finish** to complete the page creation process.
 
     <!-- border -->![MDK](img-1.2.png)

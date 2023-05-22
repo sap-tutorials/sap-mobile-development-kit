@@ -30,15 +30,11 @@ For online applications, the changes are saved to the backend immediately.
 
 For offline applications, the changes are stored locally until they are synced using an Upload action.
 
-In this step, you will create the _Edit Customer Detail_ page as a **Form Cell Page**. This type of page allows for form input style changes. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
+In this step, you will create the _Edit Customer Detail_ page. You will add a Section page with a Form Cell Section to contain the Form Cell controls. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
 
-1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
+1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
-
-    >A Form Cell Page is suitable for pages that generate new objects or modify existing objects. It includes a form cell container by default. You can add multiple containers or action controls to this page. Under each container section, you can add various controls.
-
-    >You can find more details about [Form Cell page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/formcell-page.html).
 
 2. In the **Base Information** step, enter the Page Name `Customers_Edit` and click **Finish** to complete the page creation process.
 
@@ -50,9 +46,13 @@ In this step, you will create the _Edit Customer Detail_ page as a **Form Cell P
 
 4. Now, you will add the fields (like first name, last name, phone & email address) that will be editable by the end-user.
 
-    In the Layout Editor, expand the **Controls** group.
+     In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
 
-    Drag and drop a **Simple Property** onto the Page area.
+    <!-- border -->![MDK](img-1.3.1.gif)
+
+    >Form Cell Section is used to contain Form Cell controls in a section page.
+
+5. You will now add Form Cell controls in the Form Cell Section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
 
     <!-- border -->![MDK](img-1.4.gif)
 

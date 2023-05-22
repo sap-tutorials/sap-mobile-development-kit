@@ -76,7 +76,7 @@ This page will show related details for a customer. In this page, you will add a
     | Property | Value |
     |----|----|
     | `Description` | `{CustomerId}` |
-    | `DetailImage` | `sap-icon://customer` |
+    | `DetailImage` | Click link icon to open the browser and bind it to `customer` SAP icon |
     | `FootNote`| `{EmailAddress}` |
     | `HeadlineText`| `{LastName}` |
     | `Status` | `{PhoneNumber}` |

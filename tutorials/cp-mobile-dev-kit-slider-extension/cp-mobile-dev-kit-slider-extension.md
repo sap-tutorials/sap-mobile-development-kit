@@ -65,7 +65,7 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
     | `MDK Template Type`| Select `Empty` from the dropdown |
     | `Your Project Name` | Provide a name of your choice. `MDK_Slider` is used for this tutorial |
     | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |    
-    | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |
+    | `Target MDK Client Version` | Leave the default selection as `MDK 23.4+ (For use with MDK 23.4 or later clients)` |
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
     <!-- border -->![MDK](img-1.3.png)
@@ -160,10 +160,6 @@ You will add this registered control in a Form Cell page.
     Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
 
     <!-- border -->![MDK](img-3.1.png)
-
-    >A Form Cell Page is suitable for pages that generate new objects or modify existing objects. It includes a form cell container by default. You can add form sections, multiple containers or action controls to this page. Under each container section, you can add various controls.
-
-    >You can find more details about [Form Cell page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/formcell-page.html).
 
 2. Enter the page **Name** as `SliderExtension` and click  **Finish**.
 

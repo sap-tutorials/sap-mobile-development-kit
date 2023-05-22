@@ -127,7 +127,7 @@ Now, you will add a button on the Main page and from there, you will navigate to
 
     | Field | Value |
     |----|----|
-    | `Image`| `sap-icon://customer` |
+    | `Image`| Click link icon to open the browser and bind it to `customer` SAP icon` |
     | `Title` | `Customers` |
 
     <!-- border -->![MDK](img-2.3.png)

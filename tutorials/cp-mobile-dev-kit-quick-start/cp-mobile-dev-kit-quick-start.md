@@ -56,7 +56,7 @@ This step includes creating the mobile development kit project in the editor.
     | `MDK Template Type`| Select `CRUD` from the dropdown |
     | `Your Project Name` | Provide a name of your choice. `MDKApp` is used for this tutorial |
     | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |
-    | `Target MDK Client Version` | Leave the default selection as `MDK 6.0+ (For use with MDK 6.0 or later clients)` |
+    | `Target MDK Client Version` | Leave the default selection as `MDK 23.4+ (For use with MDK 23.4 or later clients)` |
     | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
 
     <!-- border -->![MDK](img-1.5.png)

@@ -34,11 +34,7 @@ In this step, you will create the `Customers_Create.page` as a **Form Cell Page*
 1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
-
-    >A Form Cell Page is suitable for pages that generate new objects or modify existing objects. It includes a form cell container by default. You can add form sections, multiple containers or action controls to this page. Under each container section, you can add various container items.
-
-    >You can find more details about [Form Cell page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/formcell-page.html).
-
+    
 2. In the **Base Information** step, enter the page **Name** as `Customers_Create` and click **Finish** to complete the page creation wizard.
 
     <!-- border -->![MDK](img-1.2.png)
