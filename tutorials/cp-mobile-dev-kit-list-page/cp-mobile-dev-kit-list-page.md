@@ -156,6 +156,7 @@ Now, you will add a button on the Main page and from there, you will navigate to
 ### Deploy the application
 
 
+
 Deploy the updated application to your MDK client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
