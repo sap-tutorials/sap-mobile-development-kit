@@ -38,13 +38,14 @@ To create an entity and then link it to another entity, you need to carry out th
 ### Create new page for new Sales order record
 
 
-In this step, you will create the _Create Order_ page as a **Form Cell Page**. This type of page allows for form input style changes. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
 
-1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
+In this step, you will create a Section page with a Form Cell Section to contain the Form Cell controls. You will then add the fields that will be editable by the end-user.
+
+1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
-2. Enter the Page Name as `SalesOrderHeaders_Create` and click **Finish** to complete the page creation process.
+2. In the **Base Information** step, enter the Page Name as `SalesOrderHeaders_Create` and click **Finish** to complete the page creation process.
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -52,17 +53,21 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
     <!-- border -->![MDK](img-1.3.png)
 
-4. Now, you will add the fields (like Currency Code, Net Amount, Tax Amount, Gross Amount, Life cycle status, Life cycle status name and order creation date) for creating a new sales order record by the end-user.
-
-    In the Layout Editor, expand the **Controls** group. Drag and drop a **Simple Property** onto the Page area.
+4. Now, you will add the fields (like Currency Code, Net Amount, Tax Amount, Gross Amount, Life cycle status, Life cycle status name and order creation date) for creating a new sales order record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
 
     <!-- border -->![MDK](img-1.4.gif)
 
-5. Drag and drop five additional **Simple Property** controls and one **Date Picker** control onto the page so you have seven total controls.
+    >Form Cell Section is used to contain Form Cell controls in a section page.
+
+5. You will now add Form Cell controls in the Form Cell Section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
+
+    <!-- border -->![MDK](img-1.5.1.png)
+
+6. Drag and drop five additional **Simple Property** controls and one **Date Picker** control onto the page so you have seven total controls.
 
     <!-- border -->![MDK](img-1.5.png)
 
-6. Select the first **Simple Property control** and provide the below information:
+7. Select the first **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -74,7 +79,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
     >Under **Value** property, you can set some default values.
 
-7. Select the second **Simple Property control** and provide the below information:
+8. Select the second **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -84,7 +89,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
     <!-- border -->![MDK](img-1.7.png)
 
-8. Select the third **Simple Property control** and provide the below information:
+9. Select the third **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -94,7 +99,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
     <!-- border -->![MDK](img-1.8.png)
 
-9. Select the forth **Simple Property control** and provide the below information:
+10. Select the forth **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -104,7 +109,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
     <!-- border -->![MDK](img-1.9.png)
 
-10. Select the fifth **Simple Property control** and provide the below information:
+11. Select the fifth **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -114,7 +119,7 @@ In this step, you will create the _Create Order_ page as a **Form Cell Page**. T
 
     <!-- border -->![MDK](img-1.10.png)
 
-11. Select the sixth **Simple Property control** and provide the below information:
+12. Select the sixth **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|

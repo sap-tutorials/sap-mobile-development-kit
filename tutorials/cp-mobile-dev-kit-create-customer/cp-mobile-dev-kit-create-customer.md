@@ -29,9 +29,9 @@ If you didn't follow the prerequisite then you may clone an existing project fro
 ### Create new page for new customer record
 
 
-In this step, you will create the `Customers_Create.page` as a **Form Cell Page**. This type of page allows for form input style changes. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
+In this step, you will create a Section page with a Form Cell Section to contain the Form Cell controls. You will add the fields that will be editable by the end-user.
 
-1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
+1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
     
@@ -43,19 +43,21 @@ In this step, you will create the `Customers_Create.page` as a **Form Cell Page*
 
     <!-- border -->![MDK](img-1.3.png)
 
-    Now, you will add the fields (like first name, last name, phone, email address & date of birth) for creating a new customer record by the end-user.
+4. Now, you will add the fields (like first name, last name, phone, email address & date of birth) for creating a new customer record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
 
-4. In the Layout Editor, expand the **Controls** section, drag and drop a **Simple Property** onto the Page area.
+    <!-- border -->![MDK](img-1.3.1.gif)
+
+    >Form Cell Section is used to contain Form Cell controls in a section page.
+    
+5. You will now add Form Cell controls in the Form Cell Section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
 
     <!-- border -->![MDK](img-1.4.gif)
 
-    >You can find more details about [available controls in Form Cell page](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/FormCell/Container.schema.html).
-
-5. Drag and drop three additional Simple Property controls onto the page so you have four total controls.
+6. Drag and drop three additional Simple Property controls onto the page so you have four total controls.
 
     <!-- border -->![MDK](img-1.5.png)
 
-6. Select the first **Simple Property control** and provide the below information:
+7. Select the first **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -65,7 +67,7 @@ In this step, you will create the `Customers_Create.page` as a **Form Cell Page*
 
     <!-- border -->![MDK](img-1.6.png)
 
-7. Select the second **Simple Property control** and provide the below information:
+8. Select the second **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -75,7 +77,7 @@ In this step, you will create the `Customers_Create.page` as a **Form Cell Page*
 
     <!-- border -->![MDK](img-1.7.png)
 
-8. Select the third **Simple Property control** and provide the below information:
+9. Select the third **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -88,7 +90,7 @@ In this step, you will create the `Customers_Create.page` as a **Form Cell Page*
 
     >To streamline data entry, the keyboard displayed when editing a `SimplePropertyFormCell` should be appropriate for the type of content in the field. If your app asks for number, for example, it should display the phone keyboard.
 
-9. Select the last **Simple Property control** and provide the below information:
+10. Select the last **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -101,7 +103,7 @@ In this step, you will create the `Customers_Create.page` as a **Form Cell Page*
 
     >[`KeyboardType`](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/FormCell/SimpleProperty.schema.html#keyboardtype) streamlines the data entry. When entering an email address, it would display the email address keyboard in mobile clients.
 
-10. Drag and drop a **Date Picker** control onto the page area for date of birth parameter.
+11. Drag and drop a **Date Picker** control onto the page area for date of birth parameter.
 
     <!-- border -->![MDK](img-1.10.gif)
 

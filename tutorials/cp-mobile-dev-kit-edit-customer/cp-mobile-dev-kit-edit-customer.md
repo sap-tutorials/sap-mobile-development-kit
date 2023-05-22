@@ -30,7 +30,7 @@ For online applications, the changes are saved to the backend immediately.
 
 For offline applications, the changes are stored locally until they are synced using an Upload action.
 
-In this step, you will create the _Edit Customer Detail_ page. You will add a Section page with a Form Cell Section to contain the Form Cell controls. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
+In this step, you will create a Section page with a Form Cell Section to contain the Form Cell controls. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
 
 1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
@@ -44,9 +44,7 @@ In this step, you will create the _Edit Customer Detail_ page. You will add a Se
 
     <!-- border -->![MDK](img-1.3.png)
 
-4. Now, you will add the fields (like first name, last name, phone & email address) that will be editable by the end-user.
-
-     In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
+4. Now, you will add the fields (like first name, last name, phone & email address) that will be editable by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
 
     <!-- border -->![MDK](img-1.3.1.gif)
 
@@ -56,11 +54,11 @@ In this step, you will create the _Edit Customer Detail_ page. You will add a Se
 
     <!-- border -->![MDK](img-1.4.gif)
 
-5. Drag and drop three additional Simple Property controls onto the page so you have four total controls.
+6. Drag and drop three additional Simple Property controls onto the page so you have four total controls.
 
     <!-- border -->![MDK](img-1.5.png)
 
-6. Select the first **Simple Property control** and provide the below information:
+7. Select the first **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -70,7 +68,7 @@ In this step, you will create the _Edit Customer Detail_ page. You will add a Se
 
     <!-- border -->![MDK](img-1.6.png)
 
-7. Select the second Simple Property control and provide the below information:
+8. Select the second Simple Property control and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -80,7 +78,7 @@ In this step, you will create the _Edit Customer Detail_ page. You will add a Se
 
     <!-- border -->![MDK](img-1.7.png)
 
-8. Select the third Simple Property control and provide the below information:
+9. Select the third Simple Property control and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -93,7 +91,7 @@ In this step, you will create the _Edit Customer Detail_ page. You will add a Se
 
     >To streamline data entry, the keyboard displayed when editing a `SimplePropertyFormCell` should be appropriate for the type of content in the field. If your app asks for number, for example, it should display the phone keyboard.
 
-9. Select the last Simple Property control and provide the below information:
+10. Select the last Simple Property control and provide the below information:
 
     | Property | Value |
     |----|----|
