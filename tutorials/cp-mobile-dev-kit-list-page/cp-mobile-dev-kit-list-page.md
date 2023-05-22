@@ -176,7 +176,6 @@ Deploy the updated application to your MDK client.
     ><!-- border -->![MDK](img-3.4.png)
 
 
-
 ### Run the app
 
 
