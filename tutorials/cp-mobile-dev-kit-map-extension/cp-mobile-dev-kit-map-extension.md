@@ -19,7 +19,6 @@ author_profile: https://github.com/jitendrakansal
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
 
-
 ## You will learn
   - How to register and consume an Extension control in MDK Metadata
   - How to build a Mobile development kit client for iOS and Android

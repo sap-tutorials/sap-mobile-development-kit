@@ -18,7 +18,7 @@ author_profile: https://github.com/jitendrakansal
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 - **Install SAP Mobile Cards Application**
-   <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.3.png)<br>Android</td><td align="center">!![App Store QR Code](img-1.1.4.png)<br>iOS</td></tr></table>
+   <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.3.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.4.png)<br>iOS</td></tr></table>
 
 ## You will learn
   - How to open SAP standard app like Mobile Cards from MDK public store client

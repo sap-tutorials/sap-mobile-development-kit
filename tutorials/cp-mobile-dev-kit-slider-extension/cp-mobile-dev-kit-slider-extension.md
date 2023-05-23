@@ -28,7 +28,6 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
-
 To extend the functionality, or customize the look and feel, and behavior of your client app, you can create extension controls other than the already existing MDK built-in controls by writing Native Code in TypeScript via Marshalling. `NativeScript` provide the ability to access platform-specific objects, class, and types in TypeScript / JavaScript via marshalling. `NativeScript` handles the conversion between JavaScript and native data types implicitly.
 
 In this tutorial, you will create a Slider extension via `NativeScript` (in TypeScript language) which will be common for both device platforms.
@@ -153,25 +152,27 @@ The extension control that you will be creating to extend the functionality of y
 ### Consume Extension Control in MDK Metadata
 
 
-You will add this registered control in a Form Cell page.
+You will add this registered control as a Form Cell control in a section page.
 
-1. Create a new page of Form Cell type.
-
-    Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
+1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Enter the page **Name** as `SliderExtension` and click  **Finish**.
+2. In the **Base Information** step, enter the page **Name** as `SliderExtension` and click  **Finish**.
 
     <!-- border -->![MDK](img-3.2.png)
 
-3. In MDK Page Editor, drag & drop the registered `mdk_slider` control on the page area.
+3. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
 
-    <!-- border -->![MDK](img-3.3.png)
+    <!-- border -->![MDK](img-3.2.1.gif)
 
-    >You can find more details about the **Section Extension** in [this](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/FormCell/Extension.schema.html) guide.    
+4. Expand the **Form Cell Registered Extension Control** group, drag and drop the `mdk_slider` onto the Page area.
 
-4. In the **Properties** section, provide the below value:
+    <!-- border -->![MDK](img-3.3.gif)
+
+    >You can find more details about the `FormCell Extension` in [this](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/FormCell/Extension.schema.html) guide.    
+
+5. In the **Properties** section, provide the below value:
 
     | Field | Value |
     |----|----|    
@@ -183,27 +184,27 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.4.png)
 
-5. You will add an item on action bar in `SliderExtension.page` and set an action on its `onPress` event.
+6. You will add an item on action bar in `SliderExtension.page` and set an action on its `onPress` event.
 
     In `SliderExtension.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
 
     <!-- border -->![MDK](img-3.5.gif)
 
-6. Click the **link** icon to open the object browser for the **System Item** property.
+7. Click the **link** icon to open the object browser for the **System Item** property.
 
     Double click the **Save** type and click **OK**.
 
     <!-- border -->![MDK](img-3.6.png)
 
-7. Switch to the **Events** tab and click the 3 dots icon for the `OnPress` property to create a new action.
+8. Switch to the **Events** tab and click the 3 dots icon for the `OnPress` property to create a new action.
 
     <!-- border -->![MDK](img-3.7.png)
 
-8. Keep the default selection for **Object Type** (as Action) and **Folders** path. Click **OK**.
+9. Keep the default selection for **Object Type** (as Action) and **Folders** path. Click **OK**.
 
     <!-- border -->![MDK](img-3.8.png)
 
-9. In the template selection, choose **Message** in **Category** | click **Message** | **Next**.
+10. In the template selection, choose **Message** in **Category** | click **Message** | **Next**.
 
     <!-- border -->![MDK](img-3.9.png)
 
@@ -226,13 +227,13 @@ You will add this registered control in a Form Cell page.
 
     Click **Finish**. This way a new action `ShowMessage.action` has been created on the fly and has been bound to an UI control event.
 
-10. You can also add an input field where you can provide a manual entry for the slider value and set an event on it's value change so that the counter will adapt accordingly.
+11. You can also add an input field where you can provide a manual entry for the slider value and set an event on it's value change so that the counter will adapt accordingly.
 
     In `SliderExtension.page`, drag and drop a **Simple Property** control below the slider control.
 
     <!-- border -->![MDK](img-3.11.gif)
 
-11.  Provide the following information:
+12.  Provide the following information:
 
     | Property | Value |
     |----|----|
@@ -241,7 +242,7 @@ You will add this registered control in a Form Cell page.
 
     <!-- border -->![MDK](img-3.12.png)
 
-12. When you input a value to the Simple Property control, an event will be triggered reflecting the slider value.
+13. When you input a value to the Simple Property control, an event will be triggered reflecting the slider value.
 
     You will create a new rule binding it to the `OnValueChange` event of the above control.
 
@@ -251,15 +252,15 @@ You will add this registered control in a Form Cell page.
 
     For this, first you will write a business logic to set the extension value and then bind it to the input field.
 
-13. Choose the *Object Type* as **Rule** and *Folders* path as it is. Click **OK**.
+14. Choose the *Object Type* as **Rule** and *Folders* path as it is. Click **OK**.
 
     <!-- border -->![MDK](img-3.14.png)
 
-14. In the **Base Information** step, enter the Rule **Name** `SetExtensionValue` and click **Finish**.
+15. In the **Base Information** step, enter the Rule **Name** `SetExtensionValue` and click **Finish**.
 
     <!-- border -->![MDK](img-3.15.png)
 
-15. Replace the generated snippet with below code.
+16. Replace the generated snippet with below code.
 
     ```JavaScript
     export default function SetExtensionValue(context) {
@@ -270,7 +271,7 @@ You will add this registered control in a Form Cell page.
     }
     ```
 
-16. Save the changes to the `SetExtensionValue.js` file if not saved already.
+17. Save the changes to the `SetExtensionValue.js` file if not saved already.
 
 
 ### Implement Extension using metadata approach

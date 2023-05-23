@@ -18,7 +18,6 @@ author_profile: https://github.com/jitendrakansal
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
-
 ## You will learn
   - How to configure an application in Mobile Services
   - How to define a REST endpoint as a destination in Mobile Services
@@ -350,15 +349,13 @@ With above details, you will now create a new MDK rule to create a new Pet recor
 ### Create new page for new pet record
 
 
-In this step, you will create the `Pet_Create.page` as a **Form Cell Page**. This type of page allows for form input style changes. You will add the fields that will be editable by the end-user.
+In this step, you will create a Section page with a Form Cell Section to contain the Form Cell controls. You will add the fields that will be editable by the end-user.
 
-1. Right-click the **Pages** folder | **MDK: New Page** | **Form Cell** | **Next**.
+1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-10.1.png)
 
-    >You can find more details about [Form Cell page](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/formcell-page.html).
-
-2. Enter the Page **Name** as `Pet_Create` and click **Finish**.
+2. In the **Base Information** step, enter the Page **Name** as `Pet_Create` and click **Finish**.
 
     <!-- border -->![MDK](img-10.2.png)
 
@@ -366,19 +363,21 @@ In this step, you will create the `Pet_Create.page` as a **Form Cell Page**. Thi
 
     <!-- border -->![MDK](img-10.3.png)
 
-4. Now, you will add the fields (Pet name and Status) for creating a new pet record by the end-user.
+4. Now, you will add the fields (Pet name and Status) for creating a new pet record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area. 
 
-    In the Layout Editor, expand the **Controls** group, drag and drop a **Simple Property** onto the Page area.
+    <!-- border -->![MDK](img-10.3.1.gif)
 
-    >You can find more details about [available controls in Form Cell page](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/FormCell/Container.schema.html).
+    >Form Cell Section is used to contain Form Cell controls in a section page.
+
+5. You will now add Form Cell controls in the Form Cell Section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
 
     <!-- border -->![MDK](img-10.4.gif)
 
-5. Drag and drop one more Simple Property control onto the page so you have two total controls.
+6. Drag and drop one more Simple Property control onto the page so you have two total controls.
 
     <!-- border -->![MDK](img-10.5.png)
 
-6. Select the first **Simple Property control** and provide the below information:
+7. Select the first **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|
@@ -388,7 +387,7 @@ In this step, you will create the `Pet_Create.page` as a **Form Cell Page**. Thi
 
     <!-- border -->![MDK](img-10.6.png)
 
-7. Select the second **Simple Property control** and provide the below information:
+8. Select the second **Simple Property control** and provide the below information:
 
     | Property | Value |
     |----|----|

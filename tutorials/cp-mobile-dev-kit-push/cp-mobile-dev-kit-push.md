@@ -27,7 +27,6 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ---
 
-
 ![MDK](img-1.0.png)
 
 ### Define push notification settings in app configuration

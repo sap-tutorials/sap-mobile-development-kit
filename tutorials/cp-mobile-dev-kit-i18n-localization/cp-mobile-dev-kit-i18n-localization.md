@@ -27,7 +27,6 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
-
 ### Understand the Internationalization and Localization
 
 

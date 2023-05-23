@@ -26,7 +26,6 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
-
 Mobile Development Kit brings OData annotations capabilities to your multi-channel applications. MDK editor supports generating List-Detail pages based on annotations. List-Detail pages are similar to a Master-Detail page, but it is two pages instead of one. The MDK editor parses existing annotations to give you a huge leap forward in your multi-channel applications.
 
 ![MDK](img-1.0.gif)
