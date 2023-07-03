@@ -37,7 +37,6 @@ In this tutorial, you will create a Map extension via `NativeScript` (in TypeScr
 
 ### Create a new MDK project in SAP Business Application Studio
 
-
 This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.

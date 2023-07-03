@@ -34,7 +34,6 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
 ### Create a new MDK project in SAP Business Application Studio
 
-
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
 2. Click **Start from template** on the `Get Started` page.

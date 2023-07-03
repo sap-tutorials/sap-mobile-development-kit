@@ -74,7 +74,6 @@ Make sure you have already configured an app in Mobile Services cockpit and have
 
     <!-- border -->![MDK](img-2.4.png)
 
-
 ### Create a new MDK project in SAP Business Application Studio
 
 

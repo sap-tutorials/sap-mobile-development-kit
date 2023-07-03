@@ -46,12 +46,15 @@ author_profile: https://github.com/jitendrakansal
 
     <!-- border -->![MDK](img-1.3.png)
 
-4. In **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown, and click **Finish**.
+5. In the **Role Settings** step, uncheck **Enable Role Settings** option and click **Next** to navigate to further steps.
+
+    <!-- border -->![MDK](img-1.3.1.png)    
+
+6. In **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown, and click **Finish**.
 
     <!-- border -->![MDK](img-1.4.png)
 
-    >If you see a _Confirm Finish_ window, click **OK**.
-
+    >If you see a _Application without Role Settings_ warning message, click **OK**. You may assign roles after the app has been configured, if needed.
 
 ### Modify default OAuth security settings
 

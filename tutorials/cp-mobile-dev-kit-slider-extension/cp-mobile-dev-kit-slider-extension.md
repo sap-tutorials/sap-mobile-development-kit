@@ -9,6 +9,7 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 
+
 # Create a Slider Custom Control in an MDK App (Using Metadata Approach)
 <!-- description --> Build and run the Mobile Development Kit client with slider custom control functionality for Android and iOS platforms.
 

@@ -85,19 +85,25 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     <!-- border -->![MDK](img-2.3.png)
 
-5. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown and Click **Finish**.
+5. In the **Role Settings** step, uncheck **Enable Role Settings** option and click **Next** to navigate to further steps.
+
+    <!-- border -->![MDK](img-2.3.1.png)        
+
+6. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown and Click **Finish**.
 
     <!-- border -->![MDK](img-2.4.png)
 
-6. Click **Mobile Connectivity** to add `petstore` root API as a destination.
+    >If you see a _Application without Role Settings_ warning message, click **OK**. You may assign roles after the app has been configured, if needed.    
+
+7. Click **Mobile Connectivity** to add `petstore` root API as a destination.
 
     <!-- border -->![MDK](img-2.5.png)
 
-7. Click **Create** icon to add a new destination.  
+8. Click **Create** icon to add a new destination.  
 
     <!-- border -->![MDK](img-2.6.png)
 
-8. Provide the required information and click **Next**.
+9. Provide the required information and click **Next**.
 
     | Field | Value |
     |----|----|
@@ -106,7 +112,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     <!-- border -->![MDK](img-2.7.png)
 
-9. For this tutorial, there is no Custom Headers, Annotations, Authentication required, click **Next** and Finish the form.
+10. For this tutorial, there is no Custom Headers, Annotations, Authentication required, click **Next** and Finish the form.
 
 
 ### Create a new destination to your MDK Web application

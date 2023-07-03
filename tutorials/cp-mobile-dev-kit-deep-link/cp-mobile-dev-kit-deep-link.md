@@ -40,7 +40,6 @@ If you are building a custom version of Mobile development kit client, there you
 
 ### Create a new MDK project in SAP Business Application Studio
 
-
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
 2. Click **Start from template** on the `Get Started` page.

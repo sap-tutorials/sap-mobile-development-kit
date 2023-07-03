@@ -48,7 +48,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
     | Field | Value |
     |----|----|
     | `ID` | com.sap.mdk.demo |
-    | `Name` | SAP MDK Demo App |
+    | `Name` |   |
 
     <!-- border -->![MDK](img-2.2.png)
 
@@ -60,11 +60,15 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     <!-- border -->![MDK](img-2.3.png)
 
-4. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown, select **Mobile Sample OData ESPM** to add a sample backend to your MDK app and then click **Finish**.
+5. In the **Role Settings** step, uncheck **Enable Role Settings** option and click **Next** to navigate to further steps.
+
+    <!-- border -->![MDK](img-2.3.1.png)    
+
+6. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown, select **Mobile Sample OData ESPM** to add a sample backend to your MDK app and then click **Finish**.
 
     <!-- border -->![MDK](img-2.4.png)
 
-    >If you see a _Confirm Finish_ window, click **OK**.
+    >If you see a _Application without Role Settings_ warning message, click **OK**. You may assign roles after the app has been configured, if needed.
 
     Once you have created your application, you see a list of default features have been automatically assigned to the app.
 
