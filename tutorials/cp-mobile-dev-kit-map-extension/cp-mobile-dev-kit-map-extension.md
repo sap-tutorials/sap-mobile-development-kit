@@ -517,7 +517,7 @@ For Android, you will pass the API key to the MDK client, there is no way public
 
     ```XML
     <?xml version="1.0" encoding="utf-8"?>
-    <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="__PACKAGE__" xmlns:tools="http://schemas.android.com/tools" android:versionCode="1" android:versionName="1.0">
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="__PACKAGE__" xmlns:tools="http://schemas.android.com/tools">
     	<!-- Always include this permission -->
     	<!-- This permission is for "approximate" location data -->
     	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />

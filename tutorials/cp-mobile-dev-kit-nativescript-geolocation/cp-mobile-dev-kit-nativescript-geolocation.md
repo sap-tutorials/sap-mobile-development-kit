@@ -221,6 +221,7 @@ In order to use the existing `NativeScript` plugin in MDK client, you will need 
       "App Display Name": "Demo Sample App",
       "AppName": "DemoSampleApp",
       "AppVersion": "1.0.0",
+      "AndroidVersionCode": "Auto",
       "BundleID": "Enter your Bundle ID",
       "Externals": ["@nativescript/geolocation"],
       "NSPlugins": ["@nativescript/geolocation@8.0.0"],
