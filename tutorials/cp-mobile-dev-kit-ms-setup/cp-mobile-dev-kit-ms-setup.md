@@ -104,7 +104,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     <!-- border -->![MDK](img-3.4.png)
 
-6. For this tutorial, there is no configuration needed for the SSO mechanism. Click **Finish**.
+6. For this tutorial, there is no certificate configuration needed. Click **Finish**.
 
     <!-- border -->![MDK](img-3.5.png)
 
