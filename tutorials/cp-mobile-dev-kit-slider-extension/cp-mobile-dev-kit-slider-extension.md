@@ -80,7 +80,7 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 
 The extension control that you will be creating to extend the functionality of your app can be used as base controls by registering it using the MDK editor.
 
-1. Download [this](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Images/slider.png) image and save it locally. This image will be used as a display image on the page editor to represent the extension control.
+1. Download [this](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Images/slider.png) image and save it locally. This image will be used as a display image on the page editor to represent the extension control.
 
 2. Drag & drop `slider.png` file on **Images** folders.
 
@@ -859,7 +859,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [Android]]
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
 Once you accept app update, you see Slider control.
 
@@ -869,7 +869,7 @@ Once you accept app update, you see Slider control.
 
 [OPTION BEGIN [iOS]]
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/master/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
 Once you accept app update, you see Slider control.
 

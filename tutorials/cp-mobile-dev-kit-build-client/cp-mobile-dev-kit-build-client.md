@@ -359,6 +359,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     ![MDK](img-5.5.png)
 
+
 6. Enter your BTP E-Mail, ID or Login Name to continue. 
 
     ![MDK](img-5.6.png)
