@@ -226,7 +226,7 @@ To enable your app for push notifications, you need to carry out the following t
 ### Compress your .mdkproject (Required for a customized client)
 
 
-If you haven't created your local `.mdkproject`, have a look at step 3 from [this](cp-mobile-dev-kit-build-client) tutorial.
+If you haven't created your local `.mdkproject`, have a look at step 3 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial.
 
 Compress your `.mdkproject` folder, the resulting zip file will be used to create a build job for a customized Mobile Development Kit client in Mobile Services cockpit.
 

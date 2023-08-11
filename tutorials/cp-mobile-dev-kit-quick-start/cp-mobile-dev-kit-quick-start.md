@@ -68,7 +68,7 @@ This step includes creating the mobile development kit project in the editor.
     |----|----|
     | `Data Source` | Select `Mobile Services` from the dropdown |
     | `Mobile Services Landscape` | Select `standard` from the dropdown |
-    | `Application Id` | Select `com.sap.mdk.demo` from the dropdown (this app was configured as per [this](cp-mobile-dev-kit-ms-setup) tutorial) |
+    | `Application Id` | Select `com.sap.mdk.demo` from the dropdown (this app was configured as per [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup) tutorial) |
     | `Destination` | Select `SampleServiceV2` from the dropdown |
     | `Enter a path to service` | Leave it as it is |
     | `Enable Offline` | It's enabled by default |

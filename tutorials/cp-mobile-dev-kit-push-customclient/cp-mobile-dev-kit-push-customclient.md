@@ -278,7 +278,7 @@ Paste the downloaded `google-services.json` file to `/DemoSampleApp.mdkproject/A
 ### Create MDK client
 
 
-Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
+Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
 
 
 ### Run the MDK client
@@ -288,7 +288,7 @@ Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create you
 
 [OPTION BEGIN [Android]]
 
-1. Follow step 5 from [this](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
+1. Follow step 5 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
 
 2. Once you accept the App update, a message should show **Push Notification registered**. Click **OK**.
 
@@ -318,7 +318,7 @@ Follow step 4 from [this](cp-mobile-dev-kit-build-client) tutorial to create you
 
 [OPTION BEGIN [iOS]]
 
-1. Follow step 5 from [this](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
+1. Follow step 5 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
 
 2. Once you accept the App update, you will also notice that it will first ask permission to display notifications.
 

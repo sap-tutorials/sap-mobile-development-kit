@@ -45,7 +45,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
     >Predefined push is supported only for the MDK (SAP Mobile Services client) public store client.
 
-    >If you want to enable push notification in your custom MDK client then follow [this](cp-mobile-dev-kit-push-customclient) tutorial.
+    >If you want to enable push notification in your custom MDK client then follow [Enable Push Notifications in Your Branded MDK Client](cp-mobile-dev-kit-push-customclient) tutorial.
 
 
 

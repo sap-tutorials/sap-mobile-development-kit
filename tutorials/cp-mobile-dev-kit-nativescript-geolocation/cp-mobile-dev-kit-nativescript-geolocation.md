@@ -212,25 +212,26 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 In order to use the existing `NativeScript` plugin in MDK client, you will need to first add it in `.mdkproject` and then create your branded MDK client.
 
-1. Make sure that you have already completed steps 1 to 3 from [this](cp-mobile-dev-kit-build-client) tutorial.
+1. Make sure that you have already completed steps 1 to 3 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial.
 
-2. Open `MDKProject.json` file and replace existing content with below:
+2. Open `MDKProject.json` file and replace existing content with below. Provide an appropriate value to the `BundleID`, it should be a unique identifier for your application. 
 
     ```JSON
     {
-      "App Display Name": "Demo Sample App",
-      "AppName": "DemoSampleApp",
+      "AppDisplayName": "Geolocation",
+      "AppName": "MDKGeolocation",
       "AppVersion": "1.0.0",
       "AndroidVersionCode": "Auto",
-      "BundleID": "Enter your Bundle ID",
+      "BundleID": "<Enter your bundle ID>",
       "Externals": ["@nativescript/geolocation"],
-      "NSPlugins": ["@nativescript/geolocation@8.0.0"],
-      "UrlScheme": "mdkclient"
+      "NSPlugins": ["@nativescript/geolocation"],
+      "UrlScheme": "mdkgeolocation"
     }
     ```
 
 <!-- border -->![MDK](img-6.1.png)
 
+3. 
 
 ### Add googlePlayServicesVersion and Permission in App Resources Merge folder(Required only for Android client)
 
@@ -287,15 +288,12 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
     ```
 
 
-
-
-
 ### Create & Run the MDK client
 
 
 [OPTION BEGIN [Android]]
 
-1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [this](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [this](cp-mobile-dev-kit-cbs-client) tutorial and run it in your device.
+1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial and run it in your device.
 
 2. After you have accepted the app update, allow your app to access your location.
 
@@ -309,7 +307,7 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
 
 [OPTION BEGIN [iOS]]
 
-1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [this](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [this](cp-mobile-dev-kit-cbs-client) tutorial.
+1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial.
 
 2. After you have accepted the app update, allow your app to access your location.
 

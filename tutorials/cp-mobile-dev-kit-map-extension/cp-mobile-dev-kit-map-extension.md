@@ -101,7 +101,7 @@ This step includes creating the mobile development kit project in the editor.
 
 The extension control that you will be creating to extend the functionality of your app can be used as base controls by registering it using the MDK editor.
 
-1. Download [this](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Images/map.png) image and save it locally. This image will be used as a display image on the page editor to represent the extension control.
+1. Download [Map](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Images/map.png) image and save it locally. This image will be used as a display image on the page editor to represent the extension control.
 
 2. Drag & drop `map.png` file on **Images** folders.
 
@@ -535,7 +535,7 @@ For Android, you will pass the API key to the MDK client, there is no way public
     </manifest>
     ```
 
-5. Create your MDK client either using MDK SDK by following the step 4 from [this](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [this](cp-mobile-dev-kit-cbs-client) tutorial.
+5. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial.
 
 
 ### Run the MDK Client

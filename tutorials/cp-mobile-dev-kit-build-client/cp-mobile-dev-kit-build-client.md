@@ -22,8 +22,8 @@ author_profile: https://github.com/jitendrakansal
 
   There are 3 options for mobile development kit client:
 
-  1. Install the SAP Mobile Services client from the public store which is meant for demo and development or learning purposes.
-  2. Use the Cloud Build feature in SAP Mobile Services to generate a MDK Client (details are in [this](cp-mobile-dev-kit-cbs-client) tutorial)
+  1. Install the SAP Mobile Services client from the public store which is meant for demo and development or learning purposes
+  2. [Use the Cloud Build feature in SAP Mobile Services to generate a MDK Client](cp-mobile-dev-kit-cbs-client) 
   3. Build a client on your local machine in your organization development environment using MDK SDK
 
 ## Intro
@@ -183,6 +183,8 @@ To use the SDK to generate a mobile development kit client, the first step is to
     >`AppDisplayName`: This is the name of the application on the home screen of the device.
 
     >`AppName`: This is the name of the folder where the client is created.
+
+     >`AndroidVersionCode`: The Android application version code. It accepts value 'Auto' or any positive integer value. If it is not defined, the default version code will be 1. For more details, [Android Application Version Code](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#android-application-version-code).
 
     >`BundleID`: It should be a unique identifier for your application. This controls if the client can be installed side by side with other applications on the device. Two applications with the same Bundle ID cannot be installed at the same time on a device. For iOS this is the Identifier `(AppID)` that is registered in Apple Developer account since that determines if the application can be installed alongside other applications. If the `XCode` project is set up to use _Automatically manage signing_ then when building, `XCode` will automatically generate a signing profile for the specified bundle id. Without matching them, trying to run the custom client in iOS device will result in failure. In Android, it is known as [application ID](https://developer.android.com/build/configure-app-module#set_the_application_id).
 

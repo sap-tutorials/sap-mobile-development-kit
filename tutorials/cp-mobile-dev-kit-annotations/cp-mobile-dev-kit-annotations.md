@@ -45,7 +45,7 @@ You can also check out more information on the Fiori elements [List Report](http
 
 Sample backend in SAP Mobile Services provides annotation functionality for **Products**. If you add annotation path in given backend endpoint, the same annotation information can be leveraged by MDK editor to generate related CRUD pages.
 
-Make sure you have already configured an app in Mobile Services cockpit and have added Sample service as per step 3 in [this](cp-mobile-dev-kit-ms-setup) tutorial.
+Make sure you have already configured an app in Mobile Services cockpit and have added Sample service as per step 3 in [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup) tutorial.
 
 1. In SAP MDK Demo App configuration, click **Mobile Connectivity**.
 

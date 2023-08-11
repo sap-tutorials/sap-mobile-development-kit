@@ -90,7 +90,7 @@ To enable certificate based authentication, you need to modify **Redirect URL** 
 
 >Make sure you are choosing the right development platform tab above.
 
-Make sure that you have already completed steps 1 & 2 from [this](cp-mobile-dev-kit-build-client) tutorial.
+Make sure that you have already completed steps 1 & 2 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial.
 
 [OPTION BEGIN [Mac]]
 
