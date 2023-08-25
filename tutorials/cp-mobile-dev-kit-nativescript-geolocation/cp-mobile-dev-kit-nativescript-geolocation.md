@@ -36,7 +36,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on the `Get Started` page.
+2. Click **New Project from Template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
 

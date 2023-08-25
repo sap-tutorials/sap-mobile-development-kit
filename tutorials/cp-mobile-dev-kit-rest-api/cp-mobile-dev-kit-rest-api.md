@@ -131,7 +131,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on the `Get Started` page.
+2. Click **New Project from Template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-4.1.png)
 
