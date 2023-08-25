@@ -32,7 +32,7 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-2. Click **Start from template** on the `Get Started` page.
+2. Click **New Project from Template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -40,13 +40,13 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK Project** and click **Start**.
+3. Select **MDK App** and click **Start**.
 
     <!-- border -->![MDK](img-1.2.png)
 
     >If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Enter your login credentials or SSO Passcode, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -77,7 +77,7 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.5.png)
 
-    >Regardless of whether you are creating an online or offline application, this step is needed for the app to connect to an OData service. When building an MDK application, it assumes the OData service created and the destination that points to this service is set up in [Mobile Services](cp-mobile-dev-kit-ms-setup) (for Mobile consumption) and in [Cloud Foundry cockpit](cp-mobile-dev-kit-ms-setup) (for Web consumption).
+    >Regardless of whether you are creating an online or offline application, this step is needed for the app to connect to an OData service. When building an MDK application, it assumes the OData service created and the destination that points to this service is set up in [Mobile Services](cp-mobile-dev-kit-ms-setup) (for Mobile consumption) and in [Cloud Foundry cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html#7ecb8e88-6cb0-406f-a038-e83a55bd8360) (for Web consumption).
 
     >**Enable Offline** option allows MDK mobile app to be offline enabled. This configuration will be ignored on Web environment and the MDK web application will be treated as online only.
 
@@ -87,7 +87,6 @@ This step includes creating the mobile development kit project in the editor.
     <!-- border -->![MDK](img-1.6.png)
 
     After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `DemoSampleApp` project in the project explorer.
-
 
 
 ### Get familiar with generated project structure

@@ -48,7 +48,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
     | Field | Value |
     |----|----|
     | `ID` | com.sap.mdk.demo |
-    | `Name` |   |
+    | `Name` | SAP MDK Demo App |
 
     <!-- border -->![MDK](img-2.2.png)
 
