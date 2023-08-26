@@ -222,21 +222,13 @@ The On-boarding QR code is now displayed.
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
 
-1. Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
-
-    <!-- border -->![MDK](img-6.1.png)
-
-    The On-boarding QR code is now displayed.
-
-    <!-- border -->![MDK](img-6.2.png)
-
-3. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
     After you accept app update, tap on the **Products** to navigate to the Products List page.
 
     ![MDK](img-6.6.png)
 
-4. In following pages, you can create a new record, modify an existing record, open the product image and even delete the record.
+2. In following pages, you can create a new record, modify an existing record, open the product image and even delete the record.
 
     ![MDK](img-6.7.png)
     ![MDK](img-6.8.png)

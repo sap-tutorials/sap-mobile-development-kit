@@ -31,7 +31,7 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 Deep links are used to send users directly to an app instead of a website or a store saving users the time and energy locating a particular page themselves – significantly improving the user experience.
 
-If an app is already installed, you can specify a custom URL scheme (iOS Universal Links) or an intent URL (on Android devices) that opens that app. Using deep link, you can also navigate to specific events or pages, which could tie into campaigns that you may want to run.
+If an app is already installed, you can specify a custom URL scheme or an intent URL that opens that app. Using deep link, you can also navigate to specific events or pages, which could tie into campaigns that you may want to run.
 
 ![MDK](img-1.0.png)
 
@@ -152,7 +152,7 @@ If you are building a custom version of Mobile development kit client, there you
     >You will see an error complaining about cannot find file reference. This is due to the action file has not created yet. You will create it in next step.
     
 
-    >`openUrl` is a `NativeScript` API to open an URL on device. You can find more details about [this API](https://v6.docs.nativescript.org/core-concepts/utils#openurl-function).
+    >`openUrl` is a `NativeScript` API to open an URL on device. You can find more details about [this API](https://v7.docs.nativescript.org/core-concepts/utils#openurl-function).
 
 5. In the generated `OpenSAPMobileCards.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Message Action`.
 

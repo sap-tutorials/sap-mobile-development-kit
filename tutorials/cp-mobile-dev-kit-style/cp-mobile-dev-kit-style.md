@@ -192,8 +192,6 @@ The `LESS` stylesheet provides the ability to define styling styles that can be 
     }
     ```
 
-    >To learn more on styling, find more details in [help documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Styles.less.html).
-
 3. Save your changes to the `Styles.less` file.
 
     >`Styles.less` is already bound to _Styles_ properties in `Application.app` file.

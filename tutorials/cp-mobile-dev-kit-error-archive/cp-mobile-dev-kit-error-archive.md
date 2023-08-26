@@ -233,9 +233,9 @@ You will see *Upload failed* message, tap on **View Errors** to navigate to the 
 
 On the Error Details page, you will implement how to navigate to respective record to let users to modify the affected record with correct values and will also display the Affected Entity Object. Once the record is modified with the correct values, user can again sync it with backend.
 
-1. Add an **Object Table** control in `ErrorArchive_Details.page` to display some information like affected entity and id for the affected record.
+1. Add an **Object Table** control in `ErrorArchive_Detail.page` to display some information like affected entity and id for the affected record.
 
-    Open `Pages` | `ErrorArchive` |`ErrorArchive_Details.page`, in the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Object Table** control onto the page area.
+    Open `Pages` | `ErrorArchive` |`ErrorArchive_Detail.page`, in the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Object Table** control onto the page area.
 
     <!-- border -->![MDK](img-5.1.gif)
 
@@ -281,7 +281,7 @@ On the Error Details page, you will implement how to navigate to respective reco
 
 7. When tapping on this Object Table control, you want to bring the affected record so that you can fix business failure by modifying previous changes right there. For this, you will write a business logic to decide which action to call depends on which `@odata.type` is the `affectedEntity` and if there is no handler for an affected entity, app will display a toast message saying this affected entity doesn't have a handle yet.
 
-    In the `ErrorArchive_Details.page`, select the Object Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+    In the `ErrorArchive_Detail.page`, select the Object Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-5.7.png)  
 
