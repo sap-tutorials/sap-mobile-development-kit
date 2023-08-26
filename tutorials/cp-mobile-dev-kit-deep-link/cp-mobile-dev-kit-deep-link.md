@@ -50,7 +50,7 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK Project** and click **Start**.
+3. Select **MDK App** and click **Start**.
 
     <!-- border -->![MDK](img-1.2.png)  
 

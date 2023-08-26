@@ -62,7 +62,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK Project** and click **Start**.
+3. Select **MDK App** and click **Start**.
 
     <!-- border -->![MDK](img-2.2.png)  
 

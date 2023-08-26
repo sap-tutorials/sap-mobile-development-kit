@@ -48,7 +48,7 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK Project** and click **Start**.
+3. Select **MDK App** and click **Start**.
 
     <!-- border -->![MDK](img-1.2.png)
 

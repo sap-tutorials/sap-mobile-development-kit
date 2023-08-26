@@ -139,7 +139,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK Project** and click **Start**.
+3. Select **MDK App** and click **Start**.
 
     <!-- border -->![MDK](img-4.2.png)  
 

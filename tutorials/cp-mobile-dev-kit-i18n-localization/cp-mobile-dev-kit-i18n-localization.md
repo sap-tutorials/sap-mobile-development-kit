@@ -52,7 +52,7 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK Project** and click **Start**.
+3. Select **MDK App** and click **Start**.
 
     <!-- border -->![MDK](img-2.2.png)
     
