@@ -71,22 +71,21 @@ To enable certificate based authentication, you need to modify **Redirect URL** 
 
     <!-- border -->![MDK](img-2.2.png)
 
-3. Replace the *Redirect URL* with `mdkclient://oauth2redirect` parameter, and click **OK** to save the changes. This *Redirect URL* needs to be added in the `AllowedDomains` property while building your branded client (step 3.5).
+3. Replace the *Redirect URL* with `mdkcertclient://oauth2redirect` parameter, and click **OK** to save the changes. This *Redirect URL* needs to be added in the `AllowedDomains` property while building your branded client (step 3.5).
 
     <!-- border -->![MDK](img-2.3.png)
 
-    >`mdkclient` is an URL scheme for your branded MDK client, you will use this value in step 3.3.
+    >`mdkcertclient` is an URL scheme for your branded MDK client, you will use this value in step 3.3.
 
     >`oauth2redirect` is just a random path. It could be any value.
 
 
-### Create your .mdkproject folder
+To build your client, 
 
->In order to build your client, you can either use 
-> - [Cloud Build service](cp-mobile-dev-kit-cbs-client) to 
->   -  build a standard MDK client by selecting _Allow Certificate_ option or 
->    - upload the `.mdkproject` to build a customized MDK client 
-> -  OR build your branded client locally using MDK SDK as mentioned in below steps.
+- you can either use [Cloud Build service](cp-mobile-dev-kit-cbs-client) option to build a standard MDK client by selecting _Allow Certificate_ option or upload the `mdkproject` to build a customized MDK client. 
+- OR build your branded client locally using MDK SDK as mentioned in below steps.
+
+### Create your .mdkproject folder
 
 >Make sure you are choosing the right development platform tab above.
 
@@ -116,8 +115,8 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     >`BundleID`: It should be a unique identifier for your application.  This controls if the client can be installed side by side with other applications on the device.  Two applications with the same Bundle ID cannot be installed at the same time on a device.  For iOS this is the Identifier `(AppID)` that is registered in Apple Developer account since that determines if the application can be installed alongside other applications. If the `XCode` project is set up to use _Automatically manage signing_ then when building, `XCode` will automatically generate a signing profile for the specified bundle id. Without matching them, trying to run the custom client in iOS device will result in failure. In Android, it is known as [application ID](https://developer.android.com/build/configure-app-module#set_the_application_id).
 
-    >`URLScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
-     If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. The default is `mdkclient`. This value needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device.  If the value is not unique the wrong application may be referenced when redirecting.      
+    >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
+     If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. This value `mdkcertclient` needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device.  If the value is not unique the wrong application may be referenced when redirecting.      
 
 4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click `com.sap.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
@@ -125,7 +124,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     <!-- border -->![MDK](img-3.6.png)
    
-5.  You also need to add the `"AllowCerts":true` property into the `ConnectionSettings` block.
+5.  You also need to update the `AllowCerts` property to **true** into the `ConnectionSettings` block.
 
     <!-- border -->![MDK](img-3.7.png)
 
@@ -142,7 +141,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     >If you are connecting to `AliCloud` accounts, you will also need to add your custom domains under `URLWhitelist` property in the same file. You can find more details in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#connection-settings-allowlist).     
 
-6.  Add `mdkclient://oauth2redirect` in the `AllowedDomains` property.
+6.  Add `mdkcertclient://oauth2redirect` in the `AllowedDomains` property.
 
     <!-- border -->![MDK](img-3.8.png)
 
@@ -183,8 +182,8 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     >`BundleID`: It should be a unique identifier for your application.  This controls if the client can be installed side by side with other applications on the device.  Two applications with the same Bundle ID cannot be installed at the same time on a device. In Android, it is known as [application ID](https://developer.android.com/studio/build/application-id).
 
-    >`URLScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
-     If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. The default is `mdkclient`. This value needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device. If the value is not unique the wrong application may be referenced when redirecting.                  
+    >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
+     If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. This value `mdkcertclient` needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device.  If the value is not unique the wrong application may be referenced when redirecting.              
 
 4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click `com.sap.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
@@ -192,7 +191,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     <!-- border -->![MDK](img-3.6.png)
    
-5.  You also need to add the `"AllowCerts":true` property into the `ConnectionSettings` block.
+5. You also need to update the `AllowCerts` property to **true** into the `ConnectionSettings` block.
 
     <!-- border -->![MDK](img-3.7.png)
 
@@ -207,7 +206,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     **Demo**: If you want to access the app in the demo mode, you can configure required settings.    
 
-8. Add `mdkclient://oauth2redirect` in the `AllowedDomains` property.
+8. Add `mdkcertclient://oauth2redirect` in the `AllowedDomains` property.
 
     <!-- border -->![MDK](img-3.8.png)
 

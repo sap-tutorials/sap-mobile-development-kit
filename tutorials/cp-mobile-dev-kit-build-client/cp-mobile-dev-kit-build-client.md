@@ -184,11 +184,13 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     >`AppName`: This is the name of the folder where the client is created.
 
-     >`AndroidVersionCode`: The Android application version code. It accepts value 'Auto' or any positive integer value. If it is not defined, the default version code will be 1. For more details, [Android Application Version Code](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#android-application-version-code).
+    >`AndroidVersionCode`: The Android application version code. It accepts value 'Auto' or any positive integer value. If it is not defined, the default version code will be 1. For more details, [Android Application Version Code](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#android-application-version-code).
+
+    >`BaseProject`: The sub-directory of metadata where the project is found. For this tutorial, you don't have any subfolder under metadata, you can either keep it as it is or remove it completely.
 
     >`BundleID`: It should be a unique identifier for your application. This controls if the client can be installed side by side with other applications on the device. Two applications with the same Bundle ID cannot be installed at the same time on a device. For iOS this is the Identifier `(AppID)` that is registered in Apple Developer account since that determines if the application can be installed alongside other applications. If the `XCode` project is set up to use _Automatically manage signing_ then when building, `XCode` will automatically generate a signing profile for the specified bundle id. Without matching them, trying to run the custom client in iOS device will result in failure. In Android, it is known as [application ID](https://developer.android.com/build/configure-app-module#set_the_application_id).
 
-    >`URLScheme`: Allows you to specify a custom URL scheme which opens the client. The default is `mdkclient`. This value also needs to be unique across applications on your device. If the value is not unique the wrong application may be referenced when redirecting.
+    >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. The default is `mdkclient`. This value also needs to be unique across applications on your device. If the value is not unique the wrong application may be referenced when redirecting.
 
     >You can find more details about configuration of `MDKProject.json` file in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#configuration-of-mdkprojectjson-file) help documentation.        
 
@@ -203,6 +205,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
     <!-- border -->![MDK](img-3.7.png)
 
     Regarding other properties:
+
     **Debug settings**: The settings in the `DebugSettings` property are for development use and should not be enabled in a production setting.
 
     **Log Settings**: Set this to the log level to be used when the client is launched.
@@ -236,7 +239,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     <!-- border -->![MDK](img-3.11.png)
 
-3. Open the `MDKProject.json` file and update it as needed. This file has some build-time configurations such as the application name, version and bundle ID.
+3. Open the `MDKProject.json` file and update it as needed. This file has some build-time configurations such as the application name, version, bundle ID and few others.
 
     <!-- border -->![MDK](img-3.4.png)
 
@@ -261,6 +264,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
     <!-- border -->![MDK](img-3.7.png)
 
     Regarding other properties:
+
     **Debug settings**: The settings in the `DebugSettings` property are for development use and should not be enabled in a production setting.
 
     **Log Settings**: Set this to the log level to be used when the client is launched.
@@ -279,7 +283,6 @@ To use the SDK to generate a mobile development kit client, the first step is to
     <!-- border -->![MDK](img-3.8.png)        
 
 [OPTION END]
-
 
 
 ### Create the MDK Client
@@ -384,7 +387,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     ![MDK](img-5.9.1.png)
 
-    If there is any app metadata already deployed to Mobile Services, you will see `Update Now?` dialog box Otherwise you will see an empty screen.
+    If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
 
     ![MDK](img-5.10.png)
 
@@ -413,32 +416,30 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     ![MDK](img-5.13.1.png)
 
-5. In Welcome screen, you will notice that **app name**, **detailed label text** and **signing button text** have been updated as per changes done in step 3.
+5. In Welcome screen, you will notice that **app name**, **detailed label text** and **signing button text** have been updated as per changes done in step 3. Tap **Start** to connect MDK client to SAP Business Technology Platform (BTP).
 
     ![MDK](img-5.14.1.png)
 
-6. Tap **Start** to connect MDK client to SAP Business Technology Platform (BTP).
-
-7. Enter your BTP E-Mail, ID or Login Name to continue. 
+6. Enter your BTP E-Mail, ID or Login Name to continue. 
 
     ![MDK](img-5.15.png)
 
-8. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+7. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
 
     ![MDK](img-5.16.png)
 
-9. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
+8. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
 
     ![MDK](img-5.17.png)
 
-10. Confirm the passcode and tap **Done**.
+9. Confirm the passcode and tap **Done**.
 
     ![MDK](img-5.18.png)
 
     >Optionally, you can enable biometric authentication to get faster access to the app data.
     >![MDK](img-5.19.png)
 
-    If there is any app metadata already deployed to Mobile Services, you will see `Update Now?` dialog box Otherwise you will see an empty screen.
+    If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
 
     ![MDK](img-5.20.png)
 

@@ -290,7 +290,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
 2. Click **Create Build Job** to build your first build job.
 
-    <!-- border -->![MDK](img-4.1.png)
+    <!-- border -->![MDK](img-4.0.png)
 
 3. In the **Basic Information** step, select **Mobile Development Kit Client** from **Client Type** dropdown.
 
@@ -343,7 +343,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
 2. Click **Create Build Job** to build your first build job.
 
-    <!-- border -->![MDK](img-4.1.png)
+    <!-- border -->![MDK](img-4.0.png)
 
 3. In the **Basic Information** step, select **Customized Mobile Development Kit Client** from **Client Type** dropdown.
 

@@ -253,7 +253,7 @@ Paste the downloaded `google-services.json` file to `/DemoSampleApp.mdkproject/A
 
 [OPTION BEGIN [iOS]]
 
-1. Create a new file named as `app.entitlements` and place it under `/DemoSampleApp.mdkproject/App_Resources/iOS/` path.
+1. Create a new file named as `app.entitlements` and place it under `/DemoSampleApp.mdkproject/App_Resources_Merge/iOS/` path.
 
     <!-- border -->![MDK](img-3.2.png)
 
