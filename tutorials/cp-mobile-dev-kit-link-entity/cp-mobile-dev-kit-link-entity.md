@@ -144,6 +144,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
 ### Add cancel button on create Sales Order page
 
 
+
 Now, you will add a button on the Create Order page and set its `onPress` to `CloseModalPage_Cancel.action`.
 
 1. Drag and drop an **Action Bar Item** to the upper left corner of the action bar.

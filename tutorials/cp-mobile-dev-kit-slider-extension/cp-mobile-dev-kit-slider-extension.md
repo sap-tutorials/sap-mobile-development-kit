@@ -75,6 +75,7 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 5. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Slider` project in the project explorer.
 
 
+
 ### Register an Extension Control
 
 

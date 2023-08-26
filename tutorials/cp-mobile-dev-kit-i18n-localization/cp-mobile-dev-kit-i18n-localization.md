@@ -206,7 +206,7 @@ The [file name structure](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd
 
 For this tutorial, you will create the `i18n_de.properties` file for the German language.
 
-1. Navigate to `MDK_i18n_l10n` | `i18n`, right click on the `i18n.properties` and open it with Text Editor. 
+1. Navigate to `MDK_i18n_l10n` | `i18n`, right click on the `i18n.properties` and open it with Text Editor. Replace the existing content with below.
 
     ```JSON
     main_title=Main

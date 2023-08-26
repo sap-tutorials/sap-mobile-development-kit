@@ -482,7 +482,6 @@ Since you will display the customer's address in Google Maps on Android device, 
 
 7. Copy this generated key and save it locally. This will be required in step 7.
 
-
 ### Create Your Branded MDK Client (Required only for Android)
 
 
@@ -536,6 +535,7 @@ For Android, you will pass the API key to the MDK client, there is no way public
     ```
 
 5. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial.
+
 
 
 ### Run the MDK Client

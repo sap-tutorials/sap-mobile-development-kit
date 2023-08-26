@@ -169,6 +169,7 @@ Now, you will create a Navigation action that opens the `Customers_Detail.page` 
     >when an end-user selects a customer, the Customer Detail page will open. MDK automatically passes the selected customer to the detail page.
 
 
+
 ### Deploy the application
 
 

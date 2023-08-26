@@ -20,7 +20,6 @@ You may clone an existing project from [GitHub repository](https://github.com/SA
 
 ---
 
-
 To enhance your MDK app with customer order information, you need to carry out the following tasks:
 
 *  Create a new order list page

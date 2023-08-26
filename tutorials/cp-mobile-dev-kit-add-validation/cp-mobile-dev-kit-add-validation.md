@@ -152,6 +152,7 @@ Deploy the updated application to your MDK client.
     <!-- border -->![MDK](img-3.9.png)
     <!-- border -->![MDK](img-3.10.png)
 
+
 [OPTION END]
 
 Once you complete this tutorial you can continue with [Enhance Your First MDK App with Additional Functionalities](mission.mobile-dev-kit-enhance) mission.

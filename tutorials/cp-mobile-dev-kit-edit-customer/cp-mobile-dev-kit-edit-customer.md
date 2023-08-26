@@ -105,7 +105,6 @@ In this step, you will create a Section page with a Form Cell Section to contain
     >To streamline data entry, the keyboard displayed when editing a `SimplePropertyFormCell` should be appropriate for the type of content in the field. If your app asks for an email address, for example, it should display the email address keyboard.
 
 
-
 ### Add a cancel button on the Edit Customer page
 
 
