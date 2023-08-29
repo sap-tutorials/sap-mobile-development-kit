@@ -139,11 +139,11 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**.
+3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-4.2.png)  
 
-    >If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+    
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 

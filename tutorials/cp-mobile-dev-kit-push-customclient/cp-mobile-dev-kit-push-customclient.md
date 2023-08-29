@@ -205,7 +205,7 @@ To enable your app for push notifications, you need to carry out the following t
 
     <!-- border -->![MDK](img-2.2.png)
 
-3. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/Hybrid` | `com.sap.mdk.demo` | `Mobile Push Notification`. Paste the Server Key value in **Android** push settings in Mobile Services cockpit.
+3. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/Hybrid` | `com.sap.mdk.demo` | `Mobile Push Notification`. If you have selected _Predefined for_ option, switch to the empty value. You should see options showing up on the page. Paste the Server Key value in **Android** push settings in Mobile Services cockpit.
 
     <!-- border -->![MDK](img-2.3.png)
 
@@ -219,7 +219,7 @@ To enable your app for push notifications, you need to carry out the following t
 
     <!-- border -->![MDK](img-2.4.png)
 
-2. Provide the following details to the **Apple** panel and click **Save**.
+2. If you have selected _Predefined for_ option, switch to the empty value. You should see options showing up on the page. Provide the following details to the **Apple** panel and click **Save**.
 
 
     |  Field Name     | Value |

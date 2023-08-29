@@ -44,11 +44,11 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**.
+3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-1.2.png)
 
-    >If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+    
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
@@ -103,13 +103,17 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
    8. Replace the generated snippet with below code.
 
     ```JavaScript
+    /**
+    * Describe this function...
+    * @param {IClientAPI} clientAPI
+    */
     import * as geolocation from "@nativescript/geolocation";
     import { CoreTypes } from "@nativescript/core";
-    export default async function GetCoordinates(context) {
-        var logger = context.getLogger();
+    export default async function GetCoordinates(clientAPI) {
+        var logger = clientAPI.getLogger();
         console.log("Current Log Level: " + logger.getLevel());
         // check if geolocation is not enabled
-            var locationIsEnabled = await geolocation.isEnabled();
+        var locationIsEnabled = await geolocation.isEnabled();
         if (!locationIsEnabled) {
             // request for the user to enable it
             await geolocation.enableLocationRequest();
@@ -259,7 +263,7 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
     ```Java
     // add gradle dependencies here
     project.ext {
-    	googlePlayServicesVersion = "16.+"
+    	googlePlayServicesVersion = "21.+"
     }
     dependencies {
     	def googlePlayServicesVersion = project.googlePlayServicesVersion

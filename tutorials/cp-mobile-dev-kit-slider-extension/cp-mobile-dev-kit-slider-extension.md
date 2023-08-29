@@ -48,11 +48,11 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**.
+3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-1.2.png)
 
-    >If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+    
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
@@ -265,10 +265,14 @@ You will add this registered control as a Form Cell control in a section page.
 16. Replace the generated snippet with below code.
 
     ```JavaScript
-    export default function SetExtensionValue(context) {
+    /**
+    * Describe this function...
+    * @param {IClientAPI} clientAPI
+    */
+    export default function SetExtensionValue(clientAPI) {
         console.log("In SetExtensionValue");
-        let srcValue = context.getValue();
-        let targetCtrl = context.evaluateTargetPath("#Page:SliderExtension/#Control:MyExtensionControlName");
+        let srcValue = clientAPI.getValue();
+        let targetCtrl = clientAPI.evaluateTargetPath("#Page:SliderExtension/#Control:MyExtensionControlName");
         targetCtrl.setValue(srcValue);
     }
     ```

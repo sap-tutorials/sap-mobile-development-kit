@@ -46,11 +46,15 @@ You will add a rule to the Update action to run the validation before saving any
 6. Replace the generated snippet with below code.
 
     ```JavaScript
-    export default function EmailValidation(context) {
+    /**
+    * Describe this function...
+    * @param {IClientAPI} clientAPI
+    */
+    export default function EmailValidation(clientAPI) {
         //The following evaluateTargetPath will retrieve the current value of the email control
-        if ((context.evaluateTargetPath('#Control:FCEmail/#Value').indexOf('@')) === -1) {
+        if ((clientAPI.evaluateTargetPath('#Control:FCEmail/#Value').indexOf('@')) === -1) {
             //If email value does not contain @ display a validation failure message to the end-user
-            context.executeAction('/DemoSampleApp/Actions/ValidationFailure.action');
+            clientAPI.executeAction('/DemoSampleApp/Actions/ValidationFailure.action');
         } else {
             //If @ is present in the email value, return true to indicate validation is successful
             return true;

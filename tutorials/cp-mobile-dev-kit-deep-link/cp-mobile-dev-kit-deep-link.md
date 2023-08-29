@@ -50,11 +50,11 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**.
+3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-1.2.png)  
 
-    >If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+    
 
     >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
@@ -128,12 +128,16 @@ If you are building a custom version of Mobile development kit client, there you
     Replace the generated snippet with below code.
 
     ```JavaScript
-    export default function OpenSAPMobileCards(context) {
+    /**
+    * Describe this function...
+    * @param {IClientAPI} clientAPI
+    */
+    export default function OpenSAPMobileCards(clientAPI) {
         // Get the Nativescript Utils Module
-        const utilsModule = context.nativescript.utilsModule;
+        const utilsModule = clientAPI.nativescript.utilsModule;
         // Get the Nativescript Platform Module
-        const platformModule = context.nativescript.platformModule;
-        return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
+        const platformModule = clientAPI.nativescript.platformModule;
+        return clientAPI.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
             if (result.data) {
                 //This will open SAP Mobile Cards app
                 if (platformModule.isIOS) {
@@ -174,18 +178,22 @@ If you are building a custom version of Mobile development kit client, there you
 7. Repeat the same for the **Open sap.com page** button, create a new rule `OpenSAPcom` binding it's `OnPress Handler` event. Replace the generated snippet with below code.
 
     ```JavaScript
-        export default function OpenSAPcom(context) {
-            // Get the Nativescript Utils Module
-            const utilsModule = context.nativescript.utilsModule;
-            return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
-                if (result.data) {
-                    //This will open SAP.com website
-                    return utilsModule.openUrl("https://www.sap.com");
-                } else {
-                    return Promise.reject('User Deferred');
-                }
-            });
-        }
+    /**
+     * Describe this function...
+    * @param {IClientAPI} clientAPI
+    */
+    export default function OpenSAPcom(clientAPI) {
+        // Get the Nativescript Utils Module
+        const utilsModule = clientAPI.nativescript.utilsModule;
+        return clientAPI.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
+            if (result.data) {
+                //This will open SAP.com website
+                return utilsModule.openUrl("https://www.sap.com");
+            } else {
+                return Promise.reject('User Deferred');
+            }
+        });
+    }
     ```
 
 8. Save your changes to the `OpenSAPcom.js` file, if needed.
