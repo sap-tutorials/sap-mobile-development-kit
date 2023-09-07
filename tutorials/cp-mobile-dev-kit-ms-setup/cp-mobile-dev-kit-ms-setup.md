@@ -64,7 +64,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     <!-- border -->![MDK](img-2.3.1.png)    
 
-6. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown, select **Mobile Sample OData ESPM** to add a sample backend to your MDK app and then click **Finish**.
+6. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown if not there already, select **Mobile Sample OData ESPM** to add a sample backend to your MDK app and then click **Finish**.
 
     <!-- border -->![MDK](img-2.4.png)
 

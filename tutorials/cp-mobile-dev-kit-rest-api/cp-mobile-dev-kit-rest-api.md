@@ -88,7 +88,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     <!-- border -->![MDK](img-2.3.1.png)        
 
-6. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown and Click **Finish**.
+6. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown if not there already, and Click **Finish**.
 
     <!-- border -->![MDK](img-2.4.png)
 
