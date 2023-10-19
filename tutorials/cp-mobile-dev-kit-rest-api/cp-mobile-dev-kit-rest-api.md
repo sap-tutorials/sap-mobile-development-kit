@@ -84,7 +84,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     <!-- border -->![MDK](img-2.3.png)
 
-5. In the **Role Settings** step, uncheck **Enable Role Settings** option and click **Next** to navigate to further steps.
+5. In the **Role Settings** step, leave the settings as it is and click **Next** to navigate to further steps.
 
     <!-- border -->![MDK](img-2.3.1.png)        
 

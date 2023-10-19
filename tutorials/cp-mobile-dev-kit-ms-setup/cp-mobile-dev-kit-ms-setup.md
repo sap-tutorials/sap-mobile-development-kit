@@ -60,7 +60,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     <!-- border -->![MDK](img-2.3.png)
 
-5. In the **Role Settings** step, uncheck **Enable Role Settings** option and click **Next** to navigate to further steps.
+5. In the **Role Settings** step, leave the settings as it is and click **Next** to navigate to further steps.
 
     <!-- border -->![MDK](img-2.3.1.png)    
 

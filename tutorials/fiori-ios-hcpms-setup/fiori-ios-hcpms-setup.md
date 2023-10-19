@@ -33,13 +33,11 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 1. In your web browser, open the [SAP BTP cockpit](https://account.hana.ondemand.com/cockpit).
 
-2. Provide the login details and click **Log On**.
-
-    <!-- border -->![SAP BTP Log On Screen](img-1.1.png)
+2. Provide the login details to log on to your account.
 
 3. Enter your Global Account.
 
-    <!-- border -->![SAP BTP Global Account](img-1.2.png)
+    <!-- border -->![SAP BTP Global Account](img-1.1.png)
 
 [OPTION END]
 
@@ -47,13 +45,11 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 1. In your web browser, open the [SAP BTP Trial cockpit](https://account.hanatrial.ondemand.com/cockpit).
 
-2. Provide the login details and click **Log On**.
-
-    <!-- border -->![SAP BTP Log On Screen](img-1.1.png)
+2. Provide the login details to log on to your account.
 
 3. Navigate to the trial global account by clicking **Go To Your Trial Account**.
 
-    <!-- border -->![Trial global account](img-1.3.png)
+    <!-- border -->![Trial global account](img-1.2.png)
 
 [OPTION END]
 
