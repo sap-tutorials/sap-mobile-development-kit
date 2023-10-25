@@ -55,7 +55,7 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     <!-- border -->![MDK](img-1.4.png)
 
-5. In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Contact Cell Table** control onto the Page area.
+5. In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Contact Table** control onto the Page area.
 
     <!-- border -->![MDK](img-1.5.gif)
 
@@ -65,7 +65,6 @@ To create the Customer List page, you will create a **Section page** and drag th
     |----|----|
     | `Service`| Select `SampleServiceV2.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
-    | `QueryOptions` | `$orderby=LastName` |
 
     <!-- border -->![MDK](img-1.6.gif)
 
@@ -153,8 +152,6 @@ Now, you will add a button on the Main page and from there, you will navigate to
     <!-- border -->![MDK](img-2.7.png)
 
 ### Deploy the application
-
-
 
 Deploy the updated application to your MDK client.
 
