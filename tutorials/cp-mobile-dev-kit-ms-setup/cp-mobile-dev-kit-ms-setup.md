@@ -39,11 +39,11 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 1. Navigate to [SAP Mobile Services cockpit](fiori-ios-hcpms-setup).
 
-2. On the home screen, select **Create new app** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
+2. On the home screen, click **Create new app** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
 
     <!-- border -->![MDK](img-2.1.png)
 
-3. In the **Basic Info** step, provide the required information and click **Next**.
+3. In the **Basic Info** step, provide the required information and choose **Next**.
 
     | Field | Value |
     |----|----|
@@ -56,19 +56,19 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     >Other fields are optional. For more information about these fields, see [Creating Applications](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/manage.html#creating-applications) in the SAP documentation.
 
-4. In the **XSUAA Settings** step, continue with the default settings and click **Next** to navigate to further steps.
+4. In the **XSUAA Settings** step, continue with the default settings and choose **Next** to navigate to further steps.
 
     <!-- border -->![MDK](img-2.3.png)
 
-5. In the **Role Settings** step, leave the settings as it is and click **Next** to navigate to further steps.
+5. In the **Role Settings** step, leave the settings as it is and choose **Next** to navigate to further steps.
 
     <!-- border -->![MDK](img-2.3.1.png)    
 
-6. In the **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown if not there already, select **Mobile Sample OData ESPM** to add a sample backend to your MDK app and then click **Finish**.
+6. In the **Assign Features** step, select **Mobile Development Kit Application** from the dropdown if it's not already selected and then click on **Finish**.
 
     <!-- border -->![MDK](img-2.4.png)
 
-    >If you see a _Application without Role Settings_ warning message, click **OK**. You may assign roles after the app has been configured, if needed.
+    >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured, if needed.
 
     Once you have created your application, you see a list of default features have been automatically assigned to the app.
 
@@ -76,10 +76,31 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     >You can find more information on available features in SAP Mobile Services in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/features.html).
 
+### Add Mobile Sample Service to your Application Configuration
 
+A [sample OData](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/backend-connectivity/common/sample.html) Enterprise Sales and Procurement Model (ESPM) service is available in Mobile Services cockpit for developers to use during development and testing. For MDK tutorials, you will be using this service. You can of course add your OData or REST service connecting to your backend system as covered in the next step.
+
+1. Click on the `+` icon next to the **Assigned Features**. 
+
+    <!-- border -->![MDK](img-2.5.1.png)
+
+2. Choose **`Mobile Sample OData ESPM`** from the feature list and choose **OK**.
+
+    <!-- border -->![MDK](img-2.5.2.png)
+    
+ 3. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
+
+    <!-- border -->![MDK](img-2.5.3.gif)
+
+    >When you view the data, you might see something like this instead of the nicely formatted output from above.
+    ><!-- border -->![MDK](img-2.5.4.png)
+    >However, this doesn’t mean you’ve made a mistake in the tutorial. Rather, this is the correct output without any formatting. If you’d like to see a formatted output in your browser, you can add an `JSON Formatter` extension to your browser. 
 
 ### Create a new destination to your MDK Mobile application
 
+Assigning the `Mobile Sample OData ESPM` feature to your application configuration automatically creates a destination named `com.sap.edm.sampleservice.v2` in the `Mobile Connectivity`. 
+
+This `com.sap.edm.sampleservice.v2` destination is immutable. However, for other tutorials where you need to add additional details, simply create a new destination by copying the settings from that destination.
 
 1. Click **Mobile Connectivity**.  
 

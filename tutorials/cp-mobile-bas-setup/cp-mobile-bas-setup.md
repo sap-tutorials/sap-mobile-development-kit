@@ -22,7 +22,6 @@ SAP Business Application Studio is the next-generation web-based IDE hosted on S
 
 ---
 
-
 ### Open SAP Business Application Studio and create your Dev Space
 
 
@@ -52,6 +51,7 @@ For this tutorial, you will create a dev space personalized for Mobile developme
 1. Click on the Explorer icon and click  **Open Folder**.
 
     <!-- border -->![BAS New Space](img-2.1.png)
+    
 2. Select the `projects` folder if not already selected and click **OK**.
 
     <!-- border -->![BAS New Space](img-2.2.png)
@@ -64,6 +64,6 @@ For this tutorial, you will create a dev space personalized for Mobile developme
 
 Congratulations, you have successfully configured SAP Business Application Studio to build multi-channel applications.
 
-You can now build [**Mobile Development Kit apps**](mission.mobile-dev-kit-get-started) or [**SAP Mobile Cards apps**](https://developers.sap.com/tutorial-navigator.html?tag=products:content-and-collaboration/sap-mobile-cards) using Business Application studio.
+You can now build [**Mobile Development Kit apps**](mission.mobile-dev-kit-get-started) using Business Application studio.
 
 ---
