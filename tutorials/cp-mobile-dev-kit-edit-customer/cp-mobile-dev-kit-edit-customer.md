@@ -44,7 +44,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.3.png)
 
-4. Now, you will add the fields (like first name, last name, phone & email address) that will be editable by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
+4. Now, you will add the fields (like first name, last name, phone & email address) that will be editable by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell** section onto the Page area.
 
     <!-- border -->![MDK](img-1.3.1.gif)
 
@@ -341,16 +341,13 @@ Deploy the updated application to your MDK client.
 
     ><!-- border -->![MDK](img-5.4.png)
 
-
-
 ### Run the app
-
 
 >Make sure you are choosing the right device platform tab above.
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-6.1.png)
 
@@ -374,11 +371,11 @@ Deploy the updated application to your MDK client.
 
     Since this is an Offline application, new entry is added to the request queue of the local store which needs to be sent or uploaded to the backend explicitly.  
 
-    >MDK Base template has added a **Sync** button on main page of the app to upload local changes from device to the backend and to download the latest changes from backend to the device. Actions | Service | `UploadOffline.action` & `DownloadOffline.action`.
+    >MDK template has added a **Sync Changes** option in the user menu on main page of the app to upload local changes from device to the backend and to download the latest changes from backend to the device. Actions | Service | `UploadOffline.action` & `DownloadOffline.action`.
 
-5. On Main page, tap **Sync**, a successful message will be shown.
+5. Tap on **Sync Changes** in the user menu On Main page to push the local changes to the backend, a successful message will be shown once data is submitted.
 
-    ![MDK](img-6.5.png)
+    ![MDK](img-6.5.gif)
 
 Now, refresh the URL to check if record has been updated in the backend. As Sync is pressed, `UploadOffline.action` gets triggered to upload local changes from device to the backend and on success of this call, `DownloadOffline.action` is being called.
 
@@ -388,7 +385,7 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-6.7.png)
 
@@ -412,11 +409,11 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
     Since this is an Offline application, new entry is added to the request queue of the local store which needs to be sent or uploaded to the backend explicitly.  
 
-    >MDK Base template has added a **Sync** button on main page of the app to upload local changes from device to the backend and to download the latest changes from backend to the device. Actions | Service | `UploadOffline.action` & `DownloadOffline.action`.
+    >MDK Base template has added a **Sync Changes** option in the user menu on main page of the app to upload local changes from device to the backend and to download the latest changes from backend to the device. Actions | Service | `UploadOffline.action` & `DownloadOffline.action`.
 
-4. On Main page, tap **Sync**, a successful message will be shown.
+4. Tap **Sync Changes** in the user menu On the Main page to push the local changes to the backend, a successful message will be shown once data is submitted.
 
-    ![MDK](img-6.9.png)
+    ![MDK](img-6.9.gif)
 
 Now, refresh the URL to check if record has been updated in the backend. As Sync is pressed, `UploadOffline.action` gets triggered to upload local changes from device to the backend and on success of this call, `DownloadOffline.action` is being called.
 

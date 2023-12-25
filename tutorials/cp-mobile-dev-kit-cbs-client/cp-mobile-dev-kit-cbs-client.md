@@ -40,7 +40,6 @@ After a successful build, you can download the APK or IPA file.
 
 ### Generate required configuration to build the MDK client
 
-
 >Make sure you are choosing the right device platform tab above.
 
 [OPTION BEGIN [Android]]

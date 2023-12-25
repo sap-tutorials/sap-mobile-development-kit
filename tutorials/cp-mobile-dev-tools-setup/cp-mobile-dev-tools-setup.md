@@ -19,7 +19,6 @@ author_profile: https://github.com/jitendrakansal
 
 ### Enable Mobile Services app development tools extension
 
-
 1. In SAP Web IDE, open **Preferences** window by clicking the gear icon and click **Extensions**.
 
     <!-- border -->![MDK](img-1.png)

@@ -27,7 +27,7 @@ author_profile: https://github.com/jitendrakansal
   - How to use `RestService SendRequest` Action to make directly call to `Petstore` API
 
 ## Intro
-You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app) and start directly with step 7 or 17 in this tutorial but make sure you complete step 2&3.
+You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app) and start directly with step 15 in this tutorial but make sure you complete step 2&3.
 
 ---
 
@@ -98,7 +98,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     <!-- border -->![MDK](img-2.5.png)
 
-8. Click **Create** icon to add a new destination.  
+8. Click **+** icon to add a new destination.  
 
     <!-- border -->![MDK](img-2.6.png)
 
@@ -139,13 +139,11 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-4.2.png)  
 
-    
-
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -368,11 +366,11 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-10.3.png)
 
-4. Now, you will add the fields (Pet name and Status) for creating a new pet record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area. 
+4. Now, you will add the fields (Pet name and Status) for creating a new pet record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell** section onto the Page area. 
 
     <!-- border -->![MDK](img-10.3.1.gif)
 
-    >Form Cell Section is used to contain Form Cell controls in a section page.
+    >Form Cell section is used to contain Form Cell controls in a section page.
 
 5. You will now add Form Cell controls in the Form Cell Section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
 
@@ -460,6 +458,9 @@ After filling-up the details for creating a new pet record, you will send these 
 
     >You can find more details about `SendRequest` action in [help documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/RestService/SendRequest.schema.html).
 
+10. When the `CreatePet.action` is successful, you may want to close the page. Expand the **Common Action Properties** and bind the **Success Action** to the `CloseModalPage_Complete.action`.
+
+    <!-- border -->![MDK](img-14.1.png)
 
 ### Add cancel button on create pet page
 
@@ -518,39 +519,7 @@ You will add a button to the `Main.page` called **Add**. When you click on this 
 
     <!-- border -->![MDK](img-13.3.png)
 
-### Create Close Page Complete action
-
-
-Now, you will create a new action `ClosePage_Complete.action` that will be called after `CreatePet.action` is successful.
-
-1. Right-click the **Actions** folder | **MDK: New Action** | choose **UI** in **Category** | click **Close Page** | **Next**.
-
-2. In the **Base Information**, provide the below information and click **Finish**.
-
-    | Property | Value |
-    |----|----|
-    | `Name`| `ClosePage_Complete` |
-    | `DismissModal` | Select `Completed` from the dropdown |
-    | `CancelPendingActions`| Select `false` from the dropdown |
-
-    <!-- border -->![MDK](img-14.1.png)
-
-4. Next, define _Success_ actions for `CreatePet.action`.
-
-    Open `CreatePet.action` in the action editor, expand the **Common Action Properties** and provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Success Action` | Click link icon and bind it to `CloseModalPage_Complete.action` |     
-
-    <!-- border -->![MDK](img-14.2.png)
-
-    >When `CreatePet.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered. You may create a message action and set it as failure action if  `CreatePet.action` fails.
-
-
-
 ### Redeploy the application
-
 
 Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then select deploy target as **Mobile & Cloud**.
 
@@ -564,7 +533,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-16.1.png)
 
@@ -580,7 +549,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-16.4.png)
 

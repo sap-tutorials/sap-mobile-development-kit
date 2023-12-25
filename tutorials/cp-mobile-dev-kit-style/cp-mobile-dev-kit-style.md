@@ -46,13 +46,11 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-1.2.png)
 
-    
-
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -283,7 +281,7 @@ The On-boarding QR code is now displayed.
 
 1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
-    After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync** and **Update** options at bottom of the page. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed. In Main page, you will notice styling on action bar, tool bar, items (Logout & Sync) available on tool bar and `Customers` button.
+    After you accept the app update, you will see the list of entities on the **Main** page and a user menu that includes options to Sync changes, support, check for updates, reset the app. The Main page has been styled.
 
     ![MDK](img-5.3.png)
 
@@ -303,7 +301,7 @@ The On-boarding QR code is now displayed.
 
 1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
-    After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync**, and **Update** options at bottom of the page. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed. In Main page, you will notice styling on action bar, tool bar, items (Logout & Sync) available on tool bar and `Customers` button.
+    After you accept the app update, you will see the list of entities on the **Main** page and a user menu that includes options to Sync changes, support, check for updates, reset the app. The Main page has been styled.
 
     ![MDK](img-5.6.png)
 
@@ -326,7 +324,7 @@ The On-boarding QR code is now displayed.
     >You can also open the MDK web application by accessing its URL from `.project.json` file.
     <!-- border -->![MDK](img-5.10.png)
 
-    You will see the list of entities on the **Main** page, and **Logout** options at bottom of the page. Click any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed. In Main page, you will notice styling on action bar, tool bar, items (Logout & Sync) available on tool bar and `Customers` button.
+    You will see the list of entities on the **Main** page and a user menu option. The Main page has been styled.
 
     <!-- border -->![MDK](img-5.11.png)
 

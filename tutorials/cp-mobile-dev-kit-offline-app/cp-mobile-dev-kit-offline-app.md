@@ -39,13 +39,11 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-1.2.png)
 
-    
-
-    >This screen will only show up when your CF login session has expired. Enter your login credentials or SSO Passcode, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -169,7 +167,7 @@ The On-boarding QR code is now displayed.
 
 Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
-After you accept the app update, you will see the **Main** page (with **Logout**, **Sync** and **Update** options at bottom of the page) being displayed and Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
+After you accept the app update, you will see the **Main** page and a user menu that includes options to Sync changes, support, check for updates, reset the app. An Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
 
 ![MDK](img-5.1.png)
 
@@ -181,7 +179,7 @@ After you accept the app update, you will see the **Main** page (with **Logout**
 
 Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
-After you accept the app update, you will see the **Main** page (with **Logout**, **Sync** and **Update** options at bottom of the page) being displayed and Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
+After you accept the app update, you will see the **Main** page and a user menu that includes options to Sync changes, support, check for updates, reset the app. An Offline store will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
 
 ![MDK](img-5.2.png)
 
@@ -196,7 +194,7 @@ After you accept the app update, you will see the **Main** page (with **Logout**
     >You can also open the MDK web application by accessing its URL in *CF* from `.project.json` file.
     <!-- border -->![MDK](img-5.4.png)
 
-    You will see the **Main** page (with **Logout** option at bottom of the page) and application data service will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
+    You will see the **Main** page and a user menu on the top right corner. The application data service will be initialized. **Since you selected the Base template during the project creation, which generated this empty page without any UI controls on it. In next tutorials, you will add some UI controls to this page and create more pages.**
 
     <!-- border -->![MDK](img-5.5.png)
 

@@ -62,13 +62,11 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-2.2.png)  
 
-    
-
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -270,15 +268,12 @@ The On-boarding QR code is now displayed.
 
 1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
-2. After you accept the app update, you will notice that it will first ask permission to display notifications.
+2. After accepting the app update, allow the permission to display notifications. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
 
-    <!-- border -->![MDK](img-7.5.png)
-
-3. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
-
+    ![MDK](img-7.5.png)
     ![MDK](img-7.6.png)
 
-4. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
+3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
     Navigate to Mobile Services cockpit. In **Mobile Push Notification** feature, switch to **Push Registrations** tab.
 
@@ -286,7 +281,7 @@ The On-boarding QR code is now displayed.
 
     <!-- border -->![MDK](img-7.7.png)
 
-12. In notification dialog, type a notification message and click **Send**.
+4. In notification dialog, type a notification message and click **Send**.
 
     <!-- border -->![MDK](img-7.3.png)
 

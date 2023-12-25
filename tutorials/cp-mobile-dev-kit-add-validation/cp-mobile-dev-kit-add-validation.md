@@ -117,7 +117,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-3.1.png)
 
@@ -130,7 +130,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-3.4.png)
 

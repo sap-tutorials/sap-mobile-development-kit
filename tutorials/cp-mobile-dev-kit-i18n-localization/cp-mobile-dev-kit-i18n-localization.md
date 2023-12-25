@@ -52,13 +52,13 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-2.2.png)
     
     
 
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -137,11 +137,11 @@ The On-boarding QR code is now displayed.
 
 1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
-    After you accept app update, you will see the `Main` page (with `Logout`, `Sync` and `Update` options at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
+    After you accept app update, you will see the `Main` page and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
 
     ![MDK](img-4.3.png)
 
-    In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, `Logout`, `Sync` and `Update`) to their respective localized strings in the German language.
+    In the next steps, you will learn how to translate the UI texts on this screen, including phrases such as `Main`, `Customers`, and `SalesOrderHeaders`, as well as items in the user menu like `Sync Changes` and `Check for Updates`, and `Reset` into their respective localized strings in the German language.
 
 2. Tap `SalesOrderHeaders` to navigate to Sales order List.
 
@@ -155,11 +155,11 @@ The On-boarding QR code is now displayed.
 
 1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
-    After you accept app update, you will see the `Main` page (with `Logout`, `Sync`, and `Update` options at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
+    After you accept app update, you will see the `Main` page and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
 
     ![MDK](img-4.5.png)
 
-    In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, `Logout`, `Sync`, and `Update`) to their respective localized strings in the German language.
+    In the next steps, you will learn how to translate the UI texts on this screen, including phrases such as `Main`, `Customers`, and `SalesOrderHeaders`, as well as items in the user menu like `Sync Changes` and `Check for Updates`, and `Reset` into their respective localized strings in the German language.
 
 2. Tap `SalesOrderHeaders` to navigate to Sales Order List.
 
@@ -176,11 +176,11 @@ The On-boarding QR code is now displayed.
     >You can also open the MDK web application by accessing its URL from `.project.json` file.
     <!-- border -->![MDK](img-4.8.png)
 
-    You will see the `Main` page (with `Logout` option at bottom of the page) and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
+    You will see the `Main` page and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
 
     <!-- border -->![MDK](img-4.9.png)
 
-    In next steps, you will learn how to translate the UI texts on this screen (`Main`, `Customers`, `SalesOrderHeaders`, and `Logout`) to their respective localized strings in the German language.
+    In the next steps, you will learn how to translate the UI texts on this screen, including phrases such as `Main`, `Customers`, and `SalesOrderHeaders` into their respective localized strings in the German language.
 
 2. Click `SalesOrderHeaders` to navigate to Sales Order List.
 
@@ -212,9 +212,8 @@ For this tutorial, you will create the `i18n_de.properties` file for the German 
     main_title=Main
     customers_title=Customers
     salesOrderHeaders_title=SalesOrderHeaders
-    logout_button=Logout
-    sync_button=Sync
-    update_button=Update
+    support_popovermenuitem=Support
+    about_popovermenuitem=About
     ```
 
     <!-- border -->![MDK](img-5.1.png)
@@ -227,20 +226,19 @@ For this tutorial, you will create the `i18n_de.properties` file for the German 
 
     <!-- border -->![MDK](img-5.2.png)
 
-3. Enter the file **Name** as `i18n_de`, click  **Finish**.
+3. Enter the file **Name** as `i18n_de`, click **Finish**.
 
     <!-- border -->![MDK](img-5.3.png)
 
-4. Copy and paste the below information:
+4. Open the newly created `i18n_de.properties` file in the `i18n Editor` by clicking on the file. Then, provide the following values for the existing keys in `i18n_de` column.
 
-    ```JSON
-    main_title=Haupt
-    customers_title=Kunden
-    salesOrderHeaders_title=Kundenaufträge
-    logout_button=Ausloggen
-    sync_button=Synchronisieren
-    update_button=Aktualisieren
-    ```
+    | Key | Value |
+    |----|----|
+    | `main_title` | `Haupt` |
+    | `customers_title` | `Kunden` |
+    | `salesOrderHeaders_title` | `Kundenaufträge` |
+    | `support_popovermenuitem` | `Unterstützung` |
+    | `about_popovermenuitem` | `Über` |
 
     <!-- border -->![MDK](img-5.4.png)
 
@@ -289,7 +287,9 @@ You will use the Localizable String function to add language support on the Main
 
     <!-- border -->![MDK](img-6.3.png)
 
-4. Finally, update the **Caption** for both `Logout`, `Sync`, and `Update` Toolbar items.
+4. Navigate to **Actions** **&rarr;** **Application** **&rarr;** `UserMenuPopover.action` and update the **Title** for both `Support` and `About` Popover items to `$(L,'support_popovermenuitem')` and `$(L,'about_popovermenuitem')` respectively.
+
+    <!-- border -->![MDK](img-6.4.png)
 
 You can find more information about Localized String formatter in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#localized-string-formatter).   
 
@@ -393,7 +393,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-9.1.png)
 
@@ -404,6 +404,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 3. Go to your device settings and change the device language to Deutsch. Relaunch the MDK client, you will now notice the localized strings on main page.
 
     ![MDK](img-9.3.png)
+    ![MDK](img-9.3.1.png)    
 
 4. Tap **`Kundenaufträge`** to navigate to Sales order list page. You will notice the updated formatter values as per device's current locale and timezone.    
 
@@ -413,7 +414,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-9.5.png)
 
@@ -421,9 +422,10 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
     ![MDK](img-9.6.png)
 
-3. Change the device language to German. (Settings>General>Language & Region>iPhone Language). Relaunch the MDK client, you will now notice the localized strings on main page.
+3. Change the device language to German. (Settings>General>Language & Region>Preferred Languages). Relaunch the MDK client, you will now notice the localized strings on main page.
 
     ![MDK](img-9.7.png)
+    ![MDK](img-9.7.1.png)
 
 4. Tap **`Kundenaufträge`** to navigate to Sales order list page. You will notice the updated formatter values as per device's current locale and timezone.    
 

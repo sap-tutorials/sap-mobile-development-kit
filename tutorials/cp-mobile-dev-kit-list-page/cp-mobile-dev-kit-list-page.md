@@ -35,7 +35,7 @@ To enhance your MDK app with customer list information, you need to carry out th
 
 This page is a searchable list that displays all customers.
 
-To create the Customer List page, you will create a **Section page** and drag the Customer **Contact Cell Table** control onto the page. In the property palette, you will link the control to the Customer Collection and then map data and actions to different areas of the cell object in the property palette. One nice feature about the **Contact Cell Table** control is that it has icons that can activate device functionality such as phone, email, video and more.
+To create the Customer List page, you will create a **Section page** and drag the Customer **Contact Cell Table** control onto the page. In the property palette, you will link the control to the Customer Collection and then map data and actions to different areas of the cell object in the property palette. One nice feature about the **Contact Table** control is that it has icons that can activate device functionality such as phone, email, video and more.
 
 1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page**.
 
@@ -179,7 +179,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-4.1.png)
 
@@ -197,7 +197,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-4.4.png)
 
@@ -222,7 +222,6 @@ Deploy the updated application to your MDK client.
 1. Either click the highlighted button or refresh the web page to load the changes.
 
     <!-- border -->![MDK](img-4.8.png)
-
 
     >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
 

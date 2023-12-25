@@ -237,7 +237,6 @@ You have now successfully configured the APNS Endpoint on the server side in Mob
 [OPTION END]
 
 
-
 ### Place push files in local MDK project
 
 
@@ -320,15 +319,12 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-m
 
 1. Follow step 5 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
 
-2. Once you accept the App update, you will also notice that it will first ask permission to display notifications.
+2. After accepting the app update, allow the permission to display notifications. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
 
-    <!-- border -->![MDK](img-5.6.png)
-
-3. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
-
+    ![MDK](img-5.7.1.png)
     ![MDK](img-5.7.png)
 
-4. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
+3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
     Navigate to Mobile Services cockpit. In **Mobile Push Notification** feature, switch to **Push Registrations** tab.
 
@@ -337,7 +333,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-m
     <!-- border -->![MDK](img-5.8.png)
     
 
-5. In notification dialog, type a notification message and click **Send**.
+4. In notification dialog, type a notification message and click **Send**.
 
     <!-- border -->![MDK](img-5.3.png)
 

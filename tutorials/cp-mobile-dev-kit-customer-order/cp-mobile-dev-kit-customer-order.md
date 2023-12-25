@@ -123,7 +123,6 @@ This page will display customer orders list, you will add an **Object Table** co
 
 ### Create a new order details page
 
-
 This page will show related details for an order. In this page, you will add an **Object Header** control that is used to display information (like first name, last name, date of birth, email address & phone number) about the header of an object and **Static Key Value** control to display key value pair items like address, city, postal code & country.
 
 1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section** | **Next**.
@@ -211,29 +210,35 @@ This page will show related details for an order. In this page, you will add an 
 
 ### Navigate from Customer Order Page to Order Details Page
 
+When a user taps an order on the Customer Orders page, it should navigate to the related details page. 
+    
+The MDK template generates some generic actions, such as `GenericNavigation.action`, that can be reused at many places in your project and can be overridden with specific information. Of course, you can also create a new action, as you have done in previous tutorials. 
 
-When user taps an Order on the Customer Orders page, it should navigate to related details page.
-
-1. In the `Customers_Orders.page`, select the Object Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+1. In the `Customers_Orders.page`, select the Object Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Object Browser`.
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Keep the default selection for the *Object Type* as Action and *Folders* path.
+2. Select `GenericNavigation.action` and click **OK**. 
 
     <!-- border -->![MDK](img-3.2.png)   
 
-3. In the **Template Selection** step, choose **UI** in **Category** | click **Navigation** | **Next**.
+3. The `OnPress` event has been bound to the `GenericNavigation.action`. You will now override its properties. Click the 3 dots icon for the `OnPress` property and select `Overrides`.
 
-4. In the **Base Information** step, provide the below information:
+    <!-- border -->![MDK](img-3.3.png)   
+
+4. In the **Override Action Properties** window, provide the below information and click **OK** to complete the action override process.
 
     | Field | Value |
     |----|----|
-    | `Name`| `NavToSalesOrders_Details` |
     | `PageToOpen` | Select `SalesOrders_Details.page` from the dropdown |
 
-    <!-- border -->![MDK](img-3.3.png)
+    <!-- border -->![MDK](img-3.4.png)
 
-5. Click **Finish** to complete the action creation process.
+    >You can find more details about [Override Action](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/definitions/OverrideAction.schema.html) in documentation.
+
+6. You will notice that the `Overrides` option under the `OnPress` event is now highlighted, indicating that the bound action is overridden. You can also view the overidden details in the page code editor by right-clicking on the `Customers_Orders.page` and opening it with text Editor.
+
+    <!-- border -->![MDK](img-3.5.png)
 
 ### Display top 5 orders in customer detail page
 
@@ -296,14 +301,21 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     <!-- border -->![MDK](img-4.6.png)
 
-8. You may also want to open `SalesOrders_Detail.page` when clicking on any order in `Customers_Detail.page`. For this, you will set the  `OnPress` event of the **Object Table** and link it to `NavToSalesOrders_Details.action` so that when an end-user selects a order, the Order Details page will open. MDK automatically passes the selected order to the details page.
-
-    In `Customers_Detail.page`, select the Object Collection, click the 3 dots icon under the **Events** tab for the `OnPress` event to open the **Object Browser**.
-
-    Double-click the `NavToSalesOrders_Details.action` and click **OK** to set it as the `OnPress` action.
+8. You may also want to open `SalesOrders_Detail.page` when clicking on any order in `Customers_Detail.page`. In `Customers_Detail.page`, select the Object Table, click the 3 dots icon under the **Events** tab for the `OnPress` event to open the **Object Browser**. Select `GenericNavigation.action` and click **OK**. 
 
     <!-- border -->![MDK](img-4.7.png)
 
+9.  You will now override its properties. Click the 3 dots icon for the `OnPress` property and select `Overrides`.
+
+    <!-- border -->![MDK](img-4.8.png)
+
+10. In the **Override Action Properties** window, provide the below information and click **OK** to complete the action override process.
+
+    | Field | Value |
+    |----|----|
+    | `PageToOpen` | Select `SalesOrders_Details.page` from the dropdown |
+
+    <!-- border -->![MDK](img-4.9.png)
 
 ### Add Header control to orders grid
 
@@ -322,7 +334,7 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     <!-- border -->![MDK](img-5.2.png)
 
-    >You can find more details about [Header control](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Common/Header.schema.html).
+    >You can find more details about [Header control](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Common/Header.schema.html) in documentation.
 
 
 ### Add Footer control to show total order count
@@ -342,11 +354,11 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     <!-- border -->![MDK](img-6.3.png)
    
-4. In the **Base Information** step, enter the Rule name as`Customers_OrderCount`, and then click **Finish** to complete the rule creation process.
+4. In the **Base Information** step, enter the Rule name as `Customers_OrderCount`, and then click **Finish** to complete the rule creation process.
 
     <!-- border -->![MDK](img-6.4.png)
 
-6. Copy and paste the following code.
+5. Copy and paste the following code.
 
     ```JavaScript
     /**
@@ -363,7 +375,7 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
     }
     ```
 
-7. Switch back to the `Customers_Detail.page` and provide the below information for other properties of the Footer control:
+6. Switch back to the `Customers_Detail.page` and provide the below information for other properties of the Footer control:
 
     | Property | Value |
     |----|----|
@@ -375,28 +387,23 @@ When user taps an Order on the Customer Orders page, it should navigate to relat
 
     >You can find more details about [Footer control](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Common/Footer.schema.html).
 
-8.  You may also want to open **Customer Orders** page when clicking **See All** to see a complete list of orders belong to a particular customer. 
+7. You may also want to open **Customer Orders** page when clicking **See All** to see a complete list of orders belong to a particular customer. 
     
-    Navigate to the **Events** tab for the Footer control. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+    Navigate to the **Events** tab for the Footer control. Click the 3 dots icon for the `OnPress` property and select the `Object Browser`. Bound it to the `GenericNavigation.action`.
 
     <!-- border -->![MDK](img-6.6.png)
 
-9. Keep the default selection for the *Object Type* as Action and *Folders* path.
+8. You will now override its properties. Click the 3 dots icon for the `OnPress` property and select `Overrides`. 
 
-    <!-- border -->![MDK](img-3.2.png)  
+    <!-- border -->![MDK](img-6.7.png)
 
-10. In the **Template Selection** step, choose **UI** in **Category** | click **Navigation** | **Next**.
-
-11. In the **Base Information** step, provide the below information:
+9. In the **Override Action Properties** window, provide the below information and click **OK** to complete the action override process.
 
     | Field | Value |
     |----|----|
-    | `Name`| `NavToCustomers_Orders` |
     | `PageToOpen` | Select `Customers_Orders.page` from the dropdown |    
     
-    <!-- border -->![MDK](img-6.7.png)
-
-12. Click **Finish** to complete the action creation process.
+    <!-- border -->![MDK](img-6.8.png)
 
 ### Deploy the application
 
@@ -420,7 +427,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-8.1.png)
 
@@ -444,7 +451,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-8.6.png)
 

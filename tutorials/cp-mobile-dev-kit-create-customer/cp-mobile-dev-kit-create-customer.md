@@ -44,13 +44,13 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.3.png)
 
-4. Now, you will add the fields (like first name, last name, phone, email address & date of birth) for creating a new customer record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
+4. Now, you will add the fields (like first name, last name, phone, email address & date of birth) for creating a new customer record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell** section onto the Page area.
 
     <!-- border -->![MDK](img-1.3.1.gif)
 
-    >Form Cell Section is used to contain Form Cell controls in a section page.
+    >Form Cell section is used to contain Form Cell controls in a section page.
     
-5. You will now add Form Cell controls in the Form Cell Section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
+5. You will now add Form Cell controls in the Form Cell section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
 
     <!-- border -->![MDK](img-1.4.gif)
 
@@ -316,7 +316,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-7.1.png)
 
@@ -330,9 +330,9 @@ Deploy the updated application to your MDK client.
 
     Since this is an Offline application, new entry is added to the request queue of the local store which needs to be sent or uploaded to the backend explicitly.  
 
-    >MDK base template has added a **Sync** button on main page of the app to upload local changes from device to the backend and to download the latest changes from backend to the device. Actions | Service | `UploadOffline.action` & `DownloadOffline.action`.
+    >MDK template has added a **Sync Changes** option in the user menu on main page of the app to upload local changes from device to the backend and to download the latest changes from backend to the device. Actions | Service | `UploadOffline.action` & `DownloadOffline.action`.
 
-4. On Main page, tap **Sync**, a successful message will be shown.
+4. Tap on **Sync Changes** in the user menu On Main page to push the local changes to the backend, a successful message will be shown once data is submitted.
 
     ![MDK](img-7.3.png)
 
@@ -340,7 +340,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-7.4.png)
 
@@ -358,9 +358,9 @@ Deploy the updated application to your MDK client.
 
     Since this is an Offline application, new entry is added to the request queue of the local store which needs to be sent or uploaded to the backend explicitly.  
 
-    >MDK base template has added a **Sync** button on main page of the app to upload local changes from device to the backend and to download the latest changes from backend to the device. Actions | Service | `UploadOffline.action` & `DownloadOffline.action`.
+    >MDK template has added a **Sync Changes** option in the user menu on main page of the app to upload local changes from device to the backend and to download the latest changes from backend to the device. Actions | Service | `UploadOffline.action` & `DownloadOffline.action`.
 
-4. On `Main` page, tap **Sync**, a successful message will be shown. As Sync is pressed, `UploadOffline.action` gets triggered to upload local changes from device to the backend and on success of this call, `DownloadOffline.action` is being called.
+4. Tap on **Sync Changes** in the user menu On Main page to push the local changes to the backend, a successful message will be shown once data is submitted. 
 
     ![MDK](img-7.8.png)
 

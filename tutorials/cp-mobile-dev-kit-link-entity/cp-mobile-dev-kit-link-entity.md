@@ -247,40 +247,34 @@ The next step is to store newly created record locally for an offline applicatio
 
     <!-- border -->![MDK](img-3.11.png)
 
-13. Create a message action displaying error in case of the create failure. In the `SalesOrderHeaders_CreateEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
+13. Create a message action displaying error in case of the create failure. 
+
+ The MDK template generates some generic actions, such as `GenericMessageBox.action`, that can be reused at many places in your project and can be overridden with specific information. Of course, you can also create a new action, as you have done in previous tutorials. 
+
+In the `SalesOrderHeaders_CreateEntity.action`, click the link icon to open the object browser for the `Failure Action`. 
 
     <!-- border -->![MDK](img-3.12.png)
 
-14.  Keep the default selection for the *Object Type* as Action and *Folders* path.
+14. Bind it to `GenericMessageBox.action` and click **OK**.
 
-    <!-- border -->![MDK](img-3.4.png)     
+    <!-- border -->![MDK](img-3.13.png)     
 
-15. In the **Template Selection** step, choose **Message** in **Category** | click **Message** | **Next**.
-
-    <!-- border -->![MDK](img-3.13.png)
-
-16. In the **Base Information** step, provide the below details:
-
-    | Property | Value |
-    |----|----|
-    | `Name`| `CreateSalesOrderHeaderEntityFailureMessage` |
-    | `Type` | Select `Message` from the dropdown |
-    | `Message` | `Failed to Create Sales Order record - {#ActionResults:SalesOrderHeaders_CreateEntity/error}` |
-    | `Title` | `Create Sales Order` |
-    | `OKCaption` | `OK` |
-    | `OnOK` | `--None--` |
-    | `CancelCaption` | leave it blank |
-    | `OnCancel` | `--None--`|
+15. You will now override its properties. Click on the `Overrides Properties for selected action` icon. 
 
     <!-- border -->![MDK](img-3.14.png)
 
+16. In the **Override Action Properties** step, provide the below details and click **OK**.
+
+    | Property | Value |
+    |----|----|
+    | `Message` | `Failed to Create Sales Order record - {#ActionResults:SalesOrderHeaders_CreateEntity/error}` |
+    | `Title` | `Create Sales Order` |
+
+    <!-- border -->![MDK](img-3.15.png)
+
     >`SalesOrderHeaders_CreateEntity` is the Action Result value of the `SalesOrderHeaders_CreateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
 
-17. Click **Finish** to complete the action creation process. 
-
-    When `SalesOrderHeaders_CreateEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_CreateEntity.action` fails then `CreateSalesOrderHeaderEntityFailureMessage.action` will be triggered.
-
-
+    When the `SalesOrderHeaders_CreateEntity.action` gets executed successfully then the `CloseModalPage_Complete.action` will be triggered or if `SalesOrderHeaders_CreateEntity.action` fails then a failure message will be displayed with error information.
 
 ### Navigate to the Customer Create page
 
@@ -295,29 +289,22 @@ You will open the `SalesOrderHeaders_Create.page` from the Customer Detail page.
 
     <!-- border -->![MDK](img-4.2.png)
 
-3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.    
+3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Object Browser`. Bind it to the `GenericNavigation.action`.
 
     <!-- border -->![MDK](img-4.3.png)
 
-4. Keep the default selection for the *Object Type* as Action and *Folders* path.
-
-    <!-- border -->![MDK](img-3.4.png)     
-
-5. In the **Template Selection** step, choose **UI** in **Category** | click **Navigation** | **Next**.
+5. You will now override the `GenericNavigation.action` properties. Click the 3 dots icon for the `OnPress` property and select `Overrides`.
 
     <!-- border -->![MDK](img-4.4.png)
 
-6. In the **Base Information** step, provide the below details:
+6. In the **Override Action Properties** window, provide the below information and click **OK** to complete the action override process.
 
     | Property | Value |
     |----|----|
-    | `Name`| `NavToSalesOrderHeaders_Create` |
     | `PageToOpen` | Select `SalesOrderHeaders_Create.page` from the dropdown |
     | `ModalPage`| Select `true` from the dropdown |
 
     <!-- border -->![MDK](img-4.5.png)
-
-7. Click **Finish** to complete the action creation process.
 
 
 ### Add data subscription to Customer detail page
@@ -361,7 +348,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-7.1.png)
 
@@ -375,11 +362,11 @@ Deploy the updated application to your MDK client.
 
     ![MDK](img-7.3.png)
 
-    Now, you will notice that new record has been created and count value for **See All** is now increased by one as you implemented in step 6.
+    Now, you will notice that new record has been created and count value for **See All** is now increased by one.
 
     ![MDK](img-7.4.png)
 
-5. On Main page, tap **Sync** to send local changes to the backend, a successful message will be shown.
+5. Tap on **Sync Changes** in the user menu On Main page to send local changes to the backend, a successful message will be shown.
 
     ![MDK](img-7.5.png)
     ![MDK](img-7.6.png)
@@ -388,7 +375,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-7.7.png)
 
@@ -402,11 +389,11 @@ Deploy the updated application to your MDK client.
 
     ![MDK](img-7.9.png)
 
-    Now, you will notice that new record has been created and count value for **See All** is increased by one as you implemented in step 6.
+    Now, you will notice that new record has been created and count value for **See All** is increased by one.
 
     ![MDK](img-7.10.png)
 
-5. On Main page, tap **Sync** to send local changes to the backend, a successful message will be shown.
+5. Tap on **Sync Changes** in the user menu On Main page to send local changes to the backend, a successful message will be shown.
 
     ![MDK](img-7.11.png)  
     ![MDK](img-7.12.png)  
@@ -433,7 +420,7 @@ Deploy the updated application to your MDK client.
 
     <!-- border -->![MDK](img-7.16.png)
 
-    Now, you will notice that new record has been created and count value for **See All** is increased by one as you implemented in step 6.
+    Now, you will notice that new record has been created and count value for **See All** is increased by one.
 
     <!-- border -->![MDK](img-7.17.png)
 

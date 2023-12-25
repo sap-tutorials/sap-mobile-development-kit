@@ -44,8 +44,6 @@ You have built an MDK app with offline functionality. In offline store, you make
 
 ### Create a new MDK project in SAP Business Application Studio
 
-
-
 This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
@@ -58,13 +56,13 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-1.2.png)  
 
     
 
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -174,15 +172,18 @@ The On-boarding QR code is now displayed.
 
     You will see **Entity Updated** toast message. You can always see this updated record reflecting in `PurchaseOrderHeaders` list which means offline store has accepted this change.
 
-4. Navigate to `Main.page`, click **Sync** to upload local changes from device to the backend and to download the latest changes from backend to the device.
-You will see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
+4. Navigate to `Main.page`, tap on the **Sync Changes** option in the user menu to upload local changes from device to the backend and to download the latest changes from backend to the device.
 
     ![MDK](img-4.5.png)
+
+5. You will see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
+
     ![MDK](img-4.6.png)
-
-5. Tapping any record navigates to Error Details page with more information about error.
-
     ![MDK](img-4.7.png)
+
+6. Tapping any record navigates to Error Details page with more information about error.
+
+    ![MDK](img-4.7.1.png)
 
     Here in **Error**, you will see `SQLDatabaseException` and in **Request Body**, it shows the record that caused this failure.
 
@@ -211,15 +212,19 @@ You will see *Upload failed* message, tap on **View Errors** to navigate to the 
 
     You will see **Entity Updated** toast message. You can always see this updated record reflecting in `PurchaseOrderHeaders` list which means offline store has accepted this change.
 
-4. Navigate to `Main.page`, click **Sync** to upload local changes from device to the backend and to download the latest changes from backend to the device.
-You will see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
+4. Navigate to `Main.page`, click on the **Sync Changes** option in the user menu to upload local changes from device to the backend and to download the latest changes from backend to the device.
 
     ![MDK](img-4.12.png)
+
+5. You will see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
+
+
     ![MDK](img-4.13.png)
+    ![MDK](img-4.14.png)    
 
-5. Tapping any record navigates to Error Details page with more information about error.
+6. Tapping any record navigates to Error Details page with more information about error.
 
-    ![MDK](img-4.14.png)
+    ![MDK](img-4.15.png)
 
     Here in **Error**, you will see `SQLDatabaseException` and in **Request Body**, it shows the record that caused this failure.
 
@@ -392,16 +397,16 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-7.1.png)
 
-2. In order to access the Error List Detail pages, tap **Sync** and once you see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
+2. In order to access the Error List Detail pages, tap again on **Sync Changes** option in the user menu and once you see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
 
     There you will find affected entity which couldn't get accepted by backend due to some business logic failure.
 
-    ![MDK](img-4.5.png)
     ![MDK](img-4.6.png)
+    ![MDK](img-4.7.png)
 
     >You could add a button on the Main page navigating to the Error Archive List page directly.
 
@@ -413,7 +418,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
     ![MDK](img-7.3.png)   
 
-5. Navigate to the Main page and Sync again. Record gets upload to the backend successfully.
+5. Navigate to the Main page and tap on the **Sync Changes** option in the user menu. Record gets upload to the backend successfully.
 
     ![MDK](img-7.3.1.png)  
 
@@ -421,16 +426,16 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
     ![MDK](img-7.4.png)
 
-2. In order to access the Error List Detail pages, tap **Sync** and once you see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
+2. In order to access the Error List Detail pages, tap again on **Sync Changes** option in the user menu and once you see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
 
     There you will find affected entity which couldn't get accepted by backend due to some business logic failure.
 
-    ![MDK](img-4.12.png)
     ![MDK](img-4.13.png)
+    ![MDK](img-4.14.png)
 
     >You could add a button on the Main page navigating to the Error Archive List page directly.    
 
@@ -442,7 +447,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
     ![MDK](img-7.6.png)   
 
-5. Navigate to the Main page and Sync again. Record gets upload to the backend successfully.
+5. Navigate to the Main page and tap on the **Sync Changes** option in the user menu. Record gets upload to the backend successfully.
 
     ![MDK](img-7.7.png)  
 

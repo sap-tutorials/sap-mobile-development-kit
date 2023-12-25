@@ -38,13 +38,11 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.2.gif)
 
-3. Select **MDK App** and click **Start**. If you do not see the **MDK App** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-1.3.png)
 
-    
-
-    >This screen will only show up when your CF login session has expired. Enter your login credentials, click Sign in. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
     ><!-- border -->![MDK](img-1.4.png)
 
@@ -113,7 +111,6 @@ These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264ac
 
 ### Deploy the application
 
-
 So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services and Cloud Foundry to use it in the Mobile client and Web application respectively.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
@@ -163,16 +160,13 @@ The On-boarding QR code is now displayed.
 
 ### Run the app
 
-
 [OPTION BEGIN [Android]]
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
 
 Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
 
->There is a [limit of total 10 user registrations per app in trial accounts](https://help.sap.com/viewer/468990a67780424a9e66eb096d4345bb/Cloud/en-US/16439fd40a014138abc5dc262e816be5.html).
-
-After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync**, and **Update** options at bottom of the page and Offline store will be initialized. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed where you can create, update, delete the record. This record gets saved to offline request queue database.  You can navigate back to main page and press **Sync** to upload any local changes to the backend. Once the upload is successful, it will also download the data from the backend to the offline store to have the same dataset on both sides.
+After you accept the app update, you will see the list of entities on the **Main** page, a user menu that includes options to Sync changes, support, check for updates, reset the app. An Offline store will be initialized. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed where you can create, update, delete the record. This record gets saved to offline request queue database. You can navigate back to main page and press **Sync Changes** option in the user menu to upload any local changes to the backend. Once the upload is successful, it will also download the data from the backend to the offline store to have the same dataset on both sides.
 
 <!-- border -->![MDK](img-5.1.gif)
 
@@ -190,9 +184,7 @@ Additionally, you can search over all properties of the objects displayed in the
 
 Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
 
->There is a [limit of total 10 user registrations per app in trial accounts](https://help.sap.com/viewer/468990a67780424a9e66eb096d4345bb/Cloud/en-US/16439fd40a014138abc5dc262e816be5.html).
-
-After you accept the app update, you will see the list of entities on the **Main** page, **Logout**, **Sync**, and **Update** options at bottom of the page and Offline store will be initialized. Tap any entity, it navigates to a list page where you can create a new record.  If you select one of the items, the detail page will be  displayed where you can update and delete the record. This record gets saved to offline request queue database.  You can navigate back to main page and press **Sync** to upload any local changes to the backend. Once the upload is successful, it will also download the data from the backend to the offline store to have the same dataset on both sides.
+After you accept the app update, you will see the list of entities on the **Main** page, a user menu that includes options to Sync changes, support, check for updates, reset the app. An Offline store will be initialized. Tap any entity, it navigates to a list page.  If you select one of the items, the detail page will be displayed where you can create, update, delete the record. This record gets saved to offline request queue database. You can navigate back to main page and press **Sync Changes** option in the user menu to upload any local changes to the backend. Once the upload is successful, it will also download the data from the backend to the offline store to have the same dataset on both sides.
 
 ![MDK](img-5.3.gif)
 
@@ -208,7 +200,6 @@ Additionally, you can search over all properties of the objects displayed in the
 
 >For this tutorial, MDK web app is going to connect to SAP Mobile Services' sample backend which will register your user in Mobile Services application. In case, if you see any registration count limit related error, please be note that there is a [total 10 user registrations per app in trial accounts](https://help.sap.com/viewer/468990a67780424a9e66eb096d4345bb/Cloud/en-US/16439fd40a014138abc5dc262e816be5.html).
 
-
 1. Click the highlighted button to open the MDK Web application in a browser. Enter your SAP BTP credentials if asked.
 
     <!-- border -->![MDK](img-5.5.png)
@@ -216,7 +207,7 @@ Additionally, you can search over all properties of the objects displayed in the
     >You can also open the MDK web application by accessing its URL from `.project.json` file.
     <!-- border -->![MDK](img-5.6.png)
 
-    You will see the list of entities on the **Main** page, **Logout** option at bottom of the page and application data service will be initialized. click either entity, it navigates to detail page, you can create, update, delete a record.
+    You will see the list of entities on the **Main** page and a user menu on the top right corner. The application data service will be initialized. click either entity, it navigates to detail page, you can create, update, delete a record.
 
     <!-- border -->![MDK](img-5.7.gif)
 
