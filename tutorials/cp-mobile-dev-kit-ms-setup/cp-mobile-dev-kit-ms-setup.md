@@ -90,11 +90,11 @@ A [sample OData](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud
     
  3. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
 
-    <!-- border -->![MDK](img-2.5.3.gif)
+    <!-- border -->![MDK](img-2.5.2.gif)
 
     >When you view the data, you might see something like this instead of the nicely formatted output from above.
     ><!-- border -->![MDK](img-2.5.4.png)
-    >However, this doesn’t mean you’ve made a mistake in the tutorial. Rather, this is the correct output without any formatting. If you’d like to see a formatted output in your browser, you can add an `JSON Formatter` extension to your browser. 
+    >However, this doesn't mean you've made a mistake in the tutorial. Rather, this is the correct output without any formatting. If you'd like to see a formatted output in your browser, you can add an `JSON Formatter` extension to your browser. 
 
 ### Create a new destination to your MDK Mobile application
 

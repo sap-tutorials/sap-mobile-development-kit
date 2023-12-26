@@ -236,7 +236,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
 
     >You can find more details about [Override Action](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/definitions/OverrideAction.schema.html) in documentation.
 
-6. You will notice that the `Overrides` option under the `OnPress` event is now highlighted, indicating that the bound action is overridden. You can also view the overidden details in the page code editor by right-clicking on the `Customers_Orders.page` and opening it with text Editor.
+6. You will notice that the `Overrides` option under the `OnPress` event is now highlighted, indicating that the bound action is overridden. You can also view the overridden details in the page code editor by right-clicking on the `Customers_Orders.page` and opening it with text Editor.
 
     <!-- border -->![MDK](img-3.5.png)
 

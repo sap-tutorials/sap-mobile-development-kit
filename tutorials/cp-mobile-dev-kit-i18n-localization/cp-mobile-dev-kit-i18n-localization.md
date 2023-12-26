@@ -425,7 +425,6 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 3. Change the device language to German. (Settings>General>Language & Region>Preferred Languages). Relaunch the MDK client, you will now notice the localized strings on main page.
 
     ![MDK](img-9.7.png)
-    ![MDK](img-9.7.1.png)
 
 4. Tap **`Kundenaufträge`** to navigate to Sales order list page. You will notice the updated formatter values as per device's current locale and timezone.    
 
