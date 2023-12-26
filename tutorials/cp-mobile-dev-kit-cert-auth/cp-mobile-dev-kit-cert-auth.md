@@ -324,7 +324,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     ![MDK](img-5.8.png)
 
-    Since you have not deployed any metadata yet you will not see the `Update Now?` dialog.
+    Since no metadata has been deployed yet, you will see a message box suggesting next steps.
 
     ![MDK](img-5.9.png)
 
@@ -375,7 +375,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     <!-- border -->![MDK](img-5.18.png)
 
-    Since you have not deployed any metadata yet you will not see the `Update Now?` dialog.
+    Since no metadata has been deployed yet, you will see a message box suggesting next steps.
 
     <!-- border -->![MDK](img-5.19.png)
 

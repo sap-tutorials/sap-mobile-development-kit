@@ -18,7 +18,7 @@ author_profile: https://github.com/jitendrakansal
 
 
 ## Intro
-You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/3-Enhance-Your-First-MDK-App-with-Additional-Functionalities/2-cp-mobile-dev-kit-delete-customer) to start with this tutorial.
+Managing issues with apps rolled out to a large number of users is a challenge and often requires deep insights into running applications to troubleshoot. For that purpose, SAP Mobile Services includes a Logging feature that enables you to gain insights into live apps. Use MDK to gather logs on client devices, to add contextual information and to automatically or manually upload them to mobile services for further inspection.  You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/3-Enhance-Your-First-MDK-App-with-Additional-Functionalities/2-cp-mobile-dev-kit-delete-customer) to start with this tutorial.
 
 ---
 
@@ -45,244 +45,65 @@ In this step, you will enable client log upload policy in **SAP Mobile Services 
     >You can find more details about [Client Log Upload feature](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/policies.html).
 
 
-### Create log actions
+###  Understanding Logging & Tracing in MDK
 
+Logs help you trace events that occur while your application is running. You can create logging actions, set their priority levels and upload stored log entries. using the MDK, you can set up logging in one of two ways:
 
-Logs help you trace events that occur while your application is running. You can create logging actions, set their priority levels and upload stored log entries.
+* [Using Logging Actions](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/mdk/logging.html#using-logging-actions)
+    * [`SetState`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/Logger/SetState.schema.html): used to turn the logger On, Off or Toggle
+    * [`SetLevel`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/Logger/SetLevel.schema.html): to set log level (Debug, Info, Warn or Error)
+    * [`Upload`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/Logger/Upload.schema.html): to upload logs from app to Mobile Services
+    * [`SetDebugSettings`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/SetDebugSettings.schema.html): enables `DebugSettings` during runtime or override the `DebugSettings` in `BrandedSettings.json`
+* [Using the Client API in Rules](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/mdk/logging.html#using-the-client-api-in-rules) 
 
-You will create 3 actions:
+The MDK template generates a project that includes a user menu with support options, making it easier for initial troubleshooting without having to create logging, tracing, or upload actions. YOf course, you can create your own actions or rules and add them to  your project when needed.
 
-* Log action of Type `SetState`: to turn the logger On, Off or Toggle
+<!-- border -->![MDK](img-2.0.png)
 
-* Log action of Type `SetLevel`: to set log level (Debug, Info, Warn or Error)
 
-* Log action of Type `Upload`: to upload logs from app to Mobile Services
-
->You can find more details about [MDK Log Actions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/Logger/LogMessage.schema.html).
-
-<!-- border -->![MDK](img-2.1.png)
-
-1. Create a log action of type `SetState`:
-
-    Right-click the **Actions** folder | **MDK: New Action** | choose **Log** in **Category** | click **Log** | **Next**.
-
-    <!-- border -->![MDK](img-2.2.png)
-
-    In the **Base Information** step, provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Name`| `LogSetState` |
-    | `Type` | Select `SetState` from the dropdown |
-    | `LoggerState`| Select `On` from the dropdown |
-
-    <!-- border -->![MDK](img-2.3.png)
-
-    Click **Finish** to create the action creation process.
-
-2. Create a log action of type `SetLevel`:
-
-    Right-click the **Actions** folder | **MDK: New Action** | choose **Log** in **Category** | click **Log** | **Next**.
-
-    In the **Base Information** step, provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Name`| `LogSetLevel` |
-    | `Type` | Select `SetLevel` from the dropdown |
-    | `Level`| Select `Trace` from the dropdown |
-
-    <!-- border -->![MDK](img-2.4.png)
-
-    Click **Finish** to create the action creation process.
-
-3. Create a log action of type `Upload`:
-
-    Right-click the **Actions** folder | **MDK: New Action** | choose **Log** in **Category** | click **Log** | **Next**.
-
-    In the **Base Information** step, provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Name`| `LogUpload` |
-    | `Type` | Select `Upload` from the dropdown |
-
-    <!-- border -->![MDK](img-2.5.png)
-
-    Click **Finish** to create the action creation process.
-
-
-### Bind Set Level log action to the success of Set State action
-
-
-In the Project Explorer, click the `LogSetState.action` file | expand **Common Action Properties** | click the link icon for **Success Action** and bind it to  `LogSetLevel.action`
-
-<!-- border -->![MDK](img-3.1.png)
-
-
-### Bind Set State log action to success of Initialize Offline action
-
-
-When the metadata is downloaded from App Update, `OnDidUpdate` event is being called which eventually triggers `InitializeOffline.action`. You can look at `Application.app` file for the details.
-
-You will bind `LogSetState.action` at success of  `InitializeOffline.action`.
-
-Navigate to `DemoSampleApp` | `Actions` | `Service` | `InitializeOffline.action` | scroll-down and expand **Common Action Properties** section | click the link icon for **Success Action** and bind it to  `LogSetState.action`
-
-<!-- border -->![MDK](img-4.1.gif)
-
-
-### Define success/failure messages for Log Upload action
-
-
-You will define two message actions for displaying success or failure when _Log upload action_ is triggered.
-
-1. Expand the *Common Action Properties* section in the `LogUpload.action` and select the `Create a rule/action` for its Success Action.
-
-    <!-- border -->![MDK](img-5.1.png)
-
-2. Keep the default selection for the *Object Type* as Action and *Folders* path.
-
-    <!-- border -->![MDK](img-5.2.png)   
-
-3. In the **Template Selection** step, choose **Message** in **Category** | click **Message** | **Next**.
-
-4. In the **Base Information** step, provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Name`| `LogUploadSuccessful` |
-    | `Type` | Select `ToastMessage` from the dropdown |
-    | `Message`| `Log File Uploaded` |
-    | `NumberOfLines`| 1 |
-    | `Duration` | 3 |
-    | `IsIconHidden`| Select `true` from the dropdown |
-    | `Animated` | Select `true` from the dropdown |
-
-    <!-- border -->![MDK](img-5.3.png)
-
-5. Click **Finish** to create the action creation process.
-
-6. Switch back to the `LogUpload.action` tab and create a message action displaying error in case of the Log Upload failure. In the `LogUpload.action`, click the `Create a rule/action` icon for the *Failure Action*.
-
-    <!-- border -->![MDK](img-5.4.png)
-
-7. Keep the default selection for the *Object Type* as Action and *Folders* path.
-
-    <!-- border -->![MDK](img-5.2.png)      
-
-8. In the **Template Selection** step, choose **Message** in **Category** | click **Message** | **Next**.
-
-9. In the **Base Information** step, provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Name`| `LogUploadFailure` |
-    | `Type` | Select `Message` from the dropdown |
-    | `Message`| `Failed to upload client logs - {#ActionResults:LogUpload/error}` |
-    | `Title`| `Upload Client Logs` |
-    | `OKCaption` | `OK` |
-    | `OnOK` | `--None--` |
-    | `CancelCaption` | leave it blank |
-    | `OnCancel` | `--None--` |
-
-    <!-- border -->![MDK](img-5.5.png)
-
-10. Click **Finish** to create the action creation process.
-
-    >`LogUpload` is the Action Result value of the `LogUpload.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the failure message.
-
-11. Let's show an Activity Indicator in the MDK client when logs are being uploaded to the SAP Mobile Services. Switch back to the `LogUpload.action` tab and provide below information.
-
-    | Property | Value |
-    |----|----|
-    | `Show Activity Indicator` | Select `true` from the dropdown ||
-    | `Activity Indicator Text`|  `Uploading Logs...` |
-
-    <!-- border -->![MDK](img-5.6.png)
-
-
-### Add Upload Log button to main page
-
-You will add a toolbar item to the _main page_ called **Upload Logs**. You will link toolbar item to `LogUpload.action` you just created in step 2.
-
-1. In the `Main.page`, drag and drop an **Toolbar Item** to the bottom right of the page.
-
-    <!-- border -->![MDK](img-6.1.png)
-
-2. Provide the below information:
-
-    | Property | Value |
-    |----|----|
-    | `Caption`| `Upload Logs`  |
-    | `Visible`| `$(PLT,true,true,false)`  |
-
-    <!-- border -->![MDK](img-6.2.png)
-
-    >Platform (PLT) function `$(PLT, <iOS>, <Android>, <Web>)` lets you to define a platform specific value for metadata property as Upload Logs functionality is not applicable in MDK Web environment, this option will not be visible in Web application. You can find more details on PLT function in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/platform-specific-binding.html#plt-formatter-for-events-supported-for-both-mobile-and-web).
-
-3. In the Properties pane, click the **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**.
-
-    Double click the `LogUpload.action` action and click **OK** to set it as the `OnPress` Action.
-
-    <!-- border -->![MDK](img-6.3.png)
-
-
-
-### Deploy the application
-
-
-Deploy the updated application to your MDK client.
-
-1. Right-click `Application.app` and select **MDK: Deploy**.
-
-    <!-- border -->![MDK](img-7.1.png)
-
-2. Select deploy target as **Mobile Services**.
-
-    <!-- border -->![MDK](img-7.2.png)
-
-    You should see **Deploy to Mobile Services successfully!** message.
-
-    <!-- border -->![MDK](img-7.3.png)
-
-    >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
-
-    ><!-- border -->![MDK](img-7.4.png)
-
-
-### Run the app
-
+### Upload Logs from your App to SAP Mobile Services
 
 [OPTION BEGIN [Android]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap the **Support** option in the user menu on the main page.
 
-    ![MDK](img-8.1.png)
+    ![MDK](img-3.1.png)
 
-    Once the re-initialization is completed, app starts gathering the client logs.
+2. Tap the **Activity Log** to open the user activity log page. As the page is loaded, logging is by default enabled and log level is set to *Error*.
 
-2. Tap **Upload Logs** to upload client logs from app to SAP Mobile Services.
+    ![MDK](img-3.2.png)
+    ![MDK](img-3.3.png)    
 
-    ![MDK](img-8.2.png)
+3. You can send activity logs to SAP Mobile Services or change the log level to other options, for example, Warning, Info, Debug, or Trace to collect more details. When the log level is set to `Trace`, two new options **Tracing Categories** and **OData Tracing** appear on the activity log page.
+    
+    * **Tracing Categories** allow you to select one or more tracing categories (to capture information about any MDK action, binding, on-boarding, push etc.).  
+    * **OData Tracing** captures tracing on OData operations, such as `uploadOfflineOData`, read, etc. 
 
-    ![MDK](img-8.3.png)
+    Once you have set the required settings, tap on **Send Activity Log** to upload client logs from app to SAP Mobile Services.
+
+    ![MDK](img-1.0.gif) 
 
 [OPTION END]
 
 [OPTION BEGIN [iOS]]
 
-1. Tap **Update** on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
+1. Tap the **Support** option in the user menu on the main page.
 
-    ![MDK](img-8.4.png)
+    ![MDK](img-3.4.png)
 
-    Once the re-initialization is completed, app starts gathering the client logs.
+2. Tap the **Activity Log** to open the user activity log page. As the page is loaded, logging is by default enabled and log level is set to *Error*.
 
-2. Tap **Upload Logs** to upload client logs from app to SAP Mobile Services.
+    ![MDK](img-3.5.png)
+    ![MDK](img-3.6.png)    
 
-    ![MDK](img-8.5.png)
+3. You can send activity logs to SAP Mobile Services or change the log level to other options, for example, Warning, Info, Debug, or Trace to collect more details. When the log level is set to `Trace`, two new options **Tracing Categories** and **OData Tracing** appear on the activity log page.
+    
+    * **Tracing Categories** allow you to select one or more tracing categories (to capture information about any MDK action, binding, on-boarding, push etc.).  
+    * **OData Tracing** captures tracing on OData operations, such as `uploadOfflineOData`, read, etc. 
 
-    ![MDK](img-8.6.png)
+    Once you have set the required settings, tap on **Send Activity Log** to upload client logs from app to SAP Mobile Services.
+
+    ![MDK](img-3.7.gif) 
 
 [OPTION END]
 
@@ -292,9 +113,9 @@ Deploy the updated application to your MDK client.
 
 Open SAP Mobile Services Cockpit, click **Mobile Applications** | **Native/MDK** | click `com.sap.mdk.demo` app | **Mobile Client Log Upload** | **Log Files**.
 
-<!-- border -->![MDK](img-9.1.png)
+<!-- border -->![MDK](img-4.1.png)
 
-A log file is created for each upload. All the uploaded files, including all levels, not just error or fatal will be listed here.
+A log file is created for each upload. All the uploaded files, including all levels, not just error or fatal will be listed here. You can select a file and download it locally on your machine for further examination.
 
 >Check [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/config.html) for more details about Uploading and Viewing Client Logs.
 
