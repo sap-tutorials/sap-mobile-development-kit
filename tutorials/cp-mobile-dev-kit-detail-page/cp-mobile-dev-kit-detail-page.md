@@ -42,7 +42,11 @@ This page will show related details for a customer. In this page, you will add a
 
     <!-- border -->![MDK](img-1.2.png)
 
-3. In the **Properties** pane, provide the below information under `DesignTimeTarget`.
+3. set the Caption to **Details**.
+
+    <!-- border -->![MDK](img-1.4.png)
+
+4. In the **Properties** pane, provide the below information under `DesignTimeTarget`.
 
     | Property | Value |
     |----|----|
@@ -53,17 +57,13 @@ This page will show related details for a customer. In this page, you will add a
 
     >`DesignTimeTarget` is a page level property similar to Target but it is only used for design time. This helps in validating the binding context of current page. For more details, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/create-pages.html#page-editor).
 
-4. set the Caption to **Details**.
-
-    <!-- border -->![MDK](img-1.4.png)
-
-4. Next, you will add an **Object Header** container to display information like first name, last name, date of birth, email address & phone number.
+5. Next, you will add an **Object Header** container to display information like first name, last name, date of birth, email address & phone number.
 
     In the Layout Editor, expand the **Controls** | **Static Container** group, drag and drop the **Object Header** control onto the page area.
 
     <!-- border -->![MDK](img-1.4.gif)
 
-5. Now, you will replace the default values of the control's properties with the values from customer entity.
+6. Now, you will replace the default values of the control's properties with the values from customer entity.
 
     In the Properties pane, click the **link icon** to open the Object Browser for the `BodyText` property.
 
@@ -71,7 +71,7 @@ This page will show related details for a customer. In this page, you will add a
 
     <!-- border -->![MDK](img-1.5.png)
 
-6. Repeat the above steps binding below Properties:
+7. Repeat the above steps binding below Properties:
 
     | Property | Value |
     |----|----|
