@@ -143,7 +143,7 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-4.3.png)
 
-    In MDK project, you will see new pages, actions, rules have been generated for **Products**.
+    In MDK project, you will see new pages, actions, and rules have been generated for **Products**.
 
     <!-- border -->![MDK](img-4.4.png)
 
