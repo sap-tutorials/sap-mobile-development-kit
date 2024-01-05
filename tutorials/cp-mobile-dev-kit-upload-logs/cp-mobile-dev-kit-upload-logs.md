@@ -111,7 +111,7 @@ The MDK template generates a project that includes a user menu with support opti
 ### Examine uploaded logs in Mobile Services cockpit
 
 
-Open SAP Mobile Services Cockpit, click **Mobile Applications** | **Native/MDK** | click `com.sap.mdk.demo` app | **Mobile Client Log Upload** | **Log Files**.
+Open SAP Mobile Services Cockpit, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `com.sap.mdk.demo` app **&rarr;** **Mobile Client Log Upload** **&rarr;** **Log Files**.
 
 <!-- border -->![MDK](img-4.1.png)
 

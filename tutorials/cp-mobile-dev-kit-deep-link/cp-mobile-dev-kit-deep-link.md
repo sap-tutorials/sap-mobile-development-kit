@@ -9,8 +9,7 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 # Implement Deep Linking to Another App from an MDK App
-<!-- description --> Open a web page or navigate to an installed app from an MDK app.
-
+<!-- description --> Use the Mobile Development Kit client to call a deep link into another application. With this feature, you can launch the target app and perform actions specific to the called application or open a web page in the device browser.
 
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
