@@ -20,7 +20,7 @@ author_profile: https://github.com/jitendrakansal
   - How to update a record in web application
 
 ## Intro
-If you didn't follow the prerequisite then you may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit) to start with this tutorial.
+If you didn't follow the prerequisite then You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit) to start with this tutorial.
 
 ---
 

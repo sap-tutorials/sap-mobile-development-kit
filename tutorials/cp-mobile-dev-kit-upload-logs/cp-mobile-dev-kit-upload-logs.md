@@ -18,7 +18,7 @@ author_profile: https://github.com/jitendrakansal
 
 
 ## Intro
-Managing issues with apps rolled out to a large number of users is a challenge and often requires deep insights into running applications to troubleshoot. For that purpose, SAP Mobile Services includes a Logging feature that enables you to gain insights into live apps. Use MDK to gather logs on client devices, to add contextual information and to automatically or manually upload them to mobile services for further inspection.  You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/3-Enhance-Your-First-MDK-App-with-Additional-Functionalities/2-cp-mobile-dev-kit-delete-customer) to start with this tutorial.
+Managing issues with apps rolled out to a large number of users is a challenge and often requires deep insights into running applications to troubleshoot. For that purpose, SAP Mobile Services includes a Logging feature that enables you to gain insights into live apps. Use MDK to gather logs on client devices, to add contextual information and to automatically or manually upload them to mobile services for further inspection.  You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/3-Enhance-Your-First-MDK-App-with-Additional-Functionalities/2-cp-mobile-dev-kit-delete-customer) to start with this tutorial.
 
 ---
 

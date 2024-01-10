@@ -27,7 +27,7 @@ author_profile: https://github.com/jitendrakansal
   - How to use `RestService SendRequest` Action to make directly call to `Petstore` API
 
 ## Intro
-You may clone an existing project from [GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app) and start directly with step 15 in this tutorial but make sure you complete step 2&3.
+You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app) and start directly with step 15 in this tutorial but make sure you complete step 2&3.
 
 ---
 
@@ -117,9 +117,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 ### Create a new destination to your MDK Web application
 
 
-1. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app/swagger_petstore.zip) and unzip it on your machine.
-
-    <!-- border -->![MDK](img-3.1.png)
+1. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app/swagger_petstore.zip) and unzip it on your machine.
 
 2. Navigate to **Connectivity** **&rarr;** **Destinations** to create a BTP destination, click **Import Destination** to import the extracted file and click **Save**.
 
