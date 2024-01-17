@@ -19,7 +19,7 @@ author_profile: https://github.com/jitendrakansal
 
 ## You will learn
   - How to handle deep link into MDK application
-  - How to use application OnLinkDataReceived event
+  - How to use application `OnLinkDataReceived` event
   - How to configure application links on SAP Mobile Services
 
 
@@ -28,7 +28,7 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 ---
 
-MDK supports deep linking into MDK applications using MDK client URL scheme and HTTP URLs via iOS Universal Links and Android App Links. [iOS universal links](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html) and [Android App Links](https://developer.android.com/training/app-links/index.html) are the HTTP URLs that bring the user directly to specific content in your MDK application.
+MDK supports deep linking into MDK applications using MDK client URL scheme and HTTP URLs via iOS Universal Links and Android App Links. [iOS universal links](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html) and [Android App Links](https://developer.android.com/training/app-links#android-app-links) are the HTTP URLs that bring the user directly to specific content in your MDK application.
 
 ![MDK](img-7.7.gif)
 
@@ -246,7 +246,7 @@ Now that the MDK application is configured to act when a request from external s
 
     <!-- border -->![MDK](img-4.7.png)
 
-    >If you see a cofirmation window, click **OK**.
+    >If you see a confirmation window, click **OK**.
 
 [OPTION END]
 
@@ -338,7 +338,7 @@ Now that the MDK application is configured to act when a request from external s
     </plist>
     ```
 
-5. Provide below information in the `build.xcconfig` file. Make sure to provide same Apple Team ID that you entered in Mobile Servies Apple Universal Links configuration.
+5. Provide below information in the `build.xcconfig` file. Make sure to provide same Apple Team ID that you entered in Mobile Services Apple Universal Links configuration.
 
     ```XML
     // Specify the Team since Universal links are specific to the Team / Bundle ID configured in Mobile Services

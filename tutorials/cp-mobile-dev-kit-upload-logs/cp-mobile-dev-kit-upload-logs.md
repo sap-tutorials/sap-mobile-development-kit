@@ -56,7 +56,7 @@ Logs help you trace events that occur while your application is running. You can
     * [`SetDebugSettings`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/SetDebugSettings.schema.html): enables `DebugSettings` during runtime or override the `DebugSettings` in `BrandedSettings.json`
 * [Using the Client API in Rules](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/mdk/logging.html#using-the-client-api-in-rules) 
 
-The MDK template generates a project that includes a user menu with support options, making it easier for initial troubleshooting without having to create logging, tracing, or upload actions. YOf course, you can create your own actions or rules and add them to  your project when needed.
+The MDK template generates a project that includes a user menu with support options, making it easier for initial troubleshooting without having to create logging, tracing, or upload actions. Of course, you can create your own actions or rules and add them to  your project when needed.
 
 <!-- border -->![MDK](img-2.0.png)
 
