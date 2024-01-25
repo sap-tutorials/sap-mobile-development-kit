@@ -15,7 +15,7 @@ author_profile: https://github.com/jitendrakansal
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
 
 ## You will learn
@@ -87,7 +87,7 @@ This step includes creating the mobile development kit project in the editor.
     | `Data Source` | Select `Mobile Services` from the dropdown |
     | `Mobile Services Landscape` | Select `standard` from the dropdown |
     | `Application Id` | Select `com.sap.mdk.demo` from the dropdown |
-    | `Destination` | Select `SampleServiceV2` from the dropdown |
+    | `Destination` | Select `SampleServiceV4` from the dropdown |
     | `Enter a path to the OData service` | Leave it as it is |
     | `Enable Offline` | It's enabled by default |
 
@@ -132,9 +132,7 @@ This step includes creating the mobile development kit project in the editor.
 ### Display the QR code for onboarding the Mobile app
 
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
-
-Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
 <!-- border -->![MDK](img-3.1.png)
 
@@ -153,7 +151,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [Android]]
 
-1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to successfully on-board the MDK client on your Android device.
 
     After you accept app update, you will see **Main** page with some entity sets being displayed and Offline store will be initialized.
 
@@ -193,7 +191,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [iOS]]
 
-1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to successfully on-board the MDK client on your iOS device.
 
     After you accept app update, you will see **Main** page with some entity sets being displayed and Offline store will be initialized.
 

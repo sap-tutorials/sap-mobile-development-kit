@@ -185,7 +185,7 @@ First, add an action bar item on the `Customers_Edit.page`
     |----|----|
     | `Name`| `Customers_UpdateEntity` |
     | `Type` | Select `UpdateEntity` from the dropdown |
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
+    | `Service`| Select `SampleServiceV4.service` from the dropdown |
     | `EntitySet`| Select `Customers` from the dropdown |
     | `ReadLink`| click link icon and double-click `readLink` |
 
@@ -219,42 +219,24 @@ First, add an action bar item on the `Customers_Edit.page`
 
 11. When the above OData action is executed, you may want to display messages on its success and failure behavior. For example, on its success, you may want to close the page and allow any execution to continue. On its failure, you may want to display an error.
 
-    In the `Customers_UpdateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the `Create a rule/action` icon for the *Success Action*.
+    In the `Customers_UpdateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the **link icon** to open the object browser for the **Success Action** property and bind it to the `CloseModalPage_Complete.action`.
 
     <!-- border -->![MDK](img-3.9.png)
 
-12. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-2.4.png)   
-
-13. Choose **UI** in **Category** | click **Close Page** | **Next**.
-
-    <!-- border -->![MDK](img-3.10.png)
-
-14. In the **Base Information**, provide the below information and then click **Finish** to complete the action creation process.
-
-    | Property | Value |
-    |----|----|
-    | `Name` | `CloseModalPage_Complete` |
-    | `DismissModal` | Select `Completed` from the dropdown |
-    | `CancelPendingActions` | Select `false` from the dropdown |
-
-    <!-- border -->![MDK](img-3.11.png)
-
-
-15. Similar, create a message action displaying error in case of the update failure. In the `Customers_UpdateEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
+12. Create a new message action displaying error in case of the update failure. In the `Customers_UpdateEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
 
     <!-- border -->![MDK](img-3.12.png)
 
-16. Keep the default selection for the *Object Type* as Action and *Folders* path.
+13. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
     <!-- border -->![MDK](img-3.4.png)   
 
-17. Choose **Message** in **Category** | click **Message** | **Next**.
+14. Choose **Message** in **Category** | click **Message** | **Next**.
 
     <!-- border -->![MDK](img-3.13.png)
 
-18. In the **Base Information**, provide the below information and then click **Finish**.
+15. In the **Base Information**, provide the below information and then click **Finish**.
 
     | Property | Value |
     |----|----|
@@ -367,7 +349,7 @@ Deploy the updated application to your MDK client.
 
     But here result is pointing to old values.
 
-    ![MDK](img-6.4.png)
+    ><!-- border -->![MDK](img-6.4.png)
 
     Since this is an Offline application, new entry is added to the request queue of the local store which needs to be sent or uploaded to the backend explicitly.  
 
@@ -405,7 +387,7 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
     But here result is pointing to old values.
 
-    ![MDK](img-6.4.png)
+    ><!-- border -->![MDK](img-6.4.png)
 
     Since this is an Offline application, new entry is added to the request queue of the local store which needs to be sent or uploaded to the backend explicitly.  
 
@@ -431,7 +413,7 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
     ><!-- border -->![MDK](img-6.11.png)
 
-2. Click **Customers**, click one of the available customer record,  you will then navigate to Customer detail page.
+2. Click **Customers**, click one of the available customer record, you will then navigate to Customer detail page.
 
     <!-- border -->![MDK](img-6.12.png)
 
@@ -451,7 +433,7 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
     >Backend endpoint can be found in [Mobile Services Cockpit](cp-mobile-dev-kit-ms-setup).
 
-    >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **com.sap.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon
+    >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **com.sap.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon.
 
     ><!-- border -->![MDK](img-6.3.png)
 

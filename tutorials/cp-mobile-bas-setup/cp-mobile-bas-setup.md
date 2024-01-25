@@ -22,7 +22,6 @@ SAP Business Application Studio is the next-generation web-based IDE hosted on S
 
 ---
 
-
 ### Open SAP Business Application Studio and create your Dev Space
 
 Before you can start using SAP Business Application Studio, you need to create your developer space, where your project will run. Depending on the application you want to develop, you can create different types of dev spaces.

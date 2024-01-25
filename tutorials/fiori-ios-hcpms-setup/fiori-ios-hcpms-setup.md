@@ -36,7 +36,7 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 3. Enter your Global Account.
 
-    <!-- border -->![SAP BTP Global Account](img-1.1.png)
+    ![SAP BTP Global Account](img-1.1.png)
 
 [OPTION END]
 
@@ -48,7 +48,7 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 3. Navigate to the trial global account by clicking **Go To Your Trial Account**.
 
-    <!-- border -->![Trial global account](img-1.2.png)
+    ![Trial global account](img-1.2.png)
 
 [OPTION END]
 
@@ -58,28 +58,28 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 1. Click subaccount available in your global account.
 
-    <!-- border -->![enter subaccount](img-2.1.png)
+    ![enter subaccount](img-2.1.png)
 
 2. In the left pane, choose **Services** **&rarr;** **Service Marketplace**.
 
     >The **Service Marketplace** is where you can find services to attach to any of your applications. These services are provided by SAP BTP to create, and produce applications quickly and easily. Once a service has been created, it is known as a `service instance`.
 
-    <!-- border -->![service marketplace](img-2.2.png)
+    ![service marketplace](img-2.2.png)
 
 3. Search for **Mobile**, and click **Mobile Services** tile.  
 
-    <!-- border -->![mobile service tile](img-2.3.png)
+    ![mobile service tile](img-2.3.png)
 
 4. Choose **Support** to open **SAP Mobile Services Cockpit**.
 
-    <!-- border -->![support button click](img-2.4.png)
+    ![support button click](img-2.4.png)
 
 5. The SAP mobile service cockpit dialog, **Select API Endpoint**, appears. Before you click on **Login**, make sure to provide the correct API endpoint belongs to your BTP subaccount. 
 
-    <!-- border -->![support button click](img-2.4.1.png)
+    ![support button click](img-2.4.1.png)
 
     >In order to find the API endpoint, navigate to your BTP subaccount > Overview > Cloud Foundry Environment. Copy the URL and paste it in the Mobile service cockpit dialog. This is mainly required if you are using Mobile Services in an Extended Landscape. 
-    ><!-- border -->![support button click](img-2.4.2.png)
+    >![support button click](img-2.4.2.png)
 
     Once you provide the correct API Endpoint, click on **Login** to continue.
 
@@ -87,12 +87,12 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 6. After you log into the endpoint, the **Organization** and **Space** prompt appears. The current API Endpoint value appears. Choose the relevant **Organization** and **Space** from the dropdown list, and then choose **Open**.
 
-    <!-- border -->![BTP](img-2.5.png)
+    ![BTP](img-2.5.png)
 
     >If the organization that you want to access is not listed, you might have used the wrong API Endpoint. In this case, you can log out and log in again, in order to input the correct API Endpoint value.
     You have now logged in to the SAP Mobile Services cockpit.
 
-    <!-- border -->![BTP](img-2.6.png)
+    ![BTP](img-2.6.png)
 
     Bookmark the **Mobile Services cockpit URL** for quick access.
 

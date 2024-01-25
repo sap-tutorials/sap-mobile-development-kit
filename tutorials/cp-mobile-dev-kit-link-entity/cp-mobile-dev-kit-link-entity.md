@@ -53,11 +53,11 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.3.png)
 
-4. Now, you will add the fields (like Currency Code, Net Amount, Tax Amount, Gross Amount, Life cycle status, Life cycle status name and order creation date) for creating a new sales order record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell Section** onto the Page area.
+4. Now, you will add the fields (like Currency Code, Net Amount, Tax Amount, Gross Amount, Life cycle status, Life cycle status name and order creation date) for creating a new sales order record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell** section onto the Page area.
 
     <!-- border -->![MDK](img-1.4.gif)
 
-    >Form Cell Section is used to contain Form Cell controls in a section page.
+    >Form Cell section is used to contain Form Cell controls in a section page.
 
 5. You will now add Form Cell controls in the Form Cell Section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
 
@@ -204,7 +204,7 @@ The next step is to store newly created record locally for an offline applicatio
     |----|----|
     | `Name`| `SalesOrderHeaders_CreateEntity` |
     | `Type` | Select `CreateRelatedEntity` from the dropdown |
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
+    | `Service`| Select `SampleServiceV4.service` from the dropdown |
     | `EntitySet` | Select `SalesOrderHeaders` from the dropdown |
 
     <!-- border -->![MDK](img-3.6.png)
@@ -249,9 +249,9 @@ The next step is to store newly created record locally for an offline applicatio
 
 13. Create a message action displaying error in case of the create failure. 
 
- The MDK template generates some generic actions, such as `GenericMessageBox.action`, that can be reused at many places in your project and can be overridden with specific information. Of course, you can also create a new action, as you have done in previous tutorials. 
+    The MDK template generates some generic actions, such as `GenericMessageBox.action`, that can be reused at many places in your project and can be overridden with specific information. Of course, you can also create a new action, as you have done in previous tutorials. 
 
-In the `SalesOrderHeaders_CreateEntity.action`, click the link icon to open the object browser for the `Failure Action`. 
+    In the `SalesOrderHeaders_CreateEntity.action`, click the link icon to open the object browser for the `Failure Action`. 
 
     <!-- border -->![MDK](img-3.12.png)
 

@@ -16,7 +16,7 @@ author_profile: https://github.com/jitendrakansal
 - **Tutorial:** [Set Up Business Application Studio for Mobile Technologies](cp-mobile-bas-setup)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
 ## You will learn
   - How to configure an application in Mobile Services
@@ -252,16 +252,16 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     <!-- border -->![MDK](img-7.2.png)
 
-    You should see successful messages for both deployments.
+    Ensure that you see successful messages for both deployments.
 
     <!-- border -->![MDK](img-7.3.png)
 
 
 ### Display the QR code for onboarding the Mobile app
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
-Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
+.
 
 <!-- border -->![MDK](img-8.1.png)
 
@@ -272,11 +272,11 @@ Click the **Application.app** to open it in MDK Application Editor and then clic
 
 [OPTION BEGIN [Android]]
 
->Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
+>Ensure that you choose the correct device platform tab above. Once you have scanned and onboarded using the onboarding URL, it will be remembered. If you log out and onboard again, you will be prompted to either continue using the current application or scan a new QR code.
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to successfully on-board the MDK client on your Android device.
 
-After you accept the app update, you will see the Pets list on the **Main** page.
+After accepting the app update, you will see the Pets list on the **Main** page.
 
 ![MDK](img-8.3.png)
 
@@ -284,11 +284,11 @@ After you accept the app update, you will see the Pets list on the **Main** page
 
 [OPTION BEGIN [iOS]]
 
->Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and onboard again, you will be asked either to continue to use current application or to scan new QR code.
+>Ensure that you choose the correct device platform tab above. Once you have scanned and onboarded using the onboarding URL, it will be remembered. If you log out and onboard again, you will be prompted to either continue using the current application or scan a new QR code.
 
-Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to successfully on-board the MDK client on your iOS device.
 
-After you accept the app update, you will see the Pets list on the **Main** page.
+After accepting the app update, you will see the Pets list on the **Main** page.
 
 ![MDK](img-8.4.png)
 

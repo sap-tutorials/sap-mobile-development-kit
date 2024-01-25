@@ -28,7 +28,7 @@ The Mobile Development Kit (MDK) enables developers and technical business users
 
 You can find more details in the [Mobile Development Kit developer page](https://community.sap.com/topics/mobile-technology/mobile-development-kit).
 
-<!-- border -->![MDK](img-1.1.png)
+![MDK](img-1.1.png)
 
 
 
@@ -41,7 +41,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 2. On the home screen, click **Create new app** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
 
-    <!-- border -->![MDK](img-2.1.png)
+    ![MDK](img-2.1.png)
 
 3. In the **Basic Info** step, provide the required information and choose **Next**.
 
@@ -50,7 +50,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
     | `ID` | com.sap.mdk.demo |
     | `Name` | SAP MDK Demo App |
 
-    <!-- border -->![MDK](img-2.2.png)
+    ![MDK](img-2.2.png)
 
     > If you are configuring this app in a trial account, make sure to select **License Type** as *lite*.
 
@@ -58,21 +58,21 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 4. In the **XSUAA Settings** step, continue with the default settings and choose **Next** to navigate to further steps.
 
-    <!-- border -->![MDK](img-2.3.png)
+    ![MDK](img-2.3.png)
 
 5. In the **Role Settings** step, leave the settings as it is and choose **Next** to navigate to further steps.
 
-    <!-- border -->![MDK](img-2.3.1.png)    
+    ![MDK](img-2.3.1.png)    
 
 6. In the **Assign Features** step, select **Mobile Development Kit Application** from the dropdown if it's not already selected and then click on **Finish**.
 
-    <!-- border -->![MDK](img-2.4.png)
+    ![MDK](img-2.4.png)
 
     >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured, if needed.
 
     Once you have created your application, you see a list of default features have been automatically assigned to the app.
 
-    <!-- border -->![MDK](img-2.5.png)
+    ![MDK](img-2.5.png)
 
     >You can find more information on available features in SAP Mobile Services in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/features.html).
 
@@ -82,52 +82,56 @@ A [sample OData](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud
 
 1. Click on the `+` icon next to the **Assigned Features**. 
 
-    <!-- border -->![MDK](img-2.5.1.png)
+    ![MDK](img-2.5.1.png)
 
 2. Choose **`Mobile Sample OData ESPM`** from the feature list and choose **OK**.
 
-    <!-- border -->![MDK](img-2.5.2.png)
-    
- 3. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
+    ![MDK](img-2.5.2.png)
 
-    <!-- border -->![MDK](img-2.5.2.gif)
+3. By default, OData version 2 is selected. Choose **Version 4** from the dropdown and click **Save**.   
+
+    ![MDK](img-2.5.3.png)
+
+4. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
+
+    ![MDK](img-2.5.2.gif)
 
     >When you view the data, you might see something like this instead of the nicely formatted output from above.
-    ><!-- border -->![MDK](img-2.5.4.png)
+    >![MDK](img-2.5.4.png)
     >However, this doesn't mean you've made a mistake in the tutorial. Rather, this is the correct output without any formatting. If you'd like to see a formatted output in your browser, you can add an `JSON Formatter` extension to your browser. 
 
 ### Create a new destination to your MDK Mobile application
 
-Assigning the `Mobile Sample OData ESPM` feature to your application configuration automatically creates a destination named `com.sap.edm.sampleservice.v2` in the `Mobile Connectivity`. 
+Assigning the `Mobile Sample OData ESPM` feature to your application configuration automatically creates a destination named `com.sap.edm.sampleservice.v4` in the `Mobile Connectivity`. 
 
-This `com.sap.edm.sampleservice.v2` destination is immutable. However, for other tutorials where you need to add additional details, simply create a new destination by copying the settings from that destination.
+This `com.sap.edm.sampleservice.v4` destination is immutable. However, for other tutorials where you need to add additional details, simply create a new destination by copying the settings from that destination.
 
 1. Click **Mobile Connectivity**.  
 
-    <!-- border -->![MDK](img-3.1.png)
+    ![MDK](img-3.1.png)
 
 2. Copy the URL from existing destination and click the **Create** icon to add a new destination.
 
-    <!-- border -->![MDK](img-3.2.png)
+    ![MDK](img-3.2.png)
 
 3. In **Basic Info** step, provide the required information and click **Next**.
 
     | Field | Value |
     |----|----|
-    | `Destination Name` | SampleServiceV2 |
+    | `Destination Name` | SampleServiceV4 |
     | `URL` | paste the URL from above step  |
 
-    <!-- border -->![MDK](img-3.3.png)
+    ![MDK](img-3.3.png)
 
 4. For this tutorial, there is no Custom Headers, Annotations required. Click **Next** to navigate to further steps.
 
 5. In **Destination Configuration** step, select **SSO Mechanism** as **Forward Authentication**, click **Next**.   
 
-    <!-- border -->![MDK](img-3.4.png)
+    ![MDK](img-3.4.png)
 
 6. For this tutorial, there is no certificate configuration needed. Click **Finish**.
 
-    <!-- border -->![MDK](img-3.5.png)
+    ![MDK](img-3.5.png)
 
 
 ### Create a new destination to your MDK Web application
@@ -139,21 +143,21 @@ MDK Web application accesses the data sources via BTP destination. You will now 
 
 1. Click `com.sap.mdk.demo` to navigate to Mobile Services application details.
 
-    <!-- border -->![MDK](img-4.1.png)
+    ![MDK](img-4.1.png)
 
 2. Open the `APIs` tab, click _copy to clipboard_ icon to copy the highlighted URL and paste it in a text file. This URL will be used in configuring the  BTP destination.
 
-    <!-- border -->![MDK](img-4.2.png)
+    ![MDK](img-4.2.png)
 
 3. In your SAP BTP space cockpit page, navigate to the **Services** **&rarr;**  **Instances and Subscriptions**, select **Authorization and Trust Management service** from the list, click `com-sap-mdk-demo-xsuaa` instance, choose trip dot icon **&rarr;** **View** to open the configuration details.
 
-    <!-- border -->![MDK](img-4.3.png)
+    ![MDK](img-4.3.png)
 
 4. Switch to **Form** tab, copy values for `clientid`, `clientsecret`, `url` parameters and paste these values in the text file. These parameters will be used in configuring the BTP destination.  
 
-    <!-- border -->![MDK](img-4.4.png)
+    ![MDK](img-4.4.png)
 
-5. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/0-Set-Up-for-the-Mobile-Development-Kit/SampleServiceV2.zip) and unzip it on your machine.
+5. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/0-Set-Up-for-the-Mobile-Development-Kit/SampleServiceV4.zip) and unzip it on your machine.
 
 6. In your BTP cockpit, navigate to **Connectivity** **&rarr;** **Destinations** to create a BTP destination, click **Import Destination** to import the extracted file and provide the required information and click **Save**.
 
@@ -162,12 +166,12 @@ MDK Web application accesses the data sources via BTP destination. You will now 
     | `URL` | Paste the URL from step 4.2 |
     | `Client ID` | Paste the value from step 4.4  |
     | `Client Secret` | Paste the value from step 4.4 |
-    | `Token Service URL` | Replace the Token URL placeholder with the URL from step 4.4 , make sure the Token URL is appended by `/oauth/token` |
+    | `Token Service URL` | Replace the Token URL placeholder with the URL from step 4.4, make sure the Token URL is appended by `/oauth/token` |
     | `Use Default JDK truststore` | Select the checkbox if not selected before |
 
-    <!-- border -->![MDK](img-4.6.png)
+    ![MDK](img-4.5.png)
 
-    >When checking the connection, if all your configurations are correct, you will see a success message saying `Connection to "SampleServiceV2" established. Response returned: "400: Bad Request"`. In this particular case, it is safe to ignore the `"400: Bad Request"` part of this message.
+    >When checking the connection, if all your configurations are correct, you will see a success message saying `Connection to "SampleServiceV4" established. Response returned: "400: Bad Request"`. In this particular case, it is safe to ignore the `"400: Bad Request"` part of this message.
 
 
 

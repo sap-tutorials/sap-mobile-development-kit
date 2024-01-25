@@ -112,7 +112,6 @@ Deploy the updated application to your MDK client.
 
 ### Run the app
 
-
 >Make sure you are choosing the right device platform tab above.
 
 [OPTION BEGIN [Android]]

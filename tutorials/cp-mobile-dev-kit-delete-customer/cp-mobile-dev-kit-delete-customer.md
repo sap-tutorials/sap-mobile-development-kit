@@ -105,7 +105,7 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
 
     | Property | Value |
     |----|----|
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
+    | `Service`| Select `SampleServiceV4.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
     | `ReadLink`| click link icon and double click `readLink` |
 

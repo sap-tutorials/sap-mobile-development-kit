@@ -177,7 +177,7 @@ First, add an action bar item on the `Customers_Create.page`.
     |----|----|
     | `Name`| `Customers_CreateEntity` |
     | `Type` | Select `CreateEntity` from the dropdown |
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
+    | `Service`| Select `SampleServiceV4.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
 
     <!-- border -->![MDK](img-3.5.png)

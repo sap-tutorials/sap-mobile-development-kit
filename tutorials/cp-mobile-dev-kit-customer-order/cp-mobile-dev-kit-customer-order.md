@@ -64,9 +64,9 @@ This page will display customer orders list, you will add an **Object Table** co
 
     | Property | Value |
     |----|----|
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
+    | `Service`| Select `SampleServiceV4.service` from the dropdown |
     | `EntitySet` | Select `SalesOrderHeaders` from the dropdown |
-    | `QueryOptions`| `$filter=CustomerId eq '{CustomerId}'&$orderby=CreatedAt desc` |
+    | `QueryOptions`| `$filter=CustomerID eq {CustomerID}&$orderby=CreatedAt desc` |
 
     <!-- border -->![MDK](img-1.5.png)
 
@@ -84,11 +84,12 @@ This page will display customer orders list, you will add an **Object Table** co
     | `Footnote` | Remove the default value and leave it blank |
     | `PreserveIconStackSpacing`| `false` |
     | `ProgressIndicator` | Remove the default value and leave it blank |
-    | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
-    | `Subhead` | bind it to `{CustomerId}` |
-    | `Substatus`| bind it to `{LifeCycleStatusName}` |
+    | `StatusText`| `$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})` |
+    | `Subhead` | bind it to `{CustomerID}` |
+    | `SubstatusText`| Remove the default value and leave it blank |
     | `Tags` | Click the `item0` and then click the trash icon to delete the default item |
-    | `Title`| bind it to `{SalesOrderId}` |
+    | `Title`| bind it to `{SalesOrderID}` |
+
 
     <!-- border -->![MDK](img-1.7.png)
 
@@ -96,7 +97,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
     ><!-- border -->![MDK](img-1.8.gif)
 
-    >`$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` is an expression of how to format currency value, end result would be like €200.44. By default it will be formatted to the device's locale setting.  More details on Currency Formatter is available in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#currency-formatter).
+    >`$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})` is an expression of how to format currency value, end result would be like €200.44. By default it will be formatted to the device's locale setting. More details on Currency Formatter is available in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#currency-formatter).
 
     ><!-- border -->![MDK](img-1.9.gif)
 
@@ -137,7 +138,7 @@ This page will show related details for an order. In this page, you will add an 
 
     | Property | Value |
     |----|----|
-    | `Service` | Select `SampleServiceV2.service` from the dropdown |
+    | `Service` | Select `SampleServiceV4.service` from the dropdown |
     | `EntitySet` | select `SalesOrderHeaders` from the dropdown|
 
     <!-- border -->![MDK](img-2.1.1.png)
@@ -165,7 +166,7 @@ This page will show related details for an order. In this page, you will add an 
     | Property | Value |
     |----|----|
     | `KeyName`| `Order Number` |
-    | `Value` | bind it to `{SalesOrderId}` |
+    | `Value` | bind it to `{SalesOrderID}` |
 
     <!-- border -->![MDK](img-2.5.png)
 
@@ -190,22 +191,21 @@ This page will show related details for an order. In this page, you will add an 
     | Property | Value |
     |----|----|
     | `KeyName`| `Net Amount` |
-    | `Value` | `$(C,{NetAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
+    | `Value` | `$(C,{NetAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})` |
 
     | Property | Value |
     |----|----|
     | `KeyName`| `Tax Amount` |
-    | `Value` | `$(C,{TaxAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
+    | `Value` | `$(C,{TaxAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})` |
 
     | Property | Value |
     |----|----|
     | `KeyName`| `Total Amount` |
-    | `Value` | `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
+    | `Value` | `$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})` |
 
     You should have final binding for all key value items as below:
 
     <!-- border -->![MDK](img-2.7.png)
-
 
 
 ### Navigate from Customer Order Page to Order Details Page
@@ -253,7 +253,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
    
     | Field | Value |
     |----|----|
-    | `Service`| select `SampleServiceV2.service` from the dropdown |
+    | `Service`| select `SampleServiceV4.service` from the dropdown |
     | `EntitySet` | select `{@odata.readLink}/SalesOrders` from the dropdown |
     | `QueryOptions`| `$top=5&$orderby=CreatedAt desc` |
 
@@ -277,11 +277,11 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
     | `Footnote` | Remove the default value and leave it blank  |
     | `PreserveIconStackSpacing`| select `false` from the dropdown |
     | `ProgressIndicator` | Remove the default value and leave it blank  |
-    | `Status`| `$(C,{GrossAmount},{CurrencyCode},'',{maximumFractionDigits:2,useGrouping:true})` |
+    | `StatusText`| `$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})` |
     | `Subhead` | `$(D,{CreatedAt},'','',{format:'medium'})` |
-    | `Substatus`| bind it to `{CurrencyCode}` |
+    | `SubstatusText`| bind it to `{CurrencyCode}` |
     | `Tags` | Click the `item0` and then click the trash icon to delete the default item |
-    | `Title`| bind it to `{SalesOrderId}` |
+    | `Title`| bind it to `{SalesOrderID}` |
 
     <!-- border -->![MDK](img-4.4.png)
 
@@ -367,9 +367,9 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
     */
     export default function CustomerOrderCount(clientAPI) {
         //The following currentCustomer will retrieve the current customer record
-        const currentCustomer = clientAPI.getPageProxy().binding.CustomerId;
+        const currentCustomer = clientAPI.getPageProxy().binding.CustomerID;
         //The following expression will retrieve the total count of the orders for a given customer
-        return clientAPI.count('/DemoSampleApp/Services/SampleServiceV2.service', 'SalesOrderHeaders', `$filter=CustomerId eq '${currentCustomer}'`).then((count) => {
+        return clientAPI.count('/DemoSampleApp/Services/SampleServiceV4.service', 'SalesOrderHeaders', `$filter=CustomerID eq ${currentCustomer}`).then((count) => {
             return count;
         });
     }
@@ -380,7 +380,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
     | Property | Value |
     |----|----|
     | `Caption`| `See All` |
-    | `FooterStyle`| Select `attribute` from the dropdown |
+    | `FooterStyle`| Select `Attribute` from the dropdown |
     | `AccessoryType`| Select `DisclosureIndicator` from the dropdown |
 
     <!-- border -->![MDK](img-6.5.png)

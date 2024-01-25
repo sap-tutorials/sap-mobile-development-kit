@@ -42,20 +42,20 @@ This page will show related details for a customer. In this page, you will add a
 
     <!-- border -->![MDK](img-1.2.png)
 
-3. set the Caption to **Details**.
-
-    <!-- border -->![MDK](img-1.4.png)
-
-4. In the **Properties** pane, provide the below information under `DesignTimeTarget`.
+3. In the **Properties** pane, provide the below information under `DesignTimeTarget`.
 
     | Property | Value |
     |----|----|
-    | `Service` | Select `SampleServiceV2.service` from the dropdown |
+    | `Service` | Select `SampleServiceV4.service` from the dropdown |
     | `EntitySet` | select `Customers` from the dropdown |
 
     <!-- border -->![MDK](img-1.3.png)
 
     >`DesignTimeTarget` is a page level property similar to Target but it is only used for design time. This helps in validating the binding context of current page. For more details, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/create-pages.html#page-editor).
+
+4. set the Caption to **Details**.
+
+    <!-- border -->![MDK](img-1.4.png)
 
 5. Next, you will add an **Object Header** container to display information like first name, last name, date of birth, email address & phone number.
 
@@ -75,13 +75,13 @@ This page will show related details for a customer. In this page, you will add a
 
     | Property | Value |
     |----|----|
-    | `Description` | `{CustomerId}` |
+    | `Description` | `{CustomerID}` |
     | `DetailImage` | Click link icon to open the browser and bind it to `customer` SAP icon |
     | `FootNote`| `{EmailAddress}` |
     | `HeadlineText`| `{LastName}` |
-    | `Status` | `{PhoneNumber}` |
+    | `StatusText` | `{PhoneNumber}` |
     | `Subhead` | `{FirstName}` |
-    | `Substatus` | Remove the default property |
+    | `SubstatusText` | Remove the default property |
 
     >`DetailImage` property is referencing to the [SAP font icon](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons).
 

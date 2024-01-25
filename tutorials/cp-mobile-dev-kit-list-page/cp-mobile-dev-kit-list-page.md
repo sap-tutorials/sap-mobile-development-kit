@@ -17,7 +17,6 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
-
 ## Intro
 To enhance your MDK app with customer list information, you need to carry out the following tasks:
 
@@ -63,7 +62,7 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     | Field | Value |
     |----|----|
-    | `Service`| Select `SampleServiceV2.service` from the dropdown |
+    | `Service`| Select `SampleServiceV4.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
 
     <!-- border -->![MDK](img-1.6.gif)

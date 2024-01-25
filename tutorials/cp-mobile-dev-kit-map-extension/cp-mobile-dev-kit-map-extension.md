@@ -16,7 +16,7 @@ author_profile: https://github.com/jitendrakansal
 - **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer. You will need to build your branded client using the MDK SDK when accessing the Google Maps on Android device.
 - **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device.
 <table><tr><td align="center"></td><td align="center"><!-- border -->![App Store QR Code](img-1.1.1.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts then you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
 
 ## You will learn
@@ -76,7 +76,7 @@ This step includes creating the mobile development kit project in the editor.
     | `Data Source` | Select `Mobile Services` from the dropdown |
     | `Mobile Services Landscape` | Select `standard` from the dropdown |
     | `Application Id` | Select `com.sap.mdk.demo` from the dropdown |
-    | `Destination` | Select `SampleServiceV2` from the dropdown |
+    | `Destination` | Select `SampleServiceV4` from the dropdown |
     | `Enter a path to the OData service` | Leave it as it is |
     | `Enable Offline` | Choose `No` |  
 
@@ -447,9 +447,6 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     <!-- border -->![MDK](img-5.4.png)
 
-    >When deploying from VS Code to App Update and using an MDK 6.0+ client, you need to set the TS Target to use es6 instead of the default es5 version. See below for the setting in VS Code where you change it for es6.
-    <!-- border -->![MDK](img-5.5.png)
-
 
 ### Get the API Key to use the Maps SDK for Android (Required only for Android client)
 
@@ -587,9 +584,10 @@ In this step, you will run the app on an Android device.
 
     ![MDK](img-8.9.png)
 
-10. If you want your MDK client to send you notification, click **Next**. 
+10. Tap **Next**. If you want your MDK client to send you notifications, tap **Allow**, otherwise, tap **Don't allow**. 
 
     ![MDK](img-5.9.1.png)
+    ![MDK](img-5.9.2.png)    
 
 11. Tap **Now** to update the client with new MDK metadata.
 
@@ -608,9 +606,10 @@ In this step, you will run the app on an Android device.
 
 [OPTION BEGIN [iOS]]
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. C
 
-1. Click the **Application.app** to open it in MDK Application Editor and then click the **Application QR Code** icon.
+
+1. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
     <!-- border -->![MDK](img-8.13.png)
 
@@ -620,7 +619,7 @@ SAP Business Application Studio has a feature to display the QR code for onboard
 
     >Leave the Onboarding dialog box open for the next step.
 
-2. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to on-board the MDK client.
+2. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-iOS-client/Onboarding-iOS-client.md) to successfully on-board the MDK client on your iOS device.
 
 3. After you have accepted the app update, tap `Customers` to navigate to customers list.
 

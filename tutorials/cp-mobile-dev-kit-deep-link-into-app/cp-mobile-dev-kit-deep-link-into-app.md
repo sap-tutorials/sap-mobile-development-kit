@@ -73,7 +73,7 @@ This step includes creating the mobile development kit project in the editor.
     | `Data Source` | Select `Mobile Services` from the dropdown |
     | `Mobile Services Landscape` | Select `standard` from the dropdown |
     | `Application Id` | Select `com.sap.mdk.demo` from the dropdown |
-    | `Destination` | Select `SampleServiceV2` from the dropdown |
+    | `Destination` | Select `SampleServiceV4` from the dropdown |
     | `Enter a path to the OData service` | Leave it as it is |
     | `Enable Offline` | Choose `Yes` |  
 
@@ -475,7 +475,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
 
     >**Server URL**: Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `com.sap.mdk.demo` app. Click the **APIs** tab. Copy the **Server** URL.
 
-    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `SampleServiceV2` destination.
+    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `SampleServiceV4` destination.
     ><!-- border -->![MDK](img-7.3.png)
     >A new tab opens in the browser. Remove `?auth=uaa` and add `/Products` to view product list. Copy any `ProductId` and paste it in the `index.html`.
     ><!-- border -->![MDK](img-7.4.png)
@@ -510,7 +510,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
     <!-- border -->![MDK](img-7.2.png)
 
     >**Server URL**: Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `com.sap.mdk.demo` app. Click the **APIs** tab. Copy the **Server** URL.
-    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `SampleServiceV2` destination.
+    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `SampleService4` destination.
     ><!-- border -->![MDK](img-7.3.png)
     >A new tab opens in the browser. Remove `?auth=uaa` and add `/Products` to view product list. Copy any `ProductId` and paste it in the `index.html`.
     ><!-- border -->![MDK](img-7.4.png)
