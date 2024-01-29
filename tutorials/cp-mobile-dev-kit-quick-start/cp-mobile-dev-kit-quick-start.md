@@ -157,7 +157,7 @@ The On-boarding QR code is now displayed.
 
 Ensure that you have downloaded the SAP Mobile Services Client from the public store, as mentioned in the prerequisites. This client provides a demo mode with Demo App and Mentor App.
 
-**Demo App**: The Demo app is intented for you to explore the MDK capabilities. This app connects to the same Mobile Services sample backend to which your MDK app is connected.
+**Demo App**: The Demo app is intended for you to explore the MDK capabilities. This app connects to the same Mobile Services sample backend to which your MDK app is connected.
 
 **Mentor App**: The MDK Mentor app is interactive documentation that helps designers and developers discover the capabilities of the SAP Mobile Development Kit. You can view live previews of the UI components and change parameters to see the effects immediately. 
 

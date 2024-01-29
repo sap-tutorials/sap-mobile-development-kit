@@ -40,7 +40,12 @@ analyze/reports/report_*.csv
 ehthumbs.db
 Thumbs.db
 
-.DS_Store
+**/.DS_Store
+**/jsconfig.json
+**/IClientAPI.d.ts
+**/.vscode/*
+**/.build/*
+**/.project.json
 
 #  validation files  #
 ######################
