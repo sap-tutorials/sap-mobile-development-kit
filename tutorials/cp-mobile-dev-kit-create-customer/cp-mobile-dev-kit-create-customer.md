@@ -401,5 +401,4 @@ You can cross verify if a record has been updated in the backend.
 >It will open the URL in a new tab, remove `?auth=uaa` and add `/Customers` at the end of the URL.
 ![MDK](img-7.15.png)
 
-
 ---

@@ -23,7 +23,6 @@ author_profile: https://github.com/jitendrakansal
 
 ### Create a new page for modifying customer data
 
-
 Regardless of whether your application is online or offline, you can allow users to modify data in the application.
 
 For online applications, the changes are saved to the backend immediately.

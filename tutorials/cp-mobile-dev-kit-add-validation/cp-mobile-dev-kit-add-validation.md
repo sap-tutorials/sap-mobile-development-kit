@@ -16,6 +16,7 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
+
 ## Intro
 When allowing end-users to make updates to data, it is important to add validation rules to verify that they are entering valid information.
 If the Update action fails due to the validation rule, the application will display a validation failure message to the end-user.

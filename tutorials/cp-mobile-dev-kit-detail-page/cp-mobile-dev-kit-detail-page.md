@@ -8,6 +8,7 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
+
 # Create a Customer Detail Page in an MDK App
 <!-- description --> Create a new page for displaying customer details in an MDK app.
 

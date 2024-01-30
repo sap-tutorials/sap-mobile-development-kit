@@ -109,7 +109,6 @@ These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264ac
 
 - **`Application.app`**: this is the main configuration file for your application from within SAP Business Application Studio. Here you define your start page (here in this tutorial, it is main.page), action settings for different stages of the application session lifecycle, push notifications, and more.
 
-
 ### Deploy the application
 
 So far, you have learned how to quickly build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services and Cloud Foundry to use it in the Mobile client and Web application respectively.
