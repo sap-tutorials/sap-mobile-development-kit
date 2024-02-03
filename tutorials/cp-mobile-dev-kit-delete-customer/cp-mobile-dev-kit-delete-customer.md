@@ -265,5 +265,4 @@ You can cross verify if this record has been deleted in the backend.
 
 >It will open the URL in a new tab, remove `?auth=uaa` and add `/Customers` at the end of the URL.
 
-
 ---

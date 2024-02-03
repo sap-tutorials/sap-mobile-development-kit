@@ -56,7 +56,6 @@ Make sure you have already configured an app in Mobile Services cockpit and have
 
     Provide the below information, click on the empty area to trigger the Next button clickable and then click **Next**:
 
-
     | Field | Value |
     |----|----|
     | `Annotation Name`| `Product` |

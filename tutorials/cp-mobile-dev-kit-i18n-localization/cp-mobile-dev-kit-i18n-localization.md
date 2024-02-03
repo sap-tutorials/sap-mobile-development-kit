@@ -129,7 +129,6 @@ The On-boarding QR code is now displayed.
 
 ### Run the app
 
-
 [OPTION BEGIN [Android]]
 
 >Ensure that you choose the correct device platform tab above. Once you have scanned and onboarded using the onboarding URL, it will be remembered. If you log out and onboard again, you will be prompted to either continue using the current application or scan a new QR code.

@@ -27,7 +27,6 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ---
 
-
 ![MDK](img-1.0.png)
 
 ### Define push notification settings in app configuration
@@ -279,7 +278,7 @@ The On-boarding QR code is now displayed.
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
-    <!-- border -->![MDK](img-7.7.png)
+    <!-- border -->![MDK](img-7.2.png)
 
 4. In notification dialog, type a notification message and click **Send**.
 
@@ -302,7 +301,5 @@ The On-boarding QR code is now displayed.
 [OPTION END]
 
 >Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and on-board again, you will be asked either to continue to use current application or to scan new QR code.
-
-
 
 ---

@@ -24,7 +24,6 @@ author_profile: https://github.com/jitendrakansal
 
 ### Configure a new MDK application in Mobile Services cockpit
 
-
 1. Navigate to [SAP Mobile Services cockpit](fiori-ios-hcpms-setup).
 
 2. On the home screen, select **Create new app**.

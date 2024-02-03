@@ -26,7 +26,6 @@ Managing issues with apps rolled out to a large number of users is a challenge a
 
 ### Define client log policy in Mobile Services cockpit
 
-
 SAP Mobile Services provides administrators, developers and support staff with extensive logs and traces functionality to troubleshoot application issues. You can control the amount of information that is captured by setting the log level for individual logging components.
 
 In this step, you will enable client log upload policy in **SAP Mobile Services Cockpit** for a given MDK app.
@@ -40,7 +39,6 @@ In this step, you will enable client log upload policy in **SAP Mobile Services 
     <!-- border -->![MDK](img-1.2.png)
 
     >Other policy parameters like Log Level, Delete Uploaded Log After, Maximum Number of Logs and Maximum Log Size currently have no effect.
-
 
     >You can find more details about [Client Log Upload feature](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/config.html).
 

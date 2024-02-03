@@ -231,8 +231,6 @@ In this step, you will bind style classes:
     <!-- border -->![MDK](img-3.3.png)
 
 
-
-
 ### Deploy the application
 
 

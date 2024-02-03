@@ -232,14 +232,11 @@ Compress your `.mdkproject` folder, the resulting zip file will be used to creat
 
 ### Configure device platform signing profile in Mobile Services
 
-
 >Make sure you are choosing the right device platform tab above.
 
 [OPTION BEGIN [Android]]
 
 1. Open the [SAP Mobile Services cockpit](cp-mobile-dev-kit-ms-setup) and navigate to **Settings** | **Cloud Build**. Initialize the **Cloud Build Settings** if not done before.
-
-    <!-- border -->![MDK](img-3.1.png)
 
 2. You have an option to generate a new signing profile in the Mobile Services cockpit by providing mandatory info like Profile Name, Validity, Common Name (user name). Other information are optional.
 
@@ -254,8 +251,6 @@ Compress your `.mdkproject` folder, the resulting zip file will be used to creat
 [OPTION BEGIN [iOS]]
 
 1. Open the [SAP Mobile Services cockpit](cp-mobile-dev-kit-ms-setup) and navigate to **Settings** | **Cloud Build**. Initialise the **Cloud Build Settings** if not done before.
-
-    <!-- border -->![MDK](img-3.1.png)
 
 2. Click **Upload** to upload iOS Signing profile and provide below information:
 
@@ -293,6 +288,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
 3. In the **Basic Information** step, select **Mobile Development Kit Client** from **Client Type** dropdown.
 
+
     <!-- border -->![MDK](img-4.2.png)
 
 4. Provide required values and click **Next**.
@@ -314,7 +310,6 @@ You can find more details about Cloud Build service in [help documentation](http
 6. In the **Multimedia** step, you may upload an image to use for the app logo and click **Next**.
 
     <!-- border -->![MDK](img-4.5.png)
-
 
 7. In the **Build Options** step, select respective Signing profile(s), set minimum platform version, select a supported SDK version and click **Finish**.
 
@@ -358,7 +353,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
     Once validation is successful, you will notice the values like Device App Name, Device App Display Name, Device App Version, Device App Details, Bundle ID, and Encrypt Database have been auto-filled/selected. These values were provided in your `MDKProject.json` and `BrandedSettings.json` as part of your local `.mdkproject`.
 
-    <!-- border -->![MDK](img-4.1.png)
+    <!-- border -->![MDK](img-4.11.png)
 
     Click **Next**.
 

@@ -71,7 +71,6 @@ This step includes creating the mobile development kit project in the editor.
 
     >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
-
 5. In *Service configuration* step, provide the below information and click **Next**:
 
     | Field | Value |

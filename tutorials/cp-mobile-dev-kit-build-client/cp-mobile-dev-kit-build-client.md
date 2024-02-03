@@ -103,7 +103,6 @@ Once you've installed these prerequisites, your machine is ready to generate and
 
 ### Installing the SDK dependencies
 
-
 >Make sure you are choosing the right development platform tab above.
 
 [OPTION BEGIN [Mac]]

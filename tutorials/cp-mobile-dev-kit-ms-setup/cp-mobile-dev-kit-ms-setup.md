@@ -20,9 +20,7 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
-
 ### Understand the mobile development kit feature
-
 
 The Mobile Development Kit (MDK) enables developers and technical business users to build [multi-channel](https://community.sap.com/t5/technology-blogs-by-members/moving-to-multi-channel-with-mobile-development-kit/ba-p/13465060) applications. It allows you to build your application once, in an integrated development environment, and run it natively on mobile devices (Android & iOS) and as a web application (online) in the browser.
 

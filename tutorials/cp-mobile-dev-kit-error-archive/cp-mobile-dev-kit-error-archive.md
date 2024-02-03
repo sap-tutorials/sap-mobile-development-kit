@@ -28,7 +28,6 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 ---
 
-
 You have built an MDK app with offline functionality. In offline store, you make a change to a local record and upload this change (from request queue) to backend but backend prevents this change to accept due to some business logic failure. This error is recorded in an Offline OData specific entity set named as `ErrorArchive`. This entity set has detailed information about the errors. It's now up-to developers how they handle such errors and then let users to fix it from the app by providing the correct values. `ErrorArchive` is exposed to the application as an OData entity set and is accessible through the OData API in the same way that the application accesses any other entity sets from the offline store. You can find more details about the `ErrorArchive` Entity Properties in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/offline/common/handling-errors-and-conflicts/errorarchive-entity-properties.html) documentation.
 
 ![MDK](img-1.0.gif)

@@ -390,6 +390,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION END]
 
+
 You can cross verify if a record has been updated in the backend.
 
 >Backend URL can be found in [Mobile Services Cockpit](cp-mobile-dev-kit-ms-setup).

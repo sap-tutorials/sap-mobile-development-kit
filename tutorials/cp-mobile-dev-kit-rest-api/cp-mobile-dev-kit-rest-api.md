@@ -113,7 +113,6 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
 10. For this tutorial, there is no Custom Headers, Annotations, Authentication required, click **Next** and Finish the form.
 
-
 ### Create a new destination to your MDK Web application
 
 
