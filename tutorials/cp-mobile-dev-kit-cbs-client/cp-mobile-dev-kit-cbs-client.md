@@ -418,7 +418,4 @@ You can install this new custom MDK client app either by scanning QR code from i
 
 [OPTION END]
 
-
-
-
 ---
