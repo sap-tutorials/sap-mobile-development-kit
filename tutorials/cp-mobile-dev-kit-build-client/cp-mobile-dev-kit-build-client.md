@@ -378,8 +378,11 @@ To use the SDK to generate a mobile development kit client, the first step is to
 9. Confirm the passcode and tap **Done**.
 
     ![MDK](img-5.9.png)
+    
 
 10. Optionally, you can enable biometric authentication to get faster access to the app data. **Please note that if your MDK client is multi-user enabled, you won't see the biometric screen**.
+
+    ![MDK](img-5.9.2.png)
 
 11. If you want your MDK client to send you notification, click **Next**. 
 
