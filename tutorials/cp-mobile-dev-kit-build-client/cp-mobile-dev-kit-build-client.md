@@ -379,13 +379,13 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     ![MDK](img-5.9.png)
 
-    >Optionally, you can enable biometric authentication to get faster access to the app data.
+10. Optionally, you can enable biometric authentication to get faster access to the app data. **Please note that if your MDK client is multi-user enabled, you won't see the biometric screen**.
 
-10. If you want your MDK client to send you notification, click **Next**. 
+11. If you want your MDK client to send you notification, click **Next**. 
 
     ![MDK](img-5.9.1.png)
 
-    If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
+12. If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
 
     ![MDK](img-5.10.png)
 
@@ -430,14 +430,16 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     ![MDK](img-5.17.png)
 
+
 9. Confirm the passcode and tap **Done**.
 
     ![MDK](img-5.18.png)
 
-    >Optionally, you can enable biometric authentication to get faster access to the app data.
-    >![MDK](img-5.19.png)
+10. Optionally, you can enable biometric authentication to get faster access to the app data. **Please note that if your MDK client is multi-user enabled, you won't see the biometric screen**.
 
-    If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
+    ![MDK](img-5.19.png)
+
+11. If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
 
     ![MDK](img-5.20.png)
 
