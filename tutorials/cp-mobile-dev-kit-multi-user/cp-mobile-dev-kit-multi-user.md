@@ -321,7 +321,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-m
 
 [OPTION END]
 
-You have learnt how to enable an Mobile Development Kit Client to support multi-user login capability. This means a Mobile Development Kit Client app on a device can now securely be shared across multiple users. Features such as adding a new user, switching between user sessions, searching for a particular user are supported by the client.
+You have learned how to enable an Mobile Development Kit Client to support multi-user login capability. This means a Mobile Development Kit Client app on a device can now securely be shared across multiple users. Features such as adding a new user, switching between user sessions, searching for a particular user are supported by the client.
 Find more information about Multi User in MDK in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/onboarding/mdk/multi-user.html).
 
 ---
