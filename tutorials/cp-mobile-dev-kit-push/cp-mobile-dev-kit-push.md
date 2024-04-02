@@ -331,7 +331,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION BEGIN [iOS]]
 
-1. Based on the device Operating System, notifications are handled differently. On iOS or iPadOS, the notification is handled by the app when in foreground, but handled (and displayed) by the Notification Console and shown in the Lock Screen, when the app is in background. So, how can you make it visible always? You use the advanced Message properties: `apns.title/apns.body`for your message. For more information on Apple Remote Notification, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/push/api/provider/apns.html). 
+1. Based on the device Operating System, notifications are handled differently. On `iOS` or `iPadOS` the notification is handled by the app when in foreground, but handled (and displayed) by the Notification Console and shown in the Lock Screen, when the app is in background. So, how can you make it visible always? You use the advanced Message properties: `apns.title/apns.body`for your message. For more information on Apple Remote Notification, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/push/api/provider/apns.html). 
 
 2. Send the iOS client in the background or swipe close. 
 
