@@ -8,6 +8,7 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
+
 # Add NativeScript Plugins in an MDK App
 <!-- description --> Build and run the Mobile Development Kit client with a non-visual extension functionality for Android and iOS platforms.
 
@@ -35,7 +36,6 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 ### Create a new MDK project in SAP Business Application Studio
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
-
 
 2. Click **New Project from Template** on the `Get Started` page.
 

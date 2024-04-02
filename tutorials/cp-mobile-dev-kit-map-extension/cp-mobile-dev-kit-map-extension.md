@@ -18,7 +18,6 @@ author_profile: https://github.com/jitendrakansal
 <table><tr><td align="center"></td><td align="center"><!-- border -->![App Store QR Code](img-1.1.1.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
-
 ## You will learn
   - How to register and consume an Extension control in MDK Metadata
   - How to build a Mobile development kit client for iOS and Android

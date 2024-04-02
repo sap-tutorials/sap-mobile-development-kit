@@ -93,6 +93,7 @@ The purpose of the `OnUserSwitch` event is to inform the application that a user
 
 Since the underlying offline database is shared, it is the responsibility of the application developer to ensure that all necessary steps are taken to reinitialize the application for the new user to continue functioning properly.
 
+
 1. Click the **Application.app** to open it in MDK Application Editor and then and select the link icon for the `OnUserSwitch` event.
 
     <!-- border -->![MDK](img-1.7.png) 

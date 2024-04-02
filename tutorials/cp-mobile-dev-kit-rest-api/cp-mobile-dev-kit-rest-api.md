@@ -8,7 +8,6 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
-
 # Consume a REST API in an MDK App
 <!-- description --> Create a fully functional multi-channel application consuming Petstore REST API.
 

@@ -69,6 +69,18 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
     <!-- border -->![MDK](img-1.8.png)    
 
+10. Go to the **Project settings**. 
+
+    <!-- border -->![MDK](img-1.9.png)   
+    
+11. Select the **Service accounts** tab and click on the **Generate new private key**. 
+
+    <!-- border -->![MDK](img-1.9.1.png)  
+
+12. Click the **Generate key** in the pop-up window and store the downloaded private key file securely because the key cannot be recovered if lost.
+
+    <!-- border -->![MDK](img-1.9.2.png)   
+
 [OPTION END]
 
 [OPTION BEGIN [iOS]]
@@ -197,25 +209,21 @@ To enable your app for push notifications, you need to carry out the following t
 
 [OPTION BEGIN [Android]]
 
-1. In Firebase console page, click gear icon and then click **Project Settings**.
+1. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/MDK` | `com.sap.mdk.demo` | `Mobile Push Notification`. 
+
+2. If you have selected _Predefined for_ option, switch to the empty value. You should see Android option showing up on the page. Click **Browse…** to load the downloaded private key file. 
 
     <!-- border -->![MDK](img-2.1.png)
 
-2. Navigate to **Cloud Messaging** tab, copy the **Server key**.
+3. You should see the values showing up, click **Save** to save the changes.
 
     <!-- border -->![MDK](img-2.2.png)
-
-3. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/Hybrid` | `com.sap.mdk.demo` | `Mobile Push Notification`. If you have selected _Predefined for_ option, switch to the empty value. You should see options showing up on the page. Select the **Server Key** and paste the Server Key value in **Android** push settings in Mobile Services cockpit.
-
-    <!-- border -->![MDK](img-2.3.png)
-
-4. Repeat the above step for **Sender ID** and then click **Save**.
 
 [OPTION END]
 
 [OPTION BEGIN [iOS]]
 
-1. In Mobile Services cockpit, navigate to the **Mobile Push Notification** feature for app id `com.sap.mdk.demo`.
+1. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/MDK` | `com.sap.mdk.demo` | `Mobile Push Notification`.
 
 2. If you have selected _Predefined for_ option, switch to the empty value. You should see options showing up on the page. Provide the following details to the **Apple** panel and click **Save**.
 
@@ -278,8 +286,7 @@ Paste the downloaded `google-services.json` file to `/DemoSampleApp.mdkproject/A
 Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
 
 
-### Run the MDK client
-
+### Test a Simple Notification in your MDK client
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -307,7 +314,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-m
 
     <!-- border -->![MDK](img-5.4.png)
 
-    After sending notification, mobile device should receive the message.
+    After sending notification, mobile device should receive the message. This example uses the simplest notification that only contains the alert property. 
 
     ![MDK](img-5.5.png)
 
@@ -338,7 +345,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-m
 
     <!-- border -->![MDK](img-5.4.png)
 
-    After sending notification, mobile device should receive the message.
+    After sending notification, mobile device should receive the message. This example uses the simplest notification that only contains the alert property. 
 
     ![MDK](img-5.9.png)
 
@@ -350,8 +357,62 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-m
 
 [OPTION END]
 
+### Test an Advanced Notification in your MDK client
+
+>Make sure you are choosing the right device platform tab above. 
+
+[OPTION BEGIN [Android]]
+
+1. Based on the device Operating System, notifications are handled differently. On Android, the notification is a data message and only handled by the apps notification callback. The callback is only called when the app is active. So, how can you make it visible always? You use the advanced Message properties: `gcm.title/gcm.body`for your message. For more information on Google/Firebase Cloud Messaging, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/push/api/provider/fcm.html). 
+
+2. Send the Android client in the background or swipe close. 
+
+3. Switch to the **Advanced** tab, provide below payload and click **Send**. 
+
+    ```JSON
+    {
+        "alert": "Alert message",
+        "gcm": {
+            "title": "MDK Push",
+            "body": "This is an advanced notification message"
+        }
+    }
+    ```
+
+    <!-- border -->![MDK](img-6.1.png)
+
+3. After sending notification, you will see a notification in the notification center. 
+
+    ![MDK](img-6.2.png)    
+
+[OPTION END]
+
+[OPTION BEGIN [iOS]]
+
+1. Based on the device Operating System, notifications are handled differently. On iOS or iPadOS, the notification is handled by the app when in foreground, but handled (and displayed) by the Notification Console and shown in the Lock Screen, when the app is in background. So, how can you make it visible always? You use the advanced Message properties: `apns.title/apns.body`for your message. For more information on Apple Remote Notification, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/push/api/provider/apns.html). 
+
+2. Send the iOS client in the background or swipe close. 
+
+3. Switch to the **Advanced** tab, provide below payload and click **Send**. 
+
+    ```JSON
+    {
+        "alert": "Alert message",
+        "apns": {
+            "title": "MDK Push",
+            "body": "This is an advanced notification message"
+        }
+    }
+    ```
+
+    <!-- border -->![MDK](img-8.3.png)
+
+3. After sending notification, you will see a notification in the notification center. 
+
+    ![MDK](img-8.4.png) 
+  
+[OPTION END]
+
 Congratulations, you have successfully enabled push notification in your branded client and you can continue with the remaining tutorials in this mission.
-
-
 
 ---

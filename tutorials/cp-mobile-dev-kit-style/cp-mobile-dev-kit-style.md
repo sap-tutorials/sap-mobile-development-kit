@@ -18,6 +18,7 @@ author_profile: https://github.com/jitendrakansal
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
 
+
 ## You will learn
   - How to change color of action bar and tool bar
   - How to change font color and background color of MDK control properties in a section page

@@ -31,7 +31,6 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ### Define push notification settings in app configuration
 
-
 1. Open the [SAP Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click **Mobile Push Notification** feature.
 
     <!-- border -->![MDK](img-1.1.png)
@@ -229,8 +228,7 @@ The On-boarding QR code is now displayed.
 >Leave the Onboarding dialog box open for the next step.
 
 
-### Run the app
-
+### Test a Simple Notification in MDK client
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and on-board again, you will be asked either to continue to use current application or to scan new QR code.
 
@@ -250,7 +248,7 @@ The On-boarding QR code is now displayed.
 
     <!-- border -->![MDK](img-7.2.png)
 
-12. In notification dialog, type a notification message and click **Send**.
+4. In notification dialog, type a notification message and click **Send**.
 
     <!-- border -->![MDK](img-7.3.png)
 
@@ -258,9 +256,9 @@ The On-boarding QR code is now displayed.
 
     <!-- border -->![MDK](img-7.4.png)
 
-    After sending notification, mobile device should receive the message.
+    After sending notification, mobile device should receive the message. This example uses the simplest notification that only contains the alert property. 
 
-    ![MDK](img-1.0.png)
+    ![MDK](img-1.0.png)    
 
 [OPTION END]
 
@@ -289,7 +287,7 @@ The On-boarding QR code is now displayed.
 
     <!-- border -->![MDK](img-7.4.png)
 
-    After sending notification, mobile device should receive the message.
+    After sending notification, mobile device should receive the message. This example uses the simplest notification that only contains the alert property. 
 
     ![MDK](img-7.8.png)
 
@@ -299,6 +297,62 @@ The On-boarding QR code is now displayed.
 
     >MDK supports rich push notification. MDK does not run on smart watches or as an Apple watch application.
 
+[OPTION END]
+
+### Test an Advanced Notification in your MDK client
+
+>Make sure you are choosing the right device platform tab above. 
+
+[OPTION BEGIN [Android]]
+
+1. Based on the device Operating System, notifications are handled differently. On Android, the notification is a data message and only handled by the apps notification callback. The callback is only called when the app is active. So, how can you make it visible always? You use the advanced Message properties: `gcm.title/gcm.body`for your message. For more information on Google/Firebase Cloud Messaging, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/push/api/provider/fcm.html). 
+
+2. Send the Android client in the background or swipe close. 
+
+3. Switch to the **Advanced** tab, provide below payload and click **Send**. 
+
+    ```JSON
+    {
+        "alert": "Alert message",
+        "gcm": {
+            "title": "MDK Push",
+            "body": "This is an advanced notification message"
+        }
+    }
+    ```
+
+    <!-- border -->![MDK](img-8.1.png)
+
+3. After sending notification, you will see a notification in the notification center. 
+
+    ![MDK](img-8.2.png)    
+
+[OPTION END]
+
+[OPTION BEGIN [iOS]]
+
+1. Based on the device Operating System, notifications are handled differently. On iOS or iPadOS, the notification is handled by the app when in foreground, but handled (and displayed) by the Notification Console and shown in the Lock Screen, when the app is in background. So, how can you make it visible always? You use the advanced Message properties: `apns.title/apns.body`for your message. For more information on Apple Remote Notification, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/push/api/provider/apns.html). 
+
+2. Send the iOS client in the background or swipe close. 
+
+3. Switch to the **Advanced** tab, provide below payload and click **Send**. 
+
+    ```JSON
+    {
+        "alert": "Alert message",
+        "apns": {
+            "title": "MDK Push",
+            "body": "This is an advanced notification message"
+        }
+    }
+    ```
+
+    <!-- border -->![MDK](img-8.3.png)
+
+3. After sending notification, you will see a notification in the notification center. 
+
+    ![MDK](img-8.4.png) 
+  
 [OPTION END]
 
 >Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and on-board again, you will be asked either to continue to use current application or to scan new QR code.
