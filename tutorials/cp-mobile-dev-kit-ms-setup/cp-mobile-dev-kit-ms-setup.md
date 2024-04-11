@@ -84,11 +84,7 @@ A [sample OData](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud
 
     ![MDK](img-2.5.2.png)
 
-3. By default, OData version 2 is selected. Choose **Version 4** from the dropdown and click **Save**.   
-
-    ![MDK](img-2.5.3.png)
-
-4. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
+3. By default, OData Version 4 is selected. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
 
     ![MDK](img-2.5.2.gif)
 
