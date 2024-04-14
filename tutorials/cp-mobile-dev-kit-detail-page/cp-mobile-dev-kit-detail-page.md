@@ -249,6 +249,6 @@ Deploy the updated application to your MDK client.
 
 >_Are you wondering how exactly MDK knew that clicking on a record in  list page would display respective record in detail page?_
 
->MDK automatically paases a default binding object to the next page. When navigating from a list page, the selected item is passed as the binding object. You can look at [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/action-binding-and-result.html#auto-set-action-binding) for more details.
+>MDK automatically passes a default binding object to the next page. When navigating from a list page, the selected item is passed as the binding object. You can look at [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/action-binding-and-result.html#auto-set-action-binding) for more details.
 
 ---

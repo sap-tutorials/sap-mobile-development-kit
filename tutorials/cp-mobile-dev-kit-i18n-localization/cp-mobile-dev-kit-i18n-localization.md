@@ -300,7 +300,7 @@ You will add `Currency` formatter in the `SalesOrderHeaders_List.page`.
 
 1. Navigate to **Pages** **&rarr;** **`SalesOrderHeaders`** **&rarr;** `SalesOrderHeaders_List.page`.
 
-2. You'll update the Object Table control's **StatusText** property which is currently bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter.
+2. You'll update the Object Table control's `StatusText` property which is currently bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter.
 
 3. In the **Properties** pane, click the **link** icon for the `StatusText` property.
 
