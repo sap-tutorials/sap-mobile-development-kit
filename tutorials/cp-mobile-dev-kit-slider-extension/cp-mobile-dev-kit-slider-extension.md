@@ -263,9 +263,6 @@ You will add this registered control as a Form Cell control in a section page.
     }
     ```
 
-15. Save the changes to the `SetExtensionValue.js` file if not saved already.
-
-
 ### Implement Extension using metadata approach
 
 
@@ -286,9 +283,6 @@ You will add this registered control as a Form Cell control in a section page.
            │           └── ios
            │               └── MySlider.ts
            └── mdk_slider.extension
-
-
-
 
 
 2. In `MySliderPlugin/android/MySlider.ts` file, copy and paste the following code.
@@ -467,9 +461,7 @@ You will add this registered control as a Form Cell control in a section page.
 
     >In your import function, if you see errors related to `@nativescript/core`, you can ignore them. There is currently no reference of such libraries in the MDK editor.
 
-3. Save the `MySliderPlugin/android/MySlider.ts` file if not saved already.
-
-4. In `MySliderPlugin/iOS/MySlider.ts` file, copy and paste the following code.
+3. In `MySliderPlugin/iOS/MySlider.ts` file, copy and paste the following code.
 
     ```JavaScript / TypeScript
     import {​​​​​​View}​​​​​​ from'@nativescript/core';
@@ -642,9 +634,7 @@ You will add this registered control as a Form Cell control in a section page.
     }
     ```
 
-5. Save the `MySliderPlugin/iOS/MySlider.ts` file if not saved already.
-
-6. In `MySliderPlugin/MySlider.ts` file, copy and paste the following code.
+4. In `MySliderPlugin/MySlider.ts` file, copy and paste the following code.
 
     ```JavaScript / TypeScript
     import * as application from '@nativescript/core/application';
@@ -673,9 +663,7 @@ You will add this registered control as a Form Cell control in a section page.
     }
     ```
 
-7. Save the `MySliderPlugin/MySlider.ts` file if not saved already.
-
-8. In `MySliderExtension.ts` file, replace the generated code with the following.
+5. In `MySliderExtension.ts` file, replace the generated code with the following.
 
     ```JavaScript / TypeScript
     import { BaseControl } from 'mdk-core/controls/BaseControl';
@@ -783,12 +771,6 @@ You will add this registered control as a Form Cell control in a section page.
         }
     }    
     ```
-
-9. Save the `MySliderExtension.ts` file if not saved already.
-
-
-
-
 
 ### Deploy the application
 

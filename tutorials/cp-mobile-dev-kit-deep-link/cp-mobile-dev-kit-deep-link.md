@@ -34,8 +34,8 @@ If an app is already installed, you can specify a custom URL scheme or an intent
 
 ![MDK](img-1.0.png)
 
->**This tutorial has been executed using public store MDK client which has out of the box functionality to open the SAP standard app like SAP Mobile Cards.
-If you are building a custom version of Mobile development kit client, there you can implement deep links by specifying related custom URL scheme.**
+>**This tutorial has been executed using public store MDK client which has out of the box functionality to open the SAP standard apps like SAP Mobile Cards.
+If you are building a custom version of Mobile development kit client, there you can implement deep links by specifying related custom URL schemes.**
 
 ### Create a new MDK project in SAP Business Application Studio
 
@@ -193,9 +193,6 @@ If you are building a custom version of Mobile development kit client, there you
         });
     }
     ```
-
-8. Save your changes to the `OpenSAPcom.js` file, if needed.
-
 
 ### Deploy the application
 

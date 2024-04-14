@@ -137,9 +137,6 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
     }
     ```
 
-  9. Save your changes to the `GetCoordinates.js` file if not saved already.
-
-
 ### Enable the Loading Indicator on Sectioned Table in the Main page
 
 
@@ -150,7 +147,7 @@ Enable the loading indicator at the Sectioned Table level by providing the follo
 | Property | Value |
 |----|----|
 | `Enabled`| `true` |
-| `Text`| Bind it to rule `Loading, please wait...` |
+| `Text`| Enter `Loading, please wait...` |
 
 <!-- border -->![MDK](img-3.1.png)
 
@@ -172,7 +169,7 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
 
     <!-- border -->![MDK](img-4.2.png)
 
-4. Include below references in `mdk.bundlerExternals` and save the changes.
+4. Include below references in `mdk.bundlerExternals`.
 
     ```JSON
     "@nativescript/geolocation"

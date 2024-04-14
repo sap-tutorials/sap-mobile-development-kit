@@ -38,7 +38,7 @@ In this step, you will enable client log upload policy in **SAP Mobile Services 
 
     <!-- border -->![MDK](img-1.2.png)
 
-    >Other policy parameters like Log Level, Delete Uploaded Log After, Maximum Number of Logs and Maximum Log Size currently have no effect.
+    >Other policy parameters such as Log Level, Delete Uploaded Log After, Maximum Number of Logs and Maximum Log Size are currently not supported by MDK and hence have no effect.
 
     >You can find more details about [Client Log Upload feature](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/config.html).
 
@@ -72,7 +72,7 @@ The MDK template generates a project that includes a user menu with support opti
     ![MDK](img-3.2.png)
     ![MDK](img-3.3.png)    
 
-3. You can send activity logs to SAP Mobile Services or change the log level to other options, for example, Warning, Info, Debug, or Trace to collect more details. When the log level is set to `Trace`, two new options **Tracing Categories** and **OData Tracing** appear on the activity log page.
+3. Send activity logs to SAP Mobile Services or change the log level to other options, for example, Warning, Info, Debug, or Trace to collect more details. When the log level is set to `Trace`, two new options **Tracing Categories** and **OData Tracing** appear on the activity log page.
     
     * **Tracing Categories** allow you to select one or more tracing categories (to capture information about any MDK action, binding, on-boarding, push etc.).  
     * **OData Tracing** captures tracing on OData operations, such as `uploadOfflineOData`, read, etc. 

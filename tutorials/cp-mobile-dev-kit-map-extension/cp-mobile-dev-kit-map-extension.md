@@ -90,7 +90,8 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.6.png)    
 
-
+    >Data Collections step retrieves the entity sets information for the selected destination.
+    
 7. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Maps` project in the project explorer.
 
 
@@ -222,7 +223,6 @@ You will add this registered control in the generated `Customers_Detail.page`.
 
 
 ### Implement Extension using metadata approach
-
 
 1. Navigate to **Extensions** | `MyMapModule` | `controls` | `MyMapExtension.ts`, replace the generated code with the following.
 
@@ -421,9 +421,6 @@ You will add this registered control in the generated `Customers_Detail.page`.
     }
     ```
     >In your import function, if you see errors related to `@nativescript/core` or `mdk-core`, you can ignore them. There is currently no reference of such libraries in the MDK editor.
-
-2. Save the `MyMapExtension.ts` file.
-
 
 
 ### Deploy the application

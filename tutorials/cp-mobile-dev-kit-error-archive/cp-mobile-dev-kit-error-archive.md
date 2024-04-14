@@ -28,7 +28,7 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 ---
 
-You have built an MDK app with offline functionality. In offline store, you make a change to a local record and upload this change (from request queue) to backend but backend prevents this change to accept due to some business logic failure. This error is recorded in an Offline OData specific entity set named as `ErrorArchive`. This entity set has detailed information about the errors. It's now up-to developers how they handle such errors and then let users to fix it from the app by providing the correct values. `ErrorArchive` is exposed to the application as an OData entity set and is accessible through the OData API in the same way that the application accesses any other entity sets from the offline store. You can find more details about the `ErrorArchive` Entity Properties in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/offline/common/handling-errors-and-conflicts/errorarchive-entity-properties.html) documentation.
+You have built an MDK app with offline functionality. In offline store, you make a change to a local record and upload this change (from request queue) to backend but backend prevents this change to accept due to some business logic failure. This error is recorded in an Offline OData specific entity set named as `ErrorArchive`. This entity set has detailed information about the errors. It's now up to developers how they handle such errors and then let users to fix it from the app by providing the correct values. `ErrorArchive` is exposed to the application as an OData entity set and is accessible through the OData API in the same way that the application accesses any other entity sets from the offline store. You can find more details about the `ErrorArchive` Entity Properties in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/offline/common/handling-errors-and-conflicts/errorarchive-entity-properties.html) documentation.
 
 ![MDK](img-1.0.gif)
 
@@ -91,12 +91,11 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.5.png)
 
-    Regardless of whether you are creating an online or offline application, this step is needed app to connect to an OData service. When building an Mobile Development Kit application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. Since we have Enable Offline set to Yes, the generated application will be offline enabled in the MDK Mobile client.
-
-
 6. In *Data Collections* step, unselect `Customers` and select  `PurchaseOrderHeaders`, `PurchaseOrderItems` and `Suppliers`.
 
     <!-- border -->![MDK](img-1.6.png)
+
+    >Data Collections step retrieves the entity sets information for the selected destination.
 
 6. Click **Finish** to complete the project creation.
 
@@ -157,7 +156,7 @@ The On-boarding QR code is now displayed.
 
 2. You will modify a `PurchaseOrderHeaders` record, save it locally, sync it to the backend and if backend doesn't accept this change due to some business logic failure, you will view them in Error Archive list.
 
-    Navigate to `PurchaseOrderHeaders` list, tap either one of the record.
+    Navigate to `PurchaseOrderHeaders` list, tap either one of the records.
 
     ![MDK](img-4.2.png)
 
@@ -345,11 +344,9 @@ On the Error Details page, you will implement how to navigate to respective reco
     }
     ```
 
-9.  Save your changes to the `ErrorArchive_DecideWhichEditPage.js` file.
-
     >In above code there is a reference to `ErrorArchive_UnknownAffectedEntity.action`, which doesn't exist in your metadata project yet. You will create this action in next step.
 
-10. In the generated `ErrorArchive_DecideWhichEditPage.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Toast Message Action`.
+9. In the generated `ErrorArchive_DecideWhichEditPage.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Toast Message Action`.
 
     <!-- border -->![MDK](img-5.10.gif)
 
@@ -365,7 +362,7 @@ On the Error Details page, you will implement how to navigate to respective reco
 
     >If there is no handler for an affected entity, app will display a toast message.
 
-11. Next, add a **Header** section bar to display affected entity information.
+10. Next, add a **Header** section bar to display affected entity information.
 
     In the Layout Editor, expand the **Controls** | **Section Bar** section, drag and drop the **Header** control onto the **Object Table** control.
 

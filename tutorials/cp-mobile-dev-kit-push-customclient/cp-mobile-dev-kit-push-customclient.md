@@ -282,9 +282,7 @@ Paste the downloaded `google-services.json` file to `/DemoSampleApp.mdkproject/A
 
 ### Create MDK client
 
-
 Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client.
-
 
 ### Test a Simple Notification in your MDK client
 

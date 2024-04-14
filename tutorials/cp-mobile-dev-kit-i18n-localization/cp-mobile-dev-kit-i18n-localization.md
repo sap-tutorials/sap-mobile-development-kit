@@ -91,6 +91,8 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-2.6.png)
 
+    >Data Collections step retrieves the entity sets information for the selected destination.
+    
 9. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_i18n_l10n` project in the project explorer.
 
 
@@ -296,11 +298,11 @@ You will add `Currency` formatter in the `SalesOrderHeaders_List.page`.
 
 `Syntax: $(C, <Value>, <Currency Code>, <Locale>, <Format Options>)`
 
-1. Navigate to **Pages** **&rarr;** **`SalesOrderHeaders`** **&rarr;** **`SalesOrderHeaders_List.page`.
+1. Navigate to **Pages** **&rarr;** **`SalesOrderHeaders`** **&rarr;** `SalesOrderHeaders_List.page`.
 
-2. You'll update the Object Table control's **Status** property which is currently bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter.
+2. You'll update the Object Table control's **StatusText** property which is currently bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter.
 
-3. In the **Properties** pane pane, click the **link** icon for the `StatusText` property.
+3. In the **Properties** pane, click the **link** icon for the `StatusText` property.
 
 4. Cut or remove the default expression in the object browser.
 

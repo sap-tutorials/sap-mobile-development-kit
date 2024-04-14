@@ -54,11 +54,11 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
     -	what is the response code
     -	how the response body looks like
 
-    With above details, you will next configure an app in Mobile Services, add root of request URL as a destination and then consume it in MDK.
 
 
 ### Configure new MDK app in Mobile Services cockpit
 
+You will now configure an app in Mobile Services, add root of `Petstore` URL as a destination and then consume it in MDK.
 
 1. Navigate to [SAP Mobile Services cockpit on Cloud Foundry environment](fiori-ios-hcpms-setup).
 
@@ -172,7 +172,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
     | Field | Value |
     |----|----|
-    | `Name`| `<Provide any name of your choice>` |
+    | `Name`| `petstore` |
     | `Data Source` | Select `Mobile Services` from the dropdown. You will be asked to select the Mobile services landscape where you have configured the MDK app as per step 2 and then select the application `com.sap.mdk.restapi` |
     | `Destination` | Select `swagger_petstore` from the dropdown |
     | `Path Suffix` | Leave it as it is |
@@ -191,7 +191,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
 You will add an **Object Table** control  item on `Main.page` to display the list of Pets.
 
-1. In `Main.page`, drag and drop **Object Table** control on the page.
+1. In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Object Table** control onto the `Main.page` area.
 
     <!-- border -->![MDK](img-6.1.gif)
 
@@ -440,7 +440,7 @@ After filling-up the details for creating a new pet record, you will send these 
     | Field | Value |
     |----|----|
     | `Key`| `name` |
-    | `Value{}`| Bind it to input control `#Control:FCCreatePet/#Value` |
+    | `Value`| Bind it to input control `#Control:FCCreatePet/#Value` |
 
     <!-- border -->![MDK](img-11.7.gif)
 
@@ -449,7 +449,7 @@ After filling-up the details for creating a new pet record, you will send these 
     | Field | Value |
     |----|----|
     | `Key`| `status` |
-    | `Value{}`| Bind it to input control `#Control:FCCreateStatus/#Value` |
+    | `Value`| Bind it to input control `#Control:FCCreateStatus/#Value` |
 
     <!-- border -->![MDK](img-11.8.png)
 

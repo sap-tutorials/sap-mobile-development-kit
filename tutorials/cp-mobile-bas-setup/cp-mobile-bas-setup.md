@@ -30,7 +30,7 @@ For this tutorial, you will create a dev space personalized for Mobile developme
 
 1. Launch SAP Business Application Studio in any one of the [supported browsers](https://help.sap.com/docs/SAP%20Business%20Application%20Studio/9d1db9835307451daa8c930fbd9ab264/8f46c6e6f86641cc900871c903761fd4.html#availability) and click **Create Dev Space**.
 
-2. Choose `Tutorial` as the name for your dev space and **SAP Mobile Application** as the application type. Continue with **Create Dev Space**.
+2. Enter `Tutorial` as the name for your dev space and choose **SAP Mobile Application** as the application type. Continue with **Create Dev Space**.
 
     ![BAS New Space](img-1.1.png)
 

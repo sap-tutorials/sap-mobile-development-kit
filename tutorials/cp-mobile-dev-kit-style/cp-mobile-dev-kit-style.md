@@ -87,6 +87,8 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.6.png)
 
+    >Data Collections step retrieves the entity sets information for the selected destination.
+    
 9. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Styling` project in the project explorer.
 
 ### Add style metadata in LESS file
@@ -189,9 +191,7 @@ The `LESS` stylesheet provides the ability to define styling styles that can be 
       font-size: 18;
     }
     ```
-
-3. Save your changes to the `Styles.less` file.
-
+    
     >`Styles.less` is already bound to _Styles_ properties in `Application.app` file.
 
     ><!-- border -->![MDK](img-2.2.png)

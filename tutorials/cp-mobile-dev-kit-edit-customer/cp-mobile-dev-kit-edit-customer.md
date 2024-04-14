@@ -293,7 +293,7 @@ You will navigate from the Customer Detail page to a new page modifying customer
 
     | Property | Value |
     |----|----|
-    | `Action Name`| `NavToCustomers_Edit` |
+    | `Name`| `NavToCustomers_Edit` |
     | `PageToOpen` | Select `Customers_Edit.page` from the dropdown |
     | `ModalPage`| Select `true` from the dropdown |
 

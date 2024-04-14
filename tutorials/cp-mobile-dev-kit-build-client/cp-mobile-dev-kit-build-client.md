@@ -53,7 +53,7 @@ Make sure that you have download latest version of MDK SDK as described in Prere
 
     <!-- border -->![MDK](img-1.1.png)
 
-2. At the root of the extracted MDK SDK folder, if using Intel chip Mac machine, double click on the file`MDK Dependencies Installer-x64` to start the installer or if using M1 chip Mac machine, double click on the file `MDK Dependencies Installer-arm64` to start the installer.
+2. If you are running an Intel Mac, use the `MDK Dependencies Installer-x86`. If you are running a Mac with an M1,M2, or M3 chip, use the `MDK Dependencies Installer-arm64`. Both installers are available at the root of the extracted MDK SDK folder to start the installation.
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -62,8 +62,6 @@ Make sure that you have download latest version of MDK SDK as described in Prere
 3. Enter Admin user password and click **OK**.
 
     <!-- border -->![MDK](img-1.3.png)
-
-    >You may need to grant admin access via Privileges app.
 
     The installer will list all required components for iOS and Android platform and automatically check if they are already installed in the machine. Follow the installer UI to install the components you selected.
 

@@ -79,6 +79,8 @@ This step includes creating the mobile development kit project in the editor.
 
     ![MDK](img-1.7.png)
 
+    >Data Collections step retrieves the entity sets information for the selected destination.
+    
 7. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDKApp` project in the project explorer.
 
 

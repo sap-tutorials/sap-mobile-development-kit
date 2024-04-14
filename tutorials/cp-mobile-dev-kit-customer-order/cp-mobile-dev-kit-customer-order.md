@@ -69,13 +69,13 @@ This page will display customer orders list, you will add an **Object Table** co
 
     <!-- border -->![MDK](img-1.5.png)
 
-    >For a given customer id, query expression will filter top 5 order entries returned in descending when sorted by the order creation date property.
+    >The query expression will filter the top five order entries for a given customer ID, returning them in descending order when sorted by the order creation date property.
 
     ><!-- border -->![MDK](img-1.6.gif)
 
 6. Now, start binding Object Table properties with `SalesOrderHeaders` entity set properties.
 
-    Provide the below information:
+    In the **Appearance** section of the **Properties** pane, provide the below information:
 
     | Property | Value |
     |----|----|
@@ -92,7 +92,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
     <!-- border -->![MDK](img-1.7.png)
 
-    >`$(D,{CreatedAt},'','',{format:'medium'})` is an expression of how to format a date, end result would be like June 20, 2020. By default it will be formatted to the device's locale setting. More details on Date Formatter is available in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#date-formatter).
+    >`$(D,{CreatedAt},'','',{format:'medium'})` is an expression of how to format a date, end result would be like June 20, 2020. By default it will be formatted to the device's locale setting. More details on Date Formatter is available in the [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#date-formatter).
 
     ><!-- border -->![MDK](img-1.8.gif)
 
@@ -341,7 +341,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
 
 1. For orders grid area, you will also add a footer to display total count of orders for a customer.
 
-    In the Layout Editor, expand the **Controls** | **Section Bar** section, drag and drop the **Footer** control above the order grid area.
+    In the Layout Editor, expand the **Controls** | **Section Bar** section, drag and drop the **Footer** control below the order grid area.
 
     <!-- border -->![MDK](img-6.1.gif)
 

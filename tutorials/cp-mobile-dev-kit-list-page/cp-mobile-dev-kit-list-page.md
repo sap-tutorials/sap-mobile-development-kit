@@ -32,7 +32,6 @@ To enhance your MDK app with customer list information, you need to carry out th
 
 ### Create a new page for displaying customer list
 
-
 This page is a searchable list that displays all customers.
 
 To create the Customer List page, you will create a **Section page** and drag the Customer **Contact Cell Table** control onto the page. In the property palette, you will link the control to the Customer Collection and then map data and actions to different areas of the cell object in the property palette. One nice feature about the **Contact Table** control is that it has icons that can activate device functionality such as phone, email, video and more.
@@ -86,10 +85,9 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     <!-- border -->![MDK](img-1.10.png)
 
-10. In the `ActivityItems` section of the Properties pane, click **Add** to add a new activity item.
+10. In the **Data** section of the **Properties** pane, click **Add** to add a new activity item.
 
     <!-- border -->![MDK](img-1.11.png)
-
 
 11. Expand the added item, click the 3 dots icon to open the Object browser to bind the `ActivityValue` to the `PhoneNumber` property of the Customer entity.
 
@@ -102,14 +100,13 @@ To create the Customer List page, you will create a **Section page** and drag th
 
 ### Navigate to the Customer List page
 
-
 Now, you will add a button on the Main page and from there, you will navigate to the `Customers_List.page`.
 
 1. In `Main.page`, expand the **Controls** | **Static Container** group, drag and drop the **Button Table** control onto the Page area.
 
     <!-- border -->![MDK](img-2.1.gif)
 
-    >**Container** includes controls that act as containers for other controls, such as container items. A container is constant for all pages. The size of a container depends on the controls and contents included inside.
+    >**Container** includes controls that act as containers for other controls, such as container items. A container is constant across all pages. The size of a container depends on the controls and contents it contains.
 
 2. Expand the **Static Items** section of the Controls palette.
 
@@ -119,7 +116,7 @@ Now, you will add a button on the Main page and from there, you will navigate to
 
     >Each static container type in a Section Page can contain specific controls (static items).
 
-    >You can find more details about [Container and Container Item](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/SectionedTable.schema.html).
+    >You can find more details about Container and Item it may contain in this [documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/SectionedTable.schema.html).
 
 3. In the Properties pane, provide the below information:
 

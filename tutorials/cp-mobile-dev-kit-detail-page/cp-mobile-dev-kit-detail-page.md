@@ -32,7 +32,6 @@ To enhance your MDK app with customer details information, you need to carry out
 
 ### Create the customer detail page
 
-
 This page will show related details for a customer. In this page, you will add an **Object Header** control that is used to display information (like first name, last name, date of birth, email address & phone number) about the header of an object and **Static Key Value** control to display key value pair items like address, city, postal code & country.
 
 1. In SAP Business Application Studio project, Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
@@ -110,7 +109,7 @@ This page will show related details for a customer. In this page, you will add a
 
 12. For this tutorial, you will set the value as a combined binding of house number and street. You can find more details about [Target Path](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/target-path.html).
 
-    Start with first part of the binding for **Address** property.
+    You will start with first part of the binding for **Address** property.
 
     Click the **link icon** next to the **Value** field to display the Object Browser and double click `HouseNumber` to set it as the first part of the binding. **Don't click OK as you will set second part of the binding too.**
 
@@ -143,10 +142,9 @@ This page will show related details for a customer. In this page, you will add a
 
 ### Navigate from Customer List to its Details page
 
-
 Now, you will create a Navigation action that opens the `Customers_Detail.page` when called.
 
-1. Navigate to `Pages` | `Customers_List.page`, select the Contact Cell Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+1. Navigate to `Pages` | `Customers_List.page`, select the Contact Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-2.1.png)
 
@@ -169,10 +167,7 @@ Now, you will create a Navigation action that opens the `Customers_Detail.page` 
 
     >when an end-user selects a customer, the Customer Detail page will open. MDK automatically passes the selected customer to the detail page.
 
-
-
 ### Deploy the application
-
 
 Deploy the updated application to your MDK client.
 
@@ -254,9 +249,6 @@ Deploy the updated application to your MDK client.
 
 >_Are you wondering how exactly MDK knew that clicking on a record in  list page would display respective record in detail page?_
 
->The MDK sets the current object to the selected record when running the on press action on the list.  The detail page then just needs to reference the correct properties assuming they are part of the object from the list page. You can look at [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/action-binding-and-result.html#auto-set-action-binding) for more details.
-
-
-
+>MDK automatically paases a default binding object to the next page. When navigating from a list page, the selected item is passed as the binding object. You can look at [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/action-binding-and-result.html#auto-set-action-binding) for more details.
 
 ---
