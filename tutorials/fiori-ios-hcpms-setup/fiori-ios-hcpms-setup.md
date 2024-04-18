@@ -1,8 +1,8 @@
 ---
 parser: v2
 auto_validation: true
-primary_tag: software-product>sap-mobile-services
-tags: [  tutorial>beginner, topic>mobile, operating-system>ios, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>sap-btp-sdk-for-ios, software-product>sap-btp-sdk-for-android, software-product>sap-mobile-cards, software-product>mobile-development-kit-client]
+primary_tag: sap-conversational-ai>sap-mobile-services
+tags: [  tutorial>beginner, topic>mobile, operating-system>ios, sap-conversational-ai>sap-business-technology-platform, sap-conversational-ai>sap-mobile-services, sap-conversational-ai>sap-btp-sdk-for-ios, sap-conversational-ai>sap-btp-sdk-for-android, sap-conversational-ai>sap-mobile-cards, sap-conversational-ai>mobile-development-kit-client]
 time: 5
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
