@@ -195,6 +195,8 @@ After accepting the app update, you will see a list of entities on the **Main** 
 
 ![MDK](img-5.1.gif)
 
+>`SampleServiceV4` is the name of the service file generated in the project creation.
+
 Additionally, you can search through all properties of the objects displayed in the section by entering them manually or using a barcode scanner. For instance, in the Products list, you can scan the barcode to search for products belonging to the *MP3 Players* category.
 
 ![MDK](img-5.2.gif)
@@ -210,6 +212,8 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 After accepting the app update, you will see a list of entities on the **Main** page, along with a user menu that includes options such as syncing changes, accessing support, checking for updates, and resetting the app. An offline store will be initialized. By tapping any entity, you will navigate to a list page. If you select one of the items, the detail page will be displayed, allowing you to create, update, or delete the record. This record will be saved to the offline request queue database. You can navigate back to the main page and press the **Sync Changes** option in the user menu to upload any local changes to the backend. Once the upload is successful, the app will also download data from the backend to the offline store, ensuring both sides have the same dataset.
 
 ![MDK](img-5.3.gif)
+
+>`SampleServiceV4` is the name of the service file generated in the project creation.
 
 Additionally, you can search through all properties of the objects displayed in the section by entering them manually or using a barcode scanner. For instance, in the Products list, you can scan the barcode to search for products belonging to the *MP3 Players* category.
 
@@ -231,6 +235,8 @@ Additionally, you can search through all properties of the objects displayed in 
     You will notice the list of entities on the **Main** page along with a user menu in the top right corner. The application data service will be initialized. Click on any entity; it will navigate to the detail page where you can create, update, and delete a record.
 
     ![MDK](img-5.7.gif)
+
+    >`SampleServiceV4` is the name of the service file generated in the project creation.
 
 [OPTION END]
 
