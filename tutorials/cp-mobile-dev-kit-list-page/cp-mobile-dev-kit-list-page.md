@@ -22,7 +22,7 @@ author_profile: https://github.com/jitendrakansal
 To enhance your MDK app with customer list information, you need to carry out the following tasks:
 
 *  Create a new customer list page
-*  Add Contact Cell Table control to the page
+*  Add Contact Table control to the page
 *  Create a new navigation action to the customer list page
 *  Add a new button on main page and navigate to customer list page when user clicks it
 *  Deploy the app metadata to SAP Mobile Services & Cloud Foundry
@@ -34,7 +34,7 @@ To enhance your MDK app with customer list information, you need to carry out th
 
 This page is a searchable list that displays all customers.
 
-To create the Customer List page, you will create a **Section page** and drag the Customer **Contact Cell Table** control onto the page. In the property palette, you will link the control to the Customer Collection and then map data and actions to different areas of the cell object in the property palette. One nice feature about the **Contact Table** control is that it has icons that can activate device functionality such as phone, email, video and more.
+To create the Customer List page, you will create a **Section page** and drag the Customer **Contact Table** control onto the page. In the property palette, you will link the control to the Customer Collection and then map data and actions to different areas of the cell object in the property palette. One nice feature about the **Contact Table** control is that it has icons that can activate device functionality such as phone, email, video and more.
 
 1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page**.
 

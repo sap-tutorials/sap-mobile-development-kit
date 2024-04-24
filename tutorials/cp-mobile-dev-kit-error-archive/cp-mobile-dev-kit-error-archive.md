@@ -78,7 +78,7 @@ This step includes creating the mobile development kit project in the editor.
 
     >The `CRUD` template creates the offline or online actions, rules, messages, List Detail Pages with editable options. More details on *MDK template* is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).  
 
-5. In *Service configuration* step, provide or select the below information and click **Next**:
+5. In *Service Configuration* step, provide or select the below information and click **Next**:
 
     | Field | Value |
     |----|----|

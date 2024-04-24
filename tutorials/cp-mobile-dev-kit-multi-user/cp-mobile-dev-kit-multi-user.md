@@ -66,7 +66,7 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.3.png)
 
-5. In *Service configuration* step, provide the below information and click **Next**:
+5. In *Service Configuration* step, provide the below information and click **Next**:
 
     | Field | Value |
     |----|----|

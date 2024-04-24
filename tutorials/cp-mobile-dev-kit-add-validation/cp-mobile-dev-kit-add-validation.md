@@ -73,7 +73,7 @@ You will add a rule to the Update action to run the validation before saving any
 
     <!-- border -->![MDK](img-1.4.gif)
 
-7. Provide the below information in the `ValidationFailaure.action`:
+7. Provide the below information in the `ValidationFailure.action`:
 
     | Field | Value |
     |----|----|

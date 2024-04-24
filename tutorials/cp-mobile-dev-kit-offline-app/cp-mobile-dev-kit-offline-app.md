@@ -61,7 +61,7 @@ This step includes creating the mobile development kit project in the editor.
 
     >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
-5. In *Service configuration* step, provide the below information and click **Next**:
+5. In *Service Configuration* step, provide the below information and click **Next**:
 
     | Field | Value |
     |----|----|
@@ -79,13 +79,13 @@ This step includes creating the mobile development kit project in the editor.
     >**Enable Offline** option allows MDK mobile app to be offline enabled. This configuration will be ignored on Web environment and the MDK web application will be treated as online only.
 
 
-6. In **Data Collections** step, select `Customers`, `Products`, `SalesOrderHeaders` and `SalesOrderItems` data collections. Click Finish.
+6. In **Data Collections** step, select `Customers`, `Products`, `SalesOrderHeaders` and `SalesOrderItems` data collections. Click **Finish**.
 
     ![MDK](img-1.6.png)
 
     >Data Collections step retrieves the entity sets information for the selected destination.
 
-    After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `DemoSampleApp` project in the project explorer.
+    After clicking Finish, the wizard will generate your MDK Application based on your selections. You should now see the `DemoSampleApp` project in the project explorer.
 
 
 ### Get familiar with generated project structure
@@ -97,9 +97,9 @@ This is how the project structure looks like within the workspace.
 
 These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
 
-- **`InitializeOffline.action`**: For Mobile applications, this action binds the application to the Mobile Services Offline OData server and downloads the required data to the offline store on the mobile device. For Web applications, it will initialize the service to be consumed in online mode.
+- **`InitializeOffline.action`**: For Mobile applications, this action binds the application to the Mobile Services Offline OData server and downloads the required data from the `SampleServiceV4` to the offline store on the mobile device. For Web applications, it will initialize the `SampleServiceV4` service to be consumed in online mode.
 
-- **`DownloadOffline.action`** and **`UploadOffline.action`**: These actions are applicable to Mobile client only. Using Mobile app initialization, data is downloaded to the offline store. If you want to have the application download any updated data from the backend server or upload changed data to the backend server, these actions will be needed.
+- **`DownloadOffline.action`** and **`UploadOffline.action`**: These actions are applicable to Mobile client only. Using Mobile app initialization, data is downloaded to the offline store. If you want to have the application download any updated data from the backend server or upload changed data to the backend server (`SampleServiceV4`), these actions will be needed.
 
 - **`Success & Failure Message action`**: Here are some messages showing up in the app on a successful or failure of data initialization, sync etc.
 
