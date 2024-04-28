@@ -279,11 +279,17 @@ The next step is to store newly created record locally for an offline applicatio
 
 You will open the `SalesOrderHeaders_Create.page` from the Customer Detail page. For this, you will add a ToolBar item on the Customer Details page and will link it to a navigation action. When the ToolBar item is pressed by the end-user that will open the `SalesOrderHeaders_Create.page`.
 
-1. In `Customers_Detail.page`, drag and drop a **Toolbar Item** to the lower left of the page.
+1. In `Customers_Detail.page`, drag and drop a **Toolbar Item** on the page area.
 
     <!-- border -->![MDK](img-4.1.gif)
 
-2. In the Properties pane, set **Caption** to **Create Order**.
+2. In the **Properties** pane, provide the below details.
+
+    | Property | Value |
+    |----|----|
+    | `ButtonType` | `Primary` |
+    | `Image` | Remove the default value |
+    | `Title` | `Create Order` |
 
     <!-- border -->![MDK](img-4.2.png)
 
@@ -318,7 +324,6 @@ In `Customers_Detail.page`, select **Customer Orders** Object Table control. In 
 
 
 ### Deploy the application
-
 
 Deploy the updated application to your MDK client.
 
@@ -367,7 +372,6 @@ Deploy the updated application to your MDK client.
 5. Tap on **Sync Changes** in the user menu On Main page to send local changes to the backend, a successful message will be shown.
 
     ![MDK](img-7.5.png)
-    ![MDK](img-7.6.png)
 
 [OPTION END]
 
@@ -394,7 +398,6 @@ Deploy the updated application to your MDK client.
 5. Tap on **Sync Changes** in the user menu On Main page to send local changes to the backend, a successful message will be shown.
 
     ![MDK](img-7.11.png)  
-    ![MDK](img-7.12.png)  
 
 [OPTION END]
 

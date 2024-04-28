@@ -79,7 +79,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
     | Property | Value |
     |----|----|
-    | `Description`| `$(D,{CreatedAt},'','',{format:'medium'})` |
+    | `Description` | Remove the default value and leave it blank |
     | `Footnote` | Remove the default value and leave it blank |
     | `PreserveIconStackSpacing`| `false` |
     | `ProgressIndicator` | Remove the default value and leave it blank |
@@ -87,18 +87,17 @@ This page will display customer orders list, you will add an **Object Table** co
     | `Subhead` | bind it to `{CustomerID}` |
     | `SubstatusText`| Remove the default value and leave it blank |
     | `Tags` | Click the `item0` and then click the trash icon to delete the default item |
-    | `Title`| bind it to `{SalesOrderID}` |
-
+    | `Title`| `$(D,{CreatedAt},'','',{format:'medium'})` |
 
     <!-- border -->![MDK](img-1.7.png)
-
-    >`$(D,{CreatedAt},'','',{format:'medium'})` is an expression of how to format a date, end result would be like June 20, 2020. By default it will be formatted to the device's locale setting. More details on Date Formatter is available in the [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#date-formatter).
-
-    ><!-- border -->![MDK](img-1.8.gif)
 
     >`$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})` is an expression of how to format currency value, end result would be like €200.44. By default it will be formatted to the device's locale setting. More details on Currency Formatter is available in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#currency-formatter).
 
     ><!-- border -->![MDK](img-1.9.gif)
+
+    >`$(D,{CreatedAt},'','',{format:'medium'})` is an expression of how to format a date, end result would be like June 20, 2020. By default it will be formatted to the device's locale setting. More details on Date Formatter is available in the [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/property-binding/i18n-formatter.html#date-formatter).
+
+    ><!-- border -->![MDK](img-1.8.gif)
 
 7. In the **Search** section of the **Properties** pane, change both the **Search Enabled** property and **Barcode Scanner** property to **`true`**.
 
@@ -272,15 +271,15 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
     
     | Field | Value |
     |----|----|
-    | `Description`| Remove the default value and leave it blank  |
-    | `Footnote` | Remove the default value and leave it blank  |
-    | `PreserveIconStackSpacing`| select `false` from the dropdown |
-    | `ProgressIndicator` | Remove the default value and leave it blank  |
+    | `Description` | Remove the default value and leave it blank |
+    | `Footnote` | Remove the default value and leave it blank |
+    | `PreserveIconStackSpacing`| `false` |
+    | `ProgressIndicator` | Remove the default value and leave it blank |
     | `StatusText`| `$(C,{GrossAmount},{CurrencyCode},'',{minimumIntegerDigits:1,minimumFractionDigits:0,maximumFractionDigits:2,useGrouping:true})` |
-    | `Subhead` | `$(D,{CreatedAt},'','',{format:'medium'})` |
-    | `SubstatusText`| bind it to `{CurrencyCode}` |
+    | `Subhead` | bind it to `{CustomerID}` |
+    | `SubstatusText`| Remove the default value and leave it blank |
     | `Tags` | Click the `item0` and then click the trash icon to delete the default item |
-    | `Title`| bind it to `{SalesOrderID}` |
+    | `Title`| `$(D,{CreatedAt},'','',{format:'medium'})` |
 
     <!-- border -->![MDK](img-4.4.png)
 
