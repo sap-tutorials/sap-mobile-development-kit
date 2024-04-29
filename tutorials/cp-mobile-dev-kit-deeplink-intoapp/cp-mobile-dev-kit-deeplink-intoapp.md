@@ -1,8 +1,8 @@
 ---
 parser: v2
 auto_validation: true
-primary_tag: sap-conversational-ai>mobile-development-kit-client
-tags: [ tutorial>advanced, operating-system>ios, operating-system>android, topic>mobile, sap-conversational-ai>sap-business-technology-platform, sap-conversational-ai>mobile-development-kit-client, sap-conversational-ai>sap-mobile-services, sap-conversational-ai>sap-business-application-studio ]
+primary_tag: software-product>mobile-development-kit-client
+tags: [ tutorial>advanced, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-business-application-studio ]
 time: 35
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
