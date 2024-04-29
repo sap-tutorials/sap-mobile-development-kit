@@ -16,15 +16,15 @@ author_profile: https://github.com/jitendrakansal
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
-- **Install SAP Mobile Cards Application**
+- **Install SAP Mobile Start Application**
    <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.3.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.4.png)<br>iOS</td></tr></table>
 
 ## You will learn
-  - How to open SAP standard app like Mobile Cards from MDK public store client
+  - How to open SAP standard app like Mobile Start from the MDK public store client
   - How to open a web page
 
 ## Intro
-You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/4-Implement-Deep-Linking-to-Another-App-from-an-MDK-App) and start directly with step 4 in this tutorial.
+You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/3-Implement-Deep-Linking-to-Another-App-from-an-MDK-App) and start directly with step 4 in this tutorial.
 
 ---
 
@@ -34,13 +34,12 @@ If an app is already installed, you can specify a custom URL scheme or an intent
 
 ![MDK](img-1.0.png)
 
->**This tutorial has been executed using public store MDK client which has out of the box functionality to open the SAP standard apps like SAP Mobile Cards.
+>**This tutorial has been executed using public store MDK client which has out of the box functionality to open the SAP standard apps like SAP Mobile Start.
 If you are building a custom version of Mobile development kit client, there you can implement deep links by specifying related custom URL schemes.**
 
 ### Create a new MDK project in SAP Business Application Studio
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
-
 
 2. Click **New Project from Template** on the `Get Started` page.
 
@@ -95,7 +94,7 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-2.3.png)
 
-4. Select the first control, remove the default value for the Image property and update its title to **Open SAP Mobile Cards**.
+4. Select the first control, remove the default value for the Image property and update its title to **Open SAP Mobile Start**.
 
     <!-- border -->![MDK](img-2.4.png)
 
@@ -103,14 +102,11 @@ If you are building a custom version of Mobile development kit client, there you
 
     <!-- border -->![MDK](img-2.5.png)
 
-
-
 ### Set onPress handler to the buttons
-
 
 1. In this step, you will bind a rule to the `OnPress` event of each button.
 
-    In `Main.page`, select **Open SAP Mobile Cards** button. In the Properties pane, click the **Events** tab, click the 3 dots icon for the `OnPress Handler` property and select `Create a rule/action` to create a new rule.
+    In `Main.page`, select **Open SAP Mobile Start** button. In the Properties pane, click the **Events** tab, click the 3 dots icon for the `OnPress Handler` property and select `Create a rule/action` to create a new rule.
 
     <!-- border -->![MDK](img-3.1.png)
 
@@ -119,7 +115,7 @@ If you are building a custom version of Mobile development kit client, there you
     <!-- border -->![MDK](img-3.2.png)
 
 
-3. In the **Base Information** step, enter the Rule **Name** as `OpenSAPMobileCards`, click **Finish**.
+3. In the **Base Information** step, enter the Rule **Name** as `OpenSAPMobileStart`, click **Finish**.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -128,22 +124,21 @@ If you are building a custom version of Mobile development kit client, there you
     ```JavaScript
     /**
     * Describe this function...
-    * @param {IClientAPI} clientAPI
+    * @param {IClientAPI} context
     */
-    export default function OpenSAPMobileCards(clientAPI) {
+    export default function OpenSAPMobileStart(context) {
         // Get the Nativescript Utils Module
-        const utilsModule = clientAPI.nativescript.utilsModule;
+        const utilsModule = context.nativescript.utilsModule;
         // Get the Nativescript Platform Module
-        const platformModule = clientAPI.nativescript.platformModule;
-        return clientAPI.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
+        const platformModule = context.nativescript.platformModule;
+        return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
             if (result.data) {
-                //This will open SAP Mobile Cards app
+                //This will open SAP Mobile Start app
                 if (platformModule.isIOS) {
-                    return utilsModule.openUrl("com.sap.content2go://");
+                    return utilsModule.openUrl("com.sap.mobile.start://");
                 } else if (platformModule.isAndroid) {
-                    return utilsModule.openUrl("https://mobileservices.cloud.sap/mobilecards");
+                    return utilsModule.openUrl("com.sap.mobile.apps.sapstart://");
                 }
-
             } else {
                 return Promise.reject('User Deferred');
             }
@@ -153,10 +148,9 @@ If you are building a custom version of Mobile development kit client, there you
 
     >You will see an error complaining about cannot find file reference. This is due to the action file has not created yet. You will create it in next step.
     
-
     >`openUrl` is a `NativeScript` API to open an URL on device. You can find more details about [this API](https://v7.docs.nativescript.org/core-concepts/utils#openurl-function).
 
-5. In the generated `OpenSAPMobileCards.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Message Action`.
+5. In the generated `OpenSAPMobileStart.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Message Action`.
 
     <!-- border -->![MDK](img-3.5.gif)
 
@@ -178,12 +172,12 @@ If you are building a custom version of Mobile development kit client, there you
     ```JavaScript
     /**
      * Describe this function...
-    * @param {IClientAPI} clientAPI
+    * @param {IClientAPI} context
     */
-    export default function OpenSAPcom(clientAPI) {
+    export default function OpenSAPcom(context) {
         // Get the Nativescript Utils Module
-        const utilsModule = clientAPI.nativescript.utilsModule;
-        return clientAPI.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
+        const utilsModule = context.nativescript.utilsModule;
+        return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
             if (result.data) {
                 //This will open SAP.com website
                 return utilsModule.openUrl("https://www.sap.com");
@@ -195,7 +189,6 @@ If you are building a custom version of Mobile development kit client, there you
     ```
 
 ### Deploy the application
-
 
 So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services to use in the Mobile client.
 
@@ -229,8 +222,6 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
-.
-
 <!-- border -->![MDK](img-5.1.png)
 
 The On-boarding QR code is now displayed.
@@ -254,11 +245,11 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-6.1.png)
 
-2. Tap **Open SAP Mobile Cards** and then tap **OK**.
+2. Tap **Open SAP Mobile Start** and then tap **OK**.
 
     ![MDK](img-1.0.png)
 
-    If you have already installed SAP Mobile Cards app, then MDK app will open it.
+    If you have already installed SAP Mobile Start app, then MDK app will open it.
 
     ![MDK](img-6.2.png)
 
@@ -276,12 +267,12 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-6.4.png)
 
-2. Tap **Open SAP Mobile Cards** and then tap **OK**.
+2. Tap **Open SAP Mobile Start** and then tap **OK**.
 
     ![MDK](img-6.5.png)
     ![MDK](img-6.6.png)
 
-    If you already installed SAP Mobile Cards app, then MDK app will open it.
+    If you already installed SAP Mobile Start app, then MDK app will open it.
 
     <!-- border -->![MDK](img-6.7.png)
 
@@ -289,10 +280,8 @@ The On-boarding QR code is now displayed.
 
     <!-- border -->![MDK](img-6.8.png)
 
-    >To run this app in your branded client, you need to add Mobile Cards app URL schemes (`com.sap.content2go`)  in the info.plist.   
+    >To run this app in your branded client, you need to add Mobile Cards app URL schemes (`com.sap.mobile.start`)  in the info.plist.   
 
 [OPTION END]
-
-
 
 ---

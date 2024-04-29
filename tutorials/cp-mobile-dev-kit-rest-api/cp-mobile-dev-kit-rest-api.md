@@ -26,7 +26,7 @@ author_profile: https://github.com/jitendrakansal
   - How to use `RestService SendRequest` Action to make directly call to `Petstore` API
 
 ## Intro
-You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app) and start directly with step 15 in this tutorial but make sure you complete step 2&3.
+You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/7-Consume-rest-api-in-mdk-app) and start directly with step 15 in this tutorial but make sure you complete step 2&3.
 
 ---
 
@@ -115,7 +115,7 @@ You will now configure an app in Mobile Services, add root of `Petstore` URL as 
 ### Create a new destination to your MDK Web application
 
 
-1. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/4-Level-Up-with-the-Mobile-Development-Kit/8-Consume-rest-api-in-mdk-app/swagger_petstore.zip) and unzip it on your machine.
+1. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/4-Level-Up-with-the-Mobile-Development-Kit/7-Consume-rest-api-in-mdk-app/swagger_petstore.zip) and unzip it on your machine.
 
 2. Navigate to **Connectivity** **&rarr;** **Destinations** to create a BTP destination, click **Import Destination** to import the extracted file and click **Save**.
 
@@ -460,7 +460,6 @@ After filling-up the details for creating a new pet record, you will send these 
     <!-- border -->![MDK](img-14.1.png)
 
 ### Add cancel button on create pet page
-
 
 Now, you will add a button on the `Pet_Create.page` and set it's `onPress` to `ClosePage.action`.
 

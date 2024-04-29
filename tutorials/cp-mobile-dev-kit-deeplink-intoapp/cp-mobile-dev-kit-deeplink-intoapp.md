@@ -148,13 +148,13 @@ MDK provides an `OnLinkDataReceived` event in the `Application.app` that is call
         return context.read('/DeepLinkIntoMDKApp/Services/SampleServiceV4.service', `Products(${id})`, [], null).then(function (result) {
             if (result.length) {
                 context.getPageProxy().setActionBinding(result.getItem(0));
-                return context.getPageProxy().executeAction('/DeepLinkIntoMDKApp/Actions/Products/NavToProducts_Detail.action');
+                return context.getPageProxy().executeAction('/DeepLinkIntoMDKApp/Actions/SampleServiceV4/Products/NavToProducts_Detail.action');
             }
         });
     }
 
     function openProductListWithFilter(context, parametersObj) {
-        let pageData = context.getPageProxy().getPageDefinition('/DeepLinkIntoMDKApp/Pages/Products/Products_List.page');
+        let pageData = context.getPageProxy().getPageDefinition('/DeepLinkIntoMDKApp/Pages/SampleServiceV4_Products/Products_List.page');
         var filterQO = '$filter=';
         for (var key in parametersObj) {
             var value = parametersObj[key];
@@ -166,7 +166,7 @@ MDK provides an `OnLinkDataReceived` event in the `Application.app` that is call
         context.getLogger().log(`${filterQO}`,'Debug');
         pageData.Controls[0].Sections[0].Target.QueryOptions = filterQO;
         return context.getPageProxy().executeAction({
-            "Name": '/DeepLinkIntoMDKApp/Actions/Products/NavToProducts_List.action',
+            "Name": '/DeepLinkIntoMDKApp/Actions/SampleServiceV4/Products/NavToProducts_List.action',
             "Properties": {
                 "PageMetadata": pageData
             }
@@ -364,42 +364,42 @@ Now that the MDK application is configured to act when a request from external s
 
     Once, above command gets successfully executed, you will see new MDK client up and running in Android simulator.
 
-4. Tap **Agree** on `End User License Agreement`.
+2. Tap **Agree** on `End User License Agreement`.
 
     ![MDK](img-6.4.png)
 
-5. In Welcome screen, tap **Start** to connect MDK client to SAP Business Technology Platform (BTP).
+3. In Welcome screen, tap **Start** to connect MDK client to SAP Business Technology Platform (BTP).
 
     ![MDK](img-6.5.png)
 
-6. Enter your BTP E-Mail, ID or Login Name to continue. 
+4. Enter your BTP E-Mail, ID or Login Name to continue. 
 
     ![MDK](img-6.6.png)
 
-7. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+5. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
 
     ![MDK](img-6.7.png)
 
-8. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
+6. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
 
     ![MDK](img-6.8.png)
 
-9. Confirm the passcode and tap **Done**.
+7. Confirm the passcode and tap **Done**.
 
     ![MDK](img-6.9.png)
 
     >Optionally, you can enable biometric authentication to get faster access to the app data.
 
-10. Tap **Next**. If you want your MDK client to send you notifications, tap **Allow**, otherwise, tap **Don't allow**. 
+8. Tap **Next**. If you want your MDK client to send you notifications, tap **Allow**, otherwise, tap **Don't allow**. 
 
     ![MDK](img-6.10.png)
     ![MDK](img-6.10.1.png)
     
-11. Tap **Now** to update the client with new MDK metadata. 
+9. Tap **Now** to update the client with new MDK metadata. 
 
     ![MDK](img-6.11.png)    
 
-12. After you accept app update, you will see `Customers` and `Products` buttons on the Main page. You can navigate to list-detail page. 
+10. After you accept app update, you will see `Customers` and `Products` buttons on the Main page. You can navigate to list-detail page. 
 
     ![MDK](img-6.12.png)   
 
@@ -420,38 +420,38 @@ Now that the MDK application is configured to act when a request from external s
 
     Once, above command gets successfully executed, you will see new MDK client up and running in iOS simulator.
 
-4. Tap **Agree** on `End User License Agreement`.
+2. Tap **Agree** on `End User License Agreement`.
 
     ![MDK](img-6.16.png)
 
-5. Tap **Start** to connect MDK client to SAP Business Technology Platform (BTP).
+3. Tap **Start** to connect MDK client to SAP Business Technology Platform (BTP).
 
     ![MDK](img-6.17.png)
 
-6. Enter your BTP E-Mail, ID or Login Name to continue. 
+4. Enter your BTP E-Mail, ID or Login Name to continue. 
 
     ![MDK](img-6.18.png)
 
-7. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+5. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
 
     ![MDK](img-6.19.png)
 
-8. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
+6. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
 
     ![MDK](img-6.20.png)
 
-9. Confirm the passcode and tap **Done**.
+7. Confirm the passcode and tap **Done**.
 
     ![MDK](img-6.21.png)
 
     >Optionally, you can enable biometric authentication to get faster access to the app data.
     >![MDK](img-6.22.png)
 
-11. Tap **Now** to update the client with new MDK metadata. 
+8. Tap **Now** to update the client with new MDK metadata. 
 
     ![MDK](img-6.23.png)    
 
-12. After you accept app update, you will see `Customers` and `Products` buttons on the Main page. You can navigate to list-detail page. 
+9. After you accept app update, you will see `Customers` and `Products` buttons on the Main page. You can navigate to list-detail page. 
 
     ![MDK](img-6.24.png)
 

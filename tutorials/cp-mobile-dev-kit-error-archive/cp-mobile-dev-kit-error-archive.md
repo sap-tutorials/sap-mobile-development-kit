@@ -24,7 +24,7 @@ author_profile: https://github.com/jitendrakansal
 - How to fix these errors
 
 ## Intro
-You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/2-Handle-Error-Archive-in-an-MDK-App) and start directly with step 6 in this tutorial.
+You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/4-Level-Up-with-the-Mobile-Development-Kit/1-Handle-Error-Archive-in-an-MDK-App) and start directly with step 6 in this tutorial.
 
 ---
 
@@ -105,9 +105,9 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.7.png)
 
+    >`SampleServiceV4` is the name of the service file generated in the project creation.  
 
 ### Deploy the application
-
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
@@ -324,7 +324,7 @@ On the Error Details page, you will implement how to navigate to respective reco
         // You can add more complex decision logic if needed
         switch (affectedEntityType) {
             case "PurchaseOrderHeaders":
-                targetAction = "/MDK_ErrorArchive/Actions/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Edit.action";
+                targetAction = "/MDK_ErrorArchive/Actions/SampleServiceV4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Edit.action";
                 break;
             default:
                 //Save the affected Entity's type in client data so that it can be displayed by the toast

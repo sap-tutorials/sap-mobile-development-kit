@@ -54,6 +54,7 @@ This step includes creating the mobile development kit project in the editor.
 
     ><!-- border -->![MDK](img-1.4.png)
 
+
 4. In *Basic Information* step, provide the below information and click **Next**:
 
     | Field | Value |
