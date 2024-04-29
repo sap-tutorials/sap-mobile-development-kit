@@ -247,6 +247,7 @@ You will add this registered control as a Form Cell control in a section page.
 
     <!-- border -->![MDK](img-3.15.png)
 
+
 14. Replace the generated snippet with below code.
 
     ```JavaScript

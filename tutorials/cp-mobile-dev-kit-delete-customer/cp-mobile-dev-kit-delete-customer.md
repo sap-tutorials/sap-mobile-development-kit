@@ -54,6 +54,7 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
 
     <!-- border -->![MDK](img-1.4.1.png)  
 
+
 7. Replace the generated code with below snippet.
 
     ```JavaScript

@@ -40,6 +40,7 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     <!-- border -->![MDK](img-1.1.png)
 
+
 2. Select | **Section** and click **Next**.
 
     <!-- border -->![MDK](img-1.2.png)

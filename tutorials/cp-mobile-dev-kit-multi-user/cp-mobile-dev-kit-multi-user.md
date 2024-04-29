@@ -316,6 +316,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-m
 
     ![MDK](img-8.13.png)
 
+
 8. After a successful sync, the `OnUserSwitch` event has triggered.
 
     ![MDK](img-8.14.png)

@@ -191,7 +191,6 @@ The extension control that you will be creating to extend the functionality of y
 
 ### Consume Extension Control in MDK Metadata
 
-
 You will add this registered control in the generated `Customers_Detail.page`.
 
   1. Navigate to **Pages** folder | `SampleServiceV4_Customers` | `Customers_Detail.page`.

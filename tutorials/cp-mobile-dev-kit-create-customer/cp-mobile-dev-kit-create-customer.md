@@ -29,7 +29,6 @@ If you didn't follow the prerequisite then You may clone an existing metadata pr
 ### Create new page for new customer record
 
 
-
 In this step, you will create a Section page with a Form Cell Section to contain the Form Cell controls. You will add the fields that will be editable by the end-user.
 
 1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.

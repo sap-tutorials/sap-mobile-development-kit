@@ -45,6 +45,7 @@ This step includes creating the mobile development kit project in the editor.
 
     <!-- border -->![MDK](img-1.2.gif)
 
+
 3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
 
     <!-- border -->![MDK](img-1.2.png)

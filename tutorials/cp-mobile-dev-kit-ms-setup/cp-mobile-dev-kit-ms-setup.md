@@ -117,6 +117,7 @@ This `com.sap.edm.sampleservice.v4` destination is immutable. However, for other
 
 4. For this tutorial, there is no Custom Headers, Annotations required. Click **Next** to navigate to further steps.
 
+
 5. In **Destination Configuration** step, select **SSO Mechanism** as **Forward Authentication**, click **Next**.   
 
     ![MDK](img-3.4.png)

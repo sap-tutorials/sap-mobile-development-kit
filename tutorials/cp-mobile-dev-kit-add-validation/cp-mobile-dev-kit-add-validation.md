@@ -89,7 +89,6 @@ You will add a rule to the Update action to run the validation before saving any
 
 ### Deploy the application
 
-
 Deploy the updated application to your MDK client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.

@@ -28,6 +28,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ---
 
+
 ### Generate push configuration for Android/iOS device
 
 

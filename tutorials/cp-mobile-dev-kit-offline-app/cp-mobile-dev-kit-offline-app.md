@@ -115,6 +115,7 @@ These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264ac
 
 So far, you have learned how to quickly build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services and Cloud Foundry to use it in the Mobile client and Web application respectively.
 
+
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
     ![MDK](img-3.1.png)

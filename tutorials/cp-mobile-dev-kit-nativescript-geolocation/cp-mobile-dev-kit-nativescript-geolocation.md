@@ -99,6 +99,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
     <!-- border -->![MDK](img-2.6.png)
 
+
    8. Replace the generated snippet with below code.
 
     ```JavaScript

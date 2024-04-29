@@ -243,5 +243,4 @@ Additionally, you can search through all properties of the objects displayed in 
 Once you complete this tutorial, you can continue with [these tutorials](mission.mobile-dev-kit-get-started) to create an MDK app from scratch.
 
 
-
 ---

@@ -17,6 +17,7 @@ author_profile: https://github.com/jitendrakansal
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
 
+
 ## You will learn
   - How to use MDK push register action
   - How to use predefined push configuration for the public store version of SAP Mobile Services client (MDK client)

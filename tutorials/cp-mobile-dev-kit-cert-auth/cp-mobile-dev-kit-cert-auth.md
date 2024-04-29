@@ -78,7 +78,6 @@ To enable certificate based authentication, you need to modify **Redirect URL** 
 
     >`oauth2redirect` is just a random path. It could be any value.
 
-
 To build your client, 
 
 - you can either use [Cloud Build service](cp-mobile-dev-kit-cbs-client) option to build a standard MDK client by selecting _Allow Certificate_ option or upload the `mdkproject` to build a customized MDK client. 

@@ -83,10 +83,9 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
     Once you provide the correct API Endpoint, click on **Login** to continue.
 
-
 6. You may asked to enter your Email or Username to continue and click **Next**.
 
-6. After you log into the endpoint, the **Organization** and **Space** prompt appears. The current API Endpoint value appears. Choose the relevant **Organization** and **Space** from the dropdown list, and then choose **Open**.
+7. After you log into the endpoint, the **Organization** and **Space** prompt appears. The current API Endpoint value appears. Choose the relevant **Organization** and **Space** from the dropdown list, and then choose **Open**.
 
     ![BTP](img-2.5.png)
 

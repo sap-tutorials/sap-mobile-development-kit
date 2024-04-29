@@ -197,6 +197,7 @@ Now that the MDK application is configured to act when a request from external s
 
 ### Configure Application Links in SAP Mobile Services
 
+
 [OPTION BEGIN [Android]]
 
 1. Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `com.sap.mdk.demo` app.

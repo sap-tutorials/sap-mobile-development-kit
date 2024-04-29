@@ -233,6 +233,7 @@ The On-boarding QR code is now displayed.
 
 On the Error Details page, you will implement how to navigate to respective record to let users to modify the affected record with correct values and will also display the Affected Entity Object. Once the record is modified with the correct values, user can again sync it with backend.
 
+
 1. Add an **Object Table** control in `ErrorArchive_Detail.page` to display some information like affected entity and id for the affected record.
 
     Open `Pages` | `ErrorArchive` |`ErrorArchive_Detail.page`, in the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Object Table** control onto the page area.

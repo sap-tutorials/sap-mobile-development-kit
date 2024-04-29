@@ -53,6 +53,7 @@ This page will show related details for a customer. In this page, you will add a
 
     >`DesignTimeTarget` is a page level property similar to Target but it is only used for design time. This helps in validating the binding context of current page. For more details, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/create-pages.html#page-editor).
 
+
 4. set the Caption to **Details**.
 
     <!-- border -->![MDK](img-1.4.png)

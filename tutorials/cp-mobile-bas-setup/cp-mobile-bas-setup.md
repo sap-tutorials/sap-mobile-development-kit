@@ -42,7 +42,6 @@ For this tutorial, you will create a dev space personalized for Mobile developme
 
     >Please note that you're using the trial version of SAP Business Application Studio. See section [Restrictions](https://help.sap.com/products/SAP%20Business%20Application%20Studio/9d1db9835307451daa8c930fbd9ab264/a45742a719704bdea179b4c4f9afa07f.html) in the SAP Business Application Studio documentation for more details on how your development environment can be affected.
 
-
   ### Change the workspace to the projects folder
 
   You will now switch your workspace to the `projects` folder.

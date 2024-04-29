@@ -76,7 +76,6 @@ If you are building a custom version of Mobile development kit client, there you
 
 ### Add buttons on main page to open other apps or web pages
 
-
 1. On the `Main.page`, drag and drop the **Button Table** Static Container control onto the Page.
 
     <!-- border -->![MDK](img-2.1.gif)

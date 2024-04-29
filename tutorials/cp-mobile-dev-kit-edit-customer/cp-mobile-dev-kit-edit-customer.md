@@ -32,6 +32,7 @@ For offline applications, the changes are stored locally until they are synced u
 
 In this step, you will create a Section page with a Form Cell Section to contain the Form Cell controls. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
 
+
 1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)

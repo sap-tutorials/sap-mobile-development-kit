@@ -43,6 +43,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.1.png)
 
+
 2. In the **Base Information** step, enter the Page Name as `SalesOrderHeaders_Create` and click **Finish** to complete the page creation process.
 
     <!-- border -->![MDK](img-1.2.png)
