@@ -59,12 +59,12 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
     ```JavaScript
     /**
     * Describe this function...
-    * @param {IClientAPI} clientAPI
+    * @param {IClientAPI} context
     */
-    export default function Customers_DeleteConfirmation(clientAPI) {
-        return clientAPI.executeAction('/DemoSampleApp/Actions/Customers_DeleteConfirmation.action').then((result) => {
+    export default function Customers_DeleteConfirmation(context) {
+        return context.executeAction('/DemoSampleApp/Actions/Customers_DeleteConfirmation.action').then((result) => {
             if (result.data) {
-                return clientAPI.executeAction('/DemoSampleApp/Actions/Customers_DeleteEntity.action').then(
+                return context.executeAction('/DemoSampleApp/Actions/Customers_DeleteEntity.action').then(
                     (success) => Promise.resolve(success),
                     (failure) => Promise.reject('Delete entity failed ' + failure));
             } else {

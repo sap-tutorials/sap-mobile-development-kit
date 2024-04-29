@@ -361,13 +361,13 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
     ```JavaScript
     /**
     * Describe this function...
-    * @param {IClientAPI} clientAPI
+    * @param {IClientAPI} context
     */
-    export default function CustomerOrderCount(clientAPI) {
+    export default function CustomerOrderCount(context) {
         //The following currentCustomer will retrieve the current customer record
-        const currentCustomer = clientAPI.getPageProxy().binding.CustomerID;
+        const currentCustomer = context.getPageProxy().binding.CustomerID;
         //The following expression will retrieve the total count of the orders for a given customer
-        return clientAPI.count('/DemoSampleApp/Services/SampleServiceV4.service', 'SalesOrderHeaders', `$filter=CustomerID eq ${currentCustomer}`).then((count) => {
+        return context.count('/DemoSampleApp/Services/SampleServiceV4.service', 'SalesOrderHeaders', `$filter=CustomerID eq ${currentCustomer}`).then((count) => {
             return count;
         });
     }

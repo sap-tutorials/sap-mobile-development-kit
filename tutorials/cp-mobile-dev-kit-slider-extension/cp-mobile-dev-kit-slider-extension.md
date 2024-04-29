@@ -39,7 +39,6 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 
 1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
 
-
 2. Click **New Project from Template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)
@@ -253,12 +252,12 @@ You will add this registered control as a Form Cell control in a section page.
     ```JavaScript
     /**
     * Describe this function...
-    * @param {IClientAPI} clientAPI
+    * @param {IClientAPI} context
     */
-    export default function SetExtensionValue(clientAPI) {
+    export default function SetExtensionValue(context) {
         console.log("In SetExtensionValue");
-        let srcValue = clientAPI.getValue();
-        let targetCtrl = clientAPI.evaluateTargetPath("#Page:Main/#Control:MyExtensionControlName");
+        let srcValue = context.getValue();
+        let targetCtrl = context.evaluateTargetPath("#Page:Main/#Control:MyExtensionControlName");
         targetCtrl.setValue(srcValue);
     }
     ```

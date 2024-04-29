@@ -194,7 +194,7 @@ The extension control that you will be creating to extend the functionality of y
 
 You will add this registered control in the generated `Customers_Detail.page`.
 
-  1. Navigate to **Pages** folder | **Customers** | `Customers_Detail.page`.
+  1. Navigate to **Pages** folder | `SampleServiceV4_Customers` | `Customers_Detail.page`.
 
   2. Remove the body section of the page.
 

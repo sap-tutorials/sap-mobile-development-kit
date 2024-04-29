@@ -219,7 +219,7 @@ In this step, you will bind style classes:
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Navigate to **Pages** | **Customers**, click `Customers_List.page`, select **Object Table** control, scroll-down to **Style** section.
+2. Navigate to **Pages** | `SampleServiceV4_Customers`, click `Customers_List.page`, select **Object Table** control, scroll-down to **Style** section.
 
     Click **link** icon next to **Title** property.
 
@@ -227,7 +227,7 @@ In this step, you will bind style classes:
 
     <!-- border -->![MDK](img-3.2.png)
 
-3. Navigate to **Pages** | **Customers**, click `Customers_Detail.page`, select **Object Header** control, scroll-down to **Style** section and bind control properties to style properties.
+3. Navigate to **Pages** | `SampleServiceV4_Customers`, click `Customers_Detail.page`, select **Object Header** control, scroll-down to **Style** section and bind control properties to style properties.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -282,6 +282,8 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-5.3.png)
 
+    >`SampleServiceV4` is the name of the service file generated in the project creation.
+
 2. Tap **Customers** to navigate to Customer List. You will see that Title property has been styled.
 
     ![MDK](img-5.4.png)
@@ -301,6 +303,8 @@ The On-boarding QR code is now displayed.
     After accepting the app update, you will see the list of entities on the **Main** page and a user menu that includes options to Sync changes, support, check for updates, reset the app. The Main page has been styled.
 
     ![MDK](img-5.6.png)
+
+    >`SampleServiceV4` is the name of the service file generated in the project creation.
 
 2. Tap **Customers** to navigate to Customer List. You will see that Title property has been styled.
 
@@ -324,6 +328,8 @@ The On-boarding QR code is now displayed.
     You will see the list of entities on the **Main** page and a user menu option. The Main page has been styled.
 
     <!-- border -->![MDK](img-5.11.png)
+
+    >`SampleServiceV4` is the name of the service file generated in the project creation.
 
 2. Click **Customers** to navigate to Customer List. You will see that Title property has been styled.
 

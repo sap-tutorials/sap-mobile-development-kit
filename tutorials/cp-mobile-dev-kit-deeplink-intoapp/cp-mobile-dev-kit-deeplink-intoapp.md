@@ -89,7 +89,7 @@ This step includes creating the mobile development kit project in the editor.
 
 ### Add logic to handle deep linking
 
-MDK provides an `OnLinkDataReceived` event in the `Application.app` that is called when the MDK app is launched from an external link. The data can be accessed via  [`clientAPI.getAppEventData()`](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/apidoc/interfaces/icontrolcontainerproxy.html#getappeventdata).
+MDK provides an `OnLinkDataReceived` event in the `Application.app` that is called when the MDK app is launched from an external link. The data can be accessed via  [`context.getAppEventData()`](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/apidoc/interfaces/icontrolcontainerproxy.html#getappeventdata).
 
 1. Click the **Application.app** to open it in MDK Application Editor and then and select the `Create a rule/action` for the `OnLinkDataReceived` event.
 
