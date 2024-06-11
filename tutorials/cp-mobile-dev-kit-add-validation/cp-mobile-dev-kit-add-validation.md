@@ -34,7 +34,7 @@ You will add a rule to the Update action to run the validation before saving any
 
     <!-- border -->![MDK](img-1.1.png)
 
-3. Keep the default selection for the *Object Type* as Rule and *Folders* path.
+3. Keep the default selection for the *Object Type* as Rule and *Folders* path. Click **OK**.
 
     <!-- border -->![MDK](img-1.2.png)
 

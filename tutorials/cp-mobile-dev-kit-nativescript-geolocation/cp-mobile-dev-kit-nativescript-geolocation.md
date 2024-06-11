@@ -232,8 +232,6 @@ In order to use the existing `NativeScript` plugin in MDK client, you will need 
 
 <!-- border -->![MDK](img-6.1.png)
 
-3. 
-
 ### Add googlePlayServicesVersion and Permission in App Resources Merge folder(Required only for Android client)
 
 

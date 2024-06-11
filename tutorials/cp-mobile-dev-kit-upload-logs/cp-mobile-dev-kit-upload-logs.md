@@ -49,7 +49,7 @@ Logs help you trace events that occur while your application is running. You can
 
 * [Using Logging Actions](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/mdk/logging.html#using-logging-actions)
     * [`SetState`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/Logger/SetState.schema.html): used to turn the logger On, Off or Toggle
-    * [`SetLevel`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/Logger/SetLevel.schema.html): to set log level (Debug, Info, Warn or Error)
+    * [`SetLevel`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/Logger/SetLevel.schema.html): to set log level (Trace, Debug, Info, Warn or Error)
     * [`Upload`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/Logger/Upload.schema.html): to upload logs from app to Mobile Services
     * [`SetDebugSettings`](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Action/SetDebugSettings.schema.html): enables `DebugSettings` during runtime or override the `DebugSettings` in `BrandedSettings.json`
 * [Using the Client API in Rules](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/mdk/logging.html#using-the-client-api-in-rules) 
