@@ -12,7 +12,7 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Configure initial setup for MDK Mobile and Web applications.
 
 ## Prerequisites
-- **Tutorial:** [Access SAP Mobile Services](fiori-ios-hcpms-setup)
+- **Tutorial:** [Access SAP Mobile Services](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html)
 
 ## You will learn
   - How to configure MDK apps in the Mobile Services cockpit
@@ -33,7 +33,7 @@ You can find more details in the [Mobile Development Kit developer page](https:/
 
 Make sure that you have completed required prerequisites mentioned in this tutorial.
 
-1. Navigate to [SAP Mobile Services cockpit](fiori-ios-hcpms-setup).
+1. Navigate to [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
 
 2. On the home screen, click **Create new app** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
 

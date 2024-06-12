@@ -22,7 +22,7 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 ---
 
-For this tutorial, you will use [Mobile Services sample backend](cp-mobile-dev-kit-ms-setup) (step 3) which has parent-child relationship setup among entities. For example, A customer can have `n` (>=0) number of sales orders.
+For this tutorial, you will use [Mobile Services sample backend](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) (step 3) which has parent-child relationship setup among entities. For example, A customer can have `n` (>=0) number of sales orders.
 
 To create an entity and then link it to another entity, you need to carry out the following tasks:
 
@@ -224,7 +224,7 @@ The next step is to store newly created record locally for an offline applicatio
 
     <!-- border -->![MDK](img-3.7.png)
 
-    >In [Mobile Services sample backend](cp-mobile-dev-kit-ms-setup), click **Metadata URL** and you will find `SalesOrders` navigation property for `Customers` entity.
+    >In [Mobile Services sample backend](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click **Metadata URL** and you will find `SalesOrders` navigation property for `Customers` entity.
 
 9. Since in `SalesOrderHeaders_Create.page`, we have defined seven properties (Currency Code, Net Amount, Tax Amount, Gross Amount, Life Cycle Status, Life Cycle Status Name and Creation Date) to be added, now in **Properties** section, you will bind them to respective UI Controls.
 
@@ -428,7 +428,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION END]
 
-Once you complete this tutorial, you can continue with [Level Up with the Mobile Development Kit](mission.mobile-dev-kit-level-up) mission.
+Once you complete this tutorial, you can continue with [Level Up with the Mobile Development Kit](https://developers.sap.com/mission.mobile-dev-kit-level-up.html) mission.
 
 
 

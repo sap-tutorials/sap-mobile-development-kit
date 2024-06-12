@@ -13,7 +13,7 @@ author_profile: https://github.com/jitendrakansal
 
 
 ## Prerequisites
-- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
+- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 - **Download the latest version of Mobile Development Kit SDK if you want to enable multi-user mode in MDK custom client** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer. This is required you to build a branded client.
 
@@ -36,7 +36,7 @@ Multiple user mode is designed for enterprise scenarios where, for example, an e
 
 This step includes creating the mobile development kit project in the editor.
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 2. Click **New Project from Template** on the `Get Started` page.
 
@@ -197,11 +197,11 @@ You should see a success message.
 
 If you are using SAP Mobile Services Client (public store) to test the multi-user functionality, you can skip this step.
 
-1. Follow steps 1 to 3 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) and make sure to set the  `MultiUserEnabled` property to `true`. 
+1. Follow steps 1 to 3 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) and make sure to set the  `MultiUserEnabled` property to `true`. 
 
       <!-- border -->![MDK](img-6.1.png)
 
-2. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial.
+2. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
 
 ### Run the MDK Client
 
@@ -231,7 +231,7 @@ Choose an option above based on whether you are testing multi-user functionality
 
 >For an existing single user app it is required to rebuild the client with above mentioned setting if the client doesn't allow scanning a QR to onboard. Once the client on a device is updated the user will have to reset the client and re-login before multi-user capability can be enabled.
 
-Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) to run and on-board your branded client on your device. 
+Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) to run and on-board your branded client on your device. 
 
 [OPTION END]
 

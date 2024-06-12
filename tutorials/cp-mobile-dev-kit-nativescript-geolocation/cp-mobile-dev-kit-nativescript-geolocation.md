@@ -13,8 +13,8 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Build and run the Mobile Development Kit client with a non-visual extension functionality for Android and iOS platforms.
 
 ## Prerequisites
-- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
-- **Tutorial**: [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) (Steps 1 to 3)
+- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
+- **Tutorial**: [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) (Steps 1 to 3)
 
 ## You will learn
   - How to reference the `NativeScript` Geolocation plugin from a rule
@@ -35,7 +35,7 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
 ### Create a new MDK project in SAP Business Application Studio
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 2. Click **New Project from Template** on the `Get Started` page.
 
@@ -213,7 +213,7 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 In order to use the existing `NativeScript` plugin in MDK client, you will need to first add it in `.mdkproject` and then create your branded MDK client.
 
-1. Make sure that you have already completed steps 1 to 3 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial.
+1. Make sure that you have already completed steps 1 to 3 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
 
 2. Open `MDKProject.json` file and replace existing content with below. Provide an appropriate value to the `BundleID`, it should be a unique identifier for your application. 
 
@@ -293,7 +293,7 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
 
 [OPTION BEGIN [Android]]
 
-1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial and run it in your device.
+1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial and run it in your device.
 
 2. After you have accepted the app update, allow your app to access your location.
 
@@ -307,7 +307,7 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
 
 [OPTION BEGIN [iOS]]
 
-1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial.
+1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
 
 2. After you have accepted the app update, allow your app to access your location.
 

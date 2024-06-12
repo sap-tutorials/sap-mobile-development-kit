@@ -156,7 +156,7 @@ Deploy the updated application to your MDK client.
 
 [OPTION END]
 
-Once you complete this tutorial you can continue with [Enhance Your First MDK App with Additional Functionalities](mission.mobile-dev-kit-enhance) mission.
+Once you complete this tutorial you can continue with [Enhance Your First MDK App with Additional Functionalities](https://developers.sap.com/mission.mobile-dev-kit-enhance.html) mission.
 
 
 ---

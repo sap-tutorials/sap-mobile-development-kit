@@ -12,10 +12,10 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Build and run the Mobile Development Kit client with slider custom control functionality for Android and iOS platforms.
 
 ## Prerequisites
-- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
+- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device.
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 ## You will learn
   - How to register and consume an Extension control in MDK Metadata
@@ -37,7 +37,7 @@ In this tutorial, you will create a Slider extension via `NativeScript` (in Type
 ### Create a new MDK project in SAP Business Application Studio
 
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 2. Click **New Project from Template** on the `Get Started` page.
 

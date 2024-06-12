@@ -12,7 +12,7 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Allow the user to create a customer record in an MDK app.
 
 ## Prerequisites
-- You have created an MDK app as described in [Create Your First Mobile App with the Mobile Development Kit (MDK)](mission.mobile-dev-kit-get-started).
+- You have created an MDK app as described in [Create Your First Mobile App with the Mobile Development Kit (MDK)](https://developers.sap.com/mission.mobile-dev-kit-get-started.html).
 
 ## You will learn
   - How to create a customer record
@@ -392,7 +392,7 @@ Deploy the updated application to your MDK client.
 
 You can cross verify if a record has been updated in the backend.
 
->Backend URL can be found in [Mobile Services Cockpit](cp-mobile-dev-kit-ms-setup).
+>Backend URL can be found in [Mobile Services Cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html).
 
 >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **com.sap.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon
 

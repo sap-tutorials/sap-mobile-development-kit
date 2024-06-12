@@ -258,7 +258,7 @@ Deploy the updated application to your MDK client.
 
 You can cross verify if this record has been deleted in the backend.
 
->Backend URL can be found in [Mobile Services Cockpit](cp-mobile-dev-kit-ms-setup).
+>Backend URL can be found in [Mobile Services Cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html).
 
 >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **com.sap.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon
 

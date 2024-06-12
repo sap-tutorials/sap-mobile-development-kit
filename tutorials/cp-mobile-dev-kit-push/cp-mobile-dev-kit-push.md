@@ -12,10 +12,10 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Use the SAP Mobile Services to enable push notifications in the MDK public store client.
 
 ## Prerequisites
-- **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
+- **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 
 ## You will learn
@@ -32,7 +32,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ### Define push notification settings in app configuration
 
-1. Open the [SAP Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click **Mobile Push Notification** feature.
+1. Open the [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click **Mobile Push Notification** feature.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -44,14 +44,14 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
     >Predefined push is supported only for the MDK (SAP Mobile Services client) public store client.
 
-    >If you want to enable push notification in your custom MDK client then follow [Enable Push Notifications in Your Branded MDK Client](cp-mobile-dev-kit-push-customclient) tutorial.
+    >If you want to enable push notification in your custom MDK client then follow [Enable Push Notifications in Your Branded MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push-customclient.html) tutorial.
 
 
 
 ### Create a new MDK project in SAP Business Application Studio
 
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 2. Click **New Project from Template** on the `Get Started` page.
 

@@ -12,10 +12,10 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Generate a fully functional CRUD multi-channel application based on OData annotations.
 
 ## Prerequisites
-- **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
+- **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.2.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 ## You will learn
   - How MDK editor parses OData Annotations for a given OData service
@@ -40,7 +40,7 @@ SAP Fiori Elements is a framework comprising of templates for commonly used appl
 
 Sample backend in SAP Mobile Services provides annotation functionality for **Products**. If you add annotation path in given backend endpoint, the same annotation information can be leveraged by MDK editor to generate related CRUD pages.
 
-Make sure you have already configured an app in Mobile Services cockpit and have added Sample service as per step 3 in [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup) tutorial.
+Make sure you have already configured an app in Mobile Services cockpit and have added Sample service as per step 3 in [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) tutorial.
 
 1. In SAP MDK Demo App configuration, click **Mobile Connectivity**.
 
@@ -74,7 +74,7 @@ Make sure you have already configured an app in Mobile Services cockpit and have
 
 This step includes creating the mobile development kit project in the editor.
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 2. Click **New Project from Template** on the `Get Started` page.
 

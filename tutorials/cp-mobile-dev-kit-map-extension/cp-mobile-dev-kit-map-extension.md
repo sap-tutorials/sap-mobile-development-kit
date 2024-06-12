@@ -12,11 +12,11 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Build and run the Mobile Development Kit client with Map custom control functionality for Android and iOS platforms.
 
 ## Prerequisites
-- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
+- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer. You will need to build your branded client using the MDK SDK when accessing the Google Maps on Android device.
 - **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device.
 <table><tr><td align="center"></td><td align="center"><!-- border -->![App Store QR Code](img-1.1.1.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 ## You will learn
   - How to register and consume an Extension control in MDK Metadata
@@ -38,7 +38,7 @@ In this tutorial, you will create a Map extension via `NativeScript` (in TypeScr
 
 This step includes creating the mobile development kit project in the editor.
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 
 2. Click **New Project from Template** on the `Get Started` page.
@@ -480,7 +480,7 @@ For iOS, you can just use the App store client. Continue with next step.
 
 For Android, you will pass the API key to the MDK client, there is no way public store client can access it, hence you will create a branded client using MDK SDK or SAP Cloud Build Service.
 
-1.  Follow steps 1 to 3 from [this tutorial](cp-mobile-dev-kit-build-client).
+1.  Follow steps 1 to 3 from [this tutorial](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html).
 
 2. Create below file structure under `DemoSampleApp.mdkproject`.
 
@@ -525,7 +525,7 @@ For Android, you will pass the API key to the MDK client, there is no way public
     </manifest>
     ```
 
-5. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial.
+5. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
 
 
 

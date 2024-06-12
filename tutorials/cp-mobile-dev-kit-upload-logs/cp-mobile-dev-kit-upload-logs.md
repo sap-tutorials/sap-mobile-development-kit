@@ -30,7 +30,7 @@ SAP Mobile Services provides administrators, developers and support staff with e
 
 In this step, you will enable client log upload policy in **SAP Mobile Services Cockpit** for a given MDK app.
 
-1. Login to [Mobile Services Cockpit](fiori-ios-hcpms-setup), click `com.sap.mdk.demo` | **Mobile Client Log Upload**.
+1. Login to [Mobile Services Cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html), click `com.sap.mdk.demo` | **Mobile Client Log Upload**.
 
     <!-- border -->![MDK](img-1.1.png)
 

@@ -12,10 +12,10 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Create a fully functional multi-channel application consuming Petstore REST API.
 
 ## Prerequisites
-- **Tutorial:** [Set Up Business Application Studio for Mobile Technologies](cp-mobile-bas-setup)
+- **Tutorial:** [Set Up Business Application Studio for Mobile Technologies](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 ## You will learn
   - How to configure an application in Mobile Services
@@ -60,7 +60,7 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
 You will now configure an app in Mobile Services, add root of `Petstore` URL as a destination and then consume it in MDK.
 
-1. Navigate to [SAP Mobile Services cockpit on Cloud Foundry environment](fiori-ios-hcpms-setup).
+1. Navigate to [SAP Mobile Services cockpit on Cloud Foundry environment](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
 
 2. On the home screen, select **Create new app** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
 
@@ -125,7 +125,7 @@ You will now configure an app in Mobile Services, add root of `Petstore` URL as 
 ### Create a new MDK project in SAP Business Application Studio
 
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 
 2. Click **New Project from Template** on the `Get Started` page.

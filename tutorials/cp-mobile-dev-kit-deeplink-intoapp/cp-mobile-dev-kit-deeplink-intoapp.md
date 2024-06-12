@@ -12,7 +12,7 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Set up the Mobile Development Kit client to accept deep links through URL schemes and HTTP URLs (iOS Universal Links and Android App Links). With this feature, your MDK app can be launched to perform actions like navigating to a page, filter a list based on a parameter, or approving a request from external sources (web page, email, or another app).
 
 ## Prerequisites
-- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
+- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer. This is required you to build a branded client.
 
 
@@ -35,7 +35,7 @@ MDK supports deep linking into MDK applications using MDK client URL scheme and 
 
 This step includes creating the mobile development kit project in the editor.
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 2. Click **New Project from Template** on the `Get Started` page.
 
@@ -277,7 +277,7 @@ Now that the MDK application is configured to act when a request from external s
 
 ### Create Your Branded MDK Client
 
-1.  Follow steps 1 to 3 from [this tutorial](cp-mobile-dev-kit-build-client) and make sure to use the same bundle ID in `MDKProject.json` as you provided for Apple Universal Links settings in Mobile Services and also for Application ID in Android Studio while generating Digital Asset Links file.
+1.  Follow steps 1 to 3 from [this tutorial](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) and make sure to use the same bundle ID in `MDKProject.json` as you provided for Apple Universal Links settings in Mobile Services and also for Application ID in Android Studio while generating Digital Asset Links file.
 
 2. Add highlighted files under `DemoSampleApp.mdkproject`.
 
@@ -347,7 +347,7 @@ Now that the MDK application is configured to act when a request from external s
     DEVELOPMENT_TEAM = <Your Team ID>
     ```
 
-6. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](cp-mobile-dev-kit-cbs-client) tutorial.
+6. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
 
 ### Run the MDK Client
 

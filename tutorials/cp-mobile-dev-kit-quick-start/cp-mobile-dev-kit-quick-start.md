@@ -12,10 +12,10 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Create and examine your first mobile (offline) and web application using the MDK template connecting against a sample service.
 
 ## Prerequisites
-- **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](group.mobile-dev-kit-setup)
+- **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device
 <table><tr><td align="center">![Play Store QR Code](img-0.1.png)<br>Android</td><td align="center">![App Store QR Code](img-0.2.png)<br>iOS</td></tr></table>
-(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](cp-mobile-dev-kit-build-client) by allowing custom domains.)
+(If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 ## You will learn
   - How to create an MDK sample app using a template in SAP Business Application Studio
@@ -28,7 +28,7 @@ author_profile: https://github.com/jitendrakansal
 
 This step includes creating the mobile development kit project in the editor.
 
-1. Launch the [Dev space](cp-mobile-bas-setup) in SAP Business Application Studio.
+1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
 2. Click **New Project from Template** on Get Started page.
 
@@ -64,7 +64,7 @@ This step includes creating the mobile development kit project in the editor.
     |----|----|
     | `Data Source` | Select `Mobile Services` from the dropdown |
     | `Mobile Services Landscape` | Select `standard` from the dropdown |
-    | `Application Id` | Select `com.sap.mdk.demo` from the dropdown (this app was configured as per [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup) tutorial) |
+    | `Application Id` | Select `com.sap.mdk.demo` from the dropdown (this app was configured as per [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) tutorial) |
     | `Destination` | Select `SampleServiceV4` from the dropdown |
     | `Enter a path to service` | Leave it as it is |
     | `Enable Offline` | It's enabled by default |
@@ -240,7 +240,7 @@ Additionally, you can search through all properties of the objects displayed in 
 
 [OPTION END]
 
-Once you complete this tutorial, you can continue with [these tutorials](mission.mobile-dev-kit-get-started) to create an MDK app from scratch.
+Once you complete this tutorial, you can continue with [these tutorials](https://developers.sap.com/mission.mobile-dev-kit-get-started.html) to create an MDK app from scratch.
 
 
 ---

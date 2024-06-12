@@ -12,7 +12,7 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Learn how to effectively troubleshoot and resolve issues in your Mobile Development Kit (MDK) application through comprehensive debugging techniques.
 
 ## Prerequisites
-- **Tutorial**: [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup)
+- **Tutorial**: [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html)
 - **Download and Install Visual Studio Code** from [here](https://code.visualstudio.com/download) 
 - **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer
 
@@ -29,7 +29,7 @@ Use the debugging feature provided by the Mobile Development Kit extension for V
 
 ### Create a new MDK project in SAP Business Application Studio
 
-This step includes creating the mobile development kit project in the editor. Follow step 1 from this [tutorial](cp-mobile-dev-kit-quick-start) to create your MDK project. 
+This step includes creating the mobile development kit project in the editor. Follow step 1 from this [tutorial](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html) to create your MDK project. 
 
 ### Deploy the project
 
@@ -64,7 +64,7 @@ You will download your MDK project to your local machine. This will be necessary
 
 ### Create and run MDK client
 
-1. Follow the [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial to create your branded MDK client and run it on a simulator or a device. 
+1. Follow the [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client and run it on a simulator or a device. 
 
 2. After successfully onboarding your mobile client, click **Now** to accept the app update.
 

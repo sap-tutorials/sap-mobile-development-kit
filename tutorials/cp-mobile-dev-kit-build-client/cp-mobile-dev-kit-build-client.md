@@ -12,7 +12,7 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Set up your development environment that enable MDK SDK so that you can begin building your branded Mobile Development Kit client.
 
 ## Prerequisites
-- **Tutorial**: [Set Up Initial Configuration for an MDK App](cp-mobile-dev-kit-ms-setup)
+- **Tutorial**: [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html)
 - **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer
 
 ## You will learn
@@ -23,7 +23,7 @@ author_profile: https://github.com/jitendrakansal
   There are 3 options for mobile development kit client:
 
   1. Install the SAP Mobile Services client from the public store which is meant for demo and development or learning purposes
-  2. [Use the Cloud Build feature in SAP Mobile Services to generate a MDK Client](cp-mobile-dev-kit-cbs-client) 
+  2. [Use the Cloud Build feature in SAP Mobile Services to generate a MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) 
   3. Build a client on your local machine in your organization development environment using MDK SDK
 
 ## Intro
@@ -193,7 +193,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     <!-- border -->![MDK](img-3.5.png)
 
-5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click `com.sap.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `com.sap.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.6.png)
 
@@ -252,7 +252,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     <!-- border -->![MDK](img-3.5.png)
 
-5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click `com.sap.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `com.sap.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.6.png)
 

@@ -12,7 +12,7 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Create a branded MDK client that can on-board using certificates for authentication.
 
 ## Prerequisites
-- **Tutorial:** [Access SAP Mobile Services](fiori-ios-hcpms-setup)
+- **Tutorial:** [Access SAP Mobile Services](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html)
 - **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer
 
 ## You will learn
@@ -24,7 +24,7 @@ author_profile: https://github.com/jitendrakansal
 
 ### Configure a new MDK application in Mobile Services cockpit
 
-1. Navigate to [SAP Mobile Services cockpit](fiori-ios-hcpms-setup).
+1. Navigate to [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
 
 2. On the home screen, select **Create new app**.
 
@@ -80,14 +80,14 @@ To enable certificate based authentication, you need to modify **Redirect URL** 
 
 To build your client, 
 
-- you can either use [Cloud Build service](cp-mobile-dev-kit-cbs-client) option to build a standard MDK client by selecting _Allow Certificate_ option or upload the `mdkproject` to build a customized MDK client. 
+- you can either use [Cloud Build service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) option to build a standard MDK client by selecting _Allow Certificate_ option or upload the `mdkproject` to build a customized MDK client. 
 - OR build your branded client locally using MDK SDK as mentioned in below steps.
 
 ### Create your .mdkproject folder
 
 >Make sure you are choosing the right development platform tab above.
 
-Make sure that you have already completed steps 1 & 2 from [Build Your Mobile Development Kit Client Using MDK SDK](cp-mobile-dev-kit-build-client) tutorial.
+Make sure that you have already completed steps 1 & 2 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
 
 [OPTION BEGIN [Mac]]
 
@@ -116,7 +116,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
     >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
      If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. This value `mdkcertclient` needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device.  If the value is not unique the wrong application may be referenced when redirecting.      
 
-4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click `com.sap.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `com.sap.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.5.png)
 
@@ -128,7 +128,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     >`AllowCerts` property allows MDK client to access the certificate on the device during on-boarding if requested by the Identity provider (IdP). You can find more information about this property in [help](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#allow-certs) documentation. 
 
-    To find the correct URLs for your client, you should navigate to  [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup) and find your MDK application that you want to link to this client.
+    To find the correct URLs for your client, you should navigate to  [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) and find your MDK application that you want to link to this client.
 
     Regarding other properties:
     **Debug settings**: The settings in the `DebugSettings` property are for development use and should not be enabled in a production setting.
@@ -183,7 +183,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
     >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
      If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. This value `mdkcertclient` needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device.  If the value is not unique the wrong application may be referenced when redirecting.              
 
-4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup), click `com.sap.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `com.sap.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.5.png)
 
@@ -195,7 +195,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     >`AllowCerts` property allows MDK client to use the certificate. You can find more information about this property in [help](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#allow-certs) documentation. To access the certificate on the device during on-boarding if requested by the Identity provider (IdP).
 
-    To find the correct URLs for your client, you should navigate to  [Mobile Services cockpit](cp-mobile-dev-kit-ms-setup) and find your MDK application that you want to link to this client.
+    To find the correct URLs for your client, you should navigate to  [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) and find your MDK application that you want to link to this client.
 
     Regarding other properties:
     **Debug settings**: The settings in the `DebugSettings` property are for development use and should not be enabled in a production setting.
