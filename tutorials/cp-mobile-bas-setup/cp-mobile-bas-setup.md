@@ -2,7 +2,7 @@
 parser: v2
 auto_validation: true
 time: 5
-tags: [ tutorial>beginner, topic>mobile, operating-system>ios, operating-system>android, products>sap-business-technology-platform, products>sap-btp--cloud-foundry-environment, products>sap-mobile-cards, products>sap-mobile-services, products>sap-business-application-studio, products>mobile-development-kit-client ]
+tags: [ tutorial>beginner, topic>mobile, operating-system>ios, operating-system>android, products>sap-business-technology-platform, products>sap-btp--cloud-foundry-environment, products>sap-mobile-services, products>sap-business-application-studio, products>mobile-development-kit-client ]
 primary_tag: products>sap-business-technology-platform
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal

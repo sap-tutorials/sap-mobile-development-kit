@@ -11,6 +11,7 @@ author_profile: https://github.com/jitendrakansal
 # Implement Deep Linking to Another App from an MDK App
 <!-- description --> Use the Mobile Development Kit client to call a deep link into another application. With this feature, you can launch the target app and perform actions specific to the called application or open a web page in the device browser.
 
+
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
@@ -279,7 +280,7 @@ The On-boarding QR code is now displayed.
 
     <!-- border -->![MDK](img-6.8.png)
 
-    >To run this app in your branded client, you need to add Mobile Cards app URL schemes (`com.sap.mobile.start`)  in the info.plist.   
+    >To run this app in your branded client, you need to add SAP Mobile Start app URL schemes (`com.sap.mobile.start`)  in the info.plist.   
 
 [OPTION END]
 

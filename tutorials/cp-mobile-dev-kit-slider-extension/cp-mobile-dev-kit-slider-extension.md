@@ -27,7 +27,6 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 ---
 
-
 To extend the functionality, or customize the look and feel, and behavior of your client app, you can create extension controls other than the already existing MDK built-in controls by writing Native Code in TypeScript via Marshalling. `NativeScript` provide the ability to access platform-specific objects, class, and types in TypeScript / JavaScript via marshalling. `NativeScript` handles the conversion between JavaScript and native data types implicitly.
 
 In this tutorial, you will create a Slider extension via `NativeScript` (in TypeScript language) which will be common for both device platforms.

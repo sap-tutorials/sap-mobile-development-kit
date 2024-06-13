@@ -38,7 +38,6 @@ A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.i
 
 ### Understand the Petstore API to retrieve data
 
-
 1. Open *[`Swagger Petstore`](https://petstore.swagger.io/)*, find all pets with status as `available`.
 
     <!-- border -->![MDK](img-1.1.png)

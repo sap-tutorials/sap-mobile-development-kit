@@ -36,7 +36,6 @@ This step includes creating the mobile development kit project in the editor.
 
 1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
 
-
 2. Click **New Project from Template** on the `Get Started` page.
 
     <!-- border -->![MDK](img-1.1.png)

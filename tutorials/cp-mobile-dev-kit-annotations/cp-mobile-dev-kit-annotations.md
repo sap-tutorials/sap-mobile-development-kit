@@ -11,6 +11,7 @@ author_profile: https://github.com/jitendrakansal
 # Use OData Annotations to Add CRUD Functionality to an MDK App
 <!-- description --> Generate a fully functional CRUD multi-channel application based on OData annotations.
 
+
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)

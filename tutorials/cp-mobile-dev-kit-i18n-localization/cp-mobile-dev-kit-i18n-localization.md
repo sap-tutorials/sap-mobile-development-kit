@@ -27,6 +27,7 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 ---
 
+
 ### Understand the Internationalization and Localization
 
 **Internationalization (i18n)** is the process of designing and developing your software or mobile application product so it can be adapted and localized to different cultures, regions, and languages.

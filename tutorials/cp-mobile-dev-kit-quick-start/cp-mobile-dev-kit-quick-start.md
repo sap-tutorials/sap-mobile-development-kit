@@ -83,7 +83,6 @@ This step includes creating the mobile development kit project in the editor.
     
 7. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDKApp` project in the project explorer.
 
-
 ### Get familiar with generated project structure
 
 This is how the project structure looks like within the workspace.
