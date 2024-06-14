@@ -124,7 +124,7 @@ So far, you have learned how to quickly build an MDK application in the SAP Busi
    MDK editor will deploy the metadata to Mobile Services (for Mobile application) followed by to Cloud Foundry (for Web application). 
    
    - For Mobile Services deployment, choose Yes or No if you want to enable source for debugging the deployed bundle.
-   - For Cloud Foundry deplyoment, enter application ID, application version and select web runtime deplyoment option.
+   - For Cloud Foundry deployment, enter application ID, application version and select web runtime deployment option.
 
    ![MDK](img-3.2.gif)
 
