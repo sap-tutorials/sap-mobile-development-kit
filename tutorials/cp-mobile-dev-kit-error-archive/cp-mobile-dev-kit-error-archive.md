@@ -163,11 +163,11 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
-<!-- border -->![MDK](img-4.1.png)
+<!-- border -->![MDK](img-3.5.png)
 
 The On-boarding QR code is now displayed.
 
-<!-- border -->![MDK](img-4.2.png)
+<!-- border -->![MDK](img-3.6.png)
 
 >Leave the Onboarding dialog box open for the next step.
 

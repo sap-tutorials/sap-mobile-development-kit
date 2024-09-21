@@ -151,32 +151,32 @@ So far, you have learned how to quickly build an MDK application in the SAP Busi
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-    ![MDK](img-4.1.png)
+<!-- border -->![MDK](img-4.1.png)
 
 2. Select deploy target as **Mobile & Cloud**.
 
-   MDK editor will deploy the metadata to Mobile Services (for Mobile application) followed by to Cloud Foundry (for Web application). 
+MDK editor will deploy the metadata to Mobile Services (for Mobile application) followed by to Cloud Foundry (for Web application). 
    
    - For Mobile Services deployment, choose Yes or No if you want to enable source for debugging the deployed bundle.
    - For Cloud Foundry deployment, enter application ID, application version and select web runtime deployment option.
 
-   ![MDK](img-4.2.gif)
+   <!-- border -->![MDK](img-4.2.gif)
 
->First web deployment takes 2-3 minutes as it creates five service instances for the application. You can find the details of these instances in the space cockpit.
+    >First web deployment takes 2-3 minutes as it creates five service instances for the application. You can find the details of these instances in the space cockpit.
 
->-	XSUAA
+    >-	XSUAA
 
->- destination
+    >- destination
 
->- connectivity
+    >- connectivity
 
->- HTML Repo host
+    >- HTML Repo host
 
->- HTML repo runtime
+    >- HTML repo runtime
 
-Ensure that you see successful messages for both deployments.
+    Ensure that you see successful messages for both deployments.
 
-![MDK](img-4.3.png)
+    ![MDK](img-4.3.png)
 
 
 ### Display the QR code for onboarding the Mobile app
@@ -184,11 +184,11 @@ Ensure that you see successful messages for both deployments.
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
-![MDK](img-5.1.png)
+<!-- border -->![MDK](img-5.1.png)
 
 The On-boarding QR code is now displayed.
 
-![MDK](img-5.2.png)
+<!-- border -->![MDK](img-5.2.png)
 
 >Leave the Onboarding dialog box open for the next step.
 
@@ -203,7 +203,7 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 
 After accepting the app update, you will see the **Main** page, along with a user menu that includes options such as syncing changes, accessing support, checking for updates, and resetting the app. An Offline store will be initialized. **Since you selected the Base template during the project creation, it generated this empty page without any UI controls. In the next tutorials, you will add some UI controls to this page and create more pages.**
 
-![MDK](img-5.1.png)
+![MDK](img-6.1.png)
 
 [OPTION END]
 
@@ -215,7 +215,7 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 
 After accepting the app update, you will see the **Main** page, along with a user menu that includes options such as syncing changes, accessing support, checking for updates, and resetting the app. An Offline store will be initialized. **Since you selected the Base template during the project creation, it generated this empty page without any UI controls. In the next tutorials, you will add some UI controls to this page and create more pages.**
 
-![MDK](img-5.2.png)
+![MDK](img-6.2.png)
 
 [OPTION END]
 

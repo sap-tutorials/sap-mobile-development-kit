@@ -283,7 +283,7 @@ You will open the `Customers_Create.page` from the Customer List page. For this,
 
     <!-- border -->![MDK](img-4.5.png)
 
-7. Click **Next** and then **Finish** on the confirmation step.
+7. Click **Finish** to complete the action creation process.
 
 
 ### Deploy the application

@@ -125,32 +125,15 @@ While updating the customer details, you may want to close the current page and 
 
     >System Item are predefined system-supplied icon or text. Overwrites _Text_ and _Icon_ if specified.
 
-3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+3.  In **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**.
 
-    <!-- border -->![MDK](img-2.3.png)
+    Double click the `CloseModalPage_Cancel.action` and click **OK** to set it as the `OnPress` Action.
 
-4. Keep the default selection for the *Object Type* as Action and *Folders* path.
-
-    <!-- border -->![MDK](img-2.4.png)   
-
-5. Choose **UI** in **Category** | click **Close Page** | **Next**.
-
-    <!-- border -->![MDK](img-2.5.png)
-
-6. In the **Base Information**, provide the below information and then click **Finish** to complete the action creation process.
-
-    | Property | Value |
-    |----|----|
-    | `Name`| `CloseModalPage_Cancel` |
-    | `DismissModal` | Select `Canceled` from the dropdown |
-    | `CancelPendingActions`| Select `true` from the dropdown |
-
-    <!-- border -->![MDK](img-2.6.png)
+    <!-- border -->![MDK](img-2.3.png)    
 
     >You can close pages with the option to terminate ongoing events or wait until they are complete. Visit [documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ClosePage.schema.html) for more details about Close Page Action.
 
 ### Store the updated data locally
-
 
 The next step is to store the updated record locally for an offline application or send the updated record directly back to the backed for online applications.
 
@@ -174,7 +157,7 @@ First, add an action bar item on the `Customers_Edit.page`
 
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-2.4.png)   
+    <!-- border -->![MDK](img-3.4.png)   
 
 5. Choose **Data** in **Category** | click **OData** | **Next**.
 
@@ -284,7 +267,7 @@ You will navigate from the Customer Detail page to a new page modifying customer
     
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-2.4.png)    
+    <!-- border -->![MDK](img-3.4.png)    
 
 5. Choose **UI** in **Category** | click **Navigation** | **Next**.
 

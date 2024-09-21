@@ -103,7 +103,7 @@ To create the Customer List page, you will create a **Section page** and drag th
 
 Now, you will add a button on the Main page and from there, you will navigate to the `Customers_List.page`.
 
-1. In `Main.page`, expand the **Controls** | **Static Container** group, drag and drop the **Button Table** control onto the Page area.
+1. In the `Main.page`, expand the **Controls** | **Static Container** group, drag and drop the **Button Table** control onto the Page area.
 
     <!-- border -->![MDK](img-2.1.gif)
 

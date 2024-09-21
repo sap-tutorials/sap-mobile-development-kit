@@ -345,6 +345,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
 
     <!-- border -->![MDK](img-6.1.gif)
 
+
 2. To show a total count of orders for a customer, you will write a JavaScript logic for this calculation. Click `Create a rule` option for `AttributeLabel` property of the Footer control.
 
     <!-- border -->![MDK](img-6.2.png)
@@ -368,7 +369,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
         // Retrieves the current customer's information from the context
         const currentCustomer = context.getPageProxy().binding['@odata.readLink'];
         // Counts the number of sales orders associated with the current customer.
-        return context.count('/DemoSampleApp/Services/SampleServiceV4.service', currentCustomer + '/SalesOrders', '').then((count) => {
+        return context.count('/demosampleapp/Services/SampleServiceV4.service', currentCustomer + '/SalesOrders', '').then((count) => {
             return count;
         });
     }

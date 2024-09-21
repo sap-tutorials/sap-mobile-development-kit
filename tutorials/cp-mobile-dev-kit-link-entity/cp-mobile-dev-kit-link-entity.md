@@ -244,7 +244,7 @@ The next step is to store newly created record locally for an offline applicatio
 
 12. When the above OData action is executed, you may want to display messages on its success and failure behavior. For example, on its success, you may want to close the page and allow any execution to continue. On its failure, you may want to display an error. In the `SalesOrderHeaders_CreateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the link icon to open the object browser for the *Success Action* and bind it to `CloseModalPage_Complete.action`.
 
-    <!-- border -->![MDK](img-3.11.png)
+    <!-- border -->![MDK](img-3.10.png)
 
 13. Create a message action displaying error in case of the create failure. 
 
@@ -252,15 +252,15 @@ The next step is to store newly created record locally for an offline applicatio
 
     In the `SalesOrderHeaders_CreateEntity.action`, click the link icon to open the object browser for the `Failure Action`. 
 
-    <!-- border -->![MDK](img-3.12.png)
+    <!-- border -->![MDK](img-3.11.png)
 
 14. Bind it to `GenericMessageBox.action` and click **OK**.
 
-    <!-- border -->![MDK](img-3.13.png)     
+    <!-- border -->![MDK](img-3.12.png)     
 
 15. You will now override its properties. Click on the `Overrides Properties for selected action` icon. 
 
-    <!-- border -->![MDK](img-3.14.png)
+    <!-- border -->![MDK](img-3.13.png)
 
 16. In the **Override Action Properties** step, provide the below details and click **OK**.
 
@@ -289,7 +289,6 @@ You will open the `SalesOrderHeaders_Create.page` from the Customer Detail page.
     | Property | Value |
     |----|----|
     | `ButtonType` | `Primary` |
-    | `Image` | Remove the default value |
     | `Title` | `Create Order` |
 
     <!-- border -->![MDK](img-4.2.png)
