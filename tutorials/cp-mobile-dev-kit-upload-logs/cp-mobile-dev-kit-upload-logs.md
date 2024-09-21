@@ -2,7 +2,7 @@
 parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
-tags: [ tutorial>intermediate, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-business-application-studio ]
+tags: [ tutorial>intermediate, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-business-application-studio ]
 time: 20
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
@@ -30,11 +30,11 @@ SAP Mobile Services provides administrators, developers and support staff with e
 
 In this step, you will enable client log upload policy in **SAP Mobile Services Cockpit** for a given MDK app.
 
-1. Login to [Mobile Services Cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html), click `com.sap.mdk.demo` | **Mobile Client Log Upload**.
+1. Login to [Mobile Services Cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html), click `myapp.mdk.demo` | **Mobile Client Log Upload**.
 
     <!-- border -->![MDK](img-1.1.png)
 
-2. Check **Log Upload** option and click **Save**.
+2. Switch to the **Configuration** tab, check **Log Upload** option  and click **Save**.
 
     <!-- border -->![MDK](img-1.2.png)
 
@@ -105,18 +105,14 @@ The MDK template generates a project that includes a user menu with support opti
 
 [OPTION END]
 
-
 ### Examine uploaded logs in Mobile Services cockpit
 
-
-Open SAP Mobile Services Cockpit, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `com.sap.mdk.demo` app **&rarr;** **Mobile Client Log Upload** **&rarr;** **Log Files**.
+Open SAP Mobile Services Cockpit, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app **&rarr;** **Mobile Client Log Upload** **&rarr;** **Log Files**.
 
 <!-- border -->![MDK](img-4.1.png)
 
 A log file is created for each upload. All the uploaded files, including all levels, not just error or fatal will be listed here. You can select a file and download it locally on your machine for further examination.
 
 >Check [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/logging/admin/config.html) for more details about Uploading and Viewing Client Logs.
-
-
 
 ---

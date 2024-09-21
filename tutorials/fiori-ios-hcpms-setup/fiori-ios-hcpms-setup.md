@@ -1,8 +1,8 @@
 ---
 parser: v2
 auto_validation: true
-primary_tag: software-product>sap-mobile-services
-tags: [  tutorial>beginner, topic>mobile, operating-system>ios, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>sap-btp-sdk-for-ios, software-product>sap-btp-sdk-for-android, software-product>mobile-development-kit-client]
+primary_tag: software-product>sap-mobile-services, software-product>sap-build-code
+tags: [  tutorial>beginner, topic>mobile, operating-system>ios, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-btp-sdk-for-ios, software-product>sap-btp-sdk-for-android, software-product>mobile-development-kit-client]
 time: 5
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
@@ -23,7 +23,6 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 ---
 
 ### Go to your global account on SAP BTP
-
 
 > Make sure you are choosing the right BTP account type ( **Free Tier** or **Free Trial** ) in the tabs under Step 1.
 

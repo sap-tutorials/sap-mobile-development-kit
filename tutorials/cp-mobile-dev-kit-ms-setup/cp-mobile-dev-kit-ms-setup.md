@@ -2,7 +2,7 @@
 parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
-tags: [ tutorial>beginner, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services ]
+tags: [ tutorial>beginner, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-build-code ]
 time: 10
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
@@ -35,40 +35,46 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 1. Navigate to [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
 
-2. On the home screen, click **Create new app** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
+2. On the home screen, click **Create New App** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
 
     ![MDK](img-2.1.png)
 
-3. In the **Basic Info** step, provide the required information and choose **Next**.
+3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
+
+    <!-- border -->![MDK](img-2.2.png)
+
+4. In the **Basic Info** step, provide the required information and choose **Next**.
 
     | Field | Value |
     |----|----|
-    | `ID` | com.sap.mdk.demo |
+    | `ID` | myapp.mdk.demo |
     | `Name` | SAP MDK Demo App |
 
-    ![MDK](img-2.2.png)
-
-    > If you are configuring this app in a trial account, make sure to select **License Type** as *lite*.
+    <!-- border -->![MDK](img-2.3.png)
 
     >Other fields are optional. For more information about these fields, see [Creating Applications](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/manage.html#creating-applications) in the SAP documentation.
 
-4. In the **XSUAA Settings** step, continue with the default settings and choose **Next** to navigate to further steps.
+5. In the **Security Settings** step, continue with the default settings and choose **Next**.
 
-    ![MDK](img-2.3.png)
+    <!-- border -->![MDK](img-2.4.png)
 
-5. In the **Role Settings** step, leave the settings as it is and choose **Next** to navigate to further steps.
+6. In the **Role Settings** step, continue with the default settings and choose **Next**.
 
-    ![MDK](img-2.3.1.png)    
+    <!-- border -->![MDK](img-2.5.png)    
 
-6. In the **Assign Features** step, select **Mobile Development Kit Application** from the dropdown if it's not already selected and then click on **Finish**.
+7. In the **Assign Features** step, continue with the default settings and choose **Next**.
 
-    ![MDK](img-2.4.png)
+    <!-- border -->![MDK](img-2.6.png) 
+
+8. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration.
+
+    <!-- border -->![MDK](img-2.7.png)
 
     >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured, if needed.
 
     Once you have created your application, you see a list of default features have been automatically assigned to the app.
 
-    ![MDK](img-2.5.png)
+    <!-- border -->![MDK](img-2.8.png)
 
     >You can find more information on available features in SAP Mobile Services in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/features.html).
 
@@ -78,7 +84,7 @@ A [sample OData](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud
 
 1. Click on the `+` icon next to the **Assigned Features**. 
 
-    ![MDK](img-2.5.1.png)
+    <!-- border -->![MDK](img-2.9.png)
 
 2. Choose **`Mobile Sample OData ESPM`** from the feature list and choose **OK**.
 
@@ -104,21 +110,21 @@ This `com.sap.edm.sampleservice.v4` destination is immutable. However, for other
 
 2. Copy the URL from existing destination and click the **Create** icon to add a new destination.
 
-    ![MDK](img-3.2.png)
+    <!-- border -->![MDK](img-3.2.png)
 
-3. In **Basic Info** step, provide the required information and click **Next**.
+3. In the **Basic Info** step, provide the required information and click **Next**.
 
     | Field | Value |
     |----|----|
     | `Destination Name` | SampleServiceV4 |
     | `URL` | paste the URL from above step  |
 
-    ![MDK](img-3.3.png)
+    <!-- border -->![MDK](img-3.3.png)
 
 4. For this tutorial, there is no Custom Headers, Annotations required. Click **Next** to navigate to further steps.
 
 
-5. In **Destination Configuration** step, select **SSO Mechanism** as **Forward Authentication**, click **Next**.   
+5. In the **Destination Configuration** step, select **SSO Mechanism** as **Forward Authentication**, click **Next**.   
 
     ![MDK](img-3.4.png)
 
@@ -133,21 +139,21 @@ MDK Web application accesses the data sources via BTP destination. You will now 
 
 >The destination that you are going to create in this tutorial is very specific as this connects to the backend via Mobile Services and will use OAuth2JWTBearer authentication type. For other kinds of backend or services, you may skip the following steps and directly setup your BTP destination with the relevant authentication type that is required by the backend.
 
-1. Click `com.sap.mdk.demo` to navigate to Mobile Services application details.
+1. Click `myapp.mdk.demo` to navigate to Mobile Services application details.
 
-    ![MDK](img-4.1.png)
+    <!-- border -->![MDK](img-4.1.png)
 
-2. Open the `APIs` tab, click _copy to clipboard_ icon to copy the highlighted URL and paste it in a text file. This URL will be used in configuring the  BTP destination.
+2. Click the `APIs` tab, click _copy to clipboard_ icon to copy the highlighted URL and paste it in a text file. This URL will be used in configuring the  BTP destination.
 
-    ![MDK](img-4.2.png)
+    <!-- border -->![MDK](img-4.2.png)
 
 3. In your SAP BTP space cockpit page, navigate to the **Services** **&rarr;**  **Instances and Subscriptions**, select **Authorization and Trust Management service** from the list, click `com-sap-mdk-demo-xsuaa` instance, choose trip dot icon **&rarr;** **View** to open the configuration details.
 
-    ![MDK](img-4.3.png)
+    <!-- border -->![MDK](img-4.3.png)
 
 4. Switch to **Form** tab, copy values for `clientid`, `clientsecret`, `url` parameters and paste these values in the text file. These parameters will be used in configuring the BTP destination.  
 
-    ![MDK](img-4.4.png)
+    <!-- border -->![MDK](img-4.4.png)
 
 5. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/0-Set-Up-for-the-Mobile-Development-Kit/SampleServiceV4.zip) and unzip it on your machine.
 
