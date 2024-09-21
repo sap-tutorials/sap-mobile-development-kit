@@ -1,7 +1,7 @@
 ---
 parser: v2
 auto_validation: true
-primary_tag: software-product>sap-mobile-services, software-product>sap-build-code
+primary_tag: software-product>sap-mobile-services
 tags: [  tutorial>beginner, topic>mobile, operating-system>ios, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-btp-sdk-for-ios, software-product>sap-btp-sdk-for-android, software-product>mobile-development-kit-client]
 time: 5
 author_name: Jitendra Kansal

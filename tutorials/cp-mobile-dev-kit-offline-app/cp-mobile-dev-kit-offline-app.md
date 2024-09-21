@@ -65,7 +65,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 ### Configure the Project Using Storyboard
 
-The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application’s structure and components.
+The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
 
 - **Runtime Resources**: In the Runtime Resources section, you can see the mobile services application and mobile destination used in the project, with a dotted-line connected to the External Resources.
 - **External Resources**: In the External Resources section, you can see the external services used in the project, with a dotted-line connection to the Runtime Resource or the UI app.
@@ -224,14 +224,14 @@ After accepting the app update, you will see the **Main** page, along with a use
 
 1. Click the highlighted button to open the MDK Web application in a browser. If prompted, enter your SAP BTP credentials.
 
-    ![MDK](img-5.3.png)
+    ![MDK](img-6.3.png)
 
     >You can also open the MDK web application by accessing its URL from the `.project.json` file.
-    ![MDK](img-5.4.png)
+    ![MDK](img-6.4.png)
 
     You will notice the **Main** page and a user menu on the top right corner. The application data service will be initialized. **Since you selected the Base template during the project creation, it generated this empty page without any UI controls. In the next tutorials, you will add some UI controls to this page and create more pages.**
 
-    ![MDK](img-5.5.png)
+    ![MDK](img-6.5.png)
 
 [OPTION END]
 

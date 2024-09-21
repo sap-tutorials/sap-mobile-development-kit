@@ -70,7 +70,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 ### Configure the Project Using Storyboard
 
-The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application’s structure and components.
+The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
 
 - **Runtime Resources**: In the Runtime Resources section, you can see the mobile services application and mobile destination used in the project, with a dotted-line connected to the External Resources.
 - **External Resources**: In the External Resources section, you can see the external services used in the project, with a dotted-line connection to the Runtime Resource or the UI app.
@@ -137,7 +137,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 12. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->[MDK](img-2.12.png) 
+    <!-- border -->![MDK](img-2.12.png) 
 
     Since we have Enable Offline set to Yes, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
 
@@ -145,7 +145,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 This is how the project structure looks like within the workspace.
 
-    <!-- border -->[![MDK](img-3.1.png)
+    <!-- border -->![MDK](img-3.1.png)
 
 These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
 
@@ -165,7 +165,7 @@ These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264ac
 
 >Open the application settings in the application editor by clicking the `Application.app`.
 
-><!-- border -->[![MDK](img-3.2.png)
+><!-- border -->![MDK](img-3.2.png)
 
 
 ### Deploy the application
