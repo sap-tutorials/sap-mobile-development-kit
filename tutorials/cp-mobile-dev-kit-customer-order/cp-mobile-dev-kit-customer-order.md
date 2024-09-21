@@ -358,6 +358,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
 
     <!-- border -->![MDK](img-6.4.png)
 
+
 5. Copy and paste the following code.
 
     ```JavaScript
