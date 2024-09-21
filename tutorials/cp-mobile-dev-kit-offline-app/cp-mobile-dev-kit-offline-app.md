@@ -8,7 +8,6 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
-
 # Start Your MDK Application in the Editor
 <!-- description --> Use the MDK editor to create a multi-channel (mobile and web) application.
 
@@ -58,10 +57,10 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 7. After you see a message stating that the project has been created successfully, click the project to open it. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
 
-    <!-- border -->![MDK](img-1.8.png)  
+    <!-- border -->![MDK](img-1.7.png)  
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
-    >![MDK](img-1.9.png) 
+    >![MDK](img-1.8.png) 
 
 ### Configure the Project Using Storyboard
 
@@ -99,7 +98,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 5. In the **Basic Information** step, select the **MDK Template Type** as **Base**, leave the other options as they are, and click **Next**.
 
-    <!-- border -->[MDK](img-2.7.png)  
+    <!-- border -->![MDK](img-2.7.png)  
 
     >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
@@ -112,7 +111,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `Select all data collections` | Leave it as it is |
     | `What types of data will your application contain?` | Select `Customers`, `Products`, `SalesOrderHeaders` and `SalesOrderItems` |
 
-    <!-- border -->[MDK](img-2.8.png) 
+    <!-- border -->![MDK](img-2.8.png) 
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
 
@@ -122,7 +121,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->[MDK](img-2.9.png) 
+    <!-- border -->![MDK](img-2.9.png) 
 
 ### Get familiar with generated project structure
 

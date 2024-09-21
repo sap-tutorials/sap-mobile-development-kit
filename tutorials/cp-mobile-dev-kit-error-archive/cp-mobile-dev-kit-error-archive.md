@@ -41,89 +41,121 @@ You have built an MDK app with offline functionality. In offline store, you make
 
 > For this tutorial, you will use **Mobile Services sample backend** destination. You will modify a `PurchaseOrderHeaders` record by changing `CurrencyCode` field. Offline store saves this record in request queue database and when you sync it with backend, backend prevents updating this record due to business logic failure. This failure record will be listed in Error list page, from here, you can navigate to details page for more information. You will implement a logic to navigate from details page to the affected record.
 
-### Create a new MDK project in SAP Business Application Studio
+### Create a New Project Using SAP Build Code
 
-This step includes creating the mobile development kit project in the editor.
+This step includes creating a mobile project in SAP Build Lobby. 
 
-1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
-
-
-2. Click **New Project from Template** on the `Get Started` page.
+1. In the SAP Build Lobby, click **Create** to start the creation process.
 
     <!-- border -->![MDK](img-1.1.png)
 
-    >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
+2. Click the **Build an Application** tile.    
 
-    <!-- border -->![MDK](img-1.2.gif)
+    <!-- border -->![MDK](img-1.2.png)
 
-3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
-
-    <!-- border -->![MDK](img-1.2.png)  
-
-    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
-
-    ><!-- border -->![MDK](img-1.4.png)
-
-4. In *Basic Information* step, select or provide the below information and click **Next**:
-
-    | Field | Value |
-    |----|----|
-    | `MDK Template Type`| Select `CRUD` from the dropdown |
-    | `Your Project Name` | Provide a name of your choice. `MDK_ErrorArchive` is used for this tutorial |
-    | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |
-    | `Target MDK Client Version` | Leave the default selection as `MDK 23.4+ (For use with MDK 23.4 or later clients)` |
-    | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
+3. Click the **SAP Build Code** tile to develop your project in SAP Business Application Studio, the SAP Build Code development environment, leveraging the capabilities of the services included in SAP Build Code.
 
     <!-- border -->![MDK](img-1.3.png)
 
-    >The `CRUD` template creates the offline or online actions, rules, messages, List Detail Pages with editable options. More details on *MDK template* is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).  
+4. Click the **Mobile Application** tile. 
 
-5. In *Service Configuration* step, provide or select the below information and click **Next**:
+    <!-- border -->![MDK](img-1.4.png)
 
-    | Field | Value |
-    |----|----|
-    | `Data Source` | Select `Mobile Services` from the dropdown |
-    | `Mobile Services Landscape` | Select `standard` from the dropdown |
-    | `Application Id` | Select `com.sap.mdk.demo` from the dropdown |
-    | `Destination` | Select `SampleServiceV4` from the dropdown |
-    | `Enter a path to the OData service` | Leave it as it is |
-    | `Enable Offline` | It's enabled by default |
+5. Enter a name for your project, add a description (optional), and click **Create**. 
 
     <!-- border -->![MDK](img-1.5.png)
+    
+    >SAP Build Code recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
-6. In *Data Collections* step, unselect `Customers` and select  `PurchaseOrderHeaders`, `PurchaseOrderItems` and `Suppliers`.
+6. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments.
 
     <!-- border -->![MDK](img-1.6.png)
 
+7. After you see a message stating that the project has been created successfully, click the project to open it. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
+
+    <!-- border -->![MDK](img-1.7.png)  
+
+    >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
+    >![MDK](img-1.8.png) 
+
+### Configure the Project Using Storyboard
+
+The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
+
+- **Runtime Resources**: In the Runtime Resources section, you can see the mobile services application and mobile destination used in the project, with a dotted-line connected to the External Resources.
+- **External Resources**: In the External Resources section, you can see the external services used in the project, with a dotted-line connection to the Runtime Resource or the UI app.
+- **UI Application**: In the UI Applications section, you can see the mobile applications.
+
+1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
+
+    <!-- border -->![MDK](img-2.1.png) 
+
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+
+    >![MDK](img-2.2.png) 
+
+2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor.
+
+    <!-- border -->![MDK](img-2.3.png)  
+
+3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+
+    <!-- border -->![MDK](img-2.4.png)  
+
+    >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
+
+    In the storyboard window, the app and mobile destination will be added under the Runtime Resources column. The mobile destination will also be added under the External Resources with a dotted-line connection to the Runtime Resource. The External Resource will be used to create the UI application.
+
+    <!-- border -->![MDK](img-2.5.png)      
+
+4. Click the **+** button in the UI application column header to add mobile UI for your project.
+
+    <!-- border -->![MDK](img-2.6.png)     
+
+5. In the **Basic Information** step, select the **MDK Template Type** as **CRUD**, leave the other options as they are, and click **Next**.
+
+    <!-- border -->![MDK](img-2.7.png)  
+
+    >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
+
+6. In the **Data Collections** step, provide the below information and click **Finish**:
+
+    | Field | Value |
+    |----|----|
+    | `Enter a path to service (e.g. /sap/opu/odata/sap/SERVICE_NAME)` | Leave it as it is  |
+    | `Enable Offline` | It's enabled by default |
+    | `Select all data collections` | Leave it as it is |
+    | `What types of data will your application contain?` | Unselect `Customers`, select `PurchaseOrderHeaders`, `PurchaseOrderItems` and `Suppliers` |
+
+    <!-- border -->![MDK](img-2.8.png) 
+
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
+
+    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
+
     >Data Collections step retrieves the entity sets information for the selected destination.
 
-6. Click **Finish** to complete the project creation.
-
-    After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_ErrorArchive` project in the project explorer.
-
-    Generated project is offline enabled and includes three entity sets (`Suppliers`, `PurchaseOrderHeaders` and `PurchaseOrderItems`) on the `Main.page` and these entities are fully CRUD enabled. You can create a new record and also modify an existing one. You will also find the `ErrorArchive_List.page` which will display list of errors for the records rejected by the backend and `ErrorArchive_Detail.page` which will display details about an error.
-
-    <!-- border -->![MDK](img-1.7.png)
-
-    >`SampleServiceV4` is the name of the service file generated in the project creation.  
+7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
+ 
+    <!-- border -->![MDK](img-2.9.png) 
 
 ### Deploy the application
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-    <!-- border -->![MDK](img-2.1.png)
+    <!-- border -->![MDK](img-3.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![MDK](img-2.2.png)
+    <!-- border -->![MDK](img-3.2.png)
 
     If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![MDK](img-2.3.png)
+    <!-- border -->![MDK](img-3.3.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![MDK](img-2.4.png)
+    <!-- border -->![MDK](img-3.4.png)
 
 
 ### Display the QR code for onboarding the Mobile app
@@ -131,15 +163,13 @@ This step includes creating the mobile development kit project in the editor.
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
-<!-- border -->![MDK](img-3.1.png)
+<!-- border -->![MDK](img-4.1.png)
 
 The On-boarding QR code is now displayed.
 
-<!-- border -->![MDK](img-3.2.png)
+<!-- border -->![MDK](img-4.2.png)
 
 >Leave the Onboarding dialog box open for the next step.
-
-
 
 ### Run the app in MDK client
 
@@ -286,7 +316,7 @@ On the Error Details page, you will implement how to navigate to respective reco
 
     <!-- border -->![MDK](img-5.7.png)  
 
-8. Select **Rule** for the *Object Type* and select the `/MDK_ErrorArchive/Rules/ErrorArchive` folder path to create a new rule that will be generated in the chosen path.
+8. Select **Rule** for the *Object Type* and select the `/mdk_errorarchive/Rules/SampleServiceV4` folder path to create a new rule that will be generated in the chosen path.
 
     <!-- border -->![MDK](img-5.8.png)
 

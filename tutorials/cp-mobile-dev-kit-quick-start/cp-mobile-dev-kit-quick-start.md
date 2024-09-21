@@ -116,7 +116,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 9. In the **Basic Information** step, select the **MDK Template Type** as **CRUD**, leave the other options as they are, and click **Next**.
 
-    <!-- border -->[MDK](img-2.10.png) 
+    <!-- border -->![MDK](img-2.10.png) 
 
 11. In the **Data Collections** step, provide the below information and click **Finish**:
 
@@ -127,7 +127,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `Select all data collections` | Leave it as it is |
     | `What types of data will your application contain?` | Select `Customers`, `Products`, `PurchaseOrderHeaders`, `PurchaseOrderItems`, `SalesOrderHeaders` and `SalesOrderItems` |
 
-    <!-- border -->[MDK](img-2.11.png) 
+    <!-- border -->![MDK](img-2.11.png) 
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
     
