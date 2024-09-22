@@ -441,8 +441,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 11. If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
 
-    ![MDK](
-        .png)
+    ![MDK](img-5.20.png)
 
     >You can always interrupt running process in terminal window by pressing `control + C`.
 

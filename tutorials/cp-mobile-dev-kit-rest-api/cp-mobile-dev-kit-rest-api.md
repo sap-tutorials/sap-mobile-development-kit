@@ -525,7 +525,6 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 ### Update the app
 
-
 [OPTION BEGIN [Android]]
 
 1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
