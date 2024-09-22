@@ -28,65 +28,99 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ---
 
-
 ![MDK](img-1.0.png)
 
 ### Define push notification settings in app configuration
 
 1. Open the [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click **Mobile Push Notification** feature.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![MDK](img-0.1.png)
 
     >You can add **Mobile Push Notification** feature by clicking on + icon in case feature is not already assigned to the application.
 
 2. Select **SAP Mobile Services Client** under **Predefined for** option, click **Save**.
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![MDK](img-0.2.png)
 
     >Predefined push is supported only for the MDK (SAP Mobile Services client) public store client.
 
     >If you want to enable push notification in your custom MDK client then follow [Enable Push Notifications in Your Branded MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push-customclient.html) tutorial.
 
 
+### Create a New Project Using SAP Build Code
 
-### Create a new MDK project in SAP Business Application Studio
+This step includes creating a mobile project in SAP Build Lobby. 
 
+1. In the SAP Build Lobby, click **Create** to start the creation process.
 
-1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
+    <!-- border -->![MDK](img-1.1.png)
 
-2. Click **New Project from Template** on the `Get Started` page.
+2. Click the **Build an Application** tile.    
 
-    <!-- border -->![MDK](img-2.1.png)
+    <!-- border -->![MDK](img-1.2.png)
 
-    >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
+3. Click the **SAP Build Code** tile to develop your project in SAP Business Application Studio, the SAP Build Code development environment, leveraging the capabilities of the services included in SAP Build Code.
 
-    <!-- border -->![MDK](img-1.2.gif)
+    <!-- border -->![MDK](img-1.3.png)
 
-3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+4. Click the **Mobile Application** tile. 
 
-    <!-- border -->![MDK](img-2.2.png)  
+    <!-- border -->![MDK](img-1.4.png)
+
+5. Enter a name for your project, add a description (optional), and click **Create**. 
+
+    <!-- border -->![MDK](img-1.5.png)
+    
+    >SAP Build Code recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
+
+6. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments.
+
+    <!-- border -->![MDK](img-1.6.png)
+
+7. After you see a message stating that the project has been created successfully, click the project to open it. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
+
+    <!-- border -->![MDK](img-1.7.png)  
+
+    >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
+    >![MDK](img-1.8.png) 
+
+### Configure the Project Using Storyboard
+
+The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
+
+- **Runtime Resources**: In the Runtime Resources section, you can see the mobile services application and mobile destination used in the project, with a dotted-line connected to the External Resources.
+- **External Resources**: In the External Resources section, you can see the external services used in the project, with a dotted-line connection to the Runtime Resource or the UI app.
+- **UI Application**: In the UI Applications section, you can see the mobile applications.
+
+1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
+
+    <!-- border -->![MDK](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
-    ><!-- border -->![MDK](img-1.4.png)
+    >![MDK](img-2.2.png) 
 
-4. In *Basic Information* step, provide the below information and click **Finish**:
+2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor and click **Add App to Project**. You do not require to add a destination for this tutorial.
 
-    | Field | Value |
-    |----|----|
-    | `MDK Template Type`| Select `Empty` from the dropdown |
-    | `Your Project Name` | Provide a name of your choice. `MDK_Push` is used for this tutorial |
-    | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |
-    | `Target MDK Client Version` | Leave the default selection as `MDK 23.4+ (For use with MDK 23.4 or later clients)` |
-    | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
+    <!-- border -->![MDK](img-2.4.png)  
 
-    <!-- border -->![MDK](img-2.3.png)
+    >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
-    >More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).  
+    In the storyboard window, the app will be added under the Runtime Resources column.
 
+    <!-- border -->![MDK](img-2.5.png)      
 
-5. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Push` project in the project explorer.
+4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
+    <!-- border -->![MDK](img-2.6.png)     
+
+5. In the **Basic Information** step, leave the default values as they are, and click **Finish**.
+
+    <!-- border -->![MDK](img-2.7.png)  
+
+7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
+ 
+    <!-- border -->![MDK](img-2.8.png) 
 
 ### Create MDK actions to register for push notifications
 
@@ -200,10 +234,6 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     <!-- border -->![MDK](img-5.3.png)  
 
-4.  Select the application from Mobile Services.
-
-    <!-- border -->![MDK](img-5.4.png)
-
 5. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
     <!-- border -->![MDK](img-5.5.png)
@@ -217,8 +247,6 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
-
-.
 
 <!-- border -->![MDK](img-6.1.png)
 

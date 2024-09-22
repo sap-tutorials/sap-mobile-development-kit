@@ -61,6 +61,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.4.png)
 
+
 5. Enter a name for your project, add a description (optional), and click **Create**. 
 
     <!-- border -->![MDK](img-1.5.png)
@@ -284,9 +285,9 @@ On the Error Details page, you will implement how to navigate to respective reco
     | `Footnote`| leave it empty |
     | `PreserveIconStackSpacing` | Select `false` from the dropdown|
     | `ProgessIndicator`| leave it empty |
-    | `Status` | leave it empty  |
+    | `StatusText` | leave it empty  |
     | `Subhead` | `{@odata.id}` |
-    | `Substatus` | leave it empty  |
+    | `SubstatusText` | leave it empty  |
     | `Tags` | Click the `item0` and click the trash icon to delete the default item |
     | `Title` | `Edit Affected Entity` |
 
@@ -355,13 +356,13 @@ On the Error Details page, you will implement how to navigate to respective reco
         // You can add more complex decision logic if needed
         switch (affectedEntityType) {
             case "PurchaseOrderHeaders":
-                targetAction = "/MDK_ErrorArchive/Actions/SampleServiceV4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Edit.action";
+                targetAction = "/mdk_errorarchive/Actions/SampleServiceV4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Edit.action";
                 break;
             default:
                 //Save the affected Entity's type in client data so that it can be displayed by the toast
                 context.getPageProxy().getClientData().AffectedEntityType = affectedEntityType;
                 // Show a toast for affectedEntityType that we do not handle yet
-                return context.executeAction("/MDK_ErrorArchive/Actions/ErrorArchive/ErrorArchive_UnknownAffectedEntity.action");
+                return context.executeAction("/mdk_errorarchive/Actions/ErrorArchive/ErrorArchive_UnknownAffectedEntity.action");
         }
         if (targetAction) {
             let pageProxy = context.getPageProxy();

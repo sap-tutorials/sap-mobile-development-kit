@@ -38,42 +38,80 @@ If an app is already installed, you can specify a custom URL scheme or an intent
 >**This tutorial has been executed using public store MDK client which has out of the box functionality to open the SAP standard apps like SAP Mobile Start.
 If you are building a custom version of Mobile development kit client, there you can implement deep links by specifying related custom URL schemes.**
 
-### Create a new MDK project in SAP Business Application Studio
+### Create a New Project Using SAP Build Code
 
-1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
+This step includes creating a mobile project in SAP Build Lobby. 
 
-2. Click **New Project from Template** on the `Get Started` page.
+1. In the SAP Build Lobby, click **Create** to start the creation process.
 
     <!-- border -->![MDK](img-1.1.png)
 
-    >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
+2. Click the **Build an Application** tile.    
 
-    <!-- border -->![MDK](img-1.2.gif)
+    <!-- border -->![MDK](img-1.2.png)
 
-3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
-
-    <!-- border -->![MDK](img-1.2.png)  
-
-    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
-
-    ><!-- border -->![MDK](img-1.4.png)
-
-4. In *Basic Information* step, select or provide the below information and click **Finish**:
-
-    | Field | Value |
-    |----|----|
-    | `MDK Template Type`| Select `Empty` from the dropdown |
-    | `Your Project Name` | Provide a name of your choice. `MDKDeepLink` is used for this tutorial |
-    | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |
-    | `Target MDK Client Version` | Leave the default selection as `MDK 23.4+ (For use with MDK 23.4 or later clients)` |    
-    | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
+3. Click the **SAP Build Code** tile to develop your project in SAP Business Application Studio, the SAP Build Code development environment, leveraging the capabilities of the services included in SAP Build Code.
 
     <!-- border -->![MDK](img-1.3.png)
 
-    >The _MDK Empty Project_ template creates a Logout action, Close page action, rule and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/webide.html#creating-a-new-project).
+4. Click the **Mobile Application** tile. 
 
-5. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDKDeepLink` project in the project explorer.
+    <!-- border -->![MDK](img-1.4.png)
 
+5. Enter a name for your project, add a description (optional), and click **Create**. 
+
+    <!-- border -->![MDK](img-1.5.png)
+    
+    >SAP Build Code recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
+
+6. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments.
+
+    <!-- border -->![MDK](img-1.6.png)
+
+7. After you see a message stating that the project has been created successfully, click the project to open it. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
+
+    <!-- border -->![MDK](img-1.7.png)  
+
+    >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
+    >![MDK](img-1.8.png) 
+
+### Configure the Project Using Storyboard
+
+The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
+
+- **Runtime Resources**: In the Runtime Resources section, you can see the mobile services application and mobile destination used in the project, with a dotted-line connected to the External Resources.
+- **External Resources**: In the External Resources section, you can see the external services used in the project, with a dotted-line connection to the Runtime Resource or the UI app.
+- **UI Application**: In the UI Applications section, you can see the mobile applications.
+
+1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
+
+    <!-- border -->![MDK](img-2.1.png) 
+
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+
+    >![MDK](img-2.2.png) 
+
+2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor and click **Add App to Project**. You do not require to add a destination for this tutorial.
+
+    <!-- border -->![MDK](img-2.4.png)  
+
+    >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
+
+    In the storyboard window, the app will be added under the Runtime Resources column.
+
+    <!-- border -->![MDK](img-2.5.png)      
+
+4. Click the **+** button in the UI application column header to add mobile UI for your project.
+
+    <!-- border -->![MDK](img-2.6.png)     
+
+5. In the **Basic Information** step, leave the default values as they are, and click **Finish**.
+
+    <!-- border -->![MDK](img-2.7.png)  
+
+7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
+ 
+    <!-- border -->![MDK](img-2.8.png) 
 
 ### Add buttons on main page to open other apps or web pages
 
@@ -131,7 +169,7 @@ If you are building a custom version of Mobile development kit client, there you
         const utilsModule = context.nativescript.utilsModule;
         // Get the Nativescript Platform Module
         const platformModule = context.nativescript.platformModule;
-        return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
+        return context.executeAction('/mdkdeeplink/Actions/Confirmation.action').then((result) => {
             if (result.data) {
                 //This will open SAP Mobile Start app
                 if (platformModule.isIOS) {
@@ -152,7 +190,7 @@ If you are building a custom version of Mobile development kit client, there you
 
 5. In the generated `OpenSAPMobileStart.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Message Action`.
 
-    <!-- border -->![MDK](img-3.5.gif)
+    <!-- border -->![MDK](img-3.4.gif)
 
 6. Provide the below information:
 
@@ -177,7 +215,7 @@ If you are building a custom version of Mobile development kit client, there you
     export default function OpenSAPcom(context) {
         // Get the Nativescript Utils Module
         const utilsModule = context.nativescript.utilsModule;
-        return context.executeAction('/MDKDeepLink/Actions/Confirmation.action').then((result) => {
+        return context.executeAction('/mdkdeeplink/Actions/Confirmation.action').then((result) => {
             if (result.data) {
                 //This will open SAP.com website
                 return utilsModule.openUrl("https://www.sap.com");
@@ -204,17 +242,13 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     <!-- border -->![MDK](img-4.3.png)    
 
-4. Select application from **Mobile Services**.
-
-    <!-- border -->![MDK](img-4.4.png)   
-
 5. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![MDK](img-4.5.png)    
+    <!-- border -->![MDK](img-4.4.png)    
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![MDK](img-4.6.png)
+    <!-- border -->![MDK](img-4.5.png)
 
 
 ### Display the QR code for onboarding the Mobile app
