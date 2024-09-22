@@ -154,7 +154,6 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 ### Create your .mdkproject folder
 
-
 >Make sure you are choosing the right development platform tab above.
 
 [OPTION BEGIN [Mac]]
@@ -193,7 +192,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     <!-- border -->![MDK](img-3.5.png)
 
-5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `com.sap.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.6.png)
 
@@ -252,7 +251,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     <!-- border -->![MDK](img-3.5.png)
 
-5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `com.sap.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.6.png)
 
@@ -364,7 +363,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     ![MDK](img-5.6.png)
 
-7. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+7. Enter your password to login to SAP Business Technology Platform (BTP). If you see an Universal ID screen, enter your Universal ID password.
 
     ![MDK](img-5.7.1.png)
 
@@ -379,15 +378,16 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 10. Optionally, you can enable biometric authentication to get faster access to the app data. **Please note that if your MDK client is multi-user enabled, you won't see the biometric screen**.
 
-    ![MDK](img-5.9.2.png)
-
-11. If you want your MDK client to send you notification, click **Next**. 
-
     ![MDK](img-5.9.1.png)
+
+11. Tap **Next**. If you want your MDK client to send you notifications, tap **Allow**, otherwise, tap **Don't allow**.
+
+    ![MDK](img-5.9.2.png)
+    ![MDK](img-5.9.3.png)
 
 12. If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
 
-    ![MDK](img-5.10.png)
+    ![MDK](img-5.9.4.png)
 
     >You can always interrupt running process in terminal window by pressing `control + C`.
 
@@ -422,7 +422,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     ![MDK](img-5.15.png)
 
-7. Enter your Universal ID password to login to SAP Business Technology Platform (BTP).
+7. Enter your password to login to SAP Business Technology Platform (BTP). If you see an Universal ID screen, enter your Universal ID password.
 
     ![MDK](img-5.16.png)
 
@@ -441,7 +441,8 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
 11. If there is any app metadata already deployed to Mobile Services, you will see `New Version Available!` dialog box otherwise you will see a screen with next steps.
 
-    ![MDK](img-5.20.png)
+    ![MDK](
+        .png)
 
     >You can always interrupt running process in terminal window by pressing `control + C`.
 

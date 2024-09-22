@@ -279,7 +279,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
 [OPTION BEGIN [Standard Client]]
 
-1. In Mobile Services cockpit, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `com.sap.mdk.demo` **&rarr;** **Mobile Cloud Build**.
+1. In Mobile Services cockpit, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Mobile Cloud Build**.
 
     > If you do not see **Mobile Cloud Build** feature in the **Assigned Features** list, click the **+** icon to add it.
 
@@ -332,7 +332,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
 [OPTION BEGIN [Custom Client]]
 
-1. In Mobile Services cockpit, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `com.sap.mdk.demo` **&rarr;** **Mobile Cloud Build**.
+1. In Mobile Services cockpit, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Mobile Cloud Build**.
 
     > If you do not see **Mobile Cloud Build** feature in the **Assigned Features** list, click the **+** icon to add it.
 

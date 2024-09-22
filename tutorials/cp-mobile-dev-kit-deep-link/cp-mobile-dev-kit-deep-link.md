@@ -58,7 +58,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.4.png)
 
-5. Enter a name for your project, add a description (optional), and click **Create**. 
+5. Enter the project name `MDKDeepLink` (used for this tutorial) , add a description (optional), and click **Create**. 
 
     <!-- border -->![MDK](img-1.5.png)
     
@@ -117,28 +117,29 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. On the `Main.page`, drag and drop the **Button Table** Static Container control onto the Page.
 
-    <!-- border -->![MDK](img-2.1.gif)
+    <!-- border -->![MDK](img-2.9.gif)
 
     >The controls available in Container section includes controls that act as containers for other controls, such as container items. A container is constant for all pages. The size of a container depends on the controls and contents included inside.  
     You can find more details about [Containers](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Container/ButtonTable.schema.html).
+
 
 2. Now, you will add items to this Container control.
 
     Drag and drop the **Button** Static Item control onto the page.
 
-    <!-- border -->![MDK](img-2.2.gif)
+    <!-- border -->![MDK](img-2.10.gif)
 
 3. Repeat the above step, and drag and drop one more such **Button** Static Item control.
 
-    <!-- border -->![MDK](img-2.3.png)
+    <!-- border -->![MDK](img-2.11.png)
 
 4. Select the first control, remove the default value for the Image property and update its title to **Open SAP Mobile Start**.
 
-    <!-- border -->![MDK](img-2.4.png)
+    <!-- border -->![MDK](img-2.12.png)
 
 5. Repeat the same for the second button and update its title to **Open sap.com page**:
 
-    <!-- border -->![MDK](img-2.5.png)
+    <!-- border -->![MDK](img-2.13.png)
 
 ### Set onPress handler to the buttons
 

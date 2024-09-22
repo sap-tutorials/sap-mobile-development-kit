@@ -45,7 +45,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.4.png)
 
-5. Enter a name for your project, add a description (optional), and click **Create**. 
+5. Enter the project name `MDKApp` (used for this tutorial) , add a description (optional), and click **Create**. 
 
     <!-- border -->![MDK](img-1.5.png)
     

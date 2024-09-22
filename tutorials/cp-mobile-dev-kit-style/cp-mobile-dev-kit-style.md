@@ -49,7 +49,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.4.png)
 
-5. Enter a name for your project, add a description (optional), and click **Create**. 
+5. Enter the project name `MDK_Stylingcp-mobile-dev-kit-style` (used for this tutorial) , add a description (optional), and click **Create**. 
 
     <!-- border -->![MDK](img-1.5.png)
     
@@ -127,68 +127,6 @@ The Storyboard provides a graphical view of the application's runtime resources,
  
     <!-- border -->![MDK](img-2.9.png) 
 
-
-### Create a new MDK project in SAP Business Application Studio
-
-
-This step includes creating the mobile development kit project in the editor.
-
-1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
-
-2. Click **New Project from Template** on the `Get Started` page.
-
-    <!-- border -->![MDK](img-1.1.png)
-
-    >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
-
-    <!-- border -->![MDK](img-1.2.gif)
-
-
-3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
-
-    <!-- border -->![MDK](img-1.2.png)
-
-    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
-
-    ><!-- border -->![MDK](img-1.4.png)
-
-4. In *Type* step, select or provide the below information and click **Next**:
-
-    | Field | Value |
-    |----|----|
-    | `MDK Template Type`| Select `CRUD` from the dropdown |
-    | `Your Project Name` | Provide a name of your choice. `MDK_Styling` is used for this tutorial |
-    | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |
-    | `Target MDK Client Version` | Leave the default selection as `MDK 23.4+ (For use with MDK 23.4 or later clients)` |
-    | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
-
-    <!-- border -->![MDK](img-1.3.png)
-
-    >The `CRUD` template creates the offline or online actions, rules, messages, List Detail Pages with editable options. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).  
-
-7. In *Service Configuration* step, provide or select the below information and click **Next**:
-
-    | Field | Value |
-    |----|----|
-    | `Data Source` | Select `Mobile Services` from the dropdown |
-    | `Mobile Services Landscape` | Select `standard` from the dropdown |
-    | `Application Id` | Select `com.sap.mdk.demo` from the dropdown |
-    | `Destination` | Select `SampleServiceV4` from the dropdown |
-    | `Enter a path to the OData service` | Leave it as it is |
-    | `Enable Offline` | It's enabled by default |
-
-    <!-- border -->![MDK](img-1.5.png)
-
-    Regardless of whether you are creating an online or offline application, this step is needed app to connect to an OData service. When building an Mobile Development Kit application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. Since we have Enable Offline set to Yes, the generated application will be offline enabled in the MDK Mobile client.
-
-8. In *Data Collections* step, select `Customers` and `Products`. Click **Finish** to complete the project creation.
-
-    <!-- border -->![MDK](img-1.6.png)
-
-    >Data Collections step retrieves the entity sets information for the selected destination.
-    
-9. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Styling` project in the project explorer.
-
 ### Add style metadata in LESS file
 
 
@@ -198,7 +136,7 @@ The `LESS` stylesheet provides the ability to define styling styles that can be 
 
 1. In `MDK_Styling` project, expand the **Styles** folder and open the `Styles.less` file.
 
-    <!-- border -->![MDK](img-2.1.png)
+    <!-- border -->![MDK](img-2.10.png)
 
 2. Replace the generated code with below:
 
@@ -292,7 +230,7 @@ The `LESS` stylesheet provides the ability to define styling styles that can be 
     
     >`Styles.less` is already bound to _Styles_ properties in `Application.app` file.
 
-    ><!-- border -->![MDK](img-2.2.png)
+    ><!-- border -->![MDK](img-2.11.png)
 
 
 
@@ -356,7 +294,6 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
-.
 
 <!-- border -->![MDK](img-5.1.png)
 
@@ -365,7 +302,6 @@ The On-boarding QR code is now displayed.
 <!-- border -->![MDK](img-5.2.png)
 
 >Leave the Onboarding dialog box open for the next step.
-
 
 
 ### Run the app

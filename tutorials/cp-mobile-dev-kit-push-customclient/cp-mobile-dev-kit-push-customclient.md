@@ -152,7 +152,7 @@ To enable your app for push notifications, you need to carry out the following t
 
     <!-- border -->![MDK](img-1.19.png)
 
-    To configure push notifications for the App ID `com.sap.mdk.demo`, a Client SSL Certificate is required that will allow the notification server to connect to the Apple Push Notification Service. Each App ID requires its own Client SSL Certificate.
+    To configure push notifications for the provided App ID, a Client SSL Certificate is required that will allow the notification server to connect to the Apple Push Notification Service. Each App ID requires its own Client SSL Certificate.
 
     Click **Create Certificate** to start the process for creating the needed `.cer` file.
 
@@ -210,7 +210,7 @@ To enable your app for push notifications, you need to carry out the following t
 
 [OPTION BEGIN [Android]]
 
-1. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/MDK` | `com.sap.mdk.demo` | `Mobile Push Notification`. 
+1. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/MDK` | `myapp.mdk.demo` | `Mobile Push Notification`. 
 
 2. If you have selected _Predefined for_ option, switch to the empty value. You should see Android option showing up on the page. Click **Browse…** to load the downloaded private key file. 
 
@@ -224,7 +224,7 @@ To enable your app for push notifications, you need to carry out the following t
 
 [OPTION BEGIN [iOS]]
 
-1. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/MDK` | `com.sap.mdk.demo` | `Mobile Push Notification`.
+1. In Mobile Services cockpit, navigate to `Mobile Applications` | `Native/MDK` | `myapp.mdk.demo` | `Mobile Push Notification`.
 
 2. If you have selected _Predefined for_ option, switch to the empty value. You should see options showing up on the page. Provide the following details to the **Apple** panel and click **Save**.
 
