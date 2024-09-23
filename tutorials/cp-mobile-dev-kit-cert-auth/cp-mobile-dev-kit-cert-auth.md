@@ -21,58 +21,68 @@ author_profile: https://github.com/jitendrakansal
   - How to build a branded client
 
 ---
-
 ### Configure a new MDK application in Mobile Services cockpit
+
+Make sure that you have completed required prerequisites mentioned in this tutorial.
 
 1. Navigate to [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
 
-2. On the home screen, select **Create new app**.
+2. On the home screen, click **Create New App** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
 
-    <!-- border -->![MDK](img-1.1.png)
+    ![MDK](img-2.1.png)
 
-3.  In **Basic Info** step, provide the required information and click **Next**.
+3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
+
+    <!-- border -->![MDK](img-2.2.png)
+
+4. In the **Basic Info** step, provide the required information and choose **Next**.
 
     | Field | Value |
     |----|----|
-    | `ID` | com.sap.mdk.certs |
+    | `ID` | myapp.mdk.certs |
     | `Name` | SAP MDK cert auth App |
 
-    <!-- border -->![MDK](img-1.2.png)    
+    <!-- border -->![MDK](img-2.3.png)
 
-    > If you are configuring this app in a trial account, make sure to select **License Type** as *lite*.  
+    >Other fields are optional. For more information about these fields, see [Creating Applications](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/manage.html#creating-applications) in the SAP documentation.
 
-4. In the **XSUAA Settings** step, continue with the default settings and click **Next** to navigate to further steps.
+5. In the **Security Settings** step, continue with the default settings and choose **Next**.
 
-    <!-- border -->![MDK](img-1.3.png)
+    <!-- border -->![MDK](img-2.4.png)
 
-5. In the **Role Settings** step, uncheck **Enable Role Settings** option and click **Next** to navigate to further steps.
+6. In the **Role Settings** step, continue with the default settings and choose **Next**.
 
-    <!-- border -->![MDK](img-1.3.1.png)    
+    <!-- border -->![MDK](img-2.5.png)    
 
-6. In **Assign Features** step, choose **Mobile Development Kit Application** from the dropdown, and click **Finish**.
+7. In the **Assign Features** step, continue with the default settings and choose **Next**.
 
-    <!-- border -->![MDK](img-1.4.png)
+    <!-- border -->![MDK](img-2.6.png) 
 
-    >If you see a _Application without Role Settings_ warning message, click **OK**. You may assign roles after the app has been configured, if needed.
+8. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration.
 
-### Modify default OAuth security settings
+    <!-- border -->![MDK](img-2.7.png)
 
+    >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured, if needed.
+
+    Once you have created your application, you see a list of default features have been automatically assigned to the app.
+
+    <!-- border -->![MDK](img-2.8.png)
+
+    >You can find more information on available features in SAP Mobile Services in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/features.html).
+
+### Modify the default OAuth security settings
 
 When you configure an MDK app in Mobile Service cockpit, OAuth security is assigned to the app by default.
 
 To enable certificate based authentication, you need to modify **Redirect URL** in **Security** configuration.
 
-1. Click **Security**.
+1. Under the **Security** tab, click **pencil** icon to make changes to default configuration.
 
-    <!-- border -->![MDK](img-2.1.png)
-
-2. Click **pencil** icon to make changes to default configuration.
-
-    <!-- border -->![MDK](img-2.2.png)
+    <!-- border -->![MDK](img-2.9.png)
 
 3. Replace the *Redirect URL* with `mdkcertclient://oauth2redirect` parameter, and click **OK** to save the changes. This *Redirect URL* needs to be added in the `AllowedDomains` property while building your branded client (step 3.5).
 
-    <!-- border -->![MDK](img-2.3.png)
+    <!-- border -->![MDK](img-2.10.png)
 
     >`mdkcertclient` is an URL scheme for your branded MDK client, you will use this value in step 3.3.
 
@@ -116,7 +126,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
     >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
      If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. This value `mdkcertclient` needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device.  If the value is not unique the wrong application may be referenced when redirecting.      
 
-4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `com.sap.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.5.png)
 
@@ -183,7 +193,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
     >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
      If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. This value `mdkcertclient` needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device.  If the value is not unique the wrong application may be referenced when redirecting.              
 
-4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `com.sap.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.5.png)
 

@@ -27,9 +27,9 @@ Use the debugging feature provided by the Mobile Development Kit extension for V
 
 ---
 
-### Create a new MDK project in SAP Business Application Studio
+### Create a New Project Using SAP Build Code and Configure it using Storyboard
 
-This step includes creating the mobile development kit project in the editor. Follow step 1 from this [tutorial](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html) to create your MDK project. 
+This step includes creating the mobile development kit project in the editor. Follow steps 1 and 2 from this [tutorial](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html) to create your MDK project. 
 
 ### Deploy the project
 
@@ -53,10 +53,10 @@ You will now deploy your MDK project to SAP Mobile Services, enabling it for deb
 
 ### Download your MDK metadata project from SAP Business Application Studio
 
-You will download your MDK project to your local machine. This will be necessary for setting a breakpoint in a rule file in step 8. An alternative option is to use a GitHub repository. See [Git Source Control guide](https://help.sap.com/docs/bas/sap-business-application-studio/git-source-control) for more details.
+You will download your MDK project to your local machine. This will be necessary for setting a breakpoint in a rule file in step 9. An alternative option is to use a GitHub repository. See [Git Source Control guide](https://help.sap.com/docs/bas/sap-business-application-studio/git-source-control) for more details.
 
 
-1. In SAP Business Application Studio, right-click on the `MDKApp` project and select **Download**.
+1. In SAP Business Application Studio, make sure not to select any file or folder under **Explorer**, right-click on the blank area and select **Download**.
 
     <!-- border -->![MDK](img-3.1.png)
 
@@ -68,7 +68,7 @@ You will download your MDK project to your local machine. This will be necessary
 
 2. After successfully onboarding your mobile client, click **Now** to accept the app update.
 
-3. Leave the client running. You will connect the debugger to this client in step 8.
+3. Leave the client running. You will connect the debugger to this client in step 9.
 
 
 ### Install MDK Extension in Visual Studio Code

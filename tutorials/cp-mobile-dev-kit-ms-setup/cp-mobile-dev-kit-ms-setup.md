@@ -30,7 +30,6 @@ You can find more details in the [Mobile Development Kit developer page](https:/
 
 ### Configure a new MDK application in Mobile Services cockpit
 
-
 Make sure that you have completed required prerequisites mentioned in this tutorial.
 
 1. Navigate to [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).

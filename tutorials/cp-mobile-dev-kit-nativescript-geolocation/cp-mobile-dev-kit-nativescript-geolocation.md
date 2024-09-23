@@ -33,71 +33,108 @@ In this tutorial, you will use the existing `NativeScript` plugin nativescript-g
 
 ![MDK](img-1.0.png)
 
-### Create a new MDK project in SAP Business Application Studio
+### Create a New Project Using SAP Build Code
 
-1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
+This step includes creating a mobile project in SAP Build Lobby. 
 
-2. Click **New Project from Template** on the `Get Started` page.
+1. In the SAP Build Lobby, click **Create** to start the creation process.
 
     <!-- border -->![MDK](img-1.1.png)
 
-    >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
-
-    <!-- border -->![MDK](img-1.2.gif)
-
-3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+2. Click the **Build an Application** tile.    
 
     <!-- border -->![MDK](img-1.2.png)
 
-    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
-
-    ><!-- border -->![MDK](img-1.4.png)
-
-4. In *Basic Information* step, select or provide the below information and click **Finish**:
-
-    | Field | Value |
-    |----|----|
-    | `MDK Template Type`| Select `Empty` from the dropdown |
-    | `Your Project Name` | Provide a name of your choice. `MDK_Geolocation` is used for this tutorial |
-    | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |
-    | `Target MDK Client Version` | Leave the default selection as `MDK 23.4+ (For use with MDK 23.4 or later clients)` |  
-    | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |      
+3. Click the **SAP Build Code** tile to develop your project in SAP Business Application Studio, the SAP Build Code development environment, leveraging the capabilities of the services included in SAP Build Code.
 
     <!-- border -->![MDK](img-1.3.png)
 
-    >The _MDK Empty Project_ template creates a Logout action, Close page action, rule and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/webide.html#creating-a-new-project).
+4. Click the **Mobile Application** tile. 
 
-5. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Geolocation` project in the project explorer.
+    <!-- border -->![MDK](img-1.4.png)
 
+5. Enter the project name `MDK_Geolocation` (used for this tutorial) , add a description (optional), and click **Create**. 
+
+    <!-- border -->![MDK](img-1.5.png)
+    
+    >SAP Build Code recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
+
+6. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments.
+
+    <!-- border -->![MDK](img-1.6.png)
+
+7. After you see a message stating that the project has been created successfully, click the project to open it. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
+
+    <!-- border -->![MDK](img-1.7.png)  
+
+    >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
+    >![MDK](img-1.8.png) 
+
+### Configure the Project Using Storyboard
+
+The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
+
+- **Runtime Resources**: In the Runtime Resources section, you can see the mobile services application and mobile destination used in the project, with a dotted-line connected to the External Resources.
+- **External Resources**: In the External Resources section, you can see the external services used in the project, with a dotted-line connection to the Runtime Resource or the UI app.
+- **UI Application**: In the UI Applications section, you can see the mobile applications.
+
+1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
+
+    <!-- border -->![MDK](img-2.1.png) 
+
+    >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
+
+    >![MDK](img-2.2.png) 
+
+2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor and click **Add App to Project**. You do not require to add a destination for this tutorial.
+
+    <!-- border -->![MDK](img-2.4.png)  
+
+    >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
+
+    In the storyboard window, the app will be added under the Runtime Resources column.
+
+    <!-- border -->![MDK](img-2.5.png)      
+
+4. Click the **+** button in the UI application column header to add mobile UI for your project.
+
+    <!-- border -->![MDK](img-2.6.png)     
+
+5. In the **Basic Information** step, leave the default values as they are, and click **Finish**.
+
+    <!-- border -->![MDK](img-2.7.png)  
+
+7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
+ 
+    <!-- border -->![MDK](img-2.8.png) 
 
 ### Display the coordinates on a page
 
-
   1. Click the `Main.page`, drag & drop **Static Key Value** container to the page area.
 
-    <!-- border -->![MDK](img-2.1.gif)
+    <!-- border -->![MDK](img-2.9.gif)
 
   2. In **Properties** | **Layout**, change `NumberOfColumns` to 1.
 
-    <!-- border -->![MDK](img-2.2.png)
+    <!-- border -->![MDK](img-2.10.png)
 
   3. Drag & drop **Key Value Item** to the container.
 
-    <!-- border -->![MDK](img-2.3.gif)
+    <!-- border -->![MDK](img-2.11.gif)
 
   4. Set `KeyName`as `Coordinates`. To bind it's value property, click on `create a rule`. You will create a new JavaScript file to capture the device location: latitude & longitude.
 
-    <!-- border -->![MDK](img-2.4.png)
+    <!-- border -->![MDK](img-2.12.png)
 
   5. Keep the default selection for *Object Type* as **Rule** and *Folders*. Click **OK**.
 
-    <!-- border -->![MDK](img-2.5.png)
+    <!-- border -->![MDK](img-2.13.png)
 
     >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
    6. In the **Base Information**, enter the Rule name as `GetCoordinates` and click  **Finish**.
 
-    <!-- border -->![MDK](img-2.6.png)
+    <!-- border -->![MDK](img-2.14.png)
 
 
    8. Replace the generated snippet with below code.
@@ -196,11 +233,7 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     <!-- border -->![MDK](img-5.3.png)    
 
-4. Select application from **Mobile Services**.
-
-    <!-- border -->![MDK](img-5.4.png)
-
-    If you want to enable source for debugging the deployed bundle, then choose **Yes**.
+4. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
     <!-- border -->![MDK](img-5.5.png)    
 
