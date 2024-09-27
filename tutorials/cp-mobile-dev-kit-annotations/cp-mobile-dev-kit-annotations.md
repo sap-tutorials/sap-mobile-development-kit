@@ -15,7 +15,7 @@ author_profile: https://github.com/jitendrakansal
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
-<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.2.png)<br>iOS</td></tr></table>
+<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-0.1.png)<br>Android</td><td align="center">![App Store QR Code](img-0.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 ## You will learn
@@ -29,7 +29,7 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 Mobile Development Kit brings OData annotations capabilities to your multi-channel applications. MDK editor supports generating List-Detail pages based on annotations. List-Detail pages are similar to a Master-Detail page, but it is two pages instead of one. The MDK editor parses existing annotations to give you a huge leap forward in your multi-channel applications.
 
-![MDK](img-1.0.gif)
+![MDK](img-0.1.gif)
 
 ### Understand the SAP Fiori Elements
 
@@ -38,18 +38,17 @@ SAP Fiori Elements is a framework comprising of templates for commonly used appl
 
 ### Add annotation information in the backend destination
 
-
 Sample backend in SAP Mobile Services provides annotation functionality for **Products**. If you add annotation path in given backend endpoint, the same annotation information can be leveraged by MDK editor to generate related CRUD pages.
 
 Make sure you have already configured an app in Mobile Services cockpit and have added Sample service as per step 3 in [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) tutorial.
 
 1. In SAP MDK Demo App configuration, click **Mobile Connectivity**.
 
-    <!-- border -->![MDK](img-2.1.png)
+    <!-- border -->![MDK](img-0.3.png)
 
 2. Click **Edit** icon to add annotation path to the `SampleServiceV4` destination.
 
-    <!-- border -->![MDK](img-2.2.png)
+    <!-- border -->![MDK](img-0.4.png)
 
 3. In following steps, let the existing settings as it is.
 
@@ -62,74 +61,111 @@ Make sure you have already configured an app in Mobile Services cockpit and have
     | `Annotation Name`| `Product` |
     | `Path/File` | `/annotations/Products` |
 
-    <!-- border -->![MDK](img-2.3.png)
+    <!-- border -->![MDK](img-0.5.png)
 
 4. In the following steps, let the default settings as it is. Click **Finish**.
 
     Navigate to the `SampleServiceV4` destination info, you can see that OData Annotation information is updated in the `SampleServiceV4` destination.
 
-    <!-- border -->![MDK](img-2.4.png)
+    <!-- border -->![MDK](img-0.6.png)
 
-### Create a new MDK project in SAP Business Application Studio
+### Create a New Project Using SAP Build Code
 
+This step includes creating a mobile project in SAP Build Lobby. 
 
-This step includes creating the mobile development kit project in the editor.
+1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-1. Launch the [Dev space](https://developers.sap.com/tutorials/cp-mobile-bas-setup.html) in SAP Business Application Studio.
+    <!-- border -->![MDK](img-1.1.png)
 
-2. Click **New Project from Template** on the `Get Started` page.
+2. Click the **Build an Application** tile.    
 
-    <!-- border -->![MDK](img-3.1.png)
+    <!-- border -->![MDK](img-1.2.png)
 
-    >If you do not see the `Get Started` page, you can access it by typing `>get started` in the center search bar.
+3. Click the **SAP Build Code** tile to develop your project in SAP Business Application Studio, the SAP Build Code development environment, leveraging the capabilities of the services included in SAP Build Code.
 
-    <!-- border -->![MDK](img-1.2.gif)
+    <!-- border -->![MDK](img-1.3.png)
 
-3. Select **MDK Project** and click **Start**. If you do not see the **MDK Project** option check if your Dev Space has finished loading or reload the page in your browser and try again.
+4. Click the **Mobile Application** tile. 
 
-    <!-- border -->![MDK](img-3.2.png)
+    <!-- border -->![MDK](img-1.4.png)
+
+5. Enter the project name `MDK_Annotations` (used for this tutorial) , add a description (optional), and click **Create**. 
+
+    <!-- border -->![MDK](img-1.5.png)
+    
+    >SAP Build Code recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
+
+6. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments.
+
+    <!-- border -->![MDK](img-1.6.png)
+
+7. After you see a message stating that the project has been created successfully, click the project to open it. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
+
+    <!-- border -->![MDK](img-1.7.png)  
+
+    >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
+    >![MDK](img-1.8.png) 
+
+### Configure the Project Using Storyboard
+
+The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
+
+- **Runtime Resources**: In the Runtime Resources section, you can see the mobile services application and mobile destination used in the project, with a dotted-line connected to the External Resources.
+- **External Resources**: In the External Resources section, you can see the external services used in the project, with a dotted-line connection to the Runtime Resource or the UI app.
+- **UI Application**: In the UI Applications section, you can see the mobile applications.
+
+1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
+
+    <!-- border -->![MDK](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
-    ><!-- border -->![MDK](img-1.4.png)
+    >![MDK](img-2.2.png) 
 
-4. In *Basic Information* step, select or provide the below information and click **Next**:
+2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor.
+
+    <!-- border -->![MDK](img-2.3.png)  
+
+3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+
+    <!-- border -->![MDK](img-2.4.png)  
+
+    >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
+
+    In the storyboard window, the app and mobile destination will be added under the Runtime Resources column. The mobile destination will also be added under the External Resources with a dotted-line connection to the Runtime Resource. The External Resource will be used to create the UI application.
+
+    <!-- border -->![MDK](img-2.5.png)      
+
+4. Click the **+** button in the UI application column header to add mobile UI for your project.
+
+    <!-- border -->![MDK](img-2.6.png)     
+
+5. In the **Basic Information** step, select the **MDK Template Type** as **Base**, leave the other options as they are, and click **Next**.
+
+    <!-- border -->![MDK](img-2.7.png)  
+
+    >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
+
+6. In the **Data Collections** step, provide the below information and click **Finish**:
 
     | Field | Value |
     |----|----|
-    | `MDK Template Type`| Select `Base` from the dropdown |
-    | `Your Project Name` | Provide a name of your choice. `MDK_Annotations` is used for this tutorial |
-    | `Your Application Name` | <default name is same as project name, you can provide any name of your choice> |
-    | `Target MDK Client Version` | Leave the default selection as `MDK 23.4+ (For use with MDK 23.4 or later clients)` |
-    | `Choose a target folder` | By default, the target folder uses project root path. However, you can choose a different folder path |
+    | `Enter a path to service (e.g. /sap/opu/odata/sap/SERVICE_NAME)` | Leave it as it is  |
+    | `Enable Offline` | Select `No` |
 
-    <!-- border -->![MDK](img-3.3.png)
+    <!-- border -->![MDK](img-2.8.png) 
 
-    >More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).  
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
 
+    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
 
-5. In *Service Configuration* step, provide or select the below information and click **Finish**:
+    >Data Collections step retrieves the entity sets information for the selected destination.
 
-    | Field | Value |
-    |----|----|
-    | `Data Source` | Select `Mobile Services` from the dropdown |
-    | `Mobile Services Landscape` | Select `standard` from the dropdown |
-    | `Application Id` | Select `com.sap.mdk.demo` from the dropdown |
-    | `Destination` | Select `SampleServiceV4` from the dropdown |
-    | `Enter a path to the OData service` | Leave it as it is |
-    | `Enable Offline` | Choose `No` |   
-
-    <!-- border -->![MDK](img-3.5.png)
-
-    Regardless of whether you are creating an online or offline application, this step is needed for the app to connect to an OData service. When building an Mobile Development Kit application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services and SAP Business Technology Platform.
-
-    Since you will create an online based app, hence _Enable Offline Store_ option is unchecked.
-
-6. After clicking **Finish**, the wizard will generate your MDK Application based on your selections. You should now see the `MDK_Annotations` project in the project explorer.
-
+7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
+ 
+    <!-- border -->![MDK](img-2.9.png) 
 
 ### Add MDK Annotation component to MDK project
-
 
 1. Right-click `Application.app` and select **MDK:New Annotation Component**.
 

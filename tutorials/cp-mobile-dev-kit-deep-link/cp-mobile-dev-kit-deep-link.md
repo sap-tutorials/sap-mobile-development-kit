@@ -42,7 +42,7 @@ If you are building a custom version of Mobile development kit client, there you
 
 This step includes creating a mobile project in SAP Build Lobby. 
 
-1. In the SAP Build Lobby, click **Create** to start the creation process.
+1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -64,11 +64,11 @@ This step includes creating a mobile project in SAP Build Lobby.
     
     >SAP Build Code recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
-6. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments.
+6. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
     <!-- border -->![MDK](img-1.6.png)
-
-7. After you see a message stating that the project has been created successfully, click the project to open it. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
+    
+7. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
 
     <!-- border -->![MDK](img-1.7.png)  
 
@@ -121,7 +121,6 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     >The controls available in Container section includes controls that act as containers for other controls, such as container items. A container is constant for all pages. The size of a container depends on the controls and contents included inside.  
     You can find more details about [Containers](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Container/ButtonTable.schema.html).
-
 
 2. Now, you will add items to this Container control.
 
