@@ -161,22 +161,31 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     ```JavaScript
     /**
-    * Describe this function...
     * @param {IClientAPI} context
     */
+    import { Application, Utils } from "@nativescript/core";
+
+    function openUrl(location) {
+        if (Application.ios) {
+            const url = NSURL.URLWithString(location.trim());
+            if (UIApplication.sharedApplication.canOpenURL(url)) {
+                return UIApplication.sharedApplication.openURLOptionsCompletionHandler(url, null, null);
+            } else {
+                return false;
+            }
+        } else {
+            return Utils.openUrl(location);
+        }
+    }
+
     export default function OpenSAPMobileStart(context) {
-        // Get the Nativescript Utils Module
-        const utilsModule = context.nativescript.utilsModule;
-        // Get the Nativescript Platform Module
-        const platformModule = context.nativescript.platformModule;
         return context.executeAction('/mdkdeeplink/Actions/Confirmation.action').then((result) => {
             if (result.data) {
-                //This will open SAP Mobile Start app
-                if (platformModule.isIOS) {
-                    return utilsModule.openUrl("com.sap.mobile.start://");
-                } else if (platformModule.isAndroid) {
-                    return utilsModule.openUrl("com.sap.mobile.apps.sapstart://");
-                }
+                // This will open the SAP Mobile Start app
+                const url = Application.ios 
+                    ? "com.sap.mobile.start://"
+                    : "com.sap.mobile.apps.sapstart://";
+                return openUrl(url);
             } else {
                 return Promise.reject('User Deferred');
             }
@@ -209,16 +218,27 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     ```JavaScript
     /**
-     * Describe this function...
+    * Describe this function...
     * @param {IClientAPI} context
     */
+    import { Application, Utils } from "@nativescript/core";
+    function openUrl(location) {
+        if (Application.ios) {
+            const url = NSURL.URLWithString(location.trim());
+            if (UIApplication.sharedApplication.canOpenURL(url)) {
+                return UIApplication.sharedApplication.openURLOptionsCompletionHandler(url, null, null);
+            } else {
+                return false;
+            }
+        } else {
+            return Utils.openUrl(location);
+        }
+    }
     export default function OpenSAPcom(context) {
-        // Get the Nativescript Utils Module
-        const utilsModule = context.nativescript.utilsModule;
         return context.executeAction('/mdkdeeplink/Actions/Confirmation.action').then((result) => {
             if (result.data) {
                 //This will open SAP.com website
-                return utilsModule.openUrl("https://www.sap.com");
+                openUrl("https://www.sap.com");
             } else {
                 return Promise.reject('User Deferred');
             }

@@ -43,7 +43,6 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.1.png)
 
-
 2. In the **Base Information** step, enter the Page Name as `SalesOrderHeaders_Create` and click **Finish** to complete the page creation process.
 
     <!-- border -->![MDK](img-1.2.png)
@@ -141,8 +140,6 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
 
 ### Add cancel button on create Sales Order page
-
-
 
 Now, you will add a button on the Create Order page and set its `onPress` to `CloseModalPage_Cancel.action`.
 
@@ -276,7 +273,6 @@ The next step is to store newly created record locally for an offline applicatio
     When the `SalesOrderHeaders_CreateEntity.action` gets executed successfully then the `CloseModalPage_Complete.action` will be triggered or if `SalesOrderHeaders_CreateEntity.action` fails then a failure message will be displayed with error information.
 
 ### Navigate to the Customer Create page
-
 
 You will open the `SalesOrderHeaders_Create.page` from the Customer Detail page. For this, you will add a ToolBar item on the Customer Details page and will link it to a navigation action. When the ToolBar item is pressed by the end-user that will open the `SalesOrderHeaders_Create.page`.
 
