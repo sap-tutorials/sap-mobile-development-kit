@@ -73,7 +73,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.4.png)
 
-5. Enter the project name `MDK_Petstore` (used for this tutorial) , add a description (optional), and click **Create**. 
+5. Enter the project name `mdk_petstore` (used for this tutorial) , add a description (optional), and click **Create**. 
 
     <!-- border -->![MDK](img-1.5.png)
     
@@ -116,6 +116,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     |----|----|
     | `Application Name` | `SAP MDK REST API` |
     | `Application ID` | `myapp.mdk.restapi` |
+    | `Security Settings` | Leave the default value as `XSUAA`  |
 
     <!-- border -->![MDK](img-2.4.png)
 

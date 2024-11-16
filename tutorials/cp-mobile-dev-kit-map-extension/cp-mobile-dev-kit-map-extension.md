@@ -55,7 +55,7 @@ This step includes creating a mobile project in SAP Build Lobby.
     <!-- border -->![MDK](img-1.4.png)
 
 
-5. Enter the project name `MDK_Maps` (used for this tutorial) , add a description (optional), and click **Create**. 
+5. Enter the project name `mdk_maps` (used for this tutorial) , add a description (optional), and click **Create**. 
 
     <!-- border -->![MDK](img-1.5.png)
     
@@ -117,6 +117,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | Field | Value |
     |----|----|
     | `Enter a path to service (e.g. /sap/opu/odata/sap/SERVICE_NAME)` | Leave it as it is  |
+    | `Select the Service Type` | Leave the default value as `OData` |
     | `Enable Offline` | Choose `No` |
     | `Select all data collections` | Leave it as it is |
     | `What types of data will your application contain?` | Select `Customers` (if not selected by default) |

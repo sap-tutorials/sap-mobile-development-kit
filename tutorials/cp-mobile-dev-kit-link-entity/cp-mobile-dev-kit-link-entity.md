@@ -318,7 +318,6 @@ In `Customers_Detail.page`, select **Customer Orders** Object Table control. In 
 
 <!-- border -->![MDK](img-5.1.gif)
 
-
 ### Deploy the application
 
 Deploy the updated application to your MDK client.

@@ -89,7 +89,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.4.png)
 
-5. Enter the project name `MDK_Annotations` (used for this tutorial) , add a description (optional), and click **Create**. 
+5. Enter the project name `mdk_annotations` (used for this tutorial) , add a description (optional), and click **Create**. 
 
     <!-- border -->![MDK](img-1.5.png)
     
@@ -151,6 +151,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | Field | Value |
     |----|----|
     | `Enter a path to service (e.g. /sap/opu/odata/sap/SERVICE_NAME)` | Leave it as it is  |
+    | `Select the Service Type` | Leave the default value as `OData` |
     | `Enable Offline` | Select `No` |
 
     <!-- border -->![MDK](img-2.8.png) 

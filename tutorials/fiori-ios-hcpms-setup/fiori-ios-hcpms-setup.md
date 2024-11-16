@@ -26,7 +26,6 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 > Make sure you are choosing the right BTP account type ( **Free Tier** or **Free Trial** ) in the tabs under Step 1.
 
-
 [OPTION BEGIN [Free Tier]]
 
 1. In your web browser, open the [SAP BTP cockpit](https://account.hana.ondemand.com/cockpit).
