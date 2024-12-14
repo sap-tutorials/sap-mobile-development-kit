@@ -11,9 +11,6 @@ author_profile: https://github.com/jitendrakansal
 # Set Up SAP Business Application Studio for Multi-Channel Development
 <!-- description --> Set up your SAP Business Application Studio to start developing mobile and web applications.
 
-## Prerequisites
- - [Set Up SAP Business Application Studio for Development](https://developers.sap.com/tutorials/appstudio-onboarding.html)
-
 ## You will learn
   - How to create a development space in SAP Business Application Studio
 
