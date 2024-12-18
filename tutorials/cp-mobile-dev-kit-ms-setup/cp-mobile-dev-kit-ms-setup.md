@@ -161,9 +161,9 @@ MDK Web application accesses the data sources via BTP destination. You will now 
     | Field | Value |
     |----|----|
     | `URL` | Paste the URL from step 4.2 |
-    | `Client ID` | Paste the value from step 4.4  |
-    | `Client Secret` | Paste the value from step 4.4 |
-    | `Token Service URL` | Replace the Token URL placeholder with the URL from step 4.4, make sure the Token URL is appended by `/oauth/token` |
+    | `Client ID` | Paste the value from step 5.4  |
+    | `Client Secret` | Paste the value from step 5.4 |
+    | `Token Service URL` | Replace the Token URL placeholder with the URL from step 5.4, make sure the Token URL is appended by `/oauth/token` |
     | `Use Default JDK truststore` | Select the checkbox if not selected before |
 
     ![MDK](img-4.5.png)
