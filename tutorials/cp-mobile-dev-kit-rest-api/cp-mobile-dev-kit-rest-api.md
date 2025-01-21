@@ -231,9 +231,8 @@ You will add an **Object Table** control  item on `Main.page` to display the lis
     >If you see any error in Main.page (code editor), ignore it as MDK editor currently can't validate such REST Service endpoint properties.
 
 
-### Deploy the application
+### Deploy the Project
 
-So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services and Cloud Foundry to use it in the Mobile client and Web application respectively.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
@@ -262,7 +261,7 @@ The On-boarding QR code is now displayed.
 
 >Leave the Onboarding dialog box open for the next step.
 
-### Run the app
+### Run the Project
 
 [OPTION BEGIN [Android]]
 
@@ -444,7 +443,7 @@ After filling-up the details for creating a new pet record, you will send these 
 
     <!-- border -->![MDK](img-11.7.gif)
 
-9. Click create icon to add another array item(1) and click **Finish**. 
+9. Click create icon to add another array item(1). 
 
     | Field | Value |
     |----|----|
@@ -452,6 +451,8 @@ After filling-up the details for creating a new pet record, you will send these 
     | `Value`| Bind it to input control `#Control:FCCreateStatus/#Value` |
 
     <!-- border -->![MDK](img-11.8.png)
+
+10. Set `FetchCSRF` to false as you don't need to obtain a `CSRF` token for the `petstore` service, and click **Finish**. 
 
     >You can find more details about `SendRequest` action in [help documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/RestService/SendRequest.schema.html).
 
@@ -475,7 +476,7 @@ Now, you will add a button on the `Pet_Create.page` and set it's `onPress` to `C
 
 3. Now, you will set the `onPress` event to `ClosePage.action`.
 
-    In **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**.
+    In **Events** tab, click the dotted icon for the `OnPress` property to open the **Object Browser**.
 
     Double click the `ClosePage.action` and click **OK** to set it as the `OnPress` Action.
 
@@ -495,7 +496,7 @@ You will add a button to the `Main.page` called **Add**. When you click on this 
 
     <!-- border -->![MDK](img-13.1.png)
 
-3. Navigate to the **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**.
+3. Navigate to the **Events** tab, click the dotted icon for the `OnPress` property to open the **Object Browser**.
 
     <!-- border -->![MDK](img-13.2.png)
 
@@ -515,7 +516,7 @@ You will add a button to the `Main.page` called **Add**. When you click on this 
 
     <!-- border -->![MDK](img-13.3.png)
 
-### Redeploy the application
+### ReDeploy the Project
 
 Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then select deploy target as **Mobile & Cloud**.
 
