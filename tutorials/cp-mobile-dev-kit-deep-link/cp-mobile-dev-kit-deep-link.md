@@ -144,7 +144,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. In this step, you will bind a rule to the `OnPress` event of each button.
 
-    In `Main.page`, select **Open SAP Mobile Start** button. In the Properties pane, click the **Events** tab, click the 3 dots icon for the `OnPress Handler` property and select `Create a rule/action` to create a new rule.
+    In `Main.page`, select **Open SAP Mobile Start** button. In the Properties pane, click the **Events** tab, click the dotted icon for the `OnPress Handler` property and select `Create a rule/action` to create a new rule.
 
     <!-- border -->![MDK](img-3.1.png)
 
@@ -246,9 +246,9 @@ The Storyboard provides a graphical view of the application's runtime resources,
     }
     ```
 
-### Deploy the application
+### Deploy the Project
 
-So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services to use in the Mobile client.
+So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
@@ -286,7 +286,7 @@ The On-boarding QR code is now displayed.
 >Leave the Onboarding dialog box open for the next step.
 
 
-### Run the app
+### Run the Project
 
 
 >Ensure that you choose the correct device platform tab above. Once you have scanned and onboarded using the onboarding URL, it will be remembered. If you log out and onboard again, you will be prompted to either continue using the current application or scan a new QR code.

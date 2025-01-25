@@ -228,7 +228,7 @@ To enable your app for push notifications, you need to carry out the following t
 
 If you haven't created your local `.mdkproject`, have a look at step 3 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
 
-Compress your `.mdkproject` folder, the resulting zip file will be used to create a build job for a customized Mobile Development Kit client in Mobile Services cockpit.
+Compress your `.mdkproject` folder, the resulting zip file will be used to create a build job for a customized Mobile Development Kit client in Mobile Services admin UI.
 
 
 ### Configure device platform signing profile in Mobile Services
@@ -237,9 +237,9 @@ Compress your `.mdkproject` folder, the resulting zip file will be used to creat
 
 [OPTION BEGIN [Android]]
 
-1. Open the [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) and navigate to **Settings** | **Cloud Build**. Initialize the **Cloud Build Settings** if not done before.
+1. Open the [SAP Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) and navigate to **Settings** | **Cloud Build**. Initialize the **Cloud Build Settings** if not done before.
 
-2. You have an option to generate a new signing profile in the Mobile Services cockpit by providing mandatory info like Profile Name, Validity, Common Name (user name). Other information are optional.
+2. You have an option to generate a new signing profile in the Mobile Services admin UI by providing mandatory info like Profile Name, Validity, Common Name (user name). Other information are optional.
 
     <!-- border -->![MDK](img-3.2.png)
 
@@ -251,7 +251,7 @@ Compress your `.mdkproject` folder, the resulting zip file will be used to creat
 
 [OPTION BEGIN [iOS]]
 
-1. Open the [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) and navigate to **Settings** | **Cloud Build**. Initialise the **Cloud Build Settings** if not done before.
+1. Open the [SAP Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) and navigate to **Settings** | **Cloud Build**. Initialise the **Cloud Build Settings** if not done before.
 
 2. Click **Upload** to upload iOS Signing profile and provide below information:
 
@@ -279,7 +279,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
 [OPTION BEGIN [Standard Client]]
 
-1. In Mobile Services cockpit, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Mobile Cloud Build**.
+1. In Mobile Services admin UI, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Mobile Cloud Build**.
 
     > If you do not see **Mobile Cloud Build** feature in the **Assigned Features** list, click the **+** icon to add it.
 
@@ -332,7 +332,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
 [OPTION BEGIN [Custom Client]]
 
-1. In Mobile Services cockpit, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Mobile Cloud Build**.
+1. In Mobile Services admin UI, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Mobile Cloud Build**.
 
     > If you do not see **Mobile Cloud Build** feature in the **Assigned Features** list, click the **+** icon to add it.
 

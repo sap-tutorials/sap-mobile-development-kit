@@ -14,7 +14,6 @@ author_profile: https://github.com/jitendrakansal
 ## You will learn
   - How to create a new page for modifying customer details such as name, email and phone number
   - How to store changes locally on Mobile app and sync these changes with backend
-  - How to update a record in web application
 
 ---
 
@@ -22,7 +21,6 @@ author_profile: https://github.com/jitendrakansal
 ![MDK](img-1.0.gif)
 
 ### Create a new page for modifying customer data
-
 
 Regardless of whether your application is online or offline, you can allow users to modify data in the application.
 
@@ -32,7 +30,6 @@ For offline applications, the changes are stored locally until they are synced u
 
 In this step, you will create a Section page with a Form Cell Section to contain the Form Cell controls. The page will provide only a subset of items available on the Customer Detail page. You will add the fields that will be editable by the end-user.
 
-
 1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
@@ -41,7 +38,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.2.png)
 
-3. In the **Properties** pane set the Caption to **Update Customer**.
+3. Once the page opens in the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Update Customer**.
 
     <!-- border -->![MDK](img-1.3.png)
 
@@ -125,7 +122,7 @@ While updating the customer details, you may want to close the current page and 
 
     >System Item are predefined system-supplied icon or text. Overwrites _Text_ and _Icon_ if specified.
 
-3.  In **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**.
+3.  In **Events** tab, click the dotted icon for the `OnPress` property to open the **Object Browser**.
 
     Double click the `CloseModalPage_Cancel.action` and click **OK** to set it as the `OnPress` Action.
 
@@ -151,7 +148,7 @@ First, add an action bar item on the `Customers_Edit.page`
 
     <!-- border -->![MDK](img-3.2.png)
 
-3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -169,7 +166,7 @@ First, add an action bar item on the `Customers_Edit.page`
     |----|----|
     | `Name`| `Customers_UpdateEntity` |
     | `Type` | Select `UpdateEntity` from the dropdown |
-    | `Service`| Select `SampleServiceV4.service` from the dropdown |
+    | `Service`| Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet`| Select `Customers` from the dropdown |
     | `ReadLink`| click link icon and double-click `readLink` |
 
@@ -261,7 +258,7 @@ You will navigate from the Customer Detail page to a new page modifying customer
 
     <!-- border -->![MDK](img-4.2.png)
 
-3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-4.3.png)
     
@@ -286,8 +283,7 @@ You will navigate from the Customer Detail page to a new page modifying customer
 7. Click **Finish** to complete the action creation process. 
 
 
-### Deploy the application
-
+### Deploy the Project
 
 Deploy the updated application to your MDK client.
 
@@ -295,11 +291,11 @@ Deploy the updated application to your MDK client.
 
     <!-- border -->![MDK](img-5.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-5.2.png)
 
-    You should see success message for both deployments.
+    You should see **Deploy to Mobile Services successfully!** message.
 
     <!-- border -->![MDK](img-5.3.png)
 
@@ -307,7 +303,7 @@ Deploy the updated application to your MDK client.
 
     ><!-- border -->![MDK](img-5.4.png)
 
-### Run the app
+### Run the Project
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -325,7 +321,7 @@ Deploy the updated application to your MDK client.
 
     >Backend endpoint can be found in [Mobile Services Cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html).
 
-    >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **com.sap.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon
+    >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **myapp.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon
 
     ><!-- border -->![MDK](img-6.3.png)
 
@@ -386,44 +382,5 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 ![MDK](img-6.6.png)
 
 [OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-6.10.png)
-
-    >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
-
-    ><!-- border -->![MDK](img-6.11.png)
-
-2. Click **Customers**, click one of the available customer record, you will then navigate to Customer detail page.
-
-    <!-- border -->![MDK](img-6.12.png)
-
-3. Click **Edit**.
-
-    <!-- border -->![MDK](img-6.13.png)
-
-4. For example, updating First Name from `Isabelle` to `Carolina`. Click **Save**.
-
-    <!-- border -->![MDK](img-6.14.png)
-
-    Record gets updated accordingly.
-
-    <!-- border -->![MDK](img-6.15.png)
-
-5. You can cross verify if the record has been updated in the backend.
-
-    >Backend endpoint can be found in [Mobile Services Cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html).
-
-    >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **com.sap.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon.
-
-    ><!-- border -->![MDK](img-6.3.png)
-
-    >It will open the URL in a new tab, remove `?auth=uaa` and add `/Customers` at the end of the URL.
-
-[OPTION END]
-
 
 ---

@@ -92,7 +92,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.3.png)  
 
-3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
     <!-- border -->![MDK](img-2.4.png)  
 
@@ -124,7 +124,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.8.png) 
 
-    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP admin UI.
 
     >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
 
@@ -231,7 +231,7 @@ The extension control that you will be creating to extend the functionality of y
 
 You will add this registered control in the generated `Customers_Detail.page`.
 
-  1. Navigate to **Pages** folder | `SampleServiceV4_Customers` | `Customers_Detail.page`.
+  1. Navigate to **Pages** folder | `com_sap_edm_sampleservice_v4_Customers` | `Customers_Detail.page`.
 
   2. Remove the body section of the page.
 
@@ -460,10 +460,10 @@ You will add this registered control in the generated `Customers_Detail.page`.
     >In your import function, if you see errors related to `@nativescript/core` or `mdk-core`, you can ignore them. There is currently no reference of such libraries in the MDK editor.
 
 
-### Deploy the application
+### Deploy the Project
 
 
-So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services to use in the Mobile client.
+So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
@@ -574,7 +574,7 @@ For Android, you will pass the API key to the MDK client, there is no way public
 
 [OPTION BEGIN [Android]]
 
-In this step, you will run the app on an Android device.
+In this step, you will Run the Project on an Android device.
 
 1. Attach the device to your Mac or Windows machine and run `tns device android` command to print a list of attached devices.
 

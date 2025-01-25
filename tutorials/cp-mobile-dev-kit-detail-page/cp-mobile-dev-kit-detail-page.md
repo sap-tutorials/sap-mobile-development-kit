@@ -25,7 +25,7 @@ To enhance your MDK app with customer details information, you need to carry out
 *  Add some controls to the page to display information like id, name, email, phone, address
 *  Create a new navigation action to the customer details page
 *  Navigate from customer list page to details page
-*  Deploy the app metadata to SAP Mobile Services & Cloud Foundry
+*  Deploy the project to SAP Mobile Services
 *  Update the app with new changes
 
 ![MDK](img-1.0.gif)
@@ -34,7 +34,7 @@ To enhance your MDK app with customer details information, you need to carry out
 
 This page will show related details for a customer. In this page, you will add an **Object Header** control that is used to display information (like first name, last name, date of birth, email address & phone number) about the header of an object and **Static Key Value** control to display key value pair items like address, city, postal code & country.
 
-1. In SAP Business Application Studio project, Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
+1. In your MDK project, Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -46,7 +46,7 @@ This page will show related details for a customer. In this page, you will add a
 
     | Property | Value |
     |----|----|
-    | `Service` | Select `SampleServiceV4.service` from the dropdown |
+    | `Service` | Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | select `Customers` from the dropdown |
 
     <!-- border -->![MDK](img-1.3.png)
@@ -54,7 +54,7 @@ This page will show related details for a customer. In this page, you will add a
     >`DesignTimeTarget` is a page level property similar to Target but it is only used for design time. This helps in validating the binding context of current page. For more details, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/create-pages.html#page-editor).
 
 
-4. set the Caption to **Details**.
+4. In the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Details**.
 
     <!-- border -->![MDK](img-1.4.png)
 
@@ -145,7 +145,7 @@ This page will show related details for a customer. In this page, you will add a
 
 Now, you will create a Navigation action that opens the `Customers_Detail.page` when called.
 
-1. Navigate to `Pages` | `Customers_List.page`, select the Contact Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+1. Navigate to `Pages` | `Customers_List.page`, select the Contact Table control, navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-2.1.png)
 
@@ -168,7 +168,7 @@ Now, you will create a Navigation action that opens the `Customers_Detail.page` 
 
     >when an end-user selects a customer, the Customer Detail page will open. MDK automatically passes the selected customer to the detail page.
 
-### Deploy the application
+### Deploy the Project
 
 Deploy the updated application to your MDK client.
 
@@ -176,11 +176,11 @@ Deploy the updated application to your MDK client.
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-3.2.png)
 
-    You should see success message for both deployments.
+    You should see **Deploy to Mobile Services successfully!** message.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -189,8 +189,7 @@ Deploy the updated application to your MDK client.
     ><!-- border -->![MDK](img-3.4.png)
 
 
-### Run the app
-
+### Run the Project
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -225,26 +224,6 @@ Deploy the updated application to your MDK client.
 3. Tap any record from the list, you will navigate to it's detail page.
 
     ![MDK](img-4.8.png)
-
-[OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-4.9.png)
-
-    >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
-
-    ><!-- border -->![MDK](img-4.10.png)
-
-2. Click **Customers**, you will navigate to Customer List page.
-
-    <!-- border -->![MDK](img-4.11.png)
-
-3. Click any record from the list, you will navigate to it's detail page.
-
-    <!-- border -->![MDK](img-4.12.png)
 
 [OPTION END]
 

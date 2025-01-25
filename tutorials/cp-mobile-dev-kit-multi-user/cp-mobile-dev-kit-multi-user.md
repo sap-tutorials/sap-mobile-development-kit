@@ -20,7 +20,7 @@ author_profile: https://github.com/jitendrakansal
 
 ## You will learn
   - How to define an event on user switching
-  - How to configure multi-user settings in mobile service cockpit
+  - How to configure multi-user settings in mobile service admin UI
   - How to create an offline enabled MDK application that supports multiple users on the same device
 
 
@@ -91,7 +91,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.3.png)  
 
-3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
     <!-- border -->![MDK](img-2.4.png)  
 
@@ -122,7 +122,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.8.png) 
 
-    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP admin UI.
 
     >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
 
@@ -151,9 +151,9 @@ Since the underlying offline database is shared, it is the responsibility of the
 
     >For this tutorial, since we are using the Sample Service, which does not contain any user-specific data, we will simply trigger a sync to demonstrate that the event has been triggered.
 
-### Deploy the application
+### Deploy the Project
 
-Now that the MDK application is created, you will deploy the application definitions to Mobile Services to use in the Mobile client.
+Now that the MDK application is created, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
@@ -196,7 +196,7 @@ Now that the MDK application is created, you will deploy the application definit
 
 In a Multi-user scenario the client will automatically upload any pending transactions from the previous user before completing the user switch. In order for Mobile Services to perform this upload it needs to get a token for the previous user.  To do this `XSUAA` needs to trust Mobile Services. This is done by importing the Mobile Services key to the Trust Configuration in the BTP subaccount.
 
-1. In SAP Mobile Services cockpit, click **Settings** **&rarr;** **Security**.
+1. In SAP Mobile Services admin UI, click **Settings** **&rarr;** **Security**.
 
     <!-- border -->![MDK](img-4.1.png)
 
@@ -259,11 +259,11 @@ Choose an option above based on whether you are testing multi-user functionality
 
     <!-- border -->![MDK](img-7.1.png)
 
-    The Onboarding QR code is now displayed. You will notice that the `multiUser` parameter in the generated QR code is set to *true*. This is due to the flag *Allow Upload of Pending Changes from Previous User* being set in step 3 mobile services cockpit. The MDK client will set the user mode based on the scanned QR code. 
+    The Onboarding QR code is now displayed. You will notice that the `multiUser` parameter in the generated QR code is set to *true*. This is due to the flag *Allow Upload of Pending Changes from Previous User* being set in step 3 mobile services admin UI. The MDK client will set the user mode based on the scanned QR code. 
 
     <!-- border -->![MDK](img-7.2.png)
 
-    >Alternatively, you can scan the QR code generated under *APIs* > *In-app Scanning Code* in the mobile services cockpit.
+    >Alternatively, you can scan the QR code generated under *APIs* > *In-app Scanning Code* in the mobile services admin UI.
 
 2. Make sure you have downloaded the **SAP Mobile Services Client** on your device from the App Store or Google Play as covered in the pre-requisites.
 

@@ -9,7 +9,7 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 # Start Your MDK Application in the Editor
-<!-- description --> Use the MDK editor to create a multi-channel (mobile and web) application.
+<!-- description --> Use the MDK editor to create a cross-platform mobile application.
 
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
@@ -19,9 +19,8 @@ author_profile: https://github.com/jitendrakansal
 
 ## You will learn
   - How to create a mobile project in SAP Build Lobby
-  - How to create an MDK app in SAP Business Application Studio
-  - How to deploy an MDK app to Mobile Services and run it offline enabled in a mobile client
-  - How to deploy an MDK app to Cloud Foundry and run it as a web application
+  - How to configure the project using Storyboard in SAP Build development Environment
+  - How to deploy an MDK project to Mobile Services and run it offline enabled in a mobile client
 
 ---
 
@@ -82,7 +81,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.3.png)  
 
-3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
     <!-- border -->![MDK](img-2.4.png)  
 
@@ -102,7 +101,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
-6. In the **Data Collections** step, provide the below information and click **Finish**:
+6. In the **Data Collections** step, provide the below information and click **Finish**. Data Collections step retrieves the entity sets information for the selected destination.
 
     | Field | Value |
     |----|----|
@@ -114,17 +113,15 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.8.png) 
 
-    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. 
 
-    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
-
-    >Data Collections step retrieves the entity sets information for the selected destination.
+    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client.
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
     <!-- border -->![MDK](img-2.9.png) 
 
-### Get familiar with generated project structure
+### Get familiar with the generated project structure
 
 This is how the project structure looks like within the workspace.
 
@@ -132,56 +129,42 @@ This is how the project structure looks like within the workspace.
 
 These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
 
-- **`InitializeOffline.action`**: For Mobile applications, this action binds the application to the Mobile Services Offline OData server and downloads the required data from the `SampleServiceV4` to the offline store on the mobile device. For Web applications, it will initialize the `SampleServiceV4` service to be consumed in online mode.
+- **`InitializeOffline.action`**: For Mobile applications, this action binds the application to the Mobile Services Offline OData server and downloads the required data from the backend destination `com.sap.edm.sampleservice.v4` to the offline store on the mobile device. 
 
-- **`DownloadOffline.action`** and **`UploadOffline.action`**: These actions are applicable to Mobile client only. Using Mobile app initialization, data is downloaded to the offline store. If you want to have the application download any updated data from the backend server or upload changed data to the backend server (`SampleServiceV4`), these actions will be needed.
+- **`DownloadOffline.action`** and **`UploadOffline.action`**: These actions are applicable to Mobile client only. Using Mobile app initialization, data is downloaded to the offline store. If you want to have the application download any updated data from the backend server or upload changed data to the backend destination (`com.sap.edm.sampleservice.v4`), these actions will be needed.
 
 - **`Success & Failure Message action`**: Here are some messages showing up in the app on a successful or failure of data initialization, sync etc.
 
 - **`Main.page`**: This is the first page of your MDK application that is shown. For this application you will use this as a launching page to get to application functionality.
 
-- **`OnWillUpdate.js`**: This rule is applicable to Mobile client only. MDK applications automatically download updates and apply them to the client without the end-user needing to take any action. The `OnWillUpdate` rule empowers the user to run business logic before the new definitions are applied. This allows the app designer to include logic to prompt the user to accept or defer applying the new definitions based on their current activity. For example, if the end-user is currently adding new customer details or in the middle of a transaction, they will be able to defer the update. The app will prompt again the next time it checks for updates.
+- **`OnWillUpdate.js`**: MDK applications automatically download updates and apply them to the client without the end-user needing to take any action. The `OnWillUpdate` rule empowers the user to run business logic before the new definitions are applied. This allows the app designer to include logic to prompt the user to accept or defer applying the new definitions based on their current activity. For example, if the end-user is currently adding new customer details or in the middle of a transaction, they will be able to defer the update. The app will prompt again the next time it checks for updates.
 
 - **`Web`**: In this folder, you can provide web specific app resource files and configurations.
 
 - **`Application.app`**: this is the main configuration file for your application from within SAP Business Application Studio. Here you define your start page (here in this tutorial, it is main.page), action settings for different stages of the application session lifecycle, push notifications, and more.
 
-### Deploy the application
+### Deploy the Project
 
-So far, you have learned how to quickly build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services and Cloud Foundry to use it in the Mobile client and Web application respectively.
+So far, you have learned how to quickly get started with developing an MDK project in the SAP Business Application Studio editor. Now, you will deploy the project to Mobile Services to use it in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
-<!-- border -->![MDK](img-4.1.png)
+    <!-- border -->![MDK](img-4.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
+2. Select deploy target as **Mobile Services**.
 
-MDK editor will deploy the metadata to Mobile Services (for Mobile application) followed by to Cloud Foundry (for Web application). 
-   
-   - For Mobile Services deployment, choose Yes or No if you want to enable source for debugging the deployed bundle.
-   - For Cloud Foundry deployment, enter application ID, application version and select web runtime deployment option.
+    <!-- border -->![MDK](img-4.2.png)
 
-   <!-- border -->![MDK](img-4.2.gif)
+    If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    >First web deployment takes 2-3 minutes as it creates five service instances for the application. You can find the details of these instances in the space cockpit.
+    <!-- border -->![MDK](img-4.3.png)
 
-    >-	XSUAA
+    You should see **Deploy to Mobile Services successfully!** message.
 
-    >- destination
-
-    >- connectivity
-
-    >- HTML Repo host
-
-    >- HTML repo runtime
-
-    Ensure that you see successful messages for both deployments.
-
-    ![MDK](img-4.3.png)
+    <!-- border -->![MDK](img-4.4.png)
 
 
-### Display the QR code for onboarding the Mobile app
-
+### Display the QR code for onboarding the Mobile Client
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
@@ -193,8 +176,7 @@ The On-boarding QR code is now displayed.
 
 >Leave the Onboarding dialog box open for the next step.
 
-### Run the app
-
+### Run the Project
 
 [OPTION BEGIN [Android]]
 
@@ -219,21 +201,5 @@ After accepting the app update, you will see the **Main** page, along with a use
 ![MDK](img-6.2.png)
 
 [OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Click the highlighted button to open the MDK Web application in a browser. If prompted, enter your SAP BTP credentials.
-
-    ![MDK](img-6.3.png)
-
-    >You can also open the MDK web application by accessing its URL from the `.project.json` file.
-    ![MDK](img-6.4.png)
-
-    You will notice the **Main** page and a user menu on the top right corner. The application data service will be initialized. **Since you selected the Base template during the project creation, it generated this empty page without any UI controls. In the next tutorials, you will add some UI controls to this page and create more pages.**
-
-    ![MDK](img-6.5.png)
-
-[OPTION END]
-
 
 ---

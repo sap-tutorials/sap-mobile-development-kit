@@ -47,7 +47,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.2.png)
 
-3. In the Properties pane, set the **Caption** to **Create Order**.
+3. Once the page opens in the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Create Order**.
 
     <!-- border -->![MDK](img-1.3.png)
 
@@ -138,7 +138,6 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
     <!-- border -->![MDK](img-1.12.png)
 
-
 ### Add cancel button on create Sales Order page
 
 Now, you will add a button on the Create Order page and set its `onPress` to `CloseModalPage_Cancel.action`.
@@ -159,7 +158,7 @@ Now, you will add a button on the Create Order page and set its `onPress` to `Cl
 
 3. Now, you will set the `onPress` event to `CloseModalPage_Cancel.action`.
 
-    In **Events** tab, click the 3 dots icon for the `OnPress` property to open the **Object Browser**.
+    In **Events** tab, click the dotted icon for the `OnPress` property to open the **Object Browser**.
 
     Double click the `CloseModalPage_Cancel.action` and click **OK** to set it as the `OnPress` Action.
 
@@ -182,7 +181,7 @@ The next step is to store newly created record locally for an offline applicatio
 
     <!-- border -->![MDK](img-3.2.png)
 
-3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -200,7 +199,7 @@ The next step is to store newly created record locally for an offline applicatio
     |----|----|
     | `Name`| `SalesOrderHeaders_CreateEntity` |
     | `Type` | Select `CreateRelatedEntity` from the dropdown |
-    | `Service`| Select `SampleServiceV4.service` from the dropdown |
+    | `Service`| Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | Select `SalesOrderHeaders` from the dropdown |
 
     <!-- border -->![MDK](img-3.6.png)
@@ -289,11 +288,11 @@ You will open the `SalesOrderHeaders_Create.page` from the Customer Detail page.
 
     <!-- border -->![MDK](img-4.2.png)
 
-3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Object Browser`. Bind it to the `GenericNavigation.action`.
+3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Object Browser`. Bind it to the `GenericNavigation.action`.
 
     <!-- border -->![MDK](img-4.3.png)
 
-5. You will now override the `GenericNavigation.action` properties. Click the 3 dots icon for the `OnPress` property and select `Overrides`.
+5. You will now override the `GenericNavigation.action` properties. Click the dotted icon for the `OnPress` property and select `Overrides`.
 
     <!-- border -->![MDK](img-4.4.png)
 
@@ -318,7 +317,7 @@ In `Customers_Detail.page`, select **Customer Orders** Object Table control. In 
 
 <!-- border -->![MDK](img-5.1.gif)
 
-### Deploy the application
+### Deploy the Project
 
 Deploy the updated application to your MDK client.
 
@@ -326,11 +325,11 @@ Deploy the updated application to your MDK client.
 
     <!-- border -->![MDK](img-6.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-6.2.png)
 
-    You should see success message for both deployments.
+    You should see **Deploy to Mobile Services successfully!** message.
 
     <!-- border -->![MDK](img-6.3.png)
 
@@ -339,8 +338,7 @@ Deploy the updated application to your MDK client.
     ><!-- border -->![MDK](img-6.4.png)
 
 
-### Run the app
-
+### Run the Project
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -396,34 +394,6 @@ Deploy the updated application to your MDK client.
 
 [OPTION END]
 
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-7.13.png)
-
-    >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
-
-    ><!-- border -->![MDK](img-7.14.png)
-
-2. Click **Customers** | click one of the available customer record, you will then navigate to Customer detail page.
-
-3. You will see the **Create Order** option in customer detail page. Click it to create a new sales order.
-
-    <!-- border -->![MDK](img-7.15.png)
-
-4. As you provided default values to the properties, you may change it if required. Click **Save**.
-
-    <!-- border -->![MDK](img-7.16.png)
-
-    Now, you will notice that new record has been created and count value for **See All** is increased by one.
-
-    <!-- border -->![MDK](img-7.17.png)
-
-[OPTION END]
-
 Once you complete this tutorial, you can continue with [Level Up with the Mobile Development Kit](https://developers.sap.com/mission.mobile-dev-kit-level-up.html) mission.
-
-
 
 ---

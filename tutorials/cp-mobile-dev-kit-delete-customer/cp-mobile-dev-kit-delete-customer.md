@@ -14,7 +14,6 @@ author_profile: https://github.com/jitendrakansal
 ## You will learn
   - How to delete a customer record
   - How to store changes locally on Mobile app and sync these changes with backend
-  - How to delete a record in web application
 
 ## Intro
 You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/3-Enhance-Your-First-MDK-App-with-Additional-Functionalities/1-cp-mobile-dev-kit-create-customer) to start with this tutorial.
@@ -24,7 +23,6 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 ![MDK](img-1.0.gif)
 
 ### Add a trash button to customer details page
-
 
 You will add an action bar item to the Customer _Detail_ page called **Trash** and link it to an event.
 
@@ -40,7 +38,7 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
 
     <!-- border -->![MDK](img-1.2.png)
 
-3. Navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-1.3.png)
 
@@ -106,7 +104,7 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
 
     | Property | Value |
     |----|----|
-    | `Service`| Select `SampleServiceV4.service` from the dropdown |
+    | `Service`| Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
     | `ReadLink`| click link icon and double click `readLink` |
 
@@ -120,7 +118,6 @@ You will add an action bar item to the Customer _Detail_ page called **Trash** a
 
 
 ### Define Success and Failure actions
-
 
 When the above OData action is executed, you may want to display messages on its success and failure behavior. For example, on its success, you may want to display a success message and allow any execution to continue. On its failure, you may want to display an error.
 
@@ -166,8 +163,7 @@ When the above OData action is executed, you may want to display messages on its
     When `Customers_DeleteEntity.action` gets executed successfully then `CloseModalPage_Complete.action` will be triggered or if `Customers_DeleteEntity.action` fails then `DeleteCustomerEntityFailureMessage.action` will be triggered.   
 
 
-### Deploy the application
-
+### Deploy the Project
 
 Deploy the updated application to your MDK client.
 
@@ -175,16 +171,15 @@ Deploy the updated application to your MDK client.
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-3.2.png)
 
-    You should see success message for both deployments.
+    You should see **Deploy to Mobile Services successfully!** message.
 
     <!-- border -->![MDK](img-3.3.png)
 
-### Run the app
-
+### Run the Project
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -236,33 +231,13 @@ Deploy the updated application to your MDK client.
 
 [OPTION END]
 
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-4.9.png)
-
-    >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
-
-    ><!-- border -->![MDK](img-4.10.png)
-
-2. Click **Customers** | click any record | click **Trash**.
-
-    <!-- border -->![MDK](img-4.11.png)
-
-3. A confirmation dialog appears for user action, click **OK**.
-
-    <!-- border -->![MDK](img-4.12.png)
-
-[OPTION END]
-
 You can cross verify if this record has been deleted in the backend.
 
 >Backend URL can be found in [Mobile Services Cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html).
 
->**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **com.sap.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon
+>**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **myapp.mdk.demo** **&rarr;** **Mobile Connectivity** **&rarr;** click **Launch in Browser** icon
 
-><!-- border -->![MDK](img-4.13.png)
+><!-- border -->![MDK](img-4.9.png)
 
 >It will open the URL in a new tab, remove `?auth=uaa` and add `/Customers` at the end of the URL.
 

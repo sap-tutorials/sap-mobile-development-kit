@@ -94,7 +94,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.3.png)  
 
-3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
     <!-- border -->![MDK](img-2.4.png)  
 
@@ -126,9 +126,9 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.8.png) 
 
-    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services.  
 
-    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
+    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client.
 
     >Data Collections step retrieves the entity sets information for the selected destination.
 
@@ -136,23 +136,23 @@ The Storyboard provides a graphical view of the application's runtime resources,
  
     <!-- border -->![MDK](img-2.9.png) 
 
-### Deploy the application
-
-So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services and Cloud Foundry to use it in the Mobile client and Web application respectively.
+### Deploy the Project
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
-
-    MDK editor will deploy the metadata to Mobile Services (for Mobile application) followed by to Cloud Foundry (for Web application).
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-3.2.png)
 
-    Ensure that you see successful messages for both deployments.
+    If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
     <!-- border -->![MDK](img-3.3.png)
+
+    You should see **Deploy to Mobile Services successfully!** message.
+
+    <!-- border -->![MDK](img-3.4.png)
 
 
 ### Display the QR code for onboarding the Mobile app
@@ -167,12 +167,11 @@ The On-boarding QR code is now displayed.
 
 >Leave the Onboarding dialog box open for the next step.
 
-### Run the app
+### Run the Project
 
 [OPTION BEGIN [Android]]
 
 >Ensure that you choose the correct device platform tab above. Once you have scanned and onboarded using the onboarding URL, it will be remembered. If you log out and onboard again, you will be prompted to either continue using the current application or scan a new QR code.
-
 
 1. Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/blob/main/Onboarding-Android-client/Onboarding-Android-client.md) to successfully on-board the MDK client on your Android device.
 
@@ -180,7 +179,7 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-4.3.png)
 
-    >`SampleServiceV4` is the name of the service file generated in the project creation.
+    >`com_sap_edm_sampleservice_v4` is the name of the service file generated in the project creation.
 
     In the next steps, you will learn how to translate the UI texts on this screen, including phrases such as `Main`, `Customers`, and `SalesOrderHeaders`, as well as items in the user menu like `Sync Changes` and `Check for Updates`, and `Reset` into their respective localized strings in the German language.
 
@@ -200,7 +199,7 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-4.5.png)
 
-    >`SampleServiceV4` is the name of the service file generated in the project creation.
+    >`com_sap_edm_sampleservice_v4` is the name of the service file generated in the project creation.
 
     In the next steps, you will learn how to translate the UI texts on this screen, including phrases such as `Main`, `Customers`, and `SalesOrderHeaders`, as well as items in the user menu like `Sync Changes` and `Check for Updates`, and `Reset` into their respective localized strings in the German language.
 
@@ -210,34 +209,7 @@ The On-boarding QR code is now displayed.
 
 [OPTION END]
 
-[OPTION BEGIN [Web]]
-
-1. Click the highlighted button to open the MDK Web application in a browser. Enter your SAP BTP credentials if asked.
-
-    <!-- border -->![MDK](img-4.7.png)
-
-    >You can also open the MDK web application by accessing its URL from `.project.json` file.
-    <!-- border -->![MDK](img-4.8.png)
-
-    You will see the `Main` page and `Customers` and `SalesOrderHeaders` entity sets to navigate to List-Detail page.
-
-    <!-- border -->![MDK](img-4.9.png)
-   
-   >`SampleServiceV4` is the name of the service file generated in the project creation.
-
-    In the next steps, you will learn how to translate the UI texts on this screen, including phrases such as `Main`, `Customers`, and `SalesOrderHeaders` into their respective localized strings in the German language.
-
-2. Click `SalesOrderHeaders` to navigate to Sales Order List. There are two control properties displaying Date and Gross Amount values generated by the template. You will also learn how you can format these values to be displayed based on the device's current locale.
-
-    <!-- border -->![MDK](img-4.10.png)
-
-[OPTION END]
-
-
-
-
 ### Define the i18n Properties File
-
 
 The `i18n.properties` file is where language & locale specific strings are stored.
 
@@ -326,7 +298,7 @@ You will use the Localizable String function to add language support on the Main
 
 1. Click `Main.page` to open it in the MDK Page Editor.
 
-2. In the **Properties** pane, click the **link** icon for the Page caption, select **i18n Objects** in the dropdown and double click on `main_title:"Main"` to bind Caption to the Localizable String.
+2. Once the page opens in the page editor, click on the white area to select it's Action Bar. In the **Properties** pane, click the **link** icon for the Page caption, select **i18n Objects** in the dropdown and double click on `main_title:"Main"` to bind Caption to the Localizable String.
 
     <!-- border -->![MDK](img-6.1.gif)
 
@@ -349,7 +321,7 @@ You will add `Currency` formatter in the `SalesOrderHeaders_List.page`.
 
 `Syntax: $(C, <Value>, <Currency Code>, <Locale>, <Format Options>)`
 
-1. Navigate to **Pages** **&rarr;** `SampleServiceV4_SalesOrderHeaders` **&rarr;** `SalesOrderHeaders_List.page`.
+1. Navigate to **Pages** **&rarr;** `com_sap_edm_sampleservice_v4_SalesOrderHeaders` **&rarr;** `SalesOrderHeaders_List.page`.
 
 2. You'll update the Object Table control's `StatusText` property which is currently bound to the OData property `{GrossAmount}`. You will format the property value using the `Currency` formatter.
 
@@ -427,10 +399,10 @@ You will add `Currency` formatter in the `SalesOrderHeaders_List.page`.
     >For Time formatter, you must still provide the full date-time value, the result will only include time portion.
 
 
-### Redeploy the application
+### Redeploy the Project
 
 
-Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then select deploy target as **Mobile & Cloud**.
+Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then Select deploy target as **Mobile Services**.
 
 >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
 
@@ -438,7 +410,6 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 
 ### Update the app
-
 
 [OPTION BEGIN [Android]]
 
@@ -480,26 +451,5 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
     ![MDK](img-9.8.png)    
 
 [OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-4.7.png)
-
-2. Navigate to `SalesOrderHeaders` list page. You will notice the formatted values.
-
-    <!-- border -->![MDK](img-9.9.png)
-
-3. Navigate to your browser settings and set the language top preference to German. Refresh the web page, you will now notice the localized strings on main page.
-
-    <!-- border -->![MDK](img-9.10.png)
-
-4. Click **`Kundenaufträge`** to navigate to Sales order list page. You will notice the updated formatter values as per device's current locale and timezone.    
-
-    <!-- border -->![MDK](img-9.11.png)    
-
-[OPTION END]
-
 
 ---

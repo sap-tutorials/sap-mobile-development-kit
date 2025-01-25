@@ -192,7 +192,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     <!-- border -->![MDK](img-3.5.png)
 
-5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.6.png)
 
@@ -251,7 +251,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
 
     <!-- border -->![MDK](img-3.5.png)
 
-5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+5. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.demo` > **Mobile Settings Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.6.png)
 
@@ -406,7 +406,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
     Then run `tns run ios --device <device identifier>` command to launch the MDK client on your iOS device.
     <!-- border -->![MDK](img-5.13.png)
 
-    >You can also run the app in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then run the application for the target device.
+    >You can also Run the Project in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then Run the Projectlication for the target device.
 
     Once, above command gets successfully executed, you will see new MDK client up and running in iOS simulator.
 

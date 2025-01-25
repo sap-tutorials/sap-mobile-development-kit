@@ -162,7 +162,7 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
     <!-- border -->![MDK](img-9.1.png)
 
-2.  To set a breakpoint, navigate to `Rules` | `SampleServiceV4` | `Customers` |  `Customers_DeleteConfirmation.js` and click on line 8 where you want to set your breakpoint. Click the margin that you can find on the left of the line number. Alternatively, you can toggle the breakpoint from **Run** menu > **Toggle Breakpoint**.
+2.  To set a breakpoint, navigate to `Rules` | `com_sap_edm_sampleservice_v4` | `Customers` |  `Customers_DeleteConfirmation.js` and click on line 8 where you want to set your breakpoint. Click the margin that you can find on the left of the line number. Alternatively, you can toggle the breakpoint from **Run** menu > **Toggle Breakpoint**.
 
     ![MDK](img-9.2.gif)
 
@@ -189,7 +189,7 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
     <!-- border -->![MDK](img-9.1.png)
 
-2. To set a breakpoint, navigate to `Rules` | `SampleServiceV4` | `Customers` |  `Customers_DeleteConfirmation.js` and click on line 8 where you want to set your breakpoint. Click the margin that you can find on the left of the line number. Alternatively, you can toggle the breakpoint from **Run** menu > **Toggle Breakpoint**.
+2. To set a breakpoint, navigate to `Rules` | `com_sap_edm_sampleservice_v4` | `Customers` |  `Customers_DeleteConfirmation.js` and click on line 8 where you want to set your breakpoint. Click the margin that you can find on the left of the line number. Alternatively, you can toggle the breakpoint from **Run** menu > **Toggle Breakpoint**.
 
     ![MDK](img-9.6.gif)
 

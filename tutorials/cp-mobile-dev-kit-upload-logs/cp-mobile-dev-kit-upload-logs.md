@@ -24,7 +24,7 @@ Managing issues with apps rolled out to a large number of users is a challenge a
 
 ![MDK](img-1.0.gif)
 
-### Define client log policy in Mobile Services cockpit
+### Define client log policy in Mobile Services admin UI
 
 SAP Mobile Services provides administrators, developers and support staff with extensive logs and traces functionality to troubleshoot application issues. You can control the amount of information that is captured by setting the log level for individual logging components.
 
@@ -105,7 +105,7 @@ The MDK template generates a project that includes a user menu with support opti
 
 [OPTION END]
 
-### Examine uploaded logs in Mobile Services cockpit
+### Examine uploaded logs in Mobile Services admin UI
 
 Open SAP Mobile Services Cockpit, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app **&rarr;** **Mobile Client Log Upload** **&rarr;** **Log Files**.
 

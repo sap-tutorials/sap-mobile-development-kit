@@ -216,10 +216,10 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
      <!-- border -->![MDK](img-4.3.png)        
 
 
-### Deploy the application
+### Deploy the Project
 
 
-So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services to use in the Mobile client.
+So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 

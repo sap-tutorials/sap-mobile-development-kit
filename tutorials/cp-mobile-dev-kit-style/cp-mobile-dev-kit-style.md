@@ -86,7 +86,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.3.png)  
 
-3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
     <!-- border -->![MDK](img-2.4.png)  
 
@@ -118,9 +118,9 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.8.png) 
 
-    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. 
 
-    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
+    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client.
 
     >Data Collections step retrieves the entity sets information for the selected destination.
 
@@ -257,7 +257,7 @@ In this step, you will bind style classes:
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Navigate to **Pages** | `SampleServiceV4_Customers`, click `Customers_List.page`, select **Object Table** control, scroll-down to **Style** section.
+2. Navigate to **Pages** | `com_sap_edm_sampleservice_v4_Customers`, click `Customers_List.page`, select **Object Table** control, scroll-down to **Style** section.
 
     Click **link** icon next to **Title** property.
 
@@ -265,33 +265,32 @@ In this step, you will bind style classes:
 
     <!-- border -->![MDK](img-3.2.png)
 
-3. Navigate to **Pages** | `SampleServiceV4_Customers`, click `Customers_Detail.page`, select **Object Header** control, scroll-down to **Style** section and bind control properties to style properties.
+3. Navigate to **Pages** | `com_sap_edm_sampleservice_v4_Customers`, click `Customers_Detail.page`, select **Object Header** control, scroll-down to **Style** section and bind control properties to style properties.
 
     <!-- border -->![MDK](img-3.3.png)
 
 
-### Deploy the application
+### Deploy the Project
 
-
-So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services and Cloud Foundry to use it in the Mobile client and Web application respectively.
+So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to run  it in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
     <!-- border -->![MDK](img-4.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
-
-    MDK editor will deploy the metadata to Mobile Services (for Mobile client) followed by to Cloud Foundry (for Web application).
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-4.2.png)
 
-    Ensure that you see successful messages for both deployments.
+   If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
     <!-- border -->![MDK](img-4.3.png)
 
+    You should see **Deploy to Mobile Services successfully!** message.
+
+    <!-- border -->![MDK](img-4.4.png)
 
 ### Display the QR code for onboarding the Mobile app
-
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
 
@@ -305,7 +304,7 @@ The On-boarding QR code is now displayed.
 >Leave the Onboarding dialog box open for the next step.
 
 
-### Run the app
+### Run the Project
 
 
 [OPTION BEGIN [Android]]
@@ -318,7 +317,7 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-5.3.png)
 
-    >`SampleServiceV4` is the name of the service file generated in the project creation.
+    >`com_sap_edm_sampleservice_v4` is the name of the service file generated in the project creation.
 
 2. Tap **Customers** to navigate to Customer List. You will see that Title property has been styled.
 
@@ -340,7 +339,7 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-5.6.png)
 
-    >`SampleServiceV4` is the name of the service file generated in the project creation.
+    >`com_sap_edm_sampleservice_v4` is the name of the service file generated in the project creation.
 
 2. Tap **Customers** to navigate to Customer List. You will see that Title property has been styled.
 
@@ -351,32 +350,5 @@ The On-boarding QR code is now displayed.
     ![MDK](img-5.8.png)   
 
 [OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Click the highlighted button to open the MDK Web application in a browser. Enter your SAP BTP credentials if asked.
-
-    <!-- border -->![MDK](img-5.9.png)
-
-    >You can also open the MDK web application by accessing its URL from `.project.json` file.
-    <!-- border -->![MDK](img-5.10.png)
-
-    You will see the list of entities on the **Main** page and a user menu option. The Main page has been styled.
-
-    <!-- border -->![MDK](img-5.11.png)
-
-    >`SampleServiceV4` is the name of the service file generated in the project creation.
-
-2. Click **Customers** to navigate to Customer List. You will see that Title property has been styled.
-
-    <!-- border -->![MDK](img-5.12.png)
-
-3. Click any record to navigate to Customer Detail page. You will see that Object Header control has been styled.
-
-    <!-- border -->![MDK](img-5.13.png)   
-
-[OPTION END]
-
-
 
 ---

@@ -17,7 +17,6 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
-
 ## Intro
 To enhance your MDK app with customer list information, you need to carry out the following tasks:
 
@@ -36,10 +35,9 @@ This page is a searchable list that displays all customers.
 
 To create the Customer List page, you will create a **Section page** and drag the Customer **Contact Table** control onto the page. In the property palette, you will link the control to the Customer Collection and then map data and actions to different areas of the cell object in the property palette. One nice feature about the **Contact Table** control is that it has icons that can activate device functionality such as phone, email, video and more.
 
-1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page**.
+1. In the project, right-click the **Pages** | **MDK: New Page**.
 
     <!-- border -->![MDK](img-1.1.png)
-
 
 2. Select | **Section** and click **Next**.
 
@@ -47,13 +45,13 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     >You can find more details about the Section Page in this [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/section-page.html).
 
-3. Enter the page **Name** as `Customers_List` and click **Finish**. 
+3. Enter the page **Name** as `Customers_List`, and click **Finish**. 
 
     <!-- border -->![MDK](img-1.3.png)
 
-4. In the **Properties** pane, set the **Caption** to **Customers**.
+4. Once the page opens in the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Customers**.
 
-    <!-- border -->![MDK](img-1.4.png)
+    <!-- border -->![MDK](img-1.4.gif)
 
 5. In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Contact Table** control onto the Page area.
 
@@ -63,7 +61,7 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     | Field | Value |
     |----|----|
-    | `Service`| Select `SampleServiceV4.service` from the dropdown |
+    | `Service`| Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
 
     <!-- border -->![MDK](img-1.6.gif)
@@ -90,7 +88,7 @@ To create the Customer List page, you will create a **Section page** and drag th
 
     <!-- border -->![MDK](img-1.11.png)
 
-11. Expand the added item, click the 3 dots icon to open the Object browser to bind the `ActivityValue` to the `PhoneNumber` property of the Customer entity.
+11. Expand the added item, click the dotted icon to open the Object browser to bind the `ActivityValue` to the `PhoneNumber` property of the Customer entity.
 
     <!-- border -->![MDK](img-1.12.gif)
 
@@ -127,8 +125,10 @@ Now, you will add a button on the Main page and from there, you will navigate to
     | `Title` | `Customers` |
 
     <!-- border -->![MDK](img-2.3.png)
+    
+    >`Image` property is referencing to the [SAP font icon](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons).
 
-4. Under **Events** tab, click the 3 dots icon for the `OnPress Handler` property and select the `Create a rule/action`.
+4. Under **Events** tab, click the dotted icon for the `OnPress Handler` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-2.4.png)
 
@@ -149,7 +149,7 @@ Now, you will add a button on the Main page and from there, you will navigate to
 
     <!-- border -->![MDK](img-2.7.png)
 
-### Deploy the application
+### Deploy the Project
 
 Deploy the updated application to your MDK client.
 
@@ -157,11 +157,11 @@ Deploy the updated application to your MDK client.
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-3.2.png)
 
-    You should see success message for both deployments.
+    You should see **Deploy to Mobile Services successfully!** message.
 
     <!-- border -->![MDK](img-3.3.png)
 
@@ -169,9 +169,7 @@ Deploy the updated application to your MDK client.
 
     ><!-- border -->![MDK](img-3.4.png)
 
-
-### Run the app
-
+### Run the Project
 
 >Make sure you are choosing the right platform tab above.
 
@@ -214,27 +212,5 @@ Deploy the updated application to your MDK client.
     >If it was an iPad (where both portrait and landscape are considered *regular* instead of *compact*) you would see **City** on either orientation.
 
 [OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-4.8.png)
-
-    >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
-
-    ><!-- border -->![MDK](img-4.9.png)
-
-2. You will notice, newly added button on the main page. Click **Customers**.
-
-    <!-- border -->![MDK](img-4.10.png)
-
-    Here, you will see list of all the Customers. You can search (case-sensitive) a record by by First Name or Last Name or City. The rendered Controls are UI5 web components, you can email to the customer, make a phone call etc.
-
-    <!-- border -->![MDK](img-4.11.png)
-
-[OPTION END]
-
-
 
 ---

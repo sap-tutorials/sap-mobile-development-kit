@@ -89,7 +89,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.3.png)  
 
-3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
     <!-- border -->![MDK](img-2.4.png)  
 
@@ -121,7 +121,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.8.png) 
 
-    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP admin UI.
 
     >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
 
@@ -189,16 +189,16 @@ MDK provides an `OnLinkDataReceived` event in the `Application.app` that is call
 
     function openProductByID(context, id) {
         context.getLogger().log(`ID: ${id}`,'Debug');
-        return context.read('/deeplinkintomdkapp/Services/SampleServiceV4.service', `Products(${id})`, [], null).then(function (result) {
+        return context.read('/deeplinkintomdkapp/Services/com_sap_edm_sampleservice_v4.service', `Products(${id})`, [], null).then(function (result) {
             if (result.length) {
                 context.getPageProxy().setActionBinding(result.getItem(0));
-                return context.getPageProxy().executeAction('/deeplinkintomdkapp/Actions/SampleServiceV4/Products/NavToProducts_Detail.action');
+                return context.getPageProxy().executeAction('/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_Detail.action');
             }
         });
     }
 
     function openProductListWithFilter(context, parametersObj) {
-        let pageData = context.getPageProxy().getPageDefinition('/deeplinkintomdkapp/Pages/SampleServiceV4_Products/Products_List.page');
+        let pageData = context.getPageProxy().getPageDefinition('/deeplinkintomdkapp/Pages/com_sap_edm_sampleservice_v4_Products/Products_List.page');
         var filterQO = '$filter=';
         for (var key in parametersObj) {
             var value = parametersObj[key];
@@ -210,7 +210,7 @@ MDK provides an `OnLinkDataReceived` event in the `Application.app` that is call
         context.getLogger().log(`${filterQO}`,'Debug');
         pageData.Controls[0].Sections[0].Target.QueryOptions = filterQO;
         return context.getPageProxy().executeAction({
-            "Name": '/deeplinkintomdkapp/Actions/SampleServiceV4/Products/NavToProducts_List.action',
+            "Name": '/deeplinkintomdkapp/Actions/com_sap_edm_sampleservice_v4/Products/NavToProducts_List.action',
             "Properties": {
                 "PageMetadata": pageData
             }
@@ -218,9 +218,9 @@ MDK provides an `OnLinkDataReceived` event in the `Application.app` that is call
     }
     ```
 
-### Deploy the application
+### Deploy the Project
 
-Now that the MDK application is configured to act when a request from external source is received, you will deploy the application definitions to Mobile Services to use in the Mobile client.
+Now that the MDK application is configured to act when a request from external source is received, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
@@ -463,7 +463,7 @@ Now that the MDK application is configured to act when a request from external s
     Then run `tns run ios --device <device identifier>` command to launch the MDK client on your iOS device.
     <!-- border -->![MDK](img-6.15.png)
 
-    >You can also run the app in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then run the application for the target device.
+    >You can also Run the Project in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then Run the Projectlication for the target device.
 
     Once, above command gets successfully executed, you will see new MDK client up and running in iOS simulator.
 
@@ -523,7 +523,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
 
     >**Server URL**: Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app. Click the **APIs** tab. Copy the **Server** URL.
 
-    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `SampleServiceV4` destination.
+    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `com_sap_edm_sampleservice_v4` destination.
     ><!-- border -->![MDK](img-7.3.png)
     >A new tab opens in the browser. Remove `?auth=uaa` and add `/Products` to view product list. Copy any `ProductId` and paste it in the `index.html`.
     ><!-- border -->![MDK](img-7.4.png)

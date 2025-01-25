@@ -3,40 +3,40 @@ parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
 tags: [ tutorial>beginner, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-build-code ]
-time: 10
+time: 5
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
 # Set Up Initial Configuration for an MDK App
-<!-- description --> Configure initial setup for MDK Mobile and Web applications.
+<!-- description --> Configure initial setup for MDK Mobile applications development.
 
 ## Prerequisites
 - **Tutorial:** [Access SAP Mobile Services](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html)
 
 ## You will learn
-  - How to configure MDK apps in the Mobile Services cockpit
-  - How to configure destination for MDK Mobile and applications
+  - How to configure MDK apps in the Mobile Services admin UI
+  - How to configure destination for MDK Mobile applications
 
 ---
 
-### Understand the mobile development kit feature
+### Understand the SAP mobile development kit feature
 
-The Mobile Development Kit (MDK) enables developers and technical business users to build [multi-channel](https://community.sap.com/t5/technology-blogs-by-members/moving-to-multi-channel-with-mobile-development-kit/ba-p/13465060) applications. It allows you to build your application once, in an integrated development environment, and run it natively on mobile devices (Android & iOS) and as a web application (online) in the browser.
+The SAP Mobile Development Kit (MDK) enables developers and technical business users to build cross-platform mobile applications in an integrated development environment, and run it natively on mobile devices (Android & iOS).
 
-You can find more details in the [Mobile Development Kit developer page](https://pages.community.sap.com/topics/mobile-technology/mobile-development-kit).
+You can find more details in the [SAP Mobile Development Kit developer page](https://pages.community.sap.com/topics/mobile-technology/mobile-development-kit).
 
-![MDK](img-1.1.png)
+<!-- border -->![MDK](img-1.png)
 
-### Configure a new MDK application in Mobile Services cockpit
+### Set Up New MDK App Configuration in the Mobile Services Admin UI
 
 Make sure that you have completed required prerequisites mentioned in this tutorial.
 
-1. Navigate to [SAP Mobile Services cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
+1. Navigate to the [SAP Mobile Services Admin UI](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html).
 
 2. On the home screen, click **Create New App** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
 
-    ![MDK](img-2.1.png)
+    <!-- border -->![MDK](img-2.1.png)
 
 3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
 
@@ -61,11 +61,13 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     <!-- border -->![MDK](img-2.5.png)    
 
-7. In the **Assign Features** step, continue with the default settings and choose **Next**.
+7. In the **Assign Features** step, select **Mobile Sample OData ESPM** from the feature list, and choose **Next**.
 
-    <!-- border -->![MDK](img-2.6.png) 
+    <!-- border -->![MDK](img-2.6.png)
 
-8. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration.
+    >A [sample OData](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/backend-connectivity/common/sample.html) Enterprise Sales and Procurement Model (ESPM) service is available in Mobile Services admin UI for developers to use during development and testing. For MDK tutorials, you will be using this service. You can of course add your OData or REST service connecting to your backend system as covered in the next step. 
+
+8. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration. This process may take 2-3 minutes.
 
     <!-- border -->![MDK](img-2.7.png)
 
@@ -77,99 +79,19 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     >You can find more information on available features in SAP Mobile Services in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/features.html).
 
-### Add Mobile Sample Service to your Application Configuration
 
-A [sample OData](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/backend-connectivity/common/sample.html) Enterprise Sales and Procurement Model (ESPM) service is available in Mobile Services cockpit for developers to use during development and testing. For MDK tutorials, you will be using this service. You can of course add your OData or REST service connecting to your backend system as covered in the next step.
+### Explore Mobile Sample OData Service
 
-1. Click on the `+` icon next to the **Assigned Features**. 
+1. Click **Mobile Sample OData ESPM**. 
 
-    <!-- border -->![MDK](img-2.9.png)
+    <!-- border -->![MDK](img-3.1.png)
 
-2. Choose **`Mobile Sample OData ESPM`** from the feature list and choose **OK**.
+2. By default, OData Version 4 is selected. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
 
-    ![MDK](img-2.5.2.png)
-
-3. By default, OData Version 4 is selected. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
-
-    ![MDK](img-2.5.2.gif)
+    ![MDK](img-3.2.gif)
 
     >When you view the data, you might see something like this instead of the nicely formatted output from above.
-    >![MDK](img-2.5.4.png)
+    >![MDK](img-3.3.png)
     >However, this doesn't mean you've made a mistake in the tutorial. Rather, this is the correct output without any formatting. If you'd like to see a formatted output in your browser, you can add an `JSON Formatter` extension to your browser. 
-
-### Create a new destination to your MDK Mobile application
-
-Assigning the `Mobile Sample OData ESPM` feature to your application configuration automatically creates a destination named `com.sap.edm.sampleservice.v4` in the `Mobile Connectivity`. 
-
-This `com.sap.edm.sampleservice.v4` destination is immutable. However, for other tutorials where you need to add additional details, simply create a new destination by copying the settings from that destination.
-
-1. Click **Mobile Connectivity**.  
-
-    ![MDK](img-3.1.png)
-
-2. Copy the URL from existing destination and click the **Create** icon to add a new destination.
-
-    <!-- border -->![MDK](img-3.2.png)
-
-3. In the **Basic Info** step, provide the required information and click **Next**.
-
-    | Field | Value |
-    |----|----|
-    | `Destination Name` | SampleServiceV4 |
-    | `URL` | paste the URL from above step  |
-
-    <!-- border -->![MDK](img-3.3.png)
-
-4. For this tutorial, there is no Custom Headers, Annotations required. Click **Next** to navigate to further steps.
-
-
-5. In the **Destination Configuration** step, select **SSO Mechanism** as **Forward Authentication**, click **Next**.   
-
-    ![MDK](img-3.4.png)
-
-6. For this tutorial, there is no certificate configuration needed. Click **Finish**.
-
-    ![MDK](img-3.5.png)
-
-
-### Create a new destination to your MDK Web application
-
-MDK Web application accesses the data sources via BTP destination. You will now create a new destination in BTP cockpit that will point to the same backend as your Mobile destination.
-
->The destination that you are going to create in this tutorial is very specific as this connects to the backend via Mobile Services and will use OAuth2JWTBearer authentication type. For other kinds of backend or services, you may skip the following steps and directly setup your BTP destination with the relevant authentication type that is required by the backend.
-
-1. Click `myapp.mdk.demo` to navigate to Mobile Services application details.
-
-    <!-- border -->![MDK](img-4.1.png)
-
-2. Click the `APIs` tab, click _copy to clipboard_ icon to copy the highlighted URL and paste it in a text file. This URL will be used in configuring the  BTP destination.
-
-    <!-- border -->![MDK](img-4.2.png)
-
-3. In your SAP BTP space cockpit page, navigate to the **Services** **&rarr;**  **Instances and Subscriptions**, select **Authorization and Trust Management service** from the list, click `com-sap-mdk-demo-xsuaa` instance, choose trip dot icon **&rarr;** **View** to open the configuration details.
-
-    <!-- border -->![MDK](img-4.3.png)
-
-4. Switch to **Form** tab, copy values for `clientid`, `clientsecret`, `url` parameters and paste these values in the text file. These parameters will be used in configuring the BTP destination.  
-
-    <!-- border -->![MDK](img-4.4.png)
-
-5. Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/0-Set-Up-for-the-Mobile-Development-Kit/SampleServiceV4.zip) and unzip it on your machine.
-
-6. In your BTP cockpit, navigate to **Connectivity** **&rarr;** **Destinations** to create a BTP destination, click **Import Destination** to import the extracted file and provide the required information and click **Save**.
-
-    | Field | Value |
-    |----|----|
-    | `URL` | Paste the URL from step 4.2 |
-    | `Client ID` | Paste the value from step 5.4  |
-    | `Client Secret` | Paste the value from step 5.4 |
-    | `Token Service URL` | Replace the Token URL placeholder with the URL from step 5.4, make sure the Token URL is appended by `/oauth/token` |
-    | `Use Default JDK truststore` | Select the checkbox if not selected before |
-
-    ![MDK](img-4.5.png)
-
-    >When checking the connection, if all your configurations are correct, you will see a success message saying `Connection to "SampleServiceV4" established. Response returned: "400: Bad Request"`. In this particular case, it is safe to ignore the `"400: Bad Request"` part of this message.
-
-
 
 ---

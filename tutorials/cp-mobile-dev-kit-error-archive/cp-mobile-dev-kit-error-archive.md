@@ -39,7 +39,7 @@ You have built an MDK app with offline functionality. In offline store, you make
 - Create a business logic to find the affected entity
 - Navigate to the affected record to handle the error
 
-> For this tutorial, you will use **Mobile Services sample backend** destination. You will modify a `PurchaseOrderHeaders` record by changing `CurrencyCode` field. Offline store saves this record in request queue database and when you sync it with backend, backend prevents updating this record due to business logic failure. This failure record will be listed in Error list page, from here, you can navigate to details page for more information. You will implement a logic to navigate from details page to the affected record.
+> For this tutorial, you will use **Mobile Services sample backend** destination. You will modify a `SalesOrderHeaders` record by changing `CurrencyCode` field. Offline store saves this record in request queue database and when you sync it with backend, backend prevents updating this record due to business logic failure. This failure record will be listed in Error list page, from here, you can navigate to details page for more information. You will implement a logic to navigate from details page to the affected record.
 
 ### Create a New Project Using SAP Build Code
 
@@ -98,7 +98,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.3.png)  
 
-3. Select `SampleServiceV4` from the destinations list and click **Add App to Project**.
+3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
     <!-- border -->![MDK](img-2.4.png)  
 
@@ -126,13 +126,13 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `Select the Service Type` | Leave the default value as `OData` |
     | `Enable Offline` | It's enabled by default |
     | `Select all data collections` | Leave it as it is |
-    | `What types of data will your application contain?` | Unselect `Customers`, select `PurchaseOrderHeaders`, `PurchaseOrderItems` and `Suppliers` |
+    | `What types of data will your application contain?` | Select `Customers`, `Products`, `SalesOrderHeaders` and `SalesOrderItems` |
 
     <!-- border -->![MDK](img-2.8.png) 
 
-    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP cockpit.
+    Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. 
 
-    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client and will run as online in Web environment.
+    >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client.
 
     >Data Collections step retrieves the entity sets information for the selected destination.
 
@@ -140,7 +140,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
  
     <!-- border -->![MDK](img-2.9.png) 
 
-### Deploy the application
+### Deploy the Project
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
@@ -172,7 +172,7 @@ The On-boarding QR code is now displayed.
 
 >Leave the Onboarding dialog box open for the next step.
 
-### Run the app in MDK client
+### Run the Project in MDK client
 
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and on-board again, you will be asked either to continue to use current application or to scan new QR code.
@@ -185,9 +185,9 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-4.1.png)
 
-2. You will modify a `PurchaseOrderHeaders` record, save it locally, sync it to the backend and if backend doesn't accept this change due to some business logic failure, you will view them in Error Archive list.
+2. You will modify a Sales Order record, save it locally, sync it to the backend and if backend doesn't accept this change due to some business logic failure, you will view them in Error Archive list.
 
-    Navigate to `PurchaseOrderHeaders` list, tap either one of the records.
+    Navigate to `SalesOrderHeaders` list, tap either one of the records.
 
     ![MDK](img-4.2.png)
 
@@ -196,7 +196,7 @@ The On-boarding QR code is now displayed.
     ![MDK](img-4.3.png)
     ![MDK](img-4.4.png)
 
-    You will see **Entity Updated** toast message. You can always see this updated record reflecting in `PurchaseOrderHeaders` list which means offline store has accepted this change.
+    You will see **Entity Updated** toast message. You can always see this updated record reflecting in `SalesOrderHeaders` list which means offline store has accepted this change.
 
 4. Navigate to `Main.page`, tap on the **Sync Changes** option in the user menu to upload local changes from device to the backend and to download the latest changes from backend to the device.
 
@@ -209,7 +209,7 @@ The On-boarding QR code is now displayed.
 
 6. Tapping any record navigates to Error Details page with more information about error.
 
-    ![MDK](img-4.7.1.png)
+    ![MDK](img-4.8.png)
 
     Here in **Error**, you will see `SQLDatabaseException` and in **Request Body**, it shows the record that caused this failure.
 
@@ -225,9 +225,9 @@ The On-boarding QR code is now displayed.
 
     ![MDK](img-4.8.png)
 
-2. You will modify a `PurchaseOrderHeaders` record, save it locally, sync it to the backend and if backend doesn't accept this change due to some business logic failure, this record will appear in Error Archive list.
+2. You will modify a Sales Order record, save it locally, sync it to the backend and if backend doesn't accept this change due to some business logic failure, this record will appear in Error Archive list.
 
-    Navigate to `PurchaseOrderHeaders` list, tap either one of the record.
+    Navigate to `SalesOrderHeaders` list, tap either one of the record.
 
     ![MDK](img-4.9.png)
 
@@ -236,14 +236,13 @@ The On-boarding QR code is now displayed.
     ![MDK](img-4.10.png)
     ![MDK](img-4.11.png)
 
-    You will see **Entity Updated** toast message. You can always see this updated record reflecting in `PurchaseOrderHeaders` list which means offline store has accepted this change.
+    You will see **Entity Updated** toast message. You can always see this updated record reflecting in `SalesOrderHeaders` list which means offline store has accepted this change.
 
 4. Navigate to `Main.page`, click on the **Sync Changes** option in the user menu to upload local changes from device to the backend and to download the latest changes from backend to the device.
 
     ![MDK](img-4.12.png)
 
 5. You will see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
-
 
     ![MDK](img-4.13.png)
     ![MDK](img-4.14.png)    
@@ -313,11 +312,11 @@ On the Error Details page, you will implement how to navigate to respective reco
 
 7. When tapping on this Object Table control, you want to bring the affected record so that you can fix business failure by modifying previous changes right there. For this, you will write a business logic to decide which action to call depends on which `@odata.type` is the `affectedEntity` and if there is no handler for an affected entity, app will display a toast message saying this affected entity doesn't have a handle yet.
 
-    In the `ErrorArchive_Detail.page`, select the Object Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Create a rule/action`.
+    In the `ErrorArchive_Detail.page`, select the Object Table control, navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
     <!-- border -->![MDK](img-5.7.png)  
 
-8. Select **Rule** for the *Object Type* and select the `/mdk_errorarchive/Rules/SampleServiceV4` folder path to create a new rule that will be generated in the chosen path.
+8. Select **Rule** for the *Object Type* and select the `/mdk_errorarchive/Rules/com_sap_edm_sampleservice_v4` folder path to create a new rule that will be generated in the chosen path.
 
     <!-- border -->![MDK](img-5.8.png)
 
@@ -331,7 +330,7 @@ On the Error Details page, you will implement how to navigate to respective reco
 
     ```JavaScript
     /**
-     * Describe this function...
+    * Describe this function...
     * @param {IClientAPI} context
     */
     export default function ErrorArchive_DecideWhichEditPage(context) {
@@ -342,10 +341,10 @@ On the Error Details page, you will implement how to navigate to respective reco
         console.log("Affected Entity Is:");
         console.log(affectedEntity);
         let targetAction = null;
-        let id = affectedEntity["@odata.id"]; //e.g. PurchaseOrderHeaders(12345)
+        let id = affectedEntity["@odata.id"]; //e.g. SalesOrderHeaders(12345)
         let affectedEntityType = "Unknown Entity Set"; //By default it's unknown type
         if (id.indexOf("(") > 0) {
-            //Extracting the entity set type from @odata.id e.g. PurchaseOrderHeaders
+            //Extracting the entity set type from @odata.id e.g. SalesOrderHeaders
             var patt = /\/?(.+)\(/i;
             var result = id.match(patt);
             affectedEntityType = result[1];
@@ -355,8 +354,8 @@ On the Error Details page, you will implement how to navigate to respective reco
         //Here we decide which action to call depends on which affectedEntityType is the affectedEntity
         // You can add more complex decision logic if needed
         switch (affectedEntityType) {
-            case "PurchaseOrderHeaders":
-                targetAction = "/mdk_errorarchive/Actions/SampleServiceV4/PurchaseOrderHeaders/NavToPurchaseOrderHeaders_Edit.action";
+            case "SalesOrderHeaders":
+                targetAction = "/mdk_errorarchive/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action";
                 break;
             default:
                 //Save the affected Entity's type in client data so that it can be displayed by the toast
@@ -407,8 +406,7 @@ On the Error Details page, you will implement how to navigate to respective reco
     >`@odata.type`: an annotation that specifies the type of a JSON object or name/value pair. Its value is a URI that identifies the type of the property or object. More details can be found [here](http://docs.oasis-open.org/odata/odata-json-format/v4.0/cs01/odata-json-format-v4.0-cs01.html#odataType).
 
 
-### Redeploy the application
-
+### Redeploy the Project
 
 Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then select deploy target as **Mobile Services**.
 
@@ -416,9 +414,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 ><!-- border -->![MDK](img-6.1.png)
 
-
 ### Update the app
-
 
 [OPTION BEGIN [Android]]
 
@@ -445,7 +441,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 5. Navigate to the Main page and tap on the **Sync Changes** option in the user menu. Record gets upload to the backend successfully.
 
-    ![MDK](img-7.3.1.png)  
+    ![MDK](img-7.4.png)  
 
 [OPTION END]
 
@@ -453,7 +449,7 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-    ![MDK](img-7.4.png)
+    ![MDK](img-7.5.png)
 
 2. In order to access the Error List Detail pages, tap again on **Sync Changes** option in the user menu and once you see *Upload failed* message, tap on **View Errors** to navigate to the Error Archive list.
 
@@ -466,17 +462,16 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 
 3. Tapping any record navigates to **Error Details** page with more information about error. You have added a business logic to find out which is affected entity and how to navigate to respective record to let users to modify this record with correct values. Once done, user can again sync it with backend. Tap **Edit Affected Entity**.
 
-    ![MDK](img-7.5.png)
+    ![MDK](img-7.6.png)
 
 4. Modify record with correct values.
 
-    ![MDK](img-7.6.png)   
+    ![MDK](img-7.7.png)   
 
 5. Navigate to the Main page and tap on the **Sync Changes** option in the user menu. Record gets upload to the backend successfully.
 
-    ![MDK](img-7.7.png)  
+    ![MDK](img-7.8.png)  
 
 [OPTION END]
-
 
 ---

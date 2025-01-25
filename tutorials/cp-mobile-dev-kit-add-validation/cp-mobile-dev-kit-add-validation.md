@@ -87,7 +87,7 @@ You will add a rule to the Update action to run the validation before saving any
     <!-- border -->![MDK](img-1.5.png)
 
 
-### Deploy the application
+### Deploy the Project
 
 Deploy the updated application to your MDK client.
 
@@ -95,11 +95,11 @@ Deploy the updated application to your MDK client.
 
     <!-- border -->![MDK](img-2.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-2.2.png)
 
-    You should see success message for both deployments.
+    You should see **Deploy to Mobile Services successfully!** message.
 
     <!-- border -->![MDK](img-2.3.png)
 
@@ -108,7 +108,7 @@ Deploy the updated application to your MDK client.
     ><!-- border -->![MDK](img-2.4.png)
 
 
-### Run the app
+### Run the Project
 
 >Make sure you are choosing the right device platform tab above.
 
@@ -135,24 +135,6 @@ Deploy the updated application to your MDK client.
 
     ![MDK](img-3.5.png)
     ![MDK](img-3.6.png)
-
-[OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-3.7.png)
-
-    >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
-
-    ><!-- border -->![MDK](img-3.8.png)
-
-2. While update a customer record, enter a Email value with no contain of **@**, it throws a validation failure message on saving the record.
-
-    <!-- border -->![MDK](img-3.9.png)
-    <!-- border -->![MDK](img-3.10.png)
-
 
 [OPTION END]
 

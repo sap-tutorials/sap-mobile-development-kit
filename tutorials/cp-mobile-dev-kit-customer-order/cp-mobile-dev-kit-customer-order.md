@@ -39,7 +39,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
 >You can find more details about [available controls in section page](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/SectionedTable.schema.html).
 
-1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section** | **Next**.
+1. In your MDK project, right-click the **Pages** | **MDK: New Page** | select **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -49,7 +49,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
     <!-- border -->![MDK](img-1.2.png)
 
-3. In the **Properties** pane, set the caption to **Customer Orders**.
+3. Once the page opens in the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Customer Orders**.
 
     <!-- border -->![MDK](img-1.3.png)
 
@@ -64,7 +64,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
     | Property | Value |
     |----|----|
-    | `Service`| Select `SampleServiceV4.service` from the dropdown |
+    | `Service`| Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | Select `SalesOrderHeaders` from the dropdown |
     | `QueryOptions`| `$filter=CustomerID eq {CustomerID}&$orderby=CreatedAt desc` |
 
@@ -125,7 +125,7 @@ This page will display customer orders list, you will add an **Object Table** co
 
 This page will show related details for an order. In this page, you will add an **Object Header** control that is used to display information (like first name, last name, date of birth, email address & phone number) about the header of an object and **Static Key Value** control to display key value pair items like address, city, postal code & country.
 
-1. In SAP Business Application Studio project, right-click the **Pages** | **MDK: New Page** | select **Section** | **Next**.
+1. In your MDK project, right-click the **Pages** | **MDK: New Page** | select **Section** | **Next**.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -137,14 +137,14 @@ This page will show related details for an order. In this page, you will add an 
 
     | Property | Value |
     |----|----|
-    | `Service` | Select `SampleServiceV4.service` from the dropdown |
+    | `Service` | Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | select `SalesOrderHeaders` from the dropdown|
 
     <!-- border -->![MDK](img-2.1.1.png)
 
     >`DesignTimeTarget` is a page level property similar to Target but it is only used for design time. This helps in validating the binding context of current page. For more details, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/create-pages.html#page-editor).
 
-4. Set the Caption to **Order Details**.
+4. Once the page opens in the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Order Details**.
 
     <!-- border -->![MDK](img-2.2.png)
 
@@ -213,7 +213,7 @@ When a user taps an order on the Customer Orders page, it should navigate to the
     
 The MDK template generates some generic actions, such as `GenericNavigation.action`, that can be reused at many places in your project and can be overridden with specific information. Of course, you can also create a new action, as you have done in previous tutorials. 
 
-1. In the `Customers_Orders.page`, select the Object Table control, navigate to the **Events** tab. Click the 3 dots icon for the `OnPress` property and select the `Object Browser`.
+1. In the `Customers_Orders.page`, select the Object Table control, navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Object Browser`.
 
     <!-- border -->![MDK](img-3.1.png)
 
@@ -221,7 +221,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
 
     <!-- border -->![MDK](img-3.2.png)   
 
-3. The `OnPress` event has been bound to the `GenericNavigation.action`. You will now override its properties. Click the 3 dots icon for the `OnPress` property and select `Overrides`.
+3. The `OnPress` event has been bound to the `GenericNavigation.action`. You will now override its properties. Click the dotted icon for the `OnPress` property and select `Overrides`.
 
     <!-- border -->![MDK](img-3.3.png)   
 
@@ -252,7 +252,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
    
     | Field | Value |
     |----|----|
-    | `Service`| select `SampleServiceV4.service` from the dropdown |
+    | `Service`| select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | select `{@odata.readLink}/SalesOrders` from the dropdown |
     | `QueryOptions`| `$top=5&$orderby=CreatedAt desc` |
 
@@ -300,11 +300,11 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
 
     <!-- border -->![MDK](img-4.6.png)
 
-8. You may also want to open `SalesOrders_Detail.page` when clicking on any order in `Customers_Detail.page`. In `Customers_Detail.page`, select the Object Table, click the 3 dots icon under the **Events** tab for the `OnPress` event to open the **Object Browser**. Select `GenericNavigation.action` and click **OK**. 
+8. You may also want to open `SalesOrders_Detail.page` when clicking on any order in `Customers_Detail.page`. In `Customers_Detail.page`, select the Object Table, click the dotted icon under the **Events** tab for the `OnPress` event to open the **Object Browser**. Select `GenericNavigation.action` and click **OK**. 
 
     <!-- border -->![MDK](img-4.7.png)
 
-9.  You will now override its properties. Click the 3 dots icon for the `OnPress` property and select `Overrides`.
+9.  You will now override its properties. Click the dotted icon for the `OnPress` property and select `Overrides`.
 
     <!-- border -->![MDK](img-4.8.png)
 
@@ -370,7 +370,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
         // Retrieves the current customer's information from the context
         const currentCustomer = context.getPageProxy().binding['@odata.readLink'];
         // Counts the number of sales orders associated with the current customer.
-        return context.count('/demosampleapp/Services/SampleServiceV4.service', currentCustomer + '/SalesOrders', '').then((count) => {
+        return context.count('/demosampleapp/Services/com_sap_edm_sampleservice_v4.service', currentCustomer + '/SalesOrders', '').then((count) => {
             return count;
         });
     }
@@ -390,11 +390,11 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
 
 7. You may also want to open **Customer Orders** page when clicking **See All** to see a complete list of orders belong to a particular customer. 
     
-    Navigate to the **Events** tab for the Footer control. Click the 3 dots icon for the `OnPress` property and select the `Object Browser`. Bound it to the `GenericNavigation.action`.
+    Navigate to the **Events** tab for the Footer control. Click the dotted icon for the `OnPress` property and select the `Object Browser`. Bound it to the `GenericNavigation.action`.
 
     <!-- border -->![MDK](img-6.6.png)
 
-8. You will now override its properties. Click the 3 dots icon for the `OnPress` property and select `Overrides`. 
+8. You will now override its properties. Click the dotted icon for the `OnPress` property and select `Overrides`. 
 
     <!-- border -->![MDK](img-6.7.png)
 
@@ -406,7 +406,7 @@ The MDK template generates some generic actions, such as `GenericNavigation.acti
     
     <!-- border -->![MDK](img-6.8.png)
 
-### Deploy the application
+### Deploy the Project
 
 Deploy the updated application to your MDK client.
 
@@ -414,16 +414,16 @@ Deploy the updated application to your MDK client.
 
     <!-- border -->![MDK](img-7.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-7.2.png)
 
-    You should see success message for both deployments.
+    You should see **Deploy to Mobile Services successfully!** message.
 
     <!-- border -->![MDK](img-7.3.png)
 
 
-### Run the app
+### Run the Project
 
 [OPTION BEGIN [Android]]
 
@@ -472,35 +472,5 @@ Deploy the updated application to your MDK client.
     ![MDK](img-8.10.png)
 
 [OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-8.11.png)
-
-    >If you see the error `404 Not Found: Requested route ('xxxxx-dev-nsdemosampleapp-approuter.cfapps.xxxx.hana.ondemand.com') does not exist.` while accessing the web application, make sure that in your space cockpit, highlight applications are in started state.
-
-    ><!-- border -->![MDK](img-8.12.png)
-
-2. Click **Customers** | click a customer record. You will see the **Customer Orders** area in customer detail page and also total count of orders.
-
-    <!-- border -->![MDK](img-8.13.png)
-
-    >If you see _No Customer Orders Found_ message, try with other customer record.
-
-3. Clicking on any order navigates to its details page.
-
-    <!-- border -->![MDK](img-8.14.png)
-
-4. Navigate back to **Customer Detail** page, tap **See All**, which navigates to the **Customer Orders** page.
-
-    <!-- border -->![MDK](img-8.15.png)
-
-    <!-- border -->![MDK](img-8.16.png)
-
-[OPTION END]
-
-
 
 ---

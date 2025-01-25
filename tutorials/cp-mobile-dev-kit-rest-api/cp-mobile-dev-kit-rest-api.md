@@ -21,7 +21,6 @@ author_profile: https://github.com/jitendrakansal
   - How to create a mobile project in SAP Build Lobby
   - How to configure a Mobile Services application in SAP Business Application Studio via Storyboard
   - How to configure a REST endpoint as a destination in Mobile Services application
-  - How to define a REST endpoint as a destination in Cloud Foundry
   - How to create a MDK Service file pointing to REST endpoint destination
   - How to use `RestService SendRequest` Action to make directly call to `Petstore` API
 
@@ -238,15 +237,17 @@ You will add an **Object Table** control  item on `Main.page` to display the lis
 
     <!-- border -->![MDK](img-7.1.png)
 
-2. Select deploy target as **Mobile & Cloud**.
-
-    MDK editor will deploy the metadata to Mobile Services (for Mobile application) followed by to Cloud Foundry (for Web application).
+2. Select deploy target as **Mobile Services**.
 
     <!-- border -->![MDK](img-7.2.png)
 
-    Ensure that you see successful messages for both deployments.
+    If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
     <!-- border -->![MDK](img-7.3.png)
+
+    You should see **Deploy to Mobile Services successfully!** message.
+
+    <!-- border -->![MDK](img-7.4.png)
 
 
 ### Display the QR code for onboarding the Mobile app
@@ -284,28 +285,6 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 After accepting the app update, you will see the Pets list on the **Main** page.
 
 ![MDK](img-8.4.png)
-
-[OPTION END]
-
-[OPTION BEGIN [Web]]
-
-Download the zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/4-Level-Up-with-the-Mobile-Development-Kit/7-Consume-rest-api-in-mdk-app/swagger_petstore.zip) and unzip it on your machine.
-
-Navigate to **Connectivity** **&rarr;** **Destinations** to create a BTP destination, click **Import Destination** to import the extracted file and click **Save**.
-
-<!-- border -->![MDK](img-8.5.png)
-
-Click the highlighted button to open the MDK Web application in a browser. Enter your SAP BTP credentials if asked.
-
-<!-- border -->![MDK](img-8.6.png)
-
->You can also open the MDK web application by accessing its URL from `.project.json` file.
-<!-- border -->![MDK](img-8.7.png)
-
-You will see the Pets list on the **Main** page.
-
-<!-- border -->![MDK](img-8.8.png)
-
 
 [OPTION END]
 
@@ -516,9 +495,9 @@ You will add a button to the `Main.page` called **Add**. When you click on this 
 
     <!-- border -->![MDK](img-13.3.png)
 
-### ReDeploy the Project
+### Redeploy the Project
 
-Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then select deploy target as **Mobile & Cloud**.
+Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then Select deploy target as **Mobile Services**.
 
 >Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
 
@@ -556,22 +535,6 @@ Right-click the `Application.app` file in the project explorer pane,  select **M
 3.  Fill out the details to create a new Pet record.
 
     ![MDK](img-16.6.png)
-
-[OPTION END]
-
-[OPTION BEGIN [Web]]
-
-1. Either click the highlighted button or refresh the web page to load the changes.
-
-    <!-- border -->![MDK](img-16.7.png)
-
-2. Tap Add button on `Main.page` to navigate to Create Pet page.
-
-    <!-- border -->![MDK](img-16.8.png)
-
-3.  Fill out the details to create a new Pet record.
-
-    <!-- border -->![MDK](img-16.9.png)
 
 [OPTION END]
 

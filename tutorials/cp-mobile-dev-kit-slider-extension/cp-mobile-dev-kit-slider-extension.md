@@ -219,7 +219,7 @@ You will add this registered control as a Form Cell control in a section page.
 
     <!-- border -->![MDK](img-3.6.png)
 
-6. Switch to the **Events** tab and click the 3 dots icon for the `OnPress` property to create a new action.
+6. Switch to the **Events** tab and click the dotted icon for the `OnPress` property to create a new action.
 
     <!-- border -->![MDK](img-3.7.png)
 
@@ -269,7 +269,7 @@ You will add this registered control as a Form Cell control in a section page.
 
     You will create a new rule binding it to the `OnValueChange` event of the above control.
 
-    Navigate to **Events** tab, click the 3 dots icon for the `OnValueChange` property to create a new rule.
+    Navigate to **Events** tab, click the dotted icon for the `OnValueChange` property to create a new rule.
 
     <!-- border -->![MDK](img-3.13.png)
 
@@ -808,10 +808,10 @@ You will add this registered control as a Form Cell control in a section page.
     }    
     ```
 
-### Deploy the application
+### Deploy the Project
 
 
-So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will deploy the application definitions to Mobile Services to use in the Mobile client.
+So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
 1. Right-click `Application.app` and select **MDK: Deploy**.
 
@@ -850,7 +850,7 @@ The On-boarding QR code is now displayed.
 >Leave the Onboarding dialog box open for the next step.
 
 
-### Run the app
+### Run the Project
 
 
 >Ensure that you choose the correct device platform tab above. Once you have scanned and onboarded using the onboarding URL, it will be remembered. If you log out and onboard again, you will be prompted to either continue using the current application or scan a new QR code.
