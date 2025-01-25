@@ -109,7 +109,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
-6. In the **Data Collections** step, provide the below information and click **Finish**:
+6. In the **Data Collections** step, provide the below information and click **Finish**. Data Collections step retrieves the entity sets information for the selected destination.
 
     | Field | Value |
     |----|----|
@@ -118,7 +118,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `Enable Offline` | It's enabled by default |
     | `Select all data collections` | Leave it as it is |
     | `What types of data will your application contain?` | Select `Customers` and `Products` |
-
+    
     <!-- border -->![MDK](img-2.8.png) 
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP admin UI.
@@ -523,7 +523,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
 
     >**Server URL**: Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app. Click the **APIs** tab. Copy the **Server** URL.
 
-    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `com_sap_edm_sampleservice_v4` destination.
+    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `com.sap.edm.sampleservice.v4` destination.
     ><!-- border -->![MDK](img-7.3.png)
     >A new tab opens in the browser. Remove `?auth=uaa` and add `/Products` to view product list. Copy any `ProductId` and paste it in the `index.html`.
     ><!-- border -->![MDK](img-7.4.png)
@@ -558,7 +558,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
     <!-- border -->![MDK](img-7.2.png)
 
     >**Server URL**: Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app. Click the **APIs** tab. Copy the **Server** URL.
-    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `SampleService4` destination.
+    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `com.sap.edm.sampleservice.v4` destination.
     ><!-- border -->![MDK](img-7.3.png)
     >A new tab opens in the browser. Remove `?auth=uaa` and add `/Products` to view product list. Copy any `ProductId` and paste it in the `index.html`.
     ><!-- border -->![MDK](img-7.4.png)

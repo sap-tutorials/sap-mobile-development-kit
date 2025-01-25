@@ -79,7 +79,7 @@ In the Visual Studio Code, click the **Extensions** pane and install the **mobil
 
 ### Open the MDK metadata project in VS Code
 
-Open the extracted `MDKApp` folder in VS Code. 
+Open the extracted `mdkapp` folder in the VS Code. 
 
 <!-- border -->![MDK](img-6.1.png)
 
