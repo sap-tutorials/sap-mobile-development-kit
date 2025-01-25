@@ -351,7 +351,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     <!-- border -->![MDK](img-5.11.png)
 
-    You can also Run the Project in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then Run the Projectlication for the target device.
+    You can also Run the Project in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then Run the project for the target device.
 
     Once, above command gets successfully executed, you will see new MDK client up and running in your device.
 

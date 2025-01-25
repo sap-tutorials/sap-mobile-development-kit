@@ -79,8 +79,6 @@ Make sure you have already configured an app in Mobile Services admin UI and hav
 
 7. For this tutorial, there is no certificate configuration needed. Click Finish.
 
-    <!-- border -->![MDK](img-0.8.png)
-
     You can see that OData Annotation information is updated in the `SampleServiceV4` destination.
 
     <!-- border -->![MDK](img-0.9.png)

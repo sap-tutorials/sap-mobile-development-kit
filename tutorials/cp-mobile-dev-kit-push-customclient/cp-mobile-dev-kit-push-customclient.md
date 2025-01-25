@@ -14,7 +14,7 @@ author_profile: https://github.com/jitendrakansal
 
 ## Prerequisites
 - **Tutorial**: [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html)
-- **Tutorial**: Follow steps 2-5 in [Enable Push Notifications in the MDK Public Store Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push.html) to create an MDK metadata project
+- **Tutorial**: Follow steps 2-6 in [Enable Push Notifications in the MDK Public Store Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push.html) to create an MDK metadata project
 - **Tutorial**: Follow steps 1-3 in [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) to create your local MDK project
 - **Apple ID**: A paid Apple developer account is required.
 

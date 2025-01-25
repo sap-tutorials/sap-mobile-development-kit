@@ -64,7 +64,7 @@ To create the Customer List page, you will create a **Section page** and drag th
     | `Service`| Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
 
-    <!-- border -->![MDK](img-1.6.gif)
+    <!-- border -->![MDK](img-1.6.png)
 
 7. In the **Properties** pane, click the **link icon** to open the Object Browser for the **Description** property. Double click the `City` property of the Customer entity to set it as the binding expression and click **OK**.
 

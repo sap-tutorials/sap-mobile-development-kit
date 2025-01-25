@@ -23,7 +23,7 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
 ### Go to your global account on SAP BTP
 
-1. In your web browser, open the [SAP BTP Trial admin UI](https://account.hanatrial.ondemand.com/admin UI).
+1. In your web browser, open the [SAP BTP Trial admin UI](https://account.hanatrial.ondemand.com).
 
 2. Provide the login details to log on to your account.
 

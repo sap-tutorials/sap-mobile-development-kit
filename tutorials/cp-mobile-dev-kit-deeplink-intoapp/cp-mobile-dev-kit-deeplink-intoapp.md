@@ -463,7 +463,7 @@ Now that the MDK application is configured to act when a request from external s
     Then run `tns run ios --device <device identifier>` command to launch the MDK client on your iOS device.
     <!-- border -->![MDK](img-6.15.png)
 
-    >You can also Run the Project in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then Run the Projectlication for the target device.
+    >You can also Run the Project in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then Run the project for the target device.
 
     Once, above command gets successfully executed, you will see new MDK client up and running in iOS simulator.
 
