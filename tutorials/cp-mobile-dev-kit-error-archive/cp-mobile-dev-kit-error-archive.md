@@ -335,7 +335,7 @@ On the Error Details page, you will implement how to navigate to respective reco
     */
     export default function ErrorArchive_DecideWhichEditPage(context) {
         //Current binding's root is the errorArchiveEntity:
-        let errorArchiveEntity = context.binding;
+        let errorArchiveEntity = context.currentPage.context.binding;
         //Get the affectedEntity object out of it
         let affectedEntity = errorArchiveEntity.AffectedEntity;
         console.log("Affected Entity Is:");
