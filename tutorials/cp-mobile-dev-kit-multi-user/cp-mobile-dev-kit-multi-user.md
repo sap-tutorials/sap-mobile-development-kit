@@ -178,7 +178,7 @@ Now that the MDK application is created, you will Deploy the Project definitions
 
     <!-- border -->![MDK](img-3.1.png)
 
-2. Under Assigned Features, click **Mobile Settings Exchange**.
+2. Under Assigned Features, click **Client Settings**.
 
     <!-- border -->![MDK](img-3.2.png)
 

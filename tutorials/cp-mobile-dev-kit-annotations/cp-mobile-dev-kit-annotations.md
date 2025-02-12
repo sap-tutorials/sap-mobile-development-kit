@@ -42,7 +42,7 @@ Sample backend in SAP Mobile Services provides annotation functionality for **Pr
 
 Make sure you have already configured an app in Mobile Services admin UI and have added Sample service as per step 2 in [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html) tutorial. The `com.sap.edm.sampleservice.v4` destination is immutable, hence, for this tutorial you need to create a new destination by copying the settings from this destination.
 
-1. In SAP MDK Demo App configuration, click **Mobile Connectivity**.
+1. In SAP MDK Demo App configuration, click **Connectivity**.
 
     <!-- border -->![MDK](img-0.3.png)
 

@@ -279,9 +279,13 @@ Now that the MDK application is configured to act when a request from external s
 
     <!-- border -->![MDK](img-4.5.png)
 
-11. Switch to the SAP Mobile Services UI, navigate to the **Application Links** tab and click on the pencil next to the **Android Universal Links** section.
+11. Switch to the SAP Mobile Services UI, navigate to the **Settings** > **Application Links** tab.
 
     <!-- border -->![MDK](img-4.6.png)
+
+12.  Click on the pencil next to the **Android Universal Links** section.
+
+    <!-- border -->![MDK](img-4.6.1.png)
 
 13. Provide the below information and click **OK**.
 
@@ -302,7 +306,11 @@ Now that the MDK application is configured to act when a request from external s
 
     <!-- border -->![MDK](img-4.1.png)
 
-2. Click **Application Links** tab and click on the pencil next to the **Apple Universal Links** section.
+2. Navigate to the **Settings** > **Application Links** tab.
+
+    <!-- border -->![MDK](img-4.6.png)
+ 
+3. Click on the pencil next to the **Apple Universal Links** section.
 
     <!-- border -->![MDK](img-4.8.png)
 
@@ -523,7 +531,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
 
     >**Server URL**: Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app. Click the **APIs** tab. Copy the **Server** URL.
 
-    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `com.sap.edm.sampleservice.v4` destination.
+    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Connectivity** **&rarr;** click on **Launch In Browser** icon for `com.sap.edm.sampleservice.v4` destination.
     ><!-- border -->![MDK](img-7.3.png)
     >A new tab opens in the browser. Remove `?auth=uaa` and add `/Products` to view product list. Copy any `ProductId` and paste it in the `index.html`.
     ><!-- border -->![MDK](img-7.4.png)
@@ -558,7 +566,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
     <!-- border -->![MDK](img-7.2.png)
 
     >**Server URL**: Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app. Click the **APIs** tab. Copy the **Server** URL.
-    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Mobile Connectivity** **&rarr;** click on **Launch In Browser** icon for `com.sap.edm.sampleservice.v4` destination.
+    >**Product ID**: In SAP Mobile Services UI, click the **APIs** tab **&rarr;** **Connectivity** **&rarr;** click on **Launch In Browser** icon for `com.sap.edm.sampleservice.v4` destination.
     ><!-- border -->![MDK](img-7.3.png)
     >A new tab opens in the browser. Remove `?auth=uaa` and add `/Products` to view product list. Copy any `ProductId` and paste it in the `index.html`.
     ><!-- border -->![MDK](img-7.4.png)

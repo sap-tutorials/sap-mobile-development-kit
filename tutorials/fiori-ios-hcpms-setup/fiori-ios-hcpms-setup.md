@@ -51,6 +51,7 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
     ![support button click](img-2.4.png)
 
+
 5. The SAP mobile service admin UI dialog, **Select API Endpoint**, appears. Before you click on **Login**, make sure to provide the correct API endpoint belongs to your BTP subaccount. 
 
     ![support button click](img-2.5.png)

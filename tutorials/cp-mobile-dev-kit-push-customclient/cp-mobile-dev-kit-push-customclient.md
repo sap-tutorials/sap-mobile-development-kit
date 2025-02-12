@@ -210,7 +210,7 @@ To enable your app for push notifications, you need to carry out the following t
 
 [OPTION BEGIN [Android]]
 
-1. In Mobile Services admin UI, navigate to `Mobile Applications` | `Native/MDK` | `myapp.mdk.demo` | `Mobile Push Notification`. 
+1. In Mobile Services admin UI, navigate to `Mobile Applications` | `Native/MDK` | `myapp.mdk.demo` | `Push Notification`. 
 
 2. If you have selected _Predefined for_ option, switch to the empty value. You should see Android option showing up on the page. Click **Browse…** to load the downloaded private key file. 
 
@@ -224,7 +224,7 @@ To enable your app for push notifications, you need to carry out the following t
 
 [OPTION BEGIN [iOS]]
 
-1. In Mobile Services admin UI, navigate to `Mobile Applications` | `Native/MDK` | `myapp.mdk.demo` | `Mobile Push Notification`.
+1. In Mobile Services admin UI, navigate to `Mobile Applications` | `Native/MDK` | `myapp.mdk.demo` | `Push Notification`.
 
 2. If you have selected _Predefined for_ option, switch to the empty value. You should see options showing up on the page. Provide the following details to the **Apple** panel and click **Save**.
 
@@ -299,7 +299,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
 
 3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
-    Navigate to Mobile Services admin UI. In **Mobile Push Notification** feature, switch to **Push Registrations** tab.
+    Navigate to Mobile Services admin UI. In **Push Notification** feature, switch to **Push Registrations** tab.
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
@@ -330,7 +330,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
 
 3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
-    Navigate to Mobile Services admin UI. In **Mobile Push Notification** feature, switch to **Push Registrations** tab.
+    Navigate to Mobile Services admin UI. In **Push Notification** feature, switch to **Push Registrations** tab.
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 

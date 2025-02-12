@@ -61,7 +61,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     <!-- border -->![MDK](img-2.5.png)    
 
-7. In the **Assign Features** step, select **Mobile Sample OData ESPM** from the feature list, and choose **Next**.
+7. In the **Assign Features** step, select **Sample OData ESPM** from the feature list, and choose **Next**.
 
     <!-- border -->![MDK](img-2.6.png)
 
@@ -82,7 +82,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 ### Explore Mobile Sample OData Service
 
-1. Click **Mobile Sample OData ESPM**. 
+1. Click **Sample OData ESPM**. 
 
     <!-- border -->![MDK](img-3.1.png)
 

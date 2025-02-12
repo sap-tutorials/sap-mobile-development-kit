@@ -279,9 +279,9 @@ You can find more details about Cloud Build service in [help documentation](http
 
 [OPTION BEGIN [Standard Client]]
 
-1. In Mobile Services admin UI, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Mobile Cloud Build**.
+1. Navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Cloud Build**.
 
-    > If you do not see **Mobile Cloud Build** feature in the **Assigned Features** list, click the **+** icon to add it.
+    > If you do not see **Cloud Build** feature in the **Assigned Features** list, click the **+** icon to add it.
 
 2. Click **Create Build Job** to build your first build job.
 
@@ -332,9 +332,9 @@ You can find more details about Cloud Build service in [help documentation](http
 
 [OPTION BEGIN [Custom Client]]
 
-1. In Mobile Services admin UI, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Mobile Cloud Build**.
+1. In Mobile Services admin UI, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo` **&rarr;** **Cloud Build**.
 
-    > If you do not see **Mobile Cloud Build** feature in the **Assigned Features** list, click the **+** icon to add it.
+    > If you do not see **Cloud Build** feature in the **Assigned Features** list, click the **+** icon to add it.
 
 2. Click **Create Build Job** to build your first build job.
 

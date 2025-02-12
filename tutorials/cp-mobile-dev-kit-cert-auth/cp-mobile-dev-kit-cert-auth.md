@@ -76,9 +76,13 @@ When you configure an MDK app in Mobile Service admin UI, OAuth security is assi
 
 To enable certificate based authentication, you need to modify **Redirect URL** in **Security** configuration.
 
-1. Under the **Security** tab, click **pencil** icon to make changes to default configuration.
+1. Click the **Security** tile.
 
     <!-- border -->![MDK](img-2.9.png)
+
+2. Click **pencil** icon to make changes to default configuration.
+
+    <!-- border -->![MDK](img-2.9.1.png)
 
 3. Replace the *Redirect URL* with `mdkcertclient://oauth2redirect` parameter, and click **OK** to save the changes. This *Redirect URL* needs to be added in the `AllowedDomains` property while building your branded client (step 3.5).
 
@@ -126,7 +130,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
     >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. This value is provided in step 2 for **Redirect URL**.
      If the URL includes connection settings as URL parameters, these settings will override the ones used by the client. This value `mdkcertclient` needs to match the value provided in step 2 for the Redirect URL. This value also needs to be unique across applications on your device.  If the value is not unique the wrong application may be referenced when redirecting.      
 
-4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
+4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.certs` > **Settings** > **Client Settings** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
     <!-- border -->![MDK](img-3.5.png)
 

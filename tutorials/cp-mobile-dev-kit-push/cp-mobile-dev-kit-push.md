@@ -32,11 +32,11 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ### Define push notification settings in app configuration
 
-1. Open the [SAP Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click **Mobile Push Notification** feature.
+1. Open the [SAP Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click **Push Notification** feature.
 
     <!-- border -->![MDK](img-0.1.png)
 
-    >You can add **Mobile Push Notification** feature by clicking on + icon in case feature is not already assigned to the application.
+    >You can add **Push Notification** feature by clicking on + icon in case feature is not already assigned to the application.
 
 2. Select **SAP Mobile Services Client** under **Predefined for** option, click **Save**.
 
@@ -271,7 +271,7 @@ The On-boarding QR code is now displayed.
 
 3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
-    Navigate to Mobile Services admin UI. In **Mobile Push Notification** feature, switch to **Push Registrations** tab.
+    Navigate to Mobile Services admin UI. In **Push Notification** feature, switch to **Push Registrations** tab.
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
@@ -302,7 +302,7 @@ The On-boarding QR code is now displayed.
 
 3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
-    Navigate to Mobile Services admin UI. In **Mobile Push Notification** feature, switch to **Push Registrations** tab.
+    In Mobile Services admin UI, navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** `myapp.mdk.demo`. Under the **Settings** > **Add-on Features**, click the **Push Notification** feature, and switch to **Push Registrations** tab.
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
