@@ -261,6 +261,7 @@ You will open the `Customers_Create.page` from the Customer List page. For this,
 
 3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.    
 
+
     <!-- border -->![MDK](img-4.3.png)
 
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
