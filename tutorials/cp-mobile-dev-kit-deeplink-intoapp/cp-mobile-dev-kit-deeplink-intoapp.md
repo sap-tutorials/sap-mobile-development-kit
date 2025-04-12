@@ -518,6 +518,7 @@ Now that the MDK application is configured to act when a request from external s
 
 [OPTION END]
 
+
 ### Test the Deep Links
 
 >Make sure you are choosing the right device platform tab above.

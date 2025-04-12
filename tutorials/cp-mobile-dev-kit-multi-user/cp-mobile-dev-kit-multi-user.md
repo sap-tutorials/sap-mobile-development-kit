@@ -260,7 +260,7 @@ Choose an option above based on whether you are testing multi-user functionality
 
 >For an existing single user app it is required to reset the client and re-login before multi-user capability can be enabled.
 
-1. Switch to the SAP Business Application Studio UI. SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
+1. Switch to the SAP Business Application Studio UI. SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Open the `Application.app` and click the **Application QR Code** icon in the editor's header area.
 
     <!-- border -->![MDK](img-7.1.png)
 
