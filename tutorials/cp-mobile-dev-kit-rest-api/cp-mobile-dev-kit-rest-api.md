@@ -148,7 +148,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.9.png)  
 
-5. In the **Basic Information** step, leave the default values as they are, and click **Finish**.
+5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
     <!-- border -->![MDK](img-2.10.png)  
 
@@ -232,8 +232,9 @@ You will add an **Object Table** control  item on `Main.page` to display the lis
 
 ### Deploy the Project
 
+So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
-1. Right-click `Application.app` and select **MDK: Deploy**.
+1. Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** .
 
     <!-- border -->![MDK](img-7.1.png)
 
@@ -252,7 +253,7 @@ You will add an **Object Table** control  item on `Main.page` to display the lis
 
 ### Display the QR code for onboarding the Mobile app
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
+SAP Business Application Studio includes a feature that displays a QR code for onboarding in the mobile client. To view the onboarding QR code, click the **Application QR Code** icon in the editor's header area.
 
 <!-- border -->![MDK](img-8.1.png)
 
@@ -497,11 +498,9 @@ You will add a button to the `Main.page` called **Add**. When you click on this 
 
 ### Redeploy the Project
 
-Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then Select deploy target as **Mobile Services**.
+Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** 
 
->Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
-
-><!-- border -->![MDK](img-15.1.png)
+><!-- border -->![MDK](img-7.1.png)
 
 
 ### Update the app

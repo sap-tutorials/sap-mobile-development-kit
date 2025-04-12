@@ -112,11 +112,11 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.6.png)     
 
-5. In the **Basic Information** step, select the **MDK Template Type** as **CRUD**, leave the other options as they are, and click **Next**.
+5. In the **Basic Information** step, select the **MDK Template Type** as **CRUD**, leave the other options as they are. Since the option to **Enable Auto-Deployment to Mobile Services After Creation** is set to *Yes*, the MDK project will automatically be deployed to the Mobile Services after it is generated. Click **Next** to continue.
 
     <!-- border -->![MDK](img-2.7.png)  
 
-    >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
+    >The `CRUD` template generates the offline or online actions, rules, messages and pages to view, update, and manage records. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
 6. In the **Data Collections** step, provide the below information and click **Finish**. Data Collections step retrieves the entity sets information for the selected destination.
 
@@ -136,44 +136,13 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     >Data Collections step retrieves the entity sets information for the selected destination.
 
-7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
+7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer and automatically deployed to the Mobile Services based on your selections. You will now see a QR code for onboarding the mobile app. Leave the Onboarding dialog box open for the next step.
  
     <!-- border -->![MDK](img-2.9.png) 
 
-### Deploy the Project
+    <!-- border -->![MDK](img-2.10.png) 
 
-1. Right-click `Application.app` and select **MDK: Deploy**.
-
-    <!-- border -->![MDK](img-3.1.png)
-
-2. Select deploy target as **Mobile Services**.
-
-    <!-- border -->![MDK](img-3.2.png)
-
-    If you want to enable source for debugging the deployed bundle, then choose **Yes**.
-
-    <!-- border -->![MDK](img-3.3.png)
-
-    You should see **Deploy to Mobile Services successfully!** message.
-
-    <!-- border -->![MDK](img-3.4.png)
-
-
-### Display the QR code for onboarding the Mobile app
-
-
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
-
-<!-- border -->![MDK](img-3.5.png)
-
-The On-boarding QR code is now displayed.
-
-<!-- border -->![MDK](img-3.6.png)
-
->Leave the Onboarding dialog box open for the next step.
-
-### Run the Project in MDK client
-
+### Run the Project
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and on-board again, you will be asked either to continue to use current application or to scan new QR code.
 
@@ -259,7 +228,6 @@ The On-boarding QR code is now displayed.
 
 
 ### Handle the Affected Records And Modify with Correct Data
-
 
 On the Error Details page, you will implement how to navigate to respective record to let users to modify the affected record with correct values and will also display the Affected Entity Object. Once the record is modified with the correct values, user can again sync it with backend.
 
@@ -408,11 +376,11 @@ On the Error Details page, you will implement how to navigate to respective reco
 
 ### Redeploy the Project
 
-Right-click the `Application.app` file in the project explorer pane,  select **MDK: Deploy** and then select deploy target as **Mobile Services**.
+You will now deploy the updated project to your MDK client.
 
->Alternatively, you can select *MDK: Redeploy* in the command palette (View menu>Find Command OR press Command+Shift+p on Mac OR press Ctrl+Shift+P on Windows machine), it will perform the last deployment.
+Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** 
 
-><!-- border -->![MDK](img-6.1.png)
+<!-- border -->![MDK](img-6.png)
 
 ### Update the app
 

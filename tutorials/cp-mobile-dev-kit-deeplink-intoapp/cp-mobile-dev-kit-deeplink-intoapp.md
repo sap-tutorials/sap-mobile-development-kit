@@ -103,11 +103,16 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.6.png)     
 
-5. In the **Basic Information** step, leave the default values as they are, and click **Next**.
+5. In the **Basic Information** step, provide the below information and click **Next**. You will modify the generated project in next step and will deploy it later.
+
+    | Field | Value |
+    |----|----|
+    | `MDK Template Type` | `List Detail`  |
+    | `Enable Auto-Deployment to Mobile Services After Creation` | Select `No` |
 
     <!-- border -->![MDK](img-2.7.png)  
 
-    >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
+    >The `List Detail` template generates the offline or online actions, rules, messages and pages to view records. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
 6. In the **Data Collections** step, provide the below information and click **Finish**. Data Collections step retrieves the entity sets information for the selected destination.
 
@@ -222,7 +227,7 @@ MDK provides an `OnLinkDataReceived` event in the `Application.app` that is call
 
 Now that the MDK application is configured to act when a request from external source is received, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
-1. Right-click `Application.app` and select **MDK: Deploy**.
+1. Switch to the `Application.app` tab, click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services**.
 
     <!-- border -->![MDK](img-3.1.png)
 

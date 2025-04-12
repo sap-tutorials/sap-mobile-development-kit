@@ -114,7 +114,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.6.png)     
 
-5. In the **Basic Information** step, leave the default values as they are, and click **Finish**.
+5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
     <!-- border -->![MDK](img-2.7.png)  
 
@@ -222,7 +222,7 @@ In `Application.app` file, bind the `OnDidUpdate` event to `PushRegister.action`
 
 So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
-1. Right-click `Application.app` and select **MDK: Deploy**.
+1. Click the **Deploy** option in the `Application.app` header area, and then choose the deployment target as **Mobile Services** .
 
     <!-- border -->![MDK](img-5.1.png)
 
@@ -245,8 +245,7 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 ### Display the QR code for app onboarding the Mobile app
 
-
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. To view the onboarding QR code, click the **Application QR Code** icon in the editor's header area.
 
 <!-- border -->![MDK](img-6.1.png)
 

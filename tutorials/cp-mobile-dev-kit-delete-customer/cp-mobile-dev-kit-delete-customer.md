@@ -165,19 +165,11 @@ When the above OData action is executed, you may want to display messages on its
 
 ### Deploy the Project
 
-Deploy the updated application to your MDK client.
+You will now deploy the updated project to your MDK client.
 
-1. Right-click `Application.app` and select **MDK: Deploy**.
+Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** .
 
-    <!-- border -->![MDK](img-3.1.png)
-
-2. Select deploy target as **Mobile Services**.
-
-    <!-- border -->![MDK](img-3.2.png)
-
-    You should see **Deploy to Mobile Services successfully!** message.
-
-    <!-- border -->![MDK](img-3.3.png)
+<!-- border -->![MDK](img-3.png)
 
 ### Run the Project
 

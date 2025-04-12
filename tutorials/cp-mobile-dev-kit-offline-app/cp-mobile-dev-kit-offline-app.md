@@ -63,7 +63,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 ### Configure the Project Using Storyboard
 
-The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
+The Storyboard provides a graphical view of the project's runtime resources, external resources, UI of the project, and the connections between them. This allows for a quick understanding of the project's structure and components.
 
 - **Runtime Resources**: In the Runtime Resources section, you can see the mobile services application and mobile destination used in the project, with a dotted-line connected to the External Resources.
 - **External Resources**: In the External Resources section, you can see the external services used in the project, with a dotted-line connection to the Runtime Resource or the UI app.
@@ -95,11 +95,11 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.6.png)     
 
-5. In the **Basic Information** step, select the **MDK Template Type** as **Base**, leave the other options as they are, and click **Next**.
+5. In the **Basic Information** step, select the **MDK Template Type** as **Base**, leave the other options as they are. Since the option to **Enable Auto-Deployment to Mobile Services After Creation** is set to *Yes*, the MDK project will automatically be deployed to the Mobile Services after it is generated. Click **Next** to continue.
 
     <!-- border -->![MDK](img-2.7.png)  
 
-    >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
+    >The `Base` template generates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
 6. In the **Data Collections** step, provide the below information and click **Finish**. Data Collections step retrieves the entity sets information for the selected destination.
 
@@ -117,64 +117,11 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     >Since you have Enable Offline set to *Yes*, the generated application will be offline enabled in the MDK Mobile client.
 
-7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
+7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer and automatically deployed to the Mobile Services based on your selections. You will now see a QR code for onboarding the mobile app. Leave the Onboarding dialog box open for the next step.
  
     <!-- border -->![MDK](img-2.9.png) 
 
-### Get familiar with the generated project structure
-
-This is how the project structure looks like within the workspace.
-
-![MDK](img-3.1.png)
-
-These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
-
-- **`InitializeOffline.action`**: For Mobile applications, this action binds the application to the Mobile Services Offline OData server and downloads the required data from the backend destination `com.sap.edm.sampleservice.v4` to the offline store on the mobile device. 
-
-- **`DownloadOffline.action`** and **`UploadOffline.action`**: These actions are applicable to Mobile client only. Using Mobile app initialization, data is downloaded to the offline store. If you want to have the application download any updated data from the backend server or upload changed data to the backend destination (`com.sap.edm.sampleservice.v4`), these actions will be needed.
-
-- **`Success & Failure Message action`**: Here are some messages showing up in the app on a successful or failure of data initialization, sync etc.
-
-- **`Main.page`**: This is the first page of your MDK application that is shown. For this application you will use this as a launching page to get to application functionality.
-
-- **`OnWillUpdate.js`**: MDK applications automatically download updates and apply them to the client without the end-user needing to take any action. The `OnWillUpdate` rule empowers the user to run business logic before the new definitions are applied. This allows the app designer to include logic to prompt the user to accept or defer applying the new definitions based on their current activity. For example, if the end-user is currently adding new customer details or in the middle of a transaction, they will be able to defer the update. The app will prompt again the next time it checks for updates.
-
-- **`Web`**: In this folder, you can provide web specific app resource files and configurations.
-
-- **`Application.app`**: this is the main configuration file for your application from within SAP Business Application Studio. Here you define your start page (here in this tutorial, it is main.page), action settings for different stages of the application session lifecycle, push notifications, and more.
-
-### Deploy the Project
-
-So far, you have learned how to quickly get started with developing an MDK project in the SAP Business Application Studio editor. Now, you will deploy the project to Mobile Services to use it in the Mobile client.
-
-1. Right-click `Application.app` and select **MDK: Deploy**.
-
-    <!-- border -->![MDK](img-4.1.png)
-
-2. Select deploy target as **Mobile Services**.
-
-    <!-- border -->![MDK](img-4.2.png)
-
-    If you want to enable source for debugging the deployed bundle, then choose **Yes**.
-
-    <!-- border -->![MDK](img-4.3.png)
-
-    You should see **Deploy to Mobile Services successfully!** message.
-
-    <!-- border -->![MDK](img-4.4.png)
-
-
-### Display the QR code for onboarding the Mobile Client
-
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
-
-<!-- border -->![MDK](img-5.1.png)
-
-The On-boarding QR code is now displayed.
-
-<!-- border -->![MDK](img-5.2.png)
-
->Leave the Onboarding dialog box open for the next step.
+    <!-- border -->![MDK](img-2.10.png) 
 
 ### Run the Project
 
@@ -201,5 +148,25 @@ After accepting the app update, you will see the **Main** page, along with a use
 ![MDK](img-6.2.png)
 
 [OPTION END]
+
+### Get familiar with the generated project structure
+
+This is how the project structure looks like within the workspace.
+
+![MDK](img-3.1.png)
+
+These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
+
+- **`InitializeOffline.action`**: For Mobile applications, this action binds the application to the Mobile Services Offline OData server and downloads the required data from the backend destination `com.sap.edm.sampleservice.v4` to the offline store on the mobile device. 
+
+- **`DownloadOffline.action`** and **`UploadOffline.action`**: These actions are applicable to Mobile client only. Using Mobile app initialization, data is downloaded to the offline store. If you want to have the application download any updated data from the backend server or upload changed data to the backend destination (`com.sap.edm.sampleservice.v4`), these actions will be needed.
+
+- **`Success & Failure Message action`**: Here are some messages showing up in the app on a successful or failure of data initialization, sync etc.
+
+- **`Main.page`**: This is the first page of your MDK application that is shown. For this application you will use this as a launching page to get to application functionality.
+
+- **`OnWillUpdate.js`**: MDK applications automatically download updates and apply them to the client without the end-user needing to take any action. The `OnWillUpdate` rule empowers the user to run business logic before the new definitions are applied. This allows the app designer to include logic to prompt the user to accept or defer applying the new definitions based on their current activity. For example, if the end-user is currently adding new customer details or in the middle of a transaction, they will be able to defer the update. The app will prompt again the next time it checks for updates.
+
+- **`Application.app`**: this is the main configuration file for your application from within SAP Business Application Studio. Here you define your start page (here in this tutorial, it is main.page), action settings for different stages of the application session lifecycle, push notifications, and more.
 
 ---

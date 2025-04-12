@@ -100,7 +100,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.6.png)     
 
-5. In the **Basic Information** step, leave the default values as they are, and click **Finish**.
+5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
     <!-- border -->![MDK](img-2.7.png)  
 
@@ -218,10 +218,9 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
 
 ### Deploy the Project
 
-
 So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
-1. Right-click `Application.app` and select **MDK: Deploy**.
+1. Switch to the `Main.page` tab, click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services**.
 
     <!-- border -->![MDK](img-5.1.png)
 

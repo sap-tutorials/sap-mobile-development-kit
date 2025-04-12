@@ -106,11 +106,11 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.6.png)     
 
-5. In the **Basic Information** step, leave the default values as they are, and click **Next**.
+5. In the **Basic Information** step, select the **MDK Template Type** as **List Detail**, leave the other options as they are. Since the option to **Enable Auto-Deployment to Mobile Services After Creation** is set to *Yes*, the MDK project will automatically be deployed to the Mobile Services after it is generated. Click **Next** to continue.
 
     <!-- border -->![MDK](img-2.7.png)  
 
-    >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
+    >The `List Detail` template generates the offline or online actions, rules, messages and pages to view records. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
 6. In the **Data Collections** step, provide the below information and click **Finish**. Data Collections step retrieves the entity sets information for the selected destination.
 
@@ -465,7 +465,7 @@ You will add this registered control in the generated `Customers_Detail.page`.
 
 So far, you have learned how to build an MDK application in the SAP Business Application Studio editor. Now, you will Deploy the Project definitions to Mobile Services to use in the Mobile client.
 
-1. Right-click `Application.app` and select **MDK: Deploy**.
+1. Switch to the `Customers_Detail.page` tab, click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services**.
 
     <!-- border -->![MDK](img-5.1.png)
 
@@ -640,9 +640,9 @@ In this step, you will Run the Project on an Android device.
 
 [OPTION BEGIN [iOS]]
 
-SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. C
+SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client.
 
-1. Click on `Application.app` to open it in MDK Application Editor, and then click the **Application QR Code** icon.
+1. To view the onboarding QR code, click the **Application QR Code** icon in the editor's header area.
 
     <!-- border -->![MDK](img-8.13.png)
 

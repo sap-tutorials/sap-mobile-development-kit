@@ -29,27 +29,9 @@ Use the debugging feature provided by the Mobile Development Kit extension for V
 
 ### Create a New Project Using SAP Build Code and Configure it using Storyboard
 
-This step includes creating the mobile development kit project in the editor. Follow steps 1 and 2 from this [tutorial](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html) to create your MDK project. 
+1. This step includes creating the mobile development kit project in the editor. Follow steps 1 and 2 from this [tutorial](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html) to create your MDK project and deploy to mobile services.
 
-### Deploy the project
-
-You will now deploy your MDK project to SAP Mobile Services, enabling it for debugging.
-
-1. Right-click `Application.app` and select **MDK: Deploy**.
-
-    <!-- border -->![MDK](img-2.1.png)
-
-2. Select deploy target as **Mobile Services**.
-
-    <!-- border -->![MDK](img-2.2.png)
-
-3. Choose **Yes** to enable source for debugging the deployed bundle.
-
-    <!-- border -->![MDK](img-2.3.png)
-
-    You should see **Deploy to Mobile Services successfully!** message.
-
-    <!-- border -->![MDK](img-2.4.png)
+2. Close the onboarding QR code window, as it is not needed for this tutorial. 
 
 ### Download your MDK metadata project from SAP Business Application Studio
 
