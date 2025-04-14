@@ -242,7 +242,6 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 ### Add NativeScript plugin and External dependencies in your local .mdkproject
 
-
 In order to use the existing `NativeScript` plugin in MDK client, you will need to first add it in `.mdkproject` and then create your branded MDK client.
 
 1. Make sure that you have already completed steps 1 to 3 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.

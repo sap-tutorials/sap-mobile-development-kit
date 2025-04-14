@@ -286,7 +286,7 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
     <!-- border -->![MDK](img-4.2.png)
 
-   If you want to enable source for debugging the deployed bundle, then choose **Yes**.
+    If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
     <!-- border -->![MDK](img-4.3.png)
 

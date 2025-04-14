@@ -502,7 +502,6 @@ Click the **Deploy** option in the editor's header area, and then choose the dep
 
 ><!-- border -->![MDK](img-7.1.png)
 
-
 ### Update the app
 
 [OPTION BEGIN [Android]]

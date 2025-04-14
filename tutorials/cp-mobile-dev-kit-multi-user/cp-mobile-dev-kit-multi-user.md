@@ -119,6 +119,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 6. In the **Data Collections** step, provide the below information and click **Finish**. Data Collections step retrieves the entity sets information for the selected destination.
 
     | Field | Value |
+    |----|----|
     | `Enter a path to service (e.g. /sap/opu/odata/sap/SERVICE_NAME)` | Leave it as it is  |
     | `Select the Service Type` | Leave the default value as `OData` |
     | `Enable Offline` | It's enabled by default |

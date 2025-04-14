@@ -255,7 +255,6 @@ The On-boarding QR code is now displayed.
 
 >Leave the Onboarding dialog box open for the next step.
 
-
 ### Test a Simple Notification in MDK client
 
 >Make sure you are choosing the right device platform tab above. Once you have scanned and on-boarded using the onboarding URL, it will be remembered. When you Log out and on-board again, you will be asked either to continue to use current application or to scan new QR code.

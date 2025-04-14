@@ -153,7 +153,7 @@ After accepting the app update, you will see the **Main** page, along with a use
 
 This is how the project structure looks like within the workspace.
 
-![MDK](img-3.1.png)
+<!-- border -->![MDK](img-3.1.png)
 
 These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
 

@@ -209,7 +209,6 @@ The On-boarding QR code is now displayed.
 
 >Leave the Onboarding dialog box open for the next step.
 
-
 ### Run the Project
 
 

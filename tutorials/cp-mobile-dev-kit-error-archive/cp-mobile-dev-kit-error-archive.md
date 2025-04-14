@@ -78,6 +78,7 @@ This step includes creating a mobile project in SAP Build Lobby.
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
     >![MDK](img-1.8.png) 
 
+
 ### Configure the Project Using Storyboard
 
 The Storyboard provides a graphical view of the application's runtime resources, external resources, UI of the application, and the connections between them. This allows for a quick understanding of the application's structure and components.
