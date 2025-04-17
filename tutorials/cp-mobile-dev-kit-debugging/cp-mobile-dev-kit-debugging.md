@@ -27,7 +27,7 @@ Use the debugging feature provided by the Mobile Development Kit extension for V
 
 ---
 
-### Create a New Project Using SAP Build Code and Configure it using Storyboard
+### Create a New Project Using SAP Build and Configure it using Storyboard
 
 1. This step includes creating the mobile development kit project in the editor. Follow steps 1 and 2 from this [tutorial](https://developers.sap.com/tutorials/cp-mobile-dev-kit-quick-start.html) to create your MDK project and deploy to mobile services.
 

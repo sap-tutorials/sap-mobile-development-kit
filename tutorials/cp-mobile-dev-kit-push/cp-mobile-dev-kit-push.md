@@ -47,7 +47,7 @@ You may clone an existing metadata project from [GitHub repository](https://gith
     >If you want to enable push notification in your custom MDK client then follow [Enable Push Notifications in Your Branded MDK Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push-customclient.html) tutorial.
 
 
-### Create a New Project Using SAP Build Code
+### Create a New Project Using SAP Build
 
 This step includes creating a mobile project in SAP Build Lobby. 
 
@@ -71,7 +71,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.5.png)
     
-    >SAP Build Code recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
+    >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
@@ -81,7 +81,7 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.6.png)
     
-8. The project opens in SAP Business Application Studio, the SAP Build Code development environment.
+8. The project opens in SAP Business Application Studio.
 
     <!-- border -->![MDK](img-1.7.png)
 
