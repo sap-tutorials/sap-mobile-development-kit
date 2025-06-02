@@ -37,15 +37,15 @@ This step includes creating a mobile project in SAP Build Lobby.
 
     <!-- border -->![MDK](img-1.1.png)
 
-2. Click the **Application** tile.    
+2. Click the **Application** tile and choose **Next**.    
 
     <!-- border -->![MDK](img-1.2.png)
 
-3. Select the **Mobile** category.
+3. Select the **Mobile** category and choose **Next**.
 
     <!-- border -->![MDK](img-1.3.png)
 
-4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio. 
+4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
     <!-- border -->![MDK](img-1.4.png)
 
