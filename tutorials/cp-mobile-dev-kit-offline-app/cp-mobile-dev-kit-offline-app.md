@@ -99,7 +99,7 @@ The Storyboard provides a graphical view of the project's runtime resources, ext
 
     <!-- border -->![MDK](img-2.6.png)     
 
-5. In the **Basic Information** step, select the **MDK Template Type** as **Base**, leave the other options as they are. Since the option to **Enable Auto-Deployment to Mobile Services After Creation** is set to **Yes**, the MDK project will automatically be deployed to the Mobile Services after it is generated. Click **Next** to continue.
+5. In the **Basic Information** step, select the **MDK Template Type** as **Base**, leave the other options as they are. Since the option to **Enable Auto-Deployment to Mobile Services After Project Creation** is set to **Yes**, the MDK project will automatically be deployed to the Mobile Services after it is generated. Click **Next** to continue.
 
     <!-- border -->![MDK](img-2.7.png)  
 

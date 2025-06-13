@@ -109,7 +109,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | Field | Value |
     |----|----|
     | `MDK Template Type` | `CRUD`  |
-    | `Enable Auto-Deployment to Mobile Services After Creation` | Select `No` |
+    | `Enable Auto-Deployment to Mobile Services After Project Creation` | Select `No` |
 
     <!-- border -->![MDK](img-2.7.png)  
 

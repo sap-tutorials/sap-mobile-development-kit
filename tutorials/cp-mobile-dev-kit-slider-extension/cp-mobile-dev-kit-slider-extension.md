@@ -106,7 +106,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     <!-- border -->![MDK](img-2.6.png)     
 
-5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
+5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Project Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
     <!-- border -->![MDK](img-2.7.png)  
 
