@@ -15,7 +15,6 @@ author_profile: https://github.com/jitendrakansal
 - **Tutorial**: [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html)
 - **Apple ID**: A paid Apple developer account is required
 
-
 ## You will learn
   - How to generate platform specific configurations required for your MDK client
   - How to build a standard MDK client
