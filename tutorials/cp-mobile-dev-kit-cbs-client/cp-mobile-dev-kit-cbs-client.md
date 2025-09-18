@@ -47,13 +47,17 @@ After a successful build, you can download the APK or IPA file.
 
 > This step is required only if you will be using Push notification in your Android MDK client. If not using the Push, proceed to next step.
 
-1. Open the [Firebase console](https://console.firebase.google.com/u/0/?pli=1), login with your Google account and click **Create Project** or **Add Project** (you will see this option if you already have any existing projects).
+1. Open the [Firebase console](https://console.firebase.google.com/u/0/?pli=1), login with your Google account and click **Create a new Firebase Project**.
 
     <!-- border -->![MDK](img-1.1.png)
 
 2. Provide a Project Name, click **Continue**.
 
     <!-- border -->![MDK](img-1.2.png)
+
+3. Uncheck **Enable Gemini in Firebase** option and click **Continue**.
+
+    <!-- border -->![MDK](img-1.2.1.png)
 
 3. Uncheck **Enable Google Analytics for this project** option and click **Create Project**.
 
@@ -63,7 +67,7 @@ After a successful build, you can download the APK or IPA file.
 
     <!-- border -->![MDK](img-1.4.png)
 
-5. Click **Android** icon to add Firebase to your Android app.
+5. Click **Add app** and click **Android** icon to add Firebase to your Android app.
 
     <!-- border -->![MDK](img-1.5.png)
 
