@@ -2,7 +2,7 @@
 parser: v2
 auto_validation: true
 primary_tag: software-product>sap-mobile-services
-tags: [  tutorial>beginner, topic>mobile, operating-system>ios, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-btp-sdk-for-ios, software-product>sap-btp-sdk-for-android, software-product>mobile-development-kit-client]
+tags: [  tutorial>beginner, topic>mobile, operating-system>ios, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-build, software-product>sap-btp-sdk-for-ios, software-product>sap-btp-sdk-for-android, software-product>mobile-development-kit-client]
 time: 5
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
@@ -47,7 +47,7 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
     ![mobile service tile](img-2.3.png)
 
-4. Choose **Support** to open **SAP Mobile Services Cockpit**.
+4. Choose **Support** to open **SAP Mobile Services Admin UI**.
 
     ![support button click](img-2.4.png)
 
@@ -56,7 +56,7 @@ Once SAP Mobile Services is available, you can use its features in your Mobile d
 
     ![support button click](img-2.5.png)
 
-    >In order to find the API endpoint, navigate to your BTP subaccount > Overview > Cloud Foundry Environment. Copy the URL and paste it in the Mobile service admin UI dialog. This is mainly required if you are using Mobile Services in an Extended Landscape. 
+    >In order to find the API endpoint, navigate to your **BTP subaccount** &rarr; **Overview** &rarr; **Cloud Foundry Environment**. Copy the URL and paste it in the Mobile service admin UI dialog. This is mainly required if you are using Mobile Services in an Extended Landscape. 
     >![support button click](img-2.6.png)
 
     Once you provide the correct API Endpoint, click on **Login** to continue.
