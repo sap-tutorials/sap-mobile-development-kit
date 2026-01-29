@@ -18,9 +18,9 @@ author_profile: https://github.com/jitendrakansal
 ## You will learn
 - Set up your local machine for agentic MDK development
 - Install and configure the MDK MCP server
+- Configure an LLM provider for use with MCP
 - Connect an MCP client (VS Code + Cline) to the MCP server
 - Define rules to guide AI-assisted MDK development
-- Verify and configure an LLM provider for use with MCP
 
 ---
 
@@ -72,13 +72,20 @@ These features enable AI agents to understand MDK projects more effectively, sup
     npm i --include=optional 
     npm run build
     npm i -g @sap/mdk-mcp-server@. 
-
     ```
-4. Install **Cloud Foundry CLI** by following the official [documentation](https://docs.cloudfoundry.org/cf-cli/install-go-cli.html). The guide provides machine specific installation steps and package manager options. `CF CLI` is required to connect to your SAP BTP Cloud Foundry organization and space. 
 
-### Configure an MCP Client to Connect to the MCP Server
+4. Install **Cloud Foundry CLI** by following the [documentation](https://github.com/cloudfoundry/cli/wiki/V8-CLI-Installation-Guide). The guide provides machine specific installation steps and package manager options. `CF CLI` is required to connect to your SAP BTP Cloud Foundry organization and space. 
 
-Although this tutorial uses Cline as the example agent, the MCP server itself is agent-agnostic. You can use it with any MCP-compatible agent. If you’re using a different agent, the setup will look very similar and follows the same MCP concepts.
+
+### Add Your LLM Provider and Model
+
+Although this tutorial uses Cline as the example agent, the MCP server itself is agent-agnostic. You can use it with any MCP-compatible agent. Cline uses a built-in API provider by default. You can configure a different LLM provider via:
+
+- Built-in provider with a free model
+- Paid LLM provider with your API key
+- SAP AI Core via SAP BTP production account
+
+This step covers how to connect to **SAP AI Core** and access a deployed model from there.
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/download) on your machine.
 
@@ -90,19 +97,32 @@ Although this tutorial uses Cline as the example agent, the MCP server itself is
 
     ![MDK](img-2.1.png)
 
-4. Open the **Cline** extension. Below the prompt box, choose **Manage MCP Servers**. 
+4. If you see `How will you use Cline?` window, then select  **Bring my own API key** and **Continue**.
+
+    ![MDK](img-2.1.1.png)
+
+5. Select your API provider (for example, SAP AI Core), enter the required credentials, and choose the AI model you want to use. For detailed configuration steps, see the [documentation](https://docs.cline.bot/provider-config/sap-aicore#sap-ai-core).
+
+    ![MDK](img-2.1.2.png)
+
+
+### Configure an MCP Client to Connect to the MCP Server
+
+ If you’re using a different agent, the setup will look very similar and follows the same MCP concepts.
+
+1. Open the **Cline** extension. Below the prompt box, choose **Manage MCP Servers**. 
 
     ![MDK](img-2.2.png)
 
-5. In the dialog, click **Settings**. 
+2. In the dialog, click **Settings**. 
 
     ![MDK](img-2.3.png)
 
-6. On the MCP Servers page, select **Configure MCP Servers**.
+3. On the MCP Servers page, select **Configure MCP Servers**.
 
     ![MDK](img-2.4.png)
 
-7. In the `JSON` settings file, add the following configuration under the `mcpServers` section, then save the file. 
+4. In the `JSON` settings file, add the following configuration under the `mcpServers` section, then save the file. 
 
     ```json
     {
@@ -118,7 +138,7 @@ Although this tutorial uses Cline as the example agent, the MCP server itself is
 
     >Supported schema versions include 25.9(default), 25.6, 24.11, and 24.7.      
 
-8. After saving the file, the `mdk-mcp` server appears in the MCP Servers list. Once configured, your AI agent can access the MDK MCP server. [Here](https://github.com/SAP/mdk-mcp-server?tab=readme-ov-file#available-tools) are the detailed information about all the tools available in this MCP server.
+5. After saving the file, the `mdk-mcp` server appears in the MCP Servers list. Once configured, your AI agent can access the MDK MCP server. [Here](https://github.com/SAP/mdk-mcp-server?tab=readme-ov-file#available-tools) are the detailed information about all the tools available in this MCP server.
 
     >If the MCP server or its tools do not appear immediately, restart Visual Studio Code.
 
@@ -131,10 +151,9 @@ Although this tutorial uses Cline as the example agent, the MCP server itself is
     | `mdk-manage`    | Comprehensive MDK project management tool that handles build, deploy, validate, migrate, show QR code, and mobile app editor operations. |
     | `mdk-docs`    | Unified tool for accessing MDK documentation including search, component schemas, property details, and examples.  |
 
-9. Click **Done** to close the MCP servers window.
+6. Click **Done** to close the MCP servers window.
     
     ![MDK](img-2.5.png)
-
 
 ### Create a Rule File for AI-Assisted Development
 
@@ -158,24 +177,6 @@ To ensure the AI assistant follows MDK project conventions and uses the MCP serv
     ```
     
     ![MDK](img-2.8.png)
-
-### Verify Your LLM Provider and Model
-
-Cline uses a built-in API provider by default. You can configure a different LLM provider via:
-
-- Built-in provider with a free model
-- Paid LLM provider with your API key
-- SAP AI Core via SAP BTP production account
-
-This step covers how to connect **SAP AI Core**.
-
-1. Open the Cline extension and click **Select Model / API Provider** below the prompt box.
-
-    ![MDK](img-2.9.png)
-
-2. Select your API provider (for example, SAP AI Core), enter the required credentials, and choose the AI model you want to use. For detailed configuration steps, see the [documentation](https://docs.cline.bot/provider-config/sap-aicore#sap-ai-core).
-
-    ![MDK](img-2.10.png)
 
 In this tutorial, you set up your development environment for agentic SAP MDK development using the MCP server. You learned how to install and configure the MDK MCP server, connect it to an MCP client in Visual Studio Code using the Cline extension, and enable AI-assisted development workflows.
 
