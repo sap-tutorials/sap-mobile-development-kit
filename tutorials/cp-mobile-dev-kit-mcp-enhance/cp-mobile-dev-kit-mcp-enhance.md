@@ -17,6 +17,7 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
+
 ### Ask the Agent - Explore MDK Capabilities and Best Practices via MCP
 
 In this step, you’ll use the agent to ask project-aware questions about MDK. The agent responds in the context of your existing project, helping you understand Client APIs, implementation choices, and related documentation. You are free to ask the agent any questions related to MDK. To demonstrate this capability, the following steps use a concrete example from the generated project to explore a Client API and its documentation..
