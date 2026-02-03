@@ -237,7 +237,6 @@ The extension control that you will be creating to extend the functionality of y
 
     >You can find more details about registering extension control in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/advanced/extensions/registering-extension-in-bas.html) guide.
 
-
 ### Consume Extension Control in MDK Metadata
 
 You will add this registered control in the generated `Customers_Detail.page`.
@@ -252,7 +251,7 @@ You will add this registered control in the generated `Customers_Detail.page`.
 
     <!-- border -->![MDK](img-3.2.png)
 
-    >You can find more details about the **Section Extension** in [this](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Container/Extension.schema.html) guide.
+    >You can find more details about the **Section Extension** in [this](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Page/SectionedTable/Container/Extension.schema.html) guide.
 
   4. In the **Properties** section, set the **Height** to 600.
 

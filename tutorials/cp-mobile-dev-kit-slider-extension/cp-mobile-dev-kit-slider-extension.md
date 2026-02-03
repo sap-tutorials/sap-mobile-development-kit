@@ -200,7 +200,7 @@ You will add this registered control as a Form Cell control in a section page.
 
     <!-- border -->![MDK](img-3.3.gif)
 
-    >You can find more details about the `FormCell Extension` in [this](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/FormCell/Extension.schema.html) guide.    
+    >You can find more details about the `FormCell Extension` in [this](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Page/FormCell/Extension.schema.html) guide.    
 
 3. In the **Properties** section, provide the below value:
 

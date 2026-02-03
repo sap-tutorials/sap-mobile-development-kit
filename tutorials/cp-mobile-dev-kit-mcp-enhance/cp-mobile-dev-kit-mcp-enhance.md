@@ -9,7 +9,7 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 # Evolve Your MDK App with Agentic AI using MCP Tools
-<!-- description --> This tutorial demonstrates how to enhance an existing MDK project created with agentic AI by using MCP tools to modify pages, add features, and generate supporting artifacts. You’ll also learn how to access MDK documentation and client APIs directly through the MCP-enabled IDE for faster, context-aware development.
+<!-- description --> This tutorial demonstrates how to enhance an existing MDK project created with agentic AI by using MCP tools to modify pages, add features, and generate supporting artifacts. You will also learn how to access MDK documentation and client APIs directly through the MCP-enabled IDE for faster, context-aware development.
 
 ## You will learn
   - How to enhance an existing MDK application using agentic AI
@@ -20,7 +20,7 @@ author_profile: https://github.com/jitendrakansal
 
 ### Ask the Agent - Explore MDK Capabilities and Best Practices via MCP
 
-In this step, you’ll use the agent to ask project-aware questions about MDK. The agent responds in the context of your existing project, helping you understand Client APIs, implementation choices, and related documentation. You are free to ask the agent any questions related to MDK. To demonstrate this capability, the following steps use a concrete example from the generated project to explore a Client API and its documentation..
+In this step, you will use the agent to ask project-aware questions about MDK. The agent responds in the context of your existing project, helping you understand Client APIs, implementation choices, and related documentation. You are free to ask the agent any questions related to MDK. To demonstrate this capability, the following steps use a concrete example from the generated project to explore a Client API and its documentation..
 
 1. In the Cline window, copy and paste the following prompt into the input field and execute it.
 
@@ -63,7 +63,7 @@ In this step, you’ll use the agent to ask project-aware questions about MDK. T
 
 ### Enhance Existing UI Screens with Agentic Assistance
 
-In this step, you’ll use the agent to modify existing UI screens based on your requirements. You will change the main page layout from a classic list to a bottom bar container and reorder the Sales Orders list page to display more meaningful information.
+In this step, you will use the agent to modify existing UI screens based on your requirements. You will change the main page layout from a classic list to a bottom bar container and reorder the Sales Orders list page to display more meaningful information.
 
 1. In the Cline window, execute the following prompt:
 
@@ -117,7 +117,7 @@ In this step, you’ll use the agent to modify existing UI screens based on your
 
 ### Implement Business Logic using MDK Client APIs
 
-In this step, you’ll use the MCP agent to generate business logic that dynamically updates application data.
+In this step, you will use the MCP agent to generate business logic that dynamically updates application data.
 
 1. In the Cline window, execute the following prompt:
 

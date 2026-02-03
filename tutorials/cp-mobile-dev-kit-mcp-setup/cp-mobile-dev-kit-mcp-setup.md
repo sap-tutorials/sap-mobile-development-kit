@@ -31,7 +31,7 @@ author_profile: https://github.com/jitendrakansal
 MCP uses a client-server architecture to make communication between AI applications and external systems straightforward.
 
 - **Host Application**: The AI application that users interact with, such as an LLM chat interface or an AI-powered code editor. It initiates requests and drives the workflow.
- - **MCP Client**: Embedded in the host application. It converts the host’s requests into the MCP standard and manages communication with MCP servers.
+ - **MCP Client**: Embedded in the host application. It converts the host requests into the MCP standard and manages communication with MCP servers.
  - **MCP Server**: A service that exposes a specific tool or data source (for example, a GitHub repository, a database, or SAP tools) to the AI system using the MCP standard.
 
 The **MCP server for Mobile Development Kit (MDK)** is an open-source server built specifically for MDK development. It provides AI agents with MDK-specific knowledge, such as:
@@ -108,7 +108,7 @@ This step covers how to connect to **SAP AI Core** and access a deployed model f
 
 ### Configure an MCP Client to Connect to the MCP Server
 
- If you’re using a different agent, the setup will look very similar and follows the same MCP concepts.
+ If you are using a different agent, the setup will look very similar and follows the same MCP concepts.
 
 1. Open the **Cline** extension. Below the prompt box, choose **Manage MCP Servers**. 
 
@@ -157,7 +157,7 @@ This step covers how to connect to **SAP AI Core** and access a deployed model f
 
 ### Create a Rule File for AI-Assisted Development
 
-To ensure the AI assistant follows MDK project conventions and uses the MCP server correctly, it’s recommended to define project-specific rules.
+To ensure the AI assistant follows MDK project conventions and uses the MCP server correctly, it is recommended to define project-specific rules.
 
 1. In the Cline extension, click **Manage Cline Rules & Workflows** below the prompt box.
 
