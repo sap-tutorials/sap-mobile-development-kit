@@ -24,6 +24,7 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
+
 ### Understand the MCP server for Mobile Development Kit
 
 **[MCP](https://modelcontextprotocol.io/docs/getting-started/intro)** (Model Context Protocol) is an open standard that helps AI models and tools work together in a structured and secure way. It defines a common way for AI coding assistants (powered by large language models) to connect with external tools, data, and workflows. 

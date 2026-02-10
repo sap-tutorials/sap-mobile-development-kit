@@ -183,6 +183,7 @@ To use the SDK to generate a mobile development kit client, the first step is to
     >`BaseProject`: The sub-directory of metadata where the project is found. For this tutorial, you don't have any subfolder under metadata, you can either keep it as it is or remove it completely.
 
     >`BundleID`: It should be a unique identifier for your application. This controls if the client can be installed side by side with other applications on the device. Two applications with the same Bundle ID cannot be installed at the same time on a device. For iOS this is the Identifier `(AppID)` that is registered in Apple Developer account since that determines if the application can be installed alongside other applications. If the `XCode` project is set up to use _Automatically manage signing_ then when building, `XCode` will automatically generate a signing profile for the specified bundle id. Without matching them, trying to run the custom client in iOS device will result in failure. In Android, it is known as [application ID](https://developer.android.com/build/configure-app-module).
+    
 
     >`UrlScheme`: Allows you to specify a custom URL scheme which opens the client. The default is `mdkclient`. This value also needs to be unique across applications on your device. If the value is not unique the wrong application may be referenced when redirecting.
 

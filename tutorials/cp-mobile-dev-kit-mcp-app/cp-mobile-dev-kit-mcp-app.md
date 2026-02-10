@@ -20,7 +20,7 @@ author_profile: https://github.com/jitendrakansal
 
 ### Log On to the Cloud Foundry Environment
 
-In this step, you’ll connect to your SAP BTP Cloud Foundry organization and space.
+In this step, you will connect to your SAP BTP Cloud Foundry organization and space.
 
 1. Create an empty folder on your machine and open it in **Visual Studio Code**. This folder will be used to generate your Mobile Services project.
 

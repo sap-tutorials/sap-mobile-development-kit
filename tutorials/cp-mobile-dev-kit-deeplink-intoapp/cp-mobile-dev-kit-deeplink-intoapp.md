@@ -27,7 +27,7 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 ---
 
-MDK supports deep linking into MDK applications using MDK client URL scheme and HTTP URLs via iOS Universal Links and Android App Links. [iOS universal links](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html) and [Android App Links](https://developer.android.com/training/app-links#android-app-links) are the HTTP URLs that bring the user directly to specific content in your MDK application.
+MDK supports deep linking into MDK applications using MDK client URL scheme and HTTP URLs via iOS Universal Links and Android App Links. [iOS universal links](https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html) and [Android App Links](https://developer.android.com/training/app-links) are the HTTP URLs that bring the user directly to specific content in your MDK application.
 
 ![MDK](img-7.7.gif)
 
