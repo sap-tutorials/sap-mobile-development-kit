@@ -144,6 +144,7 @@ This step covers how to connect to **SAP AI Core** and access a deployed model f
 
     >Supported schema versions include 25.9(default), 25.6, 24.11, and 24.7.      
 
+
 5. After saving the file, the `mdk-mcp` server appears in the MCP Servers list. Once configured, your AI agent can access the MDK MCP server. [Here](https://github.com/SAP/mdk-mcp-server?tab=readme-ov-file#available-tools) are the detailed information about all the tools available in this MCP server.
 
     >If the MCP server or its tools do not appear immediately, restart Visual Studio Code.
