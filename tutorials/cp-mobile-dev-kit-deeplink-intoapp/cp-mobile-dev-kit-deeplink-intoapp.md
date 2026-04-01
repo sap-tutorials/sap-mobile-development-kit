@@ -311,7 +311,7 @@ Now that the MDK application is configured to act when a request from external s
 
 [OPTION BEGIN [iOS]]
 
-1. Open SAP Mobile Services Cockpit, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app.
+1. Open SAP Mobile Services Admin UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app.
 
     <!-- border -->![MDK](img-4.1.png)
 

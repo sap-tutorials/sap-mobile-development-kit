@@ -351,7 +351,7 @@ Click the **Deploy** option in the editor's header area, and then choose the dep
 
 You can cross verify if a record has been updated in the backend.
 
->Backend URL can be found in [Mobile Services Cockpit](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html).
+>Backend URL can be found in [Mobile Services Admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html).
 
 >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **myapp.mdk.demo** **&rarr;** **Connectivity** **&rarr;** click **Launch in Browser** icon
 

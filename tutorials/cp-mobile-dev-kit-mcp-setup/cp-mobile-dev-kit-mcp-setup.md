@@ -54,16 +54,9 @@ These features enable AI agents to understand MDK projects more effectively, sup
 
     ```bash
     npm i -g nativescript@8.9.4-sap.0
-    ```
+    ``` 
 
-3. Install Yeoman.
-
-    ```bash
-    npm i -g yo@4.3.1
-    ```
-    >Yeoman is a project scaffolding tool that helps generate and maintain consistent application structures using generators.    
-
-4. Install the MDK MCP server using one of the following options:
+3. Install the MDK MCP server using one of the following options:
 
     **Option A: Install from the public npm registry**
 
@@ -81,7 +74,7 @@ These features enable AI agents to understand MDK projects more effectively, sup
     npm i -g @sap/mdk-mcp-server@. 
     ```
 
-5. Install **Cloud Foundry CLI** by following the [documentation](https://github.com/cloudfoundry/cli/wiki/V8-CLI-Installation-Guide). The guide provides machine specific installation steps and package manager options. `CF CLI` is required to connect to your SAP BTP Cloud Foundry organization and space. 
+4. Install **Cloud Foundry CLI** by following the [documentation](https://github.com/cloudfoundry/cli/wiki/V8-CLI-Installation-Guide). The guide provides machine specific installation steps and package manager options. `CF CLI` is required to connect to your SAP BTP Cloud Foundry organization and space. 
 
 ### Add Your LLM Provider and Model
 

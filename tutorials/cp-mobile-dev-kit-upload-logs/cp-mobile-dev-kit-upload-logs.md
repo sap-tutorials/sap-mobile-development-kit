@@ -28,9 +28,9 @@ Managing issues with apps rolled out to a large number of users is a challenge a
 
 SAP Mobile Services provides administrators, developers and support staff with extensive logs and traces functionality to troubleshoot application issues. You can control the amount of information that is captured by setting the log level for individual logging components.
 
-In this step, you will enable client log upload policy in **SAP Mobile Services Cockpit** for a given MDK app.
+In this step, you will enable client log upload policy in **SAP Mobile Services Admin UI** for a given MDK app.
 
-1. Login to [Mobile Services Cockpit](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html), click `myapp.mdk.demo` | **Client Log Upload**.
+1. Login to [Mobile Services Admin UI](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html), click `myapp.mdk.demo` | **Client Log Upload**.
 
     <!-- border -->![MDK](img-1.1.png)
 
@@ -107,7 +107,7 @@ The MDK template generates a project that includes a user menu with support opti
 
 ### Examine uploaded logs in Mobile Services admin UI
 
-Open SAP Mobile Services Cockpit, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app **&rarr;** **Client Log Upload** **&rarr;** **Log Files**.
+Open SAP Mobile Services Admin UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app **&rarr;** **Client Log Upload** **&rarr;** **Log Files**.
 
 <!-- border -->![MDK](img-4.1.png)
 
