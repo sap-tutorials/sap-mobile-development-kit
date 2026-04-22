@@ -17,7 +17,6 @@ author_profile: https://github.com/jitendrakansal
   
 ---
 
-
 ### Log On to the Cloud Foundry Environment
 
 In this step, you will connect to your SAP BTP Cloud Foundry organization and space.
@@ -104,7 +103,7 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 
     ![MDK](img-3.2.png)
 
-3. The MCP client (Cline) recognizes that the MDK MCP server should be used and executes the prompt using the `mdk-create` tool. You may be asked to approve certain steps.
+3. The MCP client (Cline) recognizes that the MDK MCP server should be used and executes the prompt using the `mdk-create` tool.  
 
     ![MDK](img-3.3.png)
 
@@ -122,7 +121,7 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 
     ![MDK](img-4.1.png)
 
-2. The MCP client (Cline) recognizes that the MDK MCP server should be used, which will use the `mdk-manage` tool to deploy the project to SAP Mobile Services. You may be asked to approve certain steps.
+2. The MCP client (Cline) recognizes that the MDK MCP server should be used, which will use the `mdk-manage` tool to deploy the project to SAP Mobile Services.  
 
     ![MDK](img-4.2.png)
 
@@ -134,7 +133,7 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 
     ![MDK](img-4.4.png)
 
-### Run the Project
+### Run the App
 
 [OPTION BEGIN [Android]]
 
@@ -165,6 +164,6 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 
 [OPTION END]
 
-In this tutorial, you learned how to use agentic AI with the MCP server to generate a fully functional SAP MDK application from a simple natural language prompt. Using Visual Studio Code and Cline, you created, deployed, and ran an offline-capable MDK app with minimal manual effort—demonstrating how AI can accelerate mobile application development from start to finish.
+You've successfully used agentic AI with the MDK MCP server to generate a fully functional SAP MDK application from a simple natural language prompt. Using Visual Studio Code and Cline, you created, deployed, and ran an offline-capable MDK app with minimal manual effort — demonstrating how AI can accelerate mobile application development from start to finish.
 
 ---

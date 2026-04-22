@@ -19,7 +19,7 @@ author_profile: https://github.com/jitendrakansal
 
 ### Ask the Agent - Explore MDK Capabilities and Best Practices via MCP
 
-In this step, you will use the agent to ask project-aware questions about MDK. The agent responds in the context of your existing project, helping you understand Client APIs, implementation choices, and related documentation. You are free to ask the agent any questions related to MDK. To demonstrate this capability, the following steps use a concrete example from the generated project to explore a Client API and its documentation..
+In this step, you will use the agent to ask project-aware questions about MDK. The agent responds in the context of your existing project, helping you understand Client APIs, implementation choices, and related documentation. You are free to ask the agent any questions related to MDK. To demonstrate this capability, the following steps use a concrete example from the generated project to explore a Client API and its documentation.
 
 1. In the Cline window, copy and paste the following prompt into the input field and execute it.
 
@@ -42,7 +42,7 @@ In this step, you will use the agent to ask project-aware questions about MDK. T
     I want to allow business users to upload media files to the backend. However, I want to limit the file size to a maximum of 2 MB. Refer documentation and suggest how can I achieve this?
     ```
 
-4. The MCP client (Cline) recognizes that the MDK MCP server should be used and executes the request using the `mdk-docs` tool. You may need to approve certain steps when prompted. 
+4. The MCP client (Cline) recognizes that the MDK MCP server should be used and executes the request using the `mdk-docs` tool.
 
     ![MDK](img-1.3.png)
 
@@ -71,13 +71,13 @@ In this step, you will use the agent to modify existing UI screens based on your
     Also re-generate the sales order list page displaying Order ID, Customer Name, price along with currency,  style the status property (generate style classes if needed), and display the Date value in Date Time (DT) formatter. Once done, validate and deploy project.
     ```
 
-2. The MCP client generates the required updates, validates the project, and deploys it. You may need to approve certain steps when prompted.
+2. The MCP client generates the required updates, validates the project, and deploys it.  
 
     ![MDK](img-2.1.png) 
 
     >Generated responses may differ from the examples shown in this tutorial. Minor variations in code or output are expected.
 
-### Run the Project
+### Run the App
 
 >Ensure that you select the correct device platform tab above. 
 

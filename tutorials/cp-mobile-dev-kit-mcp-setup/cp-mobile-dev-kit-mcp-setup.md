@@ -48,7 +48,7 @@ These features enable AI agents to understand MDK projects more effectively, sup
 
 ### Install Required Tooling
 
-1. Install [node.js 22.14.0](https://nodejs.org/dist/v22.14.0/).
+1. Download and install [node.js 22.14.0](https://nodejs.org/dist/v22.14.0/).
 
 2. Install NativeScript.
 
@@ -86,17 +86,17 @@ Although this tutorial uses Cline as the example agent, the MCP server itself is
 
 This step covers how to connect to **SAP AI Core** and access a deployed model from there.
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/download) on your machine.
+1. Download and install [Visual Studio Code](https://code.visualstudio.com/download) on your machine.
 
-2. Install the **Mobile Development Kit extension** from the  Visual Studio Code Marketplace.
+2. Install the **Mobile Development Kit extension** from the Visual Studio Code Marketplace.
 
     ![MDK](img-1.2.png)
 
-3. Install the [Cline](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) extension in VS Code Marketplace.
+3. Install the [Cline](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) extension from the Visual Studio Code Marketplace.
 
     ![MDK](img-2.1.png)
 
-4. If you see `How will you use Cline?` window, then select  **Bring my own API key** and **Continue**.
+4. Once Cline is installed, the Cline icon (a robot with two eyes) should appear in your activity bar. Click the **Cline** icon to open the side panel. Inside the Cline panel, if you see `How will you use Cline?` window, then select  **Bring my own API key** and **Continue**.
 
     ![MDK](img-2.1.1.png)
 
@@ -107,9 +107,9 @@ This step covers how to connect to **SAP AI Core** and access a deployed model f
 
 ### Configure an MCP Client to Connect to the MCP Server
 
- If you are using a different agent, the setup will look very similar and follows the same MCP concepts.
+With Cline configured, you now need to register the MDK MCP server so the AI agent can access MDK-specific tools. If you are using a different agent, the setup will look very similar and follows the same MCP concepts.
 
-1. Open the **Cline** extension. Below the prompt box, choose **Manage MCP Servers**. 
+1. Open the **Cline** panel and click **Manage MCP Servers** below the prompt box.
 
     ![MDK](img-2.2.png)
 
@@ -117,7 +117,7 @@ This step covers how to connect to **SAP AI Core** and access a deployed model f
 
     ![MDK](img-2.3.png)
 
-3. On the MCP Servers page, select **Configure MCP Servers**.
+3. On the MCP Servers page, select **Configure MCP Servers**. This opens a JSON settings file.
 
     ![MDK](img-2.4.png)
 
@@ -129,16 +129,16 @@ This step covers how to connect to **SAP AI Core** and access a deployed model f
         "mdk-mcp": {
           "type": "stdio",
           "command": "mdk-mcp",
-          "args": ["--schema-version", "25.9"]
+          "args": ["--schema-version", "26.3"]
         }
       }
     }
     ```
 
-    >Supported schema versions include 25.9(default), 25.6, 24.11, and 24.7.      
+    >Supported schema versions include 26.3(default), 25.9, 25.6, 24.11, and 24.7.      
 
 
-5. After saving the file, the `mdk-mcp` server appears in the MCP Servers list. Once configured, your AI agent can access the MDK MCP server. [Here](https://github.com/SAP/mdk-mcp-server?tab=readme-ov-file#available-tools) are the detailed information about all the tools available in this MCP server.
+5. After saving the file, the `mdk-mcp` server appears in the MCP Servers list with a green status indicator, confirming it is active and ready. Once configured, your AI agent can access the MDK MCP server. [Here](https://github.com/SAP/mdk-mcp-server?tab=readme-ov-file#available-tools) are the detailed information about all the tools available in this MCP server.
 
     >If the MCP server or its tools do not appear immediately, restart Visual Studio Code.
 
@@ -178,6 +178,6 @@ To ensure the AI assistant follows MDK project conventions and uses the MCP serv
     
     ![MDK](img-2.8.png)
 
-In this tutorial, you set up your development environment for agentic SAP MDK development using the MCP server. You learned how to install and configure the MDK MCP server, connect it to an MCP client in Visual Studio Code using the Cline extension, and enable AI-assisted development workflows.
+In this tutorial, you set up your development environment for agentic SAP MDK development. You installed and configured the MDK MCP server, connected it to Cline in Visual Studio Code, established the AI-assisted development workflow with project-specific rules.
 
 ---
