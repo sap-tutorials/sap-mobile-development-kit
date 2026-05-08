@@ -127,7 +127,7 @@ In this step, you will use the MCP agent to generate business logic that dynamic
 
     ![MDK](img-4.1.png)
 
-4. The MCP client generates a MDK rule in JavaScript containing the required logic and binds it to the caption property. After validation, the project is automatically deployed. 
+4. The MCP client generates a MDK rule in JavaScript containing the required logic and binds it to the caption property. After validation, the project is automatically deployed. (Right-click `SalesOrderHeaders_List.page` to open it with text editor)
 
     ![MDK](img-4.2.png)
 

@@ -62,7 +62,7 @@ To integrate with SAP Mobile Services, the MCP server  uses the Cloud Foundry CL
 
     ![MDK](img-2.1.png)
 
-4. In the **Basic Information** step, enter the following values and choose **Finish**.
+4. In the **Basic Information** step, enter the following values and choose **Create App**.
 
     | Field | Value |
     |----|----|

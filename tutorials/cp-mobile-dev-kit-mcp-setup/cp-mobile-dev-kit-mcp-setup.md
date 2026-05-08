@@ -48,15 +48,9 @@ These features enable AI agents to understand MDK projects more effectively, sup
 
 ### Install Required Tooling
 
-1. Download and install [node.js 22.14.0](https://nodejs.org/dist/v22.14.0/).
+1. Download and install [node.js 24.11.1](https://nodejs.org/dist/v24.11.1/).
 
-2. Install NativeScript.
-
-    ```bash
-    npm i -g nativescript@8.9.4-sap.0
-    ``` 
-
-3. Install the MDK MCP server using one of the following options:
+2. Install the MDK MCP server using one of the following options:
 
     **Option A: Install from the public npm registry**
 
@@ -74,7 +68,7 @@ These features enable AI agents to understand MDK projects more effectively, sup
     npm i -g @sap/mdk-mcp-server@. 
     ```
 
-4. Install **Cloud Foundry CLI** by following the [documentation](https://github.com/cloudfoundry/cli/wiki/V8-CLI-Installation-Guide). The guide provides machine specific installation steps and package manager options. `CF CLI` is required to connect to your SAP BTP Cloud Foundry organization and space. 
+3. Install **Cloud Foundry CLI** by following the [documentation](https://github.com/cloudfoundry/cli/wiki/V8-CLI-Installation-Guide). The guide provides machine specific installation steps and package manager options. `CF CLI` is required to connect to your SAP BTP Cloud Foundry organization and space. 
 
 ### Add Your LLM Provider and Model
 
@@ -88,7 +82,7 @@ This step covers how to connect to **SAP AI Core** and access a deployed model f
 
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/download) on your machine.
 
-2. Install the **Mobile Development Kit extension** from the Visual Studio Code Marketplace.
+2. Install the **SAP Mobile Development Kit Editor** from the Visual Studio Code Marketplace.
 
     ![MDK](img-1.2.png)
 
