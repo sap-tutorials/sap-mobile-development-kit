@@ -25,7 +25,7 @@ author_profile: https://github.com/jitendrakansal
 
 
 ## Intro
-You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/3-Enable-MultiUser-Mode-for-MDK-Application) and start directly with step 3 in this tutorial.
+You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/5-Brand-Your-Customized-App-with-mobile-development-kit-SDK/3-Enable-MultiUser-Mode-for-MDK-Application) and start directly with step 3 in this tutorial.
 
 ---
 Multiple user mode is designed for enterprise scenarios where, for example, an employee uses a shared device during their shift. They may go offline while working in the field and return the device at the end of their shift. The next day, the employee might use a different device, while the device used previously could be assigned to another user. This is why it is called multiple user mode. In offline scenarios, multiple user mode ensures that the initial user's data, stored offline, is synchronized with the server before the second user logs in. This process preserves the previous user's changes to the data.

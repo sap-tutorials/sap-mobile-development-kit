@@ -23,7 +23,7 @@ author_profile: https://github.com/jitendrakansal
 
 
 ## Intro
-You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/2-Implement-Deep-Linking-into-an-MDK-Application) and start directly with step 3 in this tutorial.
+You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/5-Brand-Your-Customized-App-with-mobile-development-kit-SDK/2-Implement-Deep-Linking-into-an-MDK-Application) and start directly with step 3 in this tutorial.
 
 ---
 
@@ -533,7 +533,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
 
 [OPTION BEGIN [Android]]
 
-1. Download a zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/2-Implement-Deep-Linking-into-an-MDK-Application/index.html.zip) on your local machine and unzip it on your machine.
+1. Download a zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/5-Brand-Your-Customized-App-with-mobile-development-kit-SDK/2-Implement-Deep-Linking-into-an-MDK-Application/index.html.zip) on your local machine and unzip it on your machine.
 
 2. Open the `index.html` in a text editor and update the values for `<Server URL>` and `<Enter a Product ID>`.
 
@@ -569,7 +569,7 @@ For this tutorial, to test the deep links, you will download an `index.html` on 
 
 [OPTION BEGIN [iOS]]
 
-1. Download a zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/5-Brand-Your-Customized-App-with-Mobile-Development-Kit-SDK/2-Implement-Deep-Linking-into-an-MDK-Application/index.html.zip) on your local machine and unzip it on your machine.
+1. Download a zip file from [here](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/raw/main/5-Brand-Your-Customized-App-with-mobile-development-kit-SDK/2-Implement-Deep-Linking-into-an-MDK-Application/index.html.zip) on your local machine and unzip it on your machine.
 
 2. Open the `index.html` in a text editor and update values for `<Server URL>` and `<Enter a Product ID>`.
 

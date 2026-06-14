@@ -19,7 +19,7 @@ author_profile: https://github.com/jitendrakansal
   - How to store changes locally on Mobile app and sync these changes with backend
 
 ## Intro
-If you didn't follow the prerequisite then You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/2-Create-Your-First-Mobile-App-with-the-Mobile-Development-Kit) to start with this tutorial.
+If you didn't follow the prerequisite then You may clone an existing metadata project from the [MDK Tutorial GitHub repository](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/tree/main/2-Create-Your-First-Mobile-App-with-the-mobile-development-kit) to start with this tutorial.
 
 ---
 
