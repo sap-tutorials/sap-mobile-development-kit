@@ -12,7 +12,7 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Allow the user to create a customer record in an MDK app.
 
 ## Prerequisites
-- You have created an MDK app as described in [Create Your First Mobile App with the Mobile Development Kit (MDK)](https://developers.sap.com/mission.mobile-dev-kit-get-started.html).
+- You have created an MDK app as described in [Create Your First Mobile App with the mobile development kit (MDK)](https://developers.sap.com/mission.mobile-dev-kit-get-started.html).
 
 ## You will learn
   - How to create a customer record

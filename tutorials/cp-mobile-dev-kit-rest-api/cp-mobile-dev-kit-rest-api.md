@@ -29,7 +29,7 @@ You may clone an existing metadata project from the [MDK Tutorial GitHub reposit
 
 ---
 
-Mobile Development Kit allows you to consume REST APIs. You need to first define REST endpoint as a destination and then easily bind a `RestServiceTarget` to an MDK control e.g., `ObjectTable`, `ContactCell`, `ObjectCollection` etc. This assumes the REST service returns JSON similar to how OData requests are returned.
+mobile development kit allows you to consume REST APIs. You need to first define REST endpoint as a destination and then easily bind a `RestServiceTarget` to an MDK control e.g., `ObjectTable`, `ContactCell`, `ObjectCollection` etc. This assumes the REST service returns JSON similar to how OData requests are returned.
 
 A publicly available `Petstore` API from [swagger.io](https://petstore.swagger.io) is used as an example in this tutorial.
 

@@ -8,13 +8,13 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
-# Debug Your Mobile Development Kit Application 
-<!-- description --> Learn how to effectively troubleshoot and resolve issues in your Mobile Development Kit (MDK) application through comprehensive debugging techniques.
+# Debug Your mobile development kit Application 
+<!-- description --> Learn how to effectively troubleshoot and resolve issues in your mobile development kit (MDK) application through comprehensive debugging techniques.
 
 ## Prerequisites
 - **Tutorial**: [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html)
 - **Download and Install Visual Studio Code** from [here](https://code.visualstudio.com/download) 
-- **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer
+- **Download the latest version of mobile development kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer
 
 ## You will learn
   - How to install MDK Extension in Visual Studio Code
@@ -23,7 +23,7 @@ author_profile: https://github.com/jitendrakansal
   - How to use the debug console
 
 ## Intro
-Use the debugging feature provided by the Mobile Development Kit extension for Visual Studio Code to debug your MDK app after bundling it. You can set breakpoints, inspect scope variables, watch expressions, or execute JavaScript code in the rule files.
+Use the debugging feature provided by the mobile development kit extension for Visual Studio Code to debug your MDK app after bundling it. You can set breakpoints, inspect scope variables, watch expressions, or execute JavaScript code in the rule files.
 
 ---
 
@@ -46,7 +46,7 @@ You will download your MDK project to your local machine. This will be necessary
 
 ### Create and run MDK client
 
-1. Follow the [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client and run it on a simulator or a device. 
+1. Follow the [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client and run it on a simulator or a device. 
 
 2. After successfully onboarding your mobile client, click **Now** to accept the app update.
 
@@ -85,7 +85,7 @@ You will add your debug configurations in `launch.json` file.
 
     <!-- border -->![MDK](img-7.4.png)
 
-5. In the `launch.json` file, set the `appRoot` attribute for appropriate Mobile Development Kit launch configurations. This should be the path to your `create-client` command output. 
+5. In the `launch.json` file, set the `appRoot` attribute for appropriate mobile development kit launch configurations. This should be the path to your `create-client` command output. 
 
     If you have launched your MDK branded client from terminal or command line via `ns run ios` or `ns run android` command, you do not need to set the `appRoot` attribute for MDK **Launch** configurations. You can only set the `appRoot` attribute for MDK **Attach** configurations.
 
@@ -203,6 +203,6 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
 3. To disconnect your debugger, click the red stop icon in the floating bar. Alternatively, you can do it via **Run** menu> **Stop Debugging**.
 
-You have learned how to debug an Mobile Development Kit Client application. Find more information about debugging in MDK in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/vscode/debugging-mdk-app-with-vscode-debugger.html).
+You have learned how to debug an mobile development kit Client application. Find more information about debugging in MDK in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/vscode/debugging-mdk-app-with-vscode-debugger.html).
 
 ---

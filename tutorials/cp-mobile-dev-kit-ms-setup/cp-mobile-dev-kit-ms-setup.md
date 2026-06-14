@@ -20,11 +20,11 @@ author_profile: https://github.com/jitendrakansal
 
 ---
 
-### Understand the SAP mobile development kit feature
+### Understand the mobile development kit feature
 
-The SAP Mobile Development Kit (MDK) enables developers and technical business users to build cross-platform mobile applications in an integrated development environment, and run it natively on mobile devices (Android & iOS).
+The mobile development kit (MDK) enables developers and technical business users to build cross-platform mobile applications in an integrated development environment, and run it natively on mobile devices (Android & iOS).
 
-You can find more details in the [SAP Mobile Development Kit developer page](https://developers.sap.com/topics/mobile-development-kit.html).
+You can find more details in the [mobile development kit developer page](https://developers.sap.com/topics/mobile-development-kit.html).
 
 <!-- border -->![MDK](img-1.png)
 
@@ -38,7 +38,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     <!-- border -->![MDK](img-2.1.png)
 
-3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
+3. In the **Type of Application** step, select the **mobile development kit (MDK)** and choose **Next**.
 
     <!-- border -->![MDK](img-2.2.png)
 

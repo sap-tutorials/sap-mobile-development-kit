@@ -9,11 +9,11 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 # Extend Your MDK App With a Map Custom Control (Using Metadata Approach)
-<!-- description --> Build and run the Mobile Development Kit client with Map custom control functionality for Android and iOS platforms.
+<!-- description --> Build and run the mobile development kit client with Map custom control functionality for Android and iOS platforms.
 
 ## Prerequisites
-- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
-- **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer. You will need to build your branded client using the MDK SDK when accessing the Google Maps on Android device.
+- **Tutorial**: [Set Up for the mobile development kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
+- **Download the latest version of mobile development kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer. You will need to build your branded client using the MDK SDK when accessing the Google Maps on Android device.
 - **Install SAP Mobile Services Client** on your [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device.
 <table><tr><td align="center"></td><td align="center"><!-- border -->![App Store QR Code](img-1.1.1.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
@@ -573,7 +573,7 @@ For Android, you will pass the API key to the MDK client, there is no way public
     </manifest>
     ```
 
-5. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
+5. Create your MDK client either using MDK SDK by following the step 4 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Cloud Build Service by following [Build Your mobile development kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
 
 
 

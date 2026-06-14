@@ -9,7 +9,7 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 # Set Up MCP Server for MDK Development
-<!-- description --> Configure your development environment to get started with an agentic coding experience using the MCP server for Mobile Development Kit (MDK).
+<!-- description --> Configure your development environment to get started with an agentic coding experience using the MCP server for mobile development kit (MDK).
 
 ## Prerequisites  
 - You have [Signed up for a trial account on SAP BTP](https://developers.sap.com/tutorials/hcp-create-trial-account.html).
@@ -25,7 +25,7 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 
-### Understand the MCP server for Mobile Development Kit
+### Understand the MCP server for mobile development kit
 
 **[MCP](https://modelcontextprotocol.io/docs/getting-started/intro)** (Model Context Protocol) is an open standard that helps AI models and tools work together in a structured and secure way. It defines a common way for AI coding assistants (powered by large language models) to connect with external tools, data, and workflows. 
 
@@ -35,7 +35,7 @@ MCP uses a client-server architecture to make communication between AI applicati
  - **MCP Client**: Embedded in the host application. It converts the host requests into the MCP standard and manages communication with MCP servers.
  - **MCP Server**: A service that exposes a specific tool or data source (for example, a GitHub repository, a database, or SAP tools) to the AI system using the MCP standard.
 
-The **MCP server for Mobile Development Kit (MDK)** is an open-source server built specifically for MDK development. It provides AI agents with MDK-specific knowledge, such as:
+The **MCP server for mobile development kit (MDK)** is an open-source server built specifically for MDK development. It provides AI agents with MDK-specific knowledge, such as:
 
 - Best-practice guidelines
 - Project-aware context

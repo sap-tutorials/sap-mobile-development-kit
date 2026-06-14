@@ -13,7 +13,7 @@ author_profile: https://github.com/jitendrakansal
 
 ## Prerequisites
 - **Tutorial:** [Access SAP Mobile Services](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html)
-- **Download the latest version of Mobile Development Kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer
+- **Download the latest version of mobile development kit SDK** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer
 
 ## You will learn
   - How to define your Mobile Services app to support certificate authentication
@@ -31,7 +31,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
     ![MDK](img-2.1.png)
 
-3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
+3. In the **Type of Application** step, select the **mobile development kit (MDK)** and choose **Next**.
 
     <!-- border -->![MDK](img-2.2.png)
 
@@ -102,7 +102,7 @@ To build your client,
 
 >Make sure you are choosing the right development platform tab above.
 
-Make sure that you have already completed steps 1 & 2 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
+Make sure that you have already completed steps 1 & 2 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
 
 [OPTION BEGIN [Mac]]
 

@@ -15,7 +15,7 @@ author_profile: https://github.com/jitendrakansal
 ## Prerequisites
 - **Tutorial**: [Set Up Initial Configuration for an MDK App](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html)
 - **Tutorial**: Follow steps 2-6 in [Enable Push Notifications in the MDK Public Store Client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-push.html) to create an MDK metadata project
-- **Tutorial**: Follow steps 1-3 in [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) to create your local MDK project
+- **Tutorial**: Follow steps 1-3 in [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) to create your local MDK project
 - **Apple ID**: A paid Apple developer account is required.
 
 ## You will learn
@@ -287,7 +287,7 @@ Paste the downloaded `google-services.json` file to `/DemoSampleApp.mdkproject/A
 
 ### Create MDK client
 
-Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client.
+Follow step 4 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client.
 
 ### Test a Simple Notification in your MDK client
 
@@ -295,7 +295,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
 
 [OPTION BEGIN [Android]]
 
-1. Follow step 5 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client.
+1. Follow step 5 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client.
 
 2. Once you accept the App update, a message should show **Push Notification registered**. Click **OK**.
 
@@ -325,7 +325,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
 
 [OPTION BEGIN [iOS]]
 
-1. Follow step 5 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client.
+1. Follow step 5 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client.
 
 2. After accepting the app update, allow the permission to display notifications. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
 

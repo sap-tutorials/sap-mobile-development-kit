@@ -382,6 +382,6 @@ Click the **Deploy** option in the editor's header area, and then choose the dep
 
 [OPTION END]
 
-Once you complete this tutorial, you can continue with [Level Up with the Mobile Development Kit](https://developers.sap.com/mission.mobile-dev-kit-level-up.html) mission.
+Once you complete this tutorial, you can continue with [Level Up with the mobile development kit](https://developers.sap.com/mission.mobile-dev-kit-level-up.html) mission.
 
 ---

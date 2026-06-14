@@ -8,11 +8,11 @@ author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
-# Quick Start with the Mobile Development Kit (MDK)
+# Quick Start with the mobile development kit (MDK)
 <!-- description --> Develop and analyze your first offline mobile application using the MDK template, connecting it to a sample service.
 
 ## Prerequisites
-- **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
+- **Tutorial group:** [Set Up for the mobile development kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device
 <table><tr><td align="center">![Play Store QR Code](img-0.1.png)<br>Android</td><td align="center">![App Store QR Code](img-0.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
@@ -130,7 +130,7 @@ Ensure that you have downloaded the SAP Mobile Services Client from the public s
 
 **Demo App**: The Demo app is intended for you to explore the MDK capabilities. This app connects to the same Mobile Services sample backend to which your MDK app is connected.
 
-**Mentor App**: The MDK Mentor app is interactive documentation that helps designers and developers discover the capabilities of the SAP Mobile Development Kit. You can view live previews of the UI components and change parameters to see the effects immediately. 
+**Mentor App**: The MDK Mentor app is interactive documentation that helps designers and developers discover the capabilities of the mobile development kit. You can view live previews of the UI components and change parameters to see the effects immediately. 
 
 In both applications, the user popover menu provides an option to easily switch between the Demo and Mentor Apps. When you are done exploring, you can log out to return to the MDK Welcome screen, which resets any changes made and allows you to onboard to your backend application.
 

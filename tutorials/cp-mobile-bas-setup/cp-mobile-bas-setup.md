@@ -59,6 +59,6 @@ For this tutorial, you will create a dev space personalized for Mobile developme
 
 Congratulations, you have successfully configured SAP Business Application Studio to build multi-channel applications.
 
-You can now build [**Mobile Development Kit apps**](https://developers.sap.com/mission.mobile-dev-kit-get-started.html) using Business Application studio.
+You can now build [**mobile development kit apps**](https://developers.sap.com/mission.mobile-dev-kit-get-started.html) using Business Application studio.
 
 ---
