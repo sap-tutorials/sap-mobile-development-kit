@@ -17,7 +17,7 @@ author_profile: https://github.com/jitendrakansal
   - How to access SAP Mobile Services in your BTP account
 
 ## Intro
-Once SAP Mobile Services is available, you can use its features in your Mobile development kit, SAP BTP SDK for iOS & Android apps.
+Once SAP Mobile Services is available, you can use its features in your mobile development kit, SAP BTP SDK for iOS & Android apps.
 
 ---
 

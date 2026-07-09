@@ -2,13 +2,13 @@
 parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
-tags: [ tutorial>intermediate, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-build ]
+tags: [ software-product>mobile-development-kit-client, tutorial>beginner, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-build, software-product>sap-business-application-studio ]
 time: 35
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
 ---
 
-# Build Your mobile development kit Client Using Cloud Build Service
+# Build Your Mobile Development Kit Client Using Cloud Build Service
 <!-- description --> Build a standard or a customized mobile development kit client using cloud build service and connect to your SAP mobile app.
 
 ## Prerequisites
@@ -22,7 +22,7 @@ author_profile: https://github.com/jitendrakansal
   - How to install the binary on your device
 
 ## Intro
-Cloud Build Service provides 2 options for creating a Mobile development kit client:
+Cloud Build Service provides 2 options for creating a mobile development kit client:
 
 1. Create a standard MDK client by providing your own app icon and app logo.
 2. Create a customized MDK client by importing your local `.mdkproject` similar to what you might have done via MDK SDK locally on your machine.
