@@ -123,13 +123,13 @@ With Cline configured, you now need to register the MDK MCP server so the AI age
         "mdk-mcp": {
           "type": "stdio",
           "command": "mdk-mcp",
-          "args": ["--schema-version", "26.3"]
+          "args": ["--schema-version", "26.6"]
         }
       }
     }
     ```
 
-    >Supported schema versions include 26.3(default), 25.9, 25.6, 24.11, and 24.7.      
+    >Supported schema versions include 26.6(default), 26.3, 25.9, 25.6, 24.11, and 24.7.      
 
 
 5. After saving the file, the `mdk-mcp` server appears in the MCP Servers list with a green status indicator, confirming it is active and ready. Once configured, your AI agent can access the MDK MCP server. [Here](https://github.com/SAP/mdk-mcp-server?tab=readme-ov-file#available-tools) are the detailed information about all the tools available in this MCP server.
