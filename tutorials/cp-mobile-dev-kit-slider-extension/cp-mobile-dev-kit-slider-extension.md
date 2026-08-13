@@ -12,7 +12,7 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Build and run the mobile development kit client with slider custom control functionality for Android and iOS platforms.
 
 ## Prerequisites
-- **Tutorial**: [Set Up for the mobile development kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
+- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544) device.
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
@@ -30,7 +30,7 @@ To extend the functionality, or customize the look and feel, and behavior of you
 
 In this tutorial, you will create a Slider extension via `NativeScript` (in TypeScript language) which will be common for both device platforms.
 
-![MDK](img-1.0.gif)
+![Slider Extension Demo Preview](img-1.0.gif)
 
 ### Create a New Project Using SAP Build
 
@@ -38,43 +38,43 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![MDK](img-1.3.png)
+    <!-- border -->![Mobile Category Selection](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![MDK](img-1.4.png)
+    <!-- border -->![Mobile Application Option Selection](img-1.4.png)
 
 
 5. Enter the project name `mdk_slider` (used for this tutorial) , add a description (optional), and click **Create**. 
 
-    <!-- border -->![MDK](img-1.5.png)
+    <!-- border -->![Project Name And Description Entry](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![MDK](img-1.5.1.png)
+    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
 
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
-    <!-- border -->![MDK](img-1.6.png)
+    <!-- border -->![Project Created In Lobby Table](img-1.6.png)
     
 8. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![MDK](img-1.7.png)  
+    <!-- border -->![SAP BAS Workspace Opened](img-1.7.png)  
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
-    >![MDK](img-1.8.png) 
+    >![SAP BAS Usage Consent Window](img-1.8.png) 
 
 ### Configure the Project Using Storyboard
 
@@ -86,33 +86,33 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![MDK](img-2.1.png) 
+    <!-- border -->![Runtime Resources Add Button](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
-    >![MDK](img-2.2.png) 
+    >![CF Login Credentials Dialog](img-2.2.png) 
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor and click **Add App to Project**. You do not require to add a destination for this tutorial.
 
-    <!-- border -->![MDK](img-2.4.png)  
+    <!-- border -->![Mobile Services App Selection](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app will be added under the Runtime Resources column.
 
-    <!-- border -->![MDK](img-2.5.png)      
+    <!-- border -->![Storyboard Runtime Resources Updated](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![MDK](img-2.6.png)     
+    <!-- border -->![UI Application Column Add Button](img-2.6.png)     
 
 5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Project Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
-    <!-- border -->![MDK](img-2.7.png)  
+    <!-- border -->![Auto-Deployment Disabled Basic Information](img-2.7.png)  
 
 6. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->![MDK](img-2.8.png) 
+    <!-- border -->![Storyboard Updated With UI Component](img-2.8.png) 
 
 ### Register an Extension Control
 
@@ -122,15 +122,15 @@ The extension control that you will be creating to extend the functionality of y
 
 2. Drag & drop `slider.png` file on **Images** folders.
 
-    <!-- border -->![MDK](img-2.9.png)
+    <!-- border -->![Slider Image Dropped On Images Folder](img-2.9.png)
 
 3. Right-click **Extensions** | select **MDK: Register Extension Control**.
 
-    <!-- border -->![MDK](img-2.10.png)
+    <!-- border -->![Extensions Register Extension Control Menu](img-2.10.png)
 
 4. In the `Template Selection` step, select **New Metadata Extension Control**. Click **Next**.
 
-    <!-- border -->![MDK](img-2.11.png)
+    <!-- border -->![Template Selection New Metadata Extension](img-2.11.png)
 
 5. In the **Base Information** step, provide the below information and click **Next**.
 
@@ -152,7 +152,7 @@ The extension control that you will be creating to extend the functionality of y
 
     **Display**: This property is used for the image to be displayed on the page editor to represent the extension control.
 
-    <!-- border -->![MDK](img-2.12.png)
+    <!-- border -->![Extension Control Base Information Form](img-2.12.png)
 
 6. In the **Extension Properties** step, fill schema details in **Schema** column and click **Finish**.
 
@@ -177,13 +177,13 @@ The extension control that you will be creating to extend the functionality of y
     }
     ```
 
-    <!-- border -->![MDK](img-2.13.png)
+    <!-- border -->![Extension Properties Schema Details](img-2.13.png)
 
     >Above schema will add these predefined properties (`MaxValue`, `MinValue` and `Title`) in the map extension control. You will provide values for these properties in next step.
 
     Some additional files and folders are added to the **Extensions** folder. You will learn more about it in following steps.
 
-    <!-- border -->![MDK](img-2.14.png)
+    <!-- border -->![Extensions Folder With New Files](img-2.14.png)
 
     >You can find more details about registering extension control in [this](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/advanced/extensions/registering-extension-in-bas.html) guide.
 
@@ -194,11 +194,11 @@ You will add this registered control as a Form Cell control in a section page.
 
 1. In the `Main.page`, expand the **Controls** | **Static Container** group, **Form Cell** onto the Page area.
 
-    <!-- border -->![MDK](img-3.2.1.gif)
+    <!-- border -->![Form Cell Dragged To Main Page](img-3.2.1.gif)
 
 2. Expand the **Form Cell Registered Extension Control** group, drag and drop the `mdk_slider` onto the Page area.
 
-    <!-- border -->![MDK](img-3.3.gif)
+    <!-- border -->![Slider Extension Control Dropped On Page](img-3.3.gif)
 
     >You can find more details about the `FormCell Extension` in [this](https://help.sap.com/doc/3642933ef2e1478fb1578ef2acba4ae9/Latest/en-US/reference/schemadoc/Page/FormCell/Extension.schema.html) guide.    
 
@@ -212,31 +212,31 @@ You will add this registered control as a Form Cell control in a section page.
     | `MinValue` | 10 |
     | `Title` | Counter |  
 
-    <!-- border -->![MDK](img-3.4.png)
+    <!-- border -->![Extension Control Properties Configuration](img-3.4.png)
 
 4. You will add an item on action bar in `SliderExtension.page` and set an action on its `onPress` event.
 
     In `SliderExtension.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
 
-    <!-- border -->![MDK](img-3.5.gif)
+    <!-- border -->![Action Bar Item Added To Slider Page](img-3.5.gif)
 
 5. Click the **link** icon to open the object browser for the **System Item** property.
 
     Double click the **Save** type and click **OK**.
 
-    <!-- border -->![MDK](img-3.6.png)
+    <!-- border -->![System Item Save Type Selected](img-3.6.png)
 
 6. Switch to the **Events** tab and click the dotted icon for the `OnPress` property to create a new action.
 
-    <!-- border -->![MDK](img-3.7.png)
+    <!-- border -->![Events Tab OnPress Property](img-3.7.png)
 
 7. Keep the default selection for **Object Type** (as Action) and **Folders** path. Click **OK**.
 
-    <!-- border -->![MDK](img-3.8.png)
+    <!-- border -->![Object Type Action Default Selection](img-3.8.png)
 
 8. In the template selection, choose **Message** in **Category** | click **Message** | **Next**.
 
-    <!-- border -->![MDK](img-3.9.png)
+    <!-- border -->![Message Action Template Selection](img-3.9.png)
 
     Provide the below information:
 
@@ -251,7 +251,7 @@ You will add this registered control as a Form Cell control in a section page.
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--` |
 
-    <!-- border -->![MDK](img-3.10.png)
+    <!-- border -->![ShowMessage Action Properties Form](img-3.10.png)
 
     >Here `MyExtensionControlName` is the name of the control that you renamed in code editor.
 
@@ -261,7 +261,7 @@ You will add this registered control as a Form Cell control in a section page.
 
     In `Main.page`, drag and drop a **Simple Property** control below the slider control.
 
-    <!-- border -->![MDK](img-3.11.gif)
+    <!-- border -->![Simple Property Control Added To Page](img-3.11.gif)
 
 10.  Provide the following information:
 
@@ -270,7 +270,7 @@ You will add this registered control as a Form Cell control in a section page.
     | `Caption`| `Manual Entry` |
     | `placeholder` | `Enter number to set the slider ext's value` |
 
-    <!-- border -->![MDK](img-3.12.png)
+    <!-- border -->![Simple Property Caption And Placeholder](img-3.12.png)
 
 11. When you input a value to the Simple Property control, an event will be triggered reflecting the slider value.
 
@@ -278,17 +278,17 @@ You will add this registered control as a Form Cell control in a section page.
 
     Navigate to **Events** tab, click the dotted icon for the `OnValueChange` property to create a new rule.
 
-    <!-- border -->![MDK](img-3.13.png)
+    <!-- border -->![Events Tab OnValueChange Property](img-3.13.png)
 
     For this, first you will write a business logic to set the extension value and then bind it to the input field.
 
 12. Choose the *Object Type* as **Rule** and *Folders* path as it is. Click **OK**.
 
-    <!-- border -->![MDK](img-3.14.png)
+    <!-- border -->![Object Type Rule Selection](img-3.14.png)
 
 13. In the **Base Information** step, enter the Rule **Name** `SetExtensionValue` and click **Finish**.
 
-    <!-- border -->![MDK](img-3.15.png)
+    <!-- border -->![Rule Name SetExtensionValue Entry](img-3.15.png)
 
 
 14. Replace the generated snippet with below code.
@@ -311,21 +311,21 @@ You will add this registered control as a Form Cell control in a section page.
 
 1. In **Extensions** folder, create additional files & folders. You will write individual implementation for Android and iOS platform. Final structure should look like as per below.
 
-    <!-- border -->![MDK](img-4.1.png)
+    <!-- border -->![Extensions Folder Final Structure](img-4.1.png)
 
 
 
         ├── Extensions
-          ├── MySliderModule
-           │   └── controls
-           │       ├── MySliderExtension.ts
-           │       └── MySliderPlugin
-           │           ├── MySlider.ts
-           │           ├── android
-           │           │   └── MySlider.ts
-           │           └── ios
-           │               └── MySlider.ts
-           └── mdk_slider.extension
+          ├── MySliderModule
+           │   └── controls
+           │       ├── MySliderExtension.ts
+           │       └── MySliderPlugin
+           │           ├── MySlider.ts
+           │           ├── android
+           │           │   └── MySlider.ts
+           │           └── ios
+           │               └── MySlider.ts
+           └── mdk_slider.extension
 
 
 2. In `MySliderPlugin/android/MySlider.ts` file, copy and paste the following code.
@@ -822,23 +822,23 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 1. Open any editor file or switch to the `Main.page` tab, click the **Deploy** option in the editor's header area.
 
-    <!-- border -->![MDK](img-6.1.png)
+    <!-- border -->![Deploy Option In Editor Header](img-6.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![MDK](img-6.2.png)
+    <!-- border -->![Mobile Services Deploy Target Selection](img-6.2.png)
 
 3. Select **Mobile Services Landscape** as **Standard**.
 
-    <!-- border -->![MDK](img-6.3.png)    
+    <!-- border -->![Mobile Services Landscape Standard](img-6.3.png)    
 
 4. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![MDK](img-6.5.png)
+    <!-- border -->![Enable Source For Debugging Option](img-6.5.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![MDK](img-6.6.png)
+    <!-- border -->![Successful Deployment Confirmation Message](img-6.6.png)
 
 
 ### Display the QR code for onboarding the Mobile app
@@ -846,11 +846,11 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 SAP Business Application Studio includes a feature that displays a QR code for onboarding in the mobile client. To view the onboarding QR code, click the **Application QR Code** icon in the editor's header area.
 
-<!-- border -->![MDK](img-7.1.png)
+<!-- border -->![Application QR Code Icon In Editor](img-7.1.png)
 
 The On-boarding QR code is now displayed.
 
-<!-- border -->![MDK](img-7.2.png)
+<!-- border -->![Onboarding QR Code Displayed](img-7.2.png)
 
 >Leave the Onboarding dialog box open for the next step.
 
@@ -866,7 +866,7 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 
 Once you accept app update, you see Slider control.
 
-![MDK](img-1.0.gif)
+![Slider Control On Android Device](img-1.0.gif)
 
 [OPTION END]
 
@@ -876,7 +876,7 @@ Follow [these steps](https://github.com/SAP-samples/cloud-mdk-tutorial-samples/b
 
 Once you accept app update, you see Slider control.
 
-![MDK](img-8.1.gif)
+![Slider Control On iOS Device](img-8.1.gif)
 
 [OPTION END]
 

@@ -18,7 +18,7 @@ author_profile: https://github.com/jitendrakansal
 ---
 
 ## Intro
-![MDK](img-1.0.gif)
+![Customer Record Edit Flow Demo](img-1.0.gif)
 
 ### Create a new page for modifying customer data
 
@@ -32,29 +32,29 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
 1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![New Section Page Creation Menu](img-1.1.png)
 
 2. In the **Base Information** step, enter the Page Name `Customers_Edit` and click **Finish** to complete the page creation process.
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![Customers_Edit Page Name Entry](img-1.2.png)
 
 3. Once the page opens in the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Update Customer**.
 
-    <!-- border -->![MDK](img-1.3.png)
+    <!-- border -->![Action Bar Caption Set To Update Customer](img-1.3.png)
 
 4. Now, you will add the fields (like first name, last name, phone & email address) that will be editable by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell** section onto the Page area.
 
-    <!-- border -->![MDK](img-1.3.1.gif)
+    <!-- border -->![Form Cell Section Dragged Onto Page](img-1.3.1.gif)
 
     >Form Cell Section is used to contain Form Cell controls in a section page.
 
 5. You will now add Form Cell controls in the Form Cell Section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
 
-    <!-- border -->![MDK](img-1.4.gif)
+    <!-- border -->![Simple Property Control Dropped On Page](img-1.4.gif)
 
 6. Drag and drop three additional Simple Property controls onto the page so you have four total controls.
 
-    <!-- border -->![MDK](img-1.5.png)
+    <!-- border -->![Four Simple Property Controls On Page](img-1.5.png)
 
 7. Select the first **Simple Property control** and provide the below information:
 
@@ -64,7 +64,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
     | `Caption` | `First Name` |
     | `Value`| click the link icon and bind it to `FirstName` property of the Customer entity |
 
-    <!-- border -->![MDK](img-1.6.png)
+    <!-- border -->![FCFirstName Control Properties Configured](img-1.6.png)
 
 8. Select the second Simple Property control and provide the below information:
 
@@ -74,7 +74,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
     | `Caption` | `Last Name` |
     | `Value`| click the link icon and bind it to `LastName` property of the Customer entity |
 
-    <!-- border -->![MDK](img-1.7.png)
+    <!-- border -->![FCLastName Control Properties Configured](img-1.7.png)
 
 9. Select the third Simple Property control and provide the below information:
 
@@ -85,7 +85,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
     | `KeyboardType` | `Phone` |
     | `Value`| click the link icon and bind it to `PhoneNumber` property of the Customer entity |
 
-    <!-- border -->![MDK](img-1.8.png)
+    <!-- border -->![FCPhone Control With Phone Keyboard](img-1.8.png)
 
     >To streamline data entry, the keyboard displayed when editing a `SimplePropertyFormCell` should be appropriate for the type of content in the field. If your app asks for number, for example, it should display the phone keyboard.
 
@@ -98,7 +98,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
     | `KeyboardType` | `Email` |
     | `Value`| click the link icon and bind it to `EmailAddress` property of the Customer entity |
 
-    <!-- border -->![MDK](img-1.9.png)
+    <!-- border -->![FCEmail Control With Email Keyboard](img-1.9.png)
 
     >To streamline data entry, the keyboard displayed when editing a `SimplePropertyFormCell` should be appropriate for the type of content in the field. If your app asks for an email address, for example, it should display the email address keyboard.
 
@@ -112,13 +112,13 @@ While updating the customer details, you may want to close the current page and 
 
     >Action Bar Item is a button that users can use to fire actions when pressed. You can add an Action Bar Item only to the Action Bar (at the top of the page).
 
-    <!-- border -->![MDK](img-2.1.gif)
+    <!-- border -->![Cancel Action Bar Item Dragged To Page](img-2.1.gif)
 
 2. In the Properties pane, click the **link icon** to open the object browser for the **System Item** property.
 
     Double-click the **Cancel** type and click **OK**.
 
-    <!-- border -->![MDK](img-2.2.gif)
+    <!-- border -->![Cancel System Item Selected In Object Browser](img-2.2.gif)
 
     >System Item are predefined system-supplied icon or text. Overwrites _Text_ and _Icon_ if specified.
 
@@ -126,7 +126,7 @@ While updating the customer details, you may want to close the current page and 
 
     Double click the `CloseModalPage_Cancel.action` and click **OK** to set it as the `OnPress` Action.
 
-    <!-- border -->![MDK](img-2.3.png)    
+    <!-- border -->![CloseModalPage Cancel Action Set For OnPress](img-2.3.png)    
 
     >You can close pages with the option to terminate ongoing events or wait until they are complete. Visit [documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ClosePage.schema.html) for more details about Close Page Action.
 
@@ -142,23 +142,23 @@ First, add an action bar item on the `Customers_Edit.page`
 
 1.  In `Customers_Edit.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
 
-    <!-- border -->![MDK](img-3.1.png)
+    <!-- border -->![Save Action Bar Item Added Upper Right](img-3.1.png)
 
 2. Click the **link** icon to open the object browser for the **System Item** property. Double-click the **Save** type and click **OK**.
 
-    <!-- border -->![MDK](img-3.2.png)
+    <!-- border -->![Save System Item Selected In Object Browser](img-3.2.png)
 
 3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
-    <!-- border -->![MDK](img-3.3.png)
+    <!-- border -->![Create Rule Action Selected For OnPress](img-3.3.png)
 
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-3.4.png)   
+    <!-- border -->![Default Object Type And Folders Selection](img-3.4.png)   
 
 5. Choose **Data** in **Category** | click **OData** | **Next**.
 
-    <!-- border -->![MDK](img-3.5.png)
+    <!-- border -->![OData Category Selected For Action](img-3.5.png)
 
 6. In the **Base Information** step, provide the below information:
 
@@ -170,7 +170,7 @@ First, add an action bar item on the `Customers_Edit.page`
     | `EntitySet`| Select `Customers` from the dropdown |
     | `ReadLink`| click link icon and double-click `readLink` |
 
-    <!-- border -->![MDK](img-3.6.png)
+    <!-- border -->![Customers_UpdateEntity Action Base Information](img-3.6.png)
 
     >This action will map the changes to the correct entities in the OData service and save the changes.
 
@@ -188,11 +188,11 @@ First, add an action bar item on the `Customers_Edit.page`
 
     In the search box start typing the control name `FCEmail`. The list will filter down to show the matching values. Double-click the **Value (Value)** entry under the `FCEmail` field and click **OK** to set binding.
 
-    <!-- border -->![MDK](img-3.7.gif)
+    <!-- border -->![EmailAddress Property Bound To FCEmail Control](img-3.7.gif)
 
 10.  Repeat the above step for remaining properties: `FirstName`, `LastName` and `PhoneNumber`.
 
-    <!-- border -->![MDK](img-3.8.png)
+    <!-- border -->![Remaining Properties Bound To Form Controls](img-3.8.png)
 
     Click **Finish**. The action editor will open with the `Customers_UpdateEntity.action` loaded.
 
@@ -202,20 +202,20 @@ First, add an action bar item on the `Customers_Edit.page`
 
     In the `Customers_UpdateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the **link icon** to open the object browser for the **Success Action** property and bind it to the `CloseModalPage_Complete.action`.
 
-    <!-- border -->![MDK](img-3.9.png)
+    <!-- border -->![Success Action Bound To CloseModalPage_Complete](img-3.9.png)
 
 
 12. Create a new message action displaying error in case of the update failure. In the `Customers_UpdateEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
 
-    <!-- border -->![MDK](img-3.12.png)
+    <!-- border -->![Create Rule Action For Failure Action](img-3.12.png)
 
 13. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-3.4.png)   
+    <!-- border -->![Default Object Type And Folders Selection](img-3.4.png)   
 
 14. Choose **Message** in **Category** | click **Message** | **Next**.
 
-    <!-- border -->![MDK](img-3.13.png)
+    <!-- border -->![Message Category Selected For Action](img-3.13.png)
 
 15. In the **Base Information**, provide the below information and then click **Finish**.
 
@@ -230,7 +230,7 @@ First, add an action bar item on the `Customers_Edit.page`
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--` |
 
-    <!-- border -->![MDK](img-3.14.png)
+    <!-- border -->![Failure Message Action Base Information](img-3.14.png)
 
     >`Customers_UpdateEntity` is the Action Result value of the `Customers_UpdateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
 
@@ -250,25 +250,25 @@ You will navigate from the Customer Detail page to a new page modifying customer
 
 1. In `Customers_Detail.page`, drag and drop an **Action Bar Item** to the upper right of the action bar.
 
-    <!-- border -->![MDK](img-4.1.png)    
+    <!-- border -->![Edit Action Bar Item Added To Detail Page](img-4.1.png)    
 
 2. Click the **link icon** to open the object browser for the **System Item** property.
 
     Double-click the **Edit** type and click **OK**.
 
-    <!-- border -->![MDK](img-4.2.png)
+    <!-- border -->![Edit System Item Selected In Object Browser](img-4.2.png)
 
 3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
-    <!-- border -->![MDK](img-4.3.png)
+    <!-- border -->![Create Rule Action Selected For OnPress](img-4.3.png)
     
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![MDK](img-3.4.png)    
+    <!-- border -->![Default Object Type And Folders Selection](img-3.4.png)    
 
 5. Choose **UI** in **Category** | click **Navigation** | **Next**.
 
-    <!-- border -->![MDK](img-4.4.png)
+    <!-- border -->![Navigation Category Selected For Action](img-4.4.png)
 
 6. Provide the below information:
 
@@ -278,7 +278,7 @@ You will navigate from the Customer Detail page to a new page modifying customer
     | `PageToOpen` | Select `Customers_Edit.page` from the dropdown |
     | `ModalPage`| Select `true` from the dropdown |
 
-    <!-- border -->![MDK](img-4.6.png)
+    <!-- border -->![NavToCustomers_Edit Navigation Action Configuration](img-4.6.png)
 
 7. Click **Finish** to complete the action creation process. 
 
@@ -289,7 +289,7 @@ You will now deploy the updated project to your MDK client.
 
 Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** .
 
-<!-- border -->![MDK](img-5.png)
+<!-- border -->![Deploy To Mobile Services Option Selected](img-5.png)
 
 ### Run the Project
 
@@ -299,11 +299,11 @@ Click the **Deploy** option in the editor's header area, and then choose the dep
 
 1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-    ![MDK](img-6.1.png)
+    ![New Version Available Popup Android](img-6.1.png)
 
 2. Tap **Customers**, tap one of the available customer record, you will then navigate to Customer detail page. Tap `edit` icon. Update existing values for the given customer. You will notice the Phone keyboard appears when updating Phone value. Tap save icon and record gets updated locally.
 
-    ![MDK](img-6.2.gif)
+    ![Customer Edit And Save Flow Android](img-6.2.gif)
 
 4. You can cross verify if the record has been updated in the backend.
 
@@ -311,13 +311,13 @@ Click the **Deploy** option in the editor's header area, and then choose the dep
 
     >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **myapp.mdk.demo** **&rarr;** **Connectivity** **&rarr;** click **Launch in Browser** icon
 
-    ><!-- border -->![MDK](img-6.3.png)
+    ><!-- border -->![Mobile Services App Connectivity Launch In Browser](img-6.3.png)
 
     >It will open the URL in a new tab, remove `?auth=uaa` and add `/Customers` at the end of the URL.
 
     But here result is pointing to old values.
 
-    ><!-- border -->![MDK](img-6.4.png)
+    ><!-- border -->![Backend Shows Old Customer Values](img-6.4.png)
 
     Since this is an Offline application, new entry is added to the request queue of the local store which needs to be sent or uploaded to the backend explicitly.  
 
@@ -325,11 +325,11 @@ Click the **Deploy** option in the editor's header area, and then choose the dep
 
 5. Tap on **Sync Changes** in the user menu On Main page to push the local changes to the backend, a successful message will be shown once data is submitted.
 
-    ![MDK](img-6.5.gif)
+    ![Sync Changes Uploads Local Data Android](img-6.5.gif)
 
 Now, refresh the URL to check if record has been updated in the backend. As Sync is pressed, `UploadOffline.action` gets triggered to upload local changes from device to the backend and on success of this call, `DownloadOffline.action` is being called.
 
-![MDK](img-6.6.png)
+![Backend Shows Updated Customer Record](img-6.6.png)
 
 [OPTION END]
 
@@ -337,11 +337,11 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
 1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-    ![MDK](img-6.7.png)
+    ![New Version Available Popup iOS](img-6.7.png)
 
 2. Tap **Customers**, tap one of the available customer record, you will then navigate to Customer detail page. Tap `edit` icon. Update existing values for the given customer. You will notice the Phone keyboard appears when updating Phone value. Tap save icon and record gets updated locally.
 
-    ![MDK](img-6.8.gif)
+    ![Customer Edit And Save Flow iOS](img-6.8.gif)
 
 3. You can cross verify if the record has been updated in the backend.
 
@@ -349,13 +349,13 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
     >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **myapp.mdk.demo** **&rarr;** **Connectivity** **&rarr;** click **Launch in Browser** icon
 
-    ><!-- border -->![MDK](img-6.3.png)
+    ><!-- border -->![Mobile Services App Connectivity Launch In Browser](img-6.3.png)
 
     >It will open the URL in a new tab, remove `?auth=uaa` and add `/Customers` at the end of the URL.
 
     But here result is pointing to old values.
 
-    ><!-- border -->![MDK](img-6.4.png)
+    ><!-- border -->![Backend Shows Old Customer Values](img-6.4.png)
 
     Since this is an Offline application, new entry is added to the request queue of the local store which needs to be sent or uploaded to the backend explicitly.  
 
@@ -363,11 +363,11 @@ Now, refresh the URL to check if record has been updated in the backend. As Sync
 
 4. Tap **Sync Changes** in the user menu On the Main page to push the local changes to the backend, a successful message will be shown once data is submitted.
 
-    ![MDK](img-6.9.gif)
+    ![Sync Changes Uploads Local Data iOS](img-6.9.gif)
 
 Now, refresh the URL to check if record has been updated in the backend. As Sync is pressed, `UploadOffline.action` gets triggered to upload local changes from device to the backend and on success of this call, `DownloadOffline.action` is being called.
 
-![MDK](img-6.6.png)
+![Backend Shows Updated Customer Record](img-6.6.png)
 
 [OPTION END]
 

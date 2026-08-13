@@ -28,11 +28,11 @@ In this step, you will use the agent to ask project-aware questions about MDK. T
     let result = clientAPI.actionResults.AppUpdate.data;
     ```
 
-    ![MDK](img-1.1.png)
+    ![Cline Window Prompt Input Field](img-1.1.png)
 
 2. The MCP client analyzes the code and provides a detailed breakdown of the statement.
 
-    ![MDK](img-1.2.png)
+    ![MCP Client Code Analysis Breakdown](img-1.2.png)
 
     >Generated responses may differ from the examples shown in this tutorial. Minor variations in code or output are expected.
 
@@ -44,11 +44,11 @@ In this step, you will use the agent to ask project-aware questions about MDK. T
 
 4. The MCP client (Cline) recognizes that the MDK MCP server should be used and executes the request using the `mdk-docs` tool.
 
-    ![MDK](img-1.3.png)
+    ![Cline Executing mdk-docs Tool Request](img-1.3.png)
 
     The generated response includes examples showing how to restrict file size using a Form Cell Attachment control. It also generates a `README` file containing reference examples for different use cases.
 
-    ![MDK](img-1.4.png) 
+    ![Generated Response With File Size Examples](img-1.4.png) 
 
     >Generated responses may differ from the examples shown in this tutorial. Minor variations in code or output are expected.
 
@@ -73,7 +73,7 @@ In this step, you will use the agent to modify existing UI screens based on your
 
 2. The MCP client generates the required updates, validates the project, and deploys it.  
 
-    ![MDK](img-2.1.png) 
+    ![MCP Client Project Validation And Deployment](img-2.1.png) 
 
     >Generated responses may differ from the examples shown in this tutorial. Minor variations in code or output are expected.
 
@@ -85,15 +85,15 @@ In this step, you will use the agent to modify existing UI screens based on your
 
 1. On the **Main** page, open the user menu and tap **Check for Updates**, When the _New Version Available_ dialog appears, tap **Now**.
 
-    ![MDK](img-3.1.png)
+    ![Android Check For Updates New Version Dialog](img-3.1.png)
 
 2. Observe that the main page has been redesigned to use a bottom navigation layout, providing quick access to all defined entities. 
 
-    ![MDK](img-3.2.png)
+    ![Android Main Page Bottom Navigation Layout](img-3.2.png)
 
 3. Tap **Sales Orders** to view the updated list page.
 
-    ![MDK](img-3.3.png)
+    ![Android Sales Orders Updated List Page](img-3.3.png)
 
 
 [OPTION END]
@@ -102,15 +102,15 @@ In this step, you will use the agent to modify existing UI screens based on your
 
 1. On the **Main** page, open the user menu and tap **Check for Updates**, When the _New Version Available_ dialog appears, tap **Now**.
 
-    ![MDK](img-3.4.png)
+    ![iOS Check For Updates New Version Dialog](img-3.4.png)
 
 2. Observe that the main page has been redesigned to use a bottom navigation layout, providing quick access to all defined entities.  
 
-    ![MDK](img-3.5.png)
+    ![iOS Main Page Bottom Navigation Layout](img-3.5.png)
 
 3. Tap **Sales Orders** to view the updated list page.
 
-    ![MDK](img-3.6.png)
+    ![iOS Sales Orders Updated List Page](img-3.6.png)
 
 [OPTION END]
 
@@ -125,11 +125,11 @@ In this step, you will use the MCP agent to generate business logic that dynamic
     For example, Sales Orders (total count)
     ```
 
-    ![MDK](img-4.1.png)
+    ![Cline Window Sales Orders Count Prompt](img-4.1.png)
 
 4. The MCP client generates a MDK rule in JavaScript containing the required logic and binds it to the caption property. After validation, the project is automatically deployed. (Right-click `SalesOrderHeaders_List.page` to open it with text editor)
 
-    ![MDK](img-4.2.png)
+    ![MDK Rule Generated And Project Deployed](img-4.2.png)
 
     >Generated responses may differ from the examples shown in this tutorial. Minor variations in code or output are expected.
 
@@ -141,11 +141,11 @@ In this step, you will use the MCP agent to generate business logic that dynamic
 
 1. On the bottom navigation page, open the user menu and tap **Check for Updates**, When the _New Version Available_ dialog appears, tap **Now**.
 
-    ![MDK](img-5.1.png)
+    ![Android Check For Updates Bottom Navigation](img-5.1.png)
 
 2. Navigate to **Sales Orders** and verify that the total count appears in the page caption.
 
-    ![MDK](img-5.2.png)
+    ![Android Sales Orders Total Count Caption](img-5.2.png)
 
 
 [OPTION END]
@@ -154,11 +154,11 @@ In this step, you will use the MCP agent to generate business logic that dynamic
 
 1. On the bottom navigation page, open the user menu and tap **Check for Updates**, When the _New Version Available_ dialog appears, tap **Now**.
 
-    ![MDK](img-5.3.png)
+    ![iOS Check For Updates Bottom Navigation](img-5.3.png)
 
 2. Navigate to **Sales Orders** and verify that the total count appears in the page caption.
 
-    ![MDK](img-5.4.png)
+    ![iOS Sales Orders Total Count Caption](img-5.4.png)
 
 [OPTION END]
 

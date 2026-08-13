@@ -32,7 +32,7 @@ In this step, you will connect to your SAP BTP Cloud Foundry organization and sp
     ```
 
     >You can find your specific API endpoint of your Cloud Foundry organization on your SAP BTP subaccount overview page. 
-    >![MDK](img-1.0.png)
+    >![SAP BTP Subaccount API Endpoint Overview](img-1.0.png)
 
 4. Open the URL displayed in the terminal to access the logon screen.
     If this is your first time logging in, or if your browser cookies have been cleared, you will be prompted to provide the origin key of your custom identity provider or choose the default identity provider. Otherwise, the sign-in page lists previously used identity providers.
@@ -41,7 +41,7 @@ In this step, you will connect to your SAP BTP Cloud Foundry organization and sp
 
 6. Enter the passcode in the terminal window. Once logged in successfully, you can select your organization and space.
 
-    ![MDK](img-1.1.png)
+    ![CF Login Organization And Space Selection](img-1.1.png)
 
 ### Integration with SAP Mobile Services
 
@@ -60,7 +60,7 @@ To integrate with SAP Mobile Services, the MCP server  uses the Cloud Foundry CL
 
 3. Click the **+** button to create a new Mobile Services app configuration or select an existing one. 
 
-    ![MDK](img-2.1.png)
+    ![Mobile App Editor Create New Configuration](img-2.1.png)
 
 4. In the **Basic Information** step, enter the following values and choose **Create App**.
 
@@ -71,21 +71,21 @@ To integrate with SAP Mobile Services, the MCP server  uses the Cloud Foundry CL
     | `Security Settings` | Leave the default value as `XSUAA`  |   
     | `Add Mobile Sample OData ESPM` | Check this option |
         
-    ![MDK](img-2.2.png)
+    ![Mobile Services App Basic Information Form](img-2.2.png)
 
     >A sample OData Enterprise Sales and Procurement Model (ESPM) service is provided for development and testing. 
 
     Creating the mobile application may take 2-3 minutes. 
         
-    ![MDK](img-2.3.png)
+    ![Mobile Application Creation In Progress](img-2.3.png)
 
 5. Once the application reaches the `Started` state, select the destination `com.sap.edm.sampleservice.v4` and choose **Add App to Project**. 
 
-    ![MDK](img-2.4.png)
+    ![App Started State Destination Selection](img-2.4.png)
 
     A `.service.metadata` file is added to your project folder. This file contains information about your Mobile Services app and the OData service data model.
 
-    ![MDK](img-2.5.png)
+    ![Service Metadata File Added To Project](img-2.5.png)
 
 ### Create Your First MDK Project with Agentic AI
 
@@ -93,7 +93,7 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 
 1. In Visual Studio Code, open **Cline** by clicking its icon in the left sidebar.
 
-    ![MDK](img-3.1.png)
+    ![Cline Icon In VS Code Sidebar](img-3.1.png)
 
 2. Execute the following prompt:
 
@@ -101,15 +101,15 @@ You will now generate a new MDK project using the MCP server and an AI agent.
     Generate an MDK offline project displaying information about customers, products, sales order headers, and items. I should also be able to perform local transactions.
     ```
 
-    ![MDK](img-3.2.png)
+    ![Cline Prompt For MDK Project Generation](img-3.2.png)
 
 3. The MCP client (Cline) recognizes that the MDK MCP server should be used and executes the prompt using the `mdk-create` tool.  
 
-    ![MDK](img-3.3.png)
+    ![Cline Executing MDK Create Tool](img-3.3.png)
 
     Within a few seconds, the MDK project is generated in your workspace.
     
-    ![MDK](img-3.4.png)
+    ![MDK Project Generated In Workspace](img-3.4.png)
 
 ### Deploy Your Project
 
@@ -119,19 +119,19 @@ You will now generate a new MDK project using the MCP server and an AI agent.
     Deploy the project and display on-boarding QR code.
     ```
 
-    ![MDK](img-4.1.png)
+    ![Cline Deploy And QR Code Prompt](img-4.1.png)
 
 2. The MCP client (Cline) recognizes that the MDK MCP server should be used, which will use the `mdk-manage` tool to deploy the project to SAP Mobile Services.  
 
-    ![MDK](img-4.2.png)
+    ![Cline Executing MDK Manage Deploy Tool](img-4.2.png)
 
     After deployment completes successfully, the onboarding QR code is displayed.
 
-    ![MDK](img-4.3.png)
+    ![Onboarding QR Code Displayed After Deployment](img-4.3.png)
 
     The QR code is also stored in the `.build` folder of your project.
 
-    ![MDK](img-4.4.png)
+    ![QR Code Stored In Build Folder](img-4.4.png)
 
 ### Run the App
 
@@ -144,7 +144,7 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 2. After accepting the app update, you will see a list of entities on the **Main** page, along with a user menu that includes options such as syncing changes, accessing support, checking for updates, and resetting the app. An offline store will be initialized. By tapping any entity, you will navigate to a list page. If you select one of the items, the detail page will be displayed, allowing you to create, update, or delete the record. This record will be saved to the offline request queue database. You can navigate back to the main page and press the **Sync Changes** option in the user menu to upload any local changes to the backend. Once the upload is successful, the app will also download data from the backend to the offline store, ensuring both sides have the same dataset.
 
 
-    ![MDK](img-5.1.png)
+    ![MDK App Main Page On Android Device](img-5.1.png)
 
     >`com_sap_edm_sampleservice_v4` is the name of the service file generated in the project creation.
 
@@ -158,7 +158,7 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 
 2. After accepting the app update, you will see a list of entities on the **Main** page, along with a user menu that includes options such as syncing changes, accessing support, checking for updates, and resetting the app. An offline store will be initialized. By tapping any entity, you will navigate to a list page. If you select one of the items, the detail page will be displayed, allowing you to create, update, or delete the record. This record will be saved to the offline request queue database. You can navigate back to the main page and press the **Sync Changes** option in the user menu to upload any local changes to the backend. Once the upload is successful, the app will also download data from the backend to the offline store, ensuring both sides have the same dataset.
 
-    ![MDK](img-5.2.png)
+    ![MDK App Main Page On iOS Device](img-5.2.png)
 
     >`com_sap_edm_sampleservice_v4` is the name of the service file generated in the project creation.
 

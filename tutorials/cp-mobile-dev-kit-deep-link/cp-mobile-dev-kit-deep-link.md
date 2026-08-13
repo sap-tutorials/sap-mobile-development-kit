@@ -13,7 +13,7 @@ author_profile: https://github.com/jitendrakansal
 
 
 ## Prerequisites
-- **Tutorial group:** [Set Up for the mobile development kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
+- **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
 <table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
@@ -33,7 +33,7 @@ Deep links are used to send users directly to an app instead of a website or a s
 
 If an app is already installed, you can specify a custom URL scheme or an intent URL that opens that app. Using deep link, you can also navigate to specific events or pages, which could tie into campaigns that you may want to run.
 
-![MDK](img-1.0.png)
+![Deep Link Tutorial Overview](img-1.0.png)
 
 >**This tutorial has been executed using public store MDK client which has out of the box functionality to open the SAP standard apps like SAP Mobile Start.
 If you are building a custom version of Mobile development kit client, there you can implement deep links by specifying related custom URL schemes.**
@@ -44,40 +44,40 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![MDK](img-1.3.png)
+    <!-- border -->![Mobile Category Selection](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![MDK](img-1.4.png)
+    <!-- border -->![Mobile Application Option Selection](img-1.4.png)
 
 5. Enter the project name `mdkdeeplink` (used for this tutorial) , add a description (optional), and click **Review**. 
 
-    <!-- border -->![MDK](img-1.5.png)
+    <!-- border -->![Project Name Entry Form](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![MDK](img-1.5.1.png)
+    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
-    <!-- border -->![MDK](img-1.6.png)
+    <!-- border -->![Project Created In Lobby Table](img-1.6.png)
     
 8. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![MDK](img-1.7.png)  
+    <!-- border -->![Project Opened In SAP BAS](img-1.7.png)  
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
-    >![MDK](img-1.8.png) 
+    >![SAP BAS Usage Consent Window](img-1.8.png) 
 
 ### Configure the Project Using Storyboard
 
@@ -89,39 +89,39 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![MDK](img-2.1.png) 
+    <!-- border -->![Runtime Resources Add Button](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
-    >![MDK](img-2.2.png) 
+    >![CF Login Credentials Dialog](img-2.2.png) 
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor and click **Add App to Project**. You do not require to add a destination for this tutorial.
 
-    <!-- border -->![MDK](img-2.4.png)  
+    <!-- border -->![Mobile Application Services App Selection](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app will be added under the Runtime Resources column.
 
-    <!-- border -->![MDK](img-2.5.png)      
+    <!-- border -->![App Added To Storyboard Runtime Resources](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![MDK](img-2.6.png)     
+    <!-- border -->![UI Application Column Add Button](img-2.6.png)     
 
 5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Project Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
-    <!-- border -->![MDK](img-2.7.png)  
+    <!-- border -->![Basic Information Auto-Deployment Disabled](img-2.7.png)  
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->![MDK](img-2.8.png) 
+    <!-- border -->![Storyboard With UI Component Added](img-2.8.png) 
 
 ### Add buttons on main page to open other apps or web pages
 
 1. On the `Main.page`, drag and drop the **Button Table** Static Container control onto the Page.
 
-    <!-- border -->![MDK](img-2.9.gif)
+    <!-- border -->![Button Table Container Drag And Drop](img-2.9.gif)
 
     >The controls available in Container section includes controls that act as containers for other controls, such as container items. A container is constant for all pages. The size of a container depends on the controls and contents included inside.  
     You can find more details about [Containers](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/SectionedTable/Container/ButtonTable.schema.html).
@@ -130,19 +130,19 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     Drag and drop the **Button** Static Item control onto the page.
 
-    <!-- border -->![MDK](img-2.10.gif)
+    <!-- border -->![Button Static Item Control Drop](img-2.10.gif)
 
 3. Repeat the above step, and drag and drop one more such **Button** Static Item control.
 
-    <!-- border -->![MDK](img-2.11.png)
+    <!-- border -->![Second Button Item Added](img-2.11.png)
 
 4. Select the first control, remove the default value for the Image property and update its title to **Open SAP Mobile Start**.
 
-    <!-- border -->![MDK](img-2.12.png)
+    <!-- border -->![Button Title Set To Open SAP Mobile Start](img-2.12.png)
 
 5. Repeat the same for the second button and update its title to **Open sap.com page**:
 
-    <!-- border -->![MDK](img-2.13.png)
+    <!-- border -->![Second Button Title Set To Open SAP.com](img-2.13.png)
 
 ### Set onPress handler to the buttons
 
@@ -150,16 +150,16 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
     In `Main.page`, select **Open SAP Mobile Start** button. In the Properties pane, click the **Events** tab, click the dotted icon for the `OnPress Handler` property and select `Create a rule/action` to create a new rule.
 
-    <!-- border -->![MDK](img-3.1.png)
+    <!-- border -->![OnPress Handler Rule Creation Dialog](img-3.1.png)
 
 2. Choose the **Rule** in *Object Type*, keep the default path for the *Folders* and click **OK**.
 
-    <!-- border -->![MDK](img-3.2.png)
+    <!-- border -->![Rule Object Type Selection](img-3.2.png)
 
 
 3. In the **Base Information** step, enter the Rule **Name** as `OpenSAPMobileStart`, click **Finish**.
 
-    <!-- border -->![MDK](img-3.3.png)
+    <!-- border -->![Rule Name Entry Base Information](img-3.3.png)
 
     Replace the generated snippet with below code.
 
@@ -203,7 +203,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 5. In the generated `OpenSAPMobileStart.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Message Action`.
 
-    <!-- border -->![MDK](img-3.4.gif)
+    <!-- border -->![Create Action For Rule Reference](img-3.4.gif)
 
 6. Provide the below information:
 
@@ -216,7 +216,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `CancelCaption` | `Cancel` |
     | `OnCancel` | `--None--` |    
 
-    <!-- border -->![MDK](img-3.6.png)    
+    <!-- border -->![Confirmation Action Properties Form](img-3.6.png)    
 
 7. Repeat the same for the **Open sap.com page** button, create a new rule `OpenSAPcom` binding it's `OnPress Handler` event. Replace the generated snippet with below code.
 
@@ -256,34 +256,34 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 1. Switch to the `Main.page` tab, click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services**.
 
-    <!-- border -->![MDK](img-4.1.png)
+    <!-- border -->![Editor Deploy Option In Header](img-4.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![MDK](img-4.2.png)
+    <!-- border -->![Mobile Services Deploy Target Selection](img-4.2.png)
 
 3. Select **Mobile Services Landscape**.
 
-    <!-- border -->![MDK](img-4.3.png)    
+    <!-- border -->![Mobile Services Landscape Selection](img-4.3.png)    
 
 5. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![MDK](img-4.4.png)    
+    <!-- border -->![Enable Source For Debugging Prompt](img-4.4.png)    
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![MDK](img-4.5.png)
+    <!-- border -->![Deploy To Mobile Services Success Message](img-4.5.png)
 
 
 ### Display the QR code for onboarding the Mobile app
 
 SAP Business Application Studio includes a feature that displays a QR code for onboarding in the mobile client. To view the onboarding QR code, click the **Application QR Code** icon in the editor's header area.
 
-<!-- border -->![MDK](img-5.1.png)
+<!-- border -->![Application QR Code Icon In Header](img-5.1.png)
 
 The On-boarding QR code is now displayed.
 
-<!-- border -->![MDK](img-5.2.png)
+<!-- border -->![Onboarding QR Code Displayed](img-5.2.png)
 
 
 >Leave the Onboarding dialog box open for the next step.
@@ -299,19 +299,19 @@ The On-boarding QR code is now displayed.
 
     After you accept app update, you will see the **Main** page with the buttons you added in previous step 3.
 
-    ![MDK](img-6.1.png)
+    ![Android Main Page With Deep Link Buttons](img-6.1.png)
 
 2. Tap **Open SAP Mobile Start** and then tap **OK**.
 
-    ![MDK](img-1.0.png)
+    ![Open SAP Mobile Start Confirmation Dialog](img-1.0.png)
 
     If you have already installed SAP Mobile Start app, then MDK app will open it.
 
-    ![MDK](img-6.2.png)
+    ![SAP Mobile Start App Opened](img-6.2.png)
 
 3. Tapping on **Open SAP.com page** will open SAP website.
 
-    ![MDK](img-6.3.png)
+    ![SAP Website Opened In Browser](img-6.3.png)
 
 [OPTION END]
 
@@ -321,20 +321,20 @@ The On-boarding QR code is now displayed.
 
     After you accept app update, you will see the **Main** page with the buttons you added in previous step 3.
 
-    ![MDK](img-6.4.png)
+    ![iOS Main Page With Deep Link Buttons](img-6.4.png)
 
 2. Tap **Open SAP Mobile Start** and then tap **OK**.
 
-    ![MDK](img-6.5.png)
-    ![MDK](img-6.6.png)
+    ![Open SAP Mobile Start Button Tapped](img-6.5.png)
+    ![Confirmation OK Tapped](img-6.6.png)
 
     If you already installed SAP Mobile Start app, then MDK app will open it.
 
-    <!-- border -->![MDK](img-6.7.png)
+    <!-- border -->![SAP Mobile Start App Opened On iOS](img-6.7.png)
 
 3. Tapping on **Open sap.com page** will open SAP website.
 
-    <!-- border -->![MDK](img-6.8.png)
+    <!-- border -->![SAP Website Opened On iOS](img-6.8.png)
 
     >To run this app in your branded client, you need to add SAP Mobile Start app URL schemes (`com.sap.mobile.start`)  in the info.plist.   
 

@@ -21,7 +21,7 @@ author_profile: https://github.com/jitendrakansal
 When allowing end-users to make updates to data, it is important to add validation rules to verify that they are entering valid information.
 If the Update action fails due to the validation rule, the application will display a validation failure message to the end-user.
 
-![MDK](img-1.0.gif)
+![Email Validation Rule Demo](img-1.0.gif)
 
 ### Add a Validation Rule to the Customer Update action
 
@@ -32,15 +32,15 @@ You will add a rule to the Update action to run the validation before saving any
 
 2. Expand the **Common Action Properties** and click the `Create a rule` icon to create a new *Validation Rule*.  
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![Create Validation Rule Icon In Action Properties](img-1.1.png)
 
 3. Keep the default selection for the *Object Type* as Rule and *Folders* path. Click **OK**.
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![Object Type And Folders Path Selection](img-1.2.png)
 
 4. In the **Base Information** step, enter the Rule **Name** as `EmailValidation` and then click  **Finish**.
 
-    <!-- border -->![MDK](img-1.3.png)
+    <!-- border -->![Rule Name EmailValidation Base Information Step](img-1.3.png)
 
     >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
@@ -71,7 +71,7 @@ You will add a rule to the Update action to run the validation before saving any
 
 6. In the generated `EmailValidation.js` rule, double-click the red line. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message`.
 
-    <!-- border -->![MDK](img-1.4.gif)
+    <!-- border -->![Create Action From Rule Reference Bulb Icon](img-1.4.gif)
 
 7. Provide the below information in the `ValidationFailure.action`:
 
@@ -84,7 +84,7 @@ You will add a rule to the Update action to run the validation before saving any
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--` |
 
-    <!-- border -->![MDK](img-1.5.png)
+    <!-- border -->![ValidationFailure Action Properties Configuration](img-1.5.png)
 
 
 ### Deploy the Project
@@ -93,7 +93,7 @@ You will now deploy the updated project to your MDK client.
 
 Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** .
 
-<!-- border -->![MDK](img-2.png)
+<!-- border -->![Deploy To Mobile Services Option Selected](img-2.png)
 
 ### Run the Project
 
@@ -103,12 +103,12 @@ Click the **Deploy** option in the editor's header area, and then choose the dep
 
 1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-    ![MDK](img-3.1.png)
+    ![Android New Version Available Pop-Up](img-3.1.png)
 
 2. While update a customer record, enter a Email value with no contain of **@**, it throws a validation failure message on saving the record.
 
-    ![MDK](img-3.2.png)
-    ![MDK](img-3.3.png)
+    ![Android Customer Email Field Without At Symbol](img-3.2.png)
+    ![Android Email Validation Failure Message](img-3.3.png)
 
 [OPTION END]
 
@@ -116,12 +116,12 @@ Click the **Deploy** option in the editor's header area, and then choose the dep
 
 1. Tap **Check for Updates** in the user menu on the Main page, you will see a _New Version Available_ pop-up, tap **Now**.
 
-    ![MDK](img-3.4.png)
+    ![iOS New Version Available Pop-Up](img-3.4.png)
 
 2. While update a customer record, enter a Email value with no contain of **@**, it throws a validation failure message on saving the record.
 
-    ![MDK](img-3.5.png)
-    ![MDK](img-3.6.png)
+    ![iOS Customer Email Field Without At Symbol](img-3.5.png)
+    ![iOS Email Validation Failure Message](img-3.6.png)
 
 [OPTION END]
 

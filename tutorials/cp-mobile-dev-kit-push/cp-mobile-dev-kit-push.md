@@ -28,19 +28,19 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 ---
 
-![MDK](img-1.0.png)
+![Push Notification Tutorial Overview](img-1.0.png)
 
 ### Define push notification settings in app configuration
 
 1. Open the [SAP Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click **Push Notification** feature.
 
-    <!-- border -->![MDK](img-0.1.png)
+    <!-- border -->![Push Notification Feature In Mobile Services Admin UI](img-0.1.png)
 
     >You can add **Push Notification** feature by clicking on + icon in case feature is not already assigned to the application.
 
 2. Select **SAP Mobile Services Client** under **Predefined for** option, click **Save**.
 
-    <!-- border -->![MDK](img-0.2.png)
+    <!-- border -->![SAP Mobile Services Client Predefined Option Saved](img-0.2.png)
 
     >Predefined push is supported only for the MDK (SAP Mobile Services client) public store client.
 
@@ -53,40 +53,40 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![MDK](img-1.3.png)
+    <!-- border -->![Mobile Category Selection](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![MDK](img-1.4.png)
+    <!-- border -->![Mobile Application Option Selected](img-1.4.png)
 
 5. Enter the project name `mdk_push` (used for this tutorial) , add a description (optional), and click **Review**. 
 
-    <!-- border -->![MDK](img-1.5.png)
+    <!-- border -->![Project Name And Description Entry](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![MDK](img-1.5.1.png)
+    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
-    <!-- border -->![MDK](img-1.6.png)
+    <!-- border -->![Project Created In Build Lobby Table](img-1.6.png)
     
 8. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![MDK](img-1.7.png)
+    <!-- border -->![Project Opened In SAP Business Application Studio](img-1.7.png)
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
-    >![MDK](img-1.8.png) 
+    >![SAP BAS Usage Consent Window](img-1.8.png) 
 
 ### Configure the Project Using Storyboard
 
@@ -98,33 +98,33 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![MDK](img-2.1.png) 
+    <!-- border -->![Runtime Resources Add Button In Storyboard](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
-    >![MDK](img-2.2.png) 
+    >![CF Login Credentials Dialog](img-2.2.png) 
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor and click **Add App to Project**. You do not require to add a destination for this tutorial.
 
-    <!-- border -->![MDK](img-2.4.png)  
+    <!-- border -->![Mobile Application Services App Selection](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app will be added under the Runtime Resources column.
 
-    <!-- border -->![MDK](img-2.5.png)      
+    <!-- border -->![App Added Under Runtime Resources In Storyboard](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![MDK](img-2.6.png)     
+    <!-- border -->![Add Mobile UI Button In Storyboard](img-2.6.png)     
 
 5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Project Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
-    <!-- border -->![MDK](img-2.7.png)  
+    <!-- border -->![Basic Information Step Auto-Deployment Disabled](img-2.7.png)  
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->![MDK](img-2.8.png) 
+    <!-- border -->![Storyboard Updated With UI Component](img-2.8.png) 
 
 ### Create MDK actions to register for push notifications
 
@@ -140,7 +140,7 @@ In this step, you will create the following actions:
 
     Right-click the **Actions** folder | **MDK: New Action** | choose **Other** in **Category** | click **Push Notification Register** | **Next**.
 
-    <!-- border -->![MDK](img-3.1.png)
+    <!-- border -->![Push Notification Register Action Creation](img-3.1.png)
 
     In the **Base Information** step, provide the below information and click **Finish** to complete the action creation process.
 
@@ -148,7 +148,7 @@ In this step, you will create the following actions:
     |----|----|
     | `Name`| `PushRegister` |
 
-    <!-- border -->![MDK](img-3.2.png)
+    <!-- border -->![PushRegister Action Base Information Step](img-3.2.png)
 
     >More details on _Push Notification Action_ is available in [help documentation](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/PushNotificationRegister.schema.html).
 
@@ -156,7 +156,7 @@ In this step, you will create the following actions:
 
     Right-click the **Actions** folder | **MDK: New Action** | choose **Message** in **Category** | click **Message** | **Next**.
 
-    <!-- border -->![MDK](img-3.4.png)
+    <!-- border -->![New Message Action Creation](img-3.4.png)
     
     In the **Base Information** step, provide the below information and Click **Finish**.
 
@@ -171,13 +171,13 @@ In this step, you will create the following actions:
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--` |
 
-    <!-- border -->![MDK](img-3.3.png)
+    <!-- border -->![PushRegisterSuccessMessage Action Base Information](img-3.3.png)
 
 3. Define a failure message if the Push Register Notification action is failed.
 
     Right-click the **Actions** folder | **MDK: New Action** | choose **Message** in **Category** | click **Message** | **Next**.
 
-    <!-- border -->![MDK](img-3.4.png)
+    <!-- border -->![New Message Action Creation](img-3.4.png)
 
     In the **Base Information** step, provide the below information and Click **Finish**.
 
@@ -192,7 +192,7 @@ In this step, you will create the following actions:
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--` |
 
-    <!-- border -->![MDK](img-3.5.png)
+    <!-- border -->![PushRegisterFailureMessage Action Base Information](img-3.5.png)
 
 4. Define _Success_ and _Failure_ actions for `PushRegister.action`.
 
@@ -205,7 +205,7 @@ In this step, you will create the following actions:
 
     >When `PushRegister.action` gets executed successfully then `PushRegisterSuccessMessage.action` will be triggered or if `PushRegister.action` fails then `PushRegisterFailureMessage.action` will be triggered.
 
-    <!-- border -->![MDK](img-3.6.png)
+    <!-- border -->![PushRegister Common Action Properties Bindings](img-3.6.png)
 
 
 
@@ -218,7 +218,7 @@ In the step, you will set and call the Push Register Notification action when ap
 
 In `Application.app` file, bind the `OnDidUpdate` event to `PushRegister.action`.
 
-<!-- border -->![MDK](img-4.1.png)
+<!-- border -->![Application App OnDidUpdate Bound To PushRegister](img-4.1.png)
 
 
 ### Deploy the Project
@@ -228,34 +228,34 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 1. Click the **Deploy** option in the `Application.app` header area, and then choose the deployment target as **Mobile Services** .
 
-    <!-- border -->![MDK](img-5.1.png)
+    <!-- border -->![Deploy Option In Application App Header](img-5.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![MDK](img-5.2.png)
+    <!-- border -->![Mobile Services Deployment Target Selected](img-5.2.png)
 
 3. Select **Mobile Services Landscape**.
 
-    <!-- border -->![MDK](img-5.3.png)  
+    <!-- border -->![Mobile Services Landscape Selection](img-5.3.png)  
 
 5. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![MDK](img-5.5.png)
+    <!-- border -->![Enable Source For Debugging Choice](img-5.5.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![MDK](img-5.6.png)
+    <!-- border -->![Deploy To Mobile Services Success Message](img-5.6.png)
 
 
 ### Display the QR code for app onboarding the Mobile app
 
 SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. To view the onboarding QR code, click the **Application QR Code** icon in the editor's header area.
 
-<!-- border -->![MDK](img-6.1.png)
+<!-- border -->![Application QR Code Icon In Editor Header](img-6.1.png)
 
 The On-boarding QR code is now displayed.
 
-<!-- border -->![MDK](img-6.2.png)
+<!-- border -->![Onboarding QR Code Displayed](img-6.2.png)
 
 >Leave the Onboarding dialog box open for the next step.
 
@@ -269,7 +269,7 @@ The On-boarding QR code is now displayed.
 
 2. After accepting the app update, a message should show **Push Notification registered**. Click **OK**.
 
-    ![MDK](img-7.1.png)
+    ![Push Notification Registered Success Message](img-7.1.png)
 
 3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
@@ -277,19 +277,19 @@ The On-boarding QR code is now displayed.
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
-    <!-- border -->![MDK](img-7.2.png)
+    <!-- border -->![Push Registrations Tab Send Notification](img-7.2.png)
 
 4. In notification dialog, type a notification message and click **Send**.
 
-    <!-- border -->![MDK](img-7.3.png)
+    <!-- border -->![Notification Dialog Message And Send Button](img-7.3.png)
 
     You will see a success toast message.
 
-    <!-- border -->![MDK](img-7.4.png)
+    <!-- border -->![Push Notification Sent Success Toast](img-7.4.png)
 
     After sending notification, mobile device should receive the message. This example uses the simplest notification that only contains the alert property. 
 
-    ![MDK](img-1.0.png)    
+    ![Push Notification Received On Android Device](img-1.0.png)    
 
 [OPTION END]
 
@@ -299,8 +299,8 @@ The On-boarding QR code is now displayed.
 
 2. After accepting the app update, allow the permission to display notifications. If push registration is successful, a message should show **Push Notification registered**. Click **OK**.
 
-    ![MDK](img-7.5.png)
-    ![MDK](img-7.6.png)
+    ![Push Notification Permission Request iOS](img-7.5.png)
+    ![Push Notification Registered Success iOS](img-7.6.png)
 
 3. It is time now to send the first push notification from the **SAP Mobile Services push notification feature**.
 
@@ -308,23 +308,23 @@ The On-boarding QR code is now displayed.
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
-    <!-- border -->![MDK](img-7.2.png)
+    <!-- border -->![Push Registrations Tab Send Notification](img-7.2.png)
 
 4. In notification dialog, type a notification message and click **Send**.
 
-    <!-- border -->![MDK](img-7.3.png)
+    <!-- border -->![Notification Dialog Message And Send Button](img-7.3.png)
 
     You will see a success toast message.
 
-    <!-- border -->![MDK](img-7.4.png)
+    <!-- border -->![Push Notification Sent Success Toast](img-7.4.png)
 
     After sending notification, mobile device should receive the message. This example uses the simplest notification that only contains the alert property. 
 
-    ![MDK](img-7.8.png)
+    ![Push Notification Received On iOS Device](img-7.8.png)
 
     If you have Apple watch connected to the iPhone device, you can also see same push notification on the Apple Watch.
 
-    <!-- border -->![MDK](img-7.9.png)
+    <!-- border -->![Push Notification On Apple Watch](img-7.9.png)
 
     >MDK supports rich push notification. MDK does not run on smart watches or as an Apple watch application.
 
@@ -352,11 +352,11 @@ The On-boarding QR code is now displayed.
     }
     ```
 
-    <!-- border -->![MDK](img-8.1.png)
+    <!-- border -->![Advanced Notification Payload Sent Android](img-8.1.png)
 
 3. After sending notification, you will see a notification in the notification center. 
 
-    ![MDK](img-8.2.png)    
+    ![Notification In Android Notification Center](img-8.2.png)    
 
 [OPTION END]
 
@@ -378,11 +378,11 @@ The On-boarding QR code is now displayed.
     }
     ```
 
-    <!-- border -->![MDK](img-8.3.png)
+    <!-- border -->![Advanced Notification Payload Sent iOS](img-8.3.png)
 
 3. After sending notification, you will see a notification in the notification center. 
 
-    ![MDK](img-8.4.png) 
+    ![Notification In iOS Notification Center](img-8.4.png) 
   
 [OPTION END]
 

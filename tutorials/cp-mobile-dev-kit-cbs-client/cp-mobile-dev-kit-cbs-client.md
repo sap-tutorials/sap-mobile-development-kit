@@ -48,41 +48,41 @@ After a successful build, you can download the APK or IPA file.
 
 1. Open the [Firebase console](https://console.firebase.google.com/u/0/?pli=1), login with your Google account and click **Create a new Firebase Project**.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![Firebase Console Create New Project](img-1.1.png)
 
 2. Provide a Project Name, click **Continue**.
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![Firebase Project Name Entry](img-1.2.png)
 
 3. Uncheck **Enable Gemini in Firebase** option and click **Continue**.
 
-    <!-- border -->![MDK](img-1.2.1.png)
+    <!-- border -->![Disable Gemini In Firebase Option](img-1.2.1.png)
 
 3. Uncheck **Enable Google Analytics for this project** option and click **Create Project**.
 
-    <!-- border -->![MDK](img-1.3.png)
+    <!-- border -->![Disable Google Analytics Create Project](img-1.3.png)
 
 4. Once the project is ready, click **Continue**.
 
-    <!-- border -->![MDK](img-1.4.png)
+    <!-- border -->![Firebase Project Ready Continue](img-1.4.png)
 
 5. Click **Add app** and click **Android** icon to add Firebase to your Android app.
 
-    <!-- border -->![MDK](img-1.5.png)
+    <!-- border -->![Firebase Add Android App](img-1.5.png)
 
 6. Provide a unique name to Android package name, click **Register app**.
 
-    <!-- border -->![MDK](img-1.6.png)
+    <!-- border -->![Firebase Android Package Name Registration](img-1.6.png)
 
 7. Download `google-services.json` file, click **Next**.
 
-    <!-- border -->![MDK](img-1.7.png)
+    <!-- border -->![Download google-services.json File](img-1.7.png)
 
 8. In **Add Firebase SDK** step, click **Next**.
 
 9. In the following step, click **Next** and then click **Continue to console**.
 
-    <!-- border -->![MDK](img-1.8.png)
+    <!-- border -->![Firebase Continue To Console](img-1.8.png)
 
 [OPTION END]
 
@@ -105,11 +105,11 @@ To enable your app for push notifications, you need to carry out the following t
 
     On your Mac, open the **Keychain Access** application, and navigate to **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority...**
 
-    <!-- border -->![MDK](img-1.9.png)
+    <!-- border -->![Keychain Access Certificate Request Menu](img-1.9.png)
 
     In the dialog, enter the email address which is associated with your Apple Developer account. Also, make sure you check the **Request is saved to disk** option.
 
-    <!-- border -->![MDK](img-1.10.png)
+    <!-- border -->![CSR Email Request Saved To Disk](img-1.10.png)
 
     Click **Continue**.
 
@@ -117,31 +117,31 @@ To enable your app for push notifications, you need to carry out the following t
 
     Once you see a dialog saying the certificate is saved successfully, click **Done** to finish.
 
-    <!-- border -->![MDK](img-1.11.png)
+    <!-- border -->![Certificate Saved Successfully Done Dialog](img-1.11.png)
 
 2. Create a new development certificate `.cer` file
 
     Go to your [Apple Developer Account](https://developer.apple.com/account) and Click **Certificates**.
 
-    <!-- border -->![MDK](img-1.12.png)
+    <!-- border -->![Apple Developer Certificates Section](img-1.12.png)
 
     Click **+** icon to create a **Certificate** for your app.
 
-    <!-- border -->![MDK](img-1.13.png)
+    <!-- border -->![Apple Developer Add Certificate Icon](img-1.13.png)
 
     Select **Apple Development** and click **Continue**.
 
-    <!-- border -->![MDK](img-1.14.png)
+    <!-- border -->![Select Apple Development Certificate Type](img-1.14.png)
 
     Click **Choose File** and browse to the downloaded Signing Request `CSR` file, click **Continue**.
 
     Apple will now create a `.cer` file for you which is issued by the **Apple Worldwide Developer Relations Certification Authority**.
 
-    <!-- border -->![MDK](img-1.15.png)
+    <!-- border -->![Apple Certificate CSR Upload Continue](img-1.15.png)
 
     Click **Download** to download your certificate.
 
-    <!-- border -->![MDK](img-1.16.png)
+    <!-- border -->![Apple Developer Certificate Download](img-1.16.png)
 
 3.  Install the `.cer` file and create the .p12 file
 
@@ -155,29 +155,29 @@ To enable your app for push notifications, you need to carry out the following t
 
     If the certificate is added correctly to the Keychain you should see it in the `MyCertificates` section, make sure you selected **login** as keychain.
 
-    <!-- border -->![MDK](img-1.17.png)
+    <!-- border -->![Keychain MyCertificates Installed Certificate](img-1.17.png)
 
     Select the certificate as well as the private key and right-click to export those 2 items.
 
-    <!-- border -->![MDK](img-1.18.png)
+    <!-- border -->![Keychain Export Certificate And Private Key](img-1.18.png)
 
     Make sure that in the dropdown **Personal Information Exchange (.p12)** is selected and click **Save**. You will be prompted to enter a password, click **OK** to export the files.
 
-    <!-- border -->![MDK](img-1.19.png)
+    <!-- border -->![Export P12 Certificate Save Dialog](img-1.19.png)
 
 4. Register an iOS App ID
 
     Click **+** icon to register a unique **Identifiers** for your app.
 
-    <!-- border -->![MDK](img-1.20.png)
+    <!-- border -->![Apple Developer Add App Identifier](img-1.20.png)
 
     Select **App IDs** and click **Continue**.
 
-    <!-- border -->![MDK](img-1.21.png)
+    <!-- border -->![Select App IDs Registration Type](img-1.21.png)
 
     Provide a unique **Bundle ID** name, **Description** and click **Continue**.
 
-    <!-- border -->![MDK](img-1.22.png)
+    <!-- border -->![Bundle ID And Description Entry](img-1.22.png)
 
     In the following screen, select option for **Deployment Details** and then click **Continue**.
 
@@ -187,41 +187,41 @@ To enable your app for push notifications, you need to carry out the following t
 
     Click **+** icon to register your iOS device.
 
-    <!-- border -->![MDK](img-1.23.png)
+    <!-- border -->![Apple Developer Register iOS Device](img-1.23.png)
 
     Provide **Device Name** & **Device ID (UDID)** and then click **Continue**.
 
-    <!-- border -->![MDK](img-1.24.png)
+    <!-- border -->![Device Name And UDID Entry](img-1.24.png)
 
 6. Create a development provisioning profile
 
     Click **+** icon to create a development provisioning profile.
 
-    <!-- border -->![MDK](img-1.25.png)    
+    <!-- border -->![Apple Developer Add Provisioning Profile](img-1.25.png)    
 
     Select **iOS App Development** to create a provisioning profile to install development apps on test devices and click **Continue**.
 
-    <!-- border -->![MDK](img-1.26.png)
+    <!-- border -->![iOS App Development Provisioning Profile](img-1.26.png)
 
     Select an App ID from the dropdown list and click **Continue**.
 
-    <!-- border -->![MDK](img-1.27.png)
+    <!-- border -->![Select App ID For Provisioning Profile](img-1.27.png)
 
     Select the required certificate to include in this provisioning profile and click **Continue**.
 
-    <!-- border -->![MDK](img-1.28.png)
+    <!-- border -->![Select Certificate For Provisioning Profile](img-1.28.png)
 
     Select the device to include in this provisioning profile and click **Continue**.
 
-    <!-- border -->![MDK](img-1.29.png)
+    <!-- border -->![Select Device For Provisioning Profile](img-1.29.png)
 
     Provide a unique name to the profile and click **Generate**.
 
-    <!-- border -->![MDK](img-1.30.png)
+    <!-- border -->![Provisioning Profile Name Generate](img-1.30.png)
 
     In next step, download the generated provisioning profile on your local machine.
 
-    <!-- border -->![MDK](img-1.31.png)
+    <!-- border -->![Download Generated Provisioning Profile](img-1.31.png)
 
 [OPTION END]
 
@@ -229,7 +229,7 @@ To enable your app for push notifications, you need to carry out the following t
 ### Compress your .mdkproject (Required for a customized client)
 
 
-If you haven't created your local `.mdkproject`, have a look at step 3 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
+If you haven't created your local `.mdkproject`, have a look at step 3 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
 
 Compress your `.mdkproject` folder, the resulting zip file will be used to create a build job for a customized mobile development kit client in Mobile Services admin UI.
 
@@ -244,11 +244,11 @@ Compress your `.mdkproject` folder, the resulting zip file will be used to creat
 
 2. You have an option to generate a new signing profile in the Mobile Services admin UI by providing mandatory info like Profile Name, Validity, Common Name (user name). Other information are optional.
 
-    <!-- border -->![MDK](img-3.2.png)
+    <!-- border -->![Generate New Android Signing Profile](img-3.2.png)
 
     Or you have an option to to upload an Android Signing profile, if you already have one.
 
-    <!-- border -->![MDK](img-3.3.png)
+    <!-- border -->![Upload Android Signing Profile](img-3.3.png)
 
 [OPTION END]
 
@@ -268,7 +268,7 @@ Compress your `.mdkproject` folder, the resulting zip file will be used to creat
 
     Click **OK**.
 
-    <!-- border -->![MDK](img-3.4.png)
+    <!-- border -->![Upload iOS Signing Profile Details](img-3.4.png)
 
     [OPTION END]
 
@@ -288,16 +288,16 @@ You can find more details about Cloud Build service in [help documentation](http
 
 2. Click **Create Build Job** to build your first build job.
 
-    <!-- border -->![MDK](img-4.0.png)
+    <!-- border -->![Cloud Build Create Build Job](img-4.0.png)
 
-3. In the **Basic Information** step, select **mobile development kit Client** from **Client Type** dropdown.
+3. In the **Basic Information** step, select **Mobile Development Kit Client** from **Client Type** dropdown.
 
 
-    <!-- border -->![MDK](img-4.2.png)
+    <!-- border -->![Basic Information Client Type Selection](img-4.2.png)
 
 4. Provide required values and click **Next**.
 
-    <!-- border -->![MDK](img-4.3.png)
+    <!-- border -->![Build Job Required Values Entry](img-4.3.png)
 
     >Bundle ID (iOS)/ Package Name (Android) is a unique app identifier used to sign mobile development kit clients. For iOS, make sure to provide the same bundle ID while registering an iOS App ID in step 1.
 
@@ -305,7 +305,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
     If you have a Firebase configuration for your client, browse to select the `google-services.json` file and click **Next**.
 
-    <!-- border -->![MDK](img-4.4.png)
+    <!-- border -->![Platform Step URL Scheme Configuration](img-4.4.png)
 
     >**Google Services JSON File**: The Firebase Android configuration file associated with your app in your Firebase project.
 
@@ -313,21 +313,21 @@ You can find more details about Cloud Build service in [help documentation](http
 
 6. In the **Multimedia** step, you may upload an image to use for the app logo and click **Next**.
 
-    <!-- border -->![MDK](img-4.5.png)
+    <!-- border -->![Multimedia Step App Logo Upload](img-4.5.png)
 
 7. In the **Build Options** step, select respective Signing profile(s), set minimum platform version, select a supported SDK version and click **Finish**.
 
-    <!-- border -->![MDK](img-4.6.png)
+    <!-- border -->![Build Options Signing Profile SDK Selection](img-4.6.png)
 
     >The default version is always recommended (it will vary over time), but you can select an older SDK version.
 
 8. Click **Build** to start the Build job.
 
-    <!-- border -->![MDK](img-4.7.png)
+    <!-- border -->![Cloud Build Start Build Job](img-4.7.png)
 
     After few minutes, Build should be completed. You can select each cloud build history row to view its current state, install, and download binaries.
 
-    <!-- border -->![MDK](img-4.8.png)
+    <!-- border -->![Cloud Build Completed History Row](img-4.8.png)
 
     You can find more details about packaging details in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/cloud-build/admin/customization.html#packaging-details-overview).
 
@@ -341,23 +341,23 @@ You can find more details about Cloud Build service in [help documentation](http
 
 2. Click **Create Build Job** to build your first build job.
 
-    <!-- border -->![MDK](img-4.0.png)
+    <!-- border -->![Cloud Build Create Build Job](img-4.0.png)
 
-3. In the **Basic Information** step, select **Customized mobile development kit Client** from **Client Type** dropdown.
+3. In the **Basic Information** step, select **Customized Mobile Development Kit Client** from **Client Type** dropdown.
 
-    <!-- border -->![MDK](img-4.9.png)
+    <!-- border -->![Customized MDK Client Type Selection](img-4.9.png)
 
     >The build includes functionality to run customized extensions, application resources, and onboarding, and to include demo mode in your application.
 
 4. Browse to your compressed MDK project as previously created.
 
-    <!-- border -->![MDK](img-4.10.png)
+    <!-- border -->![Browse Compressed MDK Project Upload](img-4.10.png)
 
     Upon upload, Cloud Build service starts validating the ZIP file. If the ZIP file doesn't conform to the  `.mdkproject` structure, you may see build failures. Check the [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/cloud-build/admin/create.html#creating-a-build-job-for-customized-mobile-development-kit-clients) for more details.
 
     Once validation is successful, you will notice the values like Device App Name, Device App Display Name, Device App Version, Device App Details, Bundle ID, and Encrypt Database have been auto-filled/selected. These values were provided in your `MDKProject.json` and `BrandedSettings.json` as part of your local `.mdkproject`.
 
-    <!-- border -->![MDK](img-4.11.png)
+    <!-- border -->![Auto-Filled MDK Project Values After Validation](img-4.11.png)
 
     Click **Next**.
 
@@ -365,7 +365,7 @@ You can find more details about Cloud Build service in [help documentation](http
 
     If you have a Firebase configuration for your client, browse to select the `google-services.json` file and click **Next**.
 
-    <!-- border -->![MDK](img-4.12.png)
+    <!-- border -->![Platform Step Firebase Configuration Upload](img-4.12.png)
 
     >**Google Services JSON File**: The Firebase Android configuration file associated with your app in your Firebase project.
     If the google-services.json is available in the uploaded ZIP file, you will see option _Show Contents_ to view the contents of the JSON file. If it is not the right file, click _Remove File_ and then you can upload a new google-services.json file to override it.
@@ -374,21 +374,21 @@ You can find more details about Cloud Build service in [help documentation](http
 
 6. In the **Multimedia** step, you may upload an image to use for the app logo and click **Next**.
 
-    <!-- border -->![MDK](img-4.5.png)
+    <!-- border -->![Multimedia Step App Logo Upload](img-4.5.png)
 
 7. In the **Build Options** step, select respective Signing profile(s), set minimum platform version, select a supported SDK version and click **Finish**.
 
-    <!-- border -->![MDK](img-4.6.png)
+    <!-- border -->![Build Options Signing Profile SDK Selection](img-4.6.png)
 
     >The default version is always recommended (it will vary over time), but you can select an older SDK version.
 
 8. Click **Build** to start the Build job.
 
-    <!-- border -->![MDK](img-4.13.png)
+    <!-- border -->![Cloud Build Start Custom Client Build](img-4.13.png)
 
     After few minutes, Build should be completed. You can select each cloud build history row to view its current state, install, and download binaries.
 
-    <!-- border -->![MDK](img-4.8.png)
+    <!-- border -->![Cloud Build Completed History Row](img-4.8.png)
 
     You can find more details about packaging details in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/cloud-build/admin/customization.html#packaging-details-overview).
 
@@ -403,10 +403,10 @@ You can find more details about Cloud Build service in [help documentation](http
 
 You can install this new custom MDK client app either by scanning QR code from Android phone camera app (click **Install**) or download binary (APK) locally and install in your device via IDEs like Android Studio or via other means.
 
-<!-- border -->![MDK](img-5.1.png)
+<!-- border -->![Android QR Code Or APK Install Option](img-5.1.png)
 
-![MDK](img-5.2.png)
-![MDK](img-5.3.png)
+![Android Client Installation Step 2](img-5.2.png)
+![Android Client Installation Step 3](img-5.3.png)
 
 [OPTION END]
 
@@ -415,10 +415,10 @@ You can install this new custom MDK client app either by scanning QR code from A
 
 You can install this new custom MDK client app either by scanning QR code from iPhone phone camera app (click **Install**) or download binary (IPA) locally and install in your device via IDEs like Xcode or via other means.
 
-<!-- border -->![MDK](img-5.1.png)
+<!-- border -->![iOS QR Code Or IPA Install Option](img-5.1.png)
 
-![MDK](img-5.4.png)
-![MDK](img-5.5.png)
+![iOS Client Installation Step 2](img-5.4.png)
+![iOS Client Installation Step 3](img-5.5.png)
 
 [OPTION END]
 

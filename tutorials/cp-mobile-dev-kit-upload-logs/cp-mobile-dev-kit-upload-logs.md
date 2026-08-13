@@ -22,7 +22,7 @@ Managing issues with apps rolled out to a large number of users is a challenge a
 
 ---
 
-![MDK](img-1.0.gif)
+![Log Upload Tutorial Overview Animation](img-1.0.gif)
 
 ### Define client log policy in Mobile Services admin UI
 
@@ -32,11 +32,11 @@ In this step, you will enable client log upload policy in **SAP Mobile Services 
 
 1. Login to [Mobile Services Admin UI](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html), click `myapp.mdk.demo` | **Client Log Upload**.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![Mobile Services Client Log Upload Section](img-1.1.png)
 
 2. Switch to the **Configuration** tab, check **Log Upload** option  and click **Save**.
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![Log Upload Configuration Tab Save Setting](img-1.2.png)
 
     >Other policy parameters such as Log Level, Delete Uploaded Log After, Maximum Number of Logs and Maximum Log Size are currently not supported by MDK and hence have no effect.
 
@@ -56,7 +56,7 @@ Logs help you trace events that occur while your application is running. You can
 
 The MDK template generates a project that includes a user menu with support options, making it easier for initial troubleshooting without having to create logging, tracing, or upload actions. Of course, you can create your own actions or rules and add them to  your project when needed.
 
-<!-- border -->![MDK](img-2.0.png)
+<!-- border -->![MDK App User Menu Support Options](img-2.0.png)
 
 
 ### Upload Logs from your App to SAP Mobile Services
@@ -65,12 +65,12 @@ The MDK template generates a project that includes a user menu with support opti
 
 1. Tap the **Support** option in the user menu on the main page.
 
-    ![MDK](img-3.1.png)
+    ![Android App User Menu Support Option](img-3.1.png)
 
 2. Tap the **Activity Log** to open the user activity log page. As the page is loaded, logging is by default enabled and log level is set to *Error*.
 
-    ![MDK](img-3.2.png)
-    ![MDK](img-3.3.png)    
+    ![Android Activity Log Page Opened](img-3.2.png)
+    ![Android Activity Log Default Error Level](img-3.3.png)    
 
 3. Send activity logs to SAP Mobile Services or change the log level to other options, for example, Warning, Info, Debug, or Trace to collect more details. When the log level is set to `Trace`, two new options **Tracing Categories** and **OData Tracing** appear on the activity log page.
     
@@ -79,7 +79,7 @@ The MDK template generates a project that includes a user menu with support opti
 
     Once you have set the required settings, tap on **Send Activity Log** to upload client logs from app to SAP Mobile Services.
 
-    ![MDK](img-1.0.gif) 
+    ![Android Send Activity Log Upload Demo](img-1.0.gif) 
 
 [OPTION END]
 
@@ -87,12 +87,12 @@ The MDK template generates a project that includes a user menu with support opti
 
 1. Tap the **Support** option in the user menu on the main page.
 
-    ![MDK](img-3.4.png)
+    ![iOS App User Menu Support Option](img-3.4.png)
 
 2. Tap the **Activity Log** to open the user activity log page. As the page is loaded, logging is by default enabled and log level is set to *Error*.
 
-    ![MDK](img-3.5.png)
-    ![MDK](img-3.6.png)    
+    ![iOS Activity Log Page Opened](img-3.5.png)
+    ![iOS Activity Log Default Error Level](img-3.6.png)    
 
 3. You can send activity logs to SAP Mobile Services or change the log level to other options, for example, Warning, Info, Debug, or Trace to collect more details. When the log level is set to `Trace`, two new options **Tracing Categories** and **OData Tracing** appear on the activity log page.
     
@@ -101,7 +101,7 @@ The MDK template generates a project that includes a user menu with support opti
 
     Once you have set the required settings, tap on **Send Activity Log** to upload client logs from app to SAP Mobile Services.
 
-    ![MDK](img-3.7.gif) 
+    ![iOS Send Activity Log Upload Demo](img-3.7.gif) 
 
 [OPTION END]
 
@@ -109,7 +109,7 @@ The MDK template generates a project that includes a user menu with support opti
 
 Open SAP Mobile Services Admin UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app **&rarr;** **Client Log Upload** **&rarr;** **Log Files**.
 
-<!-- border -->![MDK](img-4.1.png)
+<!-- border -->![Mobile Services Client Log Files List](img-4.1.png)
 
 A log file is created for each upload. All the uploaded files, including all levels, not just error or fatal will be listed here. You can select a file and download it locally on your machine for further examination.
 

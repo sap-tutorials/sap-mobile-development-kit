@@ -13,8 +13,8 @@ author_profile: https://github.com/jitendrakansal
 <!-- description --> Build and run the mobile development kit client with a non-visual extension functionality for Android and iOS platforms.
 
 ## Prerequisites
-- **Tutorial**: [Set Up for the mobile development kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
-- **Tutorial**: [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) (Steps 1 to 3)
+- **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
+- **Tutorial**: [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) (Steps 1 to 3)
 
 ## You will learn
   - How to reference the `NativeScript` Geolocation plugin from a rule
@@ -31,7 +31,7 @@ To extend the functionality, or customize the look and feel, and behavior of you
 
 In this tutorial, you will use the existing `NativeScript` plugin nativescript-geolocation to capture the device location: latitude & longitude.
 
-![MDK](img-1.0.png)
+![Geolocation App Final Result](img-1.0.png)
 
 ### Create a New Project Using SAP Build
 
@@ -39,41 +39,41 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![MDK](img-1.1.png)
+    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![MDK](img-1.2.png)
+    <!-- border -->![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![MDK](img-1.3.png)
+    <!-- border -->![Mobile Category Selection](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![MDK](img-1.4.png)
+    <!-- border -->![Mobile Application Option Selected](img-1.4.png)
 
 5. Enter the project name `mdk_geolocation` (used for this tutorial) , add a description (optional), and click **Review**. 
 
-    <!-- border -->![MDK](img-1.5.png)
+    <!-- border -->![Project Name Entry Form](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![MDK](img-1.5.1.png)
+    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
 
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
-    <!-- border -->![MDK](img-1.6.png)
+    <!-- border -->![Project Created In Lobby Table](img-1.6.png)
     
 8. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![MDK](img-1.7.png)
+    <!-- border -->![SAP BAS Workspace Opened](img-1.7.png)
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
-    >![MDK](img-1.8.png) 
+    >![BAS Usage Consent Window](img-1.8.png) 
 
 ### Configure the Project Using Storyboard
 
@@ -85,61 +85,61 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![MDK](img-2.1.png) 
+    <!-- border -->![Runtime Resources Add Button](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
-    >![MDK](img-2.2.png) 
+    >![CF Login Credentials Dialog](img-2.2.png) 
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor and click **Add App to Project**. You do not require to add a destination for this tutorial.
 
-    <!-- border -->![MDK](img-2.4.png)  
+    <!-- border -->![Mobile Services App Selection](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app will be added under the Runtime Resources column.
 
-    <!-- border -->![MDK](img-2.5.png)      
+    <!-- border -->![App Added In Storyboard](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![MDK](img-2.6.png)     
+    <!-- border -->![UI Application Add Button](img-2.6.png)     
 
 5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Project Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
-    <!-- border -->![MDK](img-2.7.png)  
+    <!-- border -->![Auto-Deployment Disabled Basic Info](img-2.7.png)  
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->![MDK](img-2.8.png) 
+    <!-- border -->![Storyboard With UI Component](img-2.8.png) 
 
 ### Display the coordinates on a page
 
   1. Click the `Main.page`, drag & drop **Static Key Value** container to the page area.
 
-    <!-- border -->![MDK](img-2.9.gif)
+    <!-- border -->![Static Key Value Container Drop](img-2.9.gif)
 
   2. In **Properties** | **Layout**, change `NumberOfColumns` to 1.
 
-    <!-- border -->![MDK](img-2.10.png)
+    <!-- border -->![Properties Layout NumberOfColumns Setting](img-2.10.png)
 
   3. Drag & drop **Key Value Item** to the container.
 
-    <!-- border -->![MDK](img-2.11.gif)
+    <!-- border -->![Key Value Item Drag Drop](img-2.11.gif)
 
   4. Set `KeyName`as `Coordinates`. To bind it's value property, click on `create a rule`. You will create a new JavaScript file to capture the device location: latitude & longitude.
 
-    <!-- border -->![MDK](img-2.12.png)
+    <!-- border -->![KeyName Coordinates Rule Creation](img-2.12.png)
 
   5. Keep the default selection for *Object Type* as **Rule** and *Folders*. Click **OK**.
 
-    <!-- border -->![MDK](img-2.13.png)
+    <!-- border -->![Object Type Rule Default Selection](img-2.13.png)
 
     >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
    6. In the **Base Information**, enter the Rule name as `GetCoordinates` and click  **Finish**.
 
-    <!-- border -->![MDK](img-2.14.png)
+    <!-- border -->![GetCoordinates Rule Name Entry](img-2.14.png)
 
 
    8. Replace the generated snippet with below code.
@@ -192,7 +192,7 @@ Enable the loading indicator at the Sectioned Table level by providing the follo
 | `Enabled`| `true` |
 | `Text`| Enter `Loading, please wait...` |
 
-<!-- border -->![MDK](img-3.1.png)
+<!-- border -->![Loading Indicator Properties Enabled](img-3.1.png)
 
 
 ### List the NPM modules as external reference
@@ -202,15 +202,15 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
 
 1. Click on the gear icon on the bottom left of the BAS window and select  **Settings**.
 
-    <!-- border -->![MDK](img-4.1.png)
+    <!-- border -->![BAS Settings Gear Icon](img-4.1.png)
 
 2. Switch to the *Remote* tab.
 
-    <!-- border -->![MDK](img-4.1.2.png)
+    <!-- border -->![BAS Settings Remote Tab](img-4.1.2.png)
 
 3. Search with `mdk`, click **Edit in settings.json**.
 
-    <!-- border -->![MDK](img-4.2.png)
+    <!-- border -->![MDK Settings JSON Edit](img-4.2.png)
 
 4. Include below references in `mdk.bundlerExternals`.
 
@@ -218,7 +218,7 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
     "@nativescript/geolocation"
     ```
 
-     <!-- border -->![MDK](img-4.3.png)        
+     <!-- border -->![MDK Bundler Externals Configuration](img-4.3.png)        
 
 
 ### Deploy the Project
@@ -227,29 +227,29 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 1. Switch to the `Main.page` tab, click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services**.
 
-    <!-- border -->![MDK](img-5.1.png)
+    <!-- border -->![Deploy Option In Editor Header](img-5.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![MDK](img-5.2.png)
+    <!-- border -->![Mobile Services Deploy Target](img-5.2.png)
 
 3. Select **Mobile Services Landscape**.
 
-    <!-- border -->![MDK](img-5.3.png)    
+    <!-- border -->![Mobile Services Landscape Selection](img-5.3.png)    
 
 4. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![MDK](img-5.5.png)    
+    <!-- border -->![Enable Source Debugging Option](img-5.5.png)    
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![MDK](img-5.6.png)
+    <!-- border -->![Deployment Success Message](img-5.6.png)
 
 ### Add NativeScript plugin and External dependencies in your local .mdkproject
 
 In order to use the existing `NativeScript` plugin in MDK client, you will need to first add it in `.mdkproject` and then create your branded MDK client.
 
-1. Make sure that you have already completed steps 1 to 3 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
+1. Make sure that you have already completed steps 1 to 3 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial.
 
 2. Open `MDKProject.json` file and replace existing content with below. Provide an appropriate value to the `BundleID`, it should be a unique identifier for your application. 
 
@@ -266,7 +266,7 @@ In order to use the existing `NativeScript` plugin in MDK client, you will need 
     }
     ```
 
-<!-- border -->![MDK](img-6.1.png)
+<!-- border -->![MDKProject JSON With Externals](img-6.1.png)
 
 ### Add googlePlayServicesVersion and Permission in App Resources Merge folder(Required only for Android client)
 
@@ -277,14 +277,14 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
 
             DemoSampleApp.mdkproject
               ├── App_Resources_Merge
-                  └── Android
-                      ├── app.gradle
-                      └── src
-                          └── main
-                              └── AndroidManifest.xml
+                  └── Android
+                      ├── app.gradle
+                      └── src
+                          └── main
+                              └── AndroidManifest.xml
 
 
-      <!-- border -->![MDK](img-7.1.png)
+      <!-- border -->![App Resources Merge Folder Structure](img-7.1.png)
 
     >Files specified in the `.mdkproject/App_Resources_Merge` folder override a part of the files in `<generated-project>/app/App_Resources`. You can find more details about it in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/app-resources-merge.html).
 
@@ -329,29 +329,29 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
 
 [OPTION BEGIN [Android]]
 
-1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your mobile development kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial and run it in your device.
+1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial and run it in your device.
 
 2. After you have accepted the app update, allow your app to access your location.
 
-    ![MDK](img-8.1.png)
+    ![Android Location Permission Dialog](img-8.1.png)
 
     In Main page, you will see device's current location.
 
-    ![MDK](img-1.0.png)
+    ![Android Main Page Location Display](img-1.0.png)
 
 [OPTION END]
 
 [OPTION BEGIN [iOS]]
 
-1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your mobile development kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
+1. Create your MDK client either using MDK SDK by following the steps 4 & 5 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Mobile Services Cloud Build by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
 
 2. After you have accepted the app update, allow your app to access your location.
 
-    ![MDK](img-8.2.png)
+    ![iOS Location Permission Dialog](img-8.2.png)
 
     In Main page, you will see device's current location.
 
-    ![MDK](img-8.3.png)
+    ![iOS Main Page Location Display](img-8.3.png)
 
 [OPTION END]
 

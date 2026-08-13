@@ -2,7 +2,7 @@
 parser: v2
 auto_validation: true
 primary_tag: software-product>mobile-development-kit-client
-tags: [ tutorial>intermediate, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-build, software-product>sap-business-application-studio]
+tags: [ tutorial>intermediate, operating-system>ios, operating-system>android, topic>mobile, software-product>sap-business-technology-platform, software-product>sap-mobile-services, software-product>mobile-development-kit-client, software-product>sap-mobile-services, software-product>sap-build-code, software-product>sap-build, software-product>sap-business-application-studio]
 time: 30
 author_name: Jitendra Kansal
 author_profile: https://github.com/jitendrakansal
@@ -40,13 +40,13 @@ You will download your MDK project to your local machine. This will be necessary
 
 1. In SAP Business Application Studio, make sure not to select any file or folder under **Explorer**, right-click on the blank area and select **Download**.
 
-    <!-- border -->![MDK](img-3.1.png)
+    <!-- border -->![BAS Explorer Right-Click Download Option](img-3.1.png)
 
 2. A file named `MDKApp.tar` will be downloaded to your machine. Extract the metadata files from the downloaded archive. 
 
 ### Create and run MDK client
 
-1. Follow the [Build Your mobile development kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client and run it on a simulator or a device. 
+1. Follow the [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial to create your branded MDK client and run it on a simulator or a device. 
 
 2. After successfully onboarding your mobile client, click **Now** to accept the app update.
 
@@ -57,13 +57,13 @@ You will download your MDK project to your local machine. This will be necessary
 
 In the Visual Studio Code, click the **Extensions** pane and install the **Mobile Development Kit Editor** extension. Alternatively, you can download and install the MDK extension for VS Code from the [SAP Software Center](https://me.sap.com/softwarecenter/template/products/%20_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=73554900100900003111&V=MAINT&TA=ACTUAL&PAGE=SEARCH/MDK%20VSCODE%20EXTENSION%201.0) (applicable to SAP Mobile Services customer).
 
-<!-- border -->![MDK](img-5.1.png)
+<!-- border -->![VS Code Extensions Pane MDK Editor Install](img-5.1.png)
 
 ### Open the MDK metadata project in VS Code
 
 Open the extracted `mdkapp` folder in the VS Code. 
 
-<!-- border -->![MDK](img-6.1.png)
+<!-- border -->![MDK App Folder Opened In VS Code](img-6.1.png)
 
 ### Create and Configure your launch.json
 
@@ -71,19 +71,19 @@ You will add your debug configurations in `launch.json` file.
 
 1. To generate the default launch configuration file, select **Run and Debug** in the icon panel.
 
-    <!-- border -->![MDK](img-7.1.png)
+    <!-- border -->![VS Code Run And Debug Panel Selected](img-7.1.png)
 
 2. Click `create a launch.json file` option.
 
-    <!-- border -->![MDK](img-7.2.png)
+    <!-- border -->![Create Launch JSON File Option](img-7.2.png)
 
 3. Select `MDK` as the debugger type from the list.
 
-    <!-- border -->![MDK](img-7.3.png)
+    <!-- border -->![MDK Debugger Type Selection](img-7.3.png)
 
 4. A `launch.json` file will be generated.
 
-    <!-- border -->![MDK](img-7.4.png)
+    <!-- border -->![Generated Launch JSON File](img-7.4.png)
 
 5. In the `launch.json` file, set the `appRoot` attribute for appropriate mobile development kit launch configurations. This should be the path to your `create-client` command output. 
 
@@ -91,7 +91,7 @@ You will add your debug configurations in `launch.json` file.
 
     Put a comma after `watch` attribute and add `appRoot` attribute. Provide the path to your MDK client project folder. 
 
-    <!-- border -->![MDK](img-7.5.png)
+    <!-- border -->![Launch JSON AppRoot Attribute Configuration](img-7.5.png)
 
 
 ### Attach the debugger to your MDK Client
@@ -104,13 +104,13 @@ You will add your debug configurations in `launch.json` file.
 
 1. Select the **MDK Attach on Android** configuration from the drop-down, and click the *green play icon* or select **Run** Menu > **Start Debugging**.
 
-    <!-- border -->![MDK](img-8.1.png)
+    <!-- border -->![MDK Attach Android Configuration Selected](img-8.1.png)
 
     >In this tutorial, MDK client was launched via terminal or command line window back in step 4. So, the **MDK Attach** configuration option is selected in the dropdown. 
 
 2. Once the debugger is attached to your MDK client, you will see an orange bar appearing in the VS Code.
 
-    <!-- border -->![MDK](img-8.2.png)
+    <!-- border -->![Debugger Attached Orange Bar VS Code Android](img-8.2.png)
 
 [OPTION END]
 
@@ -118,17 +118,17 @@ You will add your debug configurations in `launch.json` file.
 
 1. Select the **MDK Attach on iOS** configuration from the drop-down, and click the *green play icon* or select **Run** Menu > **Start Debugging**.
 
-    <!-- border -->![MDK](img-8.3.png)
+    <!-- border -->![MDK Attach iOS Configuration Selected](img-8.3.png)
 
     >In this tutorial, MDK client was launched via terminal window back in step 4. So, the **MDK Attach** configuration option is selected in the dropdown. 
 
 2. click allow accepting incoming network connections.
    
-    <!-- border -->![MDK](img-8.4.png)
+    <!-- border -->![Allow Incoming Network Connections Dialog](img-8.4.png)
 
 3. Once the debugger is attached to your MDK client, you will see an orange bar appearing in the VS Code.
 
-    <!-- border -->![MDK](img-8.5.png)
+    <!-- border -->![Debugger Attached Orange Bar VS Code iOS](img-8.5.png)
 
 [OPTION END]
 
@@ -142,23 +142,23 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
 1. Switch to the **Explorer** view to access MDK project. 
 
-    <!-- border -->![MDK](img-9.1.png)
+    <!-- border -->![Explorer View MDK Project Access](img-9.1.png)
 
 2.  To set a breakpoint, navigate to `Rules` | `com_sap_edm_sampleservice_v4` | `Customers` |  `Customers_DeleteConfirmation.js` and click on line 8 where you want to set your breakpoint. Click the margin that you can find on the left of the line number. Alternatively, you can toggle the breakpoint from **Run** menu > **Toggle Breakpoint**.
 
-    ![MDK](img-9.2.gif)
+    ![Setting Breakpoint In Rule File Android](img-9.2.gif)
 
 3. In your MDK client, navigate to **Customers** | click on any customer record | **More** | **Delete** to trigger the rule.
 
-    ![MDK](img-9.3.png)
+    ![MDK Client Customer Delete Action Android](img-9.3.png)
 
 4. Click **OK** to confirm. 
 
-    ![MDK](img-9.4.png)
+    ![Delete Confirmation OK Dialog Android](img-9.4.png)
 
 5. Execution stops at the breakpoint. 
 
-    ![MDK](img-9.5.png)
+    ![Execution Stopped At Breakpoint Android](img-9.5.png)
 
 5. Use debugging capabilities in VS code to step over or into code, inspect variables, set watch points, and more. See the Visual Studio Code documentation on [Debug actions](https://code.visualstudio.com/Docs/editor/debugging#_debug-actions), [breakpoints](https://code.visualstudio.com/Docs/editor/debugging#_breakpoints), [Data inspection](https://code.visualstudio.com/Docs/editor/debugging#_data-inspection) and [Advanced breakpoint topics](https://code.visualstudio.com/Docs/editor/debugging#_advanced-breakpoint-topics). 
 
@@ -169,23 +169,23 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
 1. Switch to the **Explorer** view to access MDK project. 
 
-    <!-- border -->![MDK](img-9.1.png)
+    <!-- border -->![Explorer View MDK Project Access iOS](img-9.1.png)
 
 2. To set a breakpoint, navigate to `Rules` | `com_sap_edm_sampleservice_v4` | `Customers` |  `Customers_DeleteConfirmation.js` and click on line 8 where you want to set your breakpoint. Click the margin that you can find on the left of the line number. Alternatively, you can toggle the breakpoint from **Run** menu > **Toggle Breakpoint**.
 
-    ![MDK](img-9.6.gif)
+    ![Setting Breakpoint In Rule File iOS](img-9.6.gif)
 
 3. In your MDK client, navigate to **Customers** | click on any customer record | **More** | **Delete** to trigger the rule.
 
-    ![MDK](img-9.7.png)
+    ![MDK Client Customer Delete Action iOS](img-9.7.png)
 
 4. Click **OK** to confirm. 
 
-    ![MDK](img-9.8.png)
+    ![Delete Confirmation OK Dialog iOS](img-9.8.png)
 
 5. Execution stops at the breakpoint. 
 
-    ![MDK](img-9.9.png)
+    ![Execution Stopped At Breakpoint iOS](img-9.9.png)
 
 6. Use debugging capabilities in VS code to step over or into code, inspect variables, set watch points, and more. See the Visual Studio Code documentation on [Debug actions](https://code.visualstudio.com/Docs/editor/debugging#_debug-actions), [breakpoints](https://code.visualstudio.com/Docs/editor/debugging#_breakpoints), [Data inspection](https://code.visualstudio.com/Docs/editor/debugging#_data-inspection) and [Advanced breakpoint topics](https://code.visualstudio.com/Docs/editor/debugging#_advanced-breakpoint-topics). 
 
@@ -195,11 +195,11 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
 1. Let's check if there is already `result.data` available. Switch to the **DEBUG CONSOLE** tab, enter `result.data` and press enter.
 
-    <!-- border -->![MDK](img-10.1.gif)
+    <!-- border -->![Debug Console Result Data Query](img-10.1.gif)
 
 2. As `result.data` is true, the `Customers_DeleteEntity.action` will be executed when pressing the play icon on the **Debug Toolbar**.
 
-    <!-- border -->![MDK](img-10.2.png)
+    <!-- border -->![Debug Toolbar Play Icon Delete Action](img-10.2.png)
 
 3. To disconnect your debugger, click the red stop icon in the floating bar. Alternatively, you can do it via **Run** menu> **Stop Debugging**.
 
