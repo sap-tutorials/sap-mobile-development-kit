@@ -23,10 +23,10 @@ In this step, you will use the agent to ask project-aware questions about MDK. T
 
 1. In the Cline window, copy and paste the following prompt into the input field and execute it.
 
-    ```bash
-    Explain this line.
-    let result = clientAPI.actionResults.AppUpdate.data;
-    ```
+   ```bash
+   Explain this line.
+   let result = clientAPI.actionResults.AppUpdate.data;
+   ```
 
     ![Cline Window Prompt Input Field](img-1.1.png)
 
@@ -38,9 +38,9 @@ In this step, you will use the agent to ask project-aware questions about MDK. T
 
 3. In the Cline window, execute the following prompt:
 
-    ```bash
-    I want to allow business users to upload media files to the backend. However, I want to limit the file size to a maximum of 2 MB. Refer documentation and suggest how can I achieve this?
-    ```
+   ```bash
+   I want to allow business users to upload media files to the backend. However, I want to limit the file size to a maximum of 2 MB. Refer documentation and suggest how can I achieve this?
+   ```
 
 4. The MCP client (Cline) recognizes that the MDK MCP server should be used and executes the request using the `mdk-docs` tool.
 
@@ -54,9 +54,9 @@ In this step, you will use the agent to ask project-aware questions about MDK. T
 
 5. You can also ask general conceptual questions, for example:
 
-    ```bash
-    How does an offline app work on a mobile device?
-    ```
+   ```bash
+   How does an offline app work on a mobile device?
+   ```
     
     The MCP client provides a detailed explanation in the context of MDK offline applications.
 
@@ -66,10 +66,10 @@ In this step, you will use the agent to modify existing UI screens based on your
 
 1. In the Cline window, execute the following prompt:
 
-    ```bash
-    Update main page displaying all information in a bottom bar and include icons for each item. Remove com_sap.. , page caption and Sync options. 
-    Also re-generate the sales order list page displaying Order ID, Customer Name, price along with currency,  style the status property (generate style classes if needed), and display the Date value in Date Time (DT) formatter. Once done, validate and deploy project.
-    ```
+   ```bash
+   Update main page displaying all information in a bottom bar and include icons for each item. Remove com_sap.. , page caption and Sync options. 
+   Also re-generate the sales order list page displaying Order ID, Customer Name, price along with currency,  style the status property (generate style classes if needed), and display the Date value in Date Time (DT) formatter. Once done, validate and deploy project.
+   ```
 
 2. The MCP client generates the required updates, validates the project, and deploys it.  
 
@@ -120,10 +120,10 @@ In this step, you will use the MCP agent to generate business logic that dynamic
 
 1. In the Cline window, execute the following prompt:
 
-    ```bash
-    Instead of just displaying text for the caption property (line 11) on the sales order list page, I want to additionally display the total number of sales orders. 
-    For example, Sales Orders (total count)
-    ```
+   ```bash
+   Instead of just displaying text for the caption property (line 11) on the sales order list page, I want to additionally display the total number of sales orders. 
+   For example, Sales Orders (total count)
+   ```
 
     ![Cline Window Sales Orders Count Prompt](img-4.1.png)
 

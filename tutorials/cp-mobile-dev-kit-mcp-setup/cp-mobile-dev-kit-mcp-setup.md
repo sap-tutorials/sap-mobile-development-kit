@@ -54,19 +54,19 @@ These features enable AI agents to understand MDK projects more effectively, sup
 
     **Option A: Install from the public npm registry**
 
-    ```bash
-    npm install -g @sap/mdk-mcp-server 
-    ```
+   ```bash
+   npm install -g @sap/mdk-mcp-server 
+   ```
 
     **Option B: Install from the open-source repository**
 
-    ```bash
-    git clone https://github.com/SAP/mdk-mcp-server.git 
-    cd mdk-mcp-server 
-    npm i --include=optional 
-    npm run build
-    npm i -g @sap/mdk-mcp-server@. 
-    ```
+   ```bash
+   git clone https://github.com/SAP/mdk-mcp-server.git 
+   cd mdk-mcp-server 
+   npm i --include=optional 
+   npm run build
+   npm i -g @sap/mdk-mcp-server@. 
+   ```
 
 3. Install **Cloud Foundry CLI** by following the [documentation](https://github.com/cloudfoundry/cli/wiki/V8-CLI-Installation-Guide). The guide provides machine specific installation steps and package manager options. `CF CLI` is required to connect to your SAP BTP Cloud Foundry organization and space. 
 
@@ -117,17 +117,17 @@ With Cline configured, you now need to register the MDK MCP server so the AI age
 
 4. In the `JSON` settings file, add the following configuration under the `mcpServers` section, then save the file. 
 
-    ```json
-    {
-      "mcpServers": {
-        "mdk-mcp": {
-          "type": "stdio",
-          "command": "mdk-mcp",
-          "args": ["--schema-version", "26.6"]
-        }
-      }
-    }
-    ```
+   ```json
+   {
+     "mcpServers": {
+       "mdk-mcp": {
+         "type": "stdio",
+         "command": "mdk-mcp",
+         "args": ["--schema-version", "26.6"]
+       }
+     }
+   }
+   ```
 
     >Supported schema versions include 26.6(default), 26.3, 25.9, 25.6, 24.11, and 24.7.      
 
@@ -163,12 +163,12 @@ To ensure the AI assistant follows MDK project conventions and uses the MCP serv
 
 3. Add the following content and save the file.
 
-    ```markdown
-    - Don't generate `.service.metadata` file.
-    - Don't generate `.xml` file in the `Services` folder.
-    - Don't change `.project.json` file.
-    - Don't add/modify my project when ask for how to or any suggestions.
-    ```
+   ```markdown
+   - Don't generate `.service.metadata` file.
+   - Don't generate `.xml` file in the `Services` folder.
+   - Don't change `.project.json` file.
+   - Don't add/modify my project when ask for how to or any suggestions.
+   ```
     
     ![AGENTS.md Rule File Content Saved](img-2.8.png)
 

@@ -27,9 +27,9 @@ In this step, you will connect to your SAP BTP Cloud Foundry organization and sp
 
 3. Run the following command using single sign-on (SSO). The Cloud Foundry CLI displays a login URL and prompts you to enter a temporary authentication code.
 
-    ```bash
-    cf login -a <API Endpoint URL> --sso
-    ```
+   ```bash
+   cf login -a <API Endpoint URL> --sso
+   ```
 
     >You can find your specific API endpoint of your Cloud Foundry organization on your SAP BTP subaccount overview page. 
     >![SAP BTP Subaccount API Endpoint Overview](img-1.0.png)
@@ -97,9 +97,9 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 
 2. Execute the following prompt:
 
-    ```bash
-    Generate an MDK offline project displaying information about customers, products, sales order headers, and items. I should also be able to perform local transactions.
-    ```
+   ```bash
+   Generate an MDK offline project displaying information about customers, products, sales order headers, and items. I should also be able to perform local transactions.
+   ```
 
     ![Cline Prompt For MDK Project Generation](img-3.2.png)
 
@@ -115,9 +115,9 @@ You will now generate a new MDK project using the MCP server and an AI agent.
 
 1. Execute the following prompt:
 
-    ```bash
-    Deploy the project and display on-boarding QR code.
-    ```
+   ```bash
+   Deploy the project and display on-boarding QR code.
+   ```
 
     ![Cline Deploy And QR Code Prompt](img-4.1.png)
 

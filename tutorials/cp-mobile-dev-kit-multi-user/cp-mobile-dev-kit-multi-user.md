@@ -15,7 +15,7 @@ author_profile: https://github.com/jitendrakansal
 ## Prerequisites
 - **Tutorial**: [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
-<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
+<table><tr><td align="center">![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 - **Download the latest version of mobile development kit SDK if you want to enable multi-user mode in MDK custom client** either from the SAP community [trial download](https://developers.sap.com/trials-downloads.html?search=Mobile+Development+Kit) or [SAP Software Center](https://me.sap.com/softwarecenter) if you are a SAP Mobile Services customer. This is required you to build a branded client.
 
 ## You will learn
@@ -39,37 +39,37 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
+    ![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![Application Tile Selection](img-1.2.png)
+    ![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![Mobile Category Selection](img-1.3.png)
+    ![Mobile Category Selection](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![Mobile Application Option Selected](img-1.4.png)
+    ![Mobile Application Option Selected](img-1.4.png)
 
 5. Enter the project name `multiuserapp` (used for this tutorial) , add a description (optional), and click **Review**. 
 
-    <!-- border -->![Project Name And Description Entry](img-1.5.png)
+    ![Project Name And Description Entry](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
+    ![Project Summary Review Screen](img-1.5.1.png)
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
-    <!-- border -->![Project Created In Build Lobby](img-1.6.png)
+    ![Project Created In Build Lobby](img-1.6.png)
     
 8. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![SAP BAS Workspace Opened](img-1.7.png)   
+    ![SAP BAS Workspace Opened](img-1.7.png)   
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
     >![SAP BAS Usage Consent Window](img-1.8.png) 
@@ -84,7 +84,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![Runtime Resources Add Button](img-2.1.png) 
+    ![Runtime Resources Add Button](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
@@ -92,21 +92,21 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor.
 
-    <!-- border -->![Mobile Services Application Selection](img-2.3.png)  
+    ![Mobile Services Application Selection](img-2.3.png)  
 
 3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
-    <!-- border -->![Destination Selection Add App To Project](img-2.4.png)  
+    ![Destination Selection Add App To Project](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app and mobile destination will be added under the Runtime Resources column. The mobile destination will also be added under the External Resources with a dotted-line connection to the Runtime Resource. The External Resource will be used to create the UI application.
 
-    <!-- border -->![Storyboard With Runtime Resources Added](img-2.5.png)      
+    ![Storyboard With Runtime Resources Added](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![UI Application Column Add Button](img-2.6.png)     
+    ![UI Application Column Add Button](img-2.6.png)     
 
 5. In the **Basic Information** step, provide the below information and click **Next**. You will modify the generated project in next step and will deploy it later.
 
@@ -115,7 +115,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `MDK Template Type` | `CRUD`  |
     | `Enable Auto-Deployment to Mobile Services After Project Creation` | Select `No` |
 
-    <!-- border -->![Basic Information CRUD Template Settings](img-2.7.png)  
+    ![Basic Information CRUD Template Settings](img-2.7.png)  
 
     >The `CRUD` template generates the offline or online actions, rules, messages and pages to view, update, and manage records. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
@@ -129,7 +129,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `Select all data collections` | Leave it as it is |
     | `What types of data will your application contain?` | Select `Customers` and `Products` |
 
-    <!-- border -->![Data Collections Step Configuration](img-2.8.png) 
+    ![Data Collections Step Configuration](img-2.8.png) 
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. For MDK Web application, destination is set up in SAP BTP admin UI.
 
@@ -139,7 +139,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->![Storyboard Updated With UI Component](img-2.9.png) 
+    ![Storyboard Updated With UI Component](img-2.9.png) 
 
 ### Define an event when user switches
 
@@ -152,11 +152,11 @@ Since the underlying offline database is shared, it is the responsibility of the
 
 1. Click the **Application.app** to open it in MDK Application Editor and then and select the link icon for the `OnUserSwitch` event.
 
-    <!-- border -->![Application Editor OnUserSwitch Event](img-2.10.png) 
+    ![Application Editor OnUserSwitch Event](img-2.10.png) 
 
 2. Bind it to the `SyncStartedMessage.action`.
 
-    <!-- border -->![OnUserSwitch Bound To SyncStartedMessage Action](img-2.11.png)  
+    ![OnUserSwitch Bound To SyncStartedMessage Action](img-2.11.png)  
 
     >For this tutorial, since we are using the Sample Service, which does not contain any user-specific data, we will simply trigger a sync to demonstrate that the event has been triggered.
 
@@ -166,38 +166,38 @@ Now that the MDK application is created, you will Deploy the Project definitions
 
 1. Switch to the `Application.app` tab, click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services**.
 
-    <!-- border -->![Deploy Option In Application Editor](img-2.12.png)
+    ![Deploy Option In Application Editor](img-2.12.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![Mobile Services Deploy Target Selected](img-2.13.png)
+    ![Mobile Services Deploy Target Selected](img-2.13.png)
 
     If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![Enable Source For Debugging Prompt](img-2.14.png)
+    ![Enable Source For Debugging Prompt](img-2.14.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![Deploy To Mobile Services Success Message](img-2.15.png)
+    ![Deploy To Mobile Services Success Message](img-2.15.png)
 
 
 ### Enable multi-user mode in SAP Mobile Services
 
 1. Open SAP Mobile Services UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app.
 
-    <!-- border -->![Mobile Services Native MDK App List](img-3.1.png)
+    ![Mobile Services Native MDK App List](img-3.1.png)
 
 2. Under Assigned Features, click **Client Settings**.
 
-    <!-- border -->![Client Settings Assigned Features](img-3.2.png)
+    ![Client Settings Assigned Features](img-3.2.png)
 
 3. Scroll through the page and enable the *Allow Upload of Pending Changes from Previous User (Enable Multiple User Mode)* checkbox under the **Shared Devices** section. This flag ensures that any pending offline changes from previous user are securely uploaded to the OData service. This is especially vital when the previous user has not uploaded the offline changes, and the app is being switched to a new user.
 
-    <!-- border -->![Multi-User Mode Checkbox Enabled](img-3.3.png)
+    ![Multi-User Mode Checkbox Enabled](img-3.3.png)
 
 4. As the Multiple user mode is enabled, you must configure **Passcode Policy**, if not done before.
 
-    <!-- border -->![Passcode Policy Configuration Required](img-3.4.png)
+    ![Passcode Policy Configuration Required](img-3.4.png)
 
 5. Once the passcode policy is set, click **Save**.    
 
@@ -207,15 +207,15 @@ In a Multi-user scenario the client will automatically upload any pending transa
 
 1. In SAP Mobile Services admin UI, click **Settings** **&rarr;** **Security**.
 
-    <!-- border -->![Mobile Services Security Settings](img-4.1.png)
+    ![Mobile Services Security Settings](img-4.1.png)
 
 2. Click **Metadata Download**. 
 
-    <!-- border -->![Metadata Download Button](img-4.2.png)
+    ![Metadata Download Button](img-4.2.png)
 
 3. Define the metadata expiration date up to ten years, or you can accept the one-year default date. Click **Download**. 
 
-    <!-- border -->![Metadata Expiration Date And Download](img-4.3.png)
+    ![Metadata Expiration Date And Download](img-4.3.png)
 
     >In case the metadata has been expired, end user may encounter an error while switching. You need to re-download the Mobile Services key and import it to the Trust Configuration in the BTP subaccount again.
 
@@ -223,11 +223,11 @@ In a Multi-user scenario the client will automatically upload any pending transa
 
 5. Navigate to your sub account on SAP BTP. In the Side navigation bar, click **Security** **&rarr;** **Trust Configuration** and click **`New SAML Trust Configuration`**.
 
-    <!-- border -->![BTP Trust Configuration New SAML Entry](img-4.4.png)
+    ![BTP Trust Configuration New SAML Entry](img-4.4.png)
 
 6. Click **Upload**, and select the XML file downloaded in the previous step, as a trusted identity provider. Enter a name, disable the **Available for User Login** checkbox and then click **Save**.
 
-    <!-- border -->![SAML Trust Configuration Upload And Save](img-4.5.png)
+    ![SAML Trust Configuration Upload And Save](img-4.5.png)
 
     >The trusted Identity Provider is not a real identity provider and cannot be used for user login. Disabling the **Available for User Login** checkbox ensures the identity provider does not appear on the XSUAA login page.
     >For more information, see [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/security/admin/config.html#configuring-security-trust).
@@ -238,11 +238,11 @@ Find out, if the metadata has been established successfully as a trusted provide
 
 Switch to the SAP Mobile Services UI. Click **Settings** **&rarr;** **Security** **&rarr;** **Test** .
 
-<!-- border -->![Security Trust Test Button](img-5.1.png)
+![Security Trust Test Button](img-5.1.png)
 
 You should see a success message.
 
-<!-- border -->![Trust Configuration Success Message](img-5.2.png)
+![Trust Configuration Success Message](img-5.2.png)
 
 >If the trust configuration is not established correctly, you may see a message like *SAML metadata might not have been imported as trusted identity provider* and the multi-user functionality in MDK client will not work.
 
@@ -252,7 +252,7 @@ If you are using SAP Mobile Services Client (public store) to test the multi-use
 
 1. Follow steps 1 to 3 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) and make sure to set the  `MultiUserEnabled` property to `true`. 
 
-      <!-- border -->![MultiUserEnabled Property Set To True](img-6.1.png)
+      ![MultiUserEnabled Property Set To True](img-6.1.png)
 
 2. Create your MDK client either using MDK SDK by following the step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) tutorial OR using SAP Cloud Build Service by following [Build Your Mobile Development Kit Client Using Cloud Build Service](https://developers.sap.com/tutorials/cp-mobile-dev-kit-cbs-client.html) tutorial.
 
@@ -266,11 +266,11 @@ Choose an option above based on whether you are testing multi-user functionality
 
 1. Switch to the SAP Business Application Studio UI. SAP Business Application Studio has a feature to display the QR code for onboarding in the Mobile client. Open the `Application.app` and click the **Application QR Code** icon in the editor's header area.
 
-    <!-- border -->![Application QR Code Icon In Editor](img-7.1.png)
+    ![Application QR Code Icon In Editor](img-7.1.png)
 
     The Onboarding QR code is now displayed. You will notice that the `multiUser` parameter in the generated QR code is set to *true*. This is due to the flag *Allow Upload of Pending Changes from Previous User* being set in step 3 mobile services admin UI. The MDK client will set the user mode based on the scanned QR code. 
 
-    <!-- border -->![Onboarding QR Code With multiUser Enabled](img-7.2.png)
+    ![Onboarding QR Code With multiUser Enabled](img-7.2.png)
 
     >Alternatively, you can scan the QR code generated under *APIs* > *In-app Scanning Code* in the mobile services admin UI.
 
@@ -317,7 +317,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
     ![Add New User Icon Highlighted](img-8.5.png)
 
     >Ensure all users being onboarded have access to the BTP account. You can configure this in the users section under security on your SAP BTP sub-account.
-    ><!-- border -->![BTP Sub-Account User Access Settings](img-8.6.png)
+    >![BTP Sub-Account User Access Settings](img-8.6.png)
 
 6. Follow the onboarding flow for the second user. To protect your data from being accessed by another user, do not use the same passcode.
 
@@ -361,7 +361,7 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
     ![iOS Add New User Icon Highlighted](img-8.12.png)
 
     >Ensure all users being onboarded have access to the BTP account. You can configure this in the users section under security on your SAP BTP sub-account.
-    ><!-- border -->![BTP Sub-Account User Access Settings](img-8.6.png)
+    >![BTP Sub-Account User Access Settings](img-8.6.png)
 
 6. Follow the onboarding flow for the second user. To protect your data from being accessed by another user, do not use the same passcode.
 

@@ -40,7 +40,7 @@ You will download your MDK project to your local machine. This will be necessary
 
 1. In SAP Business Application Studio, make sure not to select any file or folder under **Explorer**, right-click on the blank area and select **Download**.
 
-    <!-- border -->![BAS Explorer Right-Click Download Option](img-3.1.png)
+    ![BAS Explorer Right-Click Download Option](img-3.1.png)
 
 2. A file named `MDKApp.tar` will be downloaded to your machine. Extract the metadata files from the downloaded archive. 
 
@@ -57,13 +57,13 @@ You will download your MDK project to your local machine. This will be necessary
 
 In the Visual Studio Code, click the **Extensions** pane and install the **Mobile Development Kit Editor** extension. Alternatively, you can download and install the MDK extension for VS Code from the [SAP Software Center](https://me.sap.com/softwarecenter/template/products/%20_APP=00200682500000001943&_EVENT=DISPHIER&HEADER=Y&FUNCTIONBAR=N&EVENT=TREE&NE=NAVIGATE&ENR=73554900100900003111&V=MAINT&TA=ACTUAL&PAGE=SEARCH/MDK%20VSCODE%20EXTENSION%201.0) (applicable to SAP Mobile Services customer).
 
-<!-- border -->![VS Code Extensions Pane MDK Editor Install](img-5.1.png)
+![VS Code Extensions Pane MDK Editor Install](img-5.1.png)
 
 ### Open the MDK metadata project in VS Code
 
 Open the extracted `mdkapp` folder in the VS Code. 
 
-<!-- border -->![MDK App Folder Opened In VS Code](img-6.1.png)
+![MDK App Folder Opened In VS Code](img-6.1.png)
 
 ### Create and Configure your launch.json
 
@@ -71,19 +71,19 @@ You will add your debug configurations in `launch.json` file.
 
 1. To generate the default launch configuration file, select **Run and Debug** in the icon panel.
 
-    <!-- border -->![VS Code Run And Debug Panel Selected](img-7.1.png)
+    ![VS Code Run And Debug Panel Selected](img-7.1.png)
 
 2. Click `create a launch.json file` option.
 
-    <!-- border -->![Create Launch JSON File Option](img-7.2.png)
+    ![Create Launch JSON File Option](img-7.2.png)
 
 3. Select `MDK` as the debugger type from the list.
 
-    <!-- border -->![MDK Debugger Type Selection](img-7.3.png)
+    ![MDK Debugger Type Selection](img-7.3.png)
 
 4. A `launch.json` file will be generated.
 
-    <!-- border -->![Generated Launch JSON File](img-7.4.png)
+    ![Generated Launch JSON File](img-7.4.png)
 
 5. In the `launch.json` file, set the `appRoot` attribute for appropriate mobile development kit launch configurations. This should be the path to your `create-client` command output. 
 
@@ -91,7 +91,7 @@ You will add your debug configurations in `launch.json` file.
 
     Put a comma after `watch` attribute and add `appRoot` attribute. Provide the path to your MDK client project folder. 
 
-    <!-- border -->![Launch JSON AppRoot Attribute Configuration](img-7.5.png)
+    ![Launch JSON AppRoot Attribute Configuration](img-7.5.png)
 
 
 ### Attach the debugger to your MDK Client
@@ -104,13 +104,13 @@ You will add your debug configurations in `launch.json` file.
 
 1. Select the **MDK Attach on Android** configuration from the drop-down, and click the *green play icon* or select **Run** Menu > **Start Debugging**.
 
-    <!-- border -->![MDK Attach Android Configuration Selected](img-8.1.png)
+    ![MDK Attach Android Configuration Selected](img-8.1.png)
 
     >In this tutorial, MDK client was launched via terminal or command line window back in step 4. So, the **MDK Attach** configuration option is selected in the dropdown. 
 
 2. Once the debugger is attached to your MDK client, you will see an orange bar appearing in the VS Code.
 
-    <!-- border -->![Debugger Attached Orange Bar VS Code Android](img-8.2.png)
+    ![Debugger Attached Orange Bar VS Code Android](img-8.2.png)
 
 [OPTION END]
 
@@ -118,17 +118,17 @@ You will add your debug configurations in `launch.json` file.
 
 1. Select the **MDK Attach on iOS** configuration from the drop-down, and click the *green play icon* or select **Run** Menu > **Start Debugging**.
 
-    <!-- border -->![MDK Attach iOS Configuration Selected](img-8.3.png)
+    ![MDK Attach iOS Configuration Selected](img-8.3.png)
 
     >In this tutorial, MDK client was launched via terminal window back in step 4. So, the **MDK Attach** configuration option is selected in the dropdown. 
 
 2. click allow accepting incoming network connections.
    
-    <!-- border -->![Allow Incoming Network Connections Dialog](img-8.4.png)
+    ![Allow Incoming Network Connections Dialog](img-8.4.png)
 
 3. Once the debugger is attached to your MDK client, you will see an orange bar appearing in the VS Code.
 
-    <!-- border -->![Debugger Attached Orange Bar VS Code iOS](img-8.5.png)
+    ![Debugger Attached Orange Bar VS Code iOS](img-8.5.png)
 
 [OPTION END]
 
@@ -142,7 +142,7 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
 1. Switch to the **Explorer** view to access MDK project. 
 
-    <!-- border -->![Explorer View MDK Project Access](img-9.1.png)
+    ![Explorer View MDK Project Access](img-9.1.png)
 
 2.  To set a breakpoint, navigate to `Rules` | `com_sap_edm_sampleservice_v4` | `Customers` |  `Customers_DeleteConfirmation.js` and click on line 8 where you want to set your breakpoint. Click the margin that you can find on the left of the line number. Alternatively, you can toggle the breakpoint from **Run** menu > **Toggle Breakpoint**.
 
@@ -169,7 +169,7 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
 1. Switch to the **Explorer** view to access MDK project. 
 
-    <!-- border -->![Explorer View MDK Project Access iOS](img-9.1.png)
+    ![Explorer View MDK Project Access iOS](img-9.1.png)
 
 2. To set a breakpoint, navigate to `Rules` | `com_sap_edm_sampleservice_v4` | `Customers` |  `Customers_DeleteConfirmation.js` and click on line 8 where you want to set your breakpoint. Click the margin that you can find on the left of the line number. Alternatively, you can toggle the breakpoint from **Run** menu > **Toggle Breakpoint**.
 
@@ -195,11 +195,11 @@ As the debugger is attached, you can now set breakpoints, inspect scope variable
 
 1. Let's check if there is already `result.data` available. Switch to the **DEBUG CONSOLE** tab, enter `result.data` and press enter.
 
-    <!-- border -->![Debug Console Result Data Query](img-10.1.gif)
+    ![Debug Console Result Data Query](img-10.1.gif)
 
 2. As `result.data` is true, the `Customers_DeleteEntity.action` will be executed when pressing the play icon on the **Debug Toolbar**.
 
-    <!-- border -->![Debug Toolbar Play Icon Delete Action](img-10.2.png)
+    ![Debug Toolbar Play Icon Delete Action](img-10.2.png)
 
 3. To disconnect your debugger, click the red stop icon in the floating bar. Alternatively, you can do it via **Run** menu> **Stop Debugging**.
 

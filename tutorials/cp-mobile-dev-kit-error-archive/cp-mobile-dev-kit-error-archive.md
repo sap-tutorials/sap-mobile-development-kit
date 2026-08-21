@@ -14,7 +14,7 @@ author_profile: https://github.com/jitendrakansal
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
-<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
+<table><tr><td align="center">![Play Store QR Code](img-1.1.1.png)<br>Android</td><td align="center">![App Store QR Code](img-1.1.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 
@@ -47,37 +47,37 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
+    ![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![Application Tile Selection](img-1.2.png)
+    ![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![Mobile Category Selection](img-1.3.png)
+    ![Mobile Category Selection](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![Mobile Application Option Selected](img-1.4.png)
+    ![Mobile Application Option Selected](img-1.4.png)
 
 5. Enter the project name `mdk_errorarchive` (used for this tutorial) , add a description (optional), and click **Review**. 
 
-    <!-- border -->![Project Name And Description Entry](img-1.5.png)
+    ![Project Name And Description Entry](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
+    ![Project Summary Review Screen](img-1.5.1.png)
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
-    <!-- border -->![Project Created In Lobby Table](img-1.6.png)
+    ![Project Created In Lobby Table](img-1.6.png)
     
 8. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![Project Opened In SAP BAS](img-1.7.png)  
+    ![Project Opened In SAP BAS](img-1.7.png)  
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
     >![SAP BAS Usage Consent Dialog](img-1.8.png) 
@@ -93,7 +93,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![Runtime Resources Add Button In Storyboard](img-2.1.png) 
+    ![Runtime Resources Add Button In Storyboard](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
@@ -101,25 +101,25 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor.
 
-    <!-- border -->![Mobile Application Services App List](img-2.3.png)  
+    ![Mobile Application Services App List](img-2.3.png)  
 
 3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
-    <!-- border -->![Destination Selected Add App To Project](img-2.4.png)  
+    ![Destination Selected Add App To Project](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app and mobile destination will be added under the Runtime Resources column. The mobile destination will also be added under the External Resources with a dotted-line connection to the Runtime Resource. The External Resource will be used to create the UI application.
 
-    <!-- border -->![Storyboard With App And Destination Added](img-2.5.png)      
+    ![Storyboard With App And Destination Added](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![UI Application Column Add Button](img-2.6.png)     
+    ![UI Application Column Add Button](img-2.6.png)     
 
 5. In the **Basic Information** step, select the **MDK Template Type** as **CRUD**, leave the other options as they are. Since the option to **Enable Auto-Deployment to Mobile Services After Project Creation** is set to **Yes**, the MDK project will automatically be deployed to the Mobile Services after it is generated. Click **Next** to continue.
 
-    <!-- border -->![MDK CRUD Template Basic Information Step](img-2.7.png)  
+    ![MDK CRUD Template Basic Information Step](img-2.7.png)  
 
     >The `CRUD` template generates the offline or online actions, rules, messages and pages to view, update, and manage records. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
@@ -133,7 +133,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `Select all data collections` | Leave it as it is |
     | `What types of data will your application contain?` | Select `Customers`, `Products`, `SalesOrderHeaders` and `SalesOrderItems` |
 
-    <!-- border -->![Data Collections Entity Sets Selection](img-2.8.png) 
+    ![Data Collections Entity Sets Selection](img-2.8.png) 
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. 
 
@@ -143,9 +143,9 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer and automatically deployed to the Mobile Services based on your selections. You will now see a QR code for onboarding the mobile app. Leave the Onboarding dialog box open for the next step.
  
-    <!-- border -->![Storyboard Updated With UI Component](img-2.9.png) 
+    ![Storyboard Updated With UI Component](img-2.9.png) 
 
-    <!-- border -->![QR Code For Mobile App Onboarding](img-2.10.png) 
+    ![QR Code For Mobile App Onboarding](img-2.10.png) 
 
 ### Run the Project
 
@@ -241,11 +241,11 @@ On the Error Details page, you will implement how to navigate to respective reco
 
     Open `Pages` | `ErrorArchive` |`ErrorArchive_Detail.page`, in the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Object Table** control onto the page area.
 
-    <!-- border -->![Object Table Drag And Drop Onto Page](img-5.1.gif)
+    ![Object Table Drag And Drop Onto Page](img-5.1.gif)
 
 2. In the **Properties** | **Target** pane, choose **String Target** from the dropdown and provide `{AffectedEntity}` value.
 
-    <!-- border -->![AffectedEntity String Target Property Set](img-5.2.png)
+    ![AffectedEntity String Target Property Set](img-5.2.png)
 
     >`AffectedEntity`: A navigation property that allows applications to navigate from an `ErrorArchive` entity to an entity in the offline store that is affected by the error.
 
@@ -263,7 +263,7 @@ On the Error Details page, you will implement how to navigate to respective reco
     | `Tags` | Click the `item0` and click the trash icon to delete the default item |
     | `Title` | `Edit Affected Entity` |
 
-    <!-- border -->![Object Table Appearance Properties Configured](img-5.3.png)
+    ![Object Table Appearance Properties Configured](img-5.3.png)
 
     >`@odata.id`: an annotation that contains the entity-id. More details can be found [here](http://docs.oasis-open.org/odata/odata-json-format/v4.0/cs01/odata-json-format-v4.0-cs01.html#_Toc365464691).
 
@@ -273,86 +273,86 @@ On the Error Details page, you will implement how to navigate to respective reco
     |----|----|
     | `AccessoryType`| `DisclosureIndicator` |
 
-    <!-- border -->![Object Table Behavior AccessoryType Set](img-5.4.png)
+    ![Object Table Behavior AccessoryType Set](img-5.4.png)
 
 5. In the **Avatar Grid** section of the **Properties** pane, remove the default Avatar.  First, click on the `item0`, a trash icon appears. Click on the trash icon to delete the default item.
 
-    <!-- border -->![Avatar Grid Default Item Removed](img-5.5.png)
+    ![Avatar Grid Default Item Removed](img-5.5.png)
 
 6. In the **Avatar Stack** section of the **Property** pane, remove the default Avatar.  First, click on the `item0`, a trash icon appears. Click on the trash icon to delete the default item.
 
-    <!-- border -->![Avatar Stack Default Item Removed](img-5.6.png)  
+    ![Avatar Stack Default Item Removed](img-5.6.png)  
 
 7. When tapping on this Object Table control, you want to bring the affected record so that you can fix business failure by modifying previous changes right there. For this, you will write a business logic to decide which action to call depends on which `@odata.type` is the `affectedEntity` and if there is no handler for an affected entity, app will display a toast message saying this affected entity doesn't have a handle yet.
 
     In the `ErrorArchive_Detail.page`, select the Object Table control, navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
-    <!-- border -->![OnPress Event Create Rule Action Selected](img-5.7.png)  
+    ![OnPress Event Create Rule Action Selected](img-5.7.png)  
 
 8. Select **Rule** for the *Object Type* and select the `/mdk_errorarchive/Rules/com_sap_edm_sampleservice_v4` folder path to create a new rule that will be generated in the chosen path.
 
-    <!-- border -->![Rule Object Type And Folder Path Selected](img-5.8.png)
+    ![Rule Object Type And Folder Path Selected](img-5.8.png)
 
     >You may choose a path of your choice. Since the template generates an `ErrorArchive` folder under *Rules*, it is good to keep related files under the respective folder.
 
     Enter the MDK Rule **Name** `ErrorArchive_DecideWhichEditPage` and click **Finish**.
 
-    <!-- border -->![Rule Name ErrorArchive_DecideWhichEditPage Entry](img-5.9.png)
+    ![Rule Name ErrorArchive_DecideWhichEditPage Entry](img-5.9.png)
 
     Replace the generated snippet with below code.
 
-    ```JavaScript
-    /**
-    * Describe this function...
-    * @param {IClientAPI} context
-    */
-    export default function ErrorArchive_DecideWhichEditPage(context) {
-        //Current binding's root is the errorArchiveEntity:
-        let errorArchiveEntity = context.currentPage.context.binding;
-        //Get the affectedEntity object out of it
-        let affectedEntity = errorArchiveEntity.AffectedEntity;
-        console.log("Affected Entity Is:");
-        console.log(affectedEntity);
-        let targetAction = null;
-        let id = affectedEntity["@odata.id"]; //e.g. SalesOrderHeaders(12345)
-        let affectedEntityType = "Unknown Entity Set"; //By default it's unknown type
-        if (id.indexOf("(") > 0) {
-            //Extracting the entity set type from @odata.id e.g. SalesOrderHeaders
-            var patt = /\/?(.+)\(/i;
-            var result = id.match(patt);
-            affectedEntityType = result[1];
-        }
-        console.log("Affected Entity Type Is:");
-        console.log(affectedEntityType);
-        //Here we decide which action to call depends on which affectedEntityType is the affectedEntity
-        // You can add more complex decision logic if needed
-        switch (affectedEntityType) {
-            case "SalesOrderHeaders":
-                targetAction = "/mdk_errorarchive/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action";
-                break;
-            default:
-                //Save the affected Entity's type in client data so that it can be displayed by the toast
-                context.getPageProxy().getClientData().AffectedEntityType = affectedEntityType;
-                // Show a toast for affectedEntityType that we do not handle yet
-                return context.executeAction("/mdk_errorarchive/Actions/ErrorArchive/ErrorArchive_UnknownAffectedEntity.action");
-        }
-        if (targetAction) {
-            let pageProxy = context.getPageProxy();
-            //Set the affectedEntity object to root the binding context.
-            pageProxy.setActionBinding(affectedEntity);
-            //Note: doing 'return' here is important to chain the current context to the action.
-            // Without the return the ActionBinding will not be passed to the action because it will consider
-            // you are executing this action independent of the current context.
-            return context.executeAction(targetAction);
-        }
-    }
-    ```
+   ```JavaScript
+   /**
+   * Describe this function...
+   * @param {IClientAPI} context
+   */
+   export default function ErrorArchive_DecideWhichEditPage(context) {
+       //Current binding's root is the errorArchiveEntity:
+       let errorArchiveEntity = context.currentPage.context.binding;
+       //Get the affectedEntity object out of it
+       let affectedEntity = errorArchiveEntity.AffectedEntity;
+       console.log("Affected Entity Is:");
+       console.log(affectedEntity);
+       let targetAction = null;
+       let id = affectedEntity["@odata.id"]; //e.g. SalesOrderHeaders(12345)
+       let affectedEntityType = "Unknown Entity Set"; //By default it's unknown type
+       if (id.indexOf("(") > 0) {
+           //Extracting the entity set type from @odata.id e.g. SalesOrderHeaders
+           var patt = /\/?(.+)\(/i;
+           var result = id.match(patt);
+           affectedEntityType = result[1];
+       }
+       console.log("Affected Entity Type Is:");
+       console.log(affectedEntityType);
+       //Here we decide which action to call depends on which affectedEntityType is the affectedEntity
+       // You can add more complex decision logic if needed
+       switch (affectedEntityType) {
+           case "SalesOrderHeaders":
+               targetAction = "/mdk_errorarchive/Actions/com_sap_edm_sampleservice_v4/SalesOrderHeaders/NavToSalesOrderHeaders_Edit.action";
+               break;
+           default:
+               //Save the affected Entity's type in client data so that it can be displayed by the toast
+               context.getPageProxy().getClientData().AffectedEntityType = affectedEntityType;
+               // Show a toast for affectedEntityType that we do not handle yet
+               return context.executeAction("/mdk_errorarchive/Actions/ErrorArchive/ErrorArchive_UnknownAffectedEntity.action");
+       }
+       if (targetAction) {
+           let pageProxy = context.getPageProxy();
+           //Set the affectedEntity object to root the binding context.
+           pageProxy.setActionBinding(affectedEntity);
+           //Note: doing 'return' here is important to chain the current context to the action.
+           // Without the return the ActionBinding will not be passed to the action because it will consider
+           // you are executing this action independent of the current context.
+           return context.executeAction(targetAction);
+       }
+   }
+   ```
 
     >In above code there is a reference to `ErrorArchive_UnknownAffectedEntity.action`, which doesn't exist in your metadata project yet. You will create this action in next step.
 
 9. In the generated `ErrorArchive_DecideWhichEditPage.js` rule, click on the red line. You will notice a yellow bulb icon suggesting some fixes, click on it and then select `MDK: Create action for this reference`, and click `Toast Message Action`.
 
-    <!-- border -->![Create Toast Message Action From Rule Reference](img-5.10.gif)
+    ![Create Toast Message Action From Rule Reference](img-5.10.gif)
 
     Provide the below information:
 
@@ -362,7 +362,7 @@ On the Error Details page, you will implement how to navigate to respective reco
     | `Duration` | 4 |
     | `Animated` | Select `true` from the dropdown |
 
-    <!-- border -->![Toast Message Action Properties Configured](img-5.11.png)
+    ![Toast Message Action Properties Configured](img-5.11.png)
 
     >If there is no handler for an affected entity, app will display a toast message.
 
@@ -370,11 +370,11 @@ On the Error Details page, you will implement how to navigate to respective reco
 
     In the Layout Editor, expand the **Controls** | **Section Bar** section, drag and drop the **Header** control onto the **Object Table** control.
 
-    <!-- border -->![Header Section Bar Dragged Onto Object Table](img-5.12.gif)
+    ![Header Section Bar Dragged Onto Object Table](img-5.12.gif)
 
     Now, bind its **Caption** property to `Affected Entity: {#Page:-Current/AffectedEntity/@odata.type}` target path.
 
-    <!-- border -->![Header Caption Binding Set To AffectedEntity](img-5.13.png)
+    ![Header Caption Binding Set To AffectedEntity](img-5.13.png)
 
     >`@odata.type`: an annotation that specifies the type of a JSON object or name/value pair. Its value is a URI that identifies the type of the property or object. More details can be found [here](http://docs.oasis-open.org/odata/odata-json-format/v4.0/cs01/odata-json-format-v4.0-cs01.html#odataType).
 
@@ -385,7 +385,7 @@ You will now deploy the updated project to your MDK client.
 
 Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** 
 
-<!-- border -->![Deploy To Mobile Services Option Selected](img-6.png)
+![Deploy To Mobile Services Option Selected](img-6.png)
 
 ### Update the app
 
