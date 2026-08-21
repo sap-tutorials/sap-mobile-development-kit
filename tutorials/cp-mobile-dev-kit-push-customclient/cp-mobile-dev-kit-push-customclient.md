@@ -38,53 +38,53 @@ You may clone an existing metadata project from [GitHub repository](https://gith
 
 1. Open the [Firebase console](https://console.firebase.google.com/u/0/?pli=1), login with your Google account and click **Create a new Firebase Project**.
 
-    <!-- border -->![Firebase Console Create New Project](img-1.1.png)
+    ![Firebase Console Create New Project](img-1.1.png)
 
 2. Provide a Project Name, click **Continue**.
 
-    <!-- border -->![Firebase Project Name Entry](img-1.2.png)
+    ![Firebase Project Name Entry](img-1.2.png)
 
 3. Uncheck **Enable Gemini in Firebase** option and click **Continue**.
 
-    <!-- border -->![Uncheck Enable Gemini In Firebase Option](img-1.2.1.png)
+    ![Uncheck Enable Gemini In Firebase Option](img-1.2.1.png)
 
 3. Uncheck **Enable Google Analytics for this project** option and click **Create Project**.
 
-    <!-- border -->![Uncheck Google Analytics Create Project](img-1.3.png)
+    ![Uncheck Google Analytics Create Project](img-1.3.png)
 
 4. Once the project is ready, click **Continue**.
 
-    <!-- border -->![Firebase Project Ready Continue](img-1.4.png)
+    ![Firebase Project Ready Continue](img-1.4.png)
 
 5. Click **Add app** and click **Android** icon to add Firebase to your Android app.
 
-    <!-- border -->![Firebase Add Android App](img-1.5.png)
+    ![Firebase Add Android App](img-1.5.png)
 
 6. Provide a unique name to Android package name, click **Register app**.
 
-    <!-- border -->![Android Package Name Register App](img-1.6.png)
+    ![Android Package Name Register App](img-1.6.png)
 
 7. `Download goole-services.json` file, click **Next**.
 
-    <!-- border -->![Download google-services.json File](img-1.7.png)
+    ![Download google-services.json File](img-1.7.png)
 
 8. In **Add Firebase SDK** step, click **Next**.
 
 9. In the following step, click **Next** and then click **Continue to console**.
 
-    <!-- border -->![Continue To Firebase Console](img-1.8.png)    
+    ![Continue To Firebase Console](img-1.8.png)    
 
 10. Go to the **Project settings**. 
 
-    <!-- border -->![Firebase Project Settings Navigation](img-1.9.png)   
+    ![Firebase Project Settings Navigation](img-1.9.png)   
     
 11. Select the **Service accounts** tab and click on the **Generate new private key**. 
 
-    <!-- border -->![Service Accounts Generate New Private Key](img-1.9.1.png)  
+    ![Service Accounts Generate New Private Key](img-1.9.1.png)  
 
 12. Click the **Generate key** in the pop-up window and store the downloaded private key file securely because the key cannot be recovered if lost.
 
-    <!-- border -->![Generate Key Confirmation Pop-up](img-1.9.2.png)   
+    ![Generate Key Confirmation Pop-up](img-1.9.2.png)   
 
 [OPTION END]
 
@@ -106,11 +106,11 @@ To enable your app for push notifications, you need to carry out the following t
 
     On your Mac, open the **Keychain Access** application, and navigate to **Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority...**
 
-    <!-- border -->![Keychain Access Certificate Request Menu](img-1.10.png)
+    ![Keychain Access Certificate Request Menu](img-1.10.png)
 
     In the dialog, enter the email address which is associated with your Apple Developer account. Also, make sure you check the **Request is saved to disk** option.
 
-    <!-- border -->![Certificate Request Saved To Disk Dialog](img-1.11.png)
+    ![Certificate Request Saved To Disk Dialog](img-1.11.png)
 
     Click **Continue**.
 
@@ -118,29 +118,29 @@ To enable your app for push notifications, you need to carry out the following t
 
     Once you see a dialog saying the certificate is saved successfully, click **Done** to finish.
 
-    <!-- border -->![Certificate Saved Successfully Dialog](img-1.12.png)
+    ![Certificate Saved Successfully Dialog](img-1.12.png)
 
 2. Create a new development certificate `.cer` file
 
     Go to your [Apple Developer Account](https://developer.apple.com/account) and Click **Certificates**.
 
-    <!-- border -->![Apple Developer Account Certificates Section](img-1.13.png)
+    ![Apple Developer Account Certificates Section](img-1.13.png)
 
     Click **+** icon to register a unique **Identifiers** for your application.
 
-    <!-- border -->![Apple Developer Add New Identifier](img-1.14.png)
+    ![Apple Developer Add New Identifier](img-1.14.png)
 
     Select **App IDs** and click **Continue**.
 
-    <!-- border -->![Select App IDs Option](img-1.15.png)
+    ![Select App IDs Option](img-1.15.png)
 
     Provide a unique **Bundle ID** name and **Description**.
 
-    <!-- border -->![Bundle ID And Description Entry](img-1.16.png)
+    ![Bundle ID And Description Entry](img-1.16.png)
 
     Scroll down and select the **Push Notifications** capability from the list, click **Continue**.
 
-    <!-- border -->![Push Notifications Capability Selection](img-1.17.png)
+    ![Push Notifications Capability Selection](img-1.17.png)
 
     In the following screen, select option for **Deployment Details** and then click **Continue**.
 
@@ -150,27 +150,27 @@ To enable your app for push notifications, you need to carry out the following t
 
     Under **Identifiers**, search for the App ID that you registered in previous step.
 
-    <!-- border -->![Identifiers App ID Search Result](img-1.18.png)
+    ![Identifiers App ID Search Result](img-1.18.png)
 
     Scroll down and select the **Push Notifications** capability, click **Configure**.
 
-    <!-- border -->![Push Notifications Capability Configure](img-1.19.png)
+    ![Push Notifications Capability Configure](img-1.19.png)
 
     To configure push notifications for the provided App ID, a Client SSL Certificate is required that will allow the notification server to connect to the Apple Push Notification Service. Each App ID requires its own Client SSL Certificate.
 
     Click **Create Certificate** to start the process for creating the needed `.cer` file.
 
-    <!-- border -->![Create Certificate For Push Notifications](img-1.20.png)
+    ![Create Certificate For Push Notifications](img-1.20.png)
 
     Click **Choose File** and browse to the downloaded Signing Request `CSR` file, click **Continue**.
 
     Apple will now create a `.cer` file for you which is issued by the **Apple Worldwide Developer Relations Certification Authority**.
 
-    <!-- border -->![CSR File Upload Certificate Creation](img-1.21.png)
+    ![CSR File Upload Certificate Creation](img-1.21.png)
 
     Click **Download** to download your certificate.
 
-    <!-- border -->![Download Apple Push Certificate](img-1.22.png)
+    ![Download Apple Push Certificate](img-1.22.png)
 
 4. Install the `.cer` file and create the .p12 file
 
@@ -184,25 +184,25 @@ To enable your app for push notifications, you need to carry out the following t
 
     If the certificate is added correctly to the Keychain you should see it in the `MyCertificates` section, make sure you selected **login** as keychain.
 
-    <!-- border -->![Keychain MyCertificates Login Section](img-1.23.png)
+    ![Keychain MyCertificates Login Section](img-1.23.png)
 
     Select the certificate as well as the private key and right-click to export those two items.
 
-    <!-- border -->![Certificate And Private Key Export](img-1.24.png)
+    ![Certificate And Private Key Export](img-1.24.png)
 
     Make sure that in the dropdown **Personal Information Exchange (.p12)** is selected and click **Save**. You will be prompted to enter a password, click **OK** to export the files.
 
-    <!-- border -->![Personal Information Exchange P12 Export](img-1.25.png)
+    ![Personal Information Exchange P12 Export](img-1.25.png)
 
 5. Register your device
 
     Click **+** icon to register your iOS device.
 
-    <!-- border -->![Register iOS Device Plus Icon](img-1.26.png)
+    ![Register iOS Device Plus Icon](img-1.26.png)
 
     Provide **Device Name** & **Device ID (UDID)** and then click **Continue**.
 
-    <!-- border -->![iOS Device Name And UDID Entry](img-1.27.png)
+    ![iOS Device Name And UDID Entry](img-1.27.png)
 
 [OPTION END]
 
@@ -218,11 +218,11 @@ To enable your app for push notifications, you need to carry out the following t
 
 2. If you have selected _Predefined for_ option, switch to the empty value. You should see Android option showing up on the page. Click **Browse…** to load the downloaded private key file. 
 
-    <!-- border -->![Android Push Private Key Browse](img-2.1.png)
+    ![Android Push Private Key Browse](img-2.1.png)
 
 3. You should see the values showing up, click **Save** to save the changes.
 
-    <!-- border -->![Android Push Notification Settings Save](img-2.2.png)
+    ![Android Push Notification Settings Save](img-2.2.png)
 
 [OPTION END]
 
@@ -240,7 +240,7 @@ To enable your app for push notifications, you need to carry out the following t
     |  Certificate | `Browse to the `.p12`certificate you just exported` |
     |  Password | Enter the password you provided during the export |
 
-    <!-- border -->![Apple APNS Certificate Configuration Save](img-2.5.png)
+    ![Apple APNS Certificate Configuration Save](img-2.5.png)
 
 You have now successfully configured the APNS Endpoint on the server side in Mobile Services admin UI.
 
@@ -257,7 +257,7 @@ You have now successfully configured the APNS Endpoint on the server side in Mob
 
 Paste the downloaded `google-services.json` file to `/DemoSampleApp.mdkproject/App_Resources/Android/` path.
 
-<!-- border -->![google-services.json In Android App Resources](img-3.1.png)
+![google-services.json In Android App Resources](img-3.1.png)
 
 [OPTION END]
 
@@ -265,20 +265,20 @@ Paste the downloaded `google-services.json` file to `/DemoSampleApp.mdkproject/A
 
 1. Create a new file named as `app.entitlements` and place it under `/DemoSampleApp.mdkproject/App_Resources_Merge/iOS/` path.
 
-    <!-- border -->![app.entitlements File In iOS Resources](img-3.2.png)
+    ![app.entitlements File In iOS Resources](img-3.2.png)
 
 2. Open this file and copy & paste the below information:
 
-    ```XML
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1.0">
-    <dict>
-    	<key>aps-environment</key>
-    	<string>development</string>
-    </dict>
-    </plist>
-    ```
+   ```XML
+   <?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+   <plist version="1.0">
+   <dict>
+   	<key>aps-environment</key>
+   	<string>development</string>
+   </dict>
+   </plist>
+   ```
 
     >Assign a value of development or production to aps-environment key, depending only on which activity you are creating the provisioning profile for.
 
@@ -307,15 +307,15 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
-    <!-- border -->![Push Registrations Tab Send Notification](img-5.2.png)
+    ![Push Registrations Tab Send Notification](img-5.2.png)
 
 4. In notification dialog, type a notification message and click **Send**.
 
-    <!-- border -->![Push Notification Message Send Dialog](img-5.3.png)
+    ![Push Notification Message Send Dialog](img-5.3.png)
 
     You will see a success toast message.
 
-    <!-- border -->![Push Notification Success Toast Message](img-5.4.png)
+    ![Push Notification Success Toast Message](img-5.4.png)
 
     After sending notification, mobile device should receive the message. This example uses the simplest notification that only contains the alert property. 
 
@@ -338,15 +338,15 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
 
     There you will find information about user registered for push notification and also details about Push providers. Identify your Device ID and click **Send Notification**.
 
-    <!-- border -->![Push Registrations Tab Send Notification](img-5.2.png)
+    ![Push Registrations Tab Send Notification](img-5.2.png)
 
 4. In notification dialog, type a notification message and click **Send**.
 
-    <!-- border -->![Push Notification Message Send Dialog](img-5.3.png)
+    ![Push Notification Message Send Dialog](img-5.3.png)
 
     You will see a success toast message.
 
-    <!-- border -->![Push Notification Success Toast Message](img-5.4.png)
+    ![Push Notification Success Toast Message](img-5.4.png)
 
     After sending notification, mobile device should receive the message. This example uses the simplest notification that only contains the alert property. 
 
@@ -372,17 +372,17 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
 
 3. Switch to the **Advanced** tab, provide below payload and click **Send**. 
 
-    ```JSON
-    {
-        "alert": "Alert message",
-        "gcm": {
-            "title": "MDK Push",
-            "body": "This is an advanced notification message"
-        }
-    }
-    ```
+   ```JSON
+   {
+       "alert": "Alert message",
+       "gcm": {
+           "title": "MDK Push",
+           "body": "This is an advanced notification message"
+       }
+   }
+   ```
 
-    <!-- border -->![Advanced Android Push Notification Payload Send](img-6.1.png)
+    ![Advanced Android Push Notification Payload Send](img-6.1.png)
 
 3. After sending notification, you will see a notification in the notification center. 
 
@@ -398,17 +398,17 @@ Follow step 4 from [Build Your Mobile Development Kit Client Using MDK SDK](http
 
 3. Switch to the **Advanced** tab, provide below payload and click **Send**. 
 
-    ```JSON
-    {
-        "alert": "Alert message",
-        "apns": {
-            "title": "MDK Push",
-            "body": "This is an advanced notification message"
-        }
-    }
-    ```
+   ```JSON
+   {
+       "alert": "Alert message",
+       "apns": {
+           "title": "MDK Push",
+           "body": "This is an advanced notification message"
+       }
+   }
+   ```
 
-    <!-- border -->![Advanced iOS Push Notification Payload Send](img-6.3.png)
+    ![Advanced iOS Push Notification Payload Send](img-6.3.png)
 
 3. After sending notification, you will see a notification in the notification center. 
 

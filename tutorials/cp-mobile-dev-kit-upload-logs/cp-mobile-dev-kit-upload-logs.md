@@ -32,11 +32,11 @@ In this step, you will enable client log upload policy in **SAP Mobile Services 
 
 1. Login to [Mobile Services Admin UI](https://developers.sap.com/tutorials/fiori-ios-hcpms-setup.html), click `myapp.mdk.demo` | **Client Log Upload**.
 
-    <!-- border -->![Mobile Services Client Log Upload Section](img-1.1.png)
+    ![Mobile Services Client Log Upload Section](img-1.1.png)
 
 2. Switch to the **Configuration** tab, check **Log Upload** option  and click **Save**.
 
-    <!-- border -->![Log Upload Configuration Tab Save Setting](img-1.2.png)
+    ![Log Upload Configuration Tab Save Setting](img-1.2.png)
 
     >Other policy parameters such as Log Level, Delete Uploaded Log After, Maximum Number of Logs and Maximum Log Size are currently not supported by MDK and hence have no effect.
 
@@ -56,7 +56,7 @@ Logs help you trace events that occur while your application is running. You can
 
 The MDK template generates a project that includes a user menu with support options, making it easier for initial troubleshooting without having to create logging, tracing, or upload actions. Of course, you can create your own actions or rules and add them to  your project when needed.
 
-<!-- border -->![MDK App User Menu Support Options](img-2.0.png)
+![MDK App User Menu Support Options](img-2.0.png)
 
 
 ### Upload Logs from your App to SAP Mobile Services
@@ -109,7 +109,7 @@ The MDK template generates a project that includes a user menu with support opti
 
 Open SAP Mobile Services Admin UI, click **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click `myapp.mdk.demo` app **&rarr;** **Client Log Upload** **&rarr;** **Log Files**.
 
-<!-- border -->![Mobile Services Client Log Files List](img-4.1.png)
+![Mobile Services Client Log Files List](img-4.1.png)
 
 A log file is created for each upload. All the uploaded files, including all levels, not just error or fatal will be listed here. You can select a file and download it locally on your machine for further examination.
 
