@@ -29,7 +29,7 @@ Once SAP Mobile Services is available, you can use its features in your mobile d
 
 3. Navigate to the trial global account by clicking **Go To Your Trial Account**.
 
-    <!-- border -->![Trial global account](img-1.png)
+    ![Trial global account](img-1.png)
 
 ### Launch SAP Mobile Services admin UI
 
@@ -65,12 +65,12 @@ Once SAP Mobile Services is available, you can use its features in your mobile d
 
 7. After you log into the endpoint, the **Organization** and **Space** prompt appears. The current API Endpoint value appears. Choose the relevant **Organization** and **Space** from the dropdown list, and then choose **Open**.
 
-    <!-- border -->![BTP](img-2.7.png)
+    ![BTP](img-2.7.png)
 
     >If the organization that you want to access is not listed, you might have used the wrong API Endpoint. In this case, you can log out and log in again, in order to input the correct API Endpoint value.
     You have now logged in to the SAP Mobile Services admin UI.
 
-    <!-- border -->![BTP](img-2.8.png)
+    ![BTP](img-2.8.png)
 
     Bookmark the **Mobile Services admin UI URL** for quick access.
 

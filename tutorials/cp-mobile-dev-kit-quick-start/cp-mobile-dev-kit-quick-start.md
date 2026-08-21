@@ -30,37 +30,37 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
+    ![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![Application Tile Selection](img-1.2.png)
+    ![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![Mobile Category Selection](img-1.3.png)
+    ![Mobile Category Selection](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![Mobile Application Type Selection](img-1.4.png)
+    ![Mobile Application Type Selection](img-1.4.png)
 
 5. Enter the project name `mdkapp` (used for this tutorial), add a description (optional), and click **Review**. 
 
-    <!-- border -->![Project Name And Description Entry](img-1.5.png)
+    ![Project Name And Description Entry](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
+    ![Project Summary Review Screen](img-1.5.1.png)
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
-    <!-- border -->![Project Created In Lobby Table](img-1.6.png)
+    ![Project Created In Lobby Table](img-1.6.png)
     
 8. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![SAP BAS Workspace Opened](img-1.7.png)  
+    ![SAP BAS Workspace Opened](img-1.7.png)  
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
     >![SAP BAS Usage Consent Dialog](img-1.8.png) 
@@ -77,34 +77,34 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![Storyboard Runtime Resources Add Button](img-2.1.png) 
+    ![Storyboard Runtime Resources Add Button](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
-    ><!-- border -->![CF Login Credentials Dialog](img-2.2.png) 
+    >![CF Login Credentials Dialog](img-2.2.png) 
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor.
 
-    <!-- border -->![Mobile Application Services App Selection](img-2.3.png)  
+    ![Mobile Application Services App Selection](img-2.3.png)  
 
 3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
-    <!-- border -->![Destination Selection Add App To Project](img-2.4.png)  
+    ![Destination Selection Add App To Project](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app and mobile destination will be added under the Runtime Resources column. The mobile destination will also be added under the External Resources with a dotted-line connection to the Runtime Resource. The External Resource will be used to create the UI application.
 
-    <!-- border -->![Storyboard With Runtime And External Resources](img-2.5.png)      
+    ![Storyboard With Runtime And External Resources](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![Storyboard UI Application Add Button](img-2.6.png)     
+    ![Storyboard UI Application Add Button](img-2.6.png)     
 
 
 5. In the **Basic Information** step, select the **MDK Template Type** as **CRUD**, leave the other options as they are. Since the option to **Enable Auto-Deployment to Mobile Services After Project Creation** is set to **Yes**, the MDK project will automatically be deployed to the Mobile Services after it is generated. Click **Next** to continue.
 
-    <!-- border -->![MDK Template CRUD Basic Information Step](img-2.7.png) 
+    ![MDK Template CRUD Basic Information Step](img-2.7.png) 
 
 6. In the **Data Collections** step, provide the below information and click **Finish**. Data Collections step retrieves the entity sets information for the selected destination.
 
@@ -115,7 +115,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `Enable Offline` | It's enabled by default |
     | `Select all data collections` | Choose `Yes` |
 
-    <!-- border -->![Data Collections Step Configuration](img-2.8.png) 
+    ![Data Collections Step Configuration](img-2.8.png) 
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services. 
     
@@ -197,7 +197,7 @@ Once you complete this tutorial, you can continue with [these tutorials](https:/
 
 This is how the project structure looks like within the workspace.
 
-<!-- border -->![Generated MDK Project Structure In Workspace](img-3.1.png)
+![Generated MDK Project Structure In Workspace](img-3.1.png)
 
 These are the [metadata definitions](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/App.schema.html) available in the editor and the format in which these metadata definitions are stored in the editor. Just to brief on some of these:
 
