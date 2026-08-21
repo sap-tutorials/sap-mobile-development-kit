@@ -31,29 +31,29 @@ In this step, you will create a Section page with a Form Cell Section to contain
 
 1. Right-click the **Pages** folder | **MDK: New Page** | **Section** | **Next**.
 
-    <!-- border -->![New Section Page Creation Wizard](img-1.1.png)
+    ![New Section Page Creation Wizard](img-1.1.png)
     
 2. In the **Base Information** step, enter the page **Name** as `Customers_Create` and click **Finish** to complete the page creation wizard.
 
-    <!-- border -->![Customers Create Page Name Entry](img-1.2.png)
+    ![Customers Create Page Name Entry](img-1.2.png)
 
 3. Once the page opens in the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Create Customer**.
 
-    <!-- border -->![Action Bar Caption Set To Create Customer](img-1.3.png)
+    ![Action Bar Caption Set To Create Customer](img-1.3.png)
 
 4. Now, you will add the fields (like first name, last name, phone, email address & date of birth) for creating a new customer record by the end-user. In the Layout Editor, expand the **Static Container** group. Drag and drop **Form Cell** section onto the Page area.
 
-    <!-- border -->![Form Cell Section Drag And Drop](img-1.3.1.gif)
+    ![Form Cell Section Drag And Drop](img-1.3.1.gif)
 
     >Form Cell section is used to contain Form Cell controls in a section page.
     
 5. You will now add Form Cell controls in the Form Cell section. Expand the **Form Cell Controls** group, drag and drop a **Simple Property** onto the Page area.
 
-    <!-- border -->![Simple Property Control Drag And Drop](img-1.4.gif)
+    ![Simple Property Control Drag And Drop](img-1.4.gif)
 
 6. Drag and drop three additional Simple Property controls onto the page so you have four total controls.
 
-    <!-- border -->![Four Simple Property Controls On Page](img-1.5.png)
+    ![Four Simple Property Controls On Page](img-1.5.png)
 
 7. Select the first **Simple Property control** and provide the below information:
 
@@ -63,7 +63,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
     | `Caption` | `First Name` |
     | `PlaceHolder`| `Enter Value` |
 
-    <!-- border -->![First Name Simple Property Control Settings](img-1.6.png)
+    ![First Name Simple Property Control Settings](img-1.6.png)
 
 8. Select the second **Simple Property control** and provide the below information:
 
@@ -73,7 +73,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
     | `Caption` | `Last Name` |
     | `PlaceHolder`| `Enter Value` |
 
-    <!-- border -->![Last Name Simple Property Control Settings](img-1.7.png)
+    ![Last Name Simple Property Control Settings](img-1.7.png)
 
 9. Select the third **Simple Property control** and provide the below information:
 
@@ -84,7 +84,7 @@ In this step, you will create a Section page with a Form Cell Section to contain
     | `KeyboardType` | `Phone` |
     | `PlaceHolder`| `Enter Value` |
 
-    <!-- border -->![Phone Simple Property Control Settings](img-1.8.png)
+    ![Phone Simple Property Control Settings](img-1.8.png)
 
     >To streamline data entry, the keyboard displayed when editing a `SimplePropertyFormCell` should be appropriate for the type of content in the field. If your app asks for number, for example, it should display the phone keyboard.
 
@@ -97,13 +97,13 @@ In this step, you will create a Section page with a Form Cell Section to contain
     | `KeyboardType` | `Email` |
     | `PlaceHolder`| `Enter Value` |
 
-    <!-- border -->![Email Simple Property Control Settings](img-1.9.png)
+    ![Email Simple Property Control Settings](img-1.9.png)
 
     >[`KeyboardType`](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Page/FormCell/SimpleProperty.schema.html#keyboardtype) streamlines the data entry. When entering an email address, it would display the email address keyboard in mobile clients.
 
 11. Drag and drop a **Date Picker** control onto the page area for date of birth parameter.
 
-    <!-- border -->![Date Picker Control Added To Page](img-1.10.gif)
+    ![Date Picker Control Added To Page](img-1.10.gif)
 
     Provide the below information:
 
@@ -124,11 +124,11 @@ Now, you will add a button on the Create Customer page and set it's `onPress` to
 
     >Action Bar Item is a button that users can use to fire actions when pressed. You can add an Action Bar Item only to the Action Bar (at the top of the page).
 
-    <!-- border -->![Action Bar Item Added Upper Left Corner](img-2.1.png)
+    ![Action Bar Item Added Upper Left Corner](img-2.1.png)
 
 2. In the **Properties** pane, click the **link icon** to open the **Object Browser** for the **System Item** property. Double click the **Cancel** type and click **OK**.
 
-    <!-- border -->![Cancel System Item Selected In Object Browser](img-2.2.png)
+    ![Cancel System Item Selected In Object Browser](img-2.2.png)
 
     >System Item are predefined system-supplied icon or text. Overwrites _Text_ and _Icon_ if specified.
 
@@ -136,7 +136,7 @@ Now, you will add a button on the Create Customer page and set it's `onPress` to
 
     In **Events** tab, click the dotted icon for the `OnPress` property to open the **Object Browser**. Double click the `CloseModalPage_Cancel.action` and click **OK** to set it as the `OnPress` Action.
 
-    <!-- border -->![OnPress Bound To CloseModalPage Cancel Action](img-2.3.png)
+    ![OnPress Bound To CloseModalPage Cancel Action](img-2.3.png)
 
 
 ### Store the created data locally
@@ -152,21 +152,21 @@ First, add an action bar item on the `Customers_Create.page`.
 
 1.  In `Customers_Create.page`, **drag and drop** an **Action Bar Item** to the upper right corner of the action bar.
 
-    <!-- border -->![Save Action Bar Item Added Upper Right](img-3.1.png)
+    ![Save Action Bar Item Added Upper Right](img-3.1.png)
 
 2. Click the **link** icon to open the object browser for the **System Item** property. Double-click the **Save** type and click **OK**.
 
 3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.
 
-    <!-- border -->![OnPress Event Create Rule Action Selected](img-3.2.png)
+    ![OnPress Event Create Rule Action Selected](img-3.2.png)
 
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![Default Object Type And Folders Selection](img-3.3.png)  
+    ![Default Object Type And Folders Selection](img-3.3.png)  
 
 5. In the **Template Selection**, choose **Data** in **Category** | click **OData** Action | **Next**.
 
-    <!-- border -->![OData Action Template Selection](img-3.4.png)  
+    ![OData Action Template Selection](img-3.4.png)  
 
 6. In the **Base Information** step, provide the below information:
 
@@ -177,7 +177,7 @@ First, add an action bar item on the `Customers_Create.page`.
     | `Service`| Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
 
-    <!-- border -->![CreateEntity Action Base Information Settings](img-3.5.png)
+    ![CreateEntity Action Base Information Settings](img-3.5.png)
 
 7. Click **Next**.
 
@@ -191,33 +191,33 @@ First, add an action bar item on the `Customers_Create.page`.
 
     In the search box start typing the control name `FCCreateDOB`. The list will filter down to show the matching values. Double click the **Value (Value)** entry under the `FCCreateDOB` field and click **OK** to set binding.
 
-    <!-- border -->![DateOfBirth Bound To FCCreateDOB Control](img-3.6.gif)
+    ![DateOfBirth Bound To FCCreateDOB Control](img-3.6.gif)
 
 9. Repeat the above step for remaining properties: `EmailAddress`, `FirstName`, `LastName` and `PhoneNumber`.
 
-    <!-- border -->![All Properties Bound To Form Controls](img-3.7.png)
+    ![All Properties Bound To Form Controls](img-3.7.png)
 
  10. Click **Finish** to complete the action creation process. The action editor will open with the `Customers_CreateEntity.action` loaded.
 
-    >You can find more details about [Create Entity Action](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ODataService/CreateEntity.schema.html).     
+   >You can find more details about [Create Entity Action](https://help.sap.com/doc/69c2ce3e50454264acf9cafe6c6e442c/Latest/en-US/docs-en/reference/schemadoc/Action/ODataService/CreateEntity.schema.html).     
 
  11. When the above OData action is executed, you may want to display messages on its success and failure behavior. For example, on its success, you may want to close the page and allow any execution to continue. On its failure, you may want to display an error.  
 
-    In the `Customers_CreateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the link icon to open the object browser for the *Success Action* and bind it to `CloseModalPage_Complete.action`.
+   In the `Customers_CreateEntity.action`, scroll down and expand the *Common Action Properties* section. Click the link icon to open the object browser for the *Success Action* and bind it to `CloseModalPage_Complete.action`.
 
-    <!-- border -->![Success Action Bound To CloseModalPage Complete](img-3.9.png)
+   ![Success Action Bound To CloseModalPage Complete](img-3.9.png)
 
  12. Create a message action displaying error in case of the update failure. In the `Customers_CreateEntity.action`, click the `Create a rule/action` icon for the *Failure Action*.
 
-    <!-- border -->![Failure Action Create Rule Icon Clicked](img-3.10.png)
+   ![Failure Action Create Rule Icon Clicked](img-3.10.png)
 
  13. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![Default Object Type And Folders Selection](img-3.3.png)     
+   ![Default Object Type And Folders Selection](img-3.3.png)     
 
 14. In the **Template Selection** step, choose **Message** in **Category** | click **Message** Action | **Next**.
 
-    <!-- border -->![Message Action Template Selection](img-3.11.png)
+    ![Message Action Template Selection](img-3.11.png)
 
 15. In the **Base Information** step, provide the below information:
 
@@ -232,7 +232,7 @@ First, add an action bar item on the `Customers_Create.page`.
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--`|
 
-    <!-- border -->![Failure Message Action Base Information Settings](img-3.12.png)
+    ![Failure Message Action Base Information Settings](img-3.12.png)
 
     >`Customers_CreateEntity` is the Action Result value of the `Customers_CreateEntity.action`. This reference is used to pass the results to subsequent actions in the chain. These actions can reference the action result as needed. In this case if there is a failure, you access the error property of the action result to display the OData failure message.
 
@@ -253,24 +253,24 @@ You will open the `Customers_Create.page` from the Customer List page. For this,
 
 1. In `Customers_List.page`, drag and drop an **Action Bar Item** to the upper right of the action bar.
 
-    <!-- border -->![Add Button Action Bar Item On Customers List](img-4.1.png)
+    ![Add Button Action Bar Item On Customers List](img-4.1.png)
 
 2. Click the **link icon** to open the object browser for the `SystemItem` property. Double click the **Add** type and click **OK**.
 
-    <!-- border -->![Add System Item Selected In Object Browser](img-4.2.png)
+    ![Add System Item Selected In Object Browser](img-4.2.png)
 
 3. Navigate to the **Events** tab. Click the dotted icon for the `OnPress` property and select the `Create a rule/action`.    
 
 
-    <!-- border -->![OnPress Event Create Navigation Action](img-4.3.png)
+    ![OnPress Event Create Navigation Action](img-4.3.png)
 
 4. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![Default Object Type And Folders Selection](img-3.3.png)       
+    ![Default Object Type And Folders Selection](img-3.3.png)       
 
 5. In the **Template Selection** step, choose **UI** in **Category** | click **Navigation** | **Next**.
 
-    <!-- border -->![Navigation Action Template Selection](img-4.4.png)
+    ![Navigation Action Template Selection](img-4.4.png)
 
 6. In the **Base Information** step, provide the below information:
 
@@ -280,7 +280,7 @@ You will open the `Customers_Create.page` from the Customer List page. For this,
     | `PageToOpen` | Select `Customers_Create.page` from the dropdown |
     | `ModalPage`| Select `true` from the dropdown |
 
-    <!-- border -->![NavToCustomers Create Navigation Action Settings](img-4.5.png)
+    ![NavToCustomers Create Navigation Action Settings](img-4.5.png)
 
 7. Click **Finish** to complete the action creation process.
 
@@ -291,7 +291,7 @@ You will now deploy the updated project to your MDK client.
 
 Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** .
 
-<!-- border -->![Deploy Project To Mobile Services](img-5.png)
+![Deploy Project To Mobile Services](img-5.png)
 
 ### Run the Project
 
@@ -355,7 +355,7 @@ You can cross verify if a record has been updated in the backend.
 
 >**Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** click the MDK App **myapp.mdk.demo** **&rarr;** **Connectivity** **&rarr;** click **Launch in Browser** icon
 
-><!-- border -->![Mobile Services App Connectivity Launch Browser](img-7.9.png)
+>![Mobile Services App Connectivity Launch Browser](img-7.9.png)
 
 >It will open the URL in a new tab, remove `?auth=uaa` and add `/Customers` at the end of the URL.
 ![Customers Data Viewed In Browser](img-7.10.png)

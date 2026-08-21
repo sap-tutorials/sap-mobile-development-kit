@@ -39,38 +39,38 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
+    ![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![Application Tile Selection](img-1.2.png)
+    ![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![Mobile Category Selection](img-1.3.png)
+    ![Mobile Category Selection](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![Mobile Application Option Selected](img-1.4.png)
+    ![Mobile Application Option Selected](img-1.4.png)
 
 5. Enter the project name `mdk_geolocation` (used for this tutorial) , add a description (optional), and click **Review**. 
 
-    <!-- border -->![Project Name Entry Form](img-1.5.png)
+    ![Project Name Entry Form](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
+    ![Project Summary Review Screen](img-1.5.1.png)
 
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments. After the project has been created successfully, click the project to open it. 
 
-    <!-- border -->![Project Created In Lobby Table](img-1.6.png)
+    ![Project Created In Lobby Table](img-1.6.png)
     
 8. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![SAP BAS Workspace Opened](img-1.7.png)
+    ![SAP BAS Workspace Opened](img-1.7.png)
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
     >![BAS Usage Consent Window](img-1.8.png) 
@@ -85,7 +85,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![Runtime Resources Add Button](img-2.1.png) 
+    ![Runtime Resources Add Button](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
@@ -93,92 +93,92 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor and click **Add App to Project**. You do not require to add a destination for this tutorial.
 
-    <!-- border -->![Mobile Services App Selection](img-2.4.png)  
+    ![Mobile Services App Selection](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app will be added under the Runtime Resources column.
 
-    <!-- border -->![App Added In Storyboard](img-2.5.png)      
+    ![App Added In Storyboard](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![UI Application Add Button](img-2.6.png)     
+    ![UI Application Add Button](img-2.6.png)     
 
 5. In the **Basic Information** step, select **No** for the **Enable Auto-Deployment to Mobile Services After Project Creation** property, and click **Finish**. You will modify the generated project in next step and will deploy it later.
 
-    <!-- border -->![Auto-Deployment Disabled Basic Info](img-2.7.png)  
+    ![Auto-Deployment Disabled Basic Info](img-2.7.png)  
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->![Storyboard With UI Component](img-2.8.png) 
+    ![Storyboard With UI Component](img-2.8.png) 
 
 ### Display the coordinates on a page
 
   1. Click the `Main.page`, drag & drop **Static Key Value** container to the page area.
 
-    <!-- border -->![Static Key Value Container Drop](img-2.9.gif)
+   ![Static Key Value Container Drop](img-2.9.gif)
 
   2. In **Properties** | **Layout**, change `NumberOfColumns` to 1.
 
-    <!-- border -->![Properties Layout NumberOfColumns Setting](img-2.10.png)
+   ![Properties Layout NumberOfColumns Setting](img-2.10.png)
 
   3. Drag & drop **Key Value Item** to the container.
 
-    <!-- border -->![Key Value Item Drag Drop](img-2.11.gif)
+   ![Key Value Item Drag Drop](img-2.11.gif)
 
   4. Set `KeyName`as `Coordinates`. To bind it's value property, click on `create a rule`. You will create a new JavaScript file to capture the device location: latitude & longitude.
 
-    <!-- border -->![KeyName Coordinates Rule Creation](img-2.12.png)
+   ![KeyName Coordinates Rule Creation](img-2.12.png)
 
   5. Keep the default selection for *Object Type* as **Rule** and *Folders*. Click **OK**.
 
-    <!-- border -->![Object Type Rule Default Selection](img-2.13.png)
+   ![Object Type Rule Default Selection](img-2.13.png)
 
-    >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
+   >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
    6. In the **Base Information**, enter the Rule name as `GetCoordinates` and click  **Finish**.
 
-    <!-- border -->![GetCoordinates Rule Name Entry](img-2.14.png)
+   ![GetCoordinates Rule Name Entry](img-2.14.png)
 
 
    8. Replace the generated snippet with below code.
 
-    ```JavaScript
-    /**
-    * Describe this function...
-    * @param {IClientAPI} context
-    */
-    import * as geolocation from "@nativescript/geolocation";
-    import { CoreTypes } from "@nativescript/core";
-    export default async function GetCoordinates(context) {
-        var logger = context.getLogger();
-        console.log("Current Log Level: " + logger.getLevel());
-        // check if geolocation is not enabled
-        var locationIsEnabled = await geolocation.isEnabled();
-        if (!locationIsEnabled) {
-            // request for the user to enable it
-            await geolocation.enableLocationRequest();
-        }
-        // Get current location with high accuracy
-        return geolocation.getCurrentLocation({
-            desiredAccuracy: CoreTypes.Accuracy.high, //This will return the finest location available
-            updateDistance: 5, //Update distance filter in meters.
-            timeout: 11000 //How long to wait for a location in ms.
-        }).then(function (loc) {
-            if (loc) {
-                console.log(loc);
-                console.log('\nCurrent Location: (' + loc.latitude + ',' + loc.longitude + ')');
-                logger.log(loc.toString());
-                var locMessage = '(' + "Latitude:" + loc.latitude + ',' + "Longitude:" + loc.longitude + ')';
-                logger.log('Current Location: ' + locMessage, 'INFO');
-                return locMessage;
-            }
-        }, function (e) {
-            logger.log(e.message, 'ERROR');
-        });
-    }
-    ```
+   ```JavaScript
+   /**
+   * Describe this function...
+   * @param {IClientAPI} context
+   */
+   import * as geolocation from "@nativescript/geolocation";
+   import { CoreTypes } from "@nativescript/core";
+   export default async function GetCoordinates(context) {
+       var logger = context.getLogger();
+       console.log("Current Log Level: " + logger.getLevel());
+       // check if geolocation is not enabled
+       var locationIsEnabled = await geolocation.isEnabled();
+       if (!locationIsEnabled) {
+           // request for the user to enable it
+           await geolocation.enableLocationRequest();
+       }
+       // Get current location with high accuracy
+       return geolocation.getCurrentLocation({
+           desiredAccuracy: CoreTypes.Accuracy.high, //This will return the finest location available
+           updateDistance: 5, //Update distance filter in meters.
+           timeout: 11000 //How long to wait for a location in ms.
+       }).then(function (loc) {
+           if (loc) {
+               console.log(loc);
+               console.log('\nCurrent Location: (' + loc.latitude + ',' + loc.longitude + ')');
+               logger.log(loc.toString());
+               var locMessage = '(' + "Latitude:" + loc.latitude + ',' + "Longitude:" + loc.longitude + ')';
+               logger.log('Current Location: ' + locMessage, 'INFO');
+               return locMessage;
+           }
+       }, function (e) {
+           logger.log(e.message, 'ERROR');
+       });
+   }
+   ```
 
 ### Enable the Loading Indicator on Sectioned Table in the Main page
 
@@ -192,7 +192,7 @@ Enable the loading indicator at the Sectioned Table level by providing the follo
 | `Enabled`| `true` |
 | `Text`| Enter `Loading, please wait...` |
 
-<!-- border -->![Loading Indicator Properties Enabled](img-3.1.png)
+![Loading Indicator Properties Enabled](img-3.1.png)
 
 
 ### List the NPM modules as external reference
@@ -202,23 +202,23 @@ In `GetCoordinates.js` file, you referred `@nativescript/geolocation` plugin. Yo
 
 1. Click on the gear icon on the bottom left of the BAS window and select  **Settings**.
 
-    <!-- border -->![BAS Settings Gear Icon](img-4.1.png)
+    ![BAS Settings Gear Icon](img-4.1.png)
 
 2. Switch to the *Remote* tab.
 
-    <!-- border -->![BAS Settings Remote Tab](img-4.1.2.png)
+    ![BAS Settings Remote Tab](img-4.1.2.png)
 
 3. Search with `mdk`, click **Edit in settings.json**.
 
-    <!-- border -->![MDK Settings JSON Edit](img-4.2.png)
+    ![MDK Settings JSON Edit](img-4.2.png)
 
 4. Include below references in `mdk.bundlerExternals`.
 
-    ```JSON
-    "@nativescript/geolocation"
-    ```
+   ```JSON
+   "@nativescript/geolocation"
+   ```
 
-     <!-- border -->![MDK Bundler Externals Configuration](img-4.3.png)        
+     ![MDK Bundler Externals Configuration](img-4.3.png)        
 
 
 ### Deploy the Project
@@ -227,23 +227,23 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 1. Switch to the `Main.page` tab, click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services**.
 
-    <!-- border -->![Deploy Option In Editor Header](img-5.1.png)
+    ![Deploy Option In Editor Header](img-5.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![Mobile Services Deploy Target](img-5.2.png)
+    ![Mobile Services Deploy Target](img-5.2.png)
 
 3. Select **Mobile Services Landscape**.
 
-    <!-- border -->![Mobile Services Landscape Selection](img-5.3.png)    
+    ![Mobile Services Landscape Selection](img-5.3.png)    
 
 4. If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![Enable Source Debugging Option](img-5.5.png)    
+    ![Enable Source Debugging Option](img-5.5.png)    
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![Deployment Success Message](img-5.6.png)
+    ![Deployment Success Message](img-5.6.png)
 
 ### Add NativeScript plugin and External dependencies in your local .mdkproject
 
@@ -253,20 +253,20 @@ In order to use the existing `NativeScript` plugin in MDK client, you will need 
 
 2. Open `MDKProject.json` file and replace existing content with below. Provide an appropriate value to the `BundleID`, it should be a unique identifier for your application. 
 
-    ```JSON
-    {
-      "AppDisplayName": "Geolocation",
-      "AppName": "MDKGeolocation",
-      "AppVersion": "1.0.0",
-      "AndroidVersionCode": "Auto",
-      "BundleID": "<Enter your bundle ID>",
-      "Externals": ["@nativescript/geolocation"],
-      "NSPlugins": ["@nativescript/geolocation"],
-      "UrlScheme": "mdkgeolocation"
-    }
-    ```
+   ```JSON
+   {
+     "AppDisplayName": "Geolocation",
+     "AppName": "MDKGeolocation",
+     "AppVersion": "1.0.0",
+     "AndroidVersionCode": "Auto",
+     "BundleID": "<Enter your bundle ID>",
+     "Externals": ["@nativescript/geolocation"],
+     "NSPlugins": ["@nativescript/geolocation"],
+     "UrlScheme": "mdkgeolocation"
+   }
+   ```
 
-<!-- border -->![MDKProject JSON With Externals](img-6.1.png)
+![MDKProject JSON With Externals](img-6.1.png)
 
 ### Add googlePlayServicesVersion and Permission in App Resources Merge folder(Required only for Android client)
 
@@ -284,43 +284,43 @@ With [Google Play services](https://developers.google.com/android/guides/overvie
                               └── AndroidManifest.xml
 
 
-      <!-- border -->![App Resources Merge Folder Structure](img-7.1.png)
+      ![App Resources Merge Folder Structure](img-7.1.png)
 
     >Files specified in the `.mdkproject/App_Resources_Merge` folder override a part of the files in `<generated-project>/app/App_Resources`. You can find more details about it in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/app-resources-merge.html).
 
 
 2. Provide below information in the `app.gradle` file. Save the changes.
 
-    ```Java
-    // add gradle dependencies here
-    project.ext {
-    	googlePlayServicesVersion = "21.+"
-    }
-    dependencies {
-    	def googlePlayServicesVersion = project.googlePlayServicesVersion
-    	implementation "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
-    }
-    ```
+   ```Java
+   // add gradle dependencies here
+   project.ext {
+   	googlePlayServicesVersion = "21.+"
+   }
+   dependencies {
+   	def googlePlayServicesVersion = project.googlePlayServicesVersion
+   	implementation "com.google.android.gms:play-services-location:$googlePlayServicesVersion"
+   }
+   ```
 
 3. Provide below information in the `AndroidManifest.xml` file. Save the changes.
 
-    ```XML
-    <?xml version="1.0" encoding="utf-8"?>
-    <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+   ```XML
+   <?xml version="1.0" encoding="utf-8"?>
+   <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    	<!-- Always include this permission -->
-      <!-- This permission is for "approximate" location data -->
-      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+   	<!-- Always include this permission -->
+     <!-- This permission is for "approximate" location data -->
+     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-      <!-- Include only if your app benefits from precise location access. -->
-      <!-- This permission is for "precise" location data -->
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+     <!-- Include only if your app benefits from precise location access. -->
+     <!-- This permission is for "precise" location data -->
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-      <!-- Required only when requesting background location access on
-           Android 10 (API level 29) and higher. -->
-      <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
-    </manifest>
-    ```
+     <!-- Required only when requesting background location access on
+          Android 10 (API level 29) and higher. -->
+     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+   </manifest>
+   ```
 
 
 

@@ -15,7 +15,7 @@ author_profile: https://github.com/jitendrakansal
 ## Prerequisites
 - **Tutorial group:** [Set Up for the Mobile Development Kit (MDK)](https://developers.sap.com/group.mobile-dev-kit-setup.html)
 - **Install SAP Mobile Services Client** on your [Android](https://play.google.com/store/apps/details?id=com.sap.mobileservices.client) device or [iOS](https://apps.apple.com/us/app/sap-mobile-services-client/id1413653544)
-<table><tr><td align="center"><!-- border -->![Play Store QR Code](img-0.1.png)<br>Android</td><td align="center">![App Store QR Code](img-0.2.png)<br>iOS</td></tr></table>
+<table><tr><td align="center">![Play Store QR Code](img-0.1.png)<br>Android</td><td align="center">![App Store QR Code](img-0.2.png)<br>iOS</td></tr></table>
 (If you are connecting to `AliCloud` accounts, you will need to brand your [custom MDK client](https://developers.sap.com/tutorials/cp-mobile-dev-kit-build-client.html) by allowing custom domains.)
 
 ## You will learn
@@ -42,11 +42,11 @@ Sample backend in SAP Mobile Services provides annotation functionality for **Pr
 
 1. In SAP MDK Demo App configuration, click `Sample OData ESPM`.
 
-    <!-- border -->![SAP MDK Demo App Sample OData ESPM](img-0.3.png)
+    ![SAP MDK Demo App Sample OData ESPM](img-0.3.png)
 
 2. Select **Include Predefined Annotations** option and click **Save**. This will add Product annotation to the sample backend destination.
 
-    <!-- border -->![Include Predefined Annotations Option Selected](img-0.4.png)
+    ![Include Predefined Annotations Option Selected](img-0.4.png)
 
 ### Create a New Project Using SAP Build
 
@@ -54,37 +54,37 @@ This step includes creating a mobile project in SAP Build Lobby.
 
 1. In the SAP Build Lobby, click **Create** > **Create** to start the creation process.
 
-    <!-- border -->![SAP Build Lobby Create Button](img-1.1.png)
+    ![SAP Build Lobby Create Button](img-1.1.png)
 
 2. Click the **Application** tile and choose **Next**.    
 
-    <!-- border -->![Application Tile Selection](img-1.2.png)
+    ![Application Tile Selection](img-1.2.png)
 
 3. Select the **Mobile** category and choose **Next**.
 
-    <!-- border -->![Mobile Category Options](img-1.3.png)
+    ![Mobile Category Options](img-1.3.png)
 
 4. Select the **Mobile Application** to develop your mobile project in SAP Business Application Studio and choose **Next**. 
 
-    <!-- border -->![Mobile Application Option Selection](img-1.4.png)
+    ![Mobile Application Option Selection](img-1.4.png)
 
 5. Enter the project name `mdk_annotations` (used for this tutorial) , add a description (optional), and click **Review**. 
 
-    <!-- border -->![Project Name Entry Review Screen](img-1.5.png)
+    ![Project Name Entry Review Screen](img-1.5.png)
     
     >SAP Build recommends the dev space it deems most suitable, and it will automatically create a new one for you if you don't already have one. If you have other dev spaces of the Mobile Application type, you can select between them. If you want to create a different dev space, go to the Dev Space Manager. See [Working in the Dev Space Manager](https://help.sap.com/docs/build_code/d0d8f5bfc3d640478854e6f4e7c7584a/ad40d52d0bea4d79baaf9626509caf33.html).
 
 6. Review the inputs under the Summary tab. If everything looks correct, click **Create** to proceed with creating your project.
 
-    <!-- border -->![Project Summary Review Screen](img-1.5.1.png)
+    ![Project Summary Review Screen](img-1.5.1.png)
 
 7. Your project is being created in the Project table of the lobby. The creation of the project may take a few moments.
 
-    <!-- border -->![Project Creation In Progress Lobby](img-1.6.png)
+    ![Project Creation In Progress Lobby](img-1.6.png)
 
 8. After you see a message stating that the project has been created successfully, click the project to open it. The project opens in SAP Business Application Studio.
 
-    <!-- border -->![Project Created Successfully Open](img-1.7.png)  
+    ![Project Created Successfully Open](img-1.7.png)  
 
     >When you open the SAP Business Application Studio for the first time, a consent window may appear asking for permission to track your usage. Please review and provide your consent accordingly before proceeding.
     >![SAP BAS Usage Consent Window](img-1.8.png) 
@@ -99,7 +99,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 1. Click on **+** button in the **Runtime Resources** column to add a mobile services app to your project. 
 
-    <!-- border -->![Runtime Resources Column Add Button](img-2.1.png) 
+    ![Runtime Resources Column Add Button](img-2.1.png) 
 
     >This screen will only show up when your CF login session has expired. Use either `Credentials` OR  `SSO Passcode` option for authentication. After successful signed in to Cloud Foundry, select your Cloud Foundry Organization and Space where you have set up the initial configuration for your MDK app and click Apply.
 
@@ -107,21 +107,21 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 2. Choose `myapp.mdk.demo` from the applications list in the **Mobile Application Services** editor.
 
-    <!-- border -->![Mobile Application Services App Selection](img-2.3.png)  
+    ![Mobile Application Services App Selection](img-2.3.png)  
 
 3. Select `com.sap.edm.sampleservice.v4` from the destinations list and click **Add App to Project**.
 
-    <!-- border -->![Destination Selection Add App To Project](img-2.4.png)  
+    ![Destination Selection Add App To Project](img-2.4.png)  
 
     >You can access the mobile services admin UI by clicking on the Mobile Services option on the right hand side.
 
     In the storyboard window, the app and mobile destination will be added under the Runtime Resources column. The mobile destination will also be added under the External Resources with a dotted-line connection to the Runtime Resource. The External Resource will be used to create the UI application.
 
-    <!-- border -->![Storyboard With Runtime Resources Added](img-2.5.png)      
+    ![Storyboard With Runtime Resources Added](img-2.5.png)      
 
 4. Click the **+** button in the UI application column header to add mobile UI for your project.
 
-    <!-- border -->![UI Application Column Add Button](img-2.6.png)     
+    ![UI Application Column Add Button](img-2.6.png)     
 
 5. In the **Basic Information** step, provide the below information and click **Next**. You will modify the generated project in next step and will deploy it later.
 
@@ -130,7 +130,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `MDK Template Type` | `Base`  |
     | `Enable Auto-Deployment to Mobile Services After Project Creation` | Select `No` |
 
-    <!-- border -->![Basic Information Step MDK Template](img-2.7.png)  
+    ![Basic Information Step MDK Template](img-2.7.png)  
 
     >The `Base` template creates the offline or online actions, rules, messages and an empty page (`Main.page`). After using this template, you can focus on creating your pages, other actions, and rules needed for your application. More details on _MDK template_ is available in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/bas.html#creating-a-new-project-cloud-foundry).
 
@@ -142,7 +142,7 @@ The Storyboard provides a graphical view of the application's runtime resources,
     | `Select the Service Type` | Leave the default value as `OData` |
     | `Enable Offline` | Select `No` |
 
-    <!-- border -->![Data Collections Step Configuration](img-2.8.png) 
+    ![Data Collections Step Configuration](img-2.8.png) 
 
     Regardless of whether you are creating an online or offline application, this step is needed for app to connect to an OData service. When building an MDK Mobile application, it assumes the OData service created and the destination that points to this service is set up in Mobile Services.  
 
@@ -150,25 +150,25 @@ The Storyboard provides a graphical view of the application's runtime resources,
 
 7. After clicking **Finish**, the storyboard is updated displaying the UI component. The MDK project is generated in the project explorer based on your selections.
  
-    <!-- border -->![Storyboard Updated With UI Component](img-2.9.png) 
+    ![Storyboard Updated With UI Component](img-2.9.png) 
 
 ### Add MDK Annotation component to MDK project
 
 1. Right-click `Application.app` and select **MDK:New Annotation Component**.
 
-    <!-- border -->![Application.app New Annotation Component Menu](img-4.1.png)
+    ![Application.app New Annotation Component Menu](img-4.1.png)
 
 2. In the **Annotation Selection** step, MDK editor fetches annotation details. Select **Product** Annotation and click **Next**.
 
-    <!-- border -->![Annotation Selection Product Step](img-4.2.png)
+    ![Annotation Selection Product Step](img-4.2.png)
 
 3. In **Template Customization** step, select **CRUD** Template and click **Finish**.
 
-    <!-- border -->![Template Customization CRUD Selection](img-4.3.png)
+    ![Template Customization CRUD Selection](img-4.3.png)
 
     In MDK project, you will see new pages, actions, and rules have been generated for **Products**.
 
-    <!-- border -->![Generated Products Pages Actions Rules](img-4.4.png)
+    ![Generated Products Pages Actions Rules](img-4.4.png)
 
     You will also notice a button control has been generated on the `Main.page` to navigate to `Product_List.page`.
 
@@ -185,30 +185,30 @@ So far, you have learned how to build an MDK application in the SAP Business App
 
 1. Open the `Application.app` file, click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services**.
 
-    <!-- border -->![Application.app Deploy Option Header](img-5.1.png)
+    ![Application.app Deploy Option Header](img-5.1.png)
 
 2. Select deploy target as **Mobile Services**.
 
-    <!-- border -->![Mobile Services Deploy Target Selection](img-5.2.png)
+    ![Mobile Services Deploy Target Selection](img-5.2.png)
 
     If you want to enable source for debugging the deployed bundle, then choose **Yes**.
 
-    <!-- border -->![Enable Source For Debugging Prompt](img-5.3.png)
+    ![Enable Source For Debugging Prompt](img-5.3.png)
 
     You should see **Deploy to Mobile Services successfully!** message.
 
-    <!-- border -->![Deploy To Mobile Services Success Message](img-5.4.png)
+    ![Deploy To Mobile Services Success Message](img-5.4.png)
 
 ### Display the QR code for onboarding the Mobile app
 
 
 SAP Business Application Studio includes a feature that displays a QR code for onboarding in the mobile client. To view the onboarding QR code, click the **Application QR Code** icon in the editor's header area.
 
-<!-- border -->![Application QR Code Icon Header](img-6.1.png)
+![Application QR Code Icon Header](img-6.1.png)
 
 The On-boarding QR code is now displayed.
 
-<!-- border -->![Onboarding QR Code Displayed](img-6.2.png)
+![Onboarding QR Code Displayed](img-6.2.png)
 
 
 >Leave the Onboarding dialog box open for the next step.

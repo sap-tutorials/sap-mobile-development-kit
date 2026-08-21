@@ -33,7 +33,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
 
-    <!-- border -->![Type Of Application Step MDK Selection](img-2.2.png)
+    ![Type Of Application Step MDK Selection](img-2.2.png)
 
 4. In the **Basic Info** step, provide the required information and choose **Next**.
 
@@ -42,32 +42,32 @@ Make sure that you have completed required prerequisites mentioned in this tutor
     | `ID` | myapp.mdk.certs |
     | `Name` | SAP MDK cert auth App |
 
-    <!-- border -->![Basic Info Step Application Details](img-2.3.png)
+    ![Basic Info Step Application Details](img-2.3.png)
 
     >Other fields are optional. For more information about these fields, see [Creating Applications](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/manage.html#creating-applications) in the SAP documentation.
 
 5. In the **Security Settings** step, continue with the default settings and choose **Next**.
 
-    <!-- border -->![Security Settings Step Default Configuration](img-2.4.png)
+    ![Security Settings Step Default Configuration](img-2.4.png)
 
 6. In the **Role Settings** step, continue with the default settings and choose **Next**.
 
-    <!-- border -->![Role Settings Step Default Configuration](img-2.5.png)    
+    ![Role Settings Step Default Configuration](img-2.5.png)    
 
 7. In the **Assign Features** step, continue with the default settings and choose **Next**.
 
-    <!-- border -->![Assign Features Step Default Settings](img-2.6.png) 
+    ![Assign Features Step Default Settings](img-2.6.png) 
 
 
 8. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration.
 
-    <!-- border -->![Application Review Step Finish Button](img-2.7.png)
+    ![Application Review Step Finish Button](img-2.7.png)
 
     >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured, if needed.
 
     Once you have created your application, you see a list of default features have been automatically assigned to the app.
 
-    <!-- border -->![Default Features Assigned To App](img-2.8.png)
+    ![Default Features Assigned To App](img-2.8.png)
 
     >You can find more information on available features in SAP Mobile Services in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/features.html).
 
@@ -79,15 +79,15 @@ To enable certificate based authentication, you need to modify **Redirect URL** 
 
 1. Click the **Security** tile.
 
-    <!-- border -->![Security Tile In App Configuration](img-2.9.png)
+    ![Security Tile In App Configuration](img-2.9.png)
 
 2. Click **pencil** icon to make changes to default configuration.
 
-    <!-- border -->![Edit Security Configuration Pencil Icon](img-2.9.1.png)
+    ![Edit Security Configuration Pencil Icon](img-2.9.1.png)
 
 3. Replace the *Redirect URL* with `mdkcertclient://oauth2redirect` parameter, and click **OK** to save the changes. This *Redirect URL* needs to be added in the `AllowedDomains` property while building your branded client (step 3.5).
 
-    <!-- border -->![Redirect URL Updated To Certificate Client](img-2.10.png)
+    ![Redirect URL Updated To Certificate Client](img-2.10.png)
 
     >`mdkcertclient` is an URL scheme for your branded MDK client, you will use this value in step 3.3.
 
@@ -108,19 +108,19 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 1. In the `MDKClient_SDK` folder, you will find the `template.mdkproject` folder.
 
-    <!-- border -->![MDKClient SDK Template Project Folder](img-3.1.png)
+    ![MDKClient SDK Template Project Folder](img-3.1.png)
 
     It is recommended that you copy this folder to another location so that you can to use it for future builds. Copy and paste it anywhere, and then rename the template to `MDKCertApp.mdkproject`.
 
-    <!-- border -->![MDKCertApp Project Folder Renamed](img-3.2.png)
+    ![MDKCertApp Project Folder Renamed](img-3.2.png)
 
 2. Next, you will need to update the `BrandedSettings.json` and `MDKProject.json` files as needed for your client. Go into the `MDKCertApp.mdkproject` folder.
 
-    <!-- border -->![MDKCertApp Project Folder Contents](img-3.3.png)
+    ![MDKCertApp Project Folder Contents](img-3.3.png)
 
 3. Open the `MDKProject.json` file and update it as needed. This file has some build-time configurations such as the application name, version and bundle ID.
 
-    <!-- border -->![MDKProject JSON File Build Configurations](img-3.4.png)
+    ![MDKProject JSON File Build Configurations](img-3.4.png)
 
     >`AppDisplayName`: This is the name of the application on the home screen of the device.
 
@@ -133,13 +133,13 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.certs` > **Settings** > **Client Settings** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
-    <!-- border -->![Mobile Services Client Settings Info Tab](img-3.5.png)
+    ![Mobile Services Client Settings Info Tab](img-3.5.png)
 
-    <!-- border -->![BrandedSettings JSON Connection Settings](img-3.6.png)
+    ![BrandedSettings JSON Connection Settings](img-3.6.png)
    
 5.  You also need to update the `AllowCerts` property to **true** into the `ConnectionSettings` block.
 
-    <!-- border -->![AllowCerts Property Set To True](img-3.7.png)
+    ![AllowCerts Property Set To True](img-3.7.png)
 
     >`AllowCerts` property allows MDK client to access the certificate on the device during on-boarding if requested by the Identity provider (IdP). You can find more information about this property in [help](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#allow-certs) documentation. 
 
@@ -156,7 +156,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 6.  Add `mdkcertclient://oauth2redirect` in the `AllowedDomains` property.
 
-    <!-- border -->![AllowedDomains Property With Redirect URL](img-3.8.png)
+    ![AllowedDomains Property With Redirect URL](img-3.8.png)
 
     >If you are connecting to `AliCloud` accounts, you will also need to add your custom domains under the same `AllowedDomains` property. You can find more details in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#connection-settings-allowlist).     
 
@@ -167,7 +167,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
     | `DetailLabelViewText` | `Branded client that can on-board using certificates for authentication` |
     | `SigninButtonText` | `Start` |
 
-    <!-- border -->![BrandedSettings Sign In Button Text Updated](img-3.9.png)        
+    ![BrandedSettings Sign In Button Text Updated](img-3.9.png)        
 
 [OPTION END]
 
@@ -175,19 +175,19 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 1. In the `MDKClient_SDK` folder, you will find the `template.mdkproject` folder.
 
-    <!-- border -->![MDKClient SDK Template Folder Windows](img-3.10.png)
+    ![MDKClient SDK Template Folder Windows](img-3.10.png)
 
     It is recommended that you copy this folder to another location so that you can to use it for future builds. Copy and paste it anywhere, and then rename template to `MDKCertApp.mdkproject`.
 
-    <!-- border -->![MDKCertApp Project Folder Renamed Windows](img-3.11.png)
+    ![MDKCertApp Project Folder Renamed Windows](img-3.11.png)
 
 2. Next, you will need to update the `MDKProject.json` and `BrandedSettings.json` files as needed for your client. Go into the `MDKCertApp.mdkproject` folder.
 
-    <!-- border -->![MDKCertApp Project Folder Contents Windows](img-3.12.png)
+    ![MDKCertApp Project Folder Contents Windows](img-3.12.png)
 
 3. Open the `MDKProject.json` file and update it as needed. This file has some build-time configurations such as the application name, version and bundle ID.
 
-    <!-- border -->![MDKProject JSON File Build Configurations](img-3.3.png)
+    ![MDKProject JSON File Build Configurations](img-3.3.png)
 
     >`AppDisplayName`: This is the name of the application on the home screen of the device.
 
@@ -200,13 +200,13 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 4. Open the `BrandedSettings.json` file and update the `ConnectionSettings` with the values for your MDK application in Mobile Services. To update the `AppId`, `ClientId`, `ServerUrl`, `AuthorizationEndPointUrl`, `RedirectUrl` and `TokenUrl` in the `ConnectionSettings` block, navigate to the [Mobile Services admin UI](https://developers.sap.com/tutorials/cp-mobile-dev-kit-ms-setup.html), click `myapp.mdk.certs` > **Mobile Security Exchange** > **Info** tab, copy the highlighted block and paste it in `BrandedSettings.json`.
 
-    <!-- border -->![Mobile Services Client Settings Info Tab](img-3.5.png)
+    ![Mobile Services Client Settings Info Tab](img-3.5.png)
 
-    <!-- border -->![BrandedSettings JSON Connection Settings](img-3.6.png)
+    ![BrandedSettings JSON Connection Settings](img-3.6.png)
    
 5. You also need to update the `AllowCerts` property to **true** into the `ConnectionSettings` block.
 
-    <!-- border -->![AllowCerts Property Set To True](img-3.7.png)
+    ![AllowCerts Property Set To True](img-3.7.png)
 
     >`AllowCerts` property allows MDK client to use the certificate. You can find more information about this property in [help](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#allow-certs) documentation. To access the certificate on the device during on-boarding if requested by the Identity provider (IdP).
 
@@ -221,7 +221,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 8. Add `mdkcertclient://oauth2redirect` in the `AllowedDomains` property.
 
-    <!-- border -->![AllowedDomains Property With Redirect URL](img-3.8.png)
+    ![AllowedDomains Property With Redirect URL](img-3.8.png)
 
     >If you are connecting to `AliCloud` accounts, you will also need to add your custom domains under the same `AllowedDomains` property. You can find more details in [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/custom-client/branding-custom-client.html#connection-settings-allowlist).   
 
@@ -232,7 +232,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
     | `DetailLabelViewText` | `Branded client that can on-board using certificates for authentication` |
     | `SigninButtonText` | `Start` |
 
-    <!-- border -->![BrandedSettings Sign In Button Text Updated](img-3.9.png)                  
+    ![BrandedSettings Sign In Button Text Updated](img-3.9.png)                  
 
 [OPTION END]
 
@@ -247,13 +247,13 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 1. Run `./create-client.command` to create the client. You will be asked to provide the path to the `.mdkproject` file. You can also provide optional arguments such as output directory and log verbosity. You can run `create-client.command --help` to find out how to specify these options as arguments.
 
-    <!-- border -->![Create Client Command Terminal Execution](img-4.1.png)
+    ![Create Client Command Terminal Execution](img-4.1.png)
 
     >You can run the `create-client command` from any directory.  The resulting MDK client will be created in the directory where the `create-client command` is run from.
 
 2. You will be asked whether you would like to build for iOS or android or all?
 
-    <!-- border -->![Build Target Platform Selection Prompt](img-4.2.png)
+    ![Build Target Platform Selection Prompt](img-4.2.png)
 
     >**All** option was chosen in this tutorial as you will learn how to create the MDK client for iOS and Android.
 
@@ -261,7 +261,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
     You will also find your MDK Client app created under the `MDKClient_SDK` folder.
 
-    <!-- border -->![Application Ready MDK Client Created](img-4.3.png)
+    ![Application Ready MDK Client Created](img-4.3.png)
 
 [OPTION END]
 
@@ -269,17 +269,17 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 1. Run `./create-client.cmd` to create the client. You will be asked to provide the path to the `.mdkproject` file. You can also provide optional arguments such as output directory and log verbosity. You can run `create-client.cmd --help` to find out how to specify these options as arguments.
 
-    <!-- border -->![Create Client Command Windows Terminal](img-4.4.png)
+    ![Create Client Command Windows Terminal](img-4.4.png)
 
     >You can run the `create-client command` from any directory. The resulting MDK client will be created in the directory where the `create-client command` is run from.
 
 2. Once the `create-client.cmd` script executed successfully, you will see **Application ready** message in terminal console.
 
-    <!-- border -->![Application Ready Message In Terminal](img-4.5.png)
+    ![Application Ready Message In Terminal](img-4.5.png)
 
      You will also find your app created under the `MDKClient_SDK` folder.
 
-    <!-- border -->![MDK Client App In SDK Folder](img-4.6.png)
+    ![MDK Client App In SDK Folder](img-4.6.png)
 
 [OPTION END]
 
@@ -294,7 +294,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 [OPTION BEGIN [Android]]
 
 1. In this step, you will Run the Project on an android device. First attach your device to your machine. Then run `tns device android` command to print a list of attached devices. 
-    <!-- border -->![Android Device List In Terminal](img-5.1.png)
+    ![Android Device List In Terminal](img-5.1.png)
 
     >Make sure **Developer option** and **USB debugging** option is enabled in android device.
 
@@ -302,7 +302,7 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 3. In terminal or command line window, navigate to the app name folder **`MDKCertApp`** (in `MDClient_SDK` path) and use `tns run android --device <device identifier>` command to run the MDK client on android device.
 
-    <!-- border -->![Run Android MDK Client Terminal Command](img-5.2.png)
+    ![Run Android MDK Client Terminal Command](img-5.2.png)
 
     Once, above command gets successfully executed, you will see new MDK client up and running in Android device.
 
@@ -335,11 +335,11 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 10.  Optionally, you can enable biometric authentication to get faster access to the app data.
 
-    ![Biometric Authentication Enable Screen](img-5.8.png)
+   ![Biometric Authentication Enable Screen](img-5.8.png)
 
-    Since no metadata has been deployed yet, you will see a message box suggesting next steps.
+   Since no metadata has been deployed yet, you will see a message box suggesting next steps.
 
-    ![No Metadata Deployed Message Box](img-5.9.png)
+   ![No Metadata Deployed Message Box](img-5.9.png)
 
 
 [OPTION END]
@@ -348,13 +348,13 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 1. In this step, In this step, you will Run the Project on an iOS device. First attach the device to your Mac. Then run `tns device ios` command to print a list of attached devices.
 
-    <!-- border -->![iOS Device List In Terminal](img-5.10.png)
+    ![iOS Device List In Terminal](img-5.10.png)
 
 2. Copy the **Device Identifier** value for your device.
 
 3. In terminal window, navigate to the app name folder **`MDKCertApp`** (in `MDClient_SDK` path) and use `tns run ios --device <device identifier>` command to run the MDK client on iOS device.
 
-    <!-- border -->![Run iOS MDK Client Terminal Command](img-5.11.png)
+    ![Run iOS MDK Client Terminal Command](img-5.11.png)
 
     You can also Run the Project in Xcode. Open the project in Xcode with the command `open platforms/ios/<app name>.xcworkspace`, or open the workspace using the `File -> Open...` dialog in Xcode. Configure the application's code signing settings, then Run the project for the target device.
 
@@ -362,35 +362,35 @@ Make sure that you have already completed steps 1 & 2 from [Build Your Mobile De
 
 4. Tap **Agree** on `End User License Agreement`.
 
-    <!-- border -->![iOS End User License Agreement Screen](img-5.12.png)
+    ![iOS End User License Agreement Screen](img-5.12.png)
 
 5. In Welcome screen, you will notice that **app name**, **detailed label text** and **signing button text** have been updated as per changes done in step 3.4 & 3.6.
 
-    <!-- border -->![iOS Welcome Screen Updated App Name](img-5.13.png)
+    ![iOS Welcome Screen Updated App Name](img-5.13.png)
 
 6. Tap **Start** to connect the MDK client to SAP Business Technology Platform (BTP). As you enabled the certificate based authentication, MDK client detects a valid certificate installed on the device and connects successfully to the SAP BTP.
 
-    <!-- border -->![iOS Certificate Authentication Connecting](img-5.14.png)
-    <!-- border -->![iOS Certificate Authentication Success](img-5.15.png)
+    ![iOS Certificate Authentication Connecting](img-5.14.png)
+    ![iOS Certificate Authentication Success](img-5.15.png)
 
     >If the user certificate is not valid or not detectable, then you will see an SAP BTP login page.
 
 7. Choose a passcode with at least 8 characters for unlocking the app and tap **Next**.
 
-    <!-- border -->![iOS Passcode Entry Screen](img-5.16.png)
+    ![iOS Passcode Entry Screen](img-5.16.png)
 
 8. Confirm the passcode and tap **Done**.
 
-    <!-- border -->![iOS Passcode Confirmation Screen](img-5.17.png)
+    ![iOS Passcode Confirmation Screen](img-5.17.png)
 
 
 9. Optionally, you can enable biometric authentication to get faster access to the app data, tap **Enable**.
 
-    <!-- border -->![iOS Biometric Authentication Enable Screen](img-5.18.png)
+    ![iOS Biometric Authentication Enable Screen](img-5.18.png)
 
     Since no metadata has been deployed yet, you will see a message box suggesting next steps.
 
-    <!-- border -->![iOS No Metadata Deployed Message Box](img-5.19.png)
+    ![iOS No Metadata Deployed Message Box](img-5.19.png)
 
 [OPTION END]
 

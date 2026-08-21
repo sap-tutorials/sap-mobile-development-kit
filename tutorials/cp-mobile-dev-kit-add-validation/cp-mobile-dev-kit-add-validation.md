@@ -32,36 +32,36 @@ You will add a rule to the Update action to run the validation before saving any
 
 2. Expand the **Common Action Properties** and click the `Create a rule` icon to create a new *Validation Rule*.  
 
-    <!-- border -->![Create Validation Rule Icon In Action Properties](img-1.1.png)
+    ![Create Validation Rule Icon In Action Properties](img-1.1.png)
 
 3. Keep the default selection for the *Object Type* as Rule and *Folders* path. Click **OK**.
 
-    <!-- border -->![Object Type And Folders Path Selection](img-1.2.png)
+    ![Object Type And Folders Path Selection](img-1.2.png)
 
 4. In the **Base Information** step, enter the Rule **Name** as `EmailValidation` and then click  **Finish**.
 
-    <!-- border -->![Rule Name EmailValidation Base Information Step](img-1.3.png)
+    ![Rule Name EmailValidation Base Information Step](img-1.3.png)
 
     >You can find more details about [writing a Rule](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/mdk/development/rules.html).
 
 5. Replace the generated snippet with below code.
 
-    ```JavaScript
-    /**
-    * Describe this function...
-    * @param {IClientAPI} context
-    */
-    export default function EmailValidation(context) {
-        //The following evaluateTargetPath will retrieve the current value of the email control
-        if ((context.evaluateTargetPath('#Control:FCEmail/#Value').indexOf('@')) === -1) {
-            //If email value does not contain @ display a validation failure message to the end-user
-            context.executeAction('/demosampleapp/Actions/ValidationFailure.action');
-        } else {
-            //If @ is present in the email value, return true to indicate validation is successful
-            return true;
-        }
-    }
-    ```
+   ```JavaScript
+   /**
+   * Describe this function...
+   * @param {IClientAPI} context
+   */
+   export default function EmailValidation(context) {
+       //The following evaluateTargetPath will retrieve the current value of the email control
+       if ((context.evaluateTargetPath('#Control:FCEmail/#Value').indexOf('@')) === -1) {
+           //If email value does not contain @ display a validation failure message to the end-user
+           context.executeAction('/demosampleapp/Actions/ValidationFailure.action');
+       } else {
+           //If @ is present in the email value, return true to indicate validation is successful
+           return true;
+       }
+   }
+   ```
 
     This rule will handle validation if a **@** symbol exists in the email address. In this validation rule, you will grab the data entered by the end-user, validate it and check for the **@** symbol then return true if the email address is of a valid format or false if it is not. The returning result of the validation rule can be used in the Update action to determine whether the action succeeds or fails.
 
@@ -71,7 +71,7 @@ You will add a rule to the Update action to run the validation before saving any
 
 6. In the generated `EmailValidation.js` rule, double-click the red line. You will notice a bulb icon suggesting some fixes, click on it, select `MDK: Create action for this reference`, and click `Message`.
 
-    <!-- border -->![Create Action From Rule Reference Bulb Icon](img-1.4.gif)
+    ![Create Action From Rule Reference Bulb Icon](img-1.4.gif)
 
 7. Provide the below information in the `ValidationFailure.action`:
 
@@ -84,7 +84,7 @@ You will add a rule to the Update action to run the validation before saving any
     | `CancelCaption` | leave it blank |
     | `OnCancel` | `--None--` |
 
-    <!-- border -->![ValidationFailure Action Properties Configuration](img-1.5.png)
+    ![ValidationFailure Action Properties Configuration](img-1.5.png)
 
 
 ### Deploy the Project
@@ -93,7 +93,7 @@ You will now deploy the updated project to your MDK client.
 
 Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** .
 
-<!-- border -->![Deploy To Mobile Services Option Selected](img-2.png)
+![Deploy To Mobile Services Option Selected](img-2.png)
 
 ### Run the Project
 

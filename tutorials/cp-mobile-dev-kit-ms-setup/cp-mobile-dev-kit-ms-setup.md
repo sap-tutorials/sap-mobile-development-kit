@@ -26,7 +26,7 @@ The mobile development kit (MDK) enables developers and technical business users
 
 You can find more details on the [mobile development kit developer page](https://developers.sap.com/topics/mobile-development-kit.html).
 
-<!-- border -->![MDK Cross-Platform Mobile Development Overview](img-1.png)
+![MDK Cross-Platform Mobile Development Overview](img-1.png)
 
 ### Set Up New MDK App Configuration in the Mobile Services Admin UI
 
@@ -36,11 +36,11 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 2. On the home screen, click **Create New App** or navigate to **Mobile Applications** **&rarr;** **Native/MDK** **&rarr;** **New**.
 
-    <!-- border -->![Mobile Services Home Screen Create New App](img-2.1.png)
+    ![Mobile Services Home Screen Create New App](img-2.1.png)
 
 3. In the **Type of Application** step, select the **Mobile Development Kit (MDK)** and choose **Next**.
 
-    <!-- border -->![Type Of Application MDK Selection Step](img-2.2.png)
+    ![Type Of Application MDK Selection Step](img-2.2.png)
 
 4. In the **Basic Info** step, provide the required information and choose **Next**.
 
@@ -49,34 +49,34 @@ Make sure that you have completed required prerequisites mentioned in this tutor
     | `ID` | myapp.mdk.demo |
     | `Name` | SAP MDK Demo App |
 
-    <!-- border -->![Basic Info Step App ID And Name Fields](img-2.3.png)
+    ![Basic Info Step App ID And Name Fields](img-2.3.png)
 
     >Other fields are optional. For more information about these fields, see [Creating Applications](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/manage.html#creating-applications) in the SAP documentation.
 
 5. In the **Security Settings** step, continue with the default settings and choose **Next**.
 
-    <!-- border -->![Security Settings Step Default Configuration](img-2.4.png)
+    ![Security Settings Step Default Configuration](img-2.4.png)
 
 6. In the **Role Settings** step, continue with the default settings and choose **Next**.
 
-    <!-- border -->![Role Settings Step Default Configuration](img-2.5.png)    
+    ![Role Settings Step Default Configuration](img-2.5.png)    
 
 7. In the **Assign Features** step, select **Sample OData ESPM** from the feature list, and choose **Next**.
 
-    <!-- border -->![Assign Features Step Sample OData ESPM Selection](img-2.6.png)
+    ![Assign Features Step Sample OData ESPM Selection](img-2.6.png)
 
 
     >A [sample OData](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/backend-connectivity/common/sample.html) Enterprise Sales and Procurement Model (ESPM) service is available in Mobile Services admin UI for developers to use during development and testing. For MDK tutorials, you will be using this service. You can of course add your OData or REST service connecting to your backend system as covered in the next step. 
 
 8. In the **Review** step, you can verify the details of the application definition that you are creating. Make sure all the details are correct. Choose Edit to make any necessary modifications to the section. Choose **Finish** to create the mobile application configuration. This process may take 2-3 minutes.
 
-    <!-- border -->![Application Configuration Review Step Finish](img-2.7.png)
+    ![Application Configuration Review Step Finish](img-2.7.png)
 
     >If you see a _Application is without Role Settings_ warning message, choose **OK**. You may assign roles after the app has been configured, if needed.
 
     Once you have created your application, you see a list of default features have been automatically assigned to the app.
 
-    <!-- border -->![Default Features Assigned To New Application](img-2.8.png)
+    ![Default Features Assigned To New Application](img-2.8.png)
 
     >You can find more information on available features in SAP Mobile Services in [help documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/getting-started/admin/features.html).
 
@@ -85,7 +85,7 @@ Make sure that you have completed required prerequisites mentioned in this tutor
 
 1. Click **Sample OData ESPM**. 
 
-    <!-- border -->![Sample OData ESPM Feature Link](img-3.1.png)
+    ![Sample OData ESPM Feature Link](img-3.1.png)
 
 2. By default, OData Version 4 is selected. You can explore through different options. For example, you can access the OData service document, view the metadata document, examine data, generate test data, or reset it to its initial state.
 

@@ -37,25 +37,25 @@ To create the Customer List page, you will create a **Section page** and drag th
 
 1. In the project, right-click the **Pages** | **MDK: New Page**.
 
-    <!-- border -->![Pages Folder New Page Right-Click Menu](img-1.1.png)
+    ![Pages Folder New Page Right-Click Menu](img-1.1.png)
 
 2. Select | **Section** and click **Next**.
 
-    <!-- border -->![Section Page Type Selection](img-1.2.png)
+    ![Section Page Type Selection](img-1.2.png)
 
     >You can find more details about the Section Page in this [documentation](https://help.sap.com/doc/f53c64b93e5140918d676b927a3cd65b/Cloud/en-US/docs-en/guides/features/fiori-ui/mdk/section-page.html).
 
 3. Enter the page **Name** as `Customers_List`, and click **Finish**. 
 
-    <!-- border -->![Customers List Page Name Entry](img-1.3.png)
+    ![Customers List Page Name Entry](img-1.3.png)
 
 4. Once the page opens in the page editor, click on the white area to select it's Action Bar, and set the **Caption** to **Customers**.
 
-    <!-- border -->![Action Bar Caption Set To Customers](img-1.4.gif)
+    ![Action Bar Caption Set To Customers](img-1.4.gif)
 
 5. In the Layout Editor, expand the **Controls** | **Data Bound Container** group, drag and drop the **Contact Table** control onto the Page area.
 
-    <!-- border -->![Contact Table Control Drag And Drop](img-1.5.gif)
+    ![Contact Table Control Drag And Drop](img-1.5.gif)
 
 6. In the Target section, provide the below information:
 
@@ -64,37 +64,37 @@ To create the Customer List page, you will create a **Section page** and drag th
     | `Service`| Select `com_sap_edm_sampleservice_v4.service` from the dropdown |
     | `EntitySet` | Select `Customers` from the dropdown |
 
-    <!-- border -->![Service And EntitySet Target Configuration](img-1.6.png)
+    ![Service And EntitySet Target Configuration](img-1.6.png)
 
 7. In the **Properties** pane, click the **link icon** to open the Object Browser for the **Description** property. Double click the `City` property of the Customer entity to set it as the binding expression and click **OK**.
 
-    <!-- border -->![City Property Bound To Description](img-1.7.gif)
+    ![City Property Bound To Description](img-1.7.gif)
 
     >Be careful **not** to select `City` from `Address (ESPM.Address)`.
     
-    ><!-- border -->![City Property From Address Warning](img-1.8.png)
+    >![City Property From Address Warning](img-1.8.png)
 
 8. Remove the default value for the `DetailImage` property. Repeat the above steps for `Headline` and `Subheadline` properties binding to `LastName` and `FirstName` properties of the Customer entity respectively.
 
     You should have final results as below.
 
-    <!-- border -->![Contact Table Final Property Bindings](img-1.9.png)
+    ![Contact Table Final Property Bindings](img-1.9.png)
 
 9. In the **Search** section of the Properties pane, change both the `SearchEnabled` and `BarcodeScanner` properties to **true**.
 
-    <!-- border -->![Search And Barcode Scanner Properties Enabled](img-1.10.png)
+    ![Search And Barcode Scanner Properties Enabled](img-1.10.png)
 
 10. In the **Data** section of the **Properties** pane, click **Add** to add a new activity item.
 
-    <!-- border -->![Activity Item Added In Data Section](img-1.11.png)
+    ![Activity Item Added In Data Section](img-1.11.png)
 
 11. Expand the added item, click the dotted icon to open the Object browser to bind the `ActivityValue` to the `PhoneNumber` property of the Customer entity.
 
-    <!-- border -->![Phone Number Bound To Activity Value](img-1.12.gif)
+    ![Phone Number Bound To Activity Value](img-1.12.gif)
 
 12. Similarly, add one more activity item, select **Email** from the dropdown and bind it to `EmailAddress` property of the Customer entity.
 
-    <!-- border -->![Email Address Activity Item Added](img-1.13.png)
+    ![Email Address Activity Item Added](img-1.13.png)
 
 
 ### Navigate to the Customer List page
@@ -103,7 +103,7 @@ Now, you will add a button on the Main page and from there, you will navigate to
 
 1. In the `Main.page`, expand the **Controls** | **Static Container** group, drag and drop the **Button Table** control onto the Page area.
 
-    <!-- border -->![Button Table Control Dragged To Main Page](img-2.1.gif)
+    ![Button Table Control Dragged To Main Page](img-2.1.gif)
 
     >**Container** includes controls that act as containers for other controls, such as container items. A container is constant across all pages. The size of a container depends on the controls and contents it contains.
 
@@ -111,7 +111,7 @@ Now, you will add a button on the Main page and from there, you will navigate to
 
     Drag and drop a **Button** onto the Button Table container on the page.
 
-    <!-- border -->![Button Dragged Onto Button Table Container](img-2.2.gif)
+    ![Button Dragged Onto Button Table Container](img-2.2.gif)
 
     >Each static container type in a Section Page can contain specific controls (static items).
 
@@ -124,21 +124,21 @@ Now, you will add a button on the Main page and from there, you will navigate to
     | `Image` | Click link icon to open the browser and bind it to `customer` SAP icon |
     | `Title` | `Customers` |
 
-    <!-- border -->![Button Image And Title Properties Set](img-2.3.png)
+    ![Button Image And Title Properties Set](img-2.3.png)
     
     >`Image` property is referencing to the [SAP font icon](https://openui5.hana.ondemand.com/test-resources/sap/m/demokit/iconExplorer/webapp/index.html#/overview/SAP-icons).
 
 4. Under **Events** tab, click the dotted icon for the `OnPress Handler` property and select the `Create a rule/action`.
 
-    <!-- border -->![OnPress Handler Create Rule Action Selected](img-2.4.png)
+    ![OnPress Handler Create Rule Action Selected](img-2.4.png)
 
 5. Keep the default selection for the *Object Type* as Action and *Folders* path.
 
-    <!-- border -->![Default Object Type And Folders Selection](img-2.5.png)
+    ![Default Object Type And Folders Selection](img-2.5.png)
 
 6. Choose **UI** in **Category** | click **Navigation** | **Next**.
 
-    <!-- border -->![UI Navigation Category Selected](img-2.6.png)
+    ![UI Navigation Category Selected](img-2.6.png)
 
 7. In the **Base Information** step, provide the below information and click **Finish**.
 
@@ -147,7 +147,7 @@ Now, you will add a button on the Main page and from there, you will navigate to
     | `Name` | `NavToCustomers_List` |
     | `PageToOpen` | Select `Customers_List.page` from the dropdown |
 
-    <!-- border -->![Navigation Action Base Information Configured](img-2.7.png)
+    ![Navigation Action Base Information Configured](img-2.7.png)
 
 ### Deploy the Project
 
@@ -155,7 +155,7 @@ You will now deploy the updated project to your MDK client.
 
 Click the **Deploy** option in the editor's header area, and then choose the deployment target as **Mobile Services** 
 
-<!-- border -->![Deploy To Mobile Services Option](img-3.png)
+![Deploy To Mobile Services Option](img-3.png)
 
 ### Run the Project
 
